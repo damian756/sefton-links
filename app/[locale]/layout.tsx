@@ -108,10 +108,13 @@ export default async function LocaleLayout({
       <head>
         {/* Plausible analytics */}
         <Script
-          src="https://plausible.io/js/script.js"
-          data-domain="seftonlinks.com"
+          src="https://plausible.io/js/pa-7l3psXM9XPdunx6bpHv50.js"
           strategy="afterInteractive"
         />
+        <Script id="plausible-init" strategy="afterInteractive">{`
+          window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+          plausible.init()
+        `}</Script>
         {/* Microsoft Clarity */}
         <Script id="clarity-init" strategy="afterInteractive">{`
           (function(c,l,a,r,i,t,y){

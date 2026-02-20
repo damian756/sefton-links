@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 export default function NavMenu({ locale }: { locale: string }) {
@@ -13,25 +13,26 @@ export default function NavMenu({ locale }: { locale: string }) {
 
   const links = [
     { label: t('courses'), href: `${prefix}/courses` },
-    { label: t('theOpen'), href: `${prefix}/the-open-2026`, highlight: true },
-    { label: t('itineraries'), href: `${prefix}/itineraries` },
+    { label: t('scorecard'), href: `${prefix}/scorecard` },
     { label: t('conditions'), href: `${prefix}/conditions` },
     { label: t('teeTimes'), href: `${prefix}/tee-times` },
+    { label: t('itineraries'), href: `${prefix}/itineraries` },
     { label: t('accommodation'), href: `${prefix}/accommodation` },
+    { label: t('theOpen'), href: `${prefix}/the-open-2026`, highlight: true },
   ];
 
   return (
     <>
       {/* Desktop nav */}
-      <div className="hidden lg:flex items-center gap-1">
+      <div className="hidden lg:flex items-center gap-0.5">
         {links.map((link) => (
           <Link
             key={link.href}
             href={link.href}
             className={
               link.highlight
-                ? 'px-3 py-1.5 rounded text-sm font-semibold bg-[#B8912A] text-white hover:bg-[#D4AE7A] transition-colors'
-                : 'px-3 py-1.5 rounded text-sm font-medium text-[#2C3E50] hover:text-[#0D1B2A] hover:bg-[#E8E3D8]/60 transition-colors'
+                ? 'ml-2 px-3 py-1.5 rounded text-sm font-semibold bg-[#B8912A] text-white hover:bg-[#D4AE7A] transition-colors'
+                : 'px-2.5 py-1.5 rounded text-sm font-medium text-[#2C3E50] hover:text-[#0D1B2A] hover:bg-[#E8E3D8]/60 transition-colors'
             }
           >
             {link.label}
