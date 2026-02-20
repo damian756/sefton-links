@@ -273,6 +273,9 @@ function Footer({ locale }: { locale: string }) {
                   ['SV', '/sv'],
                   ['KO', '/ko'],
                   ['ZH', '/zh'],
+                  ['PT', '/pt'],
+                  ['IT', '/it'],
+                  ['PL', '/pl'],
                   ['AR', '/ar'],
                 ].map(([label, href]) => (
                   <a

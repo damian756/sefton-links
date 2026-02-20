@@ -2,6 +2,14 @@ import type { MetadataRoute } from 'next';
 import { COURSES } from '@/lib/courses';
 import { locales } from '@/i18n/routing';
 
+// All English variants map to the root URL
+const ENGLISH_HREFLANG: Record<string, string> = {
+  'en': '',
+  'en-US': '',
+  'en-AU': '',
+  'en-GB': '',
+};
+
 const BASE_URL = 'https://www.seftonlinks.com';
 
 const STATIC_PAGES = [
@@ -34,11 +42,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const priority = isHome ? 1.0 : isOpenHub ? 0.95 : isConditions ? 0.8 : page.startsWith('/courses/') ? 0.85 : 0.7;
     const changeFrequency: MetadataRoute.Sitemap[0]['changeFrequency'] = isConditions ? 'daily' : isHome ? 'weekly' : 'monthly';
 
-    // Build alternates
-    const alternates: Record<string, string> = {};
+    // Build alternates — all English variants point to the root URL
+    const alternates: Record<string, string> = {
+      'en': `${BASE_URL}${page}`,
+      'en-US': `${BASE_URL}${page}`,
+      'en-AU': `${BASE_URL}${page}`,
+      'en-GB': `${BASE_URL}${page}`,
+    };
     for (const locale of locales) {
-      const localePath = locale === 'en' ? page : `/${locale}${page}`;
-      alternates[locale] = `${BASE_URL}${localePath}`;
+      if (locale === 'en') continue;
+      alternates[locale] = `${BASE_URL}/${locale}${page}`;
     }
 
     entries.push({
