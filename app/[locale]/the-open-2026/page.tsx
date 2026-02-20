@@ -11,10 +11,10 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const tm = await getTranslations({ locale, namespace: 'meta' });
   return {
-    title: 'The Open Championship 2026 at Royal Birkdale — Visitor Guide',
-    description:
-      'Your complete guide to The 155th Open Championship at Royal Birkdale, Southport, July 16–19 2026. History, past champions, tickets, accommodation, course guide and travel advice.',
+    title: tm('openTitle'),
+    description: tm('openDesc'),
     alternates: buildAlternates('/the-open-2026'),
     openGraph: {
       title: 'The Open Championship 2026 — Royal Birkdale',
@@ -25,49 +25,16 @@ export async function generateMetadata({
 }
 
 const PAST_CHAMPIONS = [
-  { year: 2017, name: 'Jordan Spieth', country: '🇺🇸 USA', score: '-12', note: 'Wire-to-wire — memorable drop zone escape on 13' },
-  { year: 2008, name: 'Pádraig Harrington', country: '🇮🇪 IRL', score: '-3', note: 'Second consecutive Claret Jug' },
-  { year: 1998, name: 'Mark O\'Meara', country: '🇺🇸 USA', score: '-9', note: 'First Major at 41' },
-  { year: 1991, name: 'Ian Baker-Finch', country: '🇦🇺 AUS', score: '-8', note: 'Front nine 29 in final round' },
-  { year: 1983, name: 'Tom Watson', country: '🇺🇸 USA', score: '-5', note: 'Fifth and final Open title' },
-  { year: 1976, name: 'Johnny Miller', country: '🇺🇸 USA', score: '-9', note: 'Wire-to-wire victory' },
-  { year: 1971, name: 'Lee Trevino', country: '🇺🇸 USA', score: '-1', note: 'Third consecutive Major in six weeks' },
-  { year: 1965, name: 'Peter Thomson', country: '🇦🇺 AUS', score: '-2', note: 'Fifth Open Championship' },
-  { year: 1961, name: 'Arnold Palmer', country: '🇺🇸 USA', score: '+3', note: 'Palmer\'s legendary iron recovery from a bush on 15' },
-  { year: 1954, name: 'Peter Thomson', country: '🇦🇺 AUS', score: '+2', note: 'First of five Open titles' },
-];
-
-const TICKET_INFO = [
-  { type: 'Practice Rounds (Mon–Wed)', price: 'TBC', note: 'Usually most accessible tickets, good course access' },
-  { type: 'Championship Days (Thu–Sun)', price: 'TBC', note: 'Book via TheOpen.com as soon as available' },
-  { type: 'Junior Tickets', price: 'Free (under 16)', note: 'Must be accompanied by a valid adult ticket holder' },
-];
-
-const ACCOMMODATION_GUIDE = [
-  {
-    area: 'Birkdale & Southport',
-    desc: 'Walking distance or short taxi to Royal Birkdale. The Bold Hotel on Lord Street is the traditional choice. Book 12+ months ahead for Open week.',
-    distance: '< 2 miles',
-    price: '£££',
-  },
-  {
-    area: 'Formby Village',
-    desc: 'B&Bs and holiday lets in a quieter setting, 20 min drive to Birkdale. FormbyGuide.co.uk has local accommodation listings.',
-    distance: '~5 miles',
-    price: '££',
-  },
-  {
-    area: 'Liverpool City Centre',
-    desc: 'Wide hotel choice, 45–60 min by car or train. Better availability but requires daily travel.',
-    distance: '~18 miles',
-    price: '££',
-  },
-  {
-    area: 'Manchester',
-    desc: 'Direct motorway access, 60–75 min. Useful if combining with other travel.',
-    distance: '~40 miles',
-    price: '££',
-  },
+  { year: 2017, name: 'Jordan Spieth', country: '🇺🇸 USA', score: '-12' },
+  { year: 2008, name: 'Pádraig Harrington', country: '🇮🇪 IRL', score: '-3' },
+  { year: 1998, name: "Mark O'Meara", country: '🇺🇸 USA', score: '-9' },
+  { year: 1991, name: 'Ian Baker-Finch', country: '🇦🇺 AUS', score: '-8' },
+  { year: 1983, name: 'Tom Watson', country: '🇺🇸 USA', score: '-5' },
+  { year: 1976, name: 'Johnny Miller', country: '🇺🇸 USA', score: '-9' },
+  { year: 1971, name: 'Lee Trevino', country: '🇺🇸 USA', score: '-1' },
+  { year: 1965, name: 'Peter Thomson', country: '🇦🇺 AUS', score: '-2' },
+  { year: 1961, name: 'Arnold Palmer', country: '🇺🇸 USA', score: '+3' },
+  { year: 1954, name: 'Peter Thomson', country: '🇦🇺 AUS', score: '+2' },
 ];
 
 export default async function OpenPage({
@@ -77,6 +44,7 @@ export default async function OpenPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'open' });
+  const tp = await getTranslations({ locale, namespace: 'openPage' });
   const prefix = locale === 'en' ? '' : `/${locale}`;
 
   return (
@@ -160,12 +128,12 @@ export default async function OpenPage({
         <div className="relative container mx-auto px-4 max-w-7xl py-20 md:py-28 text-center">
           <div className="inline-flex items-center gap-2 bg-[#B8912A]/20 border border-[#B8912A]/40 rounded-full px-4 py-1.5 mb-6">
             <Trophy size={13} className="text-[#B8912A]" />
-            <span className="text-[#D4AE7A] text-xs font-semibold uppercase tracking-widest">The 155th Open Championship</span>
+            <span className="text-[#D4AE7A] text-xs font-semibold uppercase tracking-widest">{tp('heroBadge')}</span>
           </div>
 
           <h1 className="font-display text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">
-            The Open Championship<br />
-            <span className="text-[#B8912A]">Royal Birkdale 2026</span>
+            {tp('heroTitle1')}<br />
+            <span className="text-[#B8912A]">{tp('heroTitle2')}</span>
           </h1>
 
           <p className="text-white/70 text-xl mb-3">{t('dates')}</p>
@@ -187,13 +155,13 @@ export default async function OpenPage({
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-[#B8912A] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#D4AE7A] transition-colors"
             >
-              <Ticket size={18} /> Get Tickets via TheOpen.com ↗
+              <Ticket size={18} /> {tp('heroBtn1')}
             </a>
             <Link
               href={`${prefix}/courses/royal-birkdale`}
               className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-8 py-4 rounded-lg hover:bg-white/20 transition-colors border border-white/20"
             >
-              <Trophy size={18} /> Royal Birkdale Course Guide
+              <Trophy size={18} /> {tp('heroBtn2')}
             </Link>
           </div>
         </div>
@@ -206,26 +174,18 @@ export default async function OpenPage({
 
             {/* About the event */}
             <section>
-              <h2 className="font-display text-3xl font-bold text-[#0D1B2A] mb-6">The Open Championship at Royal Birkdale</h2>
+              <h2 className="font-display text-3xl font-bold text-[#0D1B2A] mb-6">{tp('aboutTitle')}</h2>
               <div className="prose prose-slate max-w-none text-[#2C3E50]/80 space-y-4">
-                <p>
-                  The Open Championship — the oldest Major in golf and the only one played outside North America — returns to Royal Birkdale for the 11th time in July 2026. No other venue on the Open rota has hosted more frequently, a record that reflects both the quality of the course and its exceptional logistical suitability for a major championship.
-                </p>
-                <p>
-                  Royal Birkdale is a links in the truest sense. Fairways run between towering sand dunes that funnel the coastal wind in unpredictable ways. The willow scrub rough — a Birkdale signature — is punishing but navigable. Greens are small, fast and subtly contoured. Championship conditions produce scoring that typically ends around level par or better for the winner, but only when the weather cooperates. When it doesn't, Birkdale becomes one of the most demanding tests in world golf.
-                </p>
-                <p>
-                  The 2017 Open delivered one of the most dramatic finishes in recent memory. Jordan Spieth, leading wire-to-wire, made a triple bogey on 13 after pulling his tee shot into an area containing TV equipment. His subsequent decision to take relief under the drop zone rule — combined with a remarkable pitch to within feet of the hole — became one of the defining images of modern Major championship golf.
-                </p>
-                <p>
-                  For golf tourists, The Open at Royal Birkdale represents a unique opportunity: the world's most prestigious golf event, at one of England's greatest links courses, in a compact and accessible setting. Spectator access throughout the course is excellent, the atmosphere is distinctly British, and the food and entertainment village has improved considerably in recent editions.
-                </p>
+                <p>{tp('aboutPara1')}</p>
+                <p>{tp('aboutPara2')}</p>
+                <p>{tp('aboutPara3')}</p>
+                <p>{tp('aboutPara4')}</p>
               </div>
             </section>
 
             {/* Past Champions */}
             <section>
-              <h2 className="font-display text-3xl font-bold text-[#0D1B2A] mb-6">Past Champions at Royal Birkdale</h2>
+              <h2 className="font-display text-3xl font-bold text-[#0D1B2A] mb-6">{tp('pastChampionsTitle')}</h2>
               <div className="space-y-3">
                 {PAST_CHAMPIONS.map((c, i) => (
                   <div key={c.year} className={`flex items-start gap-4 rounded-xl p-4 border ${i === 0 ? 'bg-[#B8912A]/8 border-[#B8912A]/25' : 'bg-white border-[#E8E3D8]'}`}>
@@ -238,11 +198,11 @@ export default async function OpenPage({
                         <span className="font-display font-bold text-[#0D1B2A] text-lg">{c.name}</span>
                         <span className="text-[#2C3E50]/50 text-sm">{c.country}</span>
                       </div>
-                      <p className="text-[#2C3E50]/60 text-sm mt-0.5 italic">"{c.note}"</p>
+                      <p className="text-[#2C3E50]/60 text-sm mt-0.5 italic">&ldquo;{tp(`champNote${c.year}`)}&rdquo;</p>
                     </div>
                     {i === 0 && (
                       <div className="bg-[#B8912A] text-white text-xs font-bold px-2 py-1 rounded-full shrink-0">
-                        Last winner
+                        {tp('lastWinnerBadge')}
                       </div>
                     )}
                   </div>
@@ -254,26 +214,26 @@ export default async function OpenPage({
             <section>
               <h2 className="font-display text-3xl font-bold text-[#0D1B2A] mb-3">{t('ticketsTitle')}</h2>
               <div className="bg-[#B8912A]/8 border border-[#B8912A]/25 rounded-xl p-6 mb-6">
-                <p className="text-[#0D1B2A] font-semibold mb-2">Tickets sold via TheOpen.com only</p>
+                <p className="text-[#0D1B2A] font-semibold mb-2">{tp('ticketsAlertTitle')}</p>
                 <p className="text-[#2C3E50]/70 text-sm leading-relaxed">
-                  The R&A sells all tickets directly. There is no official third-party seller. Championship day tickets (Thursday–Sunday) sell out quickly — often within hours of release. Register for the R&A waiting list and ballot at TheOpen.com now.
+                  {tp('ticketsAlertDesc')}
                 </p>
               </div>
               <div className="overflow-x-auto rounded-xl border border-[#E8E3D8]">
                 <table className="w-full text-sm bg-white">
                   <thead className="bg-[#0D1B2A] text-white">
                     <tr>
-                      <th className="text-left px-4 py-3 font-semibold">Ticket Type</th>
-                      <th className="text-center px-4 py-3 font-semibold">Price</th>
-                      <th className="text-left px-4 py-3 font-semibold">Notes</th>
+                      <th className="text-left px-4 py-3 font-semibold">{tp('ticketTableHeaderType')}</th>
+                      <th className="text-center px-4 py-3 font-semibold">{tp('ticketTableHeaderPrice')}</th>
+                      <th className="text-left px-4 py-3 font-semibold">{tp('ticketTableHeaderNotes')}</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {TICKET_INFO.map((t, i) => (
-                      <tr key={t.type} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F8F5EE]'}>
-                        <td className="px-4 py-3 font-medium text-[#0D1B2A]">{t.type}</td>
-                        <td className="px-4 py-3 text-center text-[#1A4A30] font-semibold">{t.price}</td>
-                        <td className="px-4 py-3 text-[#2C3E50]/65">{t.note}</td>
+                    {([1, 2, 3] as const).map((n, i) => (
+                      <tr key={n} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F8F5EE]'}>
+                        <td className="px-4 py-3 font-medium text-[#0D1B2A]">{tp(`ticketType${n}`)}</td>
+                        <td className="px-4 py-3 text-center text-[#1A4A30] font-semibold">{tp(`ticketPrice${n}`)}</td>
+                        <td className="px-4 py-3 text-[#2C3E50]/65">{tp(`ticketNote${n}`)}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -286,7 +246,7 @@ export default async function OpenPage({
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-[#B8912A] text-white font-semibold px-5 py-3 rounded-lg hover:bg-[#D4AE7A] transition-colors text-sm"
                 >
-                  <Ticket size={15} /> Get Tickets — TheOpen.com ↗
+                  <Ticket size={15} /> {tp('ticketsBtn')}
                 </a>
               </div>
             </section>
@@ -295,19 +255,19 @@ export default async function OpenPage({
             <section>
               <h2 className="font-display text-3xl font-bold text-[#0D1B2A] mb-3">{t('stayTitle')}</h2>
               <p className="text-[#2C3E50]/70 mb-6">
-                Accommodation within 10 miles of Royal Birkdale books out 12–18 months before Open week. If you haven't booked yet, look at Liverpool or Formby as alternatives — both are manageable with early planning.
+                {tp('stayIntroDesc')}
               </p>
               <div className="space-y-4">
-                {ACCOMMODATION_GUIDE.map((a) => (
-                  <div key={a.area} className="bg-white border border-[#E8E3D8] rounded-xl p-5">
+                {([1, 2, 3, 4] as const).map((n) => (
+                  <div key={n} className="bg-white border border-[#E8E3D8] rounded-xl p-5">
                     <div className="flex items-center justify-between mb-2">
-                      <h3 className="font-semibold text-[#0D1B2A]">{a.area}</h3>
+                      <h3 className="font-semibold text-[#0D1B2A]">{tp(`accomArea${n}Name`)}</h3>
                       <div className="flex items-center gap-3 text-sm">
-                        <span className="text-[#2C3E50]/50">{a.distance}</span>
-                        <span className="text-[#1A4A30] font-semibold">{a.price}</span>
+                        <span className="text-[#2C3E50]/50">{tp(`accomArea${n}Distance`)}</span>
+                        <span className="text-[#1A4A30] font-semibold">{tp(`accomArea${n}Price`)}</span>
                       </div>
                     </div>
-                    <p className="text-[#2C3E50]/65 text-sm leading-relaxed">{a.desc}</p>
+                    <p className="text-[#2C3E50]/65 text-sm leading-relaxed">{tp(`accomArea${n}Desc`)}</p>
                   </div>
                 ))}
               </div>
@@ -319,7 +279,7 @@ export default async function OpenPage({
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 border border-[#1A4A30] text-[#1A4A30] font-semibold px-5 py-2.5 rounded-lg hover:bg-[#1A4A30] hover:text-white transition-colors text-sm"
                 >
-                  <Bed size={15} /> Southport Hotels Guide ↗
+                  <Bed size={15} /> {tp('southportHotelsBtn')}
                 </a>
                 <a
                   href="https://www.formbyguide.co.uk/accommodation"
@@ -327,70 +287,47 @@ export default async function OpenPage({
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 border border-[#2E6B3E] text-[#2E6B3E] font-semibold px-5 py-2.5 rounded-lg hover:bg-[#2E6B3E] hover:text-white transition-colors text-sm"
                 >
-                  <Bed size={15} /> Formby Accommodation ↗
+                  <Bed size={15} /> {tp('formbyAccomBtn')}
                 </a>
               </div>
             </section>
 
             {/* Visitor guide */}
             <section>
-              <h2 className="font-display text-3xl font-bold text-[#0D1B2A] mb-6">Visitor Guide — What to Expect</h2>
+              <h2 className="font-display text-3xl font-bold text-[#0D1B2A] mb-6">{tp('visitorGuideTitle')}</h2>
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
                   {
                     icon: MapPin,
-                    title: 'Getting There',
-                    items: [
-                      'Postcode: PR8 2LX (Royal Birkdale main entrance)',
-                      'Southport town centre ~2 miles — shuttle buses during Open week',
-                      'Liverpool Airport: 45 min by car',
-                      'Manchester Airport: 65 min by car',
-                      'Merseyrail to Birkdale station: 8-min walk to course',
-                    ],
+                    titleKey: 'gettingThereTitle',
+                    itemKeys: ['gettingThereItem1', 'gettingThereItem2', 'gettingThereItem3', 'gettingThereItem4', 'gettingThereItem5'],
                   },
                   {
                     icon: Clock,
-                    title: 'On the Day',
-                    items: [
-                      'Gates open 2 hours before first tee time',
-                      'Dress code: smart casual, flat shoes recommended',
-                      'Mobile phones permitted (silent mode, no video)',
-                      'Cash and cards accepted throughout',
-                      'Official merchandise pavilion — queue early',
-                    ],
+                    titleKey: 'onTheDayTitle',
+                    itemKeys: ['onTheDayItem1', 'onTheDayItem2', 'onTheDayItem3', 'onTheDayItem4', 'onTheDayItem5'],
                   },
                   {
                     icon: Users,
-                    title: 'Spectator Tips',
-                    items: [
-                      'Practice days offer closest course access and photo opportunities',
-                      'Holes 17 and 18 pack out — position early for finish',
-                      'The 1st and 13th tees give good early views of field size',
-                      'Birkdale\'s natural dune grandstands require good shoes',
-                      'Check R&A app for real-time leaderboard and player tracking',
-                    ],
+                    titleKey: 'spectatorTipsTitle',
+                    itemKeys: ['spectatorTipsItem1', 'spectatorTipsItem2', 'spectatorTipsItem3', 'spectatorTipsItem4', 'spectatorTipsItem5'],
                   },
                   {
                     icon: Trophy,
-                    title: 'Play the Course',
-                    items: [
-                      'Visitor tee times restart after championship setup is removed',
-                      'Post-Open tee times book fast — Royal Birkdale handles direct',
-                      'Combine with Hillside or S&A for a full Birkdale area trip',
-                      'Caddies available — book well in advance for premium experience',
-                    ],
+                    titleKey: 'playCourseTitle',
+                    itemKeys: ['playCourseItem1', 'playCourseItem2', 'playCourseItem3', 'playCourseItem4'],
                   },
-                ].map(({ icon: Icon, title, items }) => (
-                  <div key={title} className="bg-white border border-[#E8E3D8] rounded-xl p-5">
+                ].map(({ icon: Icon, titleKey, itemKeys }) => (
+                  <div key={titleKey} className="bg-white border border-[#E8E3D8] rounded-xl p-5">
                     <div className="flex items-center gap-2 mb-3">
                       <Icon size={16} className="text-[#1A4A30]" />
-                      <h3 className="font-semibold text-[#0D1B2A]">{title}</h3>
+                      <h3 className="font-semibold text-[#0D1B2A]">{tp(titleKey)}</h3>
                     </div>
                     <ul className="space-y-1.5">
-                      {items.map((item) => (
-                        <li key={item} className="text-[#2C3E50]/65 text-sm flex items-start gap-2">
+                      {itemKeys.map((key) => (
+                        <li key={key} className="text-[#2C3E50]/65 text-sm flex items-start gap-2">
                           <span className="text-[#B8912A] mt-1.5 shrink-0">–</span>
-                          {item}
+                          {tp(key)}
                         </li>
                       ))}
                     </ul>
@@ -404,21 +341,21 @@ export default async function OpenPage({
           <div className="space-y-6">
             {/* Quick facts */}
             <div className="bg-[#0D1B2A] rounded-xl p-5 text-white">
-              <h3 className="font-display text-lg font-bold text-[#D4AE7A] mb-4">Quick Facts</h3>
+              <h3 className="font-display text-lg font-bold text-[#D4AE7A] mb-4">{tp('quickFactsTitle')}</h3>
               <div className="space-y-3 text-sm">
                 {[
-                  { label: 'Championship Number', value: '155th Open' },
-                  { label: 'Venue', value: 'Royal Birkdale GC' },
-                  { label: 'Location', value: 'Southport, PR8 2LX' },
-                  { label: 'Dates', value: '16–19 July 2026' },
-                  { label: 'Practice Days', value: '13–15 July 2026' },
-                  { label: 'Defending Champion', value: 'Brian Harman (2023)' },
-                  { label: 'Organiser', value: 'The R&A' },
-                  { label: 'Times hosted at Birkdale', value: '11 (since 1954)' },
-                ].map(({ label, value }) => (
-                  <div key={label} className="flex justify-between gap-2">
-                    <span className="text-white/50 shrink-0">{label}</span>
-                    <span className="text-white font-medium text-right">{value}</span>
+                  { labelKey: 'factLabelChampNumber', valueKey: 'factValueChampNumber' },
+                  { labelKey: 'factLabelVenue', valueKey: 'factValueVenue' },
+                  { labelKey: 'factLabelLocation', valueKey: 'factValueLocation' },
+                  { labelKey: 'factLabelDates', valueKey: 'factValueDates' },
+                  { labelKey: 'factLabelPracticeDays', valueKey: 'factValuePracticeDays' },
+                  { labelKey: 'factLabelDefendingChamp', valueKey: 'factValueDefendingChamp' },
+                  { labelKey: 'factLabelOrganiser', valueKey: 'factValueOrganiser' },
+                  { labelKey: 'factLabelTimesHosted', valueKey: 'factValueTimesHosted' },
+                ].map(({ labelKey, valueKey }) => (
+                  <div key={labelKey} className="flex justify-between gap-2">
+                    <span className="text-white/50 shrink-0">{tp(labelKey)}</span>
+                    <span className="text-white font-medium text-right">{tp(valueKey)}</span>
                   </div>
                 ))}
               </div>
@@ -426,14 +363,14 @@ export default async function OpenPage({
 
             {/* Official links */}
             <div className="bg-white border border-[#E8E3D8] rounded-xl p-5">
-              <h3 className="font-semibold text-[#0D1B2A] mb-3">Official Links</h3>
+              <h3 className="font-semibold text-[#0D1B2A] mb-3">{tp('officialLinksTitle')}</h3>
               <div className="space-y-2">
                 {[
-                  { label: 'The Open Championship Official Site', url: 'https://www.theopen.com' },
-                  { label: 'Royal Birkdale Golf Club', url: 'https://www.royalbirkdale.com' },
-                  { label: 'R&A — Ticket Ballot', url: 'https://www.theopen.com/tickets' },
-                  { label: 'Southport Visitor Information', url: 'https://www.southportguide.co.uk' },
-                ].map(({ label, url }) => (
+                  { labelKey: 'officialLink1Label', url: 'https://www.theopen.com' },
+                  { labelKey: 'officialLink2Label', url: 'https://www.royalbirkdale.com' },
+                  { labelKey: 'officialLink3Label', url: 'https://www.theopen.com/tickets' },
+                  { labelKey: 'officialLink4Label', url: 'https://www.southportguide.co.uk' },
+                ].map(({ labelKey, url }) => (
                   <a
                     key={url}
                     href={url}
@@ -442,7 +379,7 @@ export default async function OpenPage({
                     className="flex items-center gap-2 text-sm text-[#1A4A30] hover:text-[#B8912A] transition-colors py-1"
                   >
                     <ExternalLink size={12} className="shrink-0" />
-                    {label}
+                    {tp(labelKey)}
                   </a>
                 ))}
               </div>
@@ -450,9 +387,9 @@ export default async function OpenPage({
 
             {/* Book accommodation */}
             <div className="bg-[#1A4A30] rounded-xl p-5 text-white">
-              <h3 className="font-display text-lg font-bold mb-2">Book Accommodation</h3>
+              <h3 className="font-display text-lg font-bold mb-2">{tp('bookAccomTitle')}</h3>
               <p className="text-white/70 text-sm mb-4">
-                Don't leave it. Open week accommodation books out fast. Book via Booking.com for the widest choice and flexible cancellation.
+                {tp('bookAccomDesc')}
               </p>
               <a
                 href="https://www.booking.com/searchresults.html?ss=Southport"
@@ -460,24 +397,24 @@ export default async function OpenPage({
                 rel="noopener noreferrer sponsored"
                 className="flex items-center justify-center gap-2 bg-[#B8912A] text-white font-semibold px-4 py-3 rounded-lg hover:bg-[#D4AE7A] transition-colors text-sm w-full"
               >
-                <Bed size={15} /> Search Southport Hotels ↗
+                <Bed size={15} /> {tp('bookAccomBtn')}
               </a>
-              <p className="text-white/35 text-xs mt-2 text-center">Booking.com affiliate link</p>
+              <p className="text-white/35 text-xs mt-2 text-center">{tp('bookAccomAffiliate')}</p>
             </div>
 
             {/* Course guide link */}
             <div className="bg-white border border-[#E8E3D8] rounded-xl p-5">
               <h3 className="font-semibold text-[#0D1B2A] mb-2 flex items-center gap-2">
-                <Trophy size={15} className="text-[#B8912A]" /> Play Royal Birkdale
+                <Trophy size={15} className="text-[#B8912A]" /> {tp('playBirkdaleTitle')}
               </h3>
               <p className="text-[#2C3E50]/60 text-sm mb-3">
-                Planning a round before or after The Open? Green fees, visitor policy and booking guide.
+                {tp('playBirkdaleDesc')}
               </p>
               <Link
                 href={`${prefix}/courses/royal-birkdale`}
                 className="text-[#1A4A30] text-sm font-semibold hover:text-[#B8912A] transition-colors flex items-center gap-1"
               >
-                Royal Birkdale course guide <ChevronRight size={13} />
+                {tp('playBirkdaleLink')} <ChevronRight size={13} />
               </Link>
             </div>
           </div>

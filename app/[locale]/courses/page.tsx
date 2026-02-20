@@ -7,10 +7,10 @@ import { BASE_URL, buildAlternates } from '@/lib/metadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
+  const tm = await getTranslations({ locale, namespace: 'meta' });
   return {
-    title: 'Sefton Coast Golf Courses — Royal Birkdale, Hillside & Formby',
-    description:
-      'The complete guide to all six Sefton Coast links golf courses — visitor policies, green fees, course ratings, tee time booking and full course guides.',
+    title: tm('coursesTitle'),
+    description: tm('coursesDesc'),
     alternates: buildAlternates('/courses'),
   };
 }
@@ -18,6 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function CoursesPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'courses' });
+  const tcp = await getTranslations({ locale, namespace: 'coursesPage' });
   const prefix = locale === 'en' ? '' : `/${locale}`;
 
   return (
@@ -61,7 +62,7 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
       <div className="bg-[#0D1B2A] py-16">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-[#B8912A] text-sm uppercase tracking-widest font-semibold mb-3">
-            Sefton Coast, Lancashire
+            {tcp('headerBadge')}
           </div>
           <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
             {t('pageTitle')}
@@ -78,13 +79,13 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
           <table className="w-full text-sm min-w-[700px]">
             <thead>
               <tr className="text-[#2C3E50]/50 uppercase tracking-wider text-xs border-b border-[#E8E3D8]">
-                <th className="text-left py-2 pr-4">Course</th>
-                <th className="text-center py-2 px-3">Par</th>
-                <th className="text-center py-2 px-3">Yards</th>
-                <th className="text-center py-2 px-3">Rating</th>
-                <th className="text-center py-2 px-3">Slope</th>
-                <th className="text-center py-2 px-3">Green Fee</th>
-                <th className="text-left py-2 pl-3">Difficulty</th>
+                <th className="text-left py-2 pr-4">{tcp('tableHeaderCourse')}</th>
+                <th className="text-center py-2 px-3">{tcp('tableHeaderPar')}</th>
+                <th className="text-center py-2 px-3">{tcp('tableHeaderYards')}</th>
+                <th className="text-center py-2 px-3">{tcp('tableHeaderRating')}</th>
+                <th className="text-center py-2 px-3">{tcp('tableHeaderSlope')}</th>
+                <th className="text-center py-2 px-3">{tcp('tableHeaderGreenFee')}</th>
+                <th className="text-left py-2 pl-3">{tcp('tableHeaderDifficulty')}</th>
               </tr>
             </thead>
             <tbody>
@@ -118,7 +119,7 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
               ))}
             </tbody>
           </table>
-          <p className="text-[#2C3E50]/40 text-xs mt-3">★ Open Championship venue. Green fees approximate — always verify with the club before booking.</p>
+          <p className="text-[#2C3E50]/40 text-xs mt-3">{tcp('tableFootnote')}</p>
         </div>
       </div>
 
@@ -148,7 +149,7 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
                           <MapPin size={13} />
                           <span>{course.address}, {course.postcode}</span>
                           <span>·</span>
-                          <span>Est. {course.founded}</span>
+                          <span>{tcp('cardEstFounded', { year: course.founded })}</span>
                         </div>
                       </div>
                     </div>
@@ -161,11 +162,11 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
                     {/* Key stats row */}
                     <div className="flex flex-wrap gap-4 mb-5">
                       {[
-                        { label: 'Par', value: String(course.par) },
-                        { label: 'Yards', value: course.yardage.toLocaleString() },
-                        { label: 'Course Rating', value: String(course.courseRating) },
-                        { label: 'Slope', value: String(course.slopeRating) },
-                        { label: 'Green Fee', value: course.greenFeeRange },
+                        { label: tcp('cardStatParLabel'), value: String(course.par) },
+                        { label: tcp('cardStatYardsLabel'), value: course.yardage.toLocaleString() },
+                        { label: tcp('cardStatCourseRatingLabel'), value: String(course.courseRating) },
+                        { label: tcp('cardStatSlopeLabel'), value: String(course.slopeRating) },
+                        { label: tcp('cardStatGreenFeeLabel'), value: course.greenFeeRange },
                       ].map(({ label, value }) => (
                         <div key={label} className="bg-[#F8F5EE] rounded-lg px-3 py-2 text-center">
                           <div className="font-bold text-[#0D1B2A] text-sm">{value}</div>
@@ -176,13 +177,13 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
 
                     {/* Visitor policy */}
                     <div className="bg-[#F8F5EE] rounded-lg p-4 mb-4">
-                      <div className="font-semibold text-[#0D1B2A] text-xs uppercase tracking-wider mb-1.5">Visitor Policy</div>
+                      <div className="font-semibold text-[#0D1B2A] text-xs uppercase tracking-wider mb-1.5">{tcp('visitorPolicyLabel')}</div>
                       <p className="text-[#2C3E50]/70 text-sm">{course.visitorPolicy}</p>
                     </div>
 
                     {course.majorHistory && course.majorHistory.length > 0 && (
                       <div className="mb-4">
-                        <div className="font-semibold text-[#0D1B2A] text-xs uppercase tracking-wider mb-2">Major History</div>
+                        <div className="font-semibold text-[#0D1B2A] text-xs uppercase tracking-wider mb-2">{tcp('majorHistoryLabel')}</div>
                         <ul className="space-y-1">
                           {course.majorHistory.slice(0, 2).map((item) => (
                             <li key={item} className="text-[#2C3E50]/65 text-sm flex items-start gap-2">
@@ -201,7 +202,7 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
                       href={`${prefix}/courses/${course.slug}`}
                       className="flex items-center justify-center gap-2 bg-[#1A4A30] text-white font-semibold px-4 py-3 rounded-lg hover:bg-[#2A6A45] transition-colors text-sm"
                     >
-                      Full Course Guide <ChevronRight size={14} />
+                      {tcp('fullCourseGuideBtn')} <ChevronRight size={14} />
                     </Link>
                     <a
                       href={course.website}
@@ -210,7 +211,7 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
                       className="flex items-center justify-center gap-2 border border-[#E8E3D8] text-[#2C3E50] font-medium px-4 py-2.5 rounded-lg hover:border-[#0D1B2A]/30 transition-colors text-sm"
                     >
                       <ExternalLink size={13} />
-                      Club Website
+                      {tcp('clubWebsiteBtn')}
                     </a>
                     {course.phone && (
                       <a

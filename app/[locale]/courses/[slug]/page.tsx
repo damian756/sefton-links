@@ -22,16 +22,9 @@ export async function generateMetadata({
   const course = getCourseBySlug(slug);
   if (!course) return {};
 
-  const COURSE_TITLES: Record<string, string> = {
-    'royal-birkdale': 'Royal Birkdale Golf Club — Visitor Guide, Green Fees & Tee Times',
-    'hillside': 'Hillside Golf Club Southport — Visitor Guide & Green Fees',
-    'formby': 'Formby Golf Club — Visitor Guide, Green Fees & Tee Times',
-    'west-lancashire': 'West Lancashire Golf Club — Visitor Green Fees & Tee Times',
-    'southport-ainsdale': 'Southport & Ainsdale Golf Club — Visitor Guide & Green Fees',
-    'southport-old-links': 'Southport Old Links Golf Club — Visitor Guide & Green Fees',
-  };
-  const title = COURSE_TITLES[slug] ?? `${course.name} — Visitor Guide, Green Fees & Tee Times`;
-  const description = `${course.tagline}. Green fee ${course.greenFeeRange}. Par ${course.par}, ${course.yardage.toLocaleString()} yards. Full visitor policy, how to book and post-round guide.`;
+  const tm = await getTranslations({ locale, namespace: 'meta' });
+  const title = tm(`course.${slug}.title`);
+  const description = tm(`course.${slug}.desc`);
 
   return {
     title,
@@ -60,6 +53,9 @@ export default async function CoursePage({
 
   const otherCourses = COURSES.filter((c) => c.slug !== slug);
 
+  const t = await getTranslations({ locale, namespace: 'courseDetail' });
+  const tcd = await getTranslations({ locale, namespace: 'courseData' });
+
   return (
     <div className="min-h-screen bg-[#F8F5EE]">
       {/* Schema.org GolfCourse */}
@@ -73,7 +69,7 @@ export default async function CoursePage({
                 '@type': 'GolfCourse',
                 '@id': `${BASE_URL}/courses/${slug}`,
                 name: course.name,
-                description: course.tagline,
+                description: tcd(`${slug}.tagline`),
                 url: `${BASE_URL}/courses/${slug}`,
                 telephone: course.phone,
                 sameAs: [course.website],
@@ -102,8 +98,8 @@ export default async function CoursePage({
               {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
-                  { '@type': 'ListItem', position: 2, name: 'Courses', item: `${BASE_URL}/courses` },
+                  { '@type': 'ListItem', position: 1, name: t('breadcrumbHome'), item: BASE_URL },
+                  { '@type': 'ListItem', position: 2, name: t('breadcrumbCourses'), item: `${BASE_URL}/courses` },
                   { '@type': 'ListItem', position: 3, name: course.name, item: `${BASE_URL}/courses/${slug}` },
                 ],
               },
@@ -116,9 +112,9 @@ export default async function CoursePage({
       <div className="bg-white border-b border-[#E8E3D8]">
         <div className="container mx-auto px-4 max-w-7xl py-3">
           <nav className="flex items-center gap-2 text-sm text-[#2C3E50]/55">
-            <Link href={prefix || '/'} className="hover:text-[#1A4A30] transition-colors">Home</Link>
+            <Link href={prefix || '/'} className="hover:text-[#1A4A30] transition-colors">{t('breadcrumbHome')}</Link>
             <ChevronRight size={13} />
-            <Link href={`${prefix}/courses`} className="hover:text-[#1A4A30] transition-colors">Courses</Link>
+            <Link href={`${prefix}/courses`} className="hover:text-[#1A4A30] transition-colors">{t('breadcrumbCourses')}</Link>
             <ChevronRight size={13} />
             <span className="text-[#0D1B2A] font-medium">{course.shortName}</span>
           </nav>
@@ -142,7 +138,7 @@ export default async function CoursePage({
                 </span>
                 {course.openChampionship && (
                   <span className="bg-[#B8912A] text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1.5">
-                    <Trophy size={11} /> Open Championship Venue
+                    <Trophy size={11} /> {t('openVenueBadge')}
                   </span>
                 )}
                 <span className={`text-xs font-bold px-3 py-1 rounded-full ${
@@ -158,7 +154,7 @@ export default async function CoursePage({
               <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-3 leading-tight">
                 {course.name}
               </h1>
-              <p className="text-[#D4AE7A] text-lg font-medium mb-4">{course.tagline}</p>
+              <p className="text-[#D4AE7A] text-lg font-medium mb-4">{tcd(`${slug}.tagline`)}</p>
               <div className="flex items-center gap-2 text-white/55 text-sm">
                 <MapPin size={14} />
                 <span>{course.address}, {course.postcode}</span>
@@ -167,23 +163,23 @@ export default async function CoursePage({
 
             {/* Quick book panel */}
             <div className="bg-white/8 backdrop-blur-sm border border-white/15 rounded-xl p-5 min-w-[220px]">
-              <div className="text-[#D4AE7A] text-xs uppercase tracking-wider mb-3 font-semibold">Quick Info</div>
+              <div className="text-[#D4AE7A] text-xs uppercase tracking-wider mb-3 font-semibold">{t('quickInfoLabel')}</div>
               <div className="space-y-2.5 text-sm mb-4">
                 <div className="flex justify-between">
-                  <span className="text-white/55">Green Fee</span>
+                  <span className="text-white/55">{t('greenFeeLabel')}</span>
                   <span className="text-white font-semibold">{course.greenFeeRange}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-white/55">Par</span>
+                  <span className="text-white/55">{t('parLabel')}</span>
                   <span className="text-white font-mono">{course.par}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-white/55">Yards</span>
+                  <span className="text-white/55">{t('yardsLabel')}</span>
                   <span className="text-white font-mono">{course.yardage.toLocaleString()}</span>
                 </div>
                 {course.handicapLimit && (
                   <div className="flex justify-between">
-                    <span className="text-white/55">Handicap</span>
+                    <span className="text-white/55">{t('handicapLabel')}</span>
                     <span className="text-white font-mono">&le;{course.handicapLimit}</span>
                   </div>
                 )}
@@ -194,7 +190,7 @@ export default async function CoursePage({
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-[#B8912A] text-white font-semibold px-4 py-2.5 rounded-lg hover:bg-[#D4AE7A] transition-colors text-sm w-full"
               >
-                Book via Club Website <ExternalLink size={13} />
+                {t('bookViaClubBtn')} <ExternalLink size={13} />
               </a>
               {course.phone && (
                 <a
@@ -217,9 +213,9 @@ export default async function CoursePage({
 
             {/* Course description */}
             <section>
-              <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-4">About {course.shortName}</h2>
+              <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-4">{t('aboutTitle', { courseName: course.shortName })}</h2>
               <div className="prose prose-slate max-w-none text-[#2C3E50]/80">
-                {course.description.split('\n\n').map((para, i) => (
+                {tcd(`${slug}.description`).split('\n\n').map((para, i) => (
                   <p key={i} className="mb-4 leading-relaxed">{para}</p>
                 ))}
               </div>
@@ -227,16 +223,16 @@ export default async function CoursePage({
 
             {/* Scorecard / tee data */}
             <section>
-              <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-4">Course Data</h2>
+              <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-4">{t('courseDataTitle')}</h2>
               <div className="overflow-x-auto rounded-xl border border-[#E8E3D8]">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="bg-[#0D1B2A] text-white">
-                      <th className="text-left px-4 py-3 font-semibold">Tee</th>
-                      <th className="text-center px-4 py-3 font-semibold">Par</th>
-                      <th className="text-center px-4 py-3 font-semibold">Yardage</th>
-                      <th className="text-center px-4 py-3 font-semibold">Rating</th>
-                      <th className="text-center px-4 py-3 font-semibold">Slope</th>
+                      <th className="text-left px-4 py-3 font-semibold">{t('tableHeaderTee')}</th>
+                      <th className="text-center px-4 py-3 font-semibold">{t('tableHeaderPar')}</th>
+                      <th className="text-center px-4 py-3 font-semibold">{t('tableHeaderYardage')}</th>
+                      <th className="text-center px-4 py-3 font-semibold">{t('tableHeaderRating')}</th>
+                      <th className="text-center px-4 py-3 font-semibold">{t('tableHeaderSlope')}</th>
                     </tr>
                   </thead>
                   <tbody className="bg-white">
@@ -252,31 +248,31 @@ export default async function CoursePage({
                   </tbody>
                 </table>
               </div>
-              <p className="text-[#2C3E50]/45 text-xs mt-2">Ratings verified to best available data. Verify with club before competition use.</p>
+              <p className="text-[#2C3E50]/45 text-xs mt-2">{t('ratingsDisclaimer')}</p>
             </section>
 
             {/* Visitor policy detail */}
             <section>
-              <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-4">How to Get a Tee Time</h2>
+              <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-4">{t('teeTimeTitle')}</h2>
               <div className="bg-white rounded-xl border border-[#E8E3D8] p-6 space-y-4">
                 <div className="flex gap-3">
                   <CheckCircle2 size={18} className="text-[#1A4A30] mt-0.5 shrink-0" />
                   <div>
-                    <div className="font-semibold text-[#0D1B2A] mb-1">Visitor Policy</div>
-                    <p className="text-[#2C3E50]/70 text-sm">{course.visitorPolicy}</p>
+                    <div className="font-semibold text-[#0D1B2A] mb-1">{t('visitorPolicyLabel')}</div>
+                    <p className="text-[#2C3E50]/70 text-sm">{tcd(`${slug}.visitorPolicy`)}</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <Clock size={18} className="text-[#1A4A30] mt-0.5 shrink-0" />
                   <div>
-                    <div className="font-semibold text-[#0D1B2A] mb-1">Best Days to Visit</div>
+                    <div className="font-semibold text-[#0D1B2A] mb-1">{t('bestDaysLabel')}</div>
                     <p className="text-[#2C3E50]/70 text-sm">{course.visitorDays}</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <Users size={18} className="text-[#1A4A30] mt-0.5 shrink-0" />
                   <div>
-                    <div className="font-semibold text-[#0D1B2A] mb-1">How Far in Advance</div>
+                    <div className="font-semibold text-[#0D1B2A] mb-1">{t('advanceBookingLabel')}</div>
                     <p className="text-[#2C3E50]/70 text-sm">{course.advanceBooking}</p>
                   </div>
                 </div>
@@ -284,9 +280,9 @@ export default async function CoursePage({
                   <div className="flex gap-3">
                     <AlertCircle size={18} className="text-[#B8912A] mt-0.5 shrink-0" />
                     <div>
-                      <div className="font-semibold text-[#0D1B2A] mb-1">Handicap Requirement</div>
+                      <div className="font-semibold text-[#0D1B2A] mb-1">{t('handicapRequirementLabel')}</div>
                       <p className="text-[#2C3E50]/70 text-sm">
-                        Men's handicap limit: {course.handicapLimit}. Handicap certificate required — bring your club card or EGA handicap card.
+                        {t('handicapRequirementText', { limit: course.handicapLimit })}
                       </p>
                     </div>
                   </div>
@@ -296,7 +292,7 @@ export default async function CoursePage({
 
             {/* Course highlights */}
             <section>
-              <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-4">Why Play {course.shortName}?</h2>
+              <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-4">{t('whyPlayTitle', { courseName: course.shortName })}</h2>
               <ul className="space-y-3">
                 {course.highlights.map((h) => (
                   <li key={h} className="flex items-start gap-3">
@@ -309,7 +305,7 @@ export default async function CoursePage({
 
             {/* Practical notes */}
             <section>
-              <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-4">Practical Notes</h2>
+              <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-4">{t('practicalNotesTitle')}</h2>
               <div className="bg-[#1A4A30]/5 border border-[#1A4A30]/15 rounded-xl p-6">
                 <ul className="space-y-3">
                   {course.practicalNotes.map((note) => (
@@ -325,7 +321,7 @@ export default async function CoursePage({
             {/* Major history */}
             {course.majorHistory && course.majorHistory.length > 0 && (
               <section>
-                <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-4">Major Championship History</h2>
+                <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-4">{t('majorHistoryTitle')}</h2>
                 <div className="space-y-3">
                   {course.majorHistory.map((item) => (
                     <div key={item} className="flex items-start gap-3 bg-[#B8912A]/8 border border-[#B8912A]/20 rounded-lg px-4 py-3">
@@ -339,7 +335,7 @@ export default async function CoursePage({
 
             {/* Post-round dining */}
             <section>
-              <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-4">After Your Round</h2>
+              <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-4">{t('afterRoundTitle')}</h2>
               <div className="space-y-3">
                 {course.nearbyDining.map((place) => (
                   <div key={place} className="flex items-start gap-3 bg-white border border-[#E8E3D8] rounded-lg px-4 py-3">
@@ -355,7 +351,7 @@ export default async function CoursePage({
                   rel="noopener noreferrer"
                   className="text-[#1A4A30] text-sm font-semibold hover:text-[#B8912A] transition-colors flex items-center gap-1"
                 >
-                  Full restaurant guide — SouthportGuide.co.uk <ExternalLink size={12} />
+                  {t('restaurantGuideLink')} <ExternalLink size={12} />
                 </a>
               </div>
             </section>
@@ -365,9 +361,9 @@ export default async function CoursePage({
           <div className="space-y-6">
             {/* Book now */}
             <div className="bg-[#1A4A30] rounded-xl p-6 text-white">
-              <h3 className="font-display text-lg font-bold mb-2">Book Your Round</h3>
+              <h3 className="font-display text-lg font-bold mb-2">{t('bookRoundTitle')}</h3>
               <p className="text-white/70 text-sm mb-4">
-                Book tee times and golf packages at {course.shortName} via Golf Breaks — the UK's leading golf holiday specialist.
+                {t('bookRoundDesc', { courseName: course.shortName })}
               </p>
               <a
                 href="https://www.golfbreaks.com"
@@ -376,7 +372,7 @@ export default async function CoursePage({
                 className="flex items-center justify-center gap-2 bg-[#B8912A] text-white font-semibold px-4 py-3 rounded-lg hover:bg-[#D4AE7A] transition-colors text-sm w-full"
               >
                 <Trophy size={15} />
-                View Golf Breaks Packages
+                {t('golfBreaksBtn')}
               </a>
               <div className="mt-3 text-center">
                 <a
@@ -385,7 +381,7 @@ export default async function CoursePage({
                   rel="noopener noreferrer"
                   className="text-white/55 text-xs hover:text-white transition-colors flex items-center justify-center gap-1"
                 >
-                  Or book direct at {course.shortName} <ExternalLink size={10} />
+                  {t('bookDirectLink', { courseName: course.shortName })} <ExternalLink size={10} />
                 </a>
               </div>
             </div>
@@ -394,14 +390,14 @@ export default async function CoursePage({
             <div className="bg-white border border-[#E8E3D8] rounded-xl p-5">
               <div className="flex items-center gap-2 mb-2">
                 <Wind size={16} className="text-[#4A7D9A]" />
-                <h3 className="font-semibold text-[#0D1B2A]">Today's Conditions</h3>
+                <h3 className="font-semibold text-[#0D1B2A]">{t('conditionsWidgetTitle')}</h3>
               </div>
-              <p className="text-[#2C3E50]/60 text-sm mb-3">Check current playing conditions before you go.</p>
+              <p className="text-[#2C3E50]/60 text-sm mb-3">{t('conditionsWidgetDesc')}</p>
               <Link
                 href={`${prefix}/conditions`}
                 className="text-[#4A7D9A] text-sm font-semibold hover:text-[#1A4A30] transition-colors flex items-center gap-1"
               >
-                View course conditions <ChevronRight size={13} />
+                {t('conditionsWidgetLink')} <ChevronRight size={13} />
               </Link>
             </div>
 
@@ -409,19 +405,19 @@ export default async function CoursePage({
             <div className="bg-white border border-[#E8E3D8] rounded-xl p-5">
               <h3 className="font-semibold text-[#0D1B2A] mb-3 flex items-center gap-2">
                 <MapPin size={16} className="text-[#1A4A30]" />
-                Getting There
+                {t('gettingThereTitle')}
               </h3>
               <div className="space-y-2 text-sm text-[#2C3E50]/70">
-                <p><strong className="text-[#0D1B2A]">Postcode:</strong> {course.postcode}</p>
-                <p><strong className="text-[#0D1B2A]">From Liverpool Airport:</strong> ~45 min by car</p>
-                <p><strong className="text-[#0D1B2A]">From Manchester Airport:</strong> ~70 min by car</p>
-                <p><strong className="text-[#0D1B2A]">By train:</strong> Merseyrail to Southport, then taxi</p>
+                <p><strong className="text-[#0D1B2A]">{t('postcodeLabel')}</strong> {course.postcode}</p>
+                <p><strong className="text-[#0D1B2A]">{t('fromLiverpoolLabel')}</strong> {t('fromLiverpoolValue')}</p>
+                <p><strong className="text-[#0D1B2A]">{t('fromManchesterLabel')}</strong> {t('fromManchesterValue')}</p>
+                <p><strong className="text-[#0D1B2A]">{t('byTrainLabel')}</strong> {t('byTrainValue')}</p>
               </div>
             </div>
 
             {/* Other courses */}
             <div>
-              <h3 className="font-semibold text-[#0D1B2A] mb-3 uppercase tracking-wider text-xs">Other Courses</h3>
+              <h3 className="font-semibold text-[#0D1B2A] mb-3 uppercase tracking-wider text-xs">{t('otherCoursesHeading')}</h3>
               <div className="space-y-2">
                 {otherCourses.slice(0, 4).map((c) => (
                   <Link
@@ -443,7 +439,7 @@ export default async function CoursePage({
                 href={`${prefix}/courses`}
                 className="text-[#1A4A30] text-sm font-semibold hover:text-[#B8912A] transition-colors flex items-center gap-1 mt-3"
               >
-                Compare all courses <ChevronRight size={13} />
+                {t('compareAllLink')} <ChevronRight size={13} />
               </Link>
             </div>
           </div>

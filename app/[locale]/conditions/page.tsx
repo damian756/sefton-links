@@ -4,27 +4,29 @@ import type { Metadata } from 'next';
 import { buildAlternates } from '@/lib/metadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const tm = await getTranslations({ locale, namespace: 'meta' });
   return {
-    title: 'Sefton Coast Course Conditions — Daily Playing Status',
-    description:
-      'Daily playing conditions at Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale and Southport Old Links. Firm, standard, wet or closed — updated each morning.',
+    title: tm('conditionsTitle'),
+    description: tm('conditionsDesc'),
     alternates: buildAlternates('/conditions'),
   };
 }
 
 export default async function ConditionsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'conditionsPage' });
 
   return (
     <div className="min-h-screen bg-[#F8F5EE]">
       <div className="bg-[#0D1B2A] py-14">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="text-[#B8912A] text-sm uppercase tracking-widest font-semibold mb-3">Daily Update</div>
+          <div className="text-[#B8912A] text-sm uppercase tracking-widest font-semibold mb-3">{t('headerBadge')}</div>
           <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
-            Course Conditions
+            {t('pageTitle')}
           </h1>
           <p className="text-white/65 text-lg max-w-2xl leading-relaxed">
-            Current playing conditions across all six Sefton Coast courses — updated manually each morning by 7:30am. Check before you travel.
+            {t('pageDesc')}
           </p>
         </div>
       </div>
@@ -33,19 +35,13 @@ export default async function ConditionsPage({ params }: { params: Promise<{ loc
         <ConditionTracker />
 
         <div className="mt-12 bg-white border border-[#E8E3D8] rounded-xl p-6">
-          <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-4">About Links Conditions</h2>
+          <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-4">{t('aboutLinksTitle')}</h2>
           <div className="prose prose-slate max-w-none text-[#2C3E50]/75 space-y-4 text-sm leading-relaxed">
-            <p>
-              Links golf conditions are fundamentally different from parkland golf. The key variables are wind direction and strength, recent rainfall and drainage, and the firmness of the turf. A firm, dry course plays completely differently to a wet, soft one — approach shots don't stop, the ball runs further off the tee, and chipping becomes more creative.
-            </p>
-            <p>
-              The Sefton Coast courses drain well by design — they're built on sand. Even after heavy rain, Royal Birkdale and Hillside typically recover faster than inland courses. Southport & Ainsdale and West Lancashire can hold water slightly longer due to their terrain. Formby's woodland sections dry quickest.
-            </p>
-            <p>
-              Wind speed and direction matter more here than almost anywhere in England. The prevailing south-westerly at Royal Birkdale creates the "natural" course experience the routing was designed for. An easterly off the land produces a completely different course. This guide includes a wind direction key for Royal Birkdale specifically.
-            </p>
+            <p>{t('aboutLinksPara1')}</p>
+            <p>{t('aboutLinksPara2')}</p>
+            <p>{t('aboutLinksPara3')}</p>
             <p className="text-[#2C3E50]/45 text-xs">
-              Conditions data is approximate and manually maintained. Always verify with the individual club before travel. SeftonLinks accepts no liability for course closures or conditions that differ from this page.
+              {t('conditionsDisclaimer')}
             </p>
           </div>
         </div>

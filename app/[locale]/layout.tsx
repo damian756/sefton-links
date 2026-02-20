@@ -161,26 +161,27 @@ function Navigation({ locale }: { locale: string }) {
   );
 }
 
-function Footer({ locale }: { locale: string }) {
+async function Footer({ locale }: { locale: string }) {
   const prefix = locale === 'en' ? '' : `/${locale}`;
+  const tf = await getTranslations({ locale, namespace: 'footer' });
 
   const exploreLinks = [
-    ['Courses', `${prefix}/courses`],
-    ['The Open 2026', `${prefix}/the-open-2026`],
-    ['Golf Breaks', `${prefix}/itineraries`],
-    ['Course Conditions', `${prefix}/conditions`],
-    ['Scorecards', `${prefix}/scorecard`],
-    ['Tee Times', `${prefix}/tee-times`],
-    ['Accommodation', `${prefix}/accommodation`],
+    [tf('navCourses'), `${prefix}/courses`],
+    [tf('navTheOpen'), `${prefix}/the-open-2026`],
+    [tf('navGolfBreaks'), `${prefix}/itineraries`],
+    [tf('navConditions'), `${prefix}/conditions`],
+    [tf('navScorecards'), `${prefix}/scorecard`],
+    [tf('navTeeTimes'), `${prefix}/tee-times`],
+    [tf('navAccommodation'), `${prefix}/accommodation`],
   ];
 
   const courseLinks = [
-    ['Royal Birkdale', `${prefix}/courses/royal-birkdale`],
-    ['Hillside Golf Club', `${prefix}/courses/hillside`],
-    ['Formby Golf Club', `${prefix}/courses/formby`],
-    ['West Lancashire', `${prefix}/courses/west-lancashire`],
-    ['Southport & Ainsdale', `${prefix}/courses/southport-ainsdale`],
-    ['Southport Old Links', `${prefix}/courses/southport-old-links`],
+    [tf('courseRoyalBirkdale'), `${prefix}/courses/royal-birkdale`],
+    [tf('courseHillside'), `${prefix}/courses/hillside`],
+    [tf('courseFormby'), `${prefix}/courses/formby`],
+    [tf('courseWestLancs'), `${prefix}/courses/west-lancashire`],
+    [tf('courseSouthportAinsdale'), `${prefix}/courses/southport-ainsdale`],
+    [tf('courseOldLinks'), `${prefix}/courses/southport-old-links`],
   ];
 
   return (
@@ -195,16 +196,16 @@ function Footer({ locale }: { locale: string }) {
               <span className="text-white/30 text-sm font-normal ml-1">.com</span>
             </div>
             <p className="text-sm leading-relaxed text-white/55 mb-5 max-w-xs">
-              The definitive links golf guide to the Sefton Coast — Royal Birkdale, Hillside, Formby and the best of English links golf.
+              {tf('tagline')}
             </p>
             <a
               href="https://churchtownmedia.co.uk"
               className="text-xs text-[#B8912A] hover:text-[#D4AE7A] transition"
             >
-              Built by Churchtown Media ↗
+              {tf('builtByLink')}
             </a>
             <div className="mt-5 pt-5 border-t border-white/10">
-              <p className="text-white/35 text-xs mb-3 uppercase tracking-wider">Sefton Coast Network</p>
+              <p className="text-white/35 text-xs mb-3 uppercase tracking-wider">{tf('networkLabel')}</p>
               <div className="flex flex-col gap-2">
                 <a
                   href="https://www.southportguide.co.uk"
@@ -227,7 +228,7 @@ function Footer({ locale }: { locale: string }) {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Explore</h3>
+            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">{tf('exploreTitle')}</h3>
             <ul className="space-y-2.5 text-sm">
               {exploreLinks.map(([label, href]) => (
                 <li key={href}>
@@ -240,7 +241,7 @@ function Footer({ locale }: { locale: string }) {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Courses</h3>
+            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">{tf('coursesHeading')}</h3>
             <ul className="space-y-2.5 text-sm">
               {courseLinks.map(([label, href]) => (
                 <li key={href}>
@@ -253,35 +254,35 @@ function Footer({ locale }: { locale: string }) {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">The Open 2026</h3>
+            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">{tf('openHeading')}</h3>
             <p className="text-sm text-white/55 mb-4 leading-relaxed">
-              The Open Championship returns to Royal Birkdale, Southport in July 2026 — the first time since Jordan Spieth's iconic win in 2017.
+              {tf('openDesc')}
             </p>
             <Link
               href={`${prefix}/the-open-2026`}
               className="inline-block bg-[#B8912A] text-white text-sm font-semibold px-4 py-2 rounded hover:bg-[#D4AE7A] transition"
             >
-              Open 2026 Guide →
+              {tf('openGuideBtn')}
             </Link>
 
             <div className="mt-6">
-              <h3 className="text-white font-semibold mb-3 text-sm uppercase tracking-wider">Languages</h3>
+              <h3 className="text-white font-semibold mb-3 text-sm uppercase tracking-wider">{tf('languagesHeading')}</h3>
               <LanguageSwitcher />
             </div>
           </div>
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/35">
-          <p>© 2026 SeftonLinks.com — All rights reserved.</p>
+          <p>{tf('copyright')}</p>
           <div className="flex gap-5">
             <Link href={`${prefix}/privacy`} className="hover:text-white/60 transition">
-              Privacy
+              {tf('privacyLink')}
             </Link>
             <Link href={`${prefix}/terms`} className="hover:text-white/60 transition">
-              Terms
+              {tf('termsLink')}
             </Link>
             <Link href={`${prefix}/contact`} className="hover:text-white/60 transition">
-              Contact
+              {tf('contactLink')}
             </Link>
           </div>
         </div>

@@ -7,10 +7,11 @@ import type { Metadata } from 'next';
 import { buildAlternates } from '@/lib/metadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const tm = await getTranslations({ locale, namespace: 'meta' });
   return {
-    title: 'Sefton Coast Golf Breaks — 2, 3 & 5-Day Itineraries',
-    description:
-      'Pre-built golf break itineraries for the Sefton Coast. 2-day, 3-day and 5-day combinations of Royal Birkdale, Hillside, Formby and the full corridor, with accommodation and dining recommendations.',
+    title: tm('itinerariesTitle'),
+    description: tm('itinerariesDesc'),
     alternates: buildAlternates('/itineraries'),
   };
 }
@@ -27,15 +28,16 @@ const COURSE_NAMES: Record<string, string> = {
 export default async function ItinerariesPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const prefix = locale === 'en' ? '' : `/${locale}`;
+  const t = await getTranslations({ locale, namespace: 'itinerariesPage' });
 
   return (
     <div className="min-h-screen bg-[#F8F5EE]">
       <div className="bg-[#0D1B2A] py-14">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="text-[#B8912A] text-sm uppercase tracking-widest font-semibold mb-3">Sefton Coast</div>
-          <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">Golf Break Itineraries</h1>
+          <div className="text-[#B8912A] text-sm uppercase tracking-widest font-semibold mb-3">{t('headerBadge')}</div>
+          <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">{t('pageTitle')}</h1>
           <p className="text-white/65 text-lg max-w-2xl leading-relaxed">
-            Pre-built golf breaks for every duration and budget — from a sharp two-day trip to the full five-course grand tour. Or use the planner to build your own.
+            {t('pageDesc')}
           </p>
         </div>
       </div>
@@ -43,14 +45,14 @@ export default async function ItinerariesPage({ params }: { params: Promise<{ lo
       <div className="container mx-auto px-4 max-w-7xl py-14">
         {/* Interactive planner */}
         <section className="mb-16">
-          <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-2">Golf Break Planner</h2>
-          <p className="text-[#2C3E50]/65 mb-8">Enter your days, budget and handicap — we'll match you to the right itinerary.</p>
+          <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-2">{t('plannerTitle')}</h2>
+          <p className="text-[#2C3E50]/65 mb-8">{t('plannerDesc')}</p>
           <GolfBreakPlanner locale={locale} />
         </section>
 
         {/* Pre-built itineraries */}
         <section>
-          <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-8">All Itineraries</h2>
+          <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-8">{t('allItinerariesTitle')}</h2>
           <div className="space-y-8">
             {SEFTON_ITINERARIES.map((it) => (
               <div key={it.id} className="bg-white rounded-2xl border border-[#E8E3D8] overflow-hidden shadow-sm">
@@ -62,9 +64,9 @@ export default async function ItinerariesPage({ params }: { params: Promise<{ lo
                       <p className="text-[#1A4A30] font-medium mt-1">{it.subtitle}</p>
                     </div>
                     <div className="text-right shrink-0">
-                      <div className="font-bold text-[#0D1B2A]">{it.days} {it.days === 1 ? 'day' : 'days'}</div>
+                      <div className="font-bold text-[#0D1B2A]">{it.days} {it.days === 1 ? t('dayLabel') : t('daysLabel')}</div>
                       <div className="text-[#2C3E50]/50 text-sm">
-                        {it.budget === 'premium' ? '£££ Premium' : it.budget === 'standard' ? '££ Standard' : '£ Value'}
+                        {it.budget === 'premium' ? t('budgetPremium') : it.budget === 'standard' ? t('budgetStandard') : t('budgetValue')}
                       </div>
                     </div>
                   </div>
@@ -74,7 +76,7 @@ export default async function ItinerariesPage({ params }: { params: Promise<{ lo
                   <div className="grid sm:grid-cols-3 gap-4 mb-6">
                     {/* Courses */}
                     <div className="sm:col-span-1">
-                      <div className="text-xs font-semibold text-[#2C3E50]/50 uppercase tracking-wider mb-2">Course Order</div>
+                      <div className="text-xs font-semibold text-[#2C3E50]/50 uppercase tracking-wider mb-2">{t('courseOrderLabel')}</div>
                       <div className="space-y-1.5">
                         {it.courses.map((slug, i) => (
                           <div key={slug} className="flex items-center gap-2">
@@ -95,7 +97,7 @@ export default async function ItinerariesPage({ params }: { params: Promise<{ lo
                     {/* Stay */}
                     <div>
                       <div className="text-xs font-semibold text-[#2C3E50]/50 uppercase tracking-wider mb-2 flex items-center gap-1.5">
-                        <Bed size={12} /> Where to Stay
+                        <Bed size={12} /> {t('whereToStayLabel')}
                       </div>
                       <p className="text-sm text-[#2C3E50]/70 leading-relaxed">{it.accommodation}</p>
                     </div>
@@ -103,7 +105,7 @@ export default async function ItinerariesPage({ params }: { params: Promise<{ lo
                     {/* Eat */}
                     <div>
                       <div className="text-xs font-semibold text-[#2C3E50]/50 uppercase tracking-wider mb-2 flex items-center gap-1.5">
-                        <Utensils size={12} /> Dining
+                        <Utensils size={12} /> {t('diningLabel')}
                       </div>
                       <p className="text-sm text-[#2C3E50]/70 leading-relaxed">{it.dining}</p>
                     </div>
@@ -111,7 +113,7 @@ export default async function ItinerariesPage({ params }: { params: Promise<{ lo
 
                   <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-[#F8F5EE] rounded-xl p-4">
                     <div>
-                      <div className="text-xs text-[#2C3E50]/50 uppercase tracking-wider mb-0.5">Estimated Green Fees</div>
+                      <div className="text-xs text-[#2C3E50]/50 uppercase tracking-wider mb-0.5">{t('estimatedGreenFeesLabel')}</div>
                       <div className="font-bold text-[#0D1B2A]">{it.estimatedCost}</div>
                     </div>
                     <a
@@ -121,7 +123,7 @@ export default async function ItinerariesPage({ params }: { params: Promise<{ lo
                       className="flex items-center gap-2 bg-[#1A4A30] text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-[#2A6A45] transition-colors text-sm shrink-0"
                     >
                       <Trophy size={14} />
-                      Book via Golf Breaks ↗
+                      {t('bookViaGolfBreaksBtn')}
                     </a>
                   </div>
                 </div>
@@ -132,20 +134,12 @@ export default async function ItinerariesPage({ params }: { params: Promise<{ lo
 
         {/* Editorial */}
         <section className="mt-14 bg-white border border-[#E8E3D8] rounded-2xl p-8">
-          <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-5">How to Plan a Sefton Coast Golf Trip</h2>
+          <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-5">{t('howToPlanTitle')}</h2>
           <div className="prose prose-slate max-w-none text-[#2C3E50]/75 space-y-4 text-sm leading-relaxed">
-            <p>
-              The Sefton Coast courses are clustered enough that a two-day trip can cover two or three rounds without difficult logistics. Royal Birkdale and Hillside are literally adjacent — you could walk between them. Southport & Ainsdale is three miles further south. Formby is five miles from Birkdale via the A565.
-            </p>
-            <p>
-              For multi-day trips, base yourself in Southport. The town has the widest hotel choice, and everything from Lord Street to Birkdale is within taxi distance. If you want quieter and cheaper accommodation, Formby village is 20 minutes south and has decent B&B options.
-            </p>
-            <p>
-              The order matters. Don't play Royal Birkdale first — you'll spend the rest of the trip comparing everything to it. Build up: start with Old Links or S&A, move to Hillside on day two, arrive at Birkdale when you've found your links legs. The contrast will make the finale feel earned.
-            </p>
-            <p>
-              Book tee times before you arrive. Royal Birkdale fills weeks ahead, Hillside two to four weeks, S&A and Old Links you can often get on a week out. Formby requires advance contact with the club secretary — there's no online booking.
-            </p>
+            <p>{t('howToPlanPara1')}</p>
+            <p>{t('howToPlanPara2')}</p>
+            <p>{t('howToPlanPara3')}</p>
+            <p>{t('howToPlanPara4')}</p>
           </div>
         </section>
       </div>

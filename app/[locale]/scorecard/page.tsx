@@ -3,12 +3,14 @@ import { ChevronRight, Trophy } from 'lucide-react';
 import { COURSES } from '@/lib/courses';
 import type { Metadata } from 'next';
 import { BASE_URL, buildAlternates } from '@/lib/metadata';
+import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const tm = await getTranslations({ locale, namespace: 'meta' });
   return {
-    title: 'Sefton Coast Golf Scorecards — Par, Yardage & Course Rating',
-    description:
-      'Complete scorecard data for all six Sefton Coast golf courses — par, yardage from all tees, course rating and slope rating. Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale and Southport Old Links.',
+    title: tm('scorecardTitle'),
+    description: tm('scorecardDesc'),
     alternates: buildAlternates('/scorecard'),
   };
 }
@@ -16,6 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function ScorecardPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const prefix = locale === 'en' ? '' : `/${locale}`;
+  const t = await getTranslations({ locale, namespace: 'scorecardPage' });
 
   return (
     <div className="min-h-screen bg-[#F8F5EE]">
@@ -46,10 +49,10 @@ export default async function ScorecardPage({ params }: { params: Promise<{ loca
 
       <div className="bg-[#0D1B2A] py-14">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="text-[#B8912A] text-sm uppercase tracking-widest font-semibold mb-3">Course Data</div>
-          <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">Scorecard Database</h1>
+          <div className="text-[#B8912A] text-sm uppercase tracking-widest font-semibold mb-3">{t('headerBadge')}</div>
+          <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">{t('pageTitle')}</h1>
           <p className="text-white/65 text-lg max-w-2xl">
-            Par, yardage from all tees, course rating and slope rating for every Sefton Coast course. Use to plan your game and set expectations before you arrive.
+            {t('pageDesc')}
           </p>
         </div>
       </div>
@@ -71,7 +74,7 @@ export default async function ScorecardPage({ params }: { params: Promise<{ loca
                   href={`${prefix}/courses/${course.slug}`}
                   className="hidden sm:flex items-center gap-1 text-[#1A4A30] text-sm font-semibold hover:text-[#B8912A] transition-colors shrink-0"
                 >
-                  Full guide <ChevronRight size={13} />
+                  {t('fullGuideLink')} <ChevronRight size={13} />
                 </Link>
               </div>
 
@@ -80,12 +83,12 @@ export default async function ScorecardPage({ params }: { params: Promise<{ loca
                 <table className="w-full text-sm min-w-[500px]">
                   <thead>
                     <tr className="bg-[#0D1B2A] text-white">
-                      <th className="text-left px-4 py-3 font-semibold">Tee</th>
-                      <th className="text-center px-4 py-3 font-semibold">Par</th>
-                      <th className="text-center px-4 py-3 font-semibold">Yardage</th>
-                      <th className="text-center px-4 py-3 font-semibold">Metres</th>
-                      <th className="text-center px-4 py-3 font-semibold">Rating</th>
-                      <th className="text-center px-4 py-3 font-semibold">Slope</th>
+                      <th className="text-left px-4 py-3 font-semibold">{t('tableHeaderTee')}</th>
+                      <th className="text-center px-4 py-3 font-semibold">{t('tableHeaderPar')}</th>
+                      <th className="text-center px-4 py-3 font-semibold">{t('tableHeaderYardage')}</th>
+                      <th className="text-center px-4 py-3 font-semibold">{t('tableHeaderMetres')}</th>
+                      <th className="text-center px-4 py-3 font-semibold">{t('tableHeaderRating')}</th>
+                      <th className="text-center px-4 py-3 font-semibold">{t('tableHeaderSlope')}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -108,10 +111,27 @@ export default async function ScorecardPage({ params }: { params: Promise<{ loca
               {/* Summary stats */}
               <div className="flex flex-wrap gap-3">
                 {[
-                  { label: 'Green Fee', value: course.greenFeeRange },
-                  { label: 'Visitor Policy', value: course.difficulty === 'championship' ? 'Restricted' : course.difficulty === 'challenging' ? 'By arrangement' : 'Welcome' },
-                  { label: 'Championship Rating', value: `${course.courseRating} / ${course.slopeRating}` },
-                  { label: 'Distance from Birkdale', value: course.distanceFromBirkdale === '0' ? 'Adjacent' : `~${course.distanceFromBirkdale} miles` },
+                  {
+                    label: t('statGreenFeeLabel'),
+                    value: course.greenFeeRange,
+                  },
+                  {
+                    label: t('statVisitorPolicyLabel'),
+                    value:
+                      course.difficulty === 'championship'
+                        ? t('statVisitorRestricted')
+                        : course.difficulty === 'challenging'
+                        ? t('statVisitorByArrangement')
+                        : t('statVisitorWelcome'),
+                  },
+                  {
+                    label: t('statChampRatingLabel'),
+                    value: `${course.courseRating} / ${course.slopeRating}`,
+                  },
+                  {
+                    label: t('statDistanceFromBirkdaleLabel'),
+                    value: course.distanceFromBirkdale === '0' ? t('statAdjacentValue') : `~${course.distanceFromBirkdale} miles`,
+                  },
                 ].map(({ label, value }) => (
                   <div key={label} className="bg-[#F8F5EE] rounded-lg px-3 py-2">
                     <div className="text-xs text-[#2C3E50]/50 uppercase tracking-wider">{label}</div>
@@ -125,23 +145,23 @@ export default async function ScorecardPage({ params }: { params: Promise<{ loca
 
         {/* Explanation */}
         <div className="bg-white border border-[#E8E3D8] rounded-xl p-6">
-          <h2 className="font-display text-xl font-bold text-[#0D1B2A] mb-4">Understanding the Data</h2>
+          <h2 className="font-display text-xl font-bold text-[#0D1B2A] mb-4">{t('understandingDataTitle')}</h2>
           <div className="grid sm:grid-cols-2 gap-6 text-sm text-[#2C3E50]/70 leading-relaxed">
             <div>
-              <h3 className="font-semibold text-[#0D1B2A] mb-2">Course Rating</h3>
-              <p>The expected score for a scratch golfer (zero handicap) from that tee. A rating of 76.5 means a scratch player would be expected to shoot 76.5 in normal conditions.</p>
+              <h3 className="font-semibold text-[#0D1B2A] mb-2">{t('courseRatingTitle')}</h3>
+              <p>{t('courseRatingDesc')}</p>
             </div>
             <div>
-              <h3 className="font-semibold text-[#0D1B2A] mb-2">Slope Rating</h3>
-              <p>Measures difficulty relative to a bogey golfer. The USGA scale runs from 55 to 155 — a slope of 113 is average, 148 (Royal Birkdale championship) is extremely difficult.</p>
+              <h3 className="font-semibold text-[#0D1B2A] mb-2">{t('slopeRatingTitle')}</h3>
+              <p>{t('slopeRatingDesc')}</p>
             </div>
             <div>
-              <h3 className="font-semibold text-[#0D1B2A] mb-2">Yardage & Metres</h3>
-              <p>English clubs use yards. Metres are provided for continental European visitors. GPS devices and rangefinders are widely permitted — check with each club before use in competitions.</p>
+              <h3 className="font-semibold text-[#0D1B2A] mb-2">{t('yardageMetresTitle')}</h3>
+              <p>{t('yardageMetresDesc')}</p>
             </div>
             <div>
-              <h3 className="font-semibold text-[#0D1B2A] mb-2">Data Accuracy</h3>
-              <p>Data verified to best available sources. Course ratings and slope may be updated periodically by the club. Always confirm with the club before competition use.</p>
+              <h3 className="font-semibold text-[#0D1B2A] mb-2">{t('dataAccuracyTitle')}</h3>
+              <p>{t('dataAccuracyDesc')}</p>
             </div>
           </div>
         </div>
