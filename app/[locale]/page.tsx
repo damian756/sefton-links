@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 import { Trophy, Wind, MapPin, Calendar, ChevronRight, Star, Flag, Clock, Users } from 'lucide-react';
@@ -120,18 +121,20 @@ export default async function HomePage({
           HERO — NAVY LINKS LANDSCAPE
       ═══════════════════════════════════════════ */}
       <section className="relative bg-[#0D1B2A] overflow-hidden">
-        {/* Background texture */}
+        <Image
+          src="/hero-golf.jpg"
+          alt="Golf course at sunset on the Sefton Coast"
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+          quality={85}
+        />
+        <div className="absolute inset-0 bg-[#0D1B2A]/70" />
         <div
-          className="absolute inset-0 opacity-15"
+          className="absolute inset-0 opacity-20"
           style={{
             backgroundImage: `radial-gradient(circle at 25% 60%, #1A4A30 0%, transparent 50%), radial-gradient(circle at 75% 30%, #B8912A 0%, transparent 45%)`,
-          }}
-        />
-        {/* Grid pattern */}
-        <div
-          className="absolute inset-0 opacity-5"
-          style={{
-            backgroundImage: `repeating-linear-gradient(0deg, #B8912A, #B8912A 1px, transparent 1px, transparent 80px), repeating-linear-gradient(90deg, #B8912A, #B8912A 1px, transparent 1px, transparent 80px)`,
           }}
         />
 
