@@ -323,20 +323,20 @@ export default async function OpenPage({
 
               <div className="mt-6 flex flex-wrap gap-4">
                 <a
-                  href="https://www.southportguide.co.uk/the-open-2026/accommodation"
+                  href="https://www.southportguide.co.uk/hotels"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 border border-[#1A4A30] text-[#1A4A30] font-semibold px-5 py-2.5 rounded-lg hover:bg-[#1A4A30] hover:text-white transition-colors text-sm"
                 >
-                  <Bed size={15} /> Hotels Near Royal Birkdale ↗
+                  <Bed size={15} /> Southport Hotels Guide ↗
                 </a>
                 <a
-                  href="https://www.formbyguide.co.uk"
+                  href="https://www.formbyguide.co.uk/accommodation"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 border border-[#2E6B3E] text-[#2E6B3E] font-semibold px-5 py-2.5 rounded-lg hover:bg-[#2E6B3E] hover:text-white transition-colors text-sm"
                 >
-                  <Bed size={15} /> Formby Guide ↗
+                  <Bed size={15} /> Formby Accommodation ↗
                 </a>
               </div>
             </section>
