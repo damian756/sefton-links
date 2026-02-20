@@ -5,7 +5,7 @@ import { buildAlternates } from '@/lib/metadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   return {
-    title: 'Sefton Coast Course Conditions — Daily Update | SeftonLinks',
+    title: 'Sefton Coast Course Conditions — Daily Playing Status',
     description:
       'Daily playing conditions at Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale and Southport Old Links. Firm, standard, wet or closed — updated each morning.',
     alternates: buildAlternates('/conditions'),

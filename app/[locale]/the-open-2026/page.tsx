@@ -12,7 +12,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   return {
-    title: 'The Open Championship 2026 — Royal Birkdale Guide | SeftonLinks',
+    title: 'The Open Championship 2026 at Royal Birkdale — Visitor Guide',
     description:
       'Your complete guide to The 155th Open Championship at Royal Birkdale, Southport, July 16–19 2026. History, past champions, tickets, accommodation, course guide and travel advice.',
     alternates: buildAlternates('/the-open-2026'),

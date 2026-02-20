@@ -7,7 +7,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   return {
-    title: 'Contact',
+    title: 'Contact SeftonLinks',
     description: 'Get in touch with SeftonLinks — questions, course corrections, featured listings and business enquiries.',
     alternates: buildAlternates('/contact'),
   };

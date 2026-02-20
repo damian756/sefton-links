@@ -22,7 +22,15 @@ export async function generateMetadata({
   const course = getCourseBySlug(slug);
   if (!course) return {};
 
-  const title = `${course.name} — Visitor Guide, Green Fees & Tee Times`;
+  const COURSE_TITLES: Record<string, string> = {
+    'royal-birkdale': 'Royal Birkdale Golf Club — Visitor Guide, Green Fees & Tee Times',
+    'hillside': 'Hillside Golf Club Southport — Visitor Guide & Green Fees',
+    'formby': 'Formby Golf Club — Visitor Guide, Green Fees & Tee Times',
+    'west-lancashire': 'West Lancashire Golf Club — Visitor Green Fees & Tee Times',
+    'southport-ainsdale': 'Southport & Ainsdale Golf Club — Visitor Guide & Green Fees',
+    'southport-old-links': 'Southport Old Links Golf Club — Visitor Guide & Green Fees',
+  };
+  const title = COURSE_TITLES[slug] ?? `${course.name} — Visitor Guide, Green Fees & Tee Times`;
   const description = `${course.tagline}. Green fee ${course.greenFeeRange}. Par ${course.par}, ${course.yardage.toLocaleString()} yards. Full visitor policy, how to book and post-round guide.`;
 
   return {

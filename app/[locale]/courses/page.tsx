@@ -8,7 +8,7 @@ import { BASE_URL, buildAlternates } from '@/lib/metadata';
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   return {
-    title: 'Sefton Coast Golf Courses — Royal Birkdale, Hillside, Formby & More',
+    title: 'Sefton Coast Golf Courses — Royal Birkdale, Hillside & Formby',
     description:
       'The complete guide to all six Sefton Coast links golf courses — visitor policies, green fees, course ratings, tee time booking and full course guides.',
     alternates: buildAlternates('/courses'),

@@ -16,8 +16,8 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'home' });
 
   return {
-    title: 'SeftonLinks — Links Golf Guide to the Sefton Coast | The Open Championship 2026',
-    description: t('heroSubtitle'),
+    title: { absolute: 'Sefton Coast Links Golf — Royal Birkdale, Hillside & The Open 2026 | SeftonLinks.com' },
+    description: 'Six championship links courses on the Sefton Coast — Royal Birkdale, Hillside, Formby, West Lancashire and more. Visitor guides, tee times, green fees and golf breaks. The Open 2026.',
     alternates: buildAlternates('/'),
   };
 }

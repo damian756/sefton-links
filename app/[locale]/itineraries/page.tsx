@@ -8,7 +8,7 @@ import { buildAlternates } from '@/lib/metadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   return {
-    title: 'Sefton Coast Golf Break Itineraries — 2-Day, 3-Day & 5-Day | SeftonLinks',
+    title: 'Sefton Coast Golf Breaks — 2, 3 & 5-Day Itineraries',
     description:
       'Pre-built golf break itineraries for the Sefton Coast. 2-day, 3-day and 5-day combinations of Royal Birkdale, Hillside, Formby and the full corridor, with accommodation and dining recommendations.',
     alternates: buildAlternates('/itineraries'),

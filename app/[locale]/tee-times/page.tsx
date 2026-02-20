@@ -6,9 +6,9 @@ import { buildAlternates } from '@/lib/metadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   return {
-    title: 'How to Get Tee Times at Sefton Coast Golf Clubs | SeftonLinks',
+    title: 'Tee Times at Royal Birkdale & Sefton Coast Golf Clubs',
     description:
-      'Visitor policies, booking process and advance notice required at Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale and Southport Old Links. Formby Golf Club visitor policy explained.',
+      'How to book tee times as a visitor at Royal Birkdale, Hillside, Formby and all six Sefton Coast clubs. Advance notice required, visitor days, direct contacts and Formby\'s guest policy explained.',
     alternates: buildAlternates('/tee-times'),
   };
 }

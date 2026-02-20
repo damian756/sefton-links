@@ -5,9 +5,9 @@ import { buildAlternates } from '@/lib/metadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   return {
-    title: 'Accommodation for Golfers near Royal Birkdale & Sefton Coast | SeftonLinks',
+    title: 'Golf Accommodation near Royal Birkdale, Southport',
     description:
-      'Curated accommodation for golf visitors near Royal Birkdale, Hillside and the Sefton Coast courses. Hotels, B&Bs and holiday cottages — sorted by proximity and golfer-friendliness.',
+      'Where to stay near Royal Birkdale and the Sefton Coast golf courses. Hotels, B&Bs and holiday cottages in Southport and Birkdale — sorted by distance, with Open Championship 2026 availability notes.',
     alternates: buildAlternates('/accommodation'),
   };
 }
