@@ -2,6 +2,8 @@ import { getTranslations } from 'next-intl/server';
 import ConditionTracker from '@/components/ConditionTracker';
 import type { Metadata } from 'next';
 import { buildAlternates } from '@/lib/metadata';
+import { getSouthportWeather } from '@/lib/weather';
+import { CONDITIONS_DATA } from '@/lib/conditions-data';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -16,6 +18,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function ConditionsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'conditionsPage' });
+
+  const weather = await getSouthportWeather();
+  const updatedDate = new Intl.DateTimeFormat('en-GB', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+  }).format(new Date());
 
   return (
     <div className="min-h-screen bg-[#F8F5EE]">
@@ -32,7 +41,11 @@ export default async function ConditionsPage({ params }: { params: Promise<{ loc
       </div>
 
       <div className="container mx-auto px-4 max-w-7xl py-12">
-        <ConditionTracker />
+        <ConditionTracker
+          conditions={CONDITIONS_DATA}
+          weather={weather}
+          updatedDate={updatedDate}
+        />
 
         <div className="mt-12 bg-white border border-[#E8E3D8] rounded-xl p-6">
           <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-4">{t('aboutLinksTitle')}</h2>

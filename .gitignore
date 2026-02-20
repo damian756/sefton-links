@@ -21,3 +21,7 @@ next-env.d.ts
 # OS
 .DS_Store
 Thumbs.db
+
+# Build artefacts
+*.txt
+build-output.txt
