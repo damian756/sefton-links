@@ -61,7 +61,7 @@ const ACCOMMODATION = [
         desc: 'Several quality B&Bs in Formby village — quieter, more affordable base. The village has good restaurants within walking distance. 20 min drive to Birkdale. Check SouthportGuide.co.uk for full listings.',
         approxRate: '£70–£120/night',
         golferFriendly: ['Flexible breakfast times', 'Good value', 'Quiet setting', 'Village amenities'],
-        bookingUrl: 'https://www.formbyguide.co.uk/accommodation',
+        bookingUrl: 'https://www.formbyguide.co.uk',
       },
     ],
   },
@@ -194,18 +194,18 @@ export default async function AccommodationPage({ params }: { params: Promise<{ 
 
         {/* Network links */}
         <div className="grid sm:grid-cols-2 gap-6">
-          <a href="https://www.southportguide.co.uk/accommodation" target="_blank" rel="noopener noreferrer" className="group bg-white border border-[#E8E3D8] rounded-xl p-5 flex items-center gap-4 hover:border-[#1A4A30]/30 transition-all card-hover">
+          <a href="https://www.southportguide.co.uk/the-open-2026/accommodation" target="_blank" rel="noopener noreferrer" className="group bg-white border border-[#E8E3D8] rounded-xl p-5 flex items-center gap-4 hover:border-[#1A4A30]/30 transition-all card-hover">
             <Bed size={20} className="text-[#1A4A30] shrink-0" />
             <div>
-              <div className="font-semibold text-[#0D1B2A] group-hover:text-[#1A4A30] transition-colors">Full Southport Accommodation Guide</div>
-              <div className="text-[#2C3E50]/55 text-sm">SouthportGuide.co.uk — hotels, B&Bs, self-catering</div>
+              <div className="font-semibold text-[#0D1B2A] group-hover:text-[#1A4A30] transition-colors">Hotels Ranked by Distance to Royal Birkdale</div>
+              <div className="text-[#2C3E50]/55 text-sm">SouthportGuide.co.uk — every hotel ranked by walk time to the course</div>
             </div>
             <ExternalLink size={14} className="text-[#2C3E50]/30 ml-auto shrink-0" />
           </a>
-          <a href="https://www.formbyguide.co.uk/accommodation" target="_blank" rel="noopener noreferrer" className="group bg-white border border-[#E8E3D8] rounded-xl p-5 flex items-center gap-4 hover:border-[#2E6B3E]/30 transition-all card-hover">
+          <a href="https://www.formbyguide.co.uk" target="_blank" rel="noopener noreferrer" className="group bg-white border border-[#E8E3D8] rounded-xl p-5 flex items-center gap-4 hover:border-[#2E6B3E]/30 transition-all card-hover">
             <Bed size={20} className="text-[#2E6B3E] shrink-0" />
             <div>
-              <div className="font-semibold text-[#0D1B2A] group-hover:text-[#1A4A30] transition-colors">Formby Accommodation Guide</div>
+              <div className="font-semibold text-[#0D1B2A] group-hover:text-[#1A4A30] transition-colors">Formby Guide</div>
               <div className="text-[#2C3E50]/55 text-sm">FormbyGuide.co.uk — quieter base, 5 miles from Birkdale</div>
             </div>
             <ExternalLink size={14} className="text-[#2C3E50]/30 ml-auto shrink-0" />
