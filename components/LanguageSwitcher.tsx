@@ -1,8 +1,9 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
+import { FLAGS } from './flags';
 
-const LANGUAGES = [
+const LANGUAGES: [string, string][] = [
   ['EN', 'en'],
   ['DE', 'de'],
   ['JA', 'ja'],
@@ -21,7 +22,7 @@ const LANGUAGES = [
   ['CA', 'ca'],
   ['CY', 'cy'],
   ['AR', 'ar'],
-] as const;
+];
 
 const NON_EN_LOCALES = new Set<string>(LANGUAGES.filter(([, c]) => c !== 'en').map(([, c]) => c));
 
@@ -39,19 +40,23 @@ export default function LanguageSwitcher() {
 
   return (
     <div className="flex flex-wrap gap-2 text-xs">
-      {LANGUAGES.map(([label, locale]) => (
-        <a
-          key={locale}
-          href={buildHref(locale)}
-          className={`px-2 py-1 rounded transition ${
-            locale === currentLocale
-              ? 'bg-[#B8912A]/40 text-white font-semibold'
-              : 'bg-white/10 text-white/60 hover:bg-[#B8912A]/30 hover:text-white'
-          }`}
-        >
-          {label}
-        </a>
-      ))}
+      {LANGUAGES.map(([label, locale]) => {
+        const FlagComponent = FLAGS[locale];
+        return (
+          <a
+            key={locale}
+            href={buildHref(locale)}
+            className={`flex items-center gap-1.5 px-2 py-1 rounded transition ${
+              locale === currentLocale
+                ? 'bg-[#B8912A]/40 text-white font-semibold'
+                : 'bg-white/10 text-white/60 hover:bg-[#B8912A]/30 hover:text-white'
+            }`}
+          >
+            {FlagComponent && <FlagComponent />}
+            {label}
+          </a>
+        );
+      })}
     </div>
   );
 }

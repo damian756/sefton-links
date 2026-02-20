@@ -5,29 +5,30 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { FLAGS } from './flags';
 
-const LANGUAGES: [string, string, string][] = [
-  ['🇬🇧', 'English', 'en'],
-  ['🇩🇪', 'Deutsch', 'de'],
-  ['🇫🇷', 'Français', 'fr'],
-  ['🇪🇸', 'Español', 'es'],
-  ['🇮🇹', 'Italiano', 'it'],
-  ['🇵🇹', 'Português', 'pt'],
-  ['🇳🇱', 'Nederlands', 'nl'],
-  ['🇸🇪', 'Svenska', 'sv'],
-  ['🇩🇰', 'Dansk', 'da'],
-  ['🇳🇴', 'Norsk', 'no'],
-  ['🇫🇮', 'Suomi', 'fi'],
-  ['🇵🇱', 'Polski', 'pl'],
-  ['🇯🇵', '日本語', 'ja'],
-  ['🇰🇷', '한국어', 'ko'],
-  ['🇨🇳', '中文', 'zh'],
-  ['🇸🇦', 'العربية', 'ar'],
-  ['🏴󠁧󠁢󠁷󠁬󠁳󠁿', 'Cymraeg', 'cy'],
-  ['🇦🇩', 'Català', 'ca'],
+const LANGUAGES: [string, string][] = [
+  ['English', 'en'],
+  ['Deutsch', 'de'],
+  ['Français', 'fr'],
+  ['Español', 'es'],
+  ['Italiano', 'it'],
+  ['Português', 'pt'],
+  ['Nederlands', 'nl'],
+  ['Svenska', 'sv'],
+  ['Dansk', 'da'],
+  ['Norsk', 'no'],
+  ['Suomi', 'fi'],
+  ['Polski', 'pl'],
+  ['日本語', 'ja'],
+  ['한국어', 'ko'],
+  ['中文', 'zh'],
+  ['العربية', 'ar'],
+  ['Cymraeg', 'cy'],
+  ['Català', 'ca'],
 ];
 
-const NON_EN_LOCALES = new Set(LANGUAGES.filter(([,, c]) => c !== 'en').map(([,, c]) => c));
+const NON_EN_LOCALES = new Set(LANGUAGES.filter(([, c]) => c !== 'en').map(([, c]) => c));
 
 function useCurrentLocaleAndPath() {
   const pathname = usePathname();
@@ -42,6 +43,11 @@ function buildHref(locale: string, pagePath: string) {
   return `/${locale}${pagePath === '/' ? '' : pagePath}`;
 }
 
+function Flag({ code }: { code: string }) {
+  const Component = FLAGS[code];
+  return Component ? <Component /> : null;
+}
+
 export default function NavMenu({ locale }: { locale: string }) {
   const [open, setOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
@@ -50,7 +56,6 @@ export default function NavMenu({ locale }: { locale: string }) {
   const t = useTranslations('nav');
 
   const { currentLocale, pagePath } = useCurrentLocaleAndPath();
-  const currentLang = LANGUAGES.find(([,, c]) => c === currentLocale) || LANGUAGES[0];
 
   const prefix = locale === 'en' ? '' : `/${locale}`;
 
@@ -101,7 +106,7 @@ export default function NavMenu({ locale }: { locale: string }) {
             className="flex items-center gap-1.5 px-2.5 py-1.5 rounded text-sm font-medium text-[#2C3E50] hover:text-[#0D1B2A] hover:bg-[#E8E3D8]/60 transition-colors"
             aria-label="Select language"
           >
-            <span className="text-base leading-none">{currentLang[0]}</span>
+            <Flag code={currentLocale} />
             <span className="text-xs font-semibold uppercase">{currentLocale}</span>
             <svg width="10" height="6" viewBox="0 0 10 6" className={`transition-transform ${langOpen ? 'rotate-180' : ''}`}>
               <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
@@ -111,7 +116,7 @@ export default function NavMenu({ locale }: { locale: string }) {
           {langOpen && (
             <div className="absolute right-0 top-full mt-2 bg-white border border-[#E8E3D8] rounded-xl shadow-xl py-2 w-56 max-h-80 overflow-y-auto z-50">
               <div className="px-3 py-1.5 text-[10px] text-[#9BA8B0] uppercase tracking-wider font-semibold">Language</div>
-              {LANGUAGES.map(([flag, name, code]) => (
+              {LANGUAGES.map(([name, code]) => (
                 <a
                   key={code}
                   href={buildHref(code, pagePath)}
@@ -122,7 +127,7 @@ export default function NavMenu({ locale }: { locale: string }) {
                   }`}
                   onClick={() => setLangOpen(false)}
                 >
-                  <span className="text-base leading-none w-6 text-center">{flag}</span>
+                  <Flag code={code} />
                   <span>{name}</span>
                   {code === currentLocale && (
                     <svg className="ml-auto text-[#B8912A]" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -136,14 +141,14 @@ export default function NavMenu({ locale }: { locale: string }) {
         </div>
       </div>
 
-      {/* Mobile: hamburger + language flag */}
+      {/* Mobile: language flag + hamburger */}
       <div className="flex items-center gap-1 lg:hidden">
         <button
           onClick={() => { setMobileLangOpen(!mobileLangOpen); setOpen(false); }}
-          className="p-2 rounded text-[#0D1B2A] hover:bg-[#E8E3D8] transition-colors"
+          className="p-2 rounded text-[#0D1B2A] hover:bg-[#E8E3D8] transition-colors flex items-center gap-1"
           aria-label="Select language"
         >
-          <span className="text-lg leading-none">{currentLang[0]}</span>
+          <Flag code={currentLocale} />
         </button>
         <button
           onClick={() => { setOpen(!open); setMobileLangOpen(false); }}
@@ -182,7 +187,7 @@ export default function NavMenu({ locale }: { locale: string }) {
           <div className="container mx-auto px-4 py-4 max-w-7xl">
             <div className="text-[10px] text-[#9BA8B0] uppercase tracking-wider font-semibold mb-3 px-2">Language</div>
             <div className="grid grid-cols-2 gap-1">
-              {LANGUAGES.map(([flag, name, code]) => (
+              {LANGUAGES.map(([name, code]) => (
                 <a
                   key={code}
                   href={buildHref(code, pagePath)}
@@ -193,7 +198,7 @@ export default function NavMenu({ locale }: { locale: string }) {
                       : 'text-[#2C3E50] hover:bg-[#F8F5EE]'
                   }`}
                 >
-                  <span className="text-base leading-none">{flag}</span>
+                  <Flag code={code} />
                   <span className="truncate">{name}</span>
                 </a>
               ))}
