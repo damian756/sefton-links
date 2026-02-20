@@ -15,6 +15,7 @@ export const routing = defineRouting({
   locales,
   defaultLocale: 'en',
   localePrefix: 'as-needed',
-  // Treat all English variants as the default 'en' locale
-  localeDetection: true,
+  // URL is the sole authority on locale — no cookie persistence, no Accept-Language redirects.
+  // Users navigate to /de/, /ja/ etc. explicitly via the language switcher.
+  localeDetection: false,
 });
