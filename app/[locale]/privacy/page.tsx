@@ -22,7 +22,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
           <h2 className="font-display text-xl font-bold text-[#0D1B2A]">Affiliate Links</h2>
           <p>Some links on this site are affiliate links (Golf Breaks, Booking.com, Sykes Cottages). These are clearly labelled. Clicking them may result in a commission to SeftonLinks.com at no extra cost to you.</p>
           <h2 className="font-display text-xl font-bold text-[#0D1B2A]">Contact</h2>
-          <p>Privacy queries: <a href="mailto:hello@seftonlinks.com" className="text-[#1A4A30]">hello@seftonlinks.com</a></p>
+          <p>Privacy queries: <a href="mailto:hello@churchtownmedia.co.uk" className="text-[#1A4A30]">hello@churchtownmedia.co.uk</a></p>
         </div>
       </div>
     </div>

@@ -2,18 +2,14 @@ import Link from 'next/link';
 import { ChevronRight, Trophy } from 'lucide-react';
 import { COURSES } from '@/lib/courses';
 import type { Metadata } from 'next';
-
-const BASE_URL = 'https://www.seftonlinks.com';
+import { BASE_URL, buildAlternates } from '@/lib/metadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   return {
     title: 'Sefton Coast Golf Scorecards — Par, Yardage, Rating & Slope | SeftonLinks',
     description:
       'Complete scorecard data for all six Sefton Coast golf courses — par, yardage from all tees, course rating, slope rating and green fee range. Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale and Southport Old Links.',
-    alternates: {
-      canonical: `${BASE_URL}/scorecard`,
-      languages: { 'en': `${BASE_URL}/scorecard`, 'de': `${BASE_URL}/de/scorecard`, 'ja': `${BASE_URL}/ja/scorecard`, 'x-default': `${BASE_URL}/scorecard` },
-    },
+    alternates: buildAlternates('/scorecard'),
   };
 }
 

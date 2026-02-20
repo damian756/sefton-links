@@ -2,18 +2,14 @@ import Link from 'next/link';
 import { Phone, ExternalLink, AlertCircle, CheckCircle2, Clock, Users, ChevronRight } from 'lucide-react';
 import { COURSES } from '@/lib/courses';
 import type { Metadata } from 'next';
-
-const BASE_URL = 'https://www.seftonlinks.com';
+import { buildAlternates } from '@/lib/metadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   return {
     title: 'How to Get Tee Times at Sefton Coast Golf Clubs | SeftonLinks',
     description:
       'Visitor policies, booking process and advance notice required at Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale and Southport Old Links. Formby Golf Club visitor policy explained.',
-    alternates: {
-      canonical: `${BASE_URL}/tee-times`,
-      languages: { 'en': `${BASE_URL}/tee-times`, 'de': `${BASE_URL}/de/tee-times`, 'ja': `${BASE_URL}/ja/tee-times`, 'x-default': `${BASE_URL}/tee-times` },
-    },
+    alternates: buildAlternates('/tee-times'),
   };
 }
 

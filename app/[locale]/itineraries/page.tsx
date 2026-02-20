@@ -4,18 +4,14 @@ import { Calendar, Trophy, MapPin, Bed, Utensils, ChevronRight } from 'lucide-re
 import GolfBreakPlanner from '@/components/GolfBreakPlanner';
 import { SEFTON_ITINERARIES } from '@/lib/courses';
 import type { Metadata } from 'next';
-
-const BASE_URL = 'https://www.seftonlinks.com';
+import { buildAlternates } from '@/lib/metadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   return {
     title: 'Sefton Coast Golf Break Itineraries — 2-Day, 3-Day & 5-Day | SeftonLinks',
     description:
       'Pre-built golf break itineraries for the Sefton Coast. 2-day, 3-day and 5-day combinations of Royal Birkdale, Hillside, Formby and the full corridor, with accommodation and dining recommendations.',
-    alternates: {
-      canonical: `${BASE_URL}/itineraries`,
-      languages: { 'en': `${BASE_URL}/itineraries`, 'de': `${BASE_URL}/de/itineraries`, 'ja': `${BASE_URL}/ja/itineraries`, 'x-default': `${BASE_URL}/itineraries` },
-    },
+    alternates: buildAlternates('/itineraries'),
   };
 }
 

@@ -3,8 +3,7 @@ import { getTranslations } from 'next-intl/server';
 import { Trophy, MapPin, ChevronRight, Star, Phone, ExternalLink } from 'lucide-react';
 import { COURSES } from '@/lib/courses';
 import type { Metadata } from 'next';
-
-const BASE_URL = 'https://www.seftonlinks.com';
+import { BASE_URL, buildAlternates } from '@/lib/metadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -12,15 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: 'Sefton Coast Golf Courses — Royal Birkdale, Hillside, Formby & More',
     description:
       'The complete guide to all six Sefton Coast links golf courses — visitor policies, green fees, course ratings, tee time booking and full course guides.',
-    alternates: {
-      canonical: `${BASE_URL}/courses`,
-      languages: {
-        'en': `${BASE_URL}/courses`,
-        'de': `${BASE_URL}/de/courses`,
-        'ja': `${BASE_URL}/ja/courses`,
-        'x-default': `${BASE_URL}/courses`,
-      },
-    },
+    alternates: buildAlternates('/courses'),
   };
 }
 

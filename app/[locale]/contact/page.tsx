@@ -1,11 +1,17 @@
 import type { Metadata } from 'next';
+import { buildAlternates } from '@/lib/metadata';
 
-const BASE_URL = 'https://www.seftonlinks.com';
-
-export const metadata: Metadata = {
-  title: 'Contact | SeftonLinks',
-  description: 'Get in touch with SeftonLinks — questions, course corrections, featured listings and business enquiries.',
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  return {
+    title: 'Contact',
+    description: 'Get in touch with SeftonLinks — questions, course corrections, featured listings and business enquiries.',
+    alternates: buildAlternates('/contact'),
+  };
+}
 
 export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -24,7 +30,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
           <div>
             <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-4">Get in Touch</h2>
             <div className="prose text-[#2C3E50]/70 text-sm leading-relaxed space-y-3">
-              <p><strong className="text-[#0D1B2A]">General enquiries:</strong> <a href="mailto:hello@seftonlinks.com" className="text-[#1A4A30] hover:text-[#B8912A] transition-colors">hello@seftonlinks.com</a></p>
+              <p><strong className="text-[#0D1B2A]">General enquiries:</strong> <a href="mailto:hello@churchtownmedia.co.uk" className="text-[#1A4A30] hover:text-[#B8912A] transition-colors">hello@churchtownmedia.co.uk</a></p>
               <p><strong className="text-[#0D1B2A]">Featured listings:</strong> Golf clubs, golf accommodation, caddie services and post-round dining can enquire about featured placement. Email with your business details.</p>
               <p><strong className="text-[#0D1B2A]">Data corrections:</strong> If any course data — green fees, visitor policy, opening hours — is incorrect, please let us know. We update promptly.</p>
               <p><strong className="text-[#0D1B2A]">Press &amp; media:</strong> <a href="https://churchtownmedia.co.uk" target="_blank" rel="noopener noreferrer" className="text-[#1A4A30] hover:text-[#B8912A] transition-colors">Churchtown Media Ltd</a></p>

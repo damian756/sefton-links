@@ -6,6 +6,7 @@ import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import NavMenu from '@/components/NavMenu';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
 import { routing } from '@/i18n/routing';
 import '../globals.css';
 
@@ -121,7 +122,7 @@ export default async function LocaleLayout({
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
             t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-          })(window, document, "clarity", "script", "CLARITY_PROJECT_ID");
+          })(window, document, "clarity", "script", "${process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID}");
         `}</Script>
       </head>
       <body className={`${playfair.variable} ${inter.variable} font-sans antialiased bg-[#F8F5EE]`}>
@@ -265,31 +266,7 @@ function Footer({ locale }: { locale: string }) {
 
             <div className="mt-6">
               <h3 className="text-white font-semibold mb-3 text-sm uppercase tracking-wider">Languages</h3>
-              <div className="flex flex-wrap gap-2 text-xs">
-                {[
-                  ['EN', '/'],
-                  ['DE', '/de'],
-                  ['JA', '/ja'],
-                  ['FR', '/fr'],
-                  ['ES', '/es'],
-                  ['NL', '/nl'],
-                  ['SV', '/sv'],
-                  ['KO', '/ko'],
-                  ['ZH', '/zh'],
-                  ['PT', '/pt'],
-                  ['IT', '/it'],
-                  ['PL', '/pl'],
-                  ['AR', '/ar'],
-                ].map(([label, href]) => (
-                  <a
-                    key={href}
-                    href={href}
-                    className="px-2 py-1 rounded bg-white/10 text-white/60 hover:bg-[#B8912A]/30 hover:text-white transition"
-                  >
-                    {label}
-                  </a>
-                ))}
-              </div>
+              <LanguageSwitcher />
             </div>
           </div>
         </div>

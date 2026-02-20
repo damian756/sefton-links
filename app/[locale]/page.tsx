@@ -4,8 +4,7 @@ import { Trophy, Wind, MapPin, Calendar, ChevronRight, Star, Flag, Clock, Users 
 import OpenCountdown from '@/components/OpenCountdown';
 import { COURSES, getFeaturedCourses } from '@/lib/courses';
 import type { Metadata } from 'next';
-
-const BASE_URL = 'https://www.seftonlinks.com';
+import { BASE_URL, buildAlternates } from '@/lib/metadata';
 
 export async function generateMetadata({
   params,
@@ -18,33 +17,7 @@ export async function generateMetadata({
   return {
     title: 'SeftonLinks — Links Golf Guide to the Sefton Coast | The Open Championship 2026',
     description: t('heroSubtitle'),
-    alternates: {
-      canonical: BASE_URL,
-      languages: {
-        'en': BASE_URL,
-        'en-US': BASE_URL,
-        'en-AU': BASE_URL,
-        'en-GB': BASE_URL,
-        'de': `${BASE_URL}/de`,
-        'ja': `${BASE_URL}/ja`,
-        'sv': `${BASE_URL}/sv`,
-        'no': `${BASE_URL}/no`,
-        'nl': `${BASE_URL}/nl`,
-        'ko': `${BASE_URL}/ko`,
-        'fr': `${BASE_URL}/fr`,
-        'es': `${BASE_URL}/es`,
-        'da': `${BASE_URL}/da`,
-        'fi': `${BASE_URL}/fi`,
-        'pl': `${BASE_URL}/pl`,
-        'zh': `${BASE_URL}/zh`,
-        'pt': `${BASE_URL}/pt`,
-        'it': `${BASE_URL}/it`,
-        'ca': `${BASE_URL}/ca`,
-        'ar': `${BASE_URL}/ar`,
-        'cy': `${BASE_URL}/cy`,
-        'x-default': BASE_URL,
-      },
-    },
+    alternates: buildAlternates('/'),
   };
 }
 
@@ -89,9 +62,8 @@ export default async function HomePage({
                 publisher: { '@id': `${BASE_URL}/#organization` },
                 inLanguage: 'en-GB',
                 potentialAction: {
-                  '@type': 'SearchAction',
-                  target: { '@type': 'EntryPoint', urlTemplate: `${BASE_URL}/courses?q={search_term_string}` },
-                  'query-input': 'required name=search_term_string',
+                  '@type': 'ReadAction',
+                  target: `${BASE_URL}/courses`,
                 },
               },
               {

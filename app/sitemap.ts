@@ -30,39 +30,54 @@ const COURSE_PAGES = COURSES.map((c) => `/courses/${c.slug}`);
 
 const ALL_PAGES = [...STATIC_PAGES, ...COURSE_PAGES];
 
+function buildLanguages(page: string): Record<string, string> {
+  const path = page || '';
+  const languages: Record<string, string> = {
+    'en': `${BASE_URL}${path}`,
+    'en-US': `${BASE_URL}${path}`,
+    'en-AU': `${BASE_URL}${path}`,
+    'en-GB': `${BASE_URL}${path}`,
+    'x-default': `${BASE_URL}${path}`,
+  };
+  for (const locale of locales) {
+    if (locale !== 'en') {
+      languages[locale] = `${BASE_URL}/${locale}${path}`;
+    }
+  }
+  return languages;
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
+  const now = new Date().toISOString();
 
   for (const page of ALL_PAGES) {
-    // Determine priority and changeFreq
     const isHome = page === '';
     const isOpenHub = page === '/the-open-2026';
     const isConditions = page === '/conditions';
 
     const priority = isHome ? 1.0 : isOpenHub ? 0.95 : isConditions ? 0.8 : page.startsWith('/courses/') ? 0.85 : 0.7;
     const changeFrequency: MetadataRoute.Sitemap[0]['changeFrequency'] = isConditions ? 'daily' : isHome ? 'weekly' : 'monthly';
-
-    // Build alternates — all English variants point to the root URL
-    const alternates: Record<string, string> = {
-      'en': `${BASE_URL}${page}`,
-      'en-US': `${BASE_URL}${page}`,
-      'en-AU': `${BASE_URL}${page}`,
-      'en-GB': `${BASE_URL}${page}`,
-    };
-    for (const locale of locales) {
-      if (locale === 'en') continue;
-      alternates[locale] = `${BASE_URL}/${locale}${page}`;
-    }
+    const languages = buildLanguages(page);
 
     entries.push({
       url: `${BASE_URL}${page}`,
-      lastModified: new Date().toISOString(),
+      lastModified: now,
       changeFrequency,
       priority,
-      alternates: {
-        languages: alternates,
-      },
+      alternates: { languages },
     });
+
+    for (const locale of locales) {
+      if (locale === 'en') continue;
+      entries.push({
+        url: `${BASE_URL}/${locale}${page}`,
+        lastModified: now,
+        changeFrequency,
+        priority: priority * 0.9,
+        alternates: { languages },
+      });
+    }
   }
 
   return entries;

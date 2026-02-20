@@ -3,8 +3,7 @@ import { getTranslations } from 'next-intl/server';
 import { Trophy, MapPin, Calendar, Ticket, Bed, ChevronRight, ExternalLink, Users, Clock } from 'lucide-react';
 import OpenCountdown from '@/components/OpenCountdown';
 import type { Metadata } from 'next';
-
-const BASE_URL = 'https://www.seftonlinks.com';
+import { BASE_URL, buildAlternates } from '@/lib/metadata';
 
 export async function generateMetadata({
   params,
@@ -16,15 +15,7 @@ export async function generateMetadata({
     title: 'The Open Championship 2026 — Royal Birkdale Guide | SeftonLinks',
     description:
       'Your complete guide to The 155th Open Championship at Royal Birkdale, Southport, July 16–19 2026. History, past champions, tickets, accommodation, course guide and travel advice.',
-    alternates: {
-      canonical: `${BASE_URL}/the-open-2026`,
-      languages: {
-        'en': `${BASE_URL}/the-open-2026`,
-        'de': `${BASE_URL}/de/the-open-2026`,
-        'ja': `${BASE_URL}/ja/the-open-2026`,
-        'x-default': `${BASE_URL}/the-open-2026`,
-      },
-    },
+    alternates: buildAlternates('/the-open-2026'),
     openGraph: {
       title: 'The Open Championship 2026 — Royal Birkdale',
       description: 'The 155th Open Championship at Royal Birkdale, Southport. July 16–19, 2026. Full visitor guide.',

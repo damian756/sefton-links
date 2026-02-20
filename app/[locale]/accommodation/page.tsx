@@ -1,18 +1,14 @@
 import Link from 'next/link';
 import { Bed, MapPin, ExternalLink, CheckCircle2, Clock, Trophy, ChevronRight } from 'lucide-react';
 import type { Metadata } from 'next';
-
-const BASE_URL = 'https://www.seftonlinks.com';
+import { buildAlternates } from '@/lib/metadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   return {
     title: 'Accommodation for Golfers near Royal Birkdale & Sefton Coast | SeftonLinks',
     description:
       'Curated accommodation for golf visitors near Royal Birkdale, Hillside and the Sefton Coast courses. Hotels, B&Bs and holiday cottages — sorted by proximity and golfer-friendliness.',
-    alternates: {
-      canonical: `${BASE_URL}/accommodation`,
-      languages: { 'en': `${BASE_URL}/accommodation`, 'de': `${BASE_URL}/de/accommodation`, 'ja': `${BASE_URL}/ja/accommodation`, 'x-default': `${BASE_URL}/accommodation` },
-    },
+    alternates: buildAlternates('/accommodation'),
   };
 }
 

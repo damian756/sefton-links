@@ -1,18 +1,14 @@
 import { getTranslations } from 'next-intl/server';
 import ConditionTracker from '@/components/ConditionTracker';
 import type { Metadata } from 'next';
-
-const BASE_URL = 'https://www.seftonlinks.com';
+import { buildAlternates } from '@/lib/metadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   return {
     title: 'Sefton Coast Course Conditions — Daily Update | SeftonLinks',
     description:
       'Daily playing conditions at Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale and Southport Old Links. Firm, standard, wet or closed — updated each morning.',
-    alternates: {
-      canonical: `${BASE_URL}/conditions`,
-      languages: { 'en': `${BASE_URL}/conditions`, 'de': `${BASE_URL}/de/conditions`, 'ja': `${BASE_URL}/ja/conditions`, 'x-default': `${BASE_URL}/conditions` },
-    },
+    alternates: buildAlternates('/conditions'),
   };
 }
 
