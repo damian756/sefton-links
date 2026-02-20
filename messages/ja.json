@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "courses": "コース",
+    "theOpen": "全英オープン2026",
+    "itineraries": "ゴルフ旅行",
+    "conditions": "コース状況",
+    "scorecard": "スコアカード",
+    "teeTimes": "ティータイム",
+    "accommodation": "宿泊",
+    "contact": "お問い合わせ"
+  },
+  "home": {
+    "heroTitle": "世界最高のリンクスゴルフ回廊",
+    "heroSubtitle": "6つのチャンピオンシップコース。一本の海岸線。全英オープンが2026年7月、ロイヤル・バークデールに帰ってきます。",
+    "heroCtaCourses": "コースを見る",
+    "heroCtaOpen": "全英オープン2026",
+    "openBanner": "全英オープン選手権2026 — ロイヤル・バークデール、サウスポート",
+    "openCountdownLabel": "全英オープンまで",
+    "coursesTitle": "セフトン・コーストのコース",
+    "coursesSubtitle": "イングランド最高峰のリンクスコース6つが、数マイル以内に点在",
+    "featuresTitle": "リンクスゴルフ旅行を計画する",
+    "conditionsTitle": "コース状況",
+    "conditionsDesc": "セフトン・コーストのコース状況をリアルタイムで確認",
+    "plannerTitle": "ゴルフ旅行プランナー",
+    "plannerDesc": "日数・予算・ハンディキャップを入力してプランを作成",
+    "affiliateCta": "ゴルフ旅行を予約",
+    "affiliateDesc": "Golf Breaksでティータイム・ホテル・パッケージを予約"
+  },
+  "courses": {
+    "pageTitle": "セフトン・コーストのゴルフコース",
+    "pageDesc": "ロイヤル・バークデール、ヒルサイド、フォームビー、ウェスト・ランカシャー、サウスポート&エインズデール、サウスポート・オールド・リンクスの完全ガイド",
+    "greenFee": "グリーンフィー",
+    "par": "パー",
+    "yardage": "ヤーデージ",
+    "courseRating": "コースレーティング",
+    "slopeRating": "スロープレーティング",
+    "visitorPolicy": "ビジター受入れ方針",
+    "bookNow": "ラウンドを予約",
+    "viewCourse": "コースガイドを見る",
+    "difficulty": {
+      "accessible": "アクセスしやすい",
+      "moderate": "中級",
+      "challenging": "上級",
+      "championship": "チャンピオンシップ"
+    }
+  },
+  "open": {
+    "pageTitle": "全英オープン選手権2026 — ロイヤル・バークデール",
+    "pageDesc": "サウスポート、ロイヤル・バークデールで開催される第155回全英オープン選手権のガイド。歴史、チケット、宿泊、コース情報。",
+    "countdown": "全英オープンまでのカウントダウン",
+    "dates": "2026年7月16日〜19日",
+    "venue": "ロイヤル・バークデール・ゴルフクラブ、サウスポート",
+    "historyTitle": "ロイヤル・バークデールと全英オープン",
+    "ticketsTitle": "チケット・ビジター情報",
+    "stayTitle": "全英オープン期間中の宿泊",
+    "days": "日",
+    "hours": "時間",
+    "minutes": "分",
+    "seconds": "秒"
+  },
+  "conditions": {
+    "pageTitle": "セフトン・コーストのコース状況",
+    "pageDesc": "ロイヤル・バークデール、ヒルサイド、フォームビー、ウェスト・ランカシャー、サウスポート&エインズデール、サウスポート・オールド・リンクスの現在のプレー状況",
+    "lastUpdated": "最終更新",
+    "firm": "ファーム（硬め）",
+    "standard": "標準",
+    "wet": "ウェット（柔らかめ）",
+    "closed": "クローズ",
+    "windSpeed": "風速",
+    "windDir": "風向き",
+    "notes": "備考"
+  },
+  "footer": {
+    "tagline": "セフトン・コーストの決定版リンクスゴルフガイド。",
+    "builtBy": "Churchtown Media 制作",
+    "exploreTitle": "探索",
+    "networkTitle": "セフトン・コーストネットワーク",
+    "legalTitle": "情報",
+    "copyright": "© 2026 SeftonLinks.com — 全著作権所有。",
+    "southportGuide": "SouthportGuide.co.uk",
+    "formbyGuide": "FormbyGuide.co.uk"
+  }
+}

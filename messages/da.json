@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "courses": "Courses",
+    "theOpen": "The Open 2026",
+    "itineraries": "Golf Breaks",
+    "conditions": "Course Conditions",
+    "scorecard": "Scorecards",
+    "teeTimes": "Tee Times",
+    "accommodation": "Accommodation",
+    "contact": "Contact"
+  },
+  "home": {
+    "heroTitle": "The World's Greatest Links Golf Corridor",
+    "heroSubtitle": "Six championship courses. One stretch of coastline. The Open Championship returns to Royal Birkdale in July 2026.",
+    "heroCtaCourses": "Explore the Courses",
+    "heroCtaOpen": "The Open 2026",
+    "openBanner": "The Open Championship 2026 — Royal Birkdale, Southport",
+    "openCountdownLabel": "Until The Open Championship",
+    "coursesTitle": "The Sefton Coast Courses",
+    "coursesSubtitle": "Six of England's finest links courses, all within a few miles of each other",
+    "featuresTitle": "Plan Your Links Golf Trip",
+    "conditionsTitle": "Course Conditions",
+    "conditionsDesc": "Live updates on course conditions across the Sefton Coast",
+    "plannerTitle": "Golf Break Planner",
+    "plannerDesc": "Tell us your days, budget and handicap — we'll build your itinerary",
+    "affiliateCta": "Book Your Golf Break",
+    "affiliateDesc": "Tee times, hotels and packages through Golf Breaks"
+  },
+  "courses": {
+    "pageTitle": "Sefton Coast Golf Courses",
+    "pageDesc": "The definitive guide to Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale, and Southport Old Links",
+    "greenFee": "Green Fee",
+    "par": "Par",
+    "yardage": "Yardage",
+    "courseRating": "Course Rating",
+    "slopeRating": "Slope Rating",
+    "visitorPolicy": "Visitor Policy",
+    "bookNow": "Book a Round",
+    "viewCourse": "View Course Guide",
+    "difficulty": {
+      "accessible": "Accessible",
+      "moderate": "Moderate",
+      "challenging": "Challenging",
+      "championship": "Championship"
+    }
+  },
+  "open": {
+    "pageTitle": "The Open Championship 2026 — Royal Birkdale",
+    "pageDesc": "Your guide to The 155th Open Championship at Royal Birkdale, Southport. History, tickets, accommodation and course guide.",
+    "countdown": "Countdown to The Open",
+    "dates": "16–19 July 2026",
+    "venue": "Royal Birkdale Golf Club, Southport",
+    "historyTitle": "Royal Birkdale & The Open",
+    "ticketsTitle": "Tickets & Visitor Information",
+    "stayTitle": "Where to Stay for The Open",
+    "days": "days",
+    "hours": "hrs",
+    "minutes": "min",
+    "seconds": "sec"
+  },
+  "conditions": {
+    "pageTitle": "Sefton Coast Course Conditions",
+    "pageDesc": "Current playing conditions at Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale and Southport Old Links",
+    "lastUpdated": "Last updated",
+    "firm": "Firm",
+    "standard": "Standard",
+    "wet": "Wet / Soft",
+    "closed": "Closed",
+    "windSpeed": "Wind",
+    "windDir": "Direction",
+    "notes": "Notes"
+  },
+  "footer": {
+    "tagline": "The definitive links golf guide to the Sefton Coast.",
+    "builtBy": "Built by Churchtown Media",
+    "exploreTitle": "Explore",
+    "networkTitle": "Sefton Coast Network",
+    "legalTitle": "Information",
+    "copyright": "© 2026 SeftonLinks.com — All rights reserved.",
+    "southportGuide": "SouthportGuide.co.uk",
+    "formbyGuide": "FormbyGuide.co.uk"
+  }
+}
