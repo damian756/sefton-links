@@ -35,11 +35,11 @@ export default async function ItinerariesPage({ params }: { params: Promise<{ lo
     <div className="min-h-screen bg-[#F8F5EE]">
       <div className="bg-[#0D1B2A] py-14 relative overflow-hidden">
         <Image
-          src="/images/sefton-coast.jpg"
-          alt="Sefton Coast sand dunes at sunset"
+          src="/images/itineraries.jpg"
+          alt="Golfer on a Sefton Coast links fairway"
           fill
           priority
-          className="object-cover object-center opacity-40"
+          className="object-cover object-center opacity-45"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0D1B2A]/55 via-[#0D1B2A]/35 to-[#0D1B2A]/70" />
