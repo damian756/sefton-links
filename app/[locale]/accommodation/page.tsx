@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Bed, MapPin, ExternalLink, CheckCircle2, Clock, Trophy, ChevronRight } from 'lucide-react';
 import type { Metadata } from 'next';
 import { buildAlternates } from '@/lib/metadata';
@@ -94,8 +95,17 @@ export default async function AccommodationPage({ params }: { params: Promise<{ 
 
   return (
     <div className="min-h-screen bg-[#F8F5EE]">
-      <div className="bg-[#0D1B2A] py-14">
-        <div className="container mx-auto px-4 max-w-7xl">
+      <div className="bg-[#0D1B2A] py-14 relative overflow-hidden">
+        <Image
+          src="/images/accommodation.jpg"
+          alt="Golf hotel and fairway with lake reflection"
+          fill
+          priority
+          className="object-cover object-center opacity-45"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0D1B2A]/55 via-[#0D1B2A]/35 to-[#0D1B2A]/70" />
+        <div className="relative container mx-auto px-4 max-w-7xl">
           <div className="text-[#B8912A] text-sm uppercase tracking-widest font-semibold mb-3">{t('headerBadge')}</div>
           <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">{t('pageTitle')}</h1>
           <p className="text-white/65 text-lg max-w-2xl leading-relaxed">
