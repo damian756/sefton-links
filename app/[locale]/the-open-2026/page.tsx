@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 import { Trophy, MapPin, Calendar, Ticket, Bed, ChevronRight, ExternalLink, Users, Clock } from 'lucide-react';
 import OpenCountdown from '@/components/OpenCountdown';
@@ -119,12 +120,15 @@ export default async function OpenPage({
 
       {/* Hero */}
       <section className="bg-[#0D1B2A] relative overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-20"
-          style={{
-            backgroundImage: 'radial-gradient(circle at 20% 80%, #B8912A 0%, transparent 50%), radial-gradient(circle at 80% 20%, #1A4A30 0%, transparent 60%)',
-          }}
+        <Image
+          src="/images/the-open-2026.jpg"
+          alt="The Claret Jug in front of Royal Birkdale clubhouse"
+          fill
+          priority
+          className="object-cover object-center opacity-40"
+          sizes="100vw"
         />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0D1B2A]/55 via-[#0D1B2A]/40 to-[#0D1B2A]/80" />
         <div className="relative container mx-auto px-4 max-w-7xl py-20 md:py-28 text-center">
           <div className="inline-flex items-center gap-2 bg-[#B8912A]/20 border border-[#B8912A]/40 rounded-full px-4 py-1.5 mb-6">
             <Trophy size={13} className="text-[#B8912A]" />

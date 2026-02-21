@@ -131,10 +131,10 @@ export default async function CoursePage({
               alt={course.name}
               fill
               priority
-              className="object-cover object-center opacity-35"
+              className="object-cover object-center opacity-50"
               sizes="100vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-[#0D1B2A]/60 via-[#0D1B2A]/40 to-[#0D1B2A]/80" />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#0D1B2A]/50 via-[#0D1B2A]/30 to-[#0D1B2A]/70" />
           </>
         ) : (
           <div

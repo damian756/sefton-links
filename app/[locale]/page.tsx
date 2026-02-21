@@ -130,7 +130,7 @@ export default async function HomePage({
           sizes="100vw"
           quality={85}
         />
-        <div className="absolute inset-0 bg-[#0D1B2A]/70" />
+        <div className="absolute inset-0 bg-[#0D1B2A]/50" />
         <div
           className="absolute inset-0 opacity-20"
           style={{

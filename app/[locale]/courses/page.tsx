@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 import { Trophy, MapPin, ChevronRight, Star, Phone, ExternalLink } from 'lucide-react';
 import { COURSES } from '@/lib/courses';
@@ -59,8 +60,17 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
       />
 
       {/* Header */}
-      <div className="bg-[#0D1B2A] py-16">
-        <div className="container mx-auto px-4 max-w-7xl">
+      <div className="bg-[#0D1B2A] py-16 relative overflow-hidden">
+        <Image
+          src="/images/sefton-coast.jpg"
+          alt="Sefton Coast sand dunes at sunset"
+          fill
+          priority
+          className="object-cover object-center opacity-40"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0D1B2A]/55 via-[#0D1B2A]/35 to-[#0D1B2A]/70" />
+        <div className="relative container mx-auto px-4 max-w-7xl">
           <div className="text-[#B8912A] text-sm uppercase tracking-widest font-semibold mb-3">
             {tcp('headerBadge')}
           </div>
