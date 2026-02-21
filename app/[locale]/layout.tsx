@@ -223,6 +223,9 @@ async function Footer({ locale }: { locale: string }) {
                 >
                   FormbyGuide.co.uk ↗
                 </a>
+                <span className="text-sm text-[#B8912A] font-medium">
+                  SeftonLinks.com
+                </span>
               </div>
             </div>
           </div>
