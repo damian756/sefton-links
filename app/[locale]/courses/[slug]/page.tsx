@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 import {
   Trophy, MapPin, Phone, ExternalLink, ChevronRight, Clock, Users,
@@ -123,16 +124,30 @@ export default async function CoursePage({
 
       {/* Hero header */}
       <div className="bg-[#0D1B2A] relative overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage: 'radial-gradient(circle at 30% 70%, #1A4A30 0%, transparent 60%), radial-gradient(circle at 70% 20%, #B8912A 0%, transparent 50%)',
-          }}
-        />
-        <div className="relative container mx-auto px-4 max-w-7xl py-14 md:py-20">
-          <div className="flex flex-wrap items-start justify-between gap-6">
-            <div className="flex-1 min-w-0">
-              <div className="flex flex-wrap items-center gap-3 mb-4">
+        {course.image ? (
+          <>
+            <Image
+              src={course.image}
+              alt={course.name}
+              fill
+              priority
+              className="object-cover object-center opacity-35"
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#0D1B2A]/60 via-[#0D1B2A]/40 to-[#0D1B2A]/80" />
+          </>
+        ) : (
+          <div
+            className="absolute inset-0 opacity-10"
+            style={{
+              backgroundImage: 'radial-gradient(circle at 30% 70%, #1A4A30 0%, transparent 60%), radial-gradient(circle at 70% 20%, #B8912A 0%, transparent 50%)',
+            }}
+          />
+        )}
+        <div className="relative container mx-auto px-4 max-w-7xl py-10 md:py-20">
+          <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+            <div className="min-w-0">
+              <div className="flex flex-wrap items-center gap-2 mb-4">
                 <span className="text-[#B8912A] text-xs font-semibold uppercase tracking-widest">
                   Est. {course.founded}
                 </span>
@@ -151,34 +166,34 @@ export default async function CoursePage({
                 </span>
               </div>
 
-              <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-3 leading-tight">
+              <h1 className="font-display text-3xl md:text-5xl font-bold text-white mb-3 leading-tight">
                 {course.name}
               </h1>
-              <p className="text-[#D4AE7A] text-lg font-medium mb-4">{tcd(`${slug}.tagline`)}</p>
-              <div className="flex items-center gap-2 text-white/55 text-sm">
-                <MapPin size={14} />
-                <span>{course.address}, {course.postcode}</span>
+              <p className="text-[#D4AE7A] text-base md:text-lg font-medium mb-4">{tcd(`${slug}.tagline`)}</p>
+              <div className="flex items-start gap-2 text-white/55 text-sm">
+                <MapPin size={14} className="mt-0.5 shrink-0" />
+                <span className="break-words">{course.address}, {course.postcode}</span>
               </div>
             </div>
 
             {/* Quick book panel */}
-            <div className="bg-white/8 backdrop-blur-sm border border-white/15 rounded-xl p-5 min-w-[220px]">
+            <div className="bg-white/8 backdrop-blur-sm border border-white/15 rounded-xl p-5 w-full md:w-auto md:min-w-[220px] md:shrink-0">
               <div className="text-[#D4AE7A] text-xs uppercase tracking-wider mb-3 font-semibold">{t('quickInfoLabel')}</div>
-              <div className="space-y-2.5 text-sm mb-4">
-                <div className="flex justify-between">
+              <div className="grid grid-cols-2 md:grid-cols-1 gap-2.5 text-sm mb-4">
+                <div className="flex justify-between gap-4">
                   <span className="text-white/55">{t('greenFeeLabel')}</span>
                   <span className="text-white font-semibold">{course.greenFeeRange}</span>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex justify-between gap-4">
                   <span className="text-white/55">{t('parLabel')}</span>
                   <span className="text-white font-mono">{course.par}</span>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex justify-between gap-4">
                   <span className="text-white/55">{t('yardsLabel')}</span>
                   <span className="text-white font-mono">{course.yardage.toLocaleString()}</span>
                 </div>
                 {course.handicapLimit && (
-                  <div className="flex justify-between">
+                  <div className="flex justify-between gap-4">
                     <span className="text-white/55">{t('handicapLabel')}</span>
                     <span className="text-white font-mono">&le;{course.handicapLimit}</span>
                   </div>

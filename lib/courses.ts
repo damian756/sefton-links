@@ -41,6 +41,7 @@ export interface Course {
   distanceFromBirkdale: string; // in miles
   openChampionship: boolean;
   featured: boolean;
+  image?: string; // path relative to /public, e.g. '/images/courses/royal-birkdale.jpg'
 }
 
 export const COURSES: Course[] = [
@@ -107,6 +108,7 @@ Visitor tee times are available, but Royal Birkdale is strict about both availab
     distanceFromBirkdale: '0',
     openChampionship: true,
     featured: true,
+    image: '/images/courses/royal-birkdale.jpg',
   },
   {
     slug: 'hillside',
@@ -167,6 +169,7 @@ The course underwent significant redevelopment on its final nine holes, which no
     distanceFromBirkdale: '0.3',
     openChampionship: false,
     featured: true,
+    image: '/images/courses/hillside.jpg',
   },
   {
     slug: 'formby',
@@ -229,6 +232,7 @@ Note: Formby Golf Club is a men-only club. Formby Ladies Golf Club (adjacent, fo
     distanceFromBirkdale: '5',
     openChampionship: false,
     featured: true,
+    image: '/images/courses/formby.jpg',
   },
   {
     slug: 'west-lancashire',
@@ -291,6 +295,7 @@ The club has a long history with Open Championship qualifying. If you want to pl
     distanceFromBirkdale: '8',
     openChampionship: false,
     featured: false,
+    image: '/images/courses/west-lancashire.jpg',
   },
   {
     slug: 'southport-ainsdale',
@@ -353,6 +358,7 @@ Green fees are among the most accessible on the coast for what is genuinely a hi
     distanceFromBirkdale: '3',
     openChampionship: false,
     featured: false,
+    image: '/images/courses/southport-ainsdale.jpg',
   },
   {
     slug: 'southport-old-links',
@@ -409,6 +415,7 @@ For visitors building a high-volume trip — four or five rounds — Old Links p
     distanceFromBirkdale: '4',
     openChampionship: false,
     featured: false,
+    image: '/images/courses/southport-old-links.jpg',
   },
 ];
 
