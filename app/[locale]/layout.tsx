@@ -223,6 +223,14 @@ async function Footer({ locale }: { locale: string }) {
                 >
                   FormbyGuide.co.uk ↗
                 </a>
+                <a
+                  href="https://seftoncoastwildlife.co.uk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-white/60 hover:text-[#B8912A] transition"
+                >
+                  Sefton Coast Wildlife ↗
+                </a>
                 <span className="text-sm text-[#B8912A] font-medium">
                   SeftonLinks.com
                 </span>
@@ -280,6 +288,7 @@ async function Footer({ locale }: { locale: string }) {
           <div className="flex gap-5">
             <a href="https://www.southportguide.co.uk" target="_blank" rel="noopener" className="hover:text-white/60 transition">SouthportGuide</a>
             <a href="https://www.formbyguide.co.uk" target="_blank" rel="noopener" className="hover:text-white/60 transition">FormbyGuide</a>
+            <a href="https://seftoncoastwildlife.co.uk" target="_blank" rel="noopener" className="hover:text-white/60 transition">Sefton Coast Wildlife</a>
             <a href="https://seftoncoast.network" target="_blank" rel="noopener" className="hover:text-white/60 transition">SeftonCoast.network</a>
           </div>
         </div>
