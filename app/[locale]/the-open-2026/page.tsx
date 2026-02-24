@@ -373,7 +373,7 @@ export default async function OpenPage({
                   { labelKey: 'officialLink1Label', url: 'https://www.theopen.com' },
                   { labelKey: 'officialLink2Label', url: 'https://www.royalbirkdale.com' },
                   { labelKey: 'officialLink3Label', url: 'https://www.theopen.com/tickets' },
-                  { labelKey: 'officialLink4Label', url: 'https://www.southportguide.co.uk' },
+                  { labelKey: 'officialLink4Label', url: 'https://www.southportguide.co.uk/the-open-2026' },
                 ].map(({ labelKey, url }) => (
                   <a
                     key={url}

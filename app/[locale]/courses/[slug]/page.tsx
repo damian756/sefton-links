@@ -359,14 +359,14 @@ export default async function CoursePage({
                   </div>
                 ))}
               </div>
-              <div className="mt-4">
+              <div className="mt-4 flex flex-col gap-2">
                 <a
-                  href="https://www.southportguide.co.uk/restaurants"
+                  href={slug === 'formby' ? 'https://www.formbyguide.co.uk' : 'https://www.southportguide.co.uk/restaurants'}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#1A4A30] text-sm font-semibold hover:text-[#B8912A] transition-colors flex items-center gap-1"
                 >
-                  {t('restaurantGuideLink')} <ExternalLink size={12} />
+                  {slug === 'formby' ? 'Dining & accommodation in Formby village — FormbyGuide' : t('restaurantGuideLink')} <ExternalLink size={12} />
                 </a>
               </div>
             </section>
