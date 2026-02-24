@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { COURSES } from '@/lib/courses';
+import { BLOG_POSTS, BLOG_CATEGORIES } from '@/lib/blog';
 import { locales } from '@/i18n/routing';
 
 // All English variants map to the root URL
@@ -78,6 +79,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
         alternates: { languages },
       });
     }
+  }
+
+  // ── Blog (English only — no locale alternates) ───────────────
+  entries.push({
+    url: `${BASE_URL}/blog`,
+    lastModified: now,
+    changeFrequency: 'weekly',
+    priority: 0.75,
+  });
+
+  for (const cat of BLOG_CATEGORIES) {
+    entries.push({
+      url: `${BASE_URL}/blog/category/${cat.slug}`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.6,
+    });
+  }
+
+  for (const post of BLOG_POSTS) {
+    entries.push({
+      url: `${BASE_URL}/blog/${post.slug}`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    });
   }
 
   return entries;
