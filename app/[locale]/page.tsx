@@ -78,6 +78,14 @@ export default async function HomePage({
                   width: 1200,
                   height: 630,
                 },
+                sameAs: [
+                  'https://www.southportguide.co.uk',
+                  'https://www.formbyguide.co.uk',
+                  'https://seftoncoastwildlife.co.uk',
+                  'https://seftoncoast.network',
+                  'https://www.linkedin.com/company/churchtownmedia',
+                  'https://churchtownmedia.co.uk',
+                ],
               },
               {
                 '@type': 'SportsEvent',
