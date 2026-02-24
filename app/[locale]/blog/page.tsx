@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { ChevronRight, Clock, ArrowRight } from 'lucide-react';
-import { BLOG_POSTS, BLOG_CATEGORIES, DAMIAN, getCategoryBySlug } from '@/lib/blog';
+import { ChevronRight } from 'lucide-react';
+import { BLOG_POSTS, BLOG_CATEGORIES, DAMIAN } from '@/lib/blog';
+import BlogSearch from './BlogSearch';
 
 export const metadata: Metadata = {
   title: 'Links Golf Blog — Course Reviews, Tips & The Open 2026 | SeftonLinks',
@@ -50,56 +51,13 @@ export default async function BlogPage({
 
       <div className="container mx-auto px-4 max-w-5xl py-12">
 
-        {/* Categories */}
-        <div className="flex flex-wrap gap-2 mb-10">
-          {BLOG_CATEGORIES.map((cat) => (
-            <Link
-              key={cat.slug}
-              href={`/blog/category/${cat.slug}`}
-              className="px-4 py-1.5 rounded-full text-sm font-semibold border border-[#B8912A]/40 text-[#B8912A] hover:bg-[#B8912A] hover:text-white transition-colors"
-            >
-              {cat.label}
-            </Link>
-          ))}
-        </div>
-
-        {/* Posts grid */}
-        <div className="grid md:grid-cols-2 gap-6">
-          {BLOG_POSTS.map((post) => {
-            const cat = getCategoryBySlug(post.categorySlug);
-            return (
-              <Link
-                key={post.slug}
-                href={`/blog/${post.slug}`}
-                className="group bg-white rounded-2xl border border-[#E8E3D8] p-7 hover:border-[#B8912A]/40 hover:shadow-md transition-all flex flex-col"
-              >
-                <div className="flex items-center gap-2 mb-3">
-                  {cat && (
-                    <span className="text-xs font-semibold text-[#B8912A] uppercase tracking-wider">
-                      {cat.label}
-                    </span>
-                  )}
-                  <span className="text-[#2C3E50]/30 text-xs">·</span>
-                  <span className="text-xs text-[#2C3E50]/50 flex items-center gap-1">
-                    <Clock size={11} /> {post.readingTime}
-                  </span>
-                </div>
-                <h2 className="font-display text-xl font-bold text-[#0D1B2A] mb-3 leading-snug group-hover:text-[#1A4A30] transition-colors">
-                  {post.title}
-                </h2>
-                <p className="text-[#2C3E50]/70 text-sm leading-relaxed mb-5 flex-1">
-                  {post.excerpt}
-                </p>
-                <div className="flex items-center justify-between">
-                  <span className="text-xs text-[#2C3E50]/45">{post.date}</span>
-                  <span className="text-[#B8912A] text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
-                    Read <ArrowRight size={13} />
-                  </span>
-                </div>
-              </Link>
-            );
-          })}
-        </div>
+        <BlogSearch
+          posts={BLOG_POSTS}
+          categories={BLOG_CATEGORIES}
+          postCountByCategory={Object.fromEntries(
+            BLOG_CATEGORIES.map((c) => [c.slug, BLOG_POSTS.filter((p) => p.categorySlug === c.slug).length])
+          )}
+        />
 
         {/* Author box */}
         <div className="mt-14 bg-white rounded-2xl border border-[#E8E3D8] p-8 flex flex-col sm:flex-row gap-6 items-start">

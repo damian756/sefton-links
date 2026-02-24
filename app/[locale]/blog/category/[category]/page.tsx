@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { ChevronRight, Clock, ArrowRight } from 'lucide-react';
-import { BLOG_CATEGORIES, getPostsByCategory, getCategoryBySlug } from '@/lib/blog';
+import { BLOG_POSTS, BLOG_CATEGORIES, getPostsByCategory, getCategoryBySlug } from '@/lib/blog';
 
 export function generateStaticParams() {
   return BLOG_CATEGORIES.map((c) => ({ locale: 'en', category: c.slug }));
@@ -63,6 +63,29 @@ export default async function CategoryPage({
       </div>
 
       <div className="container mx-auto px-4 max-w-5xl py-12">
+
+        {/* Category nav with active state */}
+        <div className="flex flex-wrap gap-2 mb-8">
+          {BLOG_CATEGORIES.map((c) => {
+            const count = BLOG_POSTS.filter((p) => p.categorySlug === c.slug).length;
+            const isActive = c.slug === category;
+            return (
+              <Link
+                key={c.slug}
+                href={`/blog/category/${c.slug}`}
+                className={`inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-sm font-semibold transition-colors ${
+                  isActive
+                    ? 'bg-[#B8912A] text-white border border-[#B8912A]'
+                    : 'border border-[#B8912A]/40 text-[#B8912A] hover:bg-[#B8912A] hover:text-white'
+                }`}
+              >
+                {c.label}
+                <span className={`text-xs ${isActive ? 'opacity-80' : 'opacity-70'}`}>({count})</span>
+              </Link>
+            );
+          })}
+        </div>
+
         {posts.length === 0 ? (
           <p className="text-[#2C3E50]/60 text-center py-12">No posts in this category yet.</p>
         ) : (
