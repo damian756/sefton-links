@@ -107,6 +107,37 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={isRTL ? 'rtl' : 'ltr'}>
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'WebSite',
+              '@id': `${BASE_URL}/#website`,
+              name: 'SeftonLinks.com',
+              url: BASE_URL,
+              description:
+                'The definitive links golf guide to the Sefton Coast — Royal Birkdale, Hillside, Formby, West Lancashire and The Open Championship 2026.',
+              publisher: {
+                '@type': 'Organization',
+                '@id': 'https://www.churchtownmedia.co.uk/#organization',
+                name: 'Churchtown Media',
+                url: 'https://www.churchtownmedia.co.uk',
+              },
+              author: {
+                '@type': 'Person',
+                '@id': 'https://www.churchtownmedia.co.uk/about#founder',
+                name: 'Damian Roche',
+                jobTitle: 'Founder, Churchtown Media',
+                url: 'https://www.churchtownmedia.co.uk/about',
+                sameAs: [
+                  'https://www.linkedin.com/in/damian-roche-7ba8293a5/',
+                  'https://find-and-update.company-information.service.gov.uk/company/16960442',
+                ],
+              },
+            }),
+          }}
+        />
         {/* Plausible analytics */}
         <Script
           src="https://plausible.io/js/pa-7l3psXM9XPdunx6bpHv50.js"
@@ -173,6 +204,7 @@ async function Footer({ locale }: { locale: string }) {
     [tf('navScorecards'), `${prefix}/scorecard`],
     [tf('navTeeTimes'), `${prefix}/tee-times`],
     [tf('navAccommodation'), `${prefix}/accommodation`],
+    ...(locale === 'en' ? [['Blog', '/blog']] : []),
   ];
 
   const courseLinks = [

@@ -66,6 +66,7 @@ export default function NavMenu({ locale }: { locale: string }) {
     { label: t('teeTimes'), href: `${prefix}/tee-times` },
     { label: t('itineraries'), href: `${prefix}/itineraries` },
     { label: t('accommodation'), href: `${prefix}/accommodation` },
+    ...(locale === 'en' ? [{ label: 'Blog', href: '/blog' }] : []),
     { label: t('theOpen'), href: `${prefix}/the-open-2026`, highlight: true },
   ];
 
