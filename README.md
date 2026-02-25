@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SeftonLinks.com
 
-## Getting Started
+**Championship links golf on the Sefton Coast — the most concentrated stretch of links courses in the world.**
 
-First, run the development server:
+Live site: [seftonlinks.com](https://www.seftonlinks.com)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What This Is
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+SeftonLinks covers the seven championship links courses of the Sefton Coast: Royal Birkdale, Royal Liverpool (Hoylake), Hillside, Southport & Ainsdale, West Lancashire, Formby, and Formby Ladies. Built for golfers travelling to the region — especially for The Open Championship 2026 at Royal Birkdale.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Built in 18 languages to capture international golf travel search traffic. The Open 2026 is the primary commercial hook.
 
-## Learn More
+Part of the [Sefton Coast Network](https://www.churchtownmedia.co.uk/about) — built and operated by Churchtown Media.
 
-To learn more about Next.js, take a look at the following resources:
+## Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework**: Next.js (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **i18n**: next-intl (18 languages)
+- **Deployment**: Vercel
+- **Analytics**: Plausible
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Key Features
 
-## Deploy on Vercel
+- 18-language internationalisation — English, German, Spanish, French, Japanese, Korean, and more
+- Individual course pages with full details, ratings, visitor info, and booking links
+- The Open 2026 hub — travel guide for international visitors to Royal Birkdale
+- Blog (English only) — golf travel content by Damian Roche
+- Full Schema.org JSON-LD (SportsClub, Article, Person, WebSite)
+- E-E-A-T signals with transparent author attribution
+- Sitemap covering all locales and routes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## SEO Targets
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Primary keywords: `sefton coast golf`, `royal birkdale`, `links golf england`, `the open 2026`, `golf courses southport`, `championship links courses uk`
+
+## Developer
+
+**Damian Roche** — Churchtown Media  
+[churchtownmedia.co.uk](https://www.churchtownmedia.co.uk) · [LinkedIn](https://www.linkedin.com/in/damian-roche-7ba8293a5/)
