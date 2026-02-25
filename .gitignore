@@ -28,3 +28,6 @@ build-output.txt
 
 # Cursor AI
 .cursor/
+
+# Internal planning docs
+TRANSLATION-PLAN.md
