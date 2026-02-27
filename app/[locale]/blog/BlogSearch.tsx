@@ -81,30 +81,42 @@ export default function BlogSearch({ posts, categories, postCountByCategory }: P
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group bg-white rounded-2xl border border-[#E8E3D8] p-7 hover:border-[#B8912A]/40 hover:shadow-md transition-all flex flex-col"
+                className="group bg-white rounded-2xl border border-[#E8E3D8] hover:border-[#B8912A]/40 hover:shadow-md transition-all flex flex-col overflow-hidden"
               >
-                <div className="flex items-center gap-2 mb-3">
-                  {cat && (
-                    <span className="text-xs font-semibold text-[#B8912A] uppercase tracking-wider">
-                      {cat.label}
+                {post.image && (
+                  <div className="aspect-[16/9] overflow-hidden">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                    />
+                  </div>
+                )}
+                <div className="p-7 flex flex-col flex-1">
+                  <div className="flex items-center gap-2 mb-3">
+                    {cat && (
+                      <span className="text-xs font-semibold text-[#B8912A] uppercase tracking-wider">
+                        {cat.label}
+                      </span>
+                    )}
+                    <span className="text-[#2C3E50]/30 text-xs">·</span>
+                    <span className="text-xs text-[#2C3E50]/50 flex items-center gap-1">
+                      <Clock size={11} /> {post.readingTime}
                     </span>
-                  )}
-                  <span className="text-[#2C3E50]/30 text-xs">·</span>
-                  <span className="text-xs text-[#2C3E50]/50 flex items-center gap-1">
-                    <Clock size={11} /> {post.readingTime}
-                  </span>
-                </div>
-                <h2 className="font-display text-xl font-bold text-[#0D1B2A] mb-3 leading-snug group-hover:text-[#1A4A30] transition-colors">
-                  {post.title}
-                </h2>
-                <p className="text-[#2C3E50]/70 text-sm leading-relaxed mb-5 flex-1">
-                  {post.excerpt}
-                </p>
-                <div className="flex items-center justify-between">
-                  <span className="text-xs text-[#2C3E50]/45">{post.date}</span>
-                  <span className="text-[#B8912A] text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
-                    Read <ArrowRight size={13} />
-                  </span>
+                  </div>
+                  <h2 className="font-display text-xl font-bold text-[#0D1B2A] mb-3 leading-snug group-hover:text-[#1A4A30] transition-colors">
+                    {post.title}
+                  </h2>
+                  <p className="text-[#2C3E50]/70 text-sm leading-relaxed mb-5 flex-1">
+                    {post.excerpt}
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs text-[#2C3E50]/45">{post.date}</span>
+                    <span className="text-[#B8912A] text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+                      Read <ArrowRight size={13} />
+                    </span>
+                  </div>
                 </div>
               </Link>
             );

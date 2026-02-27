@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { ChevronRight, Clock, ArrowLeft } from 'lucide-react';
@@ -157,8 +158,17 @@ export default async function BlogPostPage({
       </div>
 
       {/* Article hero */}
-      <div className="bg-[#0D1B2A] text-white py-12">
-        <div className="container mx-auto px-4 max-w-3xl">
+      <div className="bg-[#0D1B2A] text-white py-12 relative overflow-hidden">
+        {post.image && (
+          <Image
+            src={post.image}
+            alt={post.title}
+            fill
+            className="object-cover opacity-20"
+            priority
+          />
+        )}
+        <div className="relative z-10 container mx-auto px-4 max-w-3xl">
           {cat && (
             <p className="text-[#B8912A] text-xs font-bold uppercase tracking-widest mb-3">
               {cat.label}
