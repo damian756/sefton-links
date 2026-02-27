@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Playfair_Display, Inter } from 'next/font/google';
 import Script from 'next/script';
+import { Analytics } from '@vercel/analytics/next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -138,15 +139,6 @@ export default async function LocaleLayout({
             }),
           }}
         />
-        {/* Plausible analytics */}
-        <Script
-          src="https://plausible.io/js/pa-7l3psXM9XPdunx6bpHv50.js"
-          strategy="afterInteractive"
-        />
-        <Script id="plausible-init" strategy="afterInteractive">{`
-          window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-          plausible.init()
-        `}</Script>
         {/* Microsoft Clarity */}
         <Script id="clarity-init" strategy="afterInteractive">{`
           (function(c,l,a,r,i,t,y){
@@ -162,6 +154,7 @@ export default async function LocaleLayout({
           <main>{children}</main>
           <Footer locale={locale} />
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
