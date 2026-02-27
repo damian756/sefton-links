@@ -6,6 +6,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import { Analytics } from '@vercel/analytics/next';
 import NavMenu from '@/components/NavMenu';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import { routing } from '@/i18n/routing';
