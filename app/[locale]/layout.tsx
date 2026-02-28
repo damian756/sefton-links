@@ -39,7 +39,12 @@ export const metadata: Metadata = {
   authors: [{ name: 'SeftonLinks.com', url: BASE_URL }],
   creator: 'SeftonLinks.com',
   publisher: 'SeftonLinks.com',
-  alternates: { canonical: BASE_URL },
+  alternates: {
+    canonical: BASE_URL,
+    types: {
+      "application/rss+xml": `${BASE_URL}/feed`,
+    },
+  },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
