@@ -26,69 +26,80 @@ const inter = Inter({
 
 const BASE_URL = 'https://www.seftonlinks.com';
 
-export const metadata: Metadata = {
-  metadataBase: new URL(BASE_URL),
-  title: {
-    default: 'SeftonLinks — Links Golf Guide to the Sefton Coast',
-    template: '%s | SeftonLinks.com',
-  },
-  description:
-    'The definitive links golf guide to Royal Birkdale, Hillside, Formby, West Lancashire and the Sefton Coast. Course guides, tee times, conditions and golf break itineraries.',
-  keywords:
-    'Royal Birkdale golf, Sefton Coast golf, links golf England, The Open 2026, Hillside Golf Club, Formby Golf Club, West Lancashire Golf Club, golf breaks Southport',
-  authors: [{ name: 'SeftonLinks.com', url: BASE_URL }],
-  creator: 'SeftonLinks.com',
-  publisher: 'SeftonLinks.com',
-  alternates: {
-    canonical: BASE_URL,
-    types: {
-      "application/rss+xml": `${BASE_URL}/feed`,
+const OG_LOCALE: Record<string, string> = {
+  en: 'en_GB', de: 'de_DE', ja: 'ja_JP', sv: 'sv_SE', no: 'no_NO', nl: 'nl_NL',
+  ko: 'ko_KR', fr: 'fr_FR', es: 'es_ES', da: 'da_DK', fi: 'fi_FI', pl: 'pl_PL',
+  zh: 'zh_CN', pt: 'pt_PT', it: 'it_IT', ca: 'ca_ES', ar: 'ar_SA', cy: 'cy_GB',
+};
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const ogLocale = OG_LOCALE[locale] ?? 'en_GB';
+
+  return {
+    metadataBase: new URL(BASE_URL),
+    title: {
+      default: 'SeftonLinks — Links Golf Guide to the Sefton Coast',
+      template: '%s | SeftonLinks.com',
     },
-  },
-  openGraph: {
-    type: 'website',
-    locale: 'en_GB',
-    url: BASE_URL,
-    siteName: 'SeftonLinks.com',
-    title: 'SeftonLinks — Links Golf Guide to the Sefton Coast',
     description:
-      'Royal Birkdale, Hillside, Formby and the Sefton Coast links golf corridor. The Open Championship 2026.',
-    images: [
-      {
-        url: `${BASE_URL}/og-default.jpg`,
-        width: 1200,
-        height: 630,
-        alt: 'SeftonLinks — Sefton Coast links golf',
+      'The definitive links golf guide to Royal Birkdale, Hillside, Formby, West Lancashire and the Sefton Coast. Course guides, tee times, conditions and golf break itineraries.',
+    keywords:
+      'Royal Birkdale golf, Sefton Coast golf, links golf England, The Open 2026, Hillside Golf Club, Formby Golf Club, West Lancashire Golf Club, golf breaks Southport',
+    authors: [{ name: 'SeftonLinks.com', url: BASE_URL }],
+    creator: 'SeftonLinks.com',
+    publisher: 'SeftonLinks.com',
+    alternates: {
+      canonical: BASE_URL,
+      types: {
+        "application/rss+xml": `${BASE_URL}/feed`,
       },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'SeftonLinks — Links Golf Guide to the Sefton Coast',
-    description: 'Royal Birkdale, Hillside, Formby and The Open Championship 2026.',
-    images: [`${BASE_URL}/og-default.jpg`],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+    },
+    openGraph: {
+      type: 'website',
+      locale: ogLocale,
+      url: BASE_URL,
+      siteName: 'SeftonLinks.com',
+      title: 'SeftonLinks — Links Golf Guide to the Sefton Coast',
+      description:
+        'Royal Birkdale, Hillside, Formby and the Sefton Coast links golf corridor. The Open Championship 2026.',
+      images: [
+        {
+          url: `${BASE_URL}/og-default.jpg`,
+          width: 1200,
+          height: 630,
+          alt: 'SeftonLinks — Sefton Coast links golf',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'SeftonLinks — Links Golf Guide to the Sefton Coast',
+      description: 'Royal Birkdale, Hillside, Formby and The Open Championship 2026.',
+      images: [`${BASE_URL}/og-default.jpg`],
+    },
+    robots: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
     },
-  },
-  icons: {
-    icon: [
-      { url: '/favicon.ico', sizes: '48x48' },
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-    ],
-    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
-  },
-  manifest: '/manifest.json',
-};
+    icons: {
+      icon: [
+        { url: '/favicon.ico', sizes: '48x48' },
+        { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+        { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      ],
+      apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
+    },
+    manifest: '/manifest.json',
+  };
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

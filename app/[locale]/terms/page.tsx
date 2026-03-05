@@ -1,10 +1,14 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+import { buildAlternates } from '@/lib/metadata';
 
-export const metadata: Metadata = {
-  title: 'Terms of Use | SeftonLinks',
-  robots: { index: false, follow: false },
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  return {
+    title: 'Terms of Use | SeftonLinks',
+    robots: { index: false, follow: false },
+    alternates: buildAlternates('/terms'),
+  };
+}
 
 export default async function TermsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

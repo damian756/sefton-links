@@ -3,14 +3,6 @@ import { COURSES } from '@/lib/courses';
 import { BLOG_POSTS, BLOG_CATEGORIES } from '@/lib/blog';
 import { locales } from '@/i18n/routing';
 
-// All English variants map to the root URL
-const ENGLISH_HREFLANG: Record<string, string> = {
-  'en': '',
-  'en-US': '',
-  'en-AU': '',
-  'en-GB': '',
-};
-
 const BASE_URL = 'https://www.seftonlinks.com';
 
 const STATIC_PAGES = [
@@ -68,17 +60,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority,
       alternates: { languages },
     });
-
-    for (const locale of locales) {
-      if (locale === 'en') continue;
-      entries.push({
-        url: `${BASE_URL}/${locale}${page}`,
-        lastModified: now,
-        changeFrequency,
-        priority: priority * 0.9,
-        alternates: { languages },
-      });
-    }
   }
 
   // ── Blog (English only — no locale alternates) ───────────────
