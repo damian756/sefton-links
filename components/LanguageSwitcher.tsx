@@ -35,7 +35,8 @@ export default function LanguageSwitcher() {
 
   function buildHref(locale: string) {
     if (locale === 'en') return pagePath || '/';
-    return `/${locale}${pagePath === '/' ? '' : pagePath}`;
+    const targetPath = pagePath.startsWith('/blog') ? '/' : pagePath;
+    return `/${locale}${targetPath === '/' ? '' : targetPath}`;
   }
 
   return (

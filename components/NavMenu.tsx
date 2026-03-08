@@ -40,7 +40,8 @@ function useCurrentLocaleAndPath() {
 
 function buildHref(locale: string, pagePath: string) {
   if (locale === 'en') return pagePath || '/';
-  return `/${locale}${pagePath === '/' ? '' : pagePath}`;
+  const targetPath = pagePath.startsWith('/blog') ? '/' : pagePath;
+  return `/${locale}${targetPath === '/' ? '' : targetPath}`;
 }
 
 function Flag({ code }: { code: string }) {
