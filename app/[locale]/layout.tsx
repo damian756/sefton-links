@@ -169,6 +169,7 @@ export default async function LocaleLayout({
           <main className="overflow-x-hidden">{children}</main>
           <Footer locale={locale} />
         </NextIntlClientProvider>
+        <Script src="https://analytics.ahrefs.com/analytics.js" data-key="YxUnUF02+8U+AwJf5UXHRw" strategy="afterInteractive" />
       </body>
     </html>
   );
