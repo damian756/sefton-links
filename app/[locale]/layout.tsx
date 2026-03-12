@@ -162,6 +162,8 @@ export default async function LocaleLayout({
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
           })(window, document, "clarity", "script", "${process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID}");
         `}</Script>
+        {/* eslint-disable-next-line @next/next/no-before-interactive-script-outside-document */}
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="YxUnUF02+8U+AvJf5UXHRw" async></script>
       </head>
       <body className={`${playfair.variable} ${inter.variable} font-sans antialiased bg-[#F8F5EE]`}>
         <NextIntlClientProvider messages={messages}>
@@ -169,7 +171,6 @@ export default async function LocaleLayout({
           <main className="overflow-x-hidden">{children}</main>
           <Footer locale={locale} />
         </NextIntlClientProvider>
-        <Script src="https://analytics.ahrefs.com/analytics.js" data-key="YxUnUF02+8U+AwJf5UXHRw" strategy="afterInteractive" />
       </body>
     </html>
   );
