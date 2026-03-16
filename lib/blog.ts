@@ -609,7 +609,15 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
 }
 
 export function getPostsByCategory(categorySlug: string): BlogPost[] {
-  return BLOG_POSTS.filter((p) => p.categorySlug === categorySlug);
+  return [...BLOG_POSTS]
+    .filter((p) => p.categorySlug === categorySlug)
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}
+
+export function getSortedBlogPosts(): BlogPost[] {
+  return [...BLOG_POSTS].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+  );
 }
 
 function toIso(dateStr: string): string {

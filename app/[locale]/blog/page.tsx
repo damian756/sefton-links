@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { ChevronRight } from 'lucide-react';
-import { BLOG_POSTS, BLOG_CATEGORIES, DAMIAN } from '@/lib/blog';
+import { getSortedBlogPosts, BLOG_CATEGORIES, DAMIAN } from '@/lib/blog';
 import BlogSearch from './BlogSearch';
 
 export const metadata: Metadata = {
@@ -32,6 +32,8 @@ export default async function BlogPage({
   const { locale } = await params;
   if (locale !== 'en') notFound();
 
+  const sortedPosts = getSortedBlogPosts();
+
   return (
     <div className="min-h-screen bg-[#F8F5EE]">
       {/* Hero */}
@@ -53,10 +55,10 @@ export default async function BlogPage({
       <div className="container mx-auto px-4 max-w-5xl py-12">
 
         <BlogSearch
-          posts={BLOG_POSTS}
+          posts={sortedPosts}
           categories={BLOG_CATEGORIES}
           postCountByCategory={Object.fromEntries(
-            BLOG_CATEGORIES.map((c) => [c.slug, BLOG_POSTS.filter((p) => p.categorySlug === c.slug).length])
+            BLOG_CATEGORIES.map((c) => [c.slug, sortedPosts.filter((p) => p.categorySlug === c.slug).length])
           )}
         />
 
