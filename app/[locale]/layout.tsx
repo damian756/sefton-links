@@ -57,7 +57,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     openGraph: {
       type: 'website',
       locale: ogLocale,
-      url: BASE_URL,
       siteName: 'SeftonLinks.com',
       title: 'SeftonLinks — Links Golf Guide to the Sefton Coast',
       description:

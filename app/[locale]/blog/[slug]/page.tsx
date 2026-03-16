@@ -22,7 +22,7 @@ export async function generateMetadata({
   if (!post) return {};
   const cat = getCategoryBySlug(post.categorySlug);
   return {
-    title: `${post.title} | SeftonLinks`,
+    title: post.title,
     description: post.excerpt,
     alternates: { canonical: `${BASE_URL}/blog/${slug}` },
     openGraph: {
@@ -34,6 +34,7 @@ export async function generateMetadata({
       publishedTime: getIsoDate(post),
       authors: [DAMIAN.name],
       section: cat?.label,
+      images: [{ url: post.image ?? `${BASE_URL}/og-default.jpg`, width: 1200, height: 630, alt: post.title }],
     },
   };
 }

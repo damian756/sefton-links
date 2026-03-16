@@ -6,7 +6,7 @@ import { BLOG_POSTS, BLOG_CATEGORIES, DAMIAN } from '@/lib/blog';
 import BlogSearch from './BlogSearch';
 
 export const metadata: Metadata = {
-  title: 'Links Golf Blog — Course Reviews, Tips & The Open 2026 | SeftonLinks',
+  title: 'Links Golf Blog — Course Reviews, Tips & The Open 2026',
   description:
     'First-hand course reviews, links golf tips, and everything you need to know about The Open Championship 2026 at Royal Birkdale — written by a local off 24.',
   alternates: { canonical: 'https://www.seftonlinks.com/blog' },
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     url: 'https://www.seftonlinks.com/blog',
     type: 'website',
     siteName: 'SeftonLinks.com',
+    images: [{ url: 'https://www.seftonlinks.com/og-default.jpg', width: 1200, height: 630, alt: 'SeftonLinks — Sefton Coast links golf' }],
   },
 };
 
