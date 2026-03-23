@@ -23,3 +23,35 @@ export function buildAlternates(pagePath: string) {
     languages,
   };
 }
+
+/**
+ * Build a complete Open Graph object for a page.
+ * Provides all required and recommended OG fields so pages don't rely on
+ * layout inheritance (which Next.js doesn't deep-merge).
+ */
+export function buildOg(
+  pagePath: string,
+  overrides?: {
+    title?: string;
+    description?: string;
+    type?: 'website' | 'article';
+    images?: { url: string; width: number; height: number; alt: string }[];
+    [key: string]: unknown;
+  },
+) {
+  const url = `${BASE_URL}${pagePath === '/' ? '' : pagePath}`;
+  return {
+    url,
+    type: 'website' as const,
+    siteName: 'SeftonLinks.com',
+    images: [
+      {
+        url: `${BASE_URL}/og-default.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'SeftonLinks — Sefton Coast links golf',
+      },
+    ],
+    ...overrides,
+  };
+}

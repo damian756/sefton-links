@@ -30,7 +30,19 @@ const nextConfig: NextConfig = {
   },
 
   async redirects() {
+    const nonEnglishLocales = 'ar|ca|cy|da|de|es|fi|fr|it|ja|ko|nl|no|pl|pt|sv|zh';
     return [
+      // Blog is English-only — redirect all localised blog URLs to the English equivalents
+      {
+        source: `/:locale(${nonEnglishLocales})/blog`,
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: `/:locale(${nonEnglishLocales})/blog/:path*`,
+        destination: '/blog/:path*',
+        permanent: true,
+      },
       {
         source: '/(.*)',
         has: [{ type: 'host', value: 'sefton-links.vercel.app' }],

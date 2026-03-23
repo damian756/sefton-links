@@ -1,17 +1,20 @@
 import { getTranslations } from 'next-intl/server';
 import ConditionTracker from '@/components/ConditionTracker';
 import type { Metadata } from 'next';
-import { buildAlternates } from '@/lib/metadata';
+import { buildAlternates, buildOg } from '@/lib/metadata';
 import { getSouthportWeather } from '@/lib/weather';
 import { CONDITIONS_DATA } from '@/lib/conditions-data';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const tm = await getTranslations({ locale, namespace: 'meta' });
+  const title = tm('conditionsTitle');
+  const description = tm('conditionsDesc');
   return {
-    title: tm('conditionsTitle'),
-    description: tm('conditionsDesc'),
+    title,
+    description,
     alternates: buildAlternates('/conditions'),
+    openGraph: buildOg('/conditions', { title, description }),
   };
 }
 

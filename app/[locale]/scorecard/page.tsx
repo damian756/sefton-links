@@ -2,16 +2,19 @@ import Link from 'next/link';
 import { ChevronRight, Trophy } from 'lucide-react';
 import { COURSES } from '@/lib/courses';
 import type { Metadata } from 'next';
-import { BASE_URL, buildAlternates } from '@/lib/metadata';
+import { BASE_URL, buildAlternates, buildOg } from '@/lib/metadata';
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const tm = await getTranslations({ locale, namespace: 'meta' });
+  const title = tm('scorecardTitle');
+  const description = tm('scorecardDesc');
   return {
-    title: tm('scorecardTitle'),
-    description: tm('scorecardDesc'),
+    title,
+    description,
     alternates: buildAlternates('/scorecard'),
+    openGraph: buildOg('/scorecard', { title, description }),
   };
 }
 
@@ -28,21 +31,32 @@ export default async function ScorecardPage({ params }: { params: Promise<{ loca
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'Dataset',
-            name: 'Sefton Coast Golf Course Scorecard Data',
-            description: 'Par, yardage, course rating and slope rating for all six Sefton Coast links golf courses.',
-            url: `${BASE_URL}/scorecard`,
-            includedInDataCatalog: { '@type': 'DataCatalog', name: 'SeftonLinks.com Golf Database' },
-            hasPart: COURSES.map((course) => ({
-              '@type': 'GolfCourse',
-              name: course.name,
-              url: `${BASE_URL}/courses/${course.slug}`,
-              amenityFeature: course.tees.map((tee) => ({
-                '@type': 'LocationFeatureSpecification',
-                name: `${tee.name} Tee — ${tee.yardage} yards`,
-                value: tee.par,
-              })),
-            })),
+            '@graph': [
+              {
+                '@type': 'Dataset',
+                name: 'Sefton Coast Golf Course Scorecard Data',
+                description: 'Par, yardage, course rating and slope rating for all six Sefton Coast links golf courses.',
+                url: `${BASE_URL}/scorecard`,
+                creator: { '@type': 'Organization', name: 'SeftonLinks.com', url: BASE_URL },
+                distribution: [{ '@type': 'DataDownload', encodingFormat: 'text/html', contentUrl: `${BASE_URL}/scorecard` }],
+                includedInDataCatalog: { '@type': 'DataCatalog', name: 'SeftonLinks.com Golf Database' },
+                keywords: ['golf scorecard', 'Sefton Coast', 'links golf', 'Royal Birkdale', 'Hillside', 'course rating', 'slope rating'],
+              },
+              {
+                '@type': 'ItemList',
+                name: 'Sefton Coast Golf Courses',
+                numberOfItems: COURSES.length,
+                itemListElement: COURSES.map((course, i) => ({
+                  '@type': 'ListItem',
+                  position: i + 1,
+                  item: {
+                    '@type': 'SportsActivityLocation',
+                    name: course.name,
+                    url: `${BASE_URL}/courses/${course.slug}`,
+                  },
+                })),
+              },
+            ],
           }),
         }}
       />

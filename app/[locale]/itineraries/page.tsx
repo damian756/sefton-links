@@ -5,15 +5,18 @@ import { Calendar, Trophy, MapPin, Bed, Utensils, ChevronRight } from 'lucide-re
 import GolfBreakPlanner from '@/components/GolfBreakPlanner';
 import { SEFTON_ITINERARIES } from '@/lib/courses';
 import type { Metadata } from 'next';
-import { buildAlternates } from '@/lib/metadata';
+import { buildAlternates, buildOg } from '@/lib/metadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const tm = await getTranslations({ locale, namespace: 'meta' });
+  const title = tm('itinerariesTitle');
+  const description = tm('itinerariesDesc');
   return {
-    title: tm('itinerariesTitle'),
-    description: tm('itinerariesDesc'),
+    title,
+    description,
     alternates: buildAlternates('/itineraries'),
+    openGraph: buildOg('/itineraries', { title, description }),
   };
 }
 

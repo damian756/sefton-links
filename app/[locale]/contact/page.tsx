@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
-import { buildAlternates } from '@/lib/metadata';
+import { buildAlternates, buildOg } from '@/lib/metadata';
 
 export async function generateMetadata({
   params,
@@ -9,10 +9,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const tm = await getTranslations({ locale, namespace: 'meta' });
+  const title = tm('contactTitle');
+  const description = tm('contactDesc');
   return {
-    title: tm('contactTitle'),
-    description: tm('contactDesc'),
+    title,
+    description,
     alternates: buildAlternates('/contact'),
+    openGraph: buildOg('/contact', { title, description }),
   };
 }
 

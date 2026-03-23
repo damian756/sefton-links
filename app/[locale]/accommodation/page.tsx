@@ -2,16 +2,19 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Bed, MapPin, ExternalLink, CheckCircle2, Clock, Trophy, ChevronRight } from 'lucide-react';
 import type { Metadata } from 'next';
-import { buildAlternates } from '@/lib/metadata';
+import { buildAlternates, buildOg } from '@/lib/metadata';
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const tm = await getTranslations({ locale, namespace: 'meta' });
+  const title = tm('accommodationTitle');
+  const description = tm('accommodationDesc');
   return {
-    title: tm('accommodationTitle'),
-    description: tm('accommodationDesc'),
+    title,
+    description,
     alternates: buildAlternates('/accommodation'),
+    openGraph: buildOg('/accommodation', { title, description }),
   };
 }
 

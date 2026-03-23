@@ -4,15 +4,18 @@ import { getTranslations } from 'next-intl/server';
 import { Trophy, MapPin, ChevronRight, Star, Phone, ExternalLink } from 'lucide-react';
 import { COURSES } from '@/lib/courses';
 import type { Metadata } from 'next';
-import { BASE_URL, buildAlternates } from '@/lib/metadata';
+import { BASE_URL, buildAlternates, buildOg } from '@/lib/metadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const tm = await getTranslations({ locale, namespace: 'meta' });
+  const title = tm('coursesTitle');
+  const description = tm('coursesDesc');
   return {
-    title: tm('coursesTitle'),
-    description: tm('coursesDesc'),
+    title,
+    description,
     alternates: buildAlternates('/courses'),
+    openGraph: buildOg('/courses', { title, description }),
   };
 }
 

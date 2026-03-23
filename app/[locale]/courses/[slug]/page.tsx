@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 import { COURSES, getCourseBySlug } from '@/lib/courses';
 import type { Metadata } from 'next';
-import { BASE_URL, buildAlternates } from '@/lib/metadata';
+import { BASE_URL, buildAlternates, buildOg } from '@/lib/metadata';
 
 export async function generateStaticParams() {
   return COURSES.map((course) => ({ slug: course.slug }));
@@ -31,12 +31,7 @@ export async function generateMetadata({
     title,
     description,
     alternates: buildAlternates(`/courses/${slug}`),
-    openGraph: {
-      title,
-      description,
-      url: `${BASE_URL}/courses/${slug}`,
-      type: 'website',
-    },
+    openGraph: buildOg(`/courses/${slug}`, { title, description }),
   };
 }
 

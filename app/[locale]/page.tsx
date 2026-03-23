@@ -5,7 +5,7 @@ import { Trophy, Wind, MapPin, Calendar, ChevronRight, Star, Flag, Clock, Users 
 import OpenCountdown from '@/components/OpenCountdown';
 import { COURSES } from '@/lib/courses';
 import type { Metadata } from 'next';
-import { BASE_URL, buildAlternates } from '@/lib/metadata';
+import { BASE_URL, buildAlternates, buildOg } from '@/lib/metadata';
 
 export async function generateMetadata({
   params,
@@ -14,11 +14,14 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const tm = await getTranslations({ locale, namespace: 'meta' });
+  const title = tm('homeTitle');
+  const description = tm('homeDesc');
 
   return {
-    title: { absolute: `${tm('homeTitle')} | SeftonLinks.com` },
-    description: tm('homeDesc'),
+    title: { absolute: `${title} | SeftonLinks.com` },
+    description,
     alternates: buildAlternates('/'),
+    openGraph: buildOg('/', { title, description }),
   };
 }
 

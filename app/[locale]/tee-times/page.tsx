@@ -2,16 +2,19 @@ import Link from 'next/link';
 import { Phone, ExternalLink, AlertCircle, CheckCircle2, Clock, Users, ChevronRight } from 'lucide-react';
 import { COURSES } from '@/lib/courses';
 import type { Metadata } from 'next';
-import { buildAlternates } from '@/lib/metadata';
+import { buildAlternates, buildOg } from '@/lib/metadata';
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const tm = await getTranslations({ locale, namespace: 'meta' });
+  const title = tm('teeTimesTitle');
+  const description = tm('teeTimesDesc');
   return {
-    title: tm('teeTimesTitle'),
-    description: tm('teeTimesDesc'),
+    title,
+    description,
     alternates: buildAlternates('/tee-times'),
+    openGraph: buildOg('/tee-times', { title, description }),
   };
 }
 
