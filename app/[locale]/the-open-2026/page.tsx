@@ -5,6 +5,7 @@ import { Trophy, MapPin, Calendar, Ticket, Bed, ChevronRight, ExternalLink, User
 import OpenCountdown from '@/components/OpenCountdown';
 import type { Metadata } from 'next';
 import { BASE_URL, buildAlternates, buildOg } from '@/lib/metadata';
+import { LATEROOMS } from '@/lib/affiliate-links';
 
 export async function generateMetadata({
   params,
@@ -395,14 +396,14 @@ export default async function OpenPage({
                 {tp('bookAccomDesc')}
               </p>
               <a
-                href="https://www.booking.com/searchresults.html?ss=Southport"
+                href={LATEROOMS.southportOpen2026}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
                 className="flex items-center justify-center gap-2 bg-[#B8912A] text-white font-semibold px-4 py-3 rounded-lg hover:bg-[#D4AE7A] transition-colors text-sm w-full"
               >
                 <Bed size={15} /> {tp('bookAccomBtn')}
               </a>
-              <p className="text-white/35 text-xs mt-2 text-center">{tp('bookAccomAffiliate')}</p>
+              <p className="text-white/35 text-xs mt-2 text-center">LateRooms.com partner link</p>
             </div>
 
             {/* Course guide link */}

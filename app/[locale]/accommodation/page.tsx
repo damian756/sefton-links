@@ -4,6 +4,7 @@ import { Bed, MapPin, ExternalLink, CheckCircle2, Clock, Trophy, ChevronRight } 
 import type { Metadata } from 'next';
 import { buildAlternates, buildOg } from '@/lib/metadata';
 import { getTranslations } from 'next-intl/server';
+import { LATEROOMS } from '@/lib/affiliate-links';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -30,7 +31,7 @@ const ACCOMMODATION = [
         desc: 'The classic choice for golf visitors to Southport. On Lord Street, 10 minutes from Birkdale by taxi, good restaurant on site. Popular with Open Championship groups in 2017. Book well ahead in summer.',
         approxRate: '£120–£250/night',
         golferFriendly: ['Secure club storage', 'Early breakfast available', 'Good bar/restaurant', 'Central location'],
-        bookingUrl: 'https://www.booking.com/hotel/gb/the-bold.html',
+        bookingUrl: LATEROOMS.southport,
       },
       {
         name: 'The Vincent Hotel',
@@ -39,7 +40,7 @@ const ACCOMMODATION = [
         desc: 'More upscale option on Lord Street. The Grill Room is excellent. Stylish rooms, good spa. Works well for a premium trip alongside Royal Birkdale.',
         approxRate: '£150–£350/night',
         golferFriendly: ['Golf storage on request', 'Spa for post-round recovery', 'Fine dining', 'Central location'],
-        bookingUrl: 'https://www.thevincenthotel.com',
+        bookingUrl: LATEROOMS.southport,
       },
     ],
   },
@@ -54,7 +55,7 @@ const ACCOMMODATION = [
         desc: 'Golf-specific resort between Formby village and the coast courses. Has its own parkland course. Proximity to Formby Golf Club and Birkdale corridor. Purpose-built for golf groups.',
         approxRate: '£100–£200/night',
         golferFriendly: ['Dedicated golf storage', 'Early breakfast standard', 'Golf packages available', 'On-site course'],
-        bookingUrl: 'https://www.formbyhallgolfresort.co.uk',
+        bookingUrl: LATEROOMS.formby,
       },
       {
         name: 'Formby B&Bs (various)',
@@ -63,7 +64,7 @@ const ACCOMMODATION = [
         desc: 'Several quality B&Bs in Formby village — quieter, more affordable base. The village has good restaurants within walking distance. 20 min drive to Birkdale. Check SouthportGuide.co.uk for full listings.',
         approxRate: '£70–£120/night',
         golferFriendly: ['Flexible breakfast times', 'Good value', 'Quiet setting', 'Village amenities'],
-        bookingUrl: 'https://www.formbyguide.co.uk/accommodation',
+        bookingUrl: LATEROOMS.formby,
       },
     ],
   },
@@ -78,7 +79,7 @@ const ACCOMMODATION = [
         desc: 'Wide range of options from budget chains to boutique hotels. 45–60 min to Birkdale by car, 50 min by train to Southport then taxi. Good for multi-day trips combining golf with Liverpool itself.',
         approxRate: '£70–£200/night',
         golferFriendly: ['Wide choice', 'Good transport links', 'City dining', 'Parking widely available'],
-        bookingUrl: 'https://www.booking.com/searchresults.html?ss=Liverpool',
+        bookingUrl: LATEROOMS.southport,
       },
     ],
   },
