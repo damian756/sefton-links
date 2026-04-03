@@ -4,6 +4,7 @@ import { getTranslations } from 'next-intl/server';
 import { Trophy, Wind, MapPin, Calendar, ChevronRight, Star, Flag, Clock, Users } from 'lucide-react';
 import OpenCountdown from '@/components/OpenCountdown';
 import { COURSES } from '@/lib/courses';
+import { getSortedBlogPosts } from '@/lib/blog';
 import type { Metadata } from 'next';
 import { BASE_URL, buildAlternates, buildOg } from '@/lib/metadata';
 
@@ -578,6 +579,60 @@ export default async function HomePage({
           </div>
         </div>
       </section>
+
+      {/* ═══════════════════════════════════════════
+          BLOG — LATEST POSTS
+      ═══════════════════════════════════════════ */}
+      {(() => {
+        const recentPosts = getSortedBlogPosts().slice(0, 3);
+        return (
+          <section className="py-16 bg-white border-t border-[#E8E3D8]">
+            <div className="container mx-auto px-4 max-w-7xl">
+              <div className="flex items-end justify-between mb-8">
+                <div>
+                  <p className="text-[#B8912A] text-xs font-bold uppercase tracking-widest mb-2">From the Blog</p>
+                  <h2 className="font-display text-2xl md:text-3xl font-bold text-[#0D1B2A]">Latest from SeftonLinks</h2>
+                </div>
+                <Link href={`/${locale}/blog`} className="text-sm font-semibold text-[#1A4A30] hover:text-[#B8912A] transition-colors hidden sm:block">
+                  All posts →
+                </Link>
+              </div>
+              <div className="grid md:grid-cols-3 gap-6">
+                {recentPosts.map((post) => (
+                  <Link
+                    key={post.slug}
+                    href={`/${locale}/blog/${post.slug}`}
+                    className="group bg-[#F8F5EE] rounded-xl overflow-hidden border border-[#E8E3D8] hover:border-[#1A4A30]/30 hover:shadow-md transition-all"
+                  >
+                    {post.image && (
+                      <div className="relative h-40 overflow-hidden">
+                        <Image
+                          src={post.image}
+                          alt={post.title}
+                          fill
+                          sizes="(max-width: 768px) 100vw, 33vw"
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                    )}
+                    <div className="p-5">
+                      <p className="text-[#B8912A] text-[10px] font-bold uppercase tracking-widest mb-2">{post.categorySlug.replace(/-/g, ' ')}</p>
+                      <h3 className="font-display font-bold text-[#0D1B2A] text-sm leading-snug group-hover:text-[#1A4A30] transition-colors mb-2">
+                        {post.title}
+                      </h3>
+                      <p className="text-[#2C3E50]/60 text-xs leading-relaxed line-clamp-2">{post.excerpt}</p>
+                      <p className="text-[#B8912A] text-xs font-semibold mt-3">{post.date}</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+              <div className="mt-5 sm:hidden text-center">
+                <Link href={`/${locale}/blog`} className="text-sm text-[#1A4A30] font-semibold">All posts →</Link>
+              </div>
+            </div>
+          </section>
+        );
+      })()}
 
       {/* ═══════════════════════════════════════════
           NETWORK CROSS-LINKS
