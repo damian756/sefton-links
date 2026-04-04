@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     metadataBase: new URL(BASE_URL),
     title: {
-      default: 'SeftonLinks — Links Golf Guide to the Sefton Coast',
+      default: 'SeftonLinks: Links Golf Guide to the Sefton Coast',
       template: '%s | SeftonLinks.com',
     },
     description:
@@ -58,7 +58,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       type: 'website',
       locale: ogLocale,
       siteName: 'SeftonLinks.com',
-      title: 'SeftonLinks — Links Golf Guide to the Sefton Coast',
+      title: 'SeftonLinks: Links Golf Guide to the Sefton Coast',
       description:
         'Royal Birkdale, Hillside, Formby and the Sefton Coast links golf corridor. The Open Championship 2026.',
       images: [
@@ -66,13 +66,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
           url: `${BASE_URL}/og-default.jpg`,
           width: 1200,
           height: 630,
-          alt: 'SeftonLinks — Sefton Coast links golf',
+          alt: 'SeftonLinks: Sefton Coast links golf',
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'SeftonLinks — Links Golf Guide to the Sefton Coast',
+      title: 'SeftonLinks: Links Golf Guide to the Sefton Coast',
       description: 'Royal Birkdale, Hillside, Formby and The Open Championship 2026.',
       images: [`${BASE_URL}/og-default.jpg`],
     },
@@ -132,7 +132,7 @@ export default async function LocaleLayout({
               name: 'SeftonLinks.com',
               url: BASE_URL,
               description:
-                'The definitive links golf guide to the Sefton Coast — Royal Birkdale, Hillside, Formby, West Lancashire and The Open Championship 2026.',
+                'The definitive links golf guide to the Sefton Coast: Royal Birkdale, Hillside, Formby, West Lancashire and The Open Championship 2026.',
               publisher: {
                 '@type': 'Organization',
                 '@id': 'https://www.churchtownmedia.co.uk/#organization',

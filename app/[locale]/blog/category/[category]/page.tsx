@@ -17,16 +17,16 @@ export async function generateMetadata({
   const cat = getCategoryBySlug(category);
   if (!cat) return {};
   return {
-    title: `${cat.label} — Links Golf Blog`,
+    title: `${cat.label}: Links Golf Blog`,
     description: cat.description,
     alternates: { canonical: `https://www.seftonlinks.com/blog/category/${category}` },
     openGraph: {
-      title: `${cat.label} — Links Golf Blog`,
+      title: `${cat.label}: Links Golf Blog`,
       description: cat.description,
       url: `https://www.seftonlinks.com/blog/category/${category}`,
       type: 'website',
       siteName: 'SeftonLinks.com',
-      images: [{ url: 'https://www.seftonlinks.com/og-default.jpg', width: 1200, height: 630, alt: 'SeftonLinks — Sefton Coast links golf' }],
+      images: [{ url: 'https://www.seftonlinks.com/og-default.jpg', width: 1200, height: 630, alt: 'SeftonLinks: Sefton Coast links golf' }],
     },
   };
 }

@@ -61,7 +61,7 @@ const ACCOMMODATION = [
         name: 'Formby B&Bs (various)',
         type: 'B&B',
         address: 'Formby Village, L37',
-        desc: 'Several quality B&Bs in Formby village — quieter, more affordable base. The village has good restaurants within walking distance. 20 min drive to Birkdale. Check SouthportGuide.co.uk for full listings.',
+        desc: 'Several quality B&Bs in Formby village: quieter, more affordable base. The village has good restaurants within walking distance. 20 min drive to Birkdale. Check SouthportGuide.co.uk for full listings.',
         approxRate: '£70–£120/night',
         golferFriendly: ['Flexible breakfast times', 'Good value', 'Quiet setting', 'Village amenities'],
         bookingUrl: LATEROOMS.formby,

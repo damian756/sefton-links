@@ -130,7 +130,7 @@ export default async function HomePage({
       </div>
 
       {/* ═══════════════════════════════════════════
-          HERO — NAVY LINKS LANDSCAPE
+          HERO: NAVY LINKS LANDSCAPE
       ═══════════════════════════════════════════ */}
       <section className="relative bg-[#0D1B2A] overflow-hidden">
         <Image
@@ -381,7 +381,7 @@ export default async function HomePage({
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Tool 1 — Course Conditions */}
+            {/* Tool 1: Course Conditions */}
             <Link
               href={`${prefix}/conditions`}
               className="group bg-white/6 border border-white/10 rounded-xl p-6 hover:border-[#B8912A]/40 hover:bg-white/10 transition-all card-hover"
@@ -401,7 +401,7 @@ export default async function HomePage({
               </span>
             </Link>
 
-            {/* Tool 2 — Golf Break Planner */}
+            {/* Tool 2: Golf Break Planner */}
             <Link
               href={`${prefix}/itineraries`}
               className="group bg-white/6 border border-white/10 rounded-xl p-6 hover:border-[#B8912A]/40 hover:bg-white/10 transition-all card-hover"
@@ -421,7 +421,7 @@ export default async function HomePage({
               </span>
             </Link>
 
-            {/* Tool 3 — Tee Time Guide */}
+            {/* Tool 3: Tee Time Guide */}
             <Link
               href={`${prefix}/tee-times`}
               className="group bg-white/6 border border-white/10 rounded-xl p-6 hover:border-[#B8912A]/40 hover:bg-white/10 transition-all card-hover"
@@ -441,7 +441,7 @@ export default async function HomePage({
               </span>
             </Link>
 
-            {/* Tool 4 — Scorecard Database */}
+            {/* Tool 4: Scorecard Database */}
             <Link
               href={`${prefix}/scorecard`}
               className="group bg-white/6 border border-white/10 rounded-xl p-6 hover:border-[#B8912A]/40 hover:bg-white/10 transition-all card-hover"
@@ -461,7 +461,7 @@ export default async function HomePage({
               </span>
             </Link>
 
-            {/* Tool 5 — Accommodation for Golfers */}
+            {/* Tool 5: Accommodation for Golfers */}
             <Link
               href={`${prefix}/accommodation`}
               className="group bg-white/6 border border-white/10 rounded-xl p-6 hover:border-[#B8912A]/40 hover:bg-white/10 transition-all card-hover"
@@ -481,7 +481,7 @@ export default async function HomePage({
               </span>
             </Link>
 
-            {/* Tool 6 — Golf Break Itineraries */}
+            {/* Tool 6: Golf Break Itineraries */}
             <Link
               href={`${prefix}/itineraries`}
               className="group bg-white/6 border border-white/10 rounded-xl p-6 hover:border-[#B8912A]/40 hover:bg-white/10 transition-all card-hover"
@@ -540,7 +540,7 @@ export default async function HomePage({
       </section>
 
       {/* ═══════════════════════════════════════════
-          EDITORIAL — WHY SEFTON COAST?
+          EDITORIAL: WHY SEFTON COAST?
       ═══════════════════════════════════════════ */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
@@ -581,7 +581,7 @@ export default async function HomePage({
       </section>
 
       {/* ═══════════════════════════════════════════
-          BLOG — LATEST POSTS
+          BLOG: LATEST POSTS
       ═══════════════════════════════════════════ */}
       {(() => {
         const recentPosts = getSortedBlogPosts().slice(0, 3);

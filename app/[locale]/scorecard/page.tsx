@@ -114,8 +114,8 @@ export default async function ScorecardPage({ params }: { params: Promise<{ loca
                         <td className="px-4 py-3 text-center font-mono text-[#2C3E50]/60">
                           {Math.round(tee.yardage * 0.9144).toLocaleString()}m
                         </td>
-                        <td className="px-4 py-3 text-center font-mono text-[#0D1B2A]">{tee.rating ?? '—'}</td>
-                        <td className="px-4 py-3 text-center font-mono text-[#0D1B2A]">{tee.slope ?? '—'}</td>
+                        <td className="px-4 py-3 text-center font-mono text-[#0D1B2A]">{tee.rating ?? '-'}</td>
+                        <td className="px-4 py-3 text-center font-mono text-[#0D1B2A]">{tee.slope ?? '-'}</td>
                       </tr>
                     ))}
                   </tbody>

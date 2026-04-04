@@ -19,7 +19,7 @@ export async function generateMetadata({
     description: tm('openDesc'),
     alternates: buildAlternates('/the-open-2026'),
     openGraph: buildOg('/the-open-2026', {
-      title: 'The Open Championship 2026 — Royal Birkdale',
+      title: 'The Open Championship 2026: Royal Birkdale',
       description: 'The 155th Open Championship at Royal Birkdale, Southport. July 16–19, 2026. Full visitor guide.',
     }),
   };

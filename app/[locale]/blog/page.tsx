@@ -6,17 +6,17 @@ import { getSortedBlogPosts, BLOG_CATEGORIES, DAMIAN } from '@/lib/blog';
 import BlogSearch from './BlogSearch';
 
 export const metadata: Metadata = {
-  title: 'Links Golf Blog — Course Reviews, Tips & The Open 2026',
+  title: 'Links Golf Blog: Course Reviews, Tips & The Open 2026',
   description:
-    'First-hand course reviews, links golf tips, and everything you need to know about The Open Championship 2026 at Royal Birkdale — written by a local off 24.',
+    'First-hand course reviews, links golf tips, and everything you need to know about The Open Championship 2026 at Royal Birkdale: written by a local off 24.',
   alternates: { canonical: 'https://www.seftonlinks.com/blog' },
   openGraph: {
     title: 'Links Golf Blog | SeftonLinks.com',
-    description: 'Course reviews, links golf tips and Open 2026 guides — written by a local.',
+    description: 'Course reviews, links golf tips and Open 2026 guides: written by a local.',
     url: 'https://www.seftonlinks.com/blog',
     type: 'website',
     siteName: 'SeftonLinks.com',
-    images: [{ url: 'https://www.seftonlinks.com/og-default.jpg', width: 1200, height: 630, alt: 'SeftonLinks — Sefton Coast links golf' }],
+    images: [{ url: 'https://www.seftonlinks.com/og-default.jpg', width: 1200, height: 630, alt: 'SeftonLinks: Sefton Coast links golf' }],
   },
 };
 
@@ -43,10 +43,10 @@ export default async function BlogPage({
             The SeftonLinks Blog
           </p>
           <h1 className="font-display text-4xl md:text-5xl font-bold mb-4 leading-tight">
-            Links Golf — Written From the Inside
+            Links Golf: Written From the Inside
           </h1>
           <p className="text-white/65 text-lg leading-relaxed max-w-2xl">
-            Course reviews, practical tips, and Open 2026 guides — written by Damian Roche, founder
+            Course reviews, practical tips, and Open 2026 guides: written by Damian Roche, founder
             of SeftonLinks and a 24-handicapper who lives three miles from Royal Birkdale.
           </p>
         </div>

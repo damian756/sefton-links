@@ -60,7 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
-  // ── Blog (English only — no locale alternates) ───────────────
+  // ── Blog (English only: no locale alternates) ───────────────
   entries.push({
     url: `${BASE_URL}/blog`,
     lastModified: now,
