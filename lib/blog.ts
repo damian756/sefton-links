@@ -785,7 +785,7 @@ export const BLOG_POSTS: BlogPost[] = [
     image: '/images/sefton-coast-morning.jpg',
     excerpt: 'April on the Sefton Coast is genuinely one of the best times to play. The courses are quieter, green fees are lower, and the conditions — firm turf, clear air, manageable wind — are as good as they get. Here\'s what to expect.',
     categorySlug: 'links-golf-tips',
-    date: '2 Apr 2026',
+    date: '13 Apr 2026',
     readingTime: '6 min read',
     content: [
       { type: 'p', text: 'There is a version of the Sefton Coast golf calendar that everyone knows about: peak summer, Open Championship week, the busiest tee sheets and the highest green fees of the year. And then there\'s April. Quieter, cheaper, and in many ways the better golf. Here\'s the honest guide to playing the coast in spring.' },
@@ -823,7 +823,7 @@ export const BLOG_POSTS: BlogPost[] = [
     image: '/images/sefton-coast.jpg',
     excerpt: 'Most golfers lose strokes on links courses because they play the wrong shots, not because they hit them badly. Strategic course management on links is a different skill to parkland golf. Here\'s what actually works.',
     categorySlug: 'links-golf-tips',
-    date: '2 Apr 2026',
+    date: '12 Apr 2026',
     readingTime: '7 min read',
     content: [
       { type: 'p', text: 'I\'ve now played the Sefton Coast courses enough times to have a sense of where my score actually goes. Most of it isn\'t technical. Most of it is decisions: taking on a flag that was never on, playing out of gorse instead of dropping, not accounting for the wind properly and ending up in a bunker I shouldn\'t have been anywhere near. Links course management is a specific skill and it\'s separate from being able to hit a golf ball.' },
