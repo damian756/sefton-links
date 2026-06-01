@@ -4,7 +4,7 @@ import { Bed, MapPin, ExternalLink, CheckCircle2, Clock, Trophy, ChevronRight } 
 import type { Metadata } from 'next';
 import { buildAlternates, buildOg } from '@/lib/metadata';
 import { getTranslations } from 'next-intl/server';
-import { LATEROOMS } from '@/lib/affiliate-links';
+import { LATEROOMS, CHAMPIONS_TRAVEL, COTTAGES } from '@/lib/affiliate-links';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -204,6 +204,40 @@ export default async function AccommodationPage({ params }: { params: Promise<{ 
                 <p className="text-white/70 text-sm leading-relaxed">{tip}</p>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Partners */}
+        <div className="grid sm:grid-cols-2 gap-6">
+          <div className="bg-white border border-[#E8E3D8] rounded-xl p-6">
+            <p className="text-[#B8912A] text-xs font-bold uppercase tracking-widest mb-1">Golf Travel Partner</p>
+            <h3 className="font-display text-lg font-bold text-[#0D1B2A] mb-2">Full Golf Package</h3>
+            <p className="text-[#2C3E50]/65 text-sm leading-relaxed mb-4">
+              Champions Travel arrange complete golf travel packages: hotel, transfers, and tee times together. Worth checking if you'd rather have it sorted in one place than pieced together.
+            </p>
+            <a
+              href={CHAMPIONS_TRAVEL.homepage}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="flex items-center justify-center gap-2 bg-[#1A4A30] hover:bg-[#B8912A] text-white font-semibold px-4 py-2.5 rounded-lg transition-colors text-sm w-full"
+            >
+              View packages →
+            </a>
+          </div>
+          <div className="bg-white border border-[#E8E3D8] rounded-xl p-6">
+            <p className="text-[#B8912A] text-xs font-bold uppercase tracking-widest mb-1">Self-Catering Partner</p>
+            <h3 className="font-display text-lg font-bold text-[#0D1B2A] mb-2">Coming as a Group?</h3>
+            <p className="text-[#2C3E50]/65 text-sm leading-relaxed mb-4">
+              Golf groups in a self-catering cottage costs less per head than hotel rooms and you have a base to return to each evening. Cottages.com have options across Southport and the Sefton Coast.
+            </p>
+            <a
+              href={COTTAGES.summerSale}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="flex items-center justify-center gap-2 bg-[#1A4A30] hover:bg-[#B8912A] text-white font-semibold px-4 py-2.5 rounded-lg transition-colors text-sm w-full"
+            >
+              Browse cottages →
+            </a>
           </div>
         </div>
 

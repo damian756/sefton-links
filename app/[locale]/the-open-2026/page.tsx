@@ -5,7 +5,7 @@ import { Trophy, MapPin, Calendar, Ticket, Bed, ChevronRight, ExternalLink, User
 import OpenCountdown from '@/components/OpenCountdown';
 import type { Metadata } from 'next';
 import { BASE_URL, buildAlternates, buildOg } from '@/lib/metadata';
-import { LATEROOMS } from '@/lib/affiliate-links';
+import { LATEROOMS, CHAMPIONS_TRAVEL } from '@/lib/affiliate-links';
 
 export async function generateMetadata({
   params,
@@ -404,6 +404,23 @@ export default async function OpenPage({
                 <Bed size={15} /> {tp('bookAccomBtn')}
               </a>
               <p className="text-white/35 text-xs mt-2 text-center">LateRooms.com partner link</p>
+            </div>
+
+            {/* Champions Travel — golf packages */}
+            <div className="bg-white border border-[#E8E3D8] rounded-xl p-5">
+              <h3 className="font-display text-lg font-bold text-[#0D1B2A] mb-2">Full Golf Package?</h3>
+              <p className="text-[#2C3E50]/65 text-sm mb-4 leading-relaxed">
+                Champions Travel specialise in golf travel packages for major championships. Hotel, transfers, and course access sorted together.
+              </p>
+              <a
+                href={CHAMPIONS_TRAVEL.homepage}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="flex items-center justify-center gap-2 bg-[#0D1B2A] hover:bg-[#B8912A] text-white font-semibold px-4 py-3 rounded-lg transition-colors text-sm w-full"
+              >
+                <Trophy size={15} /> View packages →
+              </a>
+              <p className="text-[#2C3E50]/35 text-xs mt-2 text-center">Champions Travel partner link</p>
             </div>
 
             {/* Course guide link */}
