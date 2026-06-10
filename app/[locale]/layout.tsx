@@ -355,6 +355,9 @@ async function Footer({ locale }: { locale: string }) {
             <Link href={`${prefix}/contact`} className="hover:text-white/60 transition">
               {tf('contactLink')}
             </Link>
+            <Link href="https://www.siba.digital/disclosure" className="hover:text-white/60 transition">
+              Disclosure
+            </Link>
           </div>
         </div>
       </div>
