@@ -15,6 +15,7 @@ const STATIC_PAGES = [
   '/tee-times',
   '/accommodation',
   '/contact',
+  '/advertise',
 ];
 
 const COURSE_PAGES = COURSES.map((c) => `/courses/${c.slug}`);
