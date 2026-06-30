@@ -335,12 +335,12 @@ async function Footer({ locale }: { locale: string }) {
 
         <div className="border-t border-white/10 pt-5 pb-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm">
           <p className="text-white/50">
-            Golf club or pro shop?{" "}
-            <span className="text-[#B8912A] font-semibold">Partner with the Sefton Coast Network</span>
+            Golf club, travel brand or local business?{" "}
+            <span className="text-[#B8912A] font-semibold">Advertise with the Sefton Coast Network</span>
           </p>
-          <a href="mailto:hello@seftoncoast.network" className="text-[#B8912A] hover:text-white transition font-medium text-sm">
-            hello@seftoncoast.network →
-          </a>
+          <Link href={`${prefix}/advertise`} className="text-[#B8912A] hover:text-white transition font-medium text-sm">
+            View advertising options →
+          </Link>
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/35">
@@ -354,6 +354,9 @@ async function Footer({ locale }: { locale: string }) {
             </Link>
             <Link href={`${prefix}/contact`} className="hover:text-white/60 transition">
               {tf('contactLink')}
+            </Link>
+            <Link href={`${prefix}/advertise`} className="hover:text-white/60 transition">
+              Advertise
             </Link>
             <Link href="https://www.siba.digital/disclosure" className="hover:text-white/60 transition">
               Disclosure
