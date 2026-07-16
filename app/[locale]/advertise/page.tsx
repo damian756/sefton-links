@@ -181,7 +181,7 @@ export default function AdvertisePage() {
             <p className="text-[#2C3E50]/55 mt-3 text-sm max-w-xl mx-auto">
               Packages cover one site or the full network. The Premium package is the right choice for brands targeting the Sefton Coast professional and golf demographic.
             </p>
-            <p className="text-[#2C3E50]/40 mt-2 text-xs">All packages: six months paid upfront. Category exclusivity included.</p>
+            <p className="text-[#2C3E50]/40 mt-2 text-xs">All packages: six-month minimum contract. Category exclusivity included.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-5">
@@ -203,7 +203,7 @@ export default function AdvertisePage() {
                   <div className="text-2xl font-extrabold text-[#0D1B2A] mb-0.5">
                     {pkg.price}<span className="text-sm font-normal text-[#2C3E50]/40"> / month</span>
                   </div>
-                  <p className="text-xs text-[#2C3E50]/40 mb-4">{pkg.total} paid upfront on agreement</p>
+                  <p className="text-xs text-[#2C3E50]/40 mb-4">{pkg.total} · 6-month minimum contract</p>
                   <ul className="space-y-2 mb-5">
                     {pkg.features.map((f) => (
                       <li key={f} className="flex items-start gap-2 text-xs text-[#2C3E50]/70">
