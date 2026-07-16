@@ -3,13 +3,18 @@
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 
-const OPEN_DATE = new Date('2026-07-16T06:30:00Z');
+const OPEN_START = new Date('2026-07-12T06:30:00Z');
+const OPEN_END = new Date('2026-07-19T20:00:00Z');
 
-function getTimeLeft() {
+function getStatus() {
   const now = new Date();
-  const diff = OPEN_DATE.getTime() - now.getTime();
-  if (diff <= 0) return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+  const isLive = now >= OPEN_START && now < OPEN_END;
+  const isOver = now >= OPEN_END;
+  const diff = OPEN_START.getTime() - now.getTime();
+  if (isLive || isOver || diff <= 0) return { isLive, isOver, days: 0, hours: 0, minutes: 0, seconds: 0 };
   return {
+    isLive: false,
+    isOver: false,
     days: Math.floor(diff / (1000 * 60 * 60 * 24)),
     hours: Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
     minutes: Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)),
@@ -18,13 +23,30 @@ function getTimeLeft() {
 }
 
 export default function OpenCountdown({ variant = 'default' }: { variant?: 'default' | 'compact' | 'hero' }) {
-  const [time, setTime] = useState(getTimeLeft);
+  const [status, setStatus] = useState(getStatus);
   const t = useTranslations('open');
 
   useEffect(() => {
-    const timer = setInterval(() => setTime(getTimeLeft()), 1000);
+    const timer = setInterval(() => setStatus(getStatus()), 1000);
     return () => clearInterval(timer);
   }, []);
+
+  const time = status;
+
+  if (status.isLive) {
+    const liveBlock = (
+      <div className="flex flex-col items-center gap-2">
+        <div className="flex items-center gap-2">
+          <span className="w-3 h-3 rounded-full bg-green-400 animate-pulse" />
+          <span className="text-green-400 font-bold text-sm uppercase tracking-wider">Live Now</span>
+        </div>
+        <p className="text-[#D4AE7A] text-xs uppercase tracking-widest">The Open Championship · Royal Birkdale · Ends 19 Jul</p>
+      </div>
+    );
+    if (variant === 'hero') return <div className="py-4">{liveBlock}</div>;
+    if (variant === 'compact') return <div className="flex items-center gap-2 text-sm"><span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" /><span className="text-green-400 font-bold">Live Now</span></div>;
+    return <div className="flex justify-center py-2">{liveBlock}</div>;
+  }
 
   if (variant === 'compact') {
     return (
