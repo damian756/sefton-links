@@ -48,6 +48,21 @@ export default function OpenCountdown({ variant = 'default' }: { variant?: 'defa
     return <div className="flex justify-center py-2">{liveBlock}</div>;
   }
 
+  if (status.isOver) {
+    const overBlock = (
+      <div className="flex flex-col items-center gap-2">
+        <div className="flex items-center gap-2">
+          <span className="text-[#C9A84C] text-lg">🏆</span>
+          <span className="text-[#C9A84C] font-bold text-sm uppercase tracking-wider">Ryan Fox. Champion Golfer 2026.</span>
+        </div>
+        <p className="text-[#D4AE7A] text-xs uppercase tracking-widest">The Open Championship · Royal Birkdale · 12–19 July 2026</p>
+      </div>
+    );
+    if (variant === 'hero') return <div className="py-4">{overBlock}</div>;
+    if (variant === 'compact') return <div className="flex items-center gap-2 text-sm"><span className="text-[#C9A84C]">🏆</span><span className="text-[#C9A84C] font-bold">Ryan Fox, Champion 2026</span></div>;
+    return <div className="flex justify-center py-2">{overBlock}</div>;
+  }
+
   if (variant === 'compact') {
     return (
       <div className="flex items-center gap-3 text-sm font-mono">
