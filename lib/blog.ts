@@ -1707,7 +1707,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: 'h2', text: 'Downwind: The Overlooked Adjustment' },
       { type: 'p', text: 'Golfers remember to take less club downwind. What they often forget is that the ball will run much further after landing in a downwind tailwind because it arrives with more residual velocity and at a shallower angle. The carry distance is not dramatically shorter. The run-out after landing can be dramatically more.' },
       { type: 'p', text: 'Into firm September conditions on Birkdale or Hillside with a tailwind, a mid-iron approach can run 20 to 30 yards further than the yardage suggests. Factor this into where you are trying to land the ball, not just which club to take.' },
-      { type: 'cta', text: 'Course guides for all six Sefton Coast courses, including hole-by-hole notes on prevailing wind direction:', href: '/courses', label: 'Sefton Coast Course Guides' },
+      { type: 'callout', text: 'Full course guides for all six Sefton Coast courses at seftonlinks.com/courses, including visitor policies, green fees and conditions notes.' },
     ],
   },
 
