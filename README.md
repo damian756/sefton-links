@@ -40,4 +40,4 @@ Primary keywords: `sefton coast golf`, `royal birkdale`, `links golf england`, `
 ## Developer
 
 **Damian Roche** — Churchtown Media  
-[churchtownmedia.co.uk](https://www.churchtownmedia.co.uk) · [LinkedIn](https://www.linkedin.com/in/damian-roche-7ba8293a5/)
+[churchtownmedia.co.uk](https://www.churchtownmedia.co.uk) · [LinkedIn](https://www.linkedin.com/in/damian-roche/)

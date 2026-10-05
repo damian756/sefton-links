@@ -114,7 +114,7 @@ export default async function BlogPostPage({
       jobTitle: DAMIAN.jobTitle,
       url: DAMIAN.url,
       sameAs: [
-        'https://www.linkedin.com/in/damian-roche-7ba8293a5/',
+        'https://www.linkedin.com/in/damian-roche/',
         'https://find-and-update.company-information.service.gov.uk/company/16960442',
       ],
     },

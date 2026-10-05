@@ -146,7 +146,7 @@ export default async function LocaleLayout({
                 jobTitle: 'Founder, Churchtown Media',
                 url: 'https://www.churchtownmedia.co.uk/about',
                 sameAs: [
-                  'https://www.linkedin.com/in/damian-roche-7ba8293a5/',
+                  'https://www.linkedin.com/in/damian-roche/',
                   'https://find-and-update.company-information.service.gov.uk/company/16960442',
                 ],
               },
