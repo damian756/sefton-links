@@ -30,7 +30,7 @@ export default function DisclosurePage() {
           <h2 className={h2}>Who publishes SeftonLinks</h2>
           <p>
             SeftonLinks.com is published by Churchtown Media Ltd, a company registered in England and Wales
-            (Company No. 16960442). Damian Roche is its director. He lives in Southport.
+            (Company No. 16960442). Registered office: Suite RA01, 195-197 Wood Street, London, E17 3NU. Damian Roche is its director. He lives in Southport.
           </p>
 
           <h2 className={h2}>How it is paid for</h2>
