@@ -358,7 +358,7 @@ async function Footer({ locale }: { locale: string }) {
             <Link href={`${prefix}/advertise`} className="hover:text-white/60 transition">
               Advertise
             </Link>
-            <Link href="https://www.siba.digital/disclosure" className="hover:text-white/60 transition">
+            <Link href="/disclosure" className="hover:text-white/60 transition">
               Disclosure
             </Link>
           </div>
