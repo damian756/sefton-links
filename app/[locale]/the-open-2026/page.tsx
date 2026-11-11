@@ -92,31 +92,6 @@ export default async function OpenPage({
                   { '@type': 'ListItem', position: 2, name: 'The Open at Royal Birkdale', item: `${BASE_URL}/the-open-2026` },
                 ],
               },
-              {
-                '@type': 'FAQPage',
-                mainEntity: [
-                  {
-                    '@type': 'Question',
-                    name: 'Who won The Open at Royal Birkdale in 2026?',
-                    acceptedAnswer: { '@type': 'Answer', text: 'Ryan Fox of New Zealand won The 154th Open at Royal Birkdale in July 2026 with 270, 10 under par, one shot ahead of Cameron Young.' },
-                  },
-                  {
-                    '@type': 'Question',
-                    name: 'How many times has Royal Birkdale hosted The Open?',
-                    acceptedAnswer: { '@type': 'Answer', text: 'Eleven times: 1954, 1961, 1965, 1971, 1976, 1983, 1991, 1998, 2008, 2017 and 2026.' },
-                  },
-                  {
-                    '@type': 'Question',
-                    name: 'Can visitors play Royal Birkdale?',
-                    acceptedAnswer: { '@type': 'Answer', text: 'In November 2026 the club said its visitor tee times were fully booked throughout 2026 and 2027, and asked golfers to check its website for 2028 availability.' },
-                  },
-                  {
-                    '@type': 'Question',
-                    name: 'Where is Royal Birkdale?',
-                    acceptedAnswer: { '@type': 'Answer', text: 'Royal Birkdale Golf Club, Waterloo Road, Southport, PR8 2LX.' },
-                  },
-                ],
-              },
             ],
           }),
         }}
@@ -203,7 +178,7 @@ export default async function OpenPage({
                         <span className="font-display font-bold text-[#0D1B2A] text-lg">{c.name}</span>
                         <span className="text-[#2C3E50]/50 text-sm">{c.country}</span>
                       </div>
-                      <p className="text-[#2C3E50]/60 text-sm mt-0.5 italic">&ldquo;{tp(`champNote${c.year}`)}&rdquo;</p>
+                      <p className="text-[#2C3E50]/60 text-sm mt-0.5">{tp(`champNote${c.year}`)}</p>
                     </div>
                     {i === 0 && (
                       <div className="bg-[#B8912A] text-white text-xs font-bold px-2 py-1 rounded-full shrink-0">
