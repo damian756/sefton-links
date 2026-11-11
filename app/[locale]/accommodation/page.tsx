@@ -23,8 +23,8 @@ const ACCOMMODATION = [
     distanceFromBirkdale: '< 2 miles',
     options: [
       // Named hotels: only what each hotel's own website says (boldhotel.com,
-      // thevincenthotel.com, formbyhallgolfresort.co.uk, read 11 Nov 2026). No rates:
-      // they change, so readers check the hotel's site.
+      // thevincenthotel.com, formbyhallgolfresort.co.uk, read 11 Nov 2026). No rates
+      // anywhere on this page: they change, so readers check the hotel's site.
       {
         name: 'The Bold Hotel',
         type: 'Hotel',
@@ -57,7 +57,6 @@ const ACCOMMODATION = [
         type: 'B&B',
         address: 'Formby Village, L37',
         desc: 'B&Bs and holiday lets in and around Formby village. FormbyGuide.co.uk lists places to stay and eat in the village.',
-        approxRate: '£70–£120/night',
         golferFriendly: ['Village shops and places to eat', 'Close to Formby Golf Club'],
       },
     ],
@@ -71,7 +70,6 @@ const ACCOMMODATION = [
         type: 'Hotel (various)',
         address: 'Liverpool City Centre',
         desc: 'Hotels of every kind, from budget chains to boutique hotels. 45–60 min to Birkdale by car, 50 min by train to Southport then taxi. Useful for trips combining golf with Liverpool itself.',
-        approxRate: '£70–£200/night',
         golferFriendly: ['Wide choice', 'Rail links to Southport', 'City dining'],
       },
     ],
@@ -134,12 +132,6 @@ export default async function AccommodationPage({ params }: { params: Promise<{ 
                           <span>{opt.address}</span>
                         </div>
                       </div>
-                      {'approxRate' in opt && opt.approxRate && (
-                        <div className="text-right shrink-0">
-                          <div className="text-[#1A4A30] font-semibold text-sm">{opt.approxRate}</div>
-                          <div className="text-[#2C3E50]/40 text-xs">{t('approxLabel')}</div>
-                        </div>
-                      )}
                     </div>
 
                     <p className="text-[#2C3E50]/70 text-sm leading-relaxed mb-4">{opt.desc}</p>

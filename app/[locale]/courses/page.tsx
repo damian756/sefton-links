@@ -98,7 +98,7 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
                 <th className="text-center py-2 px-3">{tcp('tableHeaderRating')}</th>
                 <th className="text-center py-2 px-3">{tcp('tableHeaderSlope')}</th>
                 <th className="text-center py-2 px-3">{tcp('tableHeaderGreenFee')}</th>
-                <th className="text-left py-2 pl-3">{tcp('tableHeaderDifficulty')}</th>
+                <th className="text-left py-2 pl-3">{tcp('tableHeaderVisitors')}</th>
               </tr>
             </thead>
             <tbody>
@@ -115,8 +115,8 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
                   </td>
                   <td className="text-center py-3 px-3 font-mono font-semibold text-[#0D1B2A]">{course.par}</td>
                   <td className="text-center py-3 px-3 font-mono text-[#0D1B2A]">{course.yardage.toLocaleString()}</td>
-                  <td className="text-center py-3 px-3 font-mono text-[#0D1B2A]">{course.courseRating}</td>
-                  <td className="text-center py-3 px-3 font-mono text-[#0D1B2A]">{course.slopeRating}</td>
+                  <td className="text-center py-3 px-3 font-mono text-[#0D1B2A]">{course.courseRating ?? '-'}</td>
+                  <td className="text-center py-3 px-3 font-mono text-[#0D1B2A]">{course.slopeRating ?? '-'}</td>
                   <td className="text-center py-3 px-3 font-semibold text-[#1A4A30]">
                     {course.greenFeeRange}
                     {course.greenFeeNote && (
@@ -125,12 +125,9 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
                   </td>
                   <td className="py-3 pl-3">
                     <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${
-                      course.difficulty === 'championship' ? 'bg-red-50 text-red-700' :
-                      course.difficulty === 'challenging' ? 'bg-orange-50 text-orange-700' :
-                      course.difficulty === 'moderate' ? 'bg-blue-50 text-blue-700' :
-                      'bg-green-50 text-green-700'
+                      course.visitorStatus === 'online' ? 'bg-green-50 text-green-700' : 'bg-amber-50 text-amber-800'
                     }`}>
-                      {t(`difficulty.${course.difficulty}`)}
+                      {t(`visitorStatus.${course.visitorStatus}`)}
                     </span>
                   </td>
                 </tr>
@@ -182,8 +179,8 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
                       {[
                         { label: tcp('cardStatParLabel'), value: String(course.par) },
                         { label: tcp('cardStatYardsLabel'), value: course.yardage.toLocaleString() },
-                        { label: tcp('cardStatCourseRatingLabel'), value: String(course.courseRating) },
-                        { label: tcp('cardStatSlopeLabel'), value: String(course.slopeRating) },
+                        { label: tcp('cardStatCourseRatingLabel'), value: course.courseRating ? String(course.courseRating) : '-' },
+                        { label: tcp('cardStatSlopeLabel'), value: course.slopeRating ? String(course.slopeRating) : '-' },
                         { label: tcp('cardStatGreenFeeLabel'), value: course.greenFeeRange },
                       ].map(({ label, value }) => (
                         <div key={label} className="bg-[#F8F5EE] rounded-lg px-3 py-2 text-center">

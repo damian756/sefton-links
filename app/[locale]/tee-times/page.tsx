@@ -27,6 +27,7 @@ export default async function TeeTimesPage({ params }: { params: Promise<{ local
   const { locale } = await params;
   const prefix = locale === 'en' ? '' : `/${locale}`;
   const t = await getTranslations({ locale, namespace: 'teeTimesPage' });
+  const tc = await getTranslations({ locale, namespace: 'courses' });
 
   // The site's usual course order (Royal Birkdale first). It used to be sorted by fee, which
   // gave the same order until clubs stopped publishing some visitor rates.
@@ -113,14 +114,9 @@ export default async function TeeTimesPage({ params }: { params: Promise<{ local
                       <span>·</span>
                       <span>{course.greenFeeRange}</span>
                       <span>·</span>
-                      <span className={`font-semibold ${
-                        course.difficulty === 'championship' || course.difficulty === 'challenging' ? 'text-amber-700' : 'text-green-700'
-                      }`}>
-                        {course.difficulty === 'championship'
-                          ? t('difficultyRestricted')
-                          : course.difficulty === 'challenging'
-                          ? t('difficultyByArrangement')
-                          : t('difficultyWelcome')}
+                      {/* From the club's own visitor page (Course.visitorStatus). */}
+                      <span className={`font-semibold ${course.visitorStatus === 'online' ? 'text-green-700' : 'text-amber-700'}`}>
+                        {tc(`visitorStatus.${course.visitorStatus}`)}
                       </span>
                     </div>
                   </div>

@@ -6,7 +6,7 @@ import {
   Trophy, MapPin, Phone, ExternalLink, ChevronRight, Clock, Users,
   AlertCircle, CheckCircle2, Star, Utensils, Wind
 } from 'lucide-react';
-import { COURSES, getCourseBySlug } from '@/lib/courses';
+import { COURSES, SCORECARDS_READ, getCourseBySlug } from '@/lib/courses';
 import AdSlot from '@/components/AdSlot';
 import type { Metadata } from 'next';
 import { BASE_URL, buildAlternates, buildOg } from '@/lib/metadata';
@@ -56,6 +56,17 @@ export default async function CoursePage({
 
   const t = await getTranslations({ locale, namespace: 'courseDetail' });
   const tcd = await getTranslations({ locale, namespace: 'courseData' });
+  const tc = await getTranslations({ locale, namespace: 'courses' });
+
+  // Only the figures the club publishes go into the schema.
+  const amenityFeature = [
+    { name: 'Par', value: course.par },
+    { name: 'Yardage', value: course.yardage },
+    { name: 'Course Rating', value: course.courseRating },
+    { name: 'Slope Rating', value: course.slopeRating },
+  ]
+    .filter((f) => f.value !== undefined)
+    .map((f) => ({ '@type': 'LocationFeatureSpecification', ...f }));
 
   return (
     <div className="min-h-screen bg-[#F8F5EE]">
@@ -78,7 +89,7 @@ export default async function CoursePage({
                   '@type': 'PostalAddress',
                   streetAddress: course.address,
                   postalCode: course.postcode,
-                  addressLocality: 'Southport',
+                  addressLocality: course.locality,
                   addressRegion: 'Merseyside',
                   addressCountry: 'GB',
                 },
@@ -87,12 +98,7 @@ export default async function CoursePage({
                   latitude: course.latitude,
                   longitude: course.longitude,
                 },
-                amenityFeature: [
-                  { '@type': 'LocationFeatureSpecification', name: 'Par', value: course.par },
-                  { '@type': 'LocationFeatureSpecification', name: 'Yardage', value: course.yardage },
-                  { '@type': 'LocationFeatureSpecification', name: 'Course Rating', value: course.courseRating },
-                  { '@type': 'LocationFeatureSpecification', name: 'Slope Rating', value: course.slopeRating },
-                ],
+                amenityFeature,
                 foundingDate: String(course.founded),
                 priceRange: course.greenFeeFrom ? course.greenFeeRange : undefined,
               },
@@ -157,12 +163,9 @@ export default async function CoursePage({
                   </span>
                 )}
                 <span className={`text-xs font-bold px-3 py-1 rounded-full ${
-                  course.difficulty === 'championship' ? 'bg-red-900/40 text-red-300' :
-                  course.difficulty === 'challenging' ? 'bg-orange-900/40 text-orange-300' :
-                  course.difficulty === 'moderate' ? 'bg-blue-900/40 text-blue-300' :
-                  'bg-green-900/40 text-green-300'
+                  course.visitorStatus === 'online' ? 'bg-green-900/40 text-green-300' : 'bg-amber-900/40 text-amber-200'
                 }`}>
-                  {course.difficulty.charAt(0).toUpperCase() + course.difficulty.slice(1)}
+                  {tc(`visitorStatus.${course.visitorStatus}`)}
                 </span>
               </div>
 
@@ -268,7 +271,17 @@ export default async function CoursePage({
                   </tbody>
                 </table>
               </div>
-              <p className="text-[#2C3E50]/45 text-xs mt-2">{t('ratingsDisclaimer')}</p>
+              <p className="text-[#2C3E50]/55 text-xs mt-2 leading-relaxed">
+                {t.rich('ratingsDisclaimer', {
+                  date: SCORECARDS_READ,
+                  source: (chunks) => (
+                    <a href={course.scorecardUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-[#1A4A30]">
+                      {chunks}
+                    </a>
+                  ),
+                })}
+                {course.scorecardNote && <> {course.scorecardNote}</>}
+              </p>
             </section>
 
             {/* Visitor policy detail */}

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { ChevronRight, Trophy } from 'lucide-react';
-import { COURSES } from '@/lib/courses';
+import { COURSES, SCORECARDS_READ } from '@/lib/courses';
 import type { Metadata } from 'next';
 import { BASE_URL, buildAlternates, buildOg } from '@/lib/metadata';
 import { getTranslations } from 'next-intl/server';
@@ -22,6 +22,7 @@ export default async function ScorecardPage({ params }: { params: Promise<{ loca
   const { locale } = await params;
   const prefix = locale === 'en' ? '' : `/${locale}`;
   const t = await getTranslations({ locale, namespace: 'scorecardPage' });
+  const tc = await getTranslations({ locale, namespace: 'courses' });
 
   return (
     <div className="min-h-screen bg-[#F8F5EE]">
@@ -35,7 +36,7 @@ export default async function ScorecardPage({ params }: { params: Promise<{ loca
               {
                 '@type': 'Dataset',
                 name: 'Sefton Coast Golf Course Scorecard Data',
-                description: 'Par, yardage, course rating and slope rating for all six Sefton Coast links golf courses.',
+                description: "Par, yardage, course rating and slope rating for the six Sefton Coast links golf courses, from each club's own published scorecard.",
                 url: `${BASE_URL}/scorecard`,
                 creator: { '@type': 'Organization', name: 'SeftonLinks.com', url: BASE_URL },
                 distribution: [{ '@type': 'DataDownload', encodingFormat: 'text/html', contentUrl: `${BASE_URL}/scorecard` }],
@@ -121,6 +122,17 @@ export default async function ScorecardPage({ params }: { params: Promise<{ loca
                   </tbody>
                 </table>
               </div>
+              <p className="text-[#2C3E50]/55 text-xs -mt-3 mb-5 leading-relaxed">
+                {t.rich('sourceLine', {
+                  date: SCORECARDS_READ,
+                  source: (chunks) => (
+                    <a href={course.scorecardUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-[#1A4A30]">
+                      {chunks}
+                    </a>
+                  ),
+                })}
+                {course.scorecardNote && <> {course.scorecardNote}</>}
+              </p>
 
               {/* Summary stats */}
               <div className="flex flex-wrap gap-3">
@@ -131,16 +143,15 @@ export default async function ScorecardPage({ params }: { params: Promise<{ loca
                   },
                   {
                     label: t('statVisitorPolicyLabel'),
-                    value:
-                      course.difficulty === 'championship'
-                        ? t('statVisitorRestricted')
-                        : course.difficulty === 'challenging'
-                        ? t('statVisitorByArrangement')
-                        : t('statVisitorWelcome'),
+                    value: tc(`visitorStatus.${course.visitorStatus}`),
                   },
                   {
+                    // The longest tee the club publishes a rating for, named.
                     label: t('statChampRatingLabel'),
-                    value: `${course.courseRating} / ${course.slopeRating}`,
+                    value: (() => {
+                      const rated = course.tees.find((tee) => tee.rating && tee.slope);
+                      return rated ? `${rated.rating} / ${rated.slope} (${rated.name})` : t('statRatingNotPublished');
+                    })(),
                   },
                   {
                     label: t('statDistanceFromBirkdaleLabel'),

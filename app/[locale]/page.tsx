@@ -304,12 +304,9 @@ export default async function HomePage({
 
                   <div className="flex items-center gap-2">
                     <div className={`text-xs font-semibold px-2 py-1 rounded-full ${
-                      course.difficulty === 'championship' ? 'bg-red-50 text-red-700' :
-                      course.difficulty === 'challenging' ? 'bg-orange-50 text-orange-700' :
-                      course.difficulty === 'moderate' ? 'bg-blue-50 text-blue-700' :
-                      'bg-green-50 text-green-700'
+                      course.visitorStatus === 'online' ? 'bg-green-50 text-green-700' : 'bg-amber-50 text-amber-800'
                     }`}>
-                      {tc(`difficulty.${course.difficulty}`)}
+                      {tc(`visitorStatus.${course.visitorStatus}`)}
                     </div>
                     <div className="ml-auto text-[#1A4A30] text-sm font-semibold group-hover:text-[#B8912A] transition-colors flex items-center gap-1">
                       {th('courseCardFullGuideLink')} <ChevronRight size={14} />
