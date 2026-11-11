@@ -54,7 +54,9 @@ export default async function ConditionsPage({ params }: { params: Promise<{ loc
 
       <div className="container mx-auto px-4 max-w-7xl py-12">
         <ConditionTracker
-          conditions={CONDITIONS_DATA}
+          // Notes older than seven days are hidden on screen; leave them out of the
+          // page data too, so stale notes are not in the page source either.
+          conditions={notesCurrent ? CONDITIONS_DATA : CONDITIONS_DATA.map((c) => ({ ...c, notes: '' }))}
           weather={weather}
           updatedDate={updatedDate}
           notesUpdated={notesUpdated}
