@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       template: '%s | SeftonLinks.com',
     },
     description:
-      'The definitive links golf guide to Royal Birkdale, Hillside, Formby, West Lancashire and the Sefton Coast. Course guides, tee times, conditions and golf break itineraries.',
+      'A guide to links golf at Royal Birkdale, Hillside, Formby, West Lancashire and the rest of the Sefton Coast. Course guides, tee times, conditions and golf break itineraries.',
     keywords:
       'Royal Birkdale golf, Sefton Coast golf, links golf England, The Open 2026, Hillside Golf Club, Formby Golf Club, West Lancashire Golf Club, golf breaks Southport',
     authors: [{ name: 'SeftonLinks.com', url: BASE_URL }],
@@ -132,7 +132,7 @@ export default async function LocaleLayout({
               name: 'SeftonLinks.com',
               url: BASE_URL,
               description:
-                'The definitive links golf guide to the Sefton Coast: Royal Birkdale, Hillside, Formby, West Lancashire and The Open Championship 2026.',
+                'A guide to links golf on the Sefton Coast: Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale and Southport Old Links.',
               publisher: {
                 '@type': 'Organization',
                 '@id': 'https://www.churchtownmedia.co.uk/#organization',

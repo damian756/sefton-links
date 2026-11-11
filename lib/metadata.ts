@@ -49,7 +49,7 @@ export function buildOg(
         url: `${BASE_URL}/og-default.jpg`,
         width: 1200,
         height: 630,
-        alt: 'SeftonLinks — Sefton Coast links golf',
+        alt: 'SeftonLinks: Sefton Coast links golf',
       },
     ],
     ...overrides,

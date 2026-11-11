@@ -27,6 +27,7 @@ export async function generateMetadata({
 }
 
 const PAST_CHAMPIONS = [
+  { year: 2026, name: 'Ryan Fox', country: 'NZL', score: '-10' },
   { year: 2017, name: 'Jordan Spieth', country: 'USA', score: '-12' },
   { year: 2008, name: 'Pádraig Harrington', country: 'IRL', score: '-3' },
   { year: 1998, name: "Mark O'Meara", country: 'USA', score: '-9' },
@@ -63,7 +64,7 @@ export default async function HomePage({
                 '@id': `${BASE_URL}/#website`,
                 url: BASE_URL,
                 name: 'SeftonLinks.com',
-                description: 'The definitive links golf guide to Royal Birkdale and the Sefton Coast.',
+                description: 'A guide to links golf at Royal Birkdale and the other Sefton Coast courses.',
                 publisher: { '@id': `${BASE_URL}/#organization` },
                 inLanguage: 'en-GB',
                 potentialAction: {
@@ -93,7 +94,7 @@ export default async function HomePage({
               },
               {
                 '@type': 'SportsEvent',
-                name: 'The 155th Open Championship',
+                name: 'The 154th Open Championship',
                 startDate: '2026-07-16',
                 endDate: '2026-07-19',
                 location: {
@@ -140,7 +141,6 @@ export default async function HomePage({
           priority
           className="object-cover object-center"
           sizes="100vw"
-          quality={85}
         />
         <div className="absolute inset-0 bg-[#0D1B2A]/50" />
         <div
@@ -205,7 +205,7 @@ export default async function HomePage({
                 <div className="text-white/50 text-xs mt-1">{th('statChampionshipCoursesLabel')}</div>
               </div>
               <div className="px-4 py-2">
-                <div className="font-display text-2xl md:text-3xl font-bold text-[#B8912A]">10</div>
+                <div className="font-display text-2xl md:text-3xl font-bold text-[#B8912A]">11</div>
                 <div className="text-white/50 text-xs mt-1">{th('statOpenChampionshipsLabel')}</div>
               </div>
               <div className="px-4 py-2">

@@ -2,6 +2,10 @@
 // Wind speed and direction are fetched automatically from Open-Meteo.
 // Update 'condition' and 'notes' each morning — takes ~2 minutes.
 
+// Change this date whenever you edit the notes below. The conditions page hides
+// course notes older than 7 days and tells visitors to check with the club instead.
+export const CONDITIONS_UPDATED = '2026-02-20';
+
 export type Condition = 'firm' | 'standard' | 'wet' | 'closed';
 
 export interface CourseConditionData {
@@ -22,7 +26,7 @@ export const CONDITIONS_DATA: CourseConditionData[] = [
     slug: 'hillside',
     name: 'Hillside',
     condition: 'firm',
-    notes: 'Comparable to Birkdale — firm and fast. Back nine playing into the wind this morning.',
+    notes: 'Comparable to Birkdale: firm and fast. Back nine playing into the wind this morning.',
   },
   {
     slug: 'formby',
@@ -34,7 +38,7 @@ export const CONDITIONS_DATA: CourseConditionData[] = [
     slug: 'west-lancashire',
     name: 'West Lancashire',
     condition: 'wet',
-    notes: "More exposed to Irish Sea — soft underfoot after yesterday's rain. Winter rules in play on some fairways.",
+    notes: "More exposed to Irish Sea: soft underfoot after yesterday's rain. Winter rules in play on some fairways.",
   },
   {
     slug: 'southport-ainsdale',

@@ -3,7 +3,7 @@ import ConditionTracker from '@/components/ConditionTracker';
 import type { Metadata } from 'next';
 import { buildAlternates, buildOg } from '@/lib/metadata';
 import { getSouthportWeather } from '@/lib/weather';
-import { CONDITIONS_DATA } from '@/lib/conditions-data';
+import { CONDITIONS_DATA, CONDITIONS_UPDATED } from '@/lib/conditions-data';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -28,6 +28,9 @@ export default async function ConditionsPage({ params }: { params: Promise<{ loc
     month: 'short',
     year: 'numeric',
   }).format(new Date());
+  const notesDate = new Date(`${CONDITIONS_UPDATED}T07:00:00Z`);
+  const notesUpdated = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }).format(notesDate);
+  const notesCurrent = new Date().getTime() - notesDate.getTime() < 7 * 24 * 60 * 60 * 1000;
 
   return (
     <div className="min-h-screen bg-[#F8F5EE]">
@@ -48,6 +51,8 @@ export default async function ConditionsPage({ params }: { params: Promise<{ loc
           conditions={CONDITIONS_DATA}
           weather={weather}
           updatedDate={updatedDate}
+          notesUpdated={notesUpdated}
+          notesCurrent={notesCurrent}
         />
 
         <div className="mt-12 bg-white border border-[#E8E3D8] rounded-xl p-6">

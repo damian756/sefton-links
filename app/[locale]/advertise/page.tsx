@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
 import { Mail, Shield, TrendingUp, Globe, Users, Star, BarChart2 } from 'lucide-react';
 import { buildAlternates, buildOg } from '@/lib/metadata';
+import { BLOG_POSTS } from '@/lib/blog';
+import { locales } from '@/i18n/routing';
 
 const title = 'Advertise on SeftonLinks | Sefton Coast Network';
 const description =
-  'Reach the Sefton Coast golf audience: business golfers, Open Championship visitors, and international links golf travellers. Display advertising across the Sefton Coast Network.';
+  'Display advertising on SeftonLinks and the Sefton Coast Network, beside course guides, visitor information and golf travel articles for the Sefton Coast.';
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -23,8 +25,8 @@ const NETWORK_PACKAGES = [
     total: '£2,700',
     featured: false,
     features: [
-      'Sidebar on category and guide pages',
-      'Homepage sponsored panel on SouthportGuide',
+      'Placement on SouthportGuide and FormbyGuide pages, by arrangement',
+      'SouthportGuide homepage placement, by arrangement',
       'Category exclusivity on both sites',
       'Monthly performance reporting',
     ],
@@ -37,7 +39,7 @@ const NETWORK_PACKAGES = [
     featured: true,
     features: [
       'All Core placements',
-      'SeftonLinks sidebar and in-feed placement',
+      'SeftonLinks placement, by arrangement',
       'Category exclusivity across all three sites',
       'Up to 2 creative updates per month',
       'Monthly performance reporting',
@@ -51,8 +53,8 @@ const NETWORK_PACKAGES = [
     featured: false,
     features: [
       'All Premium placements',
-      'SeftonCoastWildlife included',
-      'Maximum Sefton Coast reach',
+      'SeftonCoastWildlife placement, by arrangement',
+      'All four network sites',
       'Quarterly review call',
       'Monthly performance reporting',
     ],
@@ -71,10 +73,10 @@ export default function AdvertisePage() {
           </p>
           <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-5 leading-tight">
             Reach the Sefton Coast golf audience.<br />
-            <span className="text-[#C9A96E]">The most valuable demographic on this coast.</span>
+            <span className="text-[#C9A96E]">Four local sites, one network.</span>
           </h1>
           <p className="text-white/65 text-lg leading-relaxed max-w-2xl mb-10">
-            SeftonLinks reaches business golfers, Open Championship visitors, and international links travellers across 20 languages. Part of the Sefton Coast Network: four independent editorial sites with combined reach across the region's most affluent audience.
+            SeftonLinks is a guide to links golf on the Sefton Coast, with course guides, visitor information and a blog, and site menus in {locales.length} languages. It is part of the Sefton Coast Network: four independent editorial sites covering Southport, Formby, golf and wildlife on the coast.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
@@ -92,9 +94,9 @@ export default function AdvertisePage() {
       <div className="bg-[#0D1B2A] border-t border-white/8 px-4 pb-10">
         <div className="container mx-auto max-w-4xl grid grid-cols-2 md:grid-cols-4 gap-6 pt-2">
           {[
-            { stat: '20', label: 'Languages' },
-            { stat: '5+', label: 'Course guides' },
-            { stat: 'Jul 12', label: 'The Open starts' },
+            { stat: String(locales.length), label: 'Languages (site menus)' },
+            { stat: '6', label: 'Course guides' },
+            { stat: String(BLOG_POSTS.length), label: 'Blog articles' },
             { stat: '4', label: 'Network sites' },
           ].map((item) => (
             <div key={item.label} className="text-center py-6">
@@ -116,7 +118,7 @@ export default function AdvertisePage() {
           <div>
             <h2 className="text-xl font-bold mb-2">The Open Championship 2026 at Royal Birkdale</h2>
             <p className="text-white/65 leading-relaxed text-sm">
-              SeftonLinks is the specialist guide to links golf on the Sefton Coast and is receiving its highest-ever traffic as golf visitors plan trips around The Open. The audience includes high-net-worth domestic and international golfers, corporate golf day organisers, and travel planners. Advertisers on SeftonLinks in July are reaching this audience at peak.
+              SeftonLinks covered The 154th Open at Royal Birkdale, with guides for visiting golfers in the months before the Championship and a report on Ryan Fox&apos;s win.
             </p>
           </div>
         </div>
@@ -127,24 +129,24 @@ export default function AdvertisePage() {
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-10">
             <p className="text-[#C9A96E] text-xs font-bold uppercase tracking-widest mb-3">Why advertise here</p>
-            <h2 className="font-display text-3xl font-bold text-[#0D1B2A]">A premium audience in a premium context</h2>
+            <h2 className="font-display text-3xl font-bold text-[#0D1B2A]">Your brand beside Sefton Coast golf content</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
               {
                 icon: <Users className="w-5 h-5 text-[#C9A96E]" />,
-                title: 'High-value golf audience',
-                body: 'People playing Hillside, Royal Birkdale, Formby Golf Club. Green fee players spending £100 to £200+ per round. Business golfers. Corporate golf day organisers.',
+                title: 'Golf-specific content',
+                body: 'Your advert sits beside course guides, visitor information, green fees and golf travel articles for the six Sefton Coast courses.',
               },
               {
                 icon: <Globe className="w-5 h-5 text-[#C9A96E]" />,
-                title: '20 languages',
-                body: 'SeftonLinks is available in 20 languages, attracting international golf visitors from Japan, Germany, Scandinavia, the US and beyond. No other Sefton Coast site reaches this audience.',
+                title: `${locales.length} languages`,
+                body: `Site menus and key page text are available in ${locales.length} languages, including German, Japanese, Swedish and Welsh. Blog articles are published in English.`,
               },
               {
                 icon: <Star className="w-5 h-5 text-[#C9A96E]" />,
-                title: 'No competitor',
-                body: 'There is no other independent golf guide for the Sefton Coast. The first advertiser in a category has the space to themselves for the duration of the contract.',
+                title: 'First in category',
+                body: 'The first advertiser in a category has the space to themselves for the duration of the contract.',
               },
               {
                 icon: <Shield className="w-5 h-5 text-[#C9A96E]" />,
@@ -153,8 +155,8 @@ export default function AdvertisePage() {
               },
               {
                 icon: <TrendingUp className="w-5 h-5 text-[#C9A96E]" />,
-                title: 'Peak traffic now',
-                body: 'The Open 2026 is bringing the highest traffic SeftonLinks has ever seen. Advertisers joining now enter at the most valuable moment in the site\'s history.',
+                title: 'Monthly reporting',
+                body: 'Every package includes monthly performance reporting, so you can see how your placement is doing.',
               },
               {
                 icon: <BarChart2 className="w-5 h-5 text-[#C9A96E]" />,

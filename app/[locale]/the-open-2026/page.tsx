@@ -20,12 +20,13 @@ export async function generateMetadata({
     alternates: buildAlternates('/the-open-2026'),
     openGraph: buildOg('/the-open-2026', {
       title: 'The Open Championship 2026: Royal Birkdale',
-      description: 'The 155th Open Championship at Royal Birkdale, Southport. July 16–19, 2026. Full visitor guide.',
+      description: 'The 154th Open Championship at Royal Birkdale, Southport, 16–19 July 2026, won by Ryan Fox.',
     }),
   };
 }
 
 const PAST_CHAMPIONS = [
+  { year: 2026, name: 'Ryan Fox', country: '🇳🇿 NZL', score: '-10' },
   { year: 2017, name: 'Jordan Spieth', country: '🇺🇸 USA', score: '-12' },
   { year: 2008, name: 'Pádraig Harrington', country: '🇮🇪 IRL', score: '-3' },
   { year: 1998, name: "Mark O'Meara", country: '🇺🇸 USA', score: '-9' },
@@ -60,7 +61,7 @@ export default async function OpenPage({
               {
                 '@type': 'SportsEvent',
                 '@id': `${BASE_URL}/the-open-2026`,
-                name: 'The 155th Open Championship',
+                name: 'The 154th Open Championship',
                 alternateName: 'The Open Championship 2026',
                 startDate: '2026-07-16',
                 endDate: '2026-07-19',
@@ -79,7 +80,7 @@ export default async function OpenPage({
                 },
                 organizer: { '@type': 'Organization', name: 'The R&A', url: 'https://www.theopen.com' },
                 url: 'https://www.theopen.com',
-                description: 'The 155th Open Championship, the oldest Major in golf, returns to Royal Birkdale Golf Club in Southport.',
+                description: 'The 154th Open Championship was played at Royal Birkdale Golf Club in Southport from 16 to 19 July 2026 and won by Ryan Fox.',
               },
               {
                 '@type': 'BreadcrumbList',
@@ -93,23 +94,23 @@ export default async function OpenPage({
                 mainEntity: [
                   {
                     '@type': 'Question',
-                    name: 'When is The Open Championship 2026?',
-                    acceptedAnswer: { '@type': 'Answer', text: 'The 155th Open Championship is scheduled for 16–19 July 2026 at Royal Birkdale Golf Club, Southport.' },
+                    name: 'When was The Open Championship 2026?',
+                    acceptedAnswer: { '@type': 'Answer', text: 'The 154th Open Championship was played from 16 to 19 July 2026 at Royal Birkdale Golf Club, Southport.' },
                   },
                   {
                     '@type': 'Question',
-                    name: 'Where is The Open Championship 2026?',
+                    name: 'Where was The Open Championship 2026?',
                     acceptedAnswer: { '@type': 'Answer', text: 'Royal Birkdale Golf Club, Waterloo Road, Birkdale, Southport, PR8 2LX.' },
                   },
                   {
                     '@type': 'Question',
-                    name: 'How do I get tickets for The Open 2026?',
-                    acceptedAnswer: { '@type': 'Answer', text: 'Tickets are available via TheOpen.com. Championship day tickets sell out quickly. Practice round tickets are typically more available.' },
+                    name: 'Who won The Open Championship 2026?',
+                    acceptedAnswer: { '@type': 'Answer', text: 'Ryan Fox of New Zealand won The 154th Open at Royal Birkdale on 10 under par, 270, one shot ahead of Cameron Young.' },
                   },
                   {
                     '@type': 'Question',
                     name: 'Where should I stay for The Open Championship at Royal Birkdale?',
-                    acceptedAnswer: { '@type': 'Answer', text: 'Hotels in Southport, particularly near Lord Street and Birkdale, are closest to the venue. Book 12+ months in advance. Formby (5 miles south) offers quieter B&B options.' },
+                    acceptedAnswer: { '@type': 'Answer', text: 'Hotels in Southport, particularly near Lord Street and Birkdale, are closest to the venue. Formby (5 miles south) offers quieter B&B options.' },
                   },
                 ],
               },
@@ -202,7 +203,9 @@ export default async function OpenPage({
                         <span className="font-display font-bold text-[#0D1B2A] text-lg">{c.name}</span>
                         <span className="text-[#2C3E50]/50 text-sm">{c.country}</span>
                       </div>
-                      <p className="text-[#2C3E50]/60 text-sm mt-0.5 italic">&ldquo;{tp(`champNote${c.year}`)}&rdquo;</p>
+                      {c.year !== 2026 && (
+                        <p className="text-[#2C3E50]/60 text-sm mt-0.5 italic">&ldquo;{tp(`champNote${c.year}`)}&rdquo;</p>
+                      )}
                     </div>
                     {i === 0 && (
                       <div className="bg-[#B8912A] text-white text-xs font-bold px-2 py-1 rounded-full shrink-0">

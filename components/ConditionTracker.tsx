@@ -4,11 +4,16 @@ import { useState } from 'react';
 import { Wind, Droplets, CheckCircle2, XCircle, AlertCircle, RefreshCw } from 'lucide-react';
 import type { Condition, CourseConditionData } from '@/lib/conditions-data';
 import type { WeatherData } from '@/lib/weather';
+import { COURSES } from '@/lib/courses';
 
 interface ConditionTrackerProps {
   conditions: CourseConditionData[];
   weather: WeatherData | null;
   updatedDate: string;
+  /** Date the course notes were last edited, already formatted for display. */
+  notesUpdated: string;
+  /** False when the notes are too old to show as current. */
+  notesCurrent: boolean;
 }
 
 const CONDITION_CONFIG: Record<Condition, {
@@ -60,15 +65,15 @@ const COURSE_WIND_MODIFIER: Record<string, number> = {
 };
 
 const WIND_GUIDE: { direction: string; birkdaleEffect: string }[] = [
-  { direction: 'SW (prevailing)', birkdaleEffect: 'Natural links wind — front nine downwind, back nine into. Typical Royal Birkdale experience.' },
+  { direction: 'SW (prevailing)', birkdaleEffect: 'Natural links wind: front nine downwind, back nine into. Typical Royal Birkdale experience.' },
   { direction: 'W', birkdaleEffect: 'Strong off the Irish Sea. Holes 12–15 particularly exposed. Scoring deteriorates.' },
   { direction: 'NW', birkdaleEffect: 'Cross-wind on many holes. The dune corridors funnel unpredictably. Difficult to control flight.' },
   { direction: 'N', birkdaleEffect: 'Unusual direction. Course changes character significantly. Par is a good score.' },
-  { direction: 'E', birkdaleEffect: 'Off the land. Course plays differently — more accommodating on the exposed holes.' },
+  { direction: 'E', birkdaleEffect: 'Off the land. Course plays differently: more accommodating on the exposed holes.' },
   { direction: 'S', birkdaleEffect: 'Relatively sheltered. Scoring typically better than SW/W. Good for scoring rounds.' },
 ];
 
-export default function ConditionTracker({ conditions, weather, updatedDate }: ConditionTrackerProps) {
+export default function ConditionTracker({ conditions, weather, updatedDate, notesUpdated, notesCurrent }: ConditionTrackerProps) {
   const [activeFilter, setActiveFilter] = useState<Condition | 'all'>('all');
   const [showWindGuide, setShowWindGuide] = useState(false);
 
@@ -77,7 +82,7 @@ export default function ConditionTracker({ conditions, weather, updatedDate }: C
     : conditions.filter((c) => c.condition === activeFilter);
 
   function getCourseWind(slug: string): string {
-    if (!weather) return '—';
+    if (!weather) return 'n/a';
     const modifier = COURSE_WIND_MODIFIER[slug] ?? 1;
     const speed = Math.round(parseInt(weather.windSpeed) * modifier);
     return `${speed} mph`;
@@ -90,9 +95,10 @@ export default function ConditionTracker({ conditions, weather, updatedDate }: C
         <div className="flex items-center gap-2 text-sm text-[#1A4A30]">
           <RefreshCw size={15} />
           <span>
-            {weather
-              ? 'Wind data live from Open-Meteo. Course conditions updated manually each morning.'
-              : 'Conditions updated manually each morning by 7:30am. Verify with individual clubs before travel.'}
+            {weather ? 'Wind data live from Open-Meteo. ' : ''}
+            {notesCurrent
+              ? `Course notes last updated ${notesUpdated}. Check with the club before you travel.`
+              : "No recent course report. Check each club's own website for course status before you travel."}
           </span>
         </div>
         <span className="text-[#2C3E50]/40 text-xs shrink-0">{updatedDate}</span>
@@ -102,7 +108,7 @@ export default function ConditionTracker({ conditions, weather, updatedDate }: C
       {weather && (
         <div className="bg-[#4A7D9A]/8 border border-[#4A7D9A]/20 rounded-xl px-5 py-4 flex flex-wrap gap-6">
           <div>
-            <div className="text-[#4A7D9A] text-xs uppercase tracking-wider mb-1 font-semibold">Live Wind — Southport</div>
+            <div className="text-[#4A7D9A] text-xs uppercase tracking-wider mb-1 font-semibold">Live Wind: Southport</div>
             <div className="flex items-center gap-2">
               <Wind size={18} className="text-[#4A7D9A]" />
               <span className="font-display text-2xl font-bold text-[#0D1B2A]">{weather.windSpeed}</span>
@@ -111,12 +117,13 @@ export default function ConditionTracker({ conditions, weather, updatedDate }: C
           </div>
           <div className="border-l border-[#4A7D9A]/20 pl-6">
             <div className="text-[#4A7D9A] text-xs uppercase tracking-wider mb-1 font-semibold">Updated</div>
-            <div className="text-sm text-[#2C3E50]/70">Every 30 minutes — Open-Meteo</div>
+            <div className="text-sm text-[#2C3E50]/70">Every 30 minutes from Open-Meteo</div>
           </div>
         </div>
       )}
 
       {/* Filter tabs */}
+      {notesCurrent && (
       <div className="flex flex-wrap gap-2">
         {(['all', 'firm', 'standard', 'wet', 'closed'] as const).map((filter) => (
           <button
@@ -132,12 +139,34 @@ export default function ConditionTracker({ conditions, weather, updatedDate }: C
           </button>
         ))}
       </div>
+      )}
 
       {/* Condition cards */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {filtered.map((course) => {
           const config = CONDITION_CONFIG[course.condition];
           const Icon = config.icon;
+          const website = COURSES.find((c) => c.slug === course.slug)?.website;
+          if (!notesCurrent) {
+            return (
+              <div key={course.slug} className="bg-white border-2 border-[#E8E3D8] rounded-xl p-5">
+                <h3 className="font-display font-bold text-[#0D1B2A] text-lg leading-tight mb-3">{course.name}</h3>
+                <div className="flex items-center gap-1.5 text-[#4A7D9A] mb-3 text-sm">
+                  <Wind size={13} />
+                  <span className="font-medium">{getCourseWind(course.slug)}</span>
+                  {weather && <span className="text-[#2C3E50]/60 text-xs ml-3">Direction: <span className="font-semibold text-[#0D1B2A]">{weather.windDirection}</span></span>}
+                </div>
+                <p className="text-[#2C3E50]/65 text-sm leading-relaxed border-t border-[#F0EDE6] pt-3">
+                  No recent course report.{' '}
+                  {website && (
+                    <a href={website} target="_blank" rel="noopener noreferrer" className="text-[#1A4A30] font-medium underline underline-offset-2">
+                      Check the club&apos;s website
+                    </a>
+                  )}
+                </p>
+              </div>
+            );
+          }
           return (
             <div
               key={course.slug}
@@ -202,7 +231,7 @@ export default function ConditionTracker({ conditions, weather, updatedDate }: C
           className="flex items-center gap-2 text-[#1A4A30] font-semibold text-sm hover:text-[#B8912A] transition-colors"
         >
           <Wind size={16} />
-          {showWindGuide ? 'Hide' : 'Show'} Wind Direction Guide — Royal Birkdale
+          {showWindGuide ? 'Hide' : 'Show'} Wind Direction Guide: Royal Birkdale
         </button>
 
         {showWindGuide && (
