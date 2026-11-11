@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Search, Clock, ArrowRight, X } from 'lucide-react';
 import type { BlogPost, BlogCategory } from '@/lib/blog';
@@ -34,6 +35,7 @@ export default function BlogSearch({ posts, categories, postCountByCategory }: P
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search posts…"
+            aria-label="Search posts"
             className="w-full pl-9 pr-8 py-2 text-sm rounded-full border border-[#E8E3D8] bg-white text-[#0D1B2A] placeholder-[#2C3E50]/35 focus:outline-none focus:border-[#B8912A] transition-colors"
           />
           {query && (
@@ -84,12 +86,16 @@ export default function BlogSearch({ posts, categories, postCountByCategory }: P
                 className="group bg-white rounded-2xl border border-[#E8E3D8] hover:border-[#B8912A]/40 hover:shadow-md transition-all flex flex-col overflow-hidden"
               >
                 {post.image && (
-                  <div className="aspect-[16/9] overflow-hidden">
-                    <img
+                  // next/image serves a resized copy (the originals are 1 to 4 MB each).
+                  // The title sits under the picture, so a picture without its own
+                  // description is marked decorative rather than repeating the title.
+                  <div className="relative aspect-[16/9] overflow-hidden">
+                    <Image
                       src={post.image}
-                      alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
+                      alt={post.imageAlt ?? ''}
+                      fill
+                      sizes="(min-width: 1024px) 480px, (min-width: 768px) 50vw, 100vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 )}

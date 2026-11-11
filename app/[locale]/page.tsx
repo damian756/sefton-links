@@ -25,8 +25,8 @@ export async function generateMetadata({
   return {
     title: { absolute: `${title} | SeftonLinks.com` },
     description,
-    alternates: buildAlternates('/'),
-    openGraph: buildOg('/', { title, description }),
+    alternates: buildAlternates('/', locale),
+    openGraph: buildOg('/', { title, description }, locale),
   };
 }
 
@@ -538,7 +538,7 @@ export default async function HomePage({
                       <div className="relative h-40 overflow-hidden">
                         <Image
                           src={post.image}
-                          alt={post.title}
+                          alt={post.imageAlt ?? ''}
                           fill
                           sizes="(max-width: 768px) 100vw, 33vw"
                           className="object-cover group-hover:scale-105 transition-transform duration-500"
