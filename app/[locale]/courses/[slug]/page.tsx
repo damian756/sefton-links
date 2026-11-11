@@ -35,8 +35,8 @@ export async function generateMetadata({
   return {
     title,
     description,
-    alternates: buildAlternates(`/courses/${slug}`),
-    openGraph: buildOg(`/courses/${slug}`, { title, description }),
+    alternates: buildAlternates(`/courses/${slug}`, locale),
+    openGraph: buildOg(`/courses/${slug}`, { title, description }, locale),
   };
 }
 
@@ -417,7 +417,7 @@ export default async function CoursePage({
                 <p><strong className="text-[#0D1B2A]">{t('postcodeLabel')}</strong> {course.postcode}</p>
                 <p><strong className="text-[#0D1B2A]">{t('fromLiverpoolLabel')}</strong> {t('fromLiverpoolValue')}</p>
                 <p><strong className="text-[#0D1B2A]">{t('fromManchesterLabel')}</strong> {t('fromManchesterValue')}</p>
-                <p><strong className="text-[#0D1B2A]">{t('byTrainLabel')}</strong> {t('byTrainValue')}</p>
+                <p><strong className="text-[#0D1B2A]">{t('byTrainLabel')}</strong> {course.byTrain ?? t('byTrainValue')}</p>
               </div>
             </div>
 
@@ -425,7 +425,7 @@ export default async function CoursePage({
             <div>
               <h3 className="font-semibold text-[#0D1B2A] mb-3 uppercase tracking-wider text-xs">{t('otherCoursesHeading')}</h3>
               <div className="space-y-2">
-                {otherCourses.slice(0, 4).map((c) => (
+                {otherCourses.map((c) => (
                   <Link
                     key={c.slug}
                     href={`${prefix}/courses/${c.slug}`}

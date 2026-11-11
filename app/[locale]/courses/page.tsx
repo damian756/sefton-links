@@ -14,8 +14,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title,
     description,
-    alternates: buildAlternates('/courses'),
-    openGraph: buildOg('/courses', { title, description }),
+    alternates: buildAlternates('/courses', locale),
+    openGraph: buildOg('/courses', { title, description }, locale),
   };
 }
 
@@ -141,7 +141,7 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
       {/* Course cards */}
       <div className="container mx-auto px-4 max-w-7xl py-14">
         <div className="space-y-8">
-          {COURSES.map((course, index) => (
+          {COURSES.map((course) => (
             <div key={course.slug} className="bg-white rounded-2xl border border-[#E8E3D8] overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <div className={`h-1.5 ${course.openChampionship ? 'bg-[#B8912A]' : 'bg-[#1A4A30]'}`} />
 
@@ -150,9 +150,6 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
                   {/* Left: info */}
                   <div className="flex-1">
                     <div className="flex items-start gap-3 mb-3">
-                      <div className="w-8 h-8 bg-[#0D1B2A] rounded-lg flex items-center justify-center shrink-0 mt-0.5">
-                        <span className="text-[#B8912A] font-bold text-sm">{index + 1}</span>
-                      </div>
                       <div>
                         <h2 className="font-display text-2xl font-bold text-[#0D1B2A]">
                           {course.name}

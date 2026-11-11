@@ -57,6 +57,8 @@ export interface Course {
   practicalNotes: string[];
   nearbyDining: string[];
   distanceFromBirkdale: string; // in miles
+  /** The nearest station, only where the club or the rail operator says so. */
+  byTrain?: string;
   openChampionship: boolean;
   featured: boolean;
   image?: string; // path relative to /public, e.g. '/images/courses/royal-birkdale.jpg'
@@ -130,6 +132,8 @@ The club says its visitor tee times are fully booked throughout 2026 and 2027, i
       'The Vincent Hotel, 98 Lord Street: a hotel with the V Café & Restaurant and a cocktail bar',
     ],
     distanceFromBirkdale: '0',
+    // National Rail lists Hillside station on Waterloo Road, PR8 4QR.
+    byTrain: 'Hillside station (Merseyrail Northern Line), on Waterloo Road like the club',
     openChampionship: true,
     featured: true,
     image: '/images/courses/royal-birkdale.jpg',
@@ -326,6 +330,8 @@ The club hosted Final Qualifying for The Open from 2023 to 2026 on behalf of The
       'Hall Road station is 50 yards from the club entrance, on the line between Liverpool Central and Southport',
     ],
     distanceFromBirkdale: '8',
+    // westlancashiregolf.co.uk/contact/how-to-find-us
+    byTrain: 'Hall Road station (Merseyrail Northern Line), which the club says is 50 yards from its entrance',
     openChampionship: false,
     featured: false,
     image: '/images/courses/west-lancashire.jpg',
