@@ -6,8 +6,11 @@ import Link from 'next/link';
 import { Search, Clock, ArrowRight, X } from 'lucide-react';
 import type { BlogPost, BlogCategory } from '@/lib/blog';
 
+/** What a post card needs: the client gets these fields, not whole post bodies. */
+export type BlogCard = Pick<BlogPost, 'slug' | 'title' | 'excerpt' | 'categorySlug' | 'date' | 'readingTime' | 'image' | 'imageAlt' | 'sponsor'>;
+
 interface Props {
-  posts: BlogPost[];
+  posts: BlogCard[];
   categories: BlogCategory[];
   postCountByCategory: Record<string, number>;
 }
