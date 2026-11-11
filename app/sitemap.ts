@@ -69,6 +69,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   });
 
+  // English-only pages (no translated copy, so no locale alternates).
+  entries.push({
+    url: `${BASE_URL}/disclosure`,
+    lastModified: now,
+    changeFrequency: 'yearly',
+    priority: 0.3,
+  });
+
   for (const cat of BLOG_CATEGORIES) {
     entries.push({
       url: `${BASE_URL}/blog/category/${cat.slug}`,

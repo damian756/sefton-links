@@ -141,6 +141,7 @@ export default async function BlogPostPage({
     headline: post.title,
     description: post.excerpt,
     url: canonicalUrl,
+    image: post.image ? [`${BASE_URL}${post.image}`] : undefined,
     datePublished: isoDate,
     dateModified: isoDate,
     inLanguage: 'en-GB',
