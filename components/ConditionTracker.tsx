@@ -151,7 +151,7 @@ export default function ConditionTracker({ conditions, weather, updatedDate, not
           if (!notesCurrent) {
             return (
               <div key={course.slug} className="bg-white border-2 border-[#E8E3D8] rounded-xl p-5">
-                <h3 className="font-display font-bold text-[#0D1B2A] text-lg leading-tight mb-3">{course.name}</h3>
+                <h2 className="font-display font-bold text-[#0D1B2A] text-lg leading-tight mb-3">{course.name}</h2>
                 <div className="flex items-center gap-1.5 text-[#4A7D9A] mb-3 text-sm">
                   <Wind size={13} />
                   <span className="font-medium">{getCourseWind(course.slug)}</span>
@@ -174,7 +174,7 @@ export default function ConditionTracker({ conditions, weather, updatedDate, not
               className={`bg-white border-2 ${config.border} rounded-xl p-5`}
             >
               <div className="flex items-start justify-between mb-3">
-                <h3 className="font-display font-bold text-[#0D1B2A] text-lg leading-tight">{course.name}</h3>
+                <h2 className="font-display font-bold text-[#0D1B2A] text-lg leading-tight">{course.name}</h2>
                 <div className={`flex items-center gap-1.5 ${config.bg} ${config.color} px-2.5 py-1 rounded-full text-xs font-semibold shrink-0 ml-2`}>
                   <Icon size={12} />
                   {config.label}
@@ -206,7 +206,7 @@ export default function ConditionTracker({ conditions, weather, updatedDate, not
 
       {/* Condition legend */}
       <div className="bg-white border border-[#E8E3D8] rounded-xl p-5">
-        <h3 className="font-semibold text-[#0D1B2A] mb-4">Condition Guide</h3>
+        <h2 className="font-semibold text-[#0D1B2A] mb-4">Condition Guide</h2>
         <div className="grid sm:grid-cols-2 gap-3">
           {Object.entries(CONDITION_CONFIG).map(([key, config]) => {
             const Icon = config.icon;
