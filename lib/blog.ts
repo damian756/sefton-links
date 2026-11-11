@@ -595,7 +595,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     date: '25 Feb 2026',
     readingTime: '6 min read',
     content: [
-      { type: 'p', text: 'I\'m going to start with the only piece of transport advice that actually matters: do not drive to Royal Birkdale during Open week. I live three miles from the course. I will not be driving. The road network around Birkdale simply cannot cope with the crowds at a major championship, and the R&A and Sefton Council implement road closures that make it impractical anyway. Start planning around Merseyrail and work backwards from there.' },
+      { type: 'p', text: 'I\'m going to start with the only piece of transport advice that actually matters: do not drive to Royal Birkdale during Open week. I live three miles from the course. I will not be driving. The road network around Birkdale simply cannot cope with the crowds at a major championship, and road closures make it impractical anyway. Start planning around Merseyrail and work backwards from there.' },
       { type: 'h2', text: 'Merseyrail: the right answer for most people' },
       { type: 'p', text: 'Hillside station is the correct Merseyrail stop for Royal Birkdale, not Birkdale station. Trains run direct from Liverpool Central. Hillside station is on Waterloo Road, the same road as the Royal Birkdale entrance. The route is signposted and stewarded during Open week. Birkdale station is the next stop after Hillside when travelling from Liverpool, and further from the course: do not alight there.' },
       { type: 'ul', items: [
