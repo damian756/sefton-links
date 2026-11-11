@@ -117,7 +117,12 @@ export default async function CoursesPage({ params }: { params: Promise<{ locale
                   <td className="text-center py-3 px-3 font-mono text-[#0D1B2A]">{course.yardage.toLocaleString()}</td>
                   <td className="text-center py-3 px-3 font-mono text-[#0D1B2A]">{course.courseRating}</td>
                   <td className="text-center py-3 px-3 font-mono text-[#0D1B2A]">{course.slopeRating}</td>
-                  <td className="text-center py-3 px-3 font-semibold text-[#1A4A30]">{course.greenFeeRange}</td>
+                  <td className="text-center py-3 px-3 font-semibold text-[#1A4A30]">
+                    {course.greenFeeRange}
+                    {course.greenFeeNote && (
+                      <div className="text-[#2C3E50]/50 text-[11px] font-normal leading-snug mt-0.5 max-w-[11rem] mx-auto">{course.greenFeeNote}</div>
+                    )}
+                  </td>
                   <td className="py-3 pl-3">
                     <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${
                       course.difficulty === 'championship' ? 'bg-red-50 text-red-700' :

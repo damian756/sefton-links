@@ -15,53 +15,39 @@
     "coursesTitle": "Sefton Coastin golfkentät — Royal Birkdale, Hillside & Formby",
     "coursesDesc": "Kattava opas kaikkiin kuuteen Sefton Coastin linksgolfkenttään — vierailupolitiikka, green feet, kenttäarviointeja, lähtöajan varaus ja yksityiskohtaiset kenttäoppaat.",
     "openTitle": "The Open Championship 2026 Royal Birkdalessa — Vierailuopas",
-    "openDesc": "Kattava opas 155. Open Championshipiin Royal Birkdalessa, Southportissa, 16.–19.7.2026. Historia, aiemmat mestarit, liput, majoitus, kenttäopas ja matkustusvinkit.",
     "scorecardTitle": "Sefton Coastin scorekortit — Par, Etäisyys & Kenttäarviointi",
     "scorecardDesc": "Täydelliset scorekortit kaikille kuudelle Sefton Coastin kentälle — par, etäisyydet kaikilta teiltä, course rating ja slope rating. Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale ja Southport Old Links.",
     "teeTimesTitle": "Lähtöajat Royal Birkdalessa & Sefton Coastin golfklubeissa",
-    "teeTimesDesc": "Näin varaat lähtöajan vierailijana Royal Birkdalessa, Hillsidessa, Formbyssa ja kaikissa kuudessa Sefton Coastin klubissa. Varausajat, vierailupolitiikka, suorat yhteystiedot ja Formby Golf Clubin monimutkainen käytäntö selitettynä.",
     "itinerariesTitle": "Sefton Coastin golfmatkat — 2, 3 ja 5 päivän ohjelmat",
-    "itinerariesDesc": "Valmiit golfmatkaohjelmat Sefton Coastille. 2, 3 ja 5 päivän yhdistelmät Royal Birkdalessa, Hillsidessa, Formbyssa ja koko rannikolla — majoitus- ja ravintolasuosituksineen.",
     "accommodationTitle": "Golfmajoitus Royal Birkdalen lähellä, Southport",
     "accommodationDesc": "Missä majoittua Royal Birkdalen ja Sefton Coastin kenttien lähellä. Hotellit, B&B:t ja loma-asunnot Southportissa ja Birkdalessa — lajiteltu etäisyyden mukaan, The Open Championship 2026 saatavuustiedoin.",
-    "conditionsTitle": "Sefton Coastin kenttäolosuhteet — Päivittäinen pelitila",
-    "conditionsDesc": "Päivittäiset peliolosuhteet Royal Birkdalessa, Hillsidessa, Formbyssa, West Lancashiressa, Southport & Ainsdalessa ja Southport Old Linksissa. Kova, normaali, märkä tai suljettu — päivitetään joka aamu.",
     "contactTitle": "Ota yhteyttä SeftonLinksiin",
     "contactDesc": "Ota yhteyttä SeftonLinksiin — kysymykset, tietojen korjaukset, korostetut listaukset ja yrityksiin liittyvät tiedustelut.",
     "course": {
       "royal-birkdale": {
-        "title": "Royal Birkdale Golf Club — Vierailuopas, Green Feet & Lähtöajat",
-        "desc": "The Open Championship 2026:n isäntäkenttä. Green fee £300–£350. Par 70, 6 543 yardsia. Täydellinen vierailupolitiikka, varausohjeet ja kierroksen jälkeiset vinkit."
+        "title": "Royal Birkdale Golf Club — Vierailuopas, Green Feet & Lähtöajat"
       },
       "hillside": {
-        "title": "Hillside Golf Club Southport — Vierailuopas & Green Feet",
-        "desc": "Hienoin linksgolfkenttä, josta et ole koskaan kuullut. Green fee £100–£150. Par 72, 6 850 yardsia. Täydellinen vierailupolitiikka ja kenttäopas."
+        "title": "Hillside Golf Club Southport — Vierailuopas & Green Feet"
       },
       "formby": {
-        "title": "Formby Golf Club — Vierailuopas, Green Feet & Lähtöajat",
-        "desc": "Eksklusiivinen yksityiskenttä — yksi Englannin hienoimmista sisämaalinkseistä. Green fee £160–£210. Par 72, 6 893 yardsia. Vierailupolitiikka ja varausopas."
+        "title": "Formby Golf Club — Vierailuopas, Green Feet & Lähtöajat"
       },
       "west-lancashire": {
-        "title": "West Lancashire Golf Club — Vierailijan Green Feet & Lähtöajat",
-        "desc": "Yksi Englannin vanhimmista klubeista — linksgolf puhtaimmillaan. Green fee £80–£130. Par 72, 6 756 yardsia. Täydellinen vierailuopas."
+        "title": "West Lancashire Golf Club — Vierailijan Green Feet & Lähtöajat"
       },
       "southport-ainsdale": {
-        "title": "Southport & Ainsdale Golf Club — Vierailuopas & Green Feet",
-        "desc": "Ryder Cup -perintö ja aito linksluonne. Green fee £65–£100. Par 72, 6 612 yardsia. Vierailupolitiikka ja kenttäopas."
+        "title": "Southport & Ainsdale Golf Club — Vierailuopas & Green Feet"
       },
       "southport-old-links": {
-        "title": "Southport Old Links Golf Club — Vierailuopas & Green Feet",
-        "desc": "Piilotettua arvoa — aito linksgolf rannikon edullisimmalla hinnalla. Green fee £40–£60. Par 71, 6 318 yardsia. Täydellinen vierailuopas."
+        "title": "Southport Old Links Golf Club — Vierailuopas & Green Feet"
       }
     }
   },
   "home": {
-    "heroTitle": "Maailman Hienoin Linksgolfkäytävä",
-    "heroSubtitle": "Kuusi mestaruuskenttää. Yksi rannikkokaistale. The Open Championship palaa Royal Birkdaleen heinäkuussa 2026.",
     "heroCtaCourses": "Tutustu Kenttiin",
     "heroCtaOpen": "The Open 2026",
     "openBanner": "The Open Championship 2026 — Royal Birkdale, Southport",
-    "openCountdownLabel": "The Open Championshipiin",
     "coursesTitle": "Sefton Coastin kentät",
     "coursesSubtitle": "Kuusi Englannin hienoimmista linksgolfkentistä, kaikki muutaman kilometrin säteellä toisistaan",
     "featuresTitle": "Suunnittele Linksgolfmatkasi",
@@ -73,19 +59,13 @@
     "affiliateDesc": "Lähtöajat, hotellit ja paketit Golf Breaksin kautta"
   },
   "homePage": {
-    "bannerText": "The Open Championship 2026 — Royal Birkdale, Southport. 16.–19.7.",
     "bannerLink": "→ Kattava opas",
     "heroBadge": "Sefton Coast · Lancashire · Englanti",
     "heroImageAlt": "Golfkenttä auringonlaskussa Sefton Coastilla",
     "statChampionshipCoursesLabel": "Mestaruuskenttiä",
     "statOpenChampionshipsLabel": "Open Championships Birkdalessa",
     "statOldestClubLabel": "Vanhin Klubi Rannikolla",
-    "statGreenFeeRangeLabel": "Green Fee -vaihteluväli",
     "openSectionBadge": "The Open Championship 2026",
-    "openSectionHeading1": "Royal Birkdale. Heinäkuu 2026.",
-    "openSectionHeading2": "Golrin Suurin Näytelmä.",
-    "openSectionPara1": "155. Open Championship palaa Royal Birkdaleen — kentälle, joka on synnyttänyt joitakin golfhistorian dramaattisimmista hetkistä. Arnold Palmerin legendaarinen pelastus pensaista vuonna 1961. Tom Watsonin viides Claret Jug vuonna 1983. Jordan Spiethin henkeäsalpaava pako dropzonelta 13. väylällä vuonna 2017.",
-    "openSectionPara2": "Jos suunnittelet linksgolfmatkaa Sefton Coastille, The Open -viikko on ehdottomasti matkan huipentuma. Majoitus 30 kilometrin säteellä on täynnä 12 kuukautta ennen turnausviikkoa. Aloita suunnittelu nyt.",
     "openSectionCtaBtn": "Open 2026 — Kattava opas",
     "pastChampionsHeading": "Aiemmat Mestarit Royal Birkdalessa",
     "courseCardEstFounded": "Per. {year}",
@@ -98,45 +78,35 @@
     "toolsSectionTitle": "Suunnittele Vierailusi Sefton Coastille",
     "toolsSectionSubtitle": "Vieraileville golfarille luodut työkalut — ei paikallisille, jotka jo tuntevat kentät.",
     "tool1Title": "Kenttäolosuhteet",
-    "tool1Desc": "Reaaliaikainen tila kaikille kuudelle kentälle — kova, normaali, märkä tai suljettu. Tuulennopeus ja -suunta. Päivitetään manuaalisesti joka aamu.",
     "tool1Cta": "Tarkista Olosuhteet",
     "tool2Title": "Golfmatkasuunnittelija",
     "tool2Desc": "Syötä päivien määrä, budjetti ja handicap-taso, saat valmiiksi rakennettun ohjelman parhaaseen kenttäjärjestykseen, majoitukseen ja ravintoloihin.",
     "tool2Cta": "Suunnittele Matkasi",
     "tool3Title": "Lähtöaikaopas",
-    "tool3Desc": "Vierailupolitiikka jokaiselle kentälle — mitkä päivät sopivat vierailijoille, kuinka kauas ennakkoon varaat, suorat yhteystiedot. Formby Golf Clubin hankala käytäntö selitettynä selkeästi.",
     "tool3Cta": "Katso Lähtöaikaopas",
     "tool4Title": "Scorekorttikirjasto",
     "tool4Desc": "Täydelliset scorekortit kaikille kuudelle kentälle — par, etäisyydet kaikilta teiltä, course rating ja slope rating. Kaikki mitä tarvitset odotusten asettamiseen.",
     "tool4Cta": "Katso Scorekortit",
     "tool5Title": "Majoitus Golfareille",
-    "tool5Desc": "Valikoitu majoitus kenttien läheisyydessä — varhainen aamiainen, golflaukukomero ja golfareille sopivat tilat. Lajiteltu etäisyyden mukaan Royal Birkdalesta.",
     "tool5Cta": "Löydä Majoitus",
     "tool6Title": "Golfmatkaohjelmat",
     "tool6Desc": "Valmiit 2, 3 ja 5 päivän ohjelmat kenttäjärjestyksineen, majoitusehdotuksineen ja illallissuosituksineen. Budjettimatkasta mestaruustasolle.",
     "tool6Cta": "Selaa Ohjelmia",
     "affiliateCtaTitle": "Valmis Varaamaan Sefton Coast -matkasi?",
-    "affiliateCtaDesc": "Golf Breaks on Britannian johtava golfmatkojen erikoispalvelu — lähtöajat, hotellit ja paketit koko Sefton Coastilla viikonlopusta S&A:ssa täyteen viikkoon The Openin huipentumana.",
     "affiliateCtaBtn1": "Katso Golf Breaks -paketit ↗",
     "affiliateCtaBtn2": "Rakenna Oma Ohjelmasi",
     "affiliateCtaDisclaimer": "Golf Breaks affiliate-linkki — saamme provision ilman lisäkustannuksia sinulle.",
     "editorialTitle": "Miksi Sefton Coast?",
     "editorialPara1": "Skotlannissa on linksgolfkäytäviä — St Andrews, Carnoustie, Muirfield — jotka saavat kaiken huomion. Sefton Coast jää varjoon. Juuri se on mahdollisuus jokaiselle vierailevalle golfarille.",
-    "editorialPara2": "16 kilometrin rantakaistaleella on kuusi aitoa linksgolfkenttää, Royal Birkdalesta (johdonmukaisesti maailman viiden parhaan joukossa) Southport Old Linksiin (erinomaista linksgolfia 40 punnalla). Voit pelata eri kentän joka päivä viikon ajan toistamatta itseäsi — ja vaihtelu on silmiinpistävää. Birkdale dramaattisten pajuhentopensasduunien läpi. Hillside harjanteen ja laaksojen maaston halki. Formby rantamäntyjen varjossa. West Lancashire raa'an Irlanninmeren reunalla.",
-    "editorialPara3": "Käytännön argumentti Sefton Coastin puolesta Skotlantiin nähden on yksinkertainen: se on helpommin saavutettavissa Manner-Euroopasta ja Pohjois-Amerikasta Liverpoolin ja Manchesterin lentokenttien kautta, majoitus on edullisempaa, ja kentät ovat vierailijaystävällisempiä kuin saman tasoiset skottilaiset vastineensa. Royal Birkdale on halvempi kuin Muirfield ja helpompi varata.",
-    "editorialPara4": "Ja heinäkuussa 2026 koko maailma katsoo. The Open Championship palaa Royal Birkdaleen — kentälle, joka antoi meille Spiethin ihmeellisen paon dropzonelta 2017, Watsonin kliinisen voiton 1983, ja Jack Nicklauksen urheilijamaisesti merkittävän eleen Ryder Cupissa 1969. Jos olet koskaan harkinnyt linksgolfmatkaa Englantiin, nyt on aika.",
     "featureCard1Title": "Helposti Saavutettavissa",
     "featureCard1Text": "45 min Liverpoolin lentokentältä, 60 min Manchesterista. Suora junayhteys Southportiin Liverpoolin keskustasta.",
     "featureCard2Title": "Vierailijaystävällinen",
     "featureCard2Text": "Neljä kuudesta kentästä toivottaa vierailijat aktiivisesti tervetulleiksi. Parempi pääsy kuin vastaavanlaatuisille skottilaisille kentille.",
-    "featureCard3Title": "Aitoa Vastinetta Rahalle",
-    "featureCard3Text": "Green feet £40:sta (Old Links) £350:een (Birkdale). Vastaavat skottilaiset kentät maksavat enemmän joka tasolla.",
     "southportGuideDesc": "Hotellit, ravintolat ja tekemistä Southportissa — tukikohtasi Sefton Coast -golfmatkalle.",
     "formbyGuideDesc": "Kattava opas Formbyyn — National Trustin mäntymetsät, oravat ja kylä kierrosten välissä."
   },
   "courses": {
     "pageTitle": "Sefton Coastin Golfkentät",
-    "pageDesc": "Kattava opas Royal Birkdaleen, Hillsideen, Formbyyn, West Lancashireen, Southport & Ainsdaleen ja Southport Old Linksiin",
     "greenFee": "Green Fee",
     "par": "Par",
     "yardage": "Etäisyys",
@@ -222,8 +192,6 @@
   },
   "open": {
     "pageTitle": "The Open Championship 2026 — Royal Birkdale",
-    "pageDesc": "Oppaasi 155. Open Championshipiin Royal Birkdalessa, Southportissa. Historia, liput, majoitus ja kenttäopas.",
-    "countdown": "Lähtölaskenta The Openiin",
     "dates": "16.–19.7.2026",
     "venue": "Royal Birkdale Golf Club, Southport",
     "historyTitle": "Royal Birkdale & The Open",
@@ -235,27 +203,19 @@
     "seconds": "sek"
   },
   "openPage": {
-    "heroBadge": "155. Open Championship",
     "heroTitle1": "The Open Championship",
     "heroTitle2": "Royal Birkdale 2026",
     "heroBtn1": "Liput TheOpen.com-sivustolta ↗",
     "heroBtn2": "Royal Birkdale Kenttäopas",
     "aboutTitle": "The Open Championship Royal Birkdalessa",
-    "aboutPara1": "The Open Championship — golffin vanhin major ja ainoa Pohjois-Amerikan ulkopuolella — palaa heinäkuussa 2026 Royal Birkdaleen yhdestoista kertaa. Mikään muu Open-kiertueen kenttä ei ole isännöinyt turnausta useammin — ennätys, joka heijastaa sekä kentän laatua että sen poikkeuksellista soveltuvuutta mestaruusturnaukseen.",
     "aboutPara2": "Royal Birkdale on linksgolfia sen aidoimmillaan. Väylät kulkevat korkeiden hiekkadyynien välissä, jotka kanavoivat rannikon tuulen arvaamattomilla tavoilla. Karkea — Birkdalen tunnusmerkki — on armoton mutta navigoitavissa. Viheriöt ovat pieniä, nopeita ja hienovaraisesti muotoiltuja. Mestaruusolosuhteissa voittaja pärjää tyypillisesti level parin tuntumassa tai paremmin — mutta vain sään salliessa. Kun se ei salli, Birkdalesta tulee yksi maailman vaativimmista testikentistä.",
-    "aboutPara3": "The Open 2017 tarjosi yhden viime vuosikymmenien dramaattisimmista finaaleista. Jordan Spieth, joka johti alusta loppuun, teki triple bogeyn 13. väylällä lyötyään avauksensa televisiokalustoa sisältävälle alueelle. Hänen päätöksensä ottaa helpotus dropzone-säännön nojalla — yhdistettynä hämmästyttävään chippiin aivan kupin lähelle — nousi modernin major-golffin ikonisimmiksi hetkiksi.",
     "aboutPara4": "Golffimatkailijalle The Open Royal Birkdalessa tarjoaa ainutlaatuisen tilaisuuden: maailman arvokkain golfitapahtuma yhdellä Englannin hienoimmista linksgolfkentistä, kompaktissa ja helposti saavutettavassa ympäristössä. Katsojien pääsy koko kentälle on erinomainen, tunnelma on aidosti brittiläinen, ja ruoka- sekä viihdekylä on parantunut huomattavasti viime vuosina.",
     "pastChampionsTitle": "Aiemmat Mestarit Royal Birkdalessa",
     "lastWinnerBadge": "Viimeisin mestari",
-    "champNote2017": "Johti alusta loppuun — muistettava dropzone-pako 13. väylällä",
     "champNote2008": "Kaksi peräkkäistä Claret Jugia",
-    "champNote1998": "Ensimmäinen major 41-vuotiaana",
     "champNote1991": "Avauspuolikas 29 lyönnissä viimeisellä kierroksella",
     "champNote1983": "Viides ja viimeinen Open-tittelinä",
-    "champNote1976": "Johti alusta loppuun",
-    "champNote1971": "Kolmas peräkkäinen major kuuden viikon sisällä",
     "champNote1965": "Viides Open Championship",
-    "champNote1961": "Palmerin legendaarinen rautaisku pensaista 15. väylällä",
     "champNote1954": "Ensimmäinen viidestä Open-titteleistä",
     "ticketsAlertTitle": "Liput myydään vain TheOpen.com-sivuston kautta",
     "ticketsAlertDesc": "R&A myy kaikki liput suoraan. Virallista kolmatta osapuolta ei ole. Mestaruuspäivien liput (torstai–sunnuntai) myyvät loppuun nopeasti — usein muutamassa tunnissa vapautumisesta. Rekisteröidy R&A:n jonotuslistalle ja arpajaisiin TheOpen.com-sivustolla nyt.",
@@ -311,13 +271,8 @@
     "spectatorTipsItem4": "Birkdalen luonnolliset dyynimäet vaativat kunnolliset kengät",
     "spectatorTipsItem5": "Käytä R&A:n sovellusta reaaliaikaiseen tuloslistaan ja pelaajaseurantaan",
     "playCourseTitle": "Pelaa Kenttää",
-    "playCourseItem1": "Vierailijoiden lähtöajat alkavat uudelleen mestaruusasennuksen poistamisen jälkeen",
-    "playCourseItem2": "The Openin jälkeiset lähtöajat täyttyvät nopeasti — Royal Birkdale hoitaa suoraan",
-    "playCourseItem3": "Yhdistä Hillsideen tai S&A:han täydelliselle Birkdale-alueenmatkalle",
-    "playCourseItem4": "Caddie-palvelu saatavilla — varaa hyvissä ajoin parasta kokemusta varten",
     "quickFactsTitle": "Pikafaktat",
     "factLabelChampNumber": "Turnaustunnus",
-    "factValueChampNumber": "155. Open",
     "factLabelVenue": "Kenttä",
     "factValueVenue": "Royal Birkdale GC",
     "factLabelLocation": "Sijainti",
@@ -326,8 +281,6 @@
     "factValueDates": "16.–19.7.2026",
     "factLabelPracticeDays": "Harjoituspäivät",
     "factValuePracticeDays": "13.–15.7.2026",
-    "factLabelDefendingChamp": "Puolustava mestari",
-    "factValueDefendingChamp": "Brian Harman (2023)",
     "factLabelOrganiser": "Järjestäjä",
     "factValueOrganiser": "The R&A",
     "factLabelTimesHosted": "Kerrat Birkdalessa isäntänä",
@@ -341,28 +294,11 @@
     "bookAccomDesc": "Älä odota. Open-viikon majoitus täyttyy nopeasti. Varaa Booking.com-sivuston kautta laajimmalla valikoimalla ja joustavalla peruutusehdolla.",
     "bookAccomBtn": "Etsi Hotelleja Southportissa ↗",
     "bookAccomAffiliate": "Booking.com affiliate-linkki",
-    "playBirkdaleTitle": "Pelaa Royal Birkdalessa",
-    "playBirkdaleDesc": "Suunnitteletko kierrosta ennen tai jälkeen The Openin? Green feet, vierailupolitiikka ja varausopas.",
     "playBirkdaleLink": "Royal Birkdale kenttäopas"
   },
   "teeTimesPage": {
     "headerBadge": "Vierailuopas",
     "pageTitle": "Näin Varaat Lähtöajan",
-    "pageDesc": "Vierailupolitiikat, varausmenettelyt ja mitä voit odottaa jokaisella kentällä — mukaan lukien Formby Golf Clubin tunnetusti hankala prosessi, selitettynä selkeästi.",
-    "formbyCalloutTitle": "Formby Golf Club — Mutkikas Tapaus",
-    "formbyCalloutIntro": "Formby Golf Club aiheuttaa enemmän hämmennystä vierailijoissa kuin mikään muu Sefton Coastin kenttä. Tässä koko kuva:",
-    "formbyPoint1Title": "Vain miehille.",
-    "formbyPoint1Text": "Formby Golf Club on miespuolinen yksityisklubi. Tämä ei ole epätavallista perinteisille englantilaisille golfklubeille, mutta se on hyvä tietää ennen kuin saapuu sekaseurueen kanssa.",
-    "formbyPoint2Title": "Ei nettivarausta.",
-    "formbyPoint2Text": "Verkkosivustolla ei ole lähtöaikojen varausjärjestelmää. Sinun täytyy kirjoittaa tai soittaa suoraan klubin sihteerille.",
-    "formbyPoint3Title": "Vastavuoroiset järjestelyt.",
-    "formbyPoint3Text": "Pääsy tapahtuu pääasiassa virallisten vastavuoroisten sopimusten omaavien klubien kautta. Kysy oman kotiklubisi sihteeriltä, onko heillä sopimus Formbyn kanssa.",
-    "formbyPoint4Title": "Suosituskirje auttaa.",
-    "formbyPoint4Text": "Virallinen kirje kotiklubisi ammattilaiselta tai sihteeriltä parantaa merkittävästi mahdollisuuksia päästä vierailemaan.",
-    "formbyPoint5Title": "Formby Ladies Golf Club on erillinen.",
-    "formbyPoint5Text": "Viereinen mutta täysin itsenäinen — oma kenttä, omat jäsenet, oma vierailupolitiikka. Avoimempi vierailijoille kuin miesten klubi.",
-    "formbyPoint6Title": "Vaivan arvoinen.",
-    "formbyPoint6Text": "Jos sinulla on mahdollisuus pelata, käytä se. Kenttä on poikkeuksellinen — rannikkomännikköä ja linksdyynejä ainutlaatuisella tavalla yhdistettynä.",
     "allCoursesTitle": "Vierailupolitiikka — Kaikki Kentät",
     "difficultyRestricted": "Rajoitettu",
     "difficultyByArrangement": "Sopimuksen mukaan",
@@ -378,7 +314,6 @@
     "tip1Title": "Ota aina handicap-todistus mukaan",
     "tip1Text": "Kaikki Sefton Coastin kentät paitsi Southport Old Links vaativat handicap-todistuksen. Kansallisen golfliittosi kortti tai EGA-kortti hyväksytään.",
     "tip2Title": "Varaa etukäteen, erityisesti kesällä",
-    "tip2Text": "Sefton Coast on täynnä kesäkuusta syyskuuhun. Royal Birkdale ja Hillside ovat täynnä 4–8 viikkoa etukäteen sesongin aikana. Älä saavu paikan päälle toivoen vapaita aikoja.",
     "tip3Title": "Pukukoodi on voimassa kaikkialla",
     "tip3Text": "Smart casual on minimi kaikissa klubeissa. Ei farkkuja, ei tennarit, ei t-paitoja useimmissa paikoissa. Joissakin klubeissa vaaditaan kaulus ja siistit housut klubirakennuksessa.",
     "tip4Title": "Saavu 30 minuuttia etuajassa",
@@ -391,7 +326,6 @@
   "accommodationPage": {
     "headerBadge": "Golfareille Sopiva Majoitus",
     "pageTitle": "Majoitus Golfareille",
-    "pageDesc": "Valikoitua majoitusta Royal Birkdalen ja Sefton Coastin kenttien lähellä — valittu golflaukukomeron, varhaisen aamiaisen ja ensimmäisen tiin läheisyyden perusteella.",
     "openCalloutTitle": "Varaatko The Open Championship 2026 -tapahtumaan?",
     "openCalloutDesc": "Majoitus Royal Birkdalen lähellä Open-viikolla (14.–20.7.2026) on täynnä 12–18 kuukautta etukäteen. Jos luet tätä maaliskuun 2026 jälkeen, alle 8 km:n päässä olevat vaihtoehdot ovat erittäin rajallisia. Tarkista Liverpoolin keskusta, Ormskirk ja Wigan varavaihtoehtona.",
     "openCalloutLink": "Open 2026 majoitusopas",
@@ -441,7 +375,6 @@
   "itinerariesPage": {
     "headerBadge": "Sefton Coast",
     "pageTitle": "Golfmatkaohjelmat",
-    "pageDesc": "Valmiit golfmatkaohjelmat kaikille kestoja ja budjeteille — nopeasta kahden päivän vierailusta täydelliseen viiden kentän grand touriin. Tai käytä suunnittelijaa rakentaaksesi oman ohjelmasi.",
     "plannerTitle": "Golfmatkasuunnittelija",
     "plannerDesc": "Syötä päivien määrä, budjetti ja handicap — yhdistämme sinut oikeaan ohjelmaan.",
     "allItinerariesTitle": "Kaikki Ohjelmat",
@@ -457,9 +390,7 @@
     "bookViaGolfBreaksBtn": "Varaa Golf Breaksin kautta ↗",
     "howToPlanTitle": "Sefton Coast -golfmatkan Suunnittelu",
     "howToPlanPara1": "Sefton Coastin kentät ovat niin lähellä toisiaan, että kaksi tai kolme kierrosta on mahdollista kahden päivän reissulla ilman hankalaa logistiikkaa. Royal Birkdale ja Hillside ovat kirjaimellisesti vierekkäin — voisit melkein kävellä niiden välillä. Southport & Ainsdale on viisi mailia etelään. Formby on kahdeksan mailia Birkdalesta A565:ttä pitkin.",
-    "howToPlanPara2": "Pidemmille matkoille Southport on paras tukikohta. Kaupungissa on laajin hotellivalikoima, ja kaikki Lord Streetistä Birkdaleen on taksimatkan päässä. Jos haluat rauhallisempaa ja edullisempaa majoitusta, Formby village 20 minuuttia etelään tarjoaa hyviä B&B-vaihtoehtoja.",
-    "howToPlanPara3": "Järjestys on tärkeä. Älä aloita Royal Birkdalesta — vertailet sitten kaikkea muuta siihen. Rakenna ylöspäin: aloita Old Linksista tai S&A:sta, jatka Hillsideen toisena päivänä, saavu Birkdaleen kun olet löytänyt linksjalat. Kontrasti tekee finaalista ansaitun.",
-    "howToPlanPara4": "Varaa lähtöajat ennen matkalle lähtöä. Royal Birkdale on täynnä viikkoja etukäteen, Hillside kaksi–neljä viikkoa, S&A ja Old Links usein viikko etukäteen. Formby vaatii yhteydenoton klubin sihteeriin etukäteen — nettivarausta ei ole."
+    "howToPlanPara2": "Pidemmille matkoille Southport on paras tukikohta. Kaupungissa on laajin hotellivalikoima, ja kaikki Lord Streetistä Birkdaleen on taksimatkan päässä. Jos haluat rauhallisempaa ja edullisempaa majoitusta, Formby village 20 minuuttia etelään tarjoaa hyviä B&B-vaihtoehtoja."
   },
   "conditions": {
     "pageTitle": "Sefton Coastin Kenttäolosuhteet",
@@ -474,9 +405,7 @@
     "notes": "Huomiot"
   },
   "conditionsPage": {
-    "headerBadge": "Päivittäinen Päivitys",
     "pageTitle": "Kenttäolosuhteet",
-    "pageDesc": "Ajankohtaiset peliolosuhteet kaikilla kuudella Sefton Coastin kentällä — päivitetään manuaalisesti joka aamu klo 7:30. Tarkista ennen lähtöä.",
     "aboutLinksTitle": "Linksgolfin Olosuhteista",
     "aboutLinksPara1": "Linksgolfin olosuhteet eroavat olennaisesti puistogolfista. Tärkeimmät muuttujat ovat tuulen suunta ja voimakkuus, viimeisin sadanta ja kuivatus sekä nurmikon kovuus. Kova, kuiva kenttä pelaa täysin eri tavalla kuin märkä, pehmeä — lähestymislyönnit eivät pysähdy, pallo rullaa pidemmälle teiltä, ja chippi vaatii enemmän luovuutta.",
     "aboutLinksPara2": "Sefton Coastin kentät kuivuvat hyvin luonnostaan — ne on rakennettu hiekkaan. Jopa rankkasateiden jälkeen Royal Birkdale ja Hillside toipuvat yleensä nopeammin kuin sisämaakentät. Southport & Ainsdale ja West Lancashire voivat pitää vettä hieman pidempään maaston vuoksi. Formbyn metsäosuudet kuivuvat nopeimmin.",
@@ -496,8 +425,7 @@
     "pressMediaLinkText": "Churchtown Media Ltd",
     "beforeContactTitle": "Ennen kuin otat yhteyttä",
     "beforeContactItem1": "→ Lähtöaikojen varauksiin ota yhteyttä suoraan klubeihin — olemme opas, emme varauspalvelu.",
-    "beforeContactItem2": "→ The Open Championship -lippuja varten vieraile TheOpen.com-sivustolla.",
-    "beforeContactItem3": "→ Royal Birkdalen vierailutiedusteluihin soita suoraan numeroon 01704 552261."
+    "beforeContactItem2": "→ The Open Championship -lippuja varten vieraile TheOpen.com-sivustolla."
   },
   "legalPage": {
     "privacyTitle": "Tietosuojakäytäntö",
@@ -524,7 +452,6 @@
     "courseGuidesBtn": "Kenttäoppaat"
   },
   "footer": {
-    "tagline": "Kattava linksgolfopas Sefton Coastille — Royal Birkdale, Hillside, Formby ja englantilaisen linksgolfin parhaat.",
     "builtBy": "Churchtown Median tekemä",
     "builtByLink": "Churchtown Median tekemä ↗",
     "networkLabel": "Sefton Coast -verkosto",
@@ -536,7 +463,6 @@
     "formbyGuide": "FormbyGuide.co.uk",
     "coursesHeading": "Kentät",
     "openHeading": "The Open 2026",
-    "openDesc": "The Open Championship palaa Royal Birkdaleen, Southportiin heinäkuussa 2026 — ensimmäistä kertaa sitten Jordan Spiethin ikonisen voiton vuonna 2017.",
     "openGuideBtn": "Open 2026 Opas →",
     "languagesHeading": "Kielet",
     "privacyLink": "Tietosuoja",
@@ -557,24 +483,8 @@
     "courseOldLinks": "Southport Old Links"
   },
   "courseData": {
-    "royal-birkdale": {
-      "tagline": "The Open Championship 2026:n isäntäkenttä — linksgolfin huippu",
-      "description": "Royal Birkdale on hienoin linksgolfkenttä, jota useimmat golfaajat tulevat koskaan pelaamaan. Sefton Coastin korkeiden hiekkadyynien keskellä kenttä on isännöinyt kymmentä Open Championshiä ja sijoittuu johdonmukaisesti maailman viiden parhaan joukkoon. The Open 2026 palaa tänne heinäkuussa — ja jos suunnittelet golfmatkaa Sefton Coastille, tämä on syy.\n\nKenttä vaatii luovuutta ja älykkyyttä. Väylät kulkevat jyrkkien dyynien välissä, jotka kanavoivat tuulen arvaamattomilla tavoilla. Karkea on armoton. Viheriöt ovat nopeita, hienovaraisesti muotoiltuja ja sijoitettu pakottamaan sinut ajattelemaan jokaista lähestymislyöntiä. Tämä ei ole kenttä, jonka väkisin pakottaa läpi — linksgolfkokemus on korvaamaton.\n\nVierailijoille on lähtöaikoja saatavilla, mutta Royal Birkdale on tiukka sekä saatavuuden että etiketin suhteen. Varaa hyvissä ajoin etukäteen, kunnioita pukukoodia ja pelaa handicap-todistuksen vaatimalle tasolle.",
-      "visitorPolicy": "Vierailijat tervetulleita saatavuuden mukaan. Handicap-todistus vaaditaan (miehet 24, naiset 36). Ei vierailijoita kilpailupäivinä."
-    },
-    "hillside": {
-      "tagline": "Hienoin linksgolfkenttä, josta et ole koskaan kuullut — ennen nyt",
-      "description": "Hillside on Sefton Coastin parhaiten säilytetty salaisuus — joskin ei kauan enää. Suoraan Royal Birkdalen vieressä se jakaa samat dramaattiset dyynimaiseman, mutta tarjoaa huomattavasti paremman vierailijoiden pääsyn murto-osalla green feestä. Golfammattilaiset, jotka pelaavat molemmat kentät, arvostelevat usein Hillsiden takaylipuoliskon yhdeksi hienoimmista Englannissa.\n\nKenttä läpikävi merkittävän kunnostuksen viimeisessä yhdeksässä väylässä, jotka kulkevat nyt spektaakkelimaisen harjanne-ja-laakso-maaston halki dyynien läpi. Reitti on looginen ja kenttäkunto johdonmukaisesti erinomainen. Jos rakennat monipäiväistä ohjelmaa, Hillside päivää ennen Royal Birkdalea on lähes täydellinen yhdistelmä.",
-      "visitorPolicy": "Vierailijat tervetulleita useimpina arkipäivinä ja joitain viikonloppuja. Handicap-todistus vaaditaan."
-    },
-    "formby": {
-      "tagline": "Eksklusiivinen yksityinen helmi — yksi Englannin hienoimmista linkseistä",
-      "description": "Formby Golf Club on yksi Sefton Coastin eksklusiivisimmista klubeista, ja vierailupolitiikka heijastaa sitä. Klubilla on vastavuoroinen sopimus rajatun määrän klubien kanssa ja se käsittelee vierailupyyntöjä tapauskohtaisesti — lähtöaikaa ei yksinkertaisesti voi varata netistä.\n\nIse kenttä on poikkeuksellinen. Rannikkomäntyjen keskellä linksdyynien lomaan ulottuvana kenttä on läpikotaisin erilainen kokemus kuin Royal Birkdale tai Hillside. Männyt tarjoavat suojaa ja visuaalista erityisyyttä, kun taas dyyniosuudet ovat yhtä haastavat kuin mikä tahansa rannikon kentistä. Jos sinulla on mahdollisuus pelata — tartu siihen.\n\nHuom: Formby Golf Club on miehille. Formby Ladies Golf Club (viereinen, perustettu 1896) on erillinen ja yhtä arvovaltainen klubi, jolla on oma kenttä ja avoimempi vierailupolitiikka.",
-      "visitorPolicy": "Rajoitettu vierailijoiden pääsy. Vastavuoroiset sopimukset hyväksyttyjen klubien kanssa. Ota yhteyttä suoraan klubin sihteerille tiedusteluihin."
-    },
     "west-lancashire": {
       "tagline": "Yksi Englannin vanhimmista klubeista — linksgolf puhtaimmillaan",
-      "description": "West Lancashire Golf Club, perustettu 1873, kuuluu Englannin vanhimpiin golfklubehin ja on yksi vähiten vierailluista Sefton Coastilla — pääasiassa siksi, että se sijaitsee hieman pohjoisempana Blundellsandsissa, välittömän Southport-klusterin ulkopuolella.\n\nSe on harmi, sillä West Lancashire on vakavaa linksgolftestauksiä. Kentällä on raaka, muokkaamaton laatu, jota puristi rakastavat — karkea on aitoa karkea, viheriöt ovat nopeita ja luotettavia, ja Irlanninmeren tuuli on aina läsnä. Se ei saavuta Royal Birkdalen kiilloitettua viimeistelyä, mutta tarjoaa autenttisemman, elementaarisen linksgolfkokemuksen huomattavasti edullisemmalla green feellä.\n\nKlubilla on pitkä historia The Open Championship -karsintakierrosten isännöinnissä. Jos haluat pelata aidosti historiallisen ja haastavan linkskentän ilman premium-hintalappua, West Lancashire on vahva valinta.",
       "visitorPolicy": "Vierailijat tervetulleita useimpina arkipäivinä. Viikonloput rajoitettu — soita etukäteen."
     },
     "southport-ainsdale": {

@@ -89,7 +89,7 @@ export default async function CoursePage({
                   { '@type': 'LocationFeatureSpecification', name: 'Slope Rating', value: course.slopeRating },
                 ],
                 foundingDate: String(course.founded),
-                priceRange: course.greenFeeRange,
+                priceRange: course.greenFeeFrom ? course.greenFeeRange : undefined,
               },
               {
                 '@type': 'BreadcrumbList',
@@ -177,7 +177,12 @@ export default async function CoursePage({
               <div className="grid grid-cols-2 md:grid-cols-1 gap-2.5 text-sm mb-4">
                 <div className="flex justify-between gap-4">
                   <span className="text-white/55">{t('greenFeeLabel')}</span>
-                  <span className="text-white font-semibold">{course.greenFeeRange}</span>
+                  <span className="text-white font-semibold text-right">
+                    {course.greenFeeRange}
+                    {course.greenFeeNote && (
+                      <span className="block text-white/55 text-xs font-normal max-w-[12rem]">{course.greenFeeNote}</span>
+                    )}
+                  </span>
                 </div>
                 <div className="flex justify-between gap-4">
                   <span className="text-white/55">{t('parLabel')}</span>

@@ -19,9 +19,9 @@
     "scorecardTitle": "Sefton Coast Golf Scorecards: Par, Yardage & Course Rating",
     "scorecardDesc": "Complete scorecard data for all six Sefton Coast golf courses: par, yardage from all tees, course rating and slope rating. Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale and Southport Old Links.",
     "teeTimesTitle": "Tee Times at Royal Birkdale & Sefton Coast Golf Clubs",
-    "teeTimesDesc": "How to book tee times as a visitor at Royal Birkdale, Hillside, Formby and all six Sefton Coast clubs. Advance notice required, visitor days, direct contacts and Formby's guest policy explained.",
+    "teeTimesDesc": "How visitor booking works at the six Sefton Coast clubs: who takes visitors this winter, how each club books, direct contacts, and what Royal Birkdale and Hillside say about availability.",
     "itinerariesTitle": "Sefton Coast Golf Breaks: 2, 3 & 5-Day Itineraries",
-    "itinerariesDesc": "Pre-built golf break itineraries for the Sefton Coast. 2-day, 3-day and 5-day combinations of Royal Birkdale, Hillside, Formby and the full corridor, with accommodation and dining recommendations.",
+    "itinerariesDesc": "Golf break itineraries for the Sefton Coast: two, three and five-day plans built around the courses visitors can book, with green fees taken from the clubs' own websites.",
     "accommodationTitle": "Golf Accommodation near Royal Birkdale, Southport",
     "accommodationDesc": "Where to stay near Royal Birkdale and the Sefton Coast golf courses. Hotels, B&Bs and holiday cottages in Southport and Birkdale: sorted by distance, with Open Championship 2026 availability notes.",
     "conditionsTitle": "Sefton Coast Course Conditions: Wind and Course Notes",
@@ -31,27 +31,27 @@
     "course": {
       "royal-birkdale": {
         "title": "Royal Birkdale Golf Club: Visitor Guide, Green Fees & Tee Times",
-        "desc": "Host of The Open Championship 2026. Visitor green fee £300–£350. Par 70, 7,156 yards. Full visitor policy, how to book and post-round guide."
+        "desc": "Host of The 154th Open in July 2026. The club says its visitor tee times are fully booked through 2026 and 2027. Visitor policy, course data and Open history."
       },
       "hillside": {
         "title": "Hillside Golf Club Southport: Visitor Guide & Green Fees",
-        "desc": "The finest links course you've never heard of. Green fee £100–£150. Par 72, 6,850 yards. Full visitor policy and course guide."
+        "desc": "Links golf next door to Royal Birkdale. Closed to visitors for winter maintenance until mid-March 2027; 2027 green fees £195 to £352. Visitor policy and course guide."
       },
       "formby": {
         "title": "Formby Golf Club: Visitor Guide, Green Fees & Tee Times",
-        "desc": "A private gem: one of England's finest inland links. Green fee £160–£210. Par 72, 6,893 yards. Visitor policy and booking guide."
+        "desc": "Founded in 1884: a championship links among dunes and pine trees. Visitors book online; winter green fees £155 to £175 from November 2026 to February 2027. Visitor policy and course guide."
       },
       "west-lancashire": {
         "title": "West Lancashire Golf Club: Visitor Green Fees & Tee Times",
-        "desc": "One of England's oldest clubs: links golf at its purest. Green fee £80–£130. Par 72, 6,756 yards. Full visitor guide."
+        "desc": "Founded in 1873 at Blundellsands. Visitors book online; green fees £120 to £250 from November 2026 to April 2027. Visitor policy and course guide."
       },
       "southport-ainsdale": {
         "title": "Southport & Ainsdale Golf Club: Visitor Guide & Green Fees",
-        "desc": "Ryder Cup heritage and genuine links character. Green fee £65–£100. Par 72, 6,612 yards. Visitor policy and course guide."
+        "desc": "Ryder Cup venue in 1933 and 1937. Visitors welcome all year; the club shows its green fees on its online booking portal. Visitor policy and course guide."
       },
       "southport-old-links": {
         "title": "Southport Old Links Golf Club: Visitor Guide & Green Fees",
-        "desc": "Hidden value: a genuine links at the most accessible price on the coast. Green fee £40–£60. Par 71, 6,318 yards. Full visitor guide."
+        "desc": "Nine holes with 18 different tees in Churchtown, Southport. Visitors on weekdays and Saturdays; ask the club for this season's green fees. Visitor policy and course guide."
       }
     }
   },
@@ -80,12 +80,12 @@
     "statChampionshipCoursesLabel": "Championship Courses",
     "statOpenChampionshipsLabel": "Open Championships at Birkdale",
     "statOldestClubLabel": "Oldest Club on the Coast",
-    "statGreenFeeRangeLabel": "Green Fee Range",
+    "statGreenFeeRangeLabel": "Published Green Fees",
     "openSectionBadge": "The Open Championship 2026",
     "openSectionHeading1": "Royal Birkdale, July 2026.",
     "openSectionHeading2": "Ryan Fox, Champion Golfer.",
     "openSectionPara1": "Ryan Fox won The 154th Open at Royal Birkdale with a birdie on the 72nd hole, finishing on 10 under par, one shot ahead of Cameron Young. It was Birkdale's 11th Open since 1954, on a course where Tom Watson won his fifth Claret Jug in 1983 and Jordan Spieth won in 2017.",
-    "openSectionPara2": "Royal Birkdale says its visitor tee times are fully booked through 2026 and 2027. The other Sefton Coast courses take visitors, and the course guides below set out how each one books.",
+    "openSectionPara2": "Royal Birkdale says its visitor tee times are fully booked through 2026 and 2027. The other Sefton Coast courses take visitors, except Hillside until mid-March 2027, and the course guides below set out how each one books.",
     "openSectionCtaBtn": "Open 2026: Full Guide",
     "pastChampionsHeading": "Past Champions at Royal Birkdale",
     "courseCardEstFounded": "Est. {year}",
@@ -123,16 +123,17 @@
     "editorialTitle": "Why the Sefton Coast?",
     "editorialPara1": "There are links golf corridors in Scotland: St Andrews, Carnoustie, Muirfield: that get the attention. The Sefton Coast gets overlooked. That gap is the opportunity for every visiting golfer.",
     "editorialPara2": "On one stretch of coastline there are six links courses, from Royal Birkdale to Southport Old Links. You can play a different course every day for a week and the ground changes each time. Birkdale through dramatic willow scrub dunes. Hillside through ridge-and-valley terrain. Formby through coastal pinewoods. West Lancashire with raw Irish Sea exposure.",
-    "editorialPara3": "The practical case for the Sefton Coast over Scotland is simple: it's easier to get to from mainland Europe and North America via Liverpool and Manchester airports, the accommodation is better value, and the courses are more accessible to visitors than their Scottish counterparts at the same quality tier. Royal Birkdale is cheaper than Muirfield and easier to book.",
+    "editorialPara3": "The practical case for the Sefton Coast over Scotland is simple: it's easier to get to from mainland Europe and North America via Liverpool and Manchester airports, the accommodation is better value, and the courses are more accessible to visitors than their Scottish counterparts at the same quality tier.",
     "editorialPara4": "In July 2026 Royal Birkdale hosted The Open for the 11th time, and Ryan Fox won it with a birdie on the final hole. It is the course where Tom Watson won his fifth Claret Jug in 1983 and Jordan Spieth won in 2017. If you have ever thought about a links golf trip to England, this coast is a good place to start.",
     "featureCard1Title": "Easy to Reach",
     "featureCard1Text": "45 min from Liverpool Airport, 60 min from Manchester. Direct rail to Southport from Liverpool city centre.",
     "featureCard2Title": "Visitor-Friendly",
     "featureCard2Text": "Four of six courses actively welcome visitors. Better access than equivalent-quality courses in Scotland.",
-    "featureCard3Title": "Genuine Value",
-    "featureCard3Text": "Green fees from £40 (Old Links) to £350 (Birkdale). Comparable Scottish courses cost more at every tier.",
+    "featureCard3Title": "Winter Green Fees",
+    "featureCard3Text": "From November 2026 to February 2027, West Lancashire charges £120 per person on weekdays and Formby £155 on weekdays.",
     "southportGuideDesc": "Hotels, restaurants and things to do in Southport: your base for a Sefton Coast golf trip.",
-    "formbyGuideDesc": "The complete guide to Formby: National Trust pinewoods, red squirrels and the village between rounds."
+    "formbyGuideDesc": "The complete guide to Formby: National Trust pinewoods, red squirrels and the village between rounds.",
+    "pastChampionsScoreNote": "Winning totals over 72 holes"
   },
   "courses": {
     "pageTitle": "Sefton Coast Golf Courses",
@@ -243,19 +244,19 @@
     "aboutTitle": "The Open Championship at Royal Birkdale",
     "aboutPara1": "The Open Championship, the oldest major in golf, came back to Royal Birkdale for the 11th time in July 2026. Since first hosting The Open in 1954, Birkdale has been the Championship's most regular venue apart from St Andrews.",
     "aboutPara2": "Royal Birkdale is a links in the truest sense. Fairways run between towering sand dunes that funnel the coastal wind in unpredictable ways. The willow scrub rough: a Birkdale signature: is punishing but navigable. Greens are small, fast and subtly contoured. Championship conditions produce scoring that typically ends around level par or better for the winner, but only when the weather cooperates. When it doesn't, Birkdale becomes one of the most demanding tests in world golf.",
-    "aboutPara3": "The 2017 Open delivered one of the most dramatic finishes in recent memory. Jordan Spieth, leading wire-to-wire, made a triple bogey on 13 after pulling his tee shot into an area containing TV equipment. His subsequent decision to take relief under the drop zone rule: combined with a remarkable pitch to within feet of the hole: became one of the defining images of modern Major championship golf.",
+    "aboutPara3": "The 2017 Open had one of the great finishes. Jordan Spieth led after each of the first three rounds, fell one behind Matt Kuchar after an eventful 13th hole in the final round, then went birdie, eagle, birdie, birdie from the 14th to win by three on 12 under par.",
     "aboutPara4": "For golf tourists, The Open at Royal Birkdale represents a unique opportunity: the world's most prestigious golf event, at one of England's greatest links courses, in a compact and accessible setting. Spectator access throughout the course is excellent, the atmosphere is distinctly British, and the food and entertainment village has improved considerably in recent editions.",
     "pastChampionsTitle": "Past Champions at Royal Birkdale",
     "lastWinnerBadge": "Last winner",
-    "champNote2017": "Wire-to-wire: memorable drop zone escape on 13",
+    "champNote2017": "Birdie, eagle, birdie, birdie from the 14th to win by three",
     "champNote2008": "Second consecutive Claret Jug",
-    "champNote1998": "First Major at 41",
+    "champNote1998": "Won a four-hole play-off for his second major of 1998",
     "champNote1991": "Front nine 29 in final round",
     "champNote1983": "Fifth and final Open title",
-    "champNote1976": "Wire-to-wire victory",
-    "champNote1971": "Third consecutive Major in six weeks",
+    "champNote1976": "Closing 66 to win by six",
+    "champNote1971": "The 100th Open: his third win in four weeks, after the U.S. and Canadian Opens",
     "champNote1965": "Fifth Open Championship",
-    "champNote1961": "Palmer's legendary iron recovery from a bush on 15",
+    "champNote1961": "6-iron from the base of a bush at the 15th, now the 16th",
     "champNote1954": "First of five Open titles",
     "ticketsAlertTitle": "Tickets sold via TheOpen.com only",
     "ticketsAlertDesc": "The R&A sells all tickets directly. There is no official third-party seller. Championship day tickets (Thursday–Sunday) sell out quickly: often within hours of release. Register for the R&A waiting list and ballot at TheOpen.com now.",
@@ -311,10 +312,10 @@
     "spectatorTipsItem4": "Birkdale's natural dune grandstands require good shoes",
     "spectatorTipsItem5": "Check R&A app for real-time leaderboard and player tracking",
     "playCourseTitle": "Play the Course",
-    "playCourseItem1": "Visitor tee times restart after championship setup is removed",
-    "playCourseItem2": "Post-Open tee times book fast: Royal Birkdale handles direct",
-    "playCourseItem3": "Combine with Hillside or S&A for a full Birkdale area trip",
-    "playCourseItem4": "Caddies available: book well in advance for premium experience",
+    "playCourseItem1": "Royal Birkdale says visitor tee times are fully booked through 2026 and 2027",
+    "playCourseItem2": "The club asks golfers to check its website for 2028 availability",
+    "playCourseItem3": "Hillside, next door, is closed to visitors until mid-March 2027",
+    "playCourseItem4": "The club runs a number of open events through the year, booked from its website",
     "quickFactsTitle": "Quick Facts",
     "factLabelChampNumber": "Championship Number",
     "factValueChampNumber": "154th Open",
@@ -341,9 +342,10 @@
     "bookAccomDesc": "Don't leave it. Open week accommodation books out fast. Book via Booking.com for the widest choice and flexible cancellation.",
     "bookAccomBtn": "Search Southport Hotels ↗",
     "bookAccomAffiliate": "Booking.com affiliate link",
-    "playBirkdaleTitle": "Play Royal Birkdale",
-    "playBirkdaleDesc": "Planning a round before or after The Open? Green fees, visitor policy and booking guide.",
-    "playBirkdaleLink": "Royal Birkdale course guide"
+    "playBirkdaleTitle": "Visiting Royal Birkdale",
+    "playBirkdaleDesc": "Visitor policy, course data and what the club says about tee times.",
+    "playBirkdaleLink": "Royal Birkdale course guide",
+    "pastChampionsScoreNote": "Winning totals over 72 holes, from The R&A's results at theopen.com."
   },
   "teeTimesPage": {
     "headerBadge": "Visitor Guide",
@@ -378,7 +380,7 @@
     "tip1Title": "Always carry your handicap certificate",
     "tip1Text": "All courses on the Sefton Coast except Southport Old Links require a handicap certificate. Your national golf association card or EGA card is accepted.",
     "tip2Title": "Book ahead, especially in summer",
-    "tip2Text": "The Sefton Coast is busy June–September. Royal Birkdale and Hillside fill 4–8 weeks ahead in peak season. Don't show up and hope.",
+    "tip2Text": "Royal Birkdale is fully booked for visitors through 2027, and Hillside is closed to visitors until mid-March 2027. Southport & Ainsdale says May, June, July and September are in great demand, with many overseas visitors booking several years ahead.",
     "tip3Title": "Dress code applies everywhere",
     "tip3Text": "Smart casual minimum at all clubs. No denim, no trainers, no t-shirts at most. Some clubs require collar and tailored trousers in the clubhouse.",
     "tip4Title": "Arrive 30 minutes early",
@@ -441,7 +443,7 @@
   "itinerariesPage": {
     "headerBadge": "Sefton Coast",
     "pageTitle": "Golf Break Itineraries",
-    "pageDesc": "Pre-built golf breaks for every duration and budget: from a sharp two-day trip to the full five-course grand tour. Or use the planner to build your own.",
+    "pageDesc": "Pre-built golf breaks for different lengths and budgets, from a two-day trip to a five-course tour. Or use the planner to build your own.",
     "plannerTitle": "Golf Break Planner",
     "plannerDesc": "Enter your days, budget and handicap: we'll match you to the right itinerary.",
     "allItinerariesTitle": "All Itineraries",
@@ -458,8 +460,9 @@
     "howToPlanTitle": "How to Plan a Sefton Coast Golf Trip",
     "howToPlanPara1": "The Sefton Coast courses are clustered enough that a two-day trip can cover two or three rounds without difficult logistics. Royal Birkdale and Hillside are literally adjacent: you could walk between them. Southport & Ainsdale is three miles further south. Formby is five miles from Birkdale via the A565.",
     "howToPlanPara2": "For multi-day trips, base yourself in Southport. The town has the widest hotel choice, and everything from Lord Street to Birkdale is within taxi distance. If you want quieter and cheaper accommodation, Formby village is 20 minutes south and has decent B&B options.",
-    "howToPlanPara3": "The order matters. Don't play Royal Birkdale first: you'll spend the rest of the trip comparing everything to it. Build up: start with Old Links or S&A, move to Hillside on day two, arrive at Birkdale when you've found your links legs. The contrast will make the finale feel earned.",
-    "howToPlanPara4": "Book tee times before you arrive. Royal Birkdale says its visitor tee times are fully booked through 2027, and Hillside is closed to visitors for winter maintenance until mid-March 2027. Formby, West Lancashire, Southport & Ainsdale and Southport Old Links all take bookings online."
+    "howToPlanPara3": "Plan around the season. Saturday and Sunday are members' competition days at Formby, and the clubs do most of their course work between November and March, so ask about temporary greens, mats or a shorter course when you book.",
+    "howToPlanPara4": "Book tee times before you arrive. Royal Birkdale says its visitor tee times are fully booked through 2027, and Hillside is closed to visitors for winter maintenance until mid-March 2027. Formby, West Lancashire, Southport & Ainsdale and Southport Old Links all take bookings online.",
+    "availabilityNote": "Checked 11 November 2026: Royal Birkdale says it is fully booked for visitors through 2027, and Hillside is closed to visitors until mid-March 2027. The itineraries below use the courses visitors can book, with green fees from each club's own website."
   },
   "conditions": {
     "pageTitle": "Sefton Coast Course Conditions",
@@ -497,7 +500,7 @@
     "beforeContactTitle": "Before you contact us",
     "beforeContactItem1": "→ For tee time bookings, contact the clubs directly: we're a guide, not a booking platform.",
     "beforeContactItem2": "→ For Open Championship tickets, visit TheOpen.com.",
-    "beforeContactItem3": "→ For Royal Birkdale visitor enquiries, call them directly on 01704 552261."
+    "beforeContactItem3": "→ For Royal Birkdale enquiries, call the club on 01704 552020."
   },
   "legalPage": {
     "privacyTitle": "Privacy Policy",
@@ -564,7 +567,7 @@
     },
     "hillside": {
       "tagline": "Links golf next door to Royal Birkdale",
-      "description": "Hillside sits immediately adjacent to Royal Birkdale and shares the same dramatic duneland. The club's green fee table lists its winter rate as closed for maintenance from 19 October 2026 to mid-March 2027. Its spring rate starts in March 2027.\n\nThe course underwent significant redevelopment on its final nine holes, which now run through spectacular ridge-and-valley terrain through the dunes. The routing is logical and the course condition is consistently excellent. If you're building a multi-day itinerary, Hillside the day before Royal Birkdale is a near-perfect combination.",
+      "description": "Hillside sits immediately adjacent to Royal Birkdale and shares the same dramatic duneland. The club's green fee table lists its winter rate as closed for maintenance from 19 October 2026 to mid-March 2027. Its spring rate starts in March 2027.\n\nThe course underwent significant redevelopment on its final nine holes, which now run through spectacular ridge-and-valley terrain through the dunes. The routing is logical and the course condition is consistently excellent.",
       "visitorPolicy": "Closed to visitors for winter maintenance from 19 October 2026 to mid-March 2027. Visitor enquiries go to the Secretary's Office."
     },
     "formby": {

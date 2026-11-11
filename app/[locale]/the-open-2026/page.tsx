@@ -25,18 +25,19 @@ export async function generateMetadata({
   };
 }
 
+// score: the champion's 72-hole total, from each year's results on theopen.com/previous-opens.
 const PAST_CHAMPIONS = [
-  { year: 2026, name: 'Ryan Fox', country: '🇳🇿 NZL', score: '-10' },
-  { year: 2017, name: 'Jordan Spieth', country: '🇺🇸 USA', score: '-12' },
-  { year: 2008, name: 'Pádraig Harrington', country: '🇮🇪 IRL', score: '-3' },
-  { year: 1998, name: "Mark O'Meara", country: '🇺🇸 USA', score: '-9' },
-  { year: 1991, name: 'Ian Baker-Finch', country: '🇦🇺 AUS', score: '-8' },
-  { year: 1983, name: 'Tom Watson', country: '🇺🇸 USA', score: '-5' },
-  { year: 1976, name: 'Johnny Miller', country: '🇺🇸 USA', score: '-9' },
-  { year: 1971, name: 'Lee Trevino', country: '🇺🇸 USA', score: '-1' },
-  { year: 1965, name: 'Peter Thomson', country: '🇦🇺 AUS', score: '-2' },
-  { year: 1961, name: 'Arnold Palmer', country: '🇺🇸 USA', score: '+3' },
-  { year: 1954, name: 'Peter Thomson', country: '🇦🇺 AUS', score: '+2' },
+  { year: 2026, name: 'Ryan Fox', country: '🇳🇿 NZL', score: '270' },
+  { year: 2017, name: 'Jordan Spieth', country: '🇺🇸 USA', score: '268' },
+  { year: 2008, name: 'Pádraig Harrington', country: '🇮🇪 IRL', score: '283' },
+  { year: 1998, name: "Mark O'Meara", country: '🇺🇸 USA', score: '280' },
+  { year: 1991, name: 'Ian Baker-Finch', country: '🇦🇺 AUS', score: '272' },
+  { year: 1983, name: 'Tom Watson', country: '🇺🇸 USA', score: '275' },
+  { year: 1976, name: 'Johnny Miller', country: '🇺🇸 USA', score: '279' },
+  { year: 1971, name: 'Lee Trevino', country: '🇺🇸 USA', score: '278' },
+  { year: 1965, name: 'Peter Thomson', country: '🇦🇺 AUS', score: '285' },
+  { year: 1961, name: 'Arnold Palmer', country: '🇺🇸 USA', score: '284' },
+  { year: 1954, name: 'Peter Thomson', country: '🇦🇺 AUS', score: '283' },
 ];
 
 export default async function OpenPage({
@@ -190,7 +191,8 @@ export default async function OpenPage({
 
             {/* Past Champions */}
             <section>
-              <h2 className="font-display text-3xl font-bold text-[#0D1B2A] mb-6">{tp('pastChampionsTitle')}</h2>
+              <h2 className="font-display text-3xl font-bold text-[#0D1B2A] mb-2">{tp('pastChampionsTitle')}</h2>
+              <p className="text-[#2C3E50]/55 text-sm mb-6">{tp('pastChampionsScoreNote')}</p>
               <div className="space-y-3">
                 {PAST_CHAMPIONS.map((c, i) => (
                   <div key={c.year} className={`flex items-start gap-4 rounded-xl p-4 border ${i === 0 ? 'bg-[#B8912A]/8 border-[#B8912A]/25' : 'bg-white border-[#E8E3D8]'}`}>

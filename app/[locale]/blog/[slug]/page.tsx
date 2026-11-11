@@ -34,7 +34,7 @@ export async function generateMetadata({
       publishedTime: getIsoDate(post),
       authors: [DAMIAN.name],
       section: cat?.label,
-      images: [{ url: post.image ?? `${BASE_URL}/og-default.jpg`, width: 1200, height: 630, alt: post.title }],
+      images: [{ url: post.image ?? `${BASE_URL}/og-default.jpg`, width: 1200, height: 630, alt: post.imageAlt ?? post.title }],
     },
   };
 }
@@ -189,7 +189,7 @@ export default async function BlogPostPage({
         {post.image && (
           <Image
             src={post.image}
-            alt={post.title}
+            alt={post.imageAlt ?? post.title}
             fill
             className="object-cover opacity-20"
             priority

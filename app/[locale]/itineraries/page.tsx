@@ -65,7 +65,10 @@ export default async function ItinerariesPage({ params }: { params: Promise<{ lo
 
         {/* Pre-built itineraries */}
         <section>
-          <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-8">{t('allItinerariesTitle')}</h2>
+          <h2 className="font-display text-2xl font-bold text-[#0D1B2A] mb-4">{t('allItinerariesTitle')}</h2>
+          <p className="text-[#2C3E50]/70 text-sm leading-relaxed max-w-3xl mb-8 border-l-2 border-[#B8912A] pl-4">
+            {t('availabilityNote')}
+          </p>
           <div className="space-y-8">
             {SEFTON_ITINERARIES.map((it) => (
               <div key={it.id} className="bg-white rounded-2xl border border-[#E8E3D8] overflow-hidden shadow-sm">
@@ -77,7 +80,7 @@ export default async function ItinerariesPage({ params }: { params: Promise<{ lo
                       <p className="text-[#1A4A30] font-medium mt-1">{it.subtitle}</p>
                     </div>
                     <div className="text-right shrink-0">
-                      <div className="font-bold text-[#0D1B2A]">{it.days} {it.days === 1 ? t('dayLabel') : t('daysLabel')}</div>
+                      <div className="font-bold text-[#0D1B2A]">{it.days} {t('daysLabel')}</div>
                       <div className="text-[#2C3E50]/50 text-sm">
                         {it.budget === 'premium' ? t('budgetPremium') : it.budget === 'standard' ? t('budgetStandard') : t('budgetValue')}
                       </div>
@@ -128,6 +131,7 @@ export default async function ItinerariesPage({ params }: { params: Promise<{ lo
                     <div>
                       <div className="text-xs text-[#2C3E50]/50 uppercase tracking-wider mb-0.5">{t('estimatedGreenFeesLabel')}</div>
                       <div className="font-bold text-[#0D1B2A]">{it.estimatedCost}</div>
+                      <div className="text-[#2C3E50]/60 text-xs mt-0.5 leading-relaxed">{it.costNote}</div>
                     </div>
                     <a
                       href="https://www.golfbreaks.com/en-gb/united-kingdom/england/lancashire/"

@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { Wind, Droplets, CheckCircle2, XCircle, AlertCircle, RefreshCw } from 'lucide-react';
 import type { Condition, CourseConditionData } from '@/lib/conditions-data';
 import type { WeatherData } from '@/lib/weather';
-import { COURSES } from '@/lib/courses';
 
 interface ConditionTrackerProps {
   conditions: CourseConditionData[];
@@ -14,6 +13,8 @@ interface ConditionTrackerProps {
   notesUpdated: string;
   /** False when the notes are too old to show as current. */
   notesCurrent: boolean;
+  /** Club website by course slug, passed in so the client bundle does not carry all course data. */
+  clubWebsites: Record<string, string>;
 }
 
 const CONDITION_CONFIG: Record<Condition, {
@@ -73,7 +74,7 @@ const WIND_GUIDE: { direction: string; birkdaleEffect: string }[] = [
   { direction: 'S', birkdaleEffect: 'Relatively sheltered. Scoring typically better than SW/W. Good for scoring rounds.' },
 ];
 
-export default function ConditionTracker({ conditions, weather, updatedDate, notesUpdated, notesCurrent }: ConditionTrackerProps) {
+export default function ConditionTracker({ conditions, weather, updatedDate, notesUpdated, notesCurrent, clubWebsites }: ConditionTrackerProps) {
   const [activeFilter, setActiveFilter] = useState<Condition | 'all'>('all');
   const [showWindGuide, setShowWindGuide] = useState(false);
 
@@ -146,7 +147,7 @@ export default function ConditionTracker({ conditions, weather, updatedDate, not
         {filtered.map((course) => {
           const config = CONDITION_CONFIG[course.condition];
           const Icon = config.icon;
-          const website = COURSES.find((c) => c.slug === course.slug)?.website;
+          const website = clubWebsites[course.slug];
           if (!notesCurrent) {
             return (
               <div key={course.slug} className="bg-white border-2 border-[#E8E3D8] rounded-xl p-5">

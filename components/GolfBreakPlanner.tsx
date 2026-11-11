@@ -19,9 +19,9 @@ const COURSE_NAMES: Record<string, string> = {
 };
 
 const BUDGET_LABELS: Record<Budget, string> = {
-  value: '£ — Value (under £200pp green fees)',
-  standard: '££ — Standard (£200–£600pp)',
-  premium: '£££ — Premium (£600+pp)',
+  value: '£ Value',
+  standard: '££ Standard',
+  premium: '£££ Premium',
 };
 
 export default function GolfBreakPlanner({ locale }: { locale: string }) {
@@ -208,6 +208,7 @@ export default function GolfBreakPlanner({ locale }: { locale: string }) {
               <div>
                 <div className="text-[#D4AE7A] text-xs uppercase tracking-wider mb-1">Estimated Cost</div>
                 <div className="text-white font-bold text-lg">{result.estimatedCost}</div>
+                <div className="text-white/60 text-xs mt-1 leading-relaxed">{result.costNote}</div>
               </div>
               <a
                 href="https://www.golfbreaks.com/en-gb/united-kingdom/england/lancashire/"
@@ -225,7 +226,7 @@ export default function GolfBreakPlanner({ locale }: { locale: string }) {
 
       {noMatch && (
         <div className="bg-[#F8F5EE] border border-[#E8E3D8] rounded-xl p-6 text-center">
-          <p className="text-[#2C3E50]/70 mb-3">No exact match found for your selection — try adjusting the days or budget.</p>
+          <p className="text-[#2C3E50]/70 mb-3">No exact match found for your selection. Try adjusting the days or budget.</p>
           <Link
             href={`${prefix}/itineraries`}
             className="text-[#1A4A30] font-semibold hover:text-[#B8912A] transition-colors"

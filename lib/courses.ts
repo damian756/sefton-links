@@ -22,9 +22,13 @@ export interface Course {
   tees: TeeData[];
   courseRating: number;
   slopeRating: number;
+  /** What the club publishes, for display. Not a number when the club publishes no visitor rate. */
   greenFeeRange: string;
-  greenFeeFrom: number;
-  greenFeeTo: number;
+  /** Lowest published per-person rate, or null when the club publishes none for this season. */
+  greenFeeFrom: number | null;
+  greenFeeTo: number | null;
+  /** The months or condition the published range covers. */
+  greenFeeNote?: string;
   visitorPolicy: string;
   visitorDays: string;
   advanceBooking: string;
@@ -69,9 +73,10 @@ The club says its visitor tee times are fully booked throughout 2026 and 2027, a
     ],
     courseRating: 76.5,
     slopeRating: 148,
-    greenFeeRange: '£300–£350',
-    greenFeeFrom: 300,
-    greenFeeTo: 350,
+    greenFeeRange: 'Not published',
+    greenFeeFrom: null,
+    greenFeeTo: null,
+    greenFeeNote: 'Fully booked for visitors through 2027',
     visitorPolicy: 'The club says visitor tee times are fully booked throughout 2026 and 2027. Check its website for 2028 availability.',
     visitorDays: 'Fully booked for visitors through 2027.',
     advanceBooking: 'Fully booked through 2027. The club asks golfers to check back for 2028 availability.',
@@ -87,11 +92,11 @@ The club says its visitor tee times are fully booked throughout 2026 and 2027, a
       'Walker Cup: 2019',
     ],
     highlights: [
-      '11 Open Championships, more than any venue except St Andrews',
+      'Since first hosting The Open in 1954, the most regular Open venue apart from St Andrews',
       'Ranked in world\'s top 5 links courses',
       'Iconic willow scrub rough: a Royal Birkdale signature',
       'No two consecutive holes play in the same direction',
-      'Site of Arnold Palmer\'s legendary 1961 Open: he played a 6-iron recovery shot from a bush',
+      'Arnold Palmer won here in 1961, with a famous 6-iron from the base of a bush at the 15th (now the 16th)',
     ],
     practicalNotes: [
       'Handicap certificate required: men 24, ladies 36',
@@ -117,7 +122,7 @@ The club says its visitor tee times are fully booked throughout 2026 and 2027, a
     tagline: 'Links golf next door to Royal Birkdale',
     description: `Hillside sits immediately adjacent to Royal Birkdale and shares the same dramatic duneland. The club's green fee table lists its winter rate as closed for maintenance from 19 October 2026 to mid-March 2027. Its spring rate starts in March 2027.
 
-The course underwent significant redevelopment on its final nine holes, which now run through spectacular ridge-and-valley terrain through the dunes. The routing is logical and the course condition is consistently excellent. If you're building a multi-day itinerary, Hillside the day before Royal Birkdale is a near-perfect combination.`,
+The course underwent significant redevelopment on its final nine holes, which now run through spectacular ridge-and-valley terrain through the dunes. The routing is logical and the course condition is consistently excellent.`,
     founded: 1911,
     address: 'Hastings Road, Hillside, Southport',
     postcode: 'PR8 2LU',
@@ -135,8 +140,9 @@ The course underwent significant redevelopment on its final nine holes, which no
     greenFeeRange: '£195–£352',
     greenFeeFrom: 195,
     greenFeeTo: 352,
+    greenFeeNote: '2027 rates; closed to visitors until mid-March 2027',
     visitorPolicy: 'Closed to visitors for winter maintenance from 19 October 2026 to mid-March 2027. Visitor enquiries go to the Secretary\'s Office.',
-    visitorDays: 'Tuesdays, Thursdays, Fridays preferred. Phone ahead to confirm.',
+    visitorDays: 'Closed to visitors until mid-March 2027. Ask the Secretary\'s Office about dates after that.',
     advanceBooking: "Contact the Secretary's Office on 01704 567169. The spring visitor rate starts in March 2027.",
     bookingUrl: 'https://www.hillside-golfclub.co.uk',
     phone: '01704 567169',
@@ -152,7 +158,6 @@ The course underwent significant redevelopment on its final nine holes, which no
       'Back nine through dramatic duneland, a match for any course in England',
       'Immediately adjacent to Royal Birkdale',
       'Consistently excellent conditioning',
-      'Significantly better visitor value than neighbouring Birkdale',
       'Used as Open Championship qualifying venue',
     ],
     practicalNotes: [
@@ -195,6 +200,7 @@ The course itself is exceptional. Set through coastal pinewoods with stretches o
     greenFeeRange: '£155–£350',
     greenFeeFrom: 155,
     greenFeeTo: 350,
+    greenFeeNote: 'November 2026 to September 2027',
     visitorPolicy: 'Visitors welcome. A current recognised handicap certificate is requested: maximum 28 for men and 36 for women.',
     visitorDays: 'Saturday and Sunday are members\' competition days. Check the online tee sheet for availability.',
     advanceBooking: 'Book online, call 01704 872164 or email teetimes@formbygolfclub.co.uk.',
@@ -256,9 +262,10 @@ The club has a long history with Open Championship qualifying. If you want to pl
     ],
     courseRating: 73.5,
     slopeRating: 140,
-    greenFeeRange: '£120–£295',
+    greenFeeRange: '£120–£250',
     greenFeeFrom: 120,
-    greenFeeTo: 295,
+    greenFeeTo: 250,
+    greenFeeNote: 'November 2026 to April 2027',
     visitorPolicy: 'Visitors welcome most weekdays. Weekends limited: phone ahead.',
     visitorDays: 'Monday–Friday preferred. Check availability for Saturdays.',
     advanceBooking: 'Book 2–4 weeks in advance. More flexible visitor access than courses further north.',
@@ -320,9 +327,10 @@ Green fees are among the most accessible on the coast for what is genuinely a hi
     ],
     courseRating: 72.8,
     slopeRating: 138,
-    greenFeeRange: '£65–£100',
-    greenFeeFrom: 65,
-    greenFeeTo: 100,
+    greenFeeRange: 'On booking portal',
+    greenFeeFrom: null,
+    greenFeeTo: null,
+    greenFeeNote: 'Rates vary with demand, time of day and season',
     visitorPolicy: 'Visitors welcome most weekdays. Weekends by arrangement. Open to societies.',
     visitorDays: 'Tuesdays–Fridays recommended. Phone to check Sunday availability.',
     advanceBooking: 'Book 2–4 weeks in advance. Societies book 3–6 months ahead.',
@@ -382,9 +390,10 @@ For visitors building a high-volume trip of four or five rounds, Old Links provi
     ],
     courseRating: 70.8,
     slopeRating: 130,
-    greenFeeRange: '£40–£60',
-    greenFeeFrom: 40,
-    greenFeeTo: 60,
+    greenFeeRange: 'Ask the club',
+    greenFeeFrom: null,
+    greenFeeTo: null,
+    greenFeeNote: 'Call 01704 228207 (option 5) for this season\'s rates',
     visitorPolicy: 'Very welcoming to visitors most days of the week. Most accessible club on the coast.',
     visitorDays: 'Weekdays and Saturdays. Phone ahead to check.',
     advanceBooking: 'A week in advance is typically sufficient. Walk-ins possible on quieter weekdays.',
@@ -427,57 +436,82 @@ export function getFeaturedCourses(): Course[] {
 
 export const OPEN_DATE = new Date('2026-07-16T00:00:00Z');
 
-export const SEFTON_ITINERARIES = [
+export interface Itinerary {
+  id: string;
+  title: string;
+  subtitle: string;
+  days: 2 | 3 | 5;
+  budget: 'value' | 'standard' | 'premium';
+  handicapRange: 'any' | 'mid-high' | 'low';
+  courses: string[];
+  /** Headline green fee per person, worked out from the clubs' own published rates. */
+  estimatedCost: string;
+  /** What the figure covers: courses, days and months. */
+  costNote: string;
+  description: string;
+  accommodation: string;
+  dining: string;
+}
+
+// Re-planned 11 Nov 2026 around what visitors can book: Royal Birkdale is fully booked for
+// visitors through 2027 and Hillside is closed to visitors until mid-March 2027. Costs are
+// sums of each club's published per-person rates; S&A (booking portal) and Old Links
+// (2025-26 table only) publish no figure for this season, so they are named, not priced.
+export const SEFTON_ITINERARIES: Itinerary[] = [
   {
-    id: '2-day-highlights',
-    title: '2-Day Highlights',
-    subtitle: 'The essential Sefton Coast visit',
+    id: '2-day-winter',
+    title: '2-Day Winter Links',
+    subtitle: 'Two courses that take visitor bookings online this winter',
     days: 2,
-    budget: 'premium',
+    budget: 'standard',
     handicapRange: 'any',
-    courses: ['royal-birkdale', 'hillside'],
-    estimatedCost: '£450–£550 pp (green fees only)',
-    description: 'The classic two-day combination. Hillside on day one to find your links legs, Royal Birkdale on day two when it matters.',
-    accommodation: 'The Bold Hotel, Southport: central, golf-friendly, secure club storage',
-    dining: 'Dinner at The Vincent Hotel Grill Room between rounds',
+    courses: ['west-lancashire', 'formby'],
+    estimatedCost: '£275 pp',
+    costNote: 'Weekday green fees at both clubs, November 2026 to February 2027',
+    description: "West Lancashire and Formby both publish winter visitor rates and take bookings online. Saturday and Sunday are members' competition days at Formby, so a midweek pair of rounds is the easier booking.",
+    accommodation: 'Formby or Crosby are the nearest towns to these two courses. Southport has the widest choice of hotels.',
+    dining: "Ask at each clubhouse what food is served on the day you play. West Lancashire's winter green fee includes tea or coffee and a bacon roll on arrival.",
   },
   {
-    id: '3-day-classic',
+    id: '3-day-coast',
     title: '3-Day Classic',
-    subtitle: 'Three different courses, three different challenges',
+    subtitle: 'Three courses between Blundellsands and Ainsdale',
     days: 3,
     budget: 'standard',
     handicapRange: 'any',
-    courses: ['southport-ainsdale', 'hillside', 'royal-birkdale'],
-    estimatedCost: '£450–£600 pp (green fees only)',
-    description: 'Build up through the week. S&A on day one, Hillside on day two, Royal Birkdale as the grand finale.',
-    accommodation: 'Fairways Guest House, Birkdale: steps from the first tee at Royal Birkdale',
-    dining: 'Post-round at Bistrot Pierre on Lord Street: consistent quality, good value',
+    courses: ['west-lancashire', 'formby', 'southport-ainsdale'],
+    estimatedCost: '£275 pp plus S&A',
+    costNote: 'West Lancashire and Formby on weekdays, November 2026 to February 2027. S&A shows its rates on its booking portal.',
+    description: 'All three take visitors this winter and book online. Southport & Ainsdale does not print a fee table: its rates are on its booking portal and vary with demand, time of day and time of year.',
+    accommodation: 'Southport for the widest choice, or Formby, which sits between the three courses.',
+    dining: 'Ask at each clubhouse what food is served on the day you play.',
   },
   {
-    id: '5-day-grand-tour',
-    title: '5-Day Grand Tour',
-    subtitle: 'Every major course on the Sefton Coast',
+    id: '5-day-tour',
+    title: '5-Day Coast Tour',
+    subtitle: 'Five courses, from mid-March 2027',
     days: 5,
-    budget: 'standard',
+    budget: 'premium',
     handicapRange: 'any',
-    courses: ['west-lancashire', 'southport-ainsdale', 'formby', 'hillside', 'royal-birkdale'],
-    estimatedCost: '£700–£900 pp (green fees only)',
-    description: 'The full corridor. Start at West Lancs, work north through S&A, Formby (if you can get on), Hillside, and finish at Birkdale.',
-    accommodation: 'Mix of Southport (nights 1–3) and Birkdale (nights 4–5)',
-    dining: 'Ask at each clubhouse: the best post-round meals are often in the clubhouse itself',
+    courses: ['west-lancashire', 'formby', 'southport-ainsdale', 'hillside', 'southport-old-links'],
+    estimatedCost: '£510 pp plus S&A and Old Links',
+    costNote: 'West Lancashire, Formby and Hillside on weekdays in late March 2027. Ask S&A and Old Links for their rates.',
+    description: 'Royal Birkdale is fully booked for visitors through 2027, so this tour covers the other five courses and works north from Blundellsands to Churchtown. Hillside is closed to visitors until mid-March 2027, so plan it for late March or later.',
+    accommodation: 'Southport, which is closest to Hillside, Southport & Ainsdale and Old Links.',
+    dining: 'Ask at each clubhouse what food is served on the day you play.',
   },
   {
     id: '2-day-value',
-    title: '2-Day Value Package',
-    subtitle: 'Maximum links golf, minimum spend',
+    title: '2-Day Value',
+    subtitle: 'Two courses at either end of the coast',
     days: 2,
     budget: 'value',
     handicapRange: 'any',
-    courses: ['southport-old-links', 'southport-ainsdale'],
-    estimatedCost: '£100–£160 pp (green fees only)',
-    description: 'Genuinely good links golf without the premium price tags. Ideal for society groups or first-time visitors testing the water.',
-    accommodation: 'Travelodge or Premier Inn Southport: functional and central',
-    dining: 'The Hesketh Arms, Churchtown: best pub on the circuit at any price',
+    courses: ['southport-old-links', 'west-lancashire'],
+    estimatedCost: '£120 pp plus Old Links',
+    costNote: "West Lancashire on a weekday, November 2026 to February 2027. Ask Old Links for this season's rates.",
+    description: "Southport Old Links, nine holes with 18 different tees in Churchtown, takes visitors on weekdays and Saturdays. West Lancashire's winter weekday rate is £120 per person, with tea or coffee and a bacon roll on arrival.",
+    accommodation: 'Southport is closest to Old Links; Crosby is closest to West Lancashire.',
+    dining: 'Ask at each clubhouse what food is served on the day you play.',
   },
 ];

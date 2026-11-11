@@ -26,16 +26,17 @@ export async function generateMetadata({
   };
 }
 
+// score: the champion's 72-hole total, from each year's results on theopen.com/previous-opens.
 const PAST_CHAMPIONS = [
-  { year: 2026, name: 'Ryan Fox', country: 'NZL', score: '-10' },
-  { year: 2017, name: 'Jordan Spieth', country: 'USA', score: '-12' },
-  { year: 2008, name: 'Pádraig Harrington', country: 'IRL', score: '-3' },
-  { year: 1998, name: "Mark O'Meara", country: 'USA', score: '-9' },
-  { year: 1991, name: 'Ian Baker-Finch', country: 'AUS', score: '-8' },
-  { year: 1983, name: 'Tom Watson', country: 'USA', score: '-5' },
-  { year: 1976, name: 'Johnny Miller', country: 'USA', score: '-9' },
-  { year: 1971, name: 'Lee Trevino', country: 'USA', score: '-1' },
-  { year: 1965, name: 'Peter Thomson', country: 'AUS', score: '-2' },
+  { year: 2026, name: 'Ryan Fox', country: 'NZL', score: '270' },
+  { year: 2017, name: 'Jordan Spieth', country: 'USA', score: '268' },
+  { year: 2008, name: 'Pádraig Harrington', country: 'IRL', score: '283' },
+  { year: 1998, name: "Mark O'Meara", country: 'USA', score: '280' },
+  { year: 1991, name: 'Ian Baker-Finch', country: 'AUS', score: '272' },
+  { year: 1983, name: 'Tom Watson', country: 'USA', score: '275' },
+  { year: 1976, name: 'Johnny Miller', country: 'USA', score: '279' },
+  { year: 1971, name: 'Lee Trevino', country: 'USA', score: '278' },
+  { year: 1965, name: 'Peter Thomson', country: 'AUS', score: '285' },
 ];
 
 export default async function HomePage({
@@ -213,7 +214,7 @@ export default async function HomePage({
                 <div className="text-white/50 text-xs mt-1">{th('statOldestClubLabel')}</div>
               </div>
               <div className="px-4 py-2">
-                <div className="font-display text-2xl md:text-3xl font-bold text-[#B8912A]">~£40–£350</div>
+                <div className="font-display text-2xl md:text-3xl font-bold text-[#B8912A]">£120–£352</div>
                 <div className="text-white/50 text-xs mt-1">{th('statGreenFeeRangeLabel')}</div>
               </div>
             </div>
@@ -252,9 +253,10 @@ export default async function HomePage({
             </div>
 
             <div className="space-y-4">
-              <h3 className="text-[#D4AE7A] text-sm uppercase tracking-wider font-semibold mb-4">
+              <h3 className="text-[#D4AE7A] text-sm uppercase tracking-wider font-semibold mb-1">
                 {th('pastChampionsHeading')}
               </h3>
+              <p className="text-white/45 text-xs mb-4">{th('pastChampionsScoreNote')}</p>
               <div className="space-y-2">
                 {PAST_CHAMPIONS.map((c) => (
                   <div key={c.year} className="flex items-center justify-between bg-white/8 rounded-lg px-4 py-3">
@@ -332,7 +334,7 @@ export default async function HomePage({
                       <div className="text-[#2C3E50]/50 text-xs mt-1">{th('courseCardYardsLabel')}</div>
                     </div>
                     <div className="text-center bg-[#F8F5EE] rounded-lg p-2">
-                      <div className="text-[#0D1B2A] font-bold text-sm leading-none">{course.greenFeeRange.split('–')[0]}</div>
+                      <div className="text-[#0D1B2A] font-bold text-sm leading-none">{course.greenFeeFrom ? `£${course.greenFeeFrom}` : '–'}</div>
                       <div className="text-[#2C3E50]/50 text-xs mt-1">{th('courseCardFromLabel')}</div>
                     </div>
                   </div>

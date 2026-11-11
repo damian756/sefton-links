@@ -15,53 +15,39 @@
     "coursesTitle": "Camps de Golf de la Costa de Sefton — Royal Birkdale, Hillside i Formby",
     "coursesDesc": "La guia completa dels sis camps de links de la Costa de Sefton — polítiques de visitants, green fees, qualificacions del camp, reserva d'hores de sortida.",
     "openTitle": "The Open Championship 2026 a Royal Birkdale — Guia per a Visitants",
-    "openDesc": "La guia completa del 155è The Open Championship a Royal Birkdale, Southport, 16–19 de juliol de 2026. Història, campions del passat, entrades, allotjament, guia del camp i consells de viatge.",
     "scorecardTitle": "Targetes de Puntuació dels Camps de Golf de la Costa de Sefton — Par, Iardes i Qualificació",
     "scorecardDesc": "Dades completes de targetes de puntuació per als sis camps de la Costa de Sefton — par, iardes des de tots els tees, qualificació del camp i pendent. Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale i Southport Old Links.",
     "teeTimesTitle": "Hores de Sortida a Royal Birkdale i Clubs de Golf de la Costa de Sefton",
-    "teeTimesDesc": "Com reservar hores de sortida com a visitant a Royal Birkdale, Hillside, Formby i els sis clubs de la Costa de Sefton. Temps d'antelació necessari, dies per a visitants, contactes directes i política de convidats de Formby explicada.",
     "itinerariesTitle": "Viatges de Golf a la Costa de Sefton — Itineraris de 2, 3 i 5 Dies",
-    "itinerariesDesc": "Itineraris de viatges de golf preparats per a la Costa de Sefton. Combinacions de dos, tres i cinc dies de Royal Birkdale, Hillside, Formby i tot el corredor, amb recomanacions d'allotjament i restaurants.",
     "accommodationTitle": "Allotjament de Golf prop de Royal Birkdale, Southport",
     "accommodationDesc": "On allotjar-se prop de Royal Birkdale i els camps de golf de la Costa de Sefton. Hotels, B&B i cases de vacances a Southport i Birkdale — ordenats per distància, amb notes sobre disponibilitat per al The Open Championship 2026.",
-    "conditionsTitle": "Estat dels Camps de la Costa de Sefton — Estat Diari de Joc",
-    "conditionsDesc": "Condicions de joc diàries a Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale i Southport Old Links. Ferm, estàndard, mullat o tancat — actualitzat cada matí.",
     "contactTitle": "Contacteu amb SeftonLinks",
     "contactDesc": "Preguntes, correccions de dades, llistes destacades i consultes comercials.",
     "course": {
       "royal-birkdale": {
-        "title": "Royal Birkdale Golf Club — Guia per a Visitants, Green Fee i Hores de Sortida",
-        "desc": "Seu del The Open Championship 2026. Green fee per a visitants £300–£350. Par 70, 7.156 iardes. Política de visitants completa, com reservar i guia postvolta."
+        "title": "Royal Birkdale Golf Club — Guia per a Visitants, Green Fee i Hores de Sortida"
       },
       "hillside": {
-        "title": "Hillside Golf Club Southport — Guia per a Visitants i Green Fee",
-        "desc": "El millor camp de links que no coneixeu encara. Green fee £100–£150. Par 72, 6.850 iardes. Política de visitants i guia del camp."
+        "title": "Hillside Golf Club Southport — Guia per a Visitants i Green Fee"
       },
       "formby": {
-        "title": "Formby Golf Club — Guia per a Visitants, Green Fee i Hores de Sortida",
-        "desc": "Una joia privada — un dels millors camps de links interiors d'Anglaterra. Green fee £160–£210. Par 72, 6.893 iardes. Política de visitants i guia de reserva."
+        "title": "Formby Golf Club — Guia per a Visitants, Green Fee i Hores de Sortida"
       },
       "west-lancashire": {
-        "title": "West Lancashire Golf Club — Green Fee per a Visitants i Hores de Sortida",
-        "desc": "Un dels clubs més antics d'Anglaterra — golf de links en estat pur. Green fee £80–£130. Par 72, 6.756 iardes. Guia completa per a visitants."
+        "title": "West Lancashire Golf Club — Green Fee per a Visitants i Hores de Sortida"
       },
       "southport-ainsdale": {
-        "title": "Southport & Ainsdale Golf Club — Guia per a Visitants i Green Fee",
-        "desc": "Llegat de la Ryder Cup i caràcter genuí de links. Green fee £65–£100. Par 72, 6.612 iardes. Política de visitants i guia del camp."
+        "title": "Southport & Ainsdale Golf Club — Guia per a Visitants i Green Fee"
       },
       "southport-old-links": {
-        "title": "Southport Old Links Golf Club — Guia per a Visitants i Green Fee",
-        "desc": "Valor amagat — uns links genuïns al preu més accessible de la costa. Green fee £40–£60. Par 71, 6.318 iardes. Guia completa per a visitants."
+        "title": "Southport Old Links Golf Club — Guia per a Visitants i Green Fee"
       }
     }
   },
   "home": {
-    "heroTitle": "El Corredor de Golf de Links més Gran del Món",
-    "heroSubtitle": "Sis camps de campionat. Un tram de costa. The Open Championship torna a Royal Birkdale el juliol de 2026.",
     "heroCtaCourses": "Explorar els Camps",
     "heroCtaOpen": "The Open 2026",
     "openBanner": "The Open Championship 2026 — Royal Birkdale, Southport",
-    "openCountdownLabel": "Fins a The Open Championship",
     "coursesTitle": "Els Camps de la Costa de Sefton",
     "coursesSubtitle": "Sis dels millors camps de links d'Anglaterra, tots a pocs quilòmetres els uns dels altres",
     "featuresTitle": "Planifica el Teu Viatge de Golf de Links",
@@ -73,19 +59,13 @@
     "affiliateDesc": "Hores de sortida, hotels i paquets a través de Golf Breaks"
   },
   "homePage": {
-    "bannerText": "The Open Championship 2026 — Royal Birkdale, Southport. 16–19 de juliol.",
     "bannerLink": "→ Guia Completa",
     "heroBadge": "Costa de Sefton · Lancashire · Anglaterra",
     "heroImageAlt": "Camp de golf al capvespre a la Costa de Sefton",
     "statChampionshipCoursesLabel": "Camps de Campionat",
     "statOpenChampionshipsLabel": "Opens Championships a Birkdale",
     "statOldestClubLabel": "Club més Antic de la Costa",
-    "statGreenFeeRangeLabel": "Rang de Green Fee",
     "openSectionBadge": "The Open Championship 2026",
-    "openSectionHeading1": "Royal Birkdale. Juliol de 2026.",
-    "openSectionHeading2": "L'Espectacle més Gran del Golf.",
-    "openSectionPara1": "El 155è The Open Championship torna a Royal Birkdale — un camp que ha produït alguns dels moments més dramàtics de la història del golf. La llegendària recuperació d'Arnold Palmer el 1961. El cinquè pot de claret de Tom Watson el 1983. La victòria de principi a fi de Jordan Spieth el 2017.",
-    "openSectionPara2": "Si esteu planificant un viatge de golf de links a la Costa de Sefton, la setmana del The Open és el moment definitiu del calendari. L'allotjament en un radi de 20 milles es reserva amb 12 mesos o més d'antelació. Planifiqueu ara.",
     "openSectionCtaBtn": "The Open 2026 — Guia Completa",
     "pastChampionsHeading": "Campions del Passat a Royal Birkdale",
     "courseCardEstFounded": "Fundat el {year}",
@@ -98,45 +78,35 @@
     "toolsSectionTitle": "Planifica la Teva Visita a la Costa de Sefton",
     "toolsSectionSubtitle": "Eines creades per a golfistes visitants — no per als locals que ja coneixen els camps.",
     "tool1Title": "Estat del Camp",
-    "tool1Desc": "Estat en directe dels sis camps — ferm, estàndard, mullat o tancat. Velocitat i direcció del vent. Actualitzat manualment cada matí.",
     "tool1Cta": "Comprovar Estat",
     "tool2Title": "Planificador de Viatges de Golf",
     "tool2Desc": "Introduïu els vostres dies, pressupost i nivell de handicap i obteniu un itinerari preparat amb l'ordre de camps suggerit, on allotjar-se i on menjar.",
     "tool2Cta": "Planificar el Viatge",
     "tool3Title": "Guia d'Hores de Sortida",
-    "tool3Desc": "Polítiques de visitants per a cada camp — quins dies admeten visitants, amb quanta antelació reservar, contactes directes. La política confusa de Formby explicada clarament.",
     "tool3Cta": "Veure Guia d'Hores de Sortida",
     "tool4Title": "Base de Dades de Targetes de Puntuació",
     "tool4Desc": "Dades completes de targetes de puntuació per als sis camps — par, iardes des de tots els tees, qualificació del camp i pendent. Tot el que necessiteu per establir expectatives.",
     "tool4Cta": "Veure Targetes de Puntuació",
     "tool5Title": "Allotjament per a Golfistes",
-    "tool5Desc": "Allotjament seleccionat a prop dels camps — amigable per a hores de sortida primerenques, emmagatzematge de pals, instal·lacions post-volta. Ordenat per distància des de Royal Birkdale.",
     "tool5Cta": "Trobar Allotjament",
     "tool6Title": "Itineraris de Viatges de Golf",
     "tool6Desc": "Itineraris preparats de 2, 3 i 5 dies amb ordre de camps, suggeriments d'allotjament i restaurants post-volta. De pressupost a campionat.",
     "tool6Cta": "Explorar Itineraris",
     "affiliateCtaTitle": "Preparats per Reservar el Viatge a la Costa de Sefton?",
-    "affiliateCtaDesc": "Golf Breaks és la plataforma especialitzada líder del Regne Unit en vacances de golf — hores de sortida, hotels i paquets a tota la Costa de Sefton, d'un cap de setmana a S&A a una setmana completa amb The Open com a final.",
     "affiliateCtaBtn1": "Explorar Paquets de Golf Breaks ↗",
     "affiliateCtaBtn2": "Crea el Teu Propi Itinerari",
     "affiliateCtaDisclaimer": "Enllaç d'afiliació de Golf Breaks — guanyem una comissió sense cap cost addicional per a vosaltres.",
     "editorialTitle": "Per Què la Costa de Sefton?",
     "editorialPara1": "Hi ha corredors de golf de links a Escòcia — St Andrews, Carnoustie, Muirfield — que s'emporten l'atenció. La Costa de Sefton queda ignorada. Aquesta bretxa és l'oportunitat per a cada golfista visitant.",
-    "editorialPara2": "En un tram de 10 milles de costa, teniu sis camps de links genuïns que van de Royal Birkdale (constantment entre els cinc millors del món) a Southport Old Links (golf genuïnament bo per £40). Podeu jugar en un camp diferent cada dia durant una setmana sense repetir — i la varietat és sorprenent. Birkdale a través de dunes dramàtiques de salze. Hillside a través d'un terreny de crestes i valls. Formby a través de boscos de pins costaners. West Lancashire amb l'exposició crua a la Mar d'Irlanda.",
-    "editorialPara3": "L'argument pràctic per a la Costa de Sefton sobre Escòcia és senzill: és més fàcil arribar-hi des d'Europa continental i Amèrica del Nord a través dels aeroports de Liverpool i Manchester, l'allotjament té millor relació qualitat-preu, i els camps són més accessibles per als visitants que els seus homòlegs escocesos del mateix nivell de qualitat. Royal Birkdale és més barat que Muirfield i més fàcil de reservar.",
-    "editorialPara4": "I el juliol de 2026, el món mirarà. The Open Championship torna a Royal Birkdale — el camp que ens va donar l'escapada miraculosa de Spieth de la zona de retirada el 2017, la victòria clínica de Watson el 1983, i la concessió de la Ryder Cup de 1969 que va definir l'esportivitat en el golf. Si alguna vegada heu pensat en un viatge de golf de links a Anglaterra, ara és el moment.",
     "featureCard1Title": "Fàcil d'Arribar",
     "featureCard1Text": "45 min des de l'Aeroport de Liverpool, 60 min des de Manchester. Tren directe a Southport des del centre de Liverpool.",
     "featureCard2Title": "Amigable per a Visitants",
     "featureCard2Text": "Quatre dels sis camps reben activament visitants. Millor accés que camps escocesos de qualitat equivalent.",
-    "featureCard3Title": "Valor Genuí",
-    "featureCard3Text": "Green fees des de £40 (Old Links) fins a £350 (Birkdale). Els camps escocesos comparables costen més a cada nivell.",
     "southportGuideDesc": "Hotels, restaurants i llocs d'interès a Southport — la vostra base per a un viatge de golf a la Costa de Sefton.",
     "formbyGuideDesc": "La guia completa de Formby — boscos de pins del National Trust, esquirols vermells i el poble entre voltes."
   },
   "courses": {
     "pageTitle": "Camps de Golf de la Costa de Sefton",
-    "pageDesc": "La guia definitiva de Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale i Southport Old Links",
     "greenFee": "Green Fee",
     "par": "Par",
     "yardage": "Iardes",
@@ -222,8 +192,6 @@
   },
   "open": {
     "pageTitle": "The Open Championship 2026 — Royal Birkdale",
-    "pageDesc": "La vostra guia del 155è The Open Championship a Royal Birkdale, Southport. Història, entrades, allotjament i guia del camp.",
-    "countdown": "Compte Enrere fins a The Open",
     "dates": "16–19 de juliol de 2026",
     "venue": "Royal Birkdale Golf Club, Southport",
     "historyTitle": "Royal Birkdale i The Open",
@@ -235,27 +203,19 @@
     "seconds": "s"
   },
   "openPage": {
-    "heroBadge": "El 155è The Open Championship",
     "heroTitle1": "The Open Championship",
     "heroTitle2": "Royal Birkdale 2026",
     "heroBtn1": "Aconseguir Entrades via TheOpen.com ↗",
     "heroBtn2": "Guia del Camp Royal Birkdale",
     "aboutTitle": "The Open Championship a Royal Birkdale",
-    "aboutPara1": "The Open Championship — el Major més antic del golf i l'únic que es juga fora d'Amèrica del Nord — torna a Royal Birkdale per onzena vegada el juliol de 2026. Cap altre camp de la rota del The Open l'ha acollit amb més freqüència, un registre que reflecteix tant la qualitat del camp com la seva excepcional idoneïtat logística per a un campionat major.",
     "aboutPara2": "Royal Birkdale és uns links en el sentit més genuí. Els fairways discorren entre imponents dunes de sorra que canalitzen el vent costaner de maneres imprevisibles. El rough de salze — una signatura de Birkdale — és castigador però superable. Els greens són petits, ràpids i subtilment contornejats. Les condicions de campionat produeixen una puntuació que normalment acaba prop del par o millor per al guanyador, però només quan el temps acompanya. Quan no ho fa, Birkdale es converteix en una de les proves més exigents del golf mundial.",
-    "aboutPara3": "El The Open de 2017 va oferir un dels finals més dramàtics que es recorden. Jordan Spieth, liderant de principi a fi, va fer un triple bogey al forat 13 després de desviar el seu tee shot a una zona amb equipament televisiu. La seva decisió posterior de prendre alleugeriment sota la regla de la zona de retirada — combinada amb un pitch extraordinari a pocs peus del forat — es va convertir en una de les imatges definitòries del golf de Major modern.",
     "aboutPara4": "Per als turistes de golf, The Open a Royal Birkdale representa una oportunitat única: l'esdeveniment de golf més prestigiós del món, en un dels camps de links més grans d'Anglaterra, en un entorn compacte i accessible. L'accés dels espectadors a tot el camp és excel·lent, l'ambient és inequívocament britànic, i el poble de menjar i entreteniment ha millorat considerablement en les edicions recents.",
     "pastChampionsTitle": "Campions del Passat a Royal Birkdale",
     "lastWinnerBadge": "Últim guanyador",
-    "champNote2017": "De principi a fi — memorable escapada de la zona de retirada al 13",
     "champNote2008": "Segon pot de claret consecutiu",
-    "champNote1998": "Primer Major als 41 anys",
     "champNote1991": "29 cops als primers nou forats de l'última volta",
     "champNote1983": "Cinquè i últim títol de The Open",
-    "champNote1976": "Victòria de principi a fi",
-    "champNote1971": "Tercer Major consecutiu en sis setmanes",
     "champNote1965": "Cinquè The Open Championship",
-    "champNote1961": "La llegendària recuperació amb ferro de Palmer des d'un arbust al 15",
     "champNote1954": "El primer de cinc títols de The Open",
     "ticketsAlertTitle": "Entrades venudes únicament a través de TheOpen.com",
     "ticketsAlertDesc": "El R&A ven totes les entrades directament. No hi ha cap venedor oficial de tercers. Les entrades dels dies de campionat (dijous–diumenge) s'esgoten ràpidament — sovint en qüestió d'hores de ser alliberades. Registreu-vos a la llista d'espera i al sorteig del R&A a TheOpen.com ara.",
@@ -311,13 +271,8 @@
     "spectatorTipsItem4": "Les graderies naturals de dunes de Birkdale requereixen bon calçat",
     "spectatorTipsItem5": "Consulteu l'app del R&A per al marcador en temps real i el seguiment de jugadors",
     "playCourseTitle": "Juga al Camp",
-    "playCourseItem1": "Les hores de sortida per a visitants es reprenen una vegada desmuntada la infraestructura del campionat",
-    "playCourseItem2": "Les hores de sortida post-The Open es reserven ràpidament — Royal Birkdale gestiona directament",
-    "playCourseItem3": "Combineu amb Hillside o S&A per a un viatge complet per la zona de Birkdale",
-    "playCourseItem4": "Hi ha caddies disponibles — reserveu amb molta antelació per a una experiència premium",
     "quickFactsTitle": "Dades Ràpides",
     "factLabelChampNumber": "Número del Campionat",
-    "factValueChampNumber": "155è The Open",
     "factLabelVenue": "Seu",
     "factValueVenue": "Royal Birkdale GC",
     "factLabelLocation": "Ubicació",
@@ -326,8 +281,6 @@
     "factValueDates": "16–19 de juliol de 2026",
     "factLabelPracticeDays": "Dies d'Entrenament",
     "factValuePracticeDays": "13–15 de juliol de 2026",
-    "factLabelDefendingChamp": "Campió Defensor",
-    "factValueDefendingChamp": "Brian Harman (2023)",
     "factLabelOrganiser": "Organitzador",
     "factValueOrganiser": "The R&A",
     "factLabelTimesHosted": "Vegades organitzat a Birkdale",
@@ -341,28 +294,11 @@
     "bookAccomDesc": "No ho deixeu per a més tard. L'allotjament de la setmana del The Open s'esgota ràpidament. Reserveu a Booking.com per a la selecció més àmplia i cancel·lació flexible.",
     "bookAccomBtn": "Buscar Hotels a Southport ↗",
     "bookAccomAffiliate": "Enllaç d'afiliació de Booking.com",
-    "playBirkdaleTitle": "Jugar a Royal Birkdale",
-    "playBirkdaleDesc": "Esteu planificant una volta abans o després del The Open? Green fees, política de visitants i guia de reserva.",
     "playBirkdaleLink": "Guia del camp Royal Birkdale"
   },
   "teeTimesPage": {
     "headerBadge": "Guia per a Visitants",
     "pageTitle": "Com Aconseguir una Hora de Sortida",
-    "pageDesc": "Polítiques de visitants, processos de reserva i què esperar a cada camp — inclòs el procés notòriament confús de Formby Golf Club, explicat clarament.",
-    "formbyCalloutTitle": "Formby Golf Club — El Complicat",
-    "formbyCalloutIntro": "Formby Golf Club genera més confusió entre els visitants que qualsevol altre camp de la Costa de Sefton. Aquí teniu la imatge completa:",
-    "formbyPoint1Title": "Només per a homes.",
-    "formbyPoint1Text": "Formby Golf Club és un club privat exclusivament masculí. Això no és inusual per als clubs de golf anglesos tradicionals, però val la pena saber-ho abans d'arribar amb un grup mixt.",
-    "formbyPoint2Title": "Sense reserva en línia.",
-    "formbyPoint2Text": "No hi ha cap sistema de reserva d'hores de sortida al web. Cal escriure o trucar directament al secretari del club.",
-    "formbyPoint3Title": "Acords de reciprocitat.",
-    "formbyPoint3Text": "L'accés és principalment a través de clubs amb acords de reciprocitat formals. Pregunteu al secretari del vostre club local si tenen un acord amb Formby.",
-    "formbyPoint4Title": "Una carta de presentació ajuda.",
-    "formbyPoint4Text": "Una carta formal del professional o secretari del vostre club local augmenta significativament les possibilitats d'accés de visitants.",
-    "formbyPoint5Title": "Formby Ladies Golf Club és independent.",
-    "formbyPoint5Text": "Adjacent però completament independent — amb el seu propi camp, socis i política de visitants. Més obert als visitants que el club masculí.",
-    "formbyPoint6Title": "Val la pena l'esforç.",
-    "formbyPoint6Text": "Si podeu accedir-hi, feu-ho. El camp és excepcional — pins de ribera costanera i dunes de links combinades de manera única.",
     "allCoursesTitle": "Política de Visitants — Tots els Camps",
     "difficultyRestricted": "Restringit",
     "difficultyByArrangement": "Per acord",
@@ -378,7 +314,6 @@
     "tip1Title": "Porteu sempre el vostre certificat de handicap",
     "tip1Text": "Tots els camps de la Costa de Sefton excepte Southport Old Links requereixen un certificat de handicap. S'accepta la targeta de la vostra associació nacional de golf o la targeta EGA.",
     "tip2Title": "Reserveu amb antelació, especialment a l'estiu",
-    "tip2Text": "La Costa de Sefton és molt concorreguda de juny a setembre. Royal Birkdale i Hillside s'omplen amb 4–8 setmanes d'antelació en temporada alta. No us presenteu sense reserva esperant sort.",
     "tip3Title": "El codi de vestimenta s'aplica a tot arreu",
     "tip3Text": "Smart casual com a mínim a tots els clubs. Sense texans, sense bambes, sense samarretes a la majoria. Alguns clubs requereixen coll i pantalons de vestir al club.",
     "tip4Title": "Arribeu 30 minuts d'hora",
@@ -391,7 +326,6 @@
   "accommodationPage": {
     "headerBadge": "Allotjament Amigable per a Golfistes",
     "pageTitle": "Allotjament per a Golfistes",
-    "pageDesc": "Allotjament seleccionat prop de Royal Birkdale i els camps de la Costa de Sefton — triat per l'emmagatzematge de pals, esmorzar primerenc i proximitat al primer tee.",
     "openCalloutTitle": "Reserveu per al The Open Championship 2026?",
     "openCalloutDesc": "L'allotjament prop de Royal Birkdale durant la setmana del The Open (14–20 de juliol de 2026) es reserva amb 12–18 mesos d'antelació. Si llegiu això després del març de 2026, les opcions dins de 5 milles seran molt limitades. Consulteu el centre de Liverpool, Ormskirk i Wigan com a opcions alternatives.",
     "openCalloutLink": "Guia d'allotjament per al The Open 2026",
@@ -441,7 +375,6 @@
   "itinerariesPage": {
     "headerBadge": "Costa de Sefton",
     "pageTitle": "Itineraris de Viatges de Golf",
-    "pageDesc": "Viatges de golf preparats per a tota durada i pressupost — des d'un concís viatge de dos dies fins a la gran gira completa de cinc camps. O useu el planificador per crear el vostre propi.",
     "plannerTitle": "Planificador de Viatges de Golf",
     "plannerDesc": "Introduïu els vostres dies, pressupost i handicap — us emparellarem amb l'itinerari adequat.",
     "allItinerariesTitle": "Tots els Itineraris",
@@ -457,9 +390,7 @@
     "bookViaGolfBreaksBtn": "Reservar via Golf Breaks ↗",
     "howToPlanTitle": "Com Planificar un Viatge de Golf a la Costa de Sefton",
     "howToPlanPara1": "Els camps de la Costa de Sefton estan prou agrupats perquè un viatge de dos dies pugui cobrir dues o tres voltes sense logística difícil. Royal Birkdale i Hillside són literalment adjacents — podríeu anar-hi a peu. Southport & Ainsdale és tres milles més al sud. Formby és a cinc milles de Birkdale per l'A565.",
-    "howToPlanPara2": "Per als viatges de varis dies, instal·leu-vos a Southport. La ciutat té la selecció d'hotels més àmplia, i tot, des de Lord Street fins a Birkdale, és a distància de taxi. Si preferiu un allotjament més tranquil i barat, el poble de Formby és a 20 minuts cap al sud i té bones opcions de B&B.",
-    "howToPlanPara3": "L'ordre importa. No jugueu primer a Royal Birkdale — passareu la resta del viatge comparant-ho tot amb ell. Aneu pujant: comenceu amb Old Links o S&A, passeu a Hillside el segon dia, i arribeu a Birkdale quan hàgiu trobat les vostres cames de links. El contrast farà que el final sembli merescut.",
-    "howToPlanPara4": "Reserveu les hores de sortida abans d'arribar. Royal Birkdale s'omple setmanes abans, Hillside de dues a quatre setmanes, S&A i Old Links sovint podeu accedir-hi amb una setmana d'antelació. Formby requereix contacte previ amb el secretari del club — no hi ha reserva en línia."
+    "howToPlanPara2": "Per als viatges de varis dies, instal·leu-vos a Southport. La ciutat té la selecció d'hotels més àmplia, i tot, des de Lord Street fins a Birkdale, és a distància de taxi. Si preferiu un allotjament més tranquil i barat, el poble de Formby és a 20 minuts cap al sud i té bones opcions de B&B."
   },
   "conditions": {
     "pageTitle": "Estat dels Camps de la Costa de Sefton",
@@ -474,9 +405,7 @@
     "notes": "Notes"
   },
   "conditionsPage": {
-    "headerBadge": "Actualització Diària",
     "pageTitle": "Estat del Camp",
-    "pageDesc": "Condicions de joc actuals a tots els sis camps de la Costa de Sefton — actualitzades manualment cada matí a les 7:30h. Comproveu-les abans de viatjar.",
     "aboutLinksTitle": "Sobre les Condicions dels Links",
     "aboutLinksPara1": "Les condicions del golf de links són fonamentalment diferents de les del golf de parc. Les variables clau són la direcció i força del vent, les precipitacions recents i el drenatge, i la fermesa del terreny. Un camp ferm i sec juga de manera completament diferent a un de mullat i tou — els golps d'aproximació no s'aturen, la pilota rodola més des del tee, i el xipping es torna més creatiu.",
     "aboutLinksPara2": "Els camps de la Costa de Sefton drenen bé per disseny — estan construïts sobre sorra. Fins i tot després de pluges intenses, Royal Birkdale i Hillside normalment es recuperen més ràpidament que els camps interiors. Southport & Ainsdale i West Lancashire poden retenir l'aigua una mica més temps a causa del seu terreny. Les seccions de bosc de Formby s'assequen més ràpidament.",
@@ -496,8 +425,7 @@
     "pressMediaLinkText": "Churchtown Media Ltd",
     "beforeContactTitle": "Abans de Contactar-nos",
     "beforeContactItem1": "→ Per a reserves d'hores de sortida, contacteu directament amb els clubs — som una guia, no una plataforma de reserva.",
-    "beforeContactItem2": "→ Per a entrades del The Open Championship, visiteu TheOpen.com.",
-    "beforeContactItem3": "→ Per a consultes de visitants de Royal Birkdale, truqueu-los directament al 01704 552261."
+    "beforeContactItem2": "→ Per a entrades del The Open Championship, visiteu TheOpen.com."
   },
   "legalPage": {
     "privacyTitle": "Política de Privacitat",
@@ -524,7 +452,6 @@
     "courseGuidesBtn": "Guies de Camps"
   },
   "footer": {
-    "tagline": "La guia definitiva de golf de links a la Costa de Sefton — Royal Birkdale, Hillside, Formby i el millor del golf de links anglès.",
     "builtBy": "Creat per Churchtown Media",
     "builtByLink": "Creat per Churchtown Media ↗",
     "networkLabel": "Xarxa de la Costa de Sefton",
@@ -536,7 +463,6 @@
     "formbyGuide": "FormbyGuide.co.uk",
     "coursesHeading": "Camps",
     "openHeading": "The Open 2026",
-    "openDesc": "The Open Championship torna a Royal Birkdale, Southport el juliol de 2026 — la primera vegada des de la victòria icònica de Jordan Spieth el 2017.",
     "openGuideBtn": "Guia del The Open 2026 →",
     "languagesHeading": "Idiomes",
     "privacyLink": "Privacitat",
@@ -557,24 +483,8 @@
     "courseOldLinks": "Southport Old Links"
   },
   "courseData": {
-    "royal-birkdale": {
-      "tagline": "Seu del The Open Championship 2026 — el cim del golf de links",
-      "description": "Royal Birkdale és el millor camp de links que la majoria de golfistes jugaran mai. Situat entre imponents dunes de sorra a la Costa de Sefton, ha acollit deu Open Championships i es classifica consistentment entre els cinc millors camps del món. The Open 2026 torna aquí el juliol — i si esteu planificant un viatge de golf a la Costa de Sefton, aquesta és la raó.\n\nEl camp exigeix creativitat i intel·ligència. Els fairways discorren entre dunes abruptes que canalitzen el vent de maneres imprevisibles. El rough és brutal. Els greens són ràpids, subtils i posicionats per fer-vos pensar en cada golpe d'aproximació. No és un camp que es pugui superar a la força — l'experiència en links ajuda enormement.\n\nLes hores de sortida per a visitants estan disponibles, però Royal Birkdale és estricte tant amb la disponibilitat com amb l'etiqueta. Reserveu amb molta antelació, respecteu el codi de vestimenta i compliu el requisit de certificat de handicap.",
-      "visitorPolicy": "Visitants benvinguts subjectes a disponibilitat. Cal certificat de handicap (homes 24, dones 36). Sense visitants els dies de competició."
-    },
-    "hillside": {
-      "tagline": "El millor camp de links que no coneixeu — fins ara",
-      "description": "Hillside és el secret millor guardat de la Costa de Sefton — tot i que no per molt de temps. Adjacent directament a Royal Birkdale, comparteix el mateix impressionant paisatge de dunes però ofereix un accés significativament millor per als visitants a una fracció del green fee. Els professionals de golf que han jugat ambdós camps sovint classifiquen els nou forats del dorsal de Hillside entre els millors d'Anglaterra.\n\nEl camp va experimentar un redisseny significatiu dels seus últims nou forats, que ara discorren a través d'un impressionant terreny de crestes i valls entre les dunes. El recorregut és lògic i l'estat del camp és consistentment excel·lent. Si esteu construint un itinerari de varis dies, Hillside el dia anterior a Royal Birkdale és una combinació gairebé perfecta.",
-      "visitorPolicy": "Visitants benvinguts la majoria de dies de la setmana i alguns caps de setmana. Cal certificat de handicap."
-    },
-    "formby": {
-      "tagline": "Una joia privada — un dels millors camps de links interiors d'Anglaterra",
-      "description": "Formby Golf Club és un dels clubs més exclusius de la Costa de Sefton, i la seva política de visitants ho reflecteix. El club té un acord de reciprocitat amb un nombre limitat de clubs i gestiona les sol·licituds dels visitants cas per cas — no podeu simplement reservar una hora de sortida en línia.\n\nEl camp en si és excepcional. Situat a través de boscos de pins costaners amb trams de links de bruguera pura, és una experiència fonamentalment diferent a la de Royal Birkdale o Hillside. Els pins proporcionen refugi i un caràcter visual distintiu, mentre que les seccions de dunes són tan desafiants com qualsevol cosa de la costa. Si podeu accedir-hi, feu-ho.\n\nNota: Formby Golf Club és un club exclusivament masculí. Formby Ladies Golf Club (adjacent, fundat el 1896) és un club separat i igualment prestigiós amb el seu propi camp i una política de visitants més accessible.",
-      "visitorPolicy": "Accés restringit de visitants. Acords de reciprocitat amb clubs aprovats únicament. Contacteu directament amb el secretari del club per consultar."
-    },
     "west-lancashire": {
       "tagline": "Un dels clubs més antics d'Anglaterra — golf de links en la seva forma més pura",
-      "description": "West Lancashire Golf Club, fundat el 1873, és un dels clubs de golf més antics d'Anglaterra i un dels menys visitats de la Costa de Sefton — principalment perquè es troba una mica més al nord a Blundellsands, fora del clúster immediat de Southport.\n\nAixò és una llàstima, perquè West Lancashire és una prova de links seriosa. El camp té una qualitat crua i sense polidura que els puristes estimen — el rough és rough de veritat, els greens són ràpids i fidels, i el vent de la Mar d'Irlanda és omnipresent. Li manca el polit refinat de Royal Birkdale però ofereix una experiència de links més autèntica i elemental a un green fee considerablement més accessible.\n\nEl club té una llarga història amb la qualificació del The Open Championship. Si voleu jugar un links genuïnament històric i desafiant sense el preu premium, West Lancashire és una opció sòlida.",
       "visitorPolicy": "Visitants benvinguts la majoria de dies feiners. Cap de setmana limitat — truqueu per avançat."
     },
     "southport-ainsdale": {

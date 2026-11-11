@@ -15,53 +15,39 @@
     "coursesTitle": "Golfbaner Sefton Coast — Royal Birkdale, Hillside & Formby",
     "coursesDesc": "Den komplette guide til alle seks linksgolfbaner langs Sefton Coast — besøgspolitik, green fees, baneratings, booking af starttider og uddybende baneguider.",
     "openTitle": "The Open Championship 2026 på Royal Birkdale — Besøgsguide",
-    "openDesc": "Din komplette guide til det 155. Open Championship på Royal Birkdale, Southport, 16.–19. juli 2026. Historie, tidligere mestre, billetter, overnatning, baneguide og rejseinformation.",
     "scorecardTitle": "Scorekort Sefton Coast — Par, Afstand & Banerating",
     "scorecardDesc": "Fuldstændige scorekortdata for alle seks baner langs Sefton Coast — par, afstande fra alle tees, course rating og slope rating. Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale og Southport Old Links.",
     "teeTimesTitle": "Starttider på Royal Birkdale & Sefton Coast Golfklubber",
-    "teeTimesDesc": "Sådan booker du starttider som besøgende på Royal Birkdale, Hillside, Formby og alle seks Sefton Coast-klubber. Forudbestillingsfrister, besøgspolitik, direkte kontakter og Formby Golf Clubs besøgspolitik forklaret.",
     "itinerariesTitle": "Sefton Coast Golfreiser — 2, 3 & 5-dagsplaner",
-    "itinerariesDesc": "Færdige golfreiseplaner for Sefton Coast. Kombinationer på 2, 3 og 5 dage med Royal Birkdale, Hillside, Formby og hele korridoren, med anbefalinger til overnatning og restauranter.",
     "accommodationTitle": "Golfovernatning nær Royal Birkdale, Southport",
     "accommodationDesc": "Hvor du bor nær Royal Birkdale og Sefton Coast-banerne. Hoteller, B&B og feriehuse i Southport og Birkdale — sorteret efter afstand, med information om tilgængelighed under The Open Championship 2026.",
-    "conditionsTitle": "Sefton Coast Baneforhold — Daglig Spilstatus",
-    "conditionsDesc": "Daglige spilforhold på Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale og Southport Old Links. Fast, normal, blød eller lukket — opdateres hver morgen.",
     "contactTitle": "Kontakt SeftonLinks",
     "contactDesc": "Kontakt SeftonLinks — spørgsmål, rettelser, fremhævede opslag og forretningsforespørgsler.",
     "course": {
       "royal-birkdale": {
-        "title": "Royal Birkdale Golf Club — Besøgsguide, Green Fees & Starttider",
-        "desc": "Vært for The Open Championship 2026. Green fee £300–£350. Par 70, 6.543 yards. Fuldstændig besøgspolitik, bookinginfo og tips efter runden."
+        "title": "Royal Birkdale Golf Club — Besøgsguide, Green Fees & Starttider"
       },
       "hillside": {
-        "title": "Hillside Golf Club Southport — Besøgsguide & Green Fees",
-        "desc": "Den fineste linksbane du aldrig har hørt om. Green fee £100–£150. Par 72, 6.850 yards. Fuldstændig besøgspolitik og baneguide."
+        "title": "Hillside Golf Club Southport — Besøgsguide & Green Fees"
       },
       "formby": {
-        "title": "Formby Golf Club — Besøgsguide, Green Fees & Starttider",
-        "desc": "En eksklusiv privat perle — en af Englands fineste links. Green fee £160–£210. Par 72, 6.893 yards. Besøgspolitik og bookingguide."
+        "title": "Formby Golf Club — Besøgsguide, Green Fees & Starttider"
       },
       "west-lancashire": {
-        "title": "West Lancashire Golf Club — Besøger Green Fees & Starttider",
-        "desc": "En af Englands ældste klubber — linksgolf i sin reneste form. Green fee £80–£130. Par 72, 6.756 yards. Fuldstændig besøgsguide."
+        "title": "West Lancashire Golf Club — Besøger Green Fees & Starttider"
       },
       "southport-ainsdale": {
-        "title": "Southport & Ainsdale Golf Club — Besøgsguide & Green Fees",
-        "desc": "Ryder Cup-arv og ægte linkskarakter. Green fee £65–£100. Par 72, 6.612 yards. Besøgspolitik og baneguide."
+        "title": "Southport & Ainsdale Golf Club — Besøgsguide & Green Fees"
       },
       "southport-old-links": {
-        "title": "Southport Old Links Golf Club — Besøgsguide & Green Fees",
-        "desc": "Skjult værdi — ægte linksgolf til kystens mest tilgængelige pris. Green fee £40–£60. Par 71, 6.318 yards. Fuldstændig besøgsguide."
+        "title": "Southport Old Links Golf Club — Besøgsguide & Green Fees"
       }
     }
   },
   "home": {
-    "heroTitle": "Verdens Fineste Linksgolfkorridor",
-    "heroSubtitle": "Seks mesterskabsbaner. En strækning af kystlinje. The Open Championship vender tilbage til Royal Birkdale i juli 2026.",
     "heroCtaCourses": "Udforsk Banerne",
     "heroCtaOpen": "The Open 2026",
     "openBanner": "The Open Championship 2026 — Royal Birkdale, Southport",
-    "openCountdownLabel": "Til The Open Championship",
     "coursesTitle": "Sefton Coast-banerne",
     "coursesSubtitle": "Seks af Englands fineste linksgolfbaner, alle inden for få kilometer af hinanden",
     "featuresTitle": "Planlæg Din Linksgolfrejse",
@@ -73,19 +59,13 @@
     "affiliateDesc": "Starttider, hoteller og pakker via Golf Breaks"
   },
   "homePage": {
-    "bannerText": "The Open Championship 2026 — Royal Birkdale, Southport. 16.–19. juli.",
     "bannerLink": "→ Fuld Guide",
     "heroBadge": "Sefton Coast · Lancashire · England",
     "heroImageAlt": "Golfbane ved solnedgang langs Sefton Coast",
     "statChampionshipCoursesLabel": "Mesterskabsbaner",
     "statOpenChampionshipsLabel": "Open Championships på Birkdale",
     "statOldestClubLabel": "Ældste Klub langs Kysten",
-    "statGreenFeeRangeLabel": "Green Fee-spænd",
     "openSectionBadge": "The Open Championship 2026",
-    "openSectionHeading1": "Royal Birkdale. Juli 2026.",
-    "openSectionHeading2": "Golfens Største Spektakel.",
-    "openSectionPara1": "Det 155. Open Championship vender tilbage til Royal Birkdale — en bane, der har skabt nogle af golfhistoriens mest dramatiske øjeblikke. Arnold Palmers legendariske redning fra buskene i 1961. Tom Watsons femte Claret Jug i 1983. Jordan Spieths uforglemmelige flugt fra dropzonen på 13. hul i 2017.",
-    "openSectionPara2": "Planlægger du en linksgolfrejse til Sefton Coast, er Open-ugen det absolutte midtpunkt. Overnatning inden for 30 kilometer er fuldt booket 12 måneder i forvejen. Begynd at planlægge nu.",
     "openSectionCtaBtn": "Open 2026 — Fuld Guide",
     "pastChampionsHeading": "Tidligere Mestre på Royal Birkdale",
     "courseCardEstFounded": "Grundlagt {year}",
@@ -98,45 +78,35 @@
     "toolsSectionTitle": "Planlæg Dit Besøg til Sefton Coast",
     "toolsSectionSubtitle": "Værktøjer skabt til besøgende golfere — ikke til lokale, der allerede kender banerne.",
     "tool1Title": "Baneforhold",
-    "tool1Desc": "Direktestatus for alle seks baner — fast, normal, blød eller lukket. Vindhastighed og retning. Opdateres manuelt hver morgen.",
     "tool1Cta": "Tjek Forholdene",
     "tool2Title": "Golfreiseplanlægger",
     "tool2Desc": "Angiv dine dage, budget og handicapniveau og få et færdigt program med foreslået banerækkefølge, overnatning og restauranter.",
     "tool2Cta": "Planlæg Din Rejse",
     "tool3Title": "Guide til Starttider",
-    "tool3Desc": "Besøgspolitik for hver bane — hvilke dage der accepterer besøgende, hvor langt i forvejen du booker, direkte kontakter. Formby Golf Clubs indviklede politik forklaret klart.",
     "tool3Cta": "Se Starttidsguide",
     "tool4Title": "Scorekortsbibliotek",
     "tool4Desc": "Fuldstændige scorekortdata for alle seks baner — par, afstande fra alle tees, course rating og slope rating. Alt hvad du behøver for at sætte forventningerne.",
     "tool4Cta": "Se Scorekort",
     "tool5Title": "Overnatning til Golfere",
-    "tool5Desc": "Udvalgte overnatningsmuligheder tæt på banerne — tidlig morgenmad, opbevaring af golftasker og faciliteter til golfere. Sorteret efter afstand fra Royal Birkdale.",
     "tool5Cta": "Find Overnatning",
     "tool6Title": "Golfreiseplaner",
     "tool6Desc": "Færdige 2-, 3- og 5-dagsplaner med banerækkefølge, overnatningsforslag og middagsanbefalinger. Fra budgetrejse til mesterskap.",
     "tool6Cta": "Gennemse Planer",
     "affiliateCtaTitle": "Klar til at Booke Din Sefton Coast-rejse?",
-    "affiliateCtaDesc": "Golf Breaks er Storbritanniens førende specialistplatform for golfreiser — starttider, hoteller og pakker langs hele Sefton Coast, fra en weekend på S&A til en hel uge med The Open som afslutning.",
     "affiliateCtaBtn1": "Se Golf Breaks-pakker ↗",
     "affiliateCtaBtn2": "Byg Dit Eget Program",
     "affiliateCtaDisclaimer": "Golf Breaks affiliate-link — vi modtager en provision uden ekstra omkostninger for dig.",
     "editorialTitle": "Hvorfor Sefton Coast?",
     "editorialPara1": "Der er linksgolfkorridorer i Skotland — St Andrews, Carnoustie, Muirfield — der får al opmærksomheden. Sefton Coast overses. Det er præcis den mulighed, enhver besøgende golfer bør gribe.",
-    "editorialPara2": "Inden for en 16 kilometer lang kststrækning finder du seks ægte linksgolfbaner, fra Royal Birkdale (konsekvent blandt verdens fem bedste) til Southport Old Links (rigtig god golf for £40). Du kan spille en ny bane hver dag i en uge uden at gentage dig — og variationen er slående. Birkdale gennem dramatiske sandklitter med pilekrat. Hillside gennem ryg-og-dal-terræn. Formby gennem kysttalleskove. West Lancashire med det rå Irske Hav som baggrund.",
-    "editorialPara3": "Det praktiske argument for Sefton Coast frem for Skotland er enkelt: det er nemmere at nå fra kontinentale Europa og Nordamerika via Liverpool og Manchester, overnatningspriserne er mere rimelige, og banerne er mere tilgængelige for besøgende end deres skotske modstykker af samme kaliber. Royal Birkdale er billigere end Muirfield og nemmere at booke.",
-    "editorialPara4": "Og i juli 2026 ser hele verden til. The Open Championship vender tilbage til Royal Birkdale — banen der gav os Spieths mirakuløse dropzone-flugt i 2017, Watsons kliniske sejr i 1983, og Jack Nicklaus' sportsmanlike gestus i Ryder Cup 1969, der definerede golfens etik. Har du nogensinde overvejet en linksgolfrejse til England, er det nu.",
     "featureCard1Title": "Let at Nå",
     "featureCard1Text": "45 min fra Liverpool lufthavn, 60 min fra Manchester. Direkte tog til Southport fra Liverpool centrum.",
     "featureCard2Title": "Besøgsvenligt",
     "featureCard2Text": "Fire af seks baner byder aktivt besøgende velkommen. Bedre adgang end sammenlignelige skotske baner på samme kvalitetsniveau.",
-    "featureCard3Title": "Ægte Værdi",
-    "featureCard3Text": "Green fees fra £40 (Old Links) til £350 (Birkdale). Sammenlignelige skotske baner koster mere på alle niveauer.",
     "southportGuideDesc": "Hoteller, restauranter og oplevelser i Southport — din base for en Sefton Coast-golfrejse.",
     "formbyGuideDesc": "Den komplette guide til Formby — National Trust talleskove, egern og landsbyen mellem runderne."
   },
   "courses": {
     "pageTitle": "Sefton Coast Golfbaner",
-    "pageDesc": "Den definitive guide til Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale og Southport Old Links",
     "greenFee": "Green Fee",
     "par": "Par",
     "yardage": "Afstand",
@@ -222,8 +192,6 @@
   },
   "open": {
     "pageTitle": "The Open Championship 2026 — Royal Birkdale",
-    "pageDesc": "Din guide til det 155. Open Championship på Royal Birkdale, Southport. Historie, billetter, overnatning og baneguide.",
-    "countdown": "Nedtælling til The Open",
     "dates": "16.–19. juli 2026",
     "venue": "Royal Birkdale Golf Club, Southport",
     "historyTitle": "Royal Birkdale & The Open",
@@ -235,27 +203,19 @@
     "seconds": "sek"
   },
   "openPage": {
-    "heroBadge": "Det 155. Open Championship",
     "heroTitle1": "The Open Championship",
     "heroTitle2": "Royal Birkdale 2026",
     "heroBtn1": "Billetter via TheOpen.com ↗",
     "heroBtn2": "Royal Birkdale Baneguide",
     "aboutTitle": "The Open Championship på Royal Birkdale",
-    "aboutPara1": "The Open Championship — golfens ældste major og det eneste uden for Nordamerika — vender i juli 2026 tilbage til Royal Birkdale for ellevte gang. Ingen anden arena på Open-rota har arrangeret turneringen oftere, et rekord der afspejler både banens kvalitet og dens enestående logistiske egnethed til et major-mesterskab.",
     "aboutPara2": "Royal Birkdale er linksgolf i sin sande form. Fairways løber mellem høje sandklitter, der kanaliserer den kystnære vind på uforudsigelige måder. Lyngruppen — et Birkdale-varemærke — er hård men navigerbar. Greens er små, hurtige og subtilt formede. I mesterskabsforhold ender den vindende score normalt omkring level par eller bedre, men kun når vejret tillader det. Gør det ikke, bliver Birkdale en af de sværeste prøver i verdensgolfen.",
-    "aboutPara3": "The Open 2017 leverede en af de mest dramatiske finaler i nyere golfminde. Jordan Spieth, der ledte fra start til slut, lavede en triple bogey på 13. hul efter at have slået ud til et område med tv-udstyr. Hans beslutning om at tage lempelse under dropzone-reglen — kombineret med et bemærkelsesværdigt chip til tæt ved hullet — blev et af de ikoniske billeder fra moderne major-golf.",
     "aboutPara4": "For golfturister byder The Open på Royal Birkdale på en unik mulighed: verdens mest prestigefulde golfturnering, på en af Englands fineste linksgolfbaner, i omgivelser der er kompakte og let tilgængelige. Tilskueradgangen langs hele banen er fremragende, stemningen er genuint britisk, og mad- og underholdningsbyen er forbedret markant de seneste udgaver.",
     "pastChampionsTitle": "Tidligere Mestre på Royal Birkdale",
     "lastWinnerBadge": "Seneste mester",
-    "champNote2017": "Ledte fra start til slut — mindeværdig dropzone-flugt på 13.",
     "champNote2008": "To på hinanden følgende Claret Jugs",
-    "champNote1998": "Første major som 41-årig",
     "champNote1991": "Front nine i 29 slag i sidste runde",
     "champNote1983": "Femte og sidste Open-titel",
-    "champNote1976": "Ledte fra start til slut",
-    "champNote1971": "Tredje på hinanden følgende major på seks uger",
     "champNote1965": "Femte Open Championship",
-    "champNote1961": "Palmers legendariske jernslag fra buskene på 15.",
     "champNote1954": "Første af fem Open-titler",
     "ticketsAlertTitle": "Billetter sælges kun via TheOpen.com",
     "ticketsAlertDesc": "R&A sælger alle billetter direkte. Der er ingen officiel tredjeparts-sælger. Mesterskabsdagsbilletter (torsdag–søndag) udsolgt hurtigt — ofte inden for timer efter frigivelse. Registrér dig til R&A's venteliste og lodtrækning på TheOpen.com nu.",
@@ -311,13 +271,8 @@
     "spectatorTipsItem4": "Birkdales naturlige klitteamfiteatre kræver solide sko",
     "spectatorTipsItem5": "Brug R&A's app til realtids-leaderboard og spillersporing",
     "playCourseTitle": "Spil Banen",
-    "playCourseItem1": "Besøgsstarttider genoptages efter at mesterskabsopsætningen er fjernet",
-    "playCourseItem2": "Starttider efter Open tages hurtigt — Royal Birkdale håndterer direkte",
-    "playCourseItem3": "Kombiner med Hillside eller S&A for en komplet Birkdale-tur",
-    "playCourseItem4": "Caddies tilgængelige — book langt i forvejen for den bedste oplevelse",
     "quickFactsTitle": "Hurtige Fakta",
     "factLabelChampNumber": "Turneringsnummer",
-    "factValueChampNumber": "155. Open",
     "factLabelVenue": "Arena",
     "factValueVenue": "Royal Birkdale GC",
     "factLabelLocation": "Sted",
@@ -326,8 +281,6 @@
     "factValueDates": "16.–19. juli 2026",
     "factLabelPracticeDays": "Træningsdage",
     "factValuePracticeDays": "13.–15. juli 2026",
-    "factLabelDefendingChamp": "Regerende mester",
-    "factValueDefendingChamp": "Brian Harman (2023)",
     "factLabelOrganiser": "Arrangør",
     "factValueOrganiser": "The R&A",
     "factLabelTimesHosted": "Gange arrangeret på Birkdale",
@@ -341,28 +294,11 @@
     "bookAccomDesc": "Vent ikke. Open-uge overnatning udsolgt hurtigt. Book via Booking.com for bredest udvalg og fleksibel afbestilling.",
     "bookAccomBtn": "Søg Hoteller i Southport ↗",
     "bookAccomAffiliate": "Booking.com affiliate-link",
-    "playBirkdaleTitle": "Spil Royal Birkdale",
-    "playBirkdaleDesc": "Planlægger du en runde før eller efter The Open? Green fees, besøgspolitik og bookingguide.",
     "playBirkdaleLink": "Royal Birkdale baneguide"
   },
   "teeTimesPage": {
     "headerBadge": "Besøgsguide",
     "pageTitle": "Sådan Booker du en Starttid",
-    "pageDesc": "Besøgspolitikker, bookingprocesser og hvad du kan forvente på hver bane — inklusive Formby Golf Clubs notorisk indviklede proces, forklaret klart.",
-    "formbyCalloutTitle": "Formby Golf Club — Den Komplicerede",
-    "formbyCalloutIntro": "Formby Golf Club skaber mere forvirring blandt besøgende end nogen anden bane langs Sefton Coast. Her er det fulde billede:",
-    "formbyPoint1Title": "Kun herrer.",
-    "formbyPoint1Text": "Formby Golf Club er en privatklub for herrer. Det er ikke usædvanligt for traditionelle engelske golfklubber, men det er værd at vide, inden du ankommer med en blandet gruppe.",
-    "formbyPoint2Title": "Ingen onlinebooking.",
-    "formbyPoint2Text": "Der er intet bookingsystem til starttider på hjemmesiden. Du skal skrive eller ringe direkte til klubsekretæren.",
-    "formbyPoint3Title": "Gensidige arrangementer.",
-    "formbyPoint3Text": "Adgang sker primært via klubber med formelle gensidige arrangementer. Spørg din hjemklubs sekretær, om de har et arrangement med Formby.",
-    "formbyPoint4Title": "Introduktionsbrev hjælper.",
-    "formbyPoint4Text": "Et formelt brev fra din hjemklubs professional eller sekretær øger chancerne for besøgsadgang betydeligt.",
-    "formbyPoint5Title": "Formby Ladies Golf Club er separat.",
-    "formbyPoint5Text": "Tilstødende men fuldstændig uafhængig — egne baner, egne medlemmer, egen besøgspolitik. Mere åben for besøgende end herreklubbe.",
-    "formbyPoint6Title": "Anstrengelsen værd.",
-    "formbyPoint6Text": "Kan du komme ind, gør det. Banen er enestående — talleskove og linksdyner kombineret på unik vis.",
     "allCoursesTitle": "Besøgspolitik — Alle Baner",
     "difficultyRestricted": "Begrænset",
     "difficultyByArrangement": "Efter aftale",
@@ -378,7 +314,6 @@
     "tip1Title": "Medbring altid din handicapattest",
     "tip1Text": "Alle baner langs Sefton Coast undtagen Southport Old Links kræver handicapattest. Dit nationale golfunionkort eller EGA-kort accepteres.",
     "tip2Title": "Book i forvejen, særligt om sommeren",
-    "tip2Text": "Sefton Coast er fuldt belagt juni–september. Royal Birkdale og Hillside er fuldt booket 4–8 uger i forvejen i højsæsonen. Møde op og håbe på en ledig tid fungerer ikke.",
     "tip3Title": "Påklædningskode gælder overalt",
     "tip3Text": "Smart casual er minimum på alle klubber. Ingen denim, ingen sneakers, ingen t-shirts de fleste steder. Visse klubber kræver krave og ordentlige bukser i klubhuset.",
     "tip4Title": "Ankom 30 minutter tidligt",
@@ -391,7 +326,6 @@
   "accommodationPage": {
     "headerBadge": "Golfvenlig Overnatning",
     "pageTitle": "Overnatning til Golfere",
-    "pageDesc": "Udvalgte overnatningsmuligheder nær Royal Birkdale og Sefton Coast-banerne — valgt for opbevaring af golftasker, tidlig morgenmad og nærhed til første tee.",
     "openCalloutTitle": "Booker du til The Open Championship 2026?",
     "openCalloutDesc": "Overnatning nær Royal Birkdale i Open-ugen (14.–20. juli 2026) er udsolgt 12–18 måneder i forvejen. Læser du dette efter marts 2026, er muligheder inden for 8 km meget begrænsede. Tjek Liverpool centrum, Ormskirk og Wigan som alternativer.",
     "openCalloutLink": "Open 2026 overnatningsguide",
@@ -441,7 +375,6 @@
   "itinerariesPage": {
     "headerBadge": "Sefton Coast",
     "pageTitle": "Golfreiseplaner",
-    "pageDesc": "Færdige golfreiseplaner for alle varighed og budgetter — fra en skarp todagerstur til den fulde femdagsrundtur. Eller brug planlæggeren til at bygge dit eget program.",
     "plannerTitle": "Golfreiseplanlægger",
     "plannerDesc": "Angiv dine dage, budget og handicap — vi matcher dig med det rigtige program.",
     "allItinerariesTitle": "Alle Planer",
@@ -457,9 +390,7 @@
     "bookViaGolfBreaksBtn": "Book via Golf Breaks ↗",
     "howToPlanTitle": "Sådan Planlægger du en Sefton Coast-golfrejse",
     "howToPlanPara1": "Sefton Coast-banerne er klumpet nok til, at en todagerstur kan dække to eller tre runder uden besværlig logistik. Royal Birkdale og Hillside ligger bogstaveligt talt ved siden af hinanden — du kunne næsten gå imellem dem. Southport & Ainsdale er fem kilometer længere mod syd. Formby er otte kilometer fra Birkdale via A565.",
-    "howToPlanPara2": "For flerdagsrejser, tag Southport som base. Byen har det bredeste hoteludbud, og alt fra Lord Street til Birkdale er inden for taxiafstand. Ønsker du roligere og billigere overnatning er Formby village 20 minutter mod syd et godt alternativ med solide B&B-muligheder.",
-    "howToPlanPara3": "Rækkefølgen betyder noget. Spil ikke Royal Birkdale først — resten af turen vil du sammenligne med den. Byg op: start med Old Links eller S&A, fortsæt til Hillside dag to, anlæg på Birkdale når du har fundet dine linksbeen. Kontrasten gør, at finalen føles fortjent.",
-    "howToPlanPara4": "Book starttider inden du tager af sted. Royal Birkdale er fuldt booket uger i forvejen, Hillside to til fire uger, S&A og Old Links kan du ofte booke en uge i forvejen. Formby kræver forudgående kontakt med klubsekretæren — der er ingen onlinebooking."
+    "howToPlanPara2": "For flerdagsrejser, tag Southport som base. Byen har det bredeste hoteludbud, og alt fra Lord Street til Birkdale er inden for taxiafstand. Ønsker du roligere og billigere overnatning er Formby village 20 minutter mod syd et godt alternativ med solide B&B-muligheder."
   },
   "conditions": {
     "pageTitle": "Sefton Coast Baneforhold",
@@ -474,9 +405,7 @@
     "notes": "Bemærkninger"
   },
   "conditionsPage": {
-    "headerBadge": "Daglig Opdatering",
     "pageTitle": "Baneforhold",
-    "pageDesc": "Aktuelle spilforhold på alle seks Sefton Coast-baner — opdateres manuelt hver morgen kl. 7:30. Tjek inden du tager af sted.",
     "aboutLinksTitle": "Om Linksforhold",
     "aboutLinksPara1": "Linksgolfforhold er fundamentalt anderledes end parklandsgolf. De vigtigste variabler er vindretning og -styrke, seneste nedbør og dræning samt fasthed af greenstørven. En fast, tør bane spiller helt anderledes end en blød, fugtig — indkommende bolde stopper ikke, bolden løber længere fra teet og chippet kræver mere kreativitet.",
     "aboutLinksPara2": "Sefton Coast-banerne dræner godt af naturlige årsager — de er bygget på sand. Selv efter kraftige regnskyl restituerer Royal Birkdale og Hillside normalt hurtigere end indlandsbaner. Southport & Ainsdale og West Lancashire kan holde på vandet lidt længere på grund af deres terræn. Formby's skovpartier tørrer hurtigst.",
@@ -496,8 +425,7 @@
     "pressMediaLinkText": "Churchtown Media Ltd",
     "beforeContactTitle": "Inden du kontakter os",
     "beforeContactItem1": "→ For booking af starttider, kontakt klubberne direkte — vi er en guide, ikke en bookingsplatform.",
-    "beforeContactItem2": "→ For Open Championship-billetter, besøg TheOpen.com.",
-    "beforeContactItem3": "→ For Royal Birkdale besøgshenvendelser, ring direkte på 01704 552261."
+    "beforeContactItem2": "→ For Open Championship-billetter, besøg TheOpen.com."
   },
   "legalPage": {
     "privacyTitle": "Privatlivspolitik",
@@ -524,7 +452,6 @@
     "courseGuidesBtn": "Baneguider"
   },
   "footer": {
-    "tagline": "Den definitive linksgolfguide til Sefton Coast — Royal Birkdale, Hillside, Formby og det bedste af engelsk linksgolf.",
     "builtBy": "Bygget af Churchtown Media",
     "builtByLink": "Bygget af Churchtown Media ↗",
     "networkLabel": "Sefton Coast-netværk",
@@ -536,7 +463,6 @@
     "formbyGuide": "FormbyGuide.co.uk",
     "coursesHeading": "Baner",
     "openHeading": "The Open 2026",
-    "openDesc": "The Open Championship vender tilbage til Royal Birkdale, Southport i juli 2026 — første gang siden Jordan Spieths ikoniske sejr i 2017.",
     "openGuideBtn": "Open 2026 Guide →",
     "languagesHeading": "Sprog",
     "privacyLink": "Privatliv",
@@ -557,24 +483,8 @@
     "courseOldLinks": "Southport Old Links"
   },
   "courseData": {
-    "royal-birkdale": {
-      "tagline": "Vært for The Open Championship 2026 — toppen af linksgolfen",
-      "description": "Royal Birkdale er den fineste linksbane, de fleste golfere nogensinde vil spille. Beliggende blandt imponerende sandklitter langs Sefton Coast har banen arrangeret ti Open Championships og rangerer konsekvent blandt verdens fem bedste. The Open 2026 vender tilbage hertil i juli — og planlægger du en golfrejse til Sefton Coast, er det her årsagen.\n\nBanen kræver kreativitet og intelligens. Fairways løber mellem stejle klitter, der kanaliserer vinden på uforudsigelige måder. Ruffen er ubarmhjertig. Greens er hurtige, subtile og placeret for at tvinge dig til at tænke på hvert indkommende slag. Det er ikke en bane, du banker dig igennem med kraft — linkserfaring hjælper enormt.\n\nBesøgsstarttider er tilgængelige, men Royal Birkdale er strenge med hensyn til både tilgængelighed og etikette. Forudbook langt i forvejen, respektér påklædningskoden og spil på dit handicapattestskrav.",
-      "visitorPolicy": "Besøgende velkomne efter tilgængelighed. Handicapattest kræves (herrer 24, damer 36). Ingen besøgende på turneringsdage."
-    },
-    "hillside": {
-      "tagline": "Englands fineste linksbane du aldrig har hørt om — indtil nu",
-      "description": "Hillside er den bedst bevarede hemmelighed langs Sefton Coast — men ikke længe endnu. Direkte tilstødende til Royal Birkdale deler den de samme dramatiske klitlandskaber, men tilbyder langt bedre besøgsadgang til en brøkdel af green fee. Golfprofessionelle, der spiller begge baner, rangerer ofte Hillsides back nine som en af de fineste i England.\n\nBanen gennemgik en gennemgribende ombygning af de sidste ni huller, som nu løber gennem spektakulær ryg-og-dal-terræn i klitterne. Layouten er logisk og banestandarden er konsekvent fremragende. Planlægger du et flerdagssprogram er Hillside dagen inden Royal Birkdale en næsten perfekt kombination.",
-      "visitorPolicy": "Besøgende velkomne de fleste hverdage og visse weekender. Handicapattest kræves."
-    },
-    "formby": {
-      "tagline": "En eksklusiv privat perle — en af Englands fineste linksgolfbaner",
-      "description": "Formby Golf Club er en af de mest eksklusive klubber langs Sefton Coast, og besøgspolitikken afspejler det. Klubben har et gensidigt arrangement med et begrænset antal klubber og håndterer besøgsanmodninger fra sag til sag — du booker ikke bare en starttid online.\n\nSelve banen er enestående. Beliggende gennem kysttalleskove med strækninger af ren hede-links er det en fundamentalt anderledes oplevelse end Royal Birkdale eller Hillside. Tallene giver læ og en distinkt visuel karakter, mens klitafsnittene er lige så udfordrende som noget langs kysten. Får du mulighed for at spille — grib den.\n\nBemærk: Formby Golf Club er en herreklubb. Formby Ladies Golf Club (tilstødende, grundlagt 1896) er en separat og ligeså prestigiøs klub med sin egen bane og en mere tilgængelig besøgspolitik.",
-      "visitorPolicy": "Begrænset besøgsadgang. Gensidige arrangementer med godkendte klubber. Kontakt klubsekretæren direkte for forespørgsler."
-    },
     "west-lancashire": {
       "tagline": "En af Englands ældste klubber — linksgolf i sin reneste form",
-      "description": "West Lancashire Golf Club, grundlagt i 1873, er blandt de ældste golfklubber i England og en af de mindst besøgte langs Sefton Coast — primært fordi den ligger lidt længere mod nord i Blundellsands, uden for det umiddelbare Southport-kluster.\n\nDet er en skam, for West Lancashire er et seriøst linkstest. Banen har en rå, uraffineret kvalitet, som purister elsker — ruffen er ægte ruf, greens er hurtige og pålidelige, og vinden fra det Irske Hav er konstant til stede. Den mangler Royal Birkdales polerede finish, men leverer en mere autentisk, elementær linksoplevelse til et betydeligt mere tilgængeligt green fee.\n\nKlubben har en lang historie med Open Championship-kval. Ønsker du at spille en genuint historisk og udfordrende links uden prismærket, er West Lancashire et stærkt valg.",
       "visitorPolicy": "Besøgende velkomne de fleste hverdage. Weekender begrænset — ring i forvejen."
     },
     "southport-ainsdale": {

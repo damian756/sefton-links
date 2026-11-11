@@ -15,53 +15,39 @@
     "coursesTitle": "セフトン・コースト ゴルフコース — Royal Birkdale、Hillside & Formby",
     "coursesDesc": "セフトン・コースト6つのリンクスコースの完全ガイド — ビジターポリシー、グリーンフィー、コースレーティング、ティータイム予約方法。",
     "openTitle": "全英オープン選手権 2026 at Royal Birkdale — ビジターガイド",
-    "openDesc": "2026年7月16日〜19日、Royal Birkdale（サウスポート）で開催される第155回全英オープン選手権の完全ガイド。歴史、歴代優勝者、チケット、宿泊、コースガイド、アクセス情報。",
     "scorecardTitle": "セフトン・コースト ゴルフ スコアカード — パー、ヤーデージ & コースレーティング",
     "scorecardDesc": "セフトン・コースト6コースの完全スコアカードデータ — 全ティーのパー、ヤーデージ、コースレーティング、スロープレーティング。Royal Birkdale、Hillside、Formby、West Lancashire、Southport & Ainsdale、Southport Old Links。",
     "teeTimesTitle": "Royal Birkdale & セフトン・コースト各クラブのティータイム予約",
-    "teeTimesDesc": "Royal Birkdale、Hillside、Formbyほかセフトン・コースト全クラブへのビジターとしてのティータイム予約方法。事前予約期間、ビジター受入曜日、直接連絡先、Formbyの複雑なゲストポリシーの解説。",
     "itinerariesTitle": "セフトン・コースト ゴルフ旅行 — 2日間・3日間・5日間プラン",
-    "itinerariesDesc": "セフトン・コーストのゴルフ旅行プリビルドプラン。Royal Birkdale、Hillside、Formbyを組み合わせた2日間、3日間、5日間コース。宿泊・食事のおすすめ付き。",
     "accommodationTitle": "Royal Birkdale近郊のゴルフ宿泊施設 — サウスポート",
     "accommodationDesc": "Royal Birkdaleとセフトン・コーストのゴルフコース近くの宿泊施設。サウスポートとバークデイルのホテル、B&B、コテージを距離別に掲載。2026年全英オープン期間中の空き状況についても案内。",
-    "conditionsTitle": "セフトン・コースト コース状態 — 日別プレー情報",
-    "conditionsDesc": "Royal Birkdale、Hillside、Formby、West Lancashire、Southport & Ainsdale、Southport Old Linksの日別プレー状態。ファーム、標準、ウェット、クローズ — 毎朝更新。",
     "contactTitle": "SeftonLinksへのお問い合わせ",
     "contactDesc": "SeftonLinksへのご質問、コース情報の修正、掲載依頼、ビジネスに関するお問い合わせ。",
     "course": {
       "royal-birkdale": {
-        "title": "Royal Birkdale Golf Club — ビジターガイド、グリーンフィー & ティータイム",
-        "desc": "全英オープン選手権 2026の開催コース。ビジターグリーンフィー £300〜£350。パー70、7,156ヤード。ビジターポリシー、予約方法の詳細ガイド。"
+        "title": "Royal Birkdale Golf Club — ビジターガイド、グリーンフィー & ティータイム"
       },
       "hillside": {
-        "title": "Hillside Golf Club サウスポート — ビジターガイド & グリーンフィー",
-        "desc": "知る人ぞ知るセフトン・コースト随一のリンクスコース。グリーンフィー £100〜£150。パー72、6,850ヤード。ビジターポリシーとコースガイド。"
+        "title": "Hillside Golf Club サウスポート — ビジターガイド & グリーンフィー"
       },
       "formby": {
-        "title": "Formby Golf Club — ビジターガイド、グリーンフィー & ティータイム",
-        "desc": "プライベートな逸品 — イングランド有数のインランドリンクス。グリーンフィー £160〜£210。パー72、6,893ヤード。ビジターポリシーと予約ガイド。"
+        "title": "Formby Golf Club — ビジターガイド、グリーンフィー & ティータイム"
       },
       "west-lancashire": {
-        "title": "West Lancashire Golf Club — ビジターグリーンフィー & ティータイム",
-        "desc": "イングランド最古のクラブのひとつ — 純粋なリンクスゴルフ。グリーンフィー £80〜£130。パー72、6,756ヤード。ビジター完全ガイド。"
+        "title": "West Lancashire Golf Club — ビジターグリーンフィー & ティータイム"
       },
       "southport-ainsdale": {
-        "title": "Southport & Ainsdale Golf Club — ビジターガイド & グリーンフィー",
-        "desc": "ライダーカップの歴史と本格的なリンクスの魅力。グリーンフィー £65〜£100。パー72、6,612ヤード。ビジターポリシーとコースガイド。"
+        "title": "Southport & Ainsdale Golf Club — ビジターガイド & グリーンフィー"
       },
       "southport-old-links": {
-        "title": "Southport Old Links Golf Club — ビジターガイド & グリーンフィー",
-        "desc": "驚くべきコストパフォーマンス — 海岸で最もお手頃な価格の本格リンクス。グリーンフィー £40〜£60。パー71、6,318ヤード。ビジター完全ガイド。"
+        "title": "Southport Old Links Golf Club — ビジターガイド & グリーンフィー"
       }
     }
   },
   "home": {
-    "heroTitle": "世界最高のリンクスゴルフ回廊",
-    "heroSubtitle": "6つのチャンピオンシップコース。一本の海岸線。全英オープン選手権が2026年7月、Royal Birkdaleに帰ってくる。",
     "heroCtaCourses": "コースを探索する",
     "heroCtaOpen": "全英オープン 2026",
     "openBanner": "全英オープン選手権 2026 — Royal Birkdale、サウスポート",
-    "openCountdownLabel": "全英オープン選手権まで",
     "coursesTitle": "セフトン・コーストのコース",
     "coursesSubtitle": "数マイルの範囲に集まる、イングランドを代表する6つのリンクスコース",
     "featuresTitle": "リンクスゴルフの旅を計画する",
@@ -73,19 +59,13 @@
     "affiliateDesc": "Golf Breaksでティータイム、ホテル、パッケージをご予約"
   },
   "homePage": {
-    "bannerText": "全英オープン選手権 2026 — Royal Birkdale、サウスポート。7月16日〜19日。",
     "bannerLink": "→ 詳細ガイド",
     "heroBadge": "セフトン・コースト · ランカシャー · イングランド",
     "heroImageAlt": "夕暮れのセフトン・コーストのゴルフコース",
     "statChampionshipCoursesLabel": "チャンピオンシップコース数",
     "statOpenChampionshipsLabel": "バークデイルでの全英オープン開催回数",
     "statOldestClubLabel": "海岸最古のクラブ",
-    "statGreenFeeRangeLabel": "グリーンフィー範囲",
     "openSectionBadge": "全英オープン選手権 2026",
-    "openSectionHeading1": "Royal Birkdale。2026年7月。",
-    "openSectionHeading2": "ゴルフ界最大のショー。",
-    "openSectionPara1": "第155回全英オープン選手権がRoyal Birkdaleに戻ってくる。このコースはゴルフ史上最もドラマチックな瞬間をいくつも生み出してきた。1961年のアーノルド・パーマーの伝説的リカバリー。1983年にトム・ワトソンが手にした5つ目のクラレットジャグ。2017年にジョーダン・スピースが飾ったワイヤー・トゥ・ワイヤーの勝利。",
-    "openSectionPara2": "セフトン・コーストへのリンクスゴルフ旅行を計画するなら、全英オープンウィークが最高の機会です。20マイル以内の宿泊施設は12ヶ月以上前から予約が埋まります。今すぐ計画を。",
     "openSectionCtaBtn": "全英オープン 2026 — 詳細ガイド",
     "pastChampionsHeading": "Royal Birkdaleの歴代優勝者",
     "courseCardEstFounded": "創設 {year}年",
@@ -98,45 +78,35 @@
     "toolsSectionTitle": "セフトン・コースト訪問を計画する",
     "toolsSectionSubtitle": "ビジターゴルファーのために設計されたツール — コースを知り尽くしたローカルではなく、初めて訪れる方のために。",
     "tool1Title": "コース状態",
-    "tool1Desc": "全6コースのリアルタイム状態 — ファーム、標準、ウェット、クローズ。風速・風向き。毎朝手動更新。",
     "tool1Cta": "状態を確認する",
     "tool2Title": "ゴルフ旅行プランナー",
     "tool2Desc": "日数、予算、ハンディキャップレベルを入力すると、推奨コース順、宿泊施設、食事付きのプリビルドプランが表示されます。",
     "tool2Cta": "旅行を計画する",
     "tool3Title": "ティータイムガイド",
-    "tool3Desc": "全コースのビジターポリシー — ビジターを受け入れる曜日、予約の必要期間、直接連絡先。Formbyの複雑なポリシーをわかりやすく解説。",
     "tool3Cta": "ティータイムガイドを見る",
     "tool4Title": "スコアカードデータベース",
     "tool4Desc": "全6コースの完全スコアカードデータ — 全ティーのパー、ヤーデージ、コースレーティング、スロープレーティング。事前に期待値を設定するために。",
     "tool4Cta": "スコアカードを見る",
     "tool5Title": "ゴルファー向け宿泊施設",
-    "tool5Desc": "コースから近い厳選宿泊施設 — 早朝ティータイム対応、クラブ保管、ラウンド後の施設完備。Royal Birkdaleからの距離順。",
     "tool5Cta": "宿泊施設を探す",
     "tool6Title": "ゴルフ旅行プラン",
     "tool6Desc": "コース順、宿泊提案、ラウンド後の食事付き2日間・3日間・5日間のプリビルドプラン。予算重視からチャンピオンシップクラスまで。",
     "tool6Cta": "プランを見る",
     "affiliateCtaTitle": "セフトン・コースト旅行の準備はできていますか？",
-    "affiliateCtaDesc": "Golf Breaksは英国最大手のゴルフ旅行専門プラットフォームです — S&Aでの週末から全英オープンをフィナーレとする一週間まで、セフトン・コーストのティータイム、ホテル、パッケージを取り扱っています。",
     "affiliateCtaBtn1": "Golf Breaksパッケージを見る ↗",
     "affiliateCtaBtn2": "自分だけのプランを作る",
     "affiliateCtaDisclaimer": "Golf Breaksアフィリエイトリンク — 追加料金なしでコミッションが発生します。",
     "editorialTitle": "なぜセフトン・コーストなのか？",
     "editorialPara1": "リンクスゴルフの聖地といえばスコットランドが注目されます — セント・アンドリュース、カーヌスティー、ミュアフィールド。セフトン・コーストはその陰に隠れがちです。しかし、それこそが訪問ゴルファーにとってのチャンスです。",
-    "editorialPara2": "10マイルの海岸線に、Royal Birkdale（世界トップ5の常連）からSouthport Old Links（£40で本格ゴルフ）まで、6つの本物のリンクスコースが揃っています。1週間、毎日異なるコースを回ることができ、バリエーションは驚くほど豊富です。バークデイルのドラマチックなウィローダウン越えのフェアウェイ。ヒルサイドの尾根と谷の地形。Formbyの海岸松林。Irish Seaの荒風に晒されるWest Lancashire。",
-    "editorialPara3": "スコットランドと比べたセフトン・コーストの実用的なメリットは明確です：リバプールとマンチェスターの空港を通じてヨーロッパ大陸や北米からのアクセスが容易で、宿泊費はお値頃、同等品質のスコットランドのコースよりビジターへのアクセスが良好です。Royal BirkdaleはMuirfieldより安く、予約も取りやすい。",
-    "editorialPara4": "そして2026年7月、世界の注目がここに集まります。全英オープン選手権がRoyal Birkdaleに帰ってきます — 2017年にスピースがドロップゾーンから奇跡的に脱出した舞台、ワトソンが圧倒的強さを見せた1983年、そしてゴルフにおけるスポーツマンシップを定義した1969年のライダーカップ。イングランドでリンクスゴルフを楽しむ旅を考えているなら、今がその時です。",
     "featureCard1Title": "アクセス良好",
     "featureCard1Text": "リバプール空港から45分、マンチェスターから60分。リバプール市内からサウスポートへの直通鉄道あり。",
     "featureCard2Title": "ビジターフレンドリー",
     "featureCard2Text": "6コース中4つがビジターを積極的に受け入れています。同品質のスコットランドのコースより良好なアクセス。",
-    "featureCard3Title": "優れたコストパフォーマンス",
-    "featureCard3Text": "グリーンフィーはOld Linksの£40からBirkdaleの£350まで。同等のスコットランドのコースはすべての価格帯でより高額です。",
     "southportGuideDesc": "サウスポートのホテル、レストラン、観光情報 — セフトン・コーストゴルフ旅行の拠点となる町のガイド。",
     "formbyGuideDesc": "Formbyの完全ガイド — ナショナルトラストの松林、アカリス、ラウンドの合間に訪れる村。"
   },
   "courses": {
     "pageTitle": "セフトン・コースト ゴルフコース",
-    "pageDesc": "Royal Birkdale、Hillside、Formby、West Lancashire、Southport & Ainsdale、Southport Old Linksの決定版ガイド",
     "greenFee": "グリーンフィー",
     "par": "パー",
     "yardage": "ヤーデージ",
@@ -222,8 +192,6 @@
   },
   "open": {
     "pageTitle": "全英オープン選手権 2026 — Royal Birkdale",
-    "pageDesc": "Royal Birkdale、サウスポートで開催される第155回全英オープン選手権のガイド。歴史、チケット、宿泊、コースガイド。",
-    "countdown": "全英オープンまでのカウントダウン",
     "dates": "2026年7月16日〜19日",
     "venue": "Royal Birkdale Golf Club、サウスポート",
     "historyTitle": "Royal Birkdaleと全英オープン",
@@ -235,27 +203,19 @@
     "seconds": "秒"
   },
   "openPage": {
-    "heroBadge": "第155回全英オープン選手権",
     "heroTitle1": "全英オープン選手権",
     "heroTitle2": "Royal Birkdale 2026",
     "heroBtn1": "TheOpen.comでチケットを入手 ↗",
     "heroBtn2": "Royal Birkdale コースガイド",
     "aboutTitle": "Royal Birkdaleでの全英オープン選手権",
-    "aboutPara1": "全英オープン選手権 — ゴルフ史上最古のメジャーであり、北米以外で唯一開催される大会 — が2026年7月に11度目のRoyal Birkdale開催を迎えます。これほど多く開催されたオープンのコースは他になく、コースの品質と大規模大会開催に対する優れたロジスティクス適性が高く評価されている証しです。",
     "aboutPara2": "Royal Birkdaleは真のリンクスです。そびえ立つ砂丘の間にフェアウェイが続き、海からの風が予測できない方向に吹き込んできます。バークデイル名物のウィロースクラブのラフは厳しいながらも攻略可能。グリーンは小さく速く、微妙なアンジュレーションがあります。チャンピオンシップコンディションでは天候が味方してくれた場合のみイーブンパー前後でのフィニッシュが可能で、そうでなければ世界最難関のテストの一つとなります。",
-    "aboutPara3": "2017年の全英オープンは近年最もドラマチックなフィニッシュをもたらしました。ワイヤー・トゥ・ワイヤーでリードしていたジョーダン・スピースが13番でTV機材のあるエリアにティーショットを打ち込み、トリプルボギー。その後のドロップゾーンルールの適用とホールに数フィートまで寄せる見事なピッチが、現代のメジャーゴルフを象徴する1シーンとなりました。",
     "aboutPara4": "ゴルフ観光客にとって、Royal Birkdaleでの全英オープンは唯一無二の機会です：世界最高峰のゴルフ大会が、イングランド最高のリンクスコースで、コンパクトでアクセスしやすい環境の中で開催されます。コース全体の観戦アクセスは優れており、雰囲気はまさに英国らしく、フード＆エンタメエリアも年々充実しています。",
     "pastChampionsTitle": "Royal Birkdaleの歴代優勝者",
     "lastWinnerBadge": "前回優勝者",
-    "champNote2017": "ワイヤー・トゥ・ワイヤー — 13番ドロップゾーン脱出が語り継がれる伝説に",
     "champNote2008": "2年連続でのクラレットジャグ獲得",
-    "champNote1998": "41歳でのファーストメジャー",
     "champNote1991": "最終ラウンド前半9ホールで29",
     "champNote1983": "5度目で最後の全英オープン優勝",
-    "champNote1976": "ワイヤー・トゥ・ワイヤーの完勝",
-    "champNote1971": "6週間で3つのメジャー連続制覇",
     "champNote1965": "5度目の全英オープン制覇",
-    "champNote1961": "15番のブッシュからのパーマーの伝説的アイアンリカバリー",
     "champNote1954": "5度の全英オープン制覇の始まり",
     "ticketsAlertTitle": "チケットはTheOpen.comのみで販売",
     "ticketsAlertDesc": "R&Aがすべてのチケットを直接販売しています。公式の第三者販売業者は存在しません。チャンピオンシップデーのチケット（木〜日）は発売直後に完売することが多く、数時間で売り切れることもあります。今すぐTheOpen.comでR&Aウェイティングリストと抽選に登録してください。",
@@ -311,13 +271,8 @@
     "spectatorTipsItem4": "バークデイルの自然の砂丘スタンドは歩きやすい靴が必須",
     "spectatorTipsItem5": "R&Aアプリでリアルタイムリーダーボードと選手追跡が可能",
     "playCourseTitle": "コースでプレーする",
-    "playCourseItem1": "ビジターのティータイムは大会設営撤去後に再開",
-    "playCourseItem2": "全英オープン後のティータイムは予約が殺到 — Royal Birkdaleへ直接連絡を",
-    "playCourseItem3": "HillsideやS&Aと組み合わせてBirkdaleエリアを完全周遊",
-    "playCourseItem4": "キャディ手配可能 — プレミアム体験のためには十分前もって予約を",
     "quickFactsTitle": "クイックファクト",
     "factLabelChampNumber": "大会番号",
-    "factValueChampNumber": "第155回全英オープン",
     "factLabelVenue": "会場",
     "factValueVenue": "Royal Birkdale GC",
     "factLabelLocation": "所在地",
@@ -326,8 +281,6 @@
     "factValueDates": "2026年7月16日〜19日",
     "factLabelPracticeDays": "練習日",
     "factValuePracticeDays": "2026年7月13日〜15日",
-    "factLabelDefendingChamp": "ディフェンディングチャンピオン",
-    "factValueDefendingChamp": "ブライアン・ハーマン（2023年）",
     "factLabelOrganiser": "主催",
     "factValueOrganiser": "The R&A",
     "factLabelTimesHosted": "バークデイルでの開催回数",
@@ -341,28 +294,11 @@
     "bookAccomDesc": "後回しにしないでください。全英オープン週の宿泊はすぐに満室になります。Booking.comで最多の選択肢とフレキシブルなキャンセルポリシーをご確認ください。",
     "bookAccomBtn": "サウスポートのホテルを検索 ↗",
     "bookAccomAffiliate": "Booking.comアフィリエイトリンク",
-    "playBirkdaleTitle": "Royal Birkdaleでプレーする",
-    "playBirkdaleDesc": "全英オープンの前後にラウンドを計画中ですか？グリーンフィー、ビジターポリシー、予約ガイド。",
     "playBirkdaleLink": "Royal Birkdale コースガイド"
   },
   "teeTimesPage": {
     "headerBadge": "ビジターガイド",
     "pageTitle": "ティータイムの取り方",
-    "pageDesc": "各コースのビジターポリシー、予約プロセス、当日の流れ — Formby Golf Clubの特に複雑なプロセスも、わかりやすく解説。",
-    "formbyCalloutTitle": "Formby Golf Club — 最も複雑なコース",
-    "formbyCalloutIntro": "Formby Golf Clubはセフトン・コーストの中で最もビジターが混乱するコースです。全貌をご説明します：",
-    "formbyPoint1Title": "男性のみ。",
-    "formbyPoint1Text": "Formby Golf Clubは男性専用の私立クラブです。伝統的な英国のゴルフクラブとしては珍しくありませんが、混合グループで訪れる前に知っておくべき点です。",
-    "formbyPoint2Title": "オンライン予約不可。",
-    "formbyPoint2Text": "ウェブサイトにティータイム予約システムはありません。クラブセクレタリーに直接書面または電話で連絡する必要があります。",
-    "formbyPoint3Title": "相互協定制度。",
-    "formbyPoint3Text": "入場は主に正式な相互協定を持つクラブを通じて行われます。ホームクラブのセクレタリーにFormbyとの協定があるか確認してください。",
-    "formbyPoint4Title": "紹介状が有効。",
-    "formbyPoint4Text": "ホームクラブのプロフェッショナルまたはセクレタリーからの正式な紹介状があると、ビジターアクセスの可能性が大幅に高まります。",
-    "formbyPoint5Title": "Formby Ladies Golf Clubは別組織。",
-    "formbyPoint5Text": "隣接していますが完全に独立したクラブです — 独自のコース、メンバー、ビジターポリシーを持ちます。男性クラブより訪問しやすい環境です。",
-    "formbyPoint6Title": "努力の価値あり。",
-    "formbyPoint6Text": "入場できれば、ぜひプレーを。コースは卓越しています — 松林と砂丘リンクスが唯一無二の形で融合しています。",
     "allCoursesTitle": "ビジターポリシー — 全コース",
     "difficultyRestricted": "限定的",
     "difficultyByArrangement": "要相談",
@@ -378,7 +314,6 @@
     "tip1Title": "常にハンディキャップ証明書を携行する",
     "tip1Text": "セフトン・コーストのすべてのコース（Southport Old Links以外）はハンディキャップ証明書が必要です。全国ゴルフ協会のカードまたはEGAカードが使用できます。",
     "tip2Title": "特に夏は早めに予約する",
-    "tip2Text": "セフトン・コーストは6〜9月が繁忙期です。Royal BirkdaleとHillsideはピークシーズン4〜8週前に満杯になります。当日飛び込みは期待しないでください。",
     "tip3Title": "ドレスコードはどこでも適用される",
     "tip3Text": "全クラブでスマートカジュアル以上。デニム、スニーカー、Tシャツは多くのクラブで不可。クラブハウスではカラーシャツとテーラードズボンが必要なクラブも。",
     "tip4Title": "30分早く到着する",
@@ -391,7 +326,6 @@
   "accommodationPage": {
     "headerBadge": "ゴルファー向け宿泊施設",
     "pageTitle": "ゴルファー向け宿泊施設",
-    "pageDesc": "Royal Birkdaleとセフトン・コーストのコース近くの厳選宿泊施設 — クラブ保管、早朝朝食、1番ティーへの近さを基準に選定。",
     "openCalloutTitle": "全英オープン選手権 2026の宿泊予約をお考えの方へ",
     "openCalloutDesc": "全英オープン週（2026年7月14日〜20日）のRoyal Birkdale近くの宿泊施設は12〜18ヶ月前に完売します。2026年3月以降にお読みの方は、5マイル以内の選択肢は非常に限られています。リバプール市内、オームズカーク、ウィガンも代替オプションとしてご検討ください。",
     "openCalloutLink": "全英オープン 2026 宿泊ガイド",
@@ -441,7 +375,6 @@
   "itinerariesPage": {
     "headerBadge": "セフトン・コースト",
     "pageTitle": "ゴルフ旅行プラン",
-    "pageDesc": "あらゆる日程と予算に対応するプリビルドのゴルフ旅行プラン — 2日間のショートトリップから5コース完全制覇まで。またはプランナーを使って自分だけのプランを作成。",
     "plannerTitle": "ゴルフ旅行プランナー",
     "plannerDesc": "日数、予算、ハンディキャップを入力 — 最適なプランをご提案します。",
     "allItinerariesTitle": "すべてのプラン",
@@ -457,9 +390,7 @@
     "bookViaGolfBreaksBtn": "Golf Breaksで予約 ↗",
     "howToPlanTitle": "セフトン・コーストゴルフ旅行の計画方法",
     "howToPlanPara1": "セフトン・コーストのコースは十分に近く、2日間の旅程で難しいロジスティクスなしに2〜3ラウンドをこなせます。Royal BirkdaleとHillsideは文字通り隣り合っています — 歩いて移動できます。Southport & Ainsdaleはそこから3マイル南。FormbyはA565経由でBirkdaleから5マイルです。",
-    "howToPlanPara2": "複数日の旅行はサウスポートを拠点にしてください。最も多くのホテルが揃っており、ロードストリートからバークデイルまですべてタクシーの距離です。静かで安い宿泊をご希望なら、Formby村は南に20分で、良いB&Bのオプションがあります。",
-    "howToPlanPara3": "コースの順番が大切です。Royal Birkdaleを最初にプレーしないでください — その後の旅程でずっとそれと比較してしまいます。徐々にステップアップ：最初にOld LinksまたはS&A、2日目にHillside、そしてリンクス感をつかんだ後にBirkdaleでフィナーレ。そのコントラストが最終日を最高の体験にします。",
-    "howToPlanPara4": "到着前にティータイムを予約してください。Royal Birkdaleは数週間前に埋まり、Hillsideは2〜4週間前、S&AとOld Linksは1週間前でも取れることが多い。FormbyはクラブセクレタリーへのADVANCE連絡が必要 — オンライン予約はありません。"
+    "howToPlanPara2": "複数日の旅行はサウスポートを拠点にしてください。最も多くのホテルが揃っており、ロードストリートからバークデイルまですべてタクシーの距離です。静かで安い宿泊をご希望なら、Formby村は南に20分で、良いB&Bのオプションがあります。"
   },
   "conditions": {
     "pageTitle": "セフトン・コースト コース状態",
@@ -474,9 +405,7 @@
     "notes": "備考"
   },
   "conditionsPage": {
-    "headerBadge": "毎日更新",
     "pageTitle": "コース状態",
-    "pageDesc": "セフトン・コースト全6コースの現在のプレーコンディション — 毎朝7時30分までに手動更新。出発前に必ずご確認ください。",
     "aboutLinksTitle": "リンクスのコンディションについて",
     "aboutLinksPara1": "リンクスゴルフのコンディションはパークランドゴルフとは根本的に異なります。主な変動要因は風向きと風力、最近の降水量と排水状況、芝の固さです。固く乾燥したコースと湿って柔らかいコースでは、アプローチショットの止まり方、ティーショットのランの距離、チッピングの創造性が完全に異なります。",
     "aboutLinksPara2": "セフトン・コーストのコースは設計的に排水性が高く — 砂地の上に作られています。大雨の後でも、Royal BirkdaleとHillsideは通常、内陸コースより素早く回復します。Southport & AinsdaleとWest Lancashireは地形の関係で少し水が引くのに時間がかかる場合があります。Formbyの林間エリアは最も速く乾きます。",
@@ -496,8 +425,7 @@
     "pressMediaLinkText": "Churchtown Media Ltd",
     "beforeContactTitle": "お問い合わせ前のご確認",
     "beforeContactItem1": "→ ティータイムの予約については、各クラブに直接ご連絡ください — 当サイトはガイドであり、予約プラットフォームではありません。",
-    "beforeContactItem2": "→ 全英オープンのチケットについては、TheOpen.comをご覧ください。",
-    "beforeContactItem3": "→ Royal Birkdaleのビジターに関するお問い合わせは、01704 552261に直接お電話ください。"
+    "beforeContactItem2": "→ 全英オープンのチケットについては、TheOpen.comをご覧ください。"
   },
   "legalPage": {
     "privacyTitle": "プライバシーポリシー",
@@ -524,7 +452,6 @@
     "courseGuidesBtn": "コースガイド"
   },
   "footer": {
-    "tagline": "セフトン・コーストのリンクスゴルフ決定版ガイド — Royal Birkdale、Hillside、Formby、そしてイングランドリンクスゴルフの真髄。",
     "builtBy": "Churchtown Mediaが制作",
     "builtByLink": "Churchtown Mediaが制作 ↗",
     "networkLabel": "セフトン・コーストネットワーク",
@@ -536,7 +463,6 @@
     "formbyGuide": "FormbyGuide.co.uk",
     "coursesHeading": "コース",
     "openHeading": "全英オープン 2026",
-    "openDesc": "全英オープン選手権が2026年7月、Royal Birkdale（サウスポート）に帰ってくる — ジョーダン・スピースの伝説的な勝利から2017年以来初。",
     "openGuideBtn": "全英オープン 2026 ガイド →",
     "languagesHeading": "言語",
     "privacyLink": "プライバシー",
@@ -557,24 +483,8 @@
     "courseOldLinks": "Southport Old Links"
   },
   "courseData": {
-    "royal-birkdale": {
-      "tagline": "2026年全英オープン選手権の舞台 — リンクスゴルフの究極の頂点",
-      "description": "Royal Birkdaleは、ほとんどのゴルファーが生涯でプレーする中で最も偉大なリンクスコースです。セフトン・コーストにそびえる砂丘の中に設けられ、10回の全英オープン選手権を開催し、世界トップ5に常にランクインし続けています。2026年の全英オープンが7月にここに帰ってくる — セフトン・コーストへのゴルフ旅行を計画するなら、これがその理由です。\n\nコースは創造性と知性を要求します。急峻な砂丘の間にフェアウェイが続き、海からの風が予測できない方向に吹き込んできます。ラフは手強い。グリーンは速く、繊細で、すべてのアプローチを深く考えさせるように設置されています。力任せに攻略できるコースではなく、リンクスの経験が大いに助けになります。\n\nビジターのティータイムは利用可能ですが、Royal Birkdaleは空き状況とエチケットの両方について厳格です。十分前もって予約し、ドレスコードを守り、ハンディキャップ証明書の要件に従ってください。",
-      "visitorPolicy": "空き状況に応じてビジター歓迎。ハンディキャップ証明書必須（男性24、女性36）。競技開催日はビジター不可。"
-    },
-    "hillside": {
-      "tagline": "これまで知られていなかったセフトン・コースト最高のリンクス — 今こそ知る時",
-      "description": "Hillsideはセフトン・コーストで最も知られていない名コースです — ただし、それも長くは続かないでしょう。Royal Birkdaleのすぐ隣に位置し、同じドラマチックな砂丘地帯を共有しながら、グリーンフィーのほんの一部でビジターへの大幅に良好なアクセスを提供しています。両コースをプレーしたゴルフプロたちはHillsideのバックナインをイングランドで最も素晴らしいものの一つとして評価することが多い。\n\nコースは最後の9ホールで大きな再開発が行われ、砂丘を通るスペクタキュラーな尾根と谷の地形を抜けるルーティングになりました。ルーティングは論理的で、コースコンディションは常に優秀です。複数日のプランを組む場合、Royal Birkdaleの前日にHillsideは黄金の組み合わせです。",
-      "visitorPolicy": "平日のほとんどと一部の週末にビジター歓迎。ハンディキャップ証明書必須。"
-    },
-    "formby": {
-      "tagline": "プライベートな逸品 — イングランド有数のインランドリンクス",
-      "description": "Formby Golf Clubはセフトン・コーストで最もエクスクルーシブなクラブのひとつで、そのビジターポリシーもそれを反映しています。クラブは限られた数のクラブとの相互協定を持ち、ビジターの要望はケースバイケースで対応します — 単純にオンラインでティータイムを予約することはできません。\n\nコース自体は卓越しています。海岸の松林を抜け、純粋なヒースランドリンクスの区間を経て、Royal BirkdaleやHillsideとは根本的に異なる体験ができます。松の木が独特の視覚的個性と風よけを提供し、砂丘のセクションは海岸のどこにも劣らない挑戦的なホールを持っています。入場できるなら、ぜひプレーを。\n\n注：Formby Golf Clubは男性専用クラブです。隣接するFormby Ladies Golf Club（1896年創設）は完全に別組織で、独自のコースと男性クラブよりもアクセスしやすいビジターポリシーを持っています。",
-      "visitorPolicy": "限定的なビジターアクセス。承認済みクラブとの相互協定のみ。直接クラブセクレタリーにお問い合わせください。"
-    },
     "west-lancashire": {
       "tagline": "イングランド最古のクラブのひとつ — 純粋なリンクスゴルフ",
-      "description": "1873年創設のWest Lancashire Golf Clubはイングランドで最も歴史あるゴルフクラブのひとつであり、セフトン・コーストで最も訪問者が少ないコースのひとつです — 主にBlundellsandsのサウスポートクラスターからやや北に位置するためです。\n\nこれは残念なことです。なぜならWest Lancashireは真剣なリンクステストを提供するからです。コースには純粋主義者が好む生の、手を加えていない質感があります — ラフは本物のラフ、グリーンは速く正確、そしてIrish Seaからの風は常にあります。Royal Birkdaleの手入れされた洗練さには欠けますが、より真正で原始的なリンクス体験を大幅にアクセスしやすいグリーンフィーで提供しています。\n\nこのクラブは全英オープン予選と長い歴史を持っています。プレミアム価格なしで真に歴史的で挑戦的なリンクスをプレーしたいなら、West Lancashireは強力な選択肢です。",
       "visitorPolicy": "平日のほとんどでビジター歓迎。週末は限定的 — 事前に電話でご確認ください。"
     },
     "southport-ainsdale": {

@@ -4,6 +4,11 @@ import type { Metadata } from 'next';
 import { buildAlternates, buildOg } from '@/lib/metadata';
 import { getSouthportWeather } from '@/lib/weather';
 import { CONDITIONS_DATA, CONDITIONS_UPDATED } from '@/lib/conditions-data';
+import { COURSES } from '@/lib/courses';
+
+// Re-render at least hourly so today's date and the 7-day check on the course notes
+// stay current without a redeploy.
+export const revalidate = 3600;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -53,6 +58,7 @@ export default async function ConditionsPage({ params }: { params: Promise<{ loc
           updatedDate={updatedDate}
           notesUpdated={notesUpdated}
           notesCurrent={notesCurrent}
+          clubWebsites={Object.fromEntries(COURSES.map((c) => [c.slug, c.website]))}
         />
 
         <div className="mt-12 bg-white border border-[#E8E3D8] rounded-xl p-6">

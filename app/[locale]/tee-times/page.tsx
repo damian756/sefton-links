@@ -23,7 +23,9 @@ export default async function TeeTimesPage({ params }: { params: Promise<{ local
   const prefix = locale === 'en' ? '' : `/${locale}`;
   const t = await getTranslations({ locale, namespace: 'teeTimesPage' });
 
-  const sortedCourses = [...COURSES].sort((a, b) => b.greenFeeFrom - a.greenFeeFrom);
+  // The site's usual course order (Royal Birkdale first). It used to be sorted by fee, which
+  // gave the same order until clubs stopped publishing some visitor rates.
+  const sortedCourses = COURSES;
 
   const tips = [
     { title: t('tip1Title'), text: t('tip1Text') },
