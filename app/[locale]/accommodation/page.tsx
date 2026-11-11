@@ -22,9 +22,9 @@ const ACCOMMODATION = [
     area: 'Birkdale & Southport Centre',
     distanceFromBirkdale: '< 2 miles',
     options: [
-      // Named hotels: only what each hotel's own website says (boldhotel.com,
-      // thevincenthotel.com, formbyhallgolfresort.co.uk, read 11 Nov 2026). No rates
-      // anywhere on this page: they change, so readers check the hotel's site.
+      // Named hotels: only what each hotel's own website says (read 11 Nov 2026).
+      // No links to the hotels (see lib/blocked-domains.ts) and no rates anywhere
+      // on this page: rates change, so readers check with the hotel.
       {
         name: 'The Bold Hotel',
         type: 'Hotel',
