@@ -17,6 +17,7 @@ import {
   fromOnOwnDomain,
   logSendError,
   plainAddress,
+  sendEnquiry,
 } from '../lib/enquiry-email.ts';
 import { DELIVERY_EMAIL, DISPLAY_EMAIL } from '../lib/contact.ts';
 import { CONTACT_SUBJECTS, LIMITS, isContactSubject } from '../lib/contact-form.ts';
@@ -80,10 +81,45 @@ test('the contact route delivers to DELIVERY_EMAIL with reply-to set to the enqu
 
 test('the contact route sends one email only (no auto-reply), checks the result and logs errors', () => {
   const src = read(ROUTE);
-  assert.equal((src.match(/resend\.emails\.send\(/g) ?? []).length, 1);
-  assert.match(src, /const \{ error \} = await resend\.emails\.send\(mail\);/);
-  assert.ok((src.match(/logSendError\(/g) ?? []).length >= 2);
+  assert.equal((src.match(/sendEnquiry\(/g) ?? []).length, 1, 'one send');
+  assert.equal((src.match(/\.emails\.send\(/g) ?? []).length, 0, 'no send outside sendEnquiry');
+  assert.match(src, /const sent = await sendEnquiry\(new Resend\(apiKey\), mail\);\s*if \(!sent\) return bad\(/);
+  const helper = read('lib/enquiry-email.ts');
+  assert.equal((helper.match(/\.emails\.send\(/g) ?? []).length, 1);
   assert.match(src, /if \(!apiKey\) \{\s*console\.error\(/, 'logs a missing RESEND_API_KEY');
+});
+
+test('sendEnquiry logs a returned error, logs a thrown error, and reports success', async () => {
+  const mail = buildEnquiryEmail(
+    { name: 'Jo', email: 'jo@example.com', subject: 'General question', message: 'Hello there, a question.' },
+    { from: DEFAULT_FROM, to: 'inbox@example.com', replyTo: 'jo@example.com' },
+  );
+  const lines = [];
+  const log = (l) => lines.push(l);
+  const sent = [];
+  const returnsError = { emails: { send: async (m) => { sent.push(m); return { data: null, error: { name: 'validation_error', message: 'Domain not verified' } }; } } };
+  assert.equal(await sendEnquiry(returnsError, mail, log), false);
+  assert.deepEqual(lines, ['[contact] enquiry email failed: validation_error: Domain not verified']);
+  const throws = { emails: { send: async () => { throw new Error('network down'); } } };
+  assert.equal(await sendEnquiry(throws, mail, log), false);
+  assert.equal(lines[1], '[contact] enquiry email failed: Error: network down');
+  const works = { emails: { send: async (m) => { sent.push(m); return { data: { id: 'x' }, error: null }; } } };
+  assert.equal(await sendEnquiry(works, mail, log), true);
+  assert.equal(lines.length, 2, 'nothing logged on success');
+  assert.equal(sent.length, 2, 'one call per send');
+  assert.equal(sent[1].to, 'inbox@example.com');
+});
+
+test('the route answers errors with a code the form translates', () => {
+  const src = read(ROUTE);
+  for (const code of ['name', 'email', 'subject', 'message', 'unavailable']) {
+    assert.match(src, new RegExp(`bad\\('${code}'`), code);
+  }
+  const form = read(FORM);
+  assert.match(form, /byCode\[json\.code\]/);
+  for (const key of ['errorName', 'errorEmail', 'errorSubject', 'errorMessage']) {
+    assert.match(form, new RegExp(`labels\\.${key}`), key);
+  }
 });
 
 test('the contact route sends from our own domain and never from a provider test sender', () => {
@@ -114,7 +150,7 @@ test('honeypot: the form has a hidden "website" field and the route sends nothin
   const src = read(ROUTE);
   const honeypot = src.indexOf("body.website.trim() !== ''");
   assert.ok(honeypot > 0, 'checks the honeypot');
-  assert.ok(honeypot < src.indexOf('resend.emails.send('), 'before any send');
+  assert.ok(honeypot < src.indexOf('sendEnquiry('), 'before any send');
   assert.match(src, /if \(typeof body\.website === 'string' && body\.website\.trim\(\) !== ''\) \{\s*return NextResponse\.json\(\{ ok: true \}\);\s*\}/);
 });
 

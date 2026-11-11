@@ -16,6 +16,11 @@ type Labels = {
   sentTitle: string;
   sentText: string;
   errorText: string;
+  /** Messages for the route's error codes; anything else shows errorText. */
+  errorName: string;
+  errorEmail: string;
+  errorSubject: string;
+  errorMessage: string;
 };
 
 const field =
@@ -57,11 +62,18 @@ export default function ContactForm({
           website: data.get('website'),
         }),
       });
-      const json = (await res.json().catch(() => ({}))) as { ok?: boolean; error?: string };
+      const json = (await res.json().catch(() => ({}))) as { ok?: boolean; code?: string };
       if (res.ok && json.ok) {
         setStatus('sent');
       } else {
-        setError(json.error || labels.errorText);
+        // The route answers with a code, so the message is in the page's language.
+        const byCode: Record<string, string> = {
+          name: labels.errorName,
+          email: labels.errorEmail,
+          subject: labels.errorSubject,
+          message: labels.errorMessage,
+        };
+        setError((json.code && byCode[json.code]) || labels.errorText);
         setStatus('error');
       }
     } catch {

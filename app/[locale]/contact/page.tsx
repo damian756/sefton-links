@@ -67,6 +67,10 @@ export default async function ContactPage({
               sentTitle: t('sentTitle'),
               sentText: t('sentText'),
               errorText: t('errorText', { email: DISPLAY_EMAIL }),
+              errorName: t('errorName'),
+              errorEmail: t('errorEmail'),
+              errorSubject: t('errorSubject'),
+              errorMessage: t('errorMessage'),
             }}
             subjects={CONTACT_SUBJECTS.map((value) => ({ value, label: t(`subject.${value}`) }))}
             initialSubject={advertising ? ADVERTISING_SUBJECT : ''}
@@ -117,7 +121,7 @@ export default async function ContactPage({
               <li>
                 {t('beforeContactItem2')}{' '}
                 <a
-                  href="https://www.theopen.com/tickets"
+                  href="https://www.theopen.com"
                   className="text-[#1A4A30] hover:text-[#B8912A] transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"

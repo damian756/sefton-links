@@ -112,3 +112,31 @@ export function logSendError(error: unknown, log: (line: string) => void = conso
   const message = typeof e.message === 'string' ? e.message : typeof error === 'string' ? error : 'unknown error';
   log(`[contact] enquiry email failed: ${name}: ${message}`);
 }
+
+/** Anything with the email provider's `emails.send` shape, so a test can pass a fake. */
+export type EmailClient = {
+  emails: { send(mail: OutgoingEmail): Promise<{ error?: unknown }> };
+};
+
+/**
+ * Send one enquiry. The provider reports most failures as a returned `error`
+ * rather than a throw, so both are logged (name and message only). True when
+ * the provider accepted the email.
+ */
+export async function sendEnquiry(
+  client: EmailClient,
+  mail: OutgoingEmail,
+  log: (line: string) => void = console.error,
+): Promise<boolean> {
+  try {
+    const { error } = await client.emails.send(mail);
+    if (error) {
+      logSendError(error, log);
+      return false;
+    }
+    return true;
+  } catch (err) {
+    logSendError(err, log);
+    return false;
+  }
+}

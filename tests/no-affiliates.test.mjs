@@ -41,10 +41,10 @@ const AFFILIATE = [
   /affiliate-links/i,
 ];
 
-test('no affiliate domain, redirect or tag in app/, lib/, components/, content/ or messages/', () => {
+test('no affiliate domain, redirect or tag in app/, lib/, components/, content/, messages/ or public/', () => {
   const hits = [];
-  walk(['app', 'lib', 'components', 'content', 'messages'], (p, name) => {
-    if (!/\.(tsx?|jsx?|mjs|json|md|txt)$/.test(name)) return;
+  walk(['app', 'lib', 'components', 'content', 'messages', 'public'], (p, name) => {
+    if (!/\.(tsx?|jsx?|mjs|json|md|txt|html|xml|svg|webmanifest)$/.test(name)) return;
     const src = read(p);
     for (const re of AFFILIATE) if (re.test(src)) hits.push(`${rel(p)}: ${re}`);
   });
