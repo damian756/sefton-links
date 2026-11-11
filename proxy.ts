@@ -54,5 +54,7 @@ export default function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)'],
+  // /feed is the RSS route (app/feed/route.ts), outside the [locale] tree. Keep it
+  // away from next-intl, which would rewrite it to /en/feed and return a 404.
+  matcher: ['/((?!api|_next|_vercel|feed|.*\\..*).*)'],
 };
