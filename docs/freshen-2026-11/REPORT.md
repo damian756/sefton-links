@@ -372,3 +372,64 @@ Source: 0 in customer-facing strings across `app/`, `lib/`, `components/`, `i18n
 
 ### 10.5 Checks
 `npx tsc --noEmit` 0 errors (baseline 0). `npx eslint .` 0 errors, 13 warnings (baseline 14; the blog `<img>` warning went). `node --test tests/*.test.mjs` 32 of 32 (baseline 23; new: blog data, em dash, blocked links, sendEnquiry, route codes). `next build` passes. Screenshots at 1440, 1024, 768 and 390 of 23 changed pages; 9.4 MB committed (`5b4b4e7`: home, courses/royal-birkdale, scorecard, tee-times, accommodation, advertise, contact, and the contrast mock-up); the rest are in the session scratchpad.
+
+## 11. SEO
+
+SEO pass, 11 Nov 2026, commit `f70a47b` (not pushed). Checked on the dev server (port 3103, empty `DATABASE_URL`, bot user agent) against `main` at `6651395`, which is live.
+
+### 11.1 Advertise page: title restored (Damian, 11 Nov 2026). Do not undo.
+The old advertise page ranked well, so its title is back and its wording is kept in the copy. The URL `/advertise`, the canonical (the English page, no hreflang), and tonight's H1 and meta description stay as they are.
+
+| | Before tonight (`ca27350^`, live) | Tonight's new page | Now |
+|---|---|---|---|
+| `<title>` | Advertise on SeftonLinks \| Sefton Coast Network \| SeftonLinks.com | Advertise on SeftonLinks \| SeftonLinks.com | Advertise on SeftonLinks \| Sefton Coast Network \| SeftonLinks.com |
+| `og:title` | Advertise on SeftonLinks \| Sefton Coast Network | Advertise on SeftonLinks | Advertise on SeftonLinks \| Sefton Coast Network |
+
+Headings and sentences on the old page (`ca27350^`) that contain "advertis" with "SeftonLinks", "Sefton Coast" or "golf", and where the page says it now:
+1. The title, above: restored.
+2. The old meta description, "Display advertising on SeftonLinks and the Sefton Coast Network, beside course guides, visitor information and golf travel articles for the Sefton Coast." Tonight's page did not say this. Now the hero paragraph opens: "Advertising on SeftonLinks puts your business beside our course guides, visitor information and golf travel articles for the Sefton Coast, and the bundle adds the other Sefton Coast Network sites." (True: course page partners, Tee Times and Conditions sponsors, sponsored articles, and the bundle across the four sites.)
+
+No other heading or sentence on the old page matched ("Advertising and Partnerships", "Why advertise here" and "Advertising packages" have no place or golf word). The version live before the advertising work (`0268841`) also had "Display advertising across the Sefton Coast Network." (covered by the same sentence) and "Advertisers on SeftonLinks in July are reaching this audience at peak." (about Open week 2026, which is past: not restored).
+
+The site's own links to `/advertise`: the footer link texts "View advertising options →" and "Advertise" are as they were before tonight. The footer line beside them is back to "Advertise with the Sefton Coast Network" (tonight it read "Advertise on SeftonLinks"). Its lead-in stays "Hotel, B&B, restaurant or golf travel business?" (before: "Golf club, travel brand or local business?"), because page and post sponsors can no longer be golf clubs. There was no header link before tonight and there is none now. The "advertise here" cards ("See advertising options") and the contact page link are new tonight, so there is no earlier wording to keep.
+
+### 11.2 What changed
+- **Sitemap** (`app/sitemap.ts`): the 15 translated page types are listed in all 18 locales, each as its own `<url>` with the same 22 hreflang alternates. Before, the 255 translated URLs appeared only as alternates of the English entries. 74 URLs before, 329 now (74 English, 15 in each of the 17 other languages). `lastmod` was the build time on every URL. Now it is the post's own date or `updated` date for posts, the newest of those for the blog index and categories, and the day the course data was read (11 Nov 2026, shown under each course table) for course guides. Other pages have no date of their own, so they have no `lastmod`. Privacy and terms stay out (noindex).
+- **Dates** (`lib/blog.ts`): an optional `updated` date, set to 11 Nov 2026 on the 48 posts whose text changed since `0268841`. It drives Article `dateModified`, `og:modifiedTime`, the sitemap `lastmod` and an "Updated 11 Nov 2026" line beside the post date. Two posts did not change and have none.
+- **Schema**: the layout put a WebSite block on every page and the home page added a second, with a different publisher. Now the home page carries the site's one WebSite and one Organization (SeftonLinks.com, logo `icon-512.png`, parent organisation Churchtown Media, which posts name as publisher). BreadcrumbList added to posts and blog categories, which show breadcrumbs; course guide breadcrumbs now point at the page's own language. Checked: every JSON-LD block parses; GolfCourse on course guides with address, geo, phone and the club's published figures; Article with headline, image, author, publisher, `datePublished` and `dateModified`. There are no ratings, reviews, events or opening hours in the schema, so nothing to fix there. The Open page has a BreadcrumbList without a visible breadcrumb; left, as it matches the site's structure.
+- **Titles and tags**: privacy and terms no longer double the site name ("Privacy Policy | SeftonLinks | SeftonLinks.com"). `twitter:title` was the home title on every page; it now follows each page's own Open Graph title, description and image. Disclosure, privacy and terms get their own `og:url` and `og:title`.
+- **Internal links**: English course guides list the posts about that club plus the booking, green fees and winter posts. Posts about a club link to its course guide, and every post links to three more in its category (`COURSE_POSTS` in `lib/blog.ts`).
+- **Canonicals**: no change needed. Every indexable page has one absolute https canonical on www pointing at itself. Translated pages are self-canonical with reciprocal hreflang and x-default. Advertise, privacy, terms, disclosure, the blog, categories and posts have an English canonical and no hreflang. No `Link` hreflang header. Query strings (`?space=`, `?q=`, `?utm_*`, `?page=`) render the page with the clean URL as canonical; the site has no pagination. Locale blog URLs redirect (308) to English and are not in the sitemap. The 404 page is noindex with no canonical.
+- **robots.txt**: unchanged and correct: `Allow: /`, `Disallow: /api/`, `Sitemap: https://www.seftonlinks.com/sitemap.xml`.
+
+### 11.3 Checks
+Every sitemap URL fetched from the dev server: before, 74 (74 × 200, 0 redirects, 0 404s, 0 noindex); after, 329 (329 × 200, 0 redirects, 0 404s, 0 noindex). Each sitemap entry's alternates match the page's own hreflang tags. Each page has one canonical equal to its URL, one title, one h1, and `og:url` equal to the canonical. 0 em dashes in the rendered HTML. `npx tsc --noEmit` 0 errors; `npx eslint .` 0 errors, 13 warnings (same as before); `node --test tests/*.test.mjs` 34 of 34 (2 new); `next build` passes.
+
+### 11.4 Left, and why
+- **Translations.** The 17 other languages show the English home title and description, and English titles, descriptions and much body text on the Open, conditions and course pages (the old translations went tonight with the stale Open copy). They are now self-canonical and in the sitemap, but Google is likely to treat them as copies of the English pages until they are translated. See Traffic, item 2.1.
+- **Long titles and descriptions.** 65 of 74 English titles are over 60 characters with the " | SeftonLinks.com" suffix, and 53 descriptions are over 160. Left, because the rule is not to trade a title that may rank for a tidier one. Shorten only pages Search Console shows with impressions and no clicks (Traffic, item 2.3).
+- **Slugs with judgement words** (`hillside-golf-club-most-underrated-links`, `best-value-golf-sefton-coast`): left. The URLs may rank, and the titles are neutral.
+
+## Traffic: what to do next
+
+Ranked by likely visits gained. Search terms are proposed phrasings (no keyword tool data). Check them against Search Console's queries for seftonlinks.com before writing.
+
+### 1. Search terms the site does not cover yet
+1. **Golf near Liverpool** ("golf courses near liverpool", "links golf liverpool"). The site has Manchester and Blackpool trip posts but nothing for Liverpool, the nearest city. West Lancashire (Blundellsands, Hall Road station) and Formby are a short train ride out. Sources: Merseyrail and each club's directions page.
+2. **Royal Birkdale visitor booking for 2027 and 2028** ("can I play royal birkdale"). The post of that name is about Open week. The club's visitor booking page said fully booked through 2027 when checked on 11 Nov 2026.
+3. **Golf courses near Southport** ("golf courses southport", "golf near southport"). `/courses` is titled for the Sefton Coast, and people looking for a round often search by town. A post that answers it, or the edit in 2.2.
+4. **Spring 2027: when the clubs take visitors again** ("golf southport march 2027"). Hillside is closed to visitors until mid-March 2027. Publish late February, from the clubs' own pages.
+5. **Open competitions visitors can enter in 2027** ("open golf competitions southport 2027"). Nothing on the site. Each club's fixtures page once published (usually January).
+6. **Dress codes, club by club** ("royal birkdale dress code"). Mentioned in passing only. Each club's visitors page.
+7. **Women's golf on the Sefton Coast** ("women's open royal birkdale"): the Women's Opens at Birkdale and the 2004 Curtis Cup at Formby. Club history pages and The R&A.
+
+Changed from the draft: "Southport & Ainsdale and its Ryder Cup history" is dropped, as the retitled post "Southport & Ainsdale: Twice a Ryder Cup Venue" covers it. "Golf by train on Merseyrail" folds into item 1. Items 1, 3 and 4 are new.
+
+### 2. Pages one edit away from ranking
+1. **Translate the meta titles and descriptions** for the 15 translated page types (home first, then the course guides, the Open page and conditions), then the body keys listed in 10.4. 255 pages are in the sitemap and self-canonical, and with English titles they mostly duplicate the English pages. Half a day for titles and descriptions.
+2. **`/courses`**: add "Southport" and "near Liverpool" to the description and the first paragraph, in plain words, without changing the title (it may already rank). Ten minutes.
+3. **Post titles**: once Search Console has a month of data, shorten to "place plus thing" only the long post titles with impressions and no clicks. Leave any with clicks.
+4. **Faster pages**: static rendering for the localised pages (10.4). Every route is rendered on demand today.
+
+### 3. Posts a month
+Two a month: one practical (booking, getting there, prices, conditions) and one about a club or its history. Seasonal posts go up two to three weeks before the month they cover. No Open build-up posts until a future Open is announced for Birkdale. The monthly conditions posts stopped after July, and the winter post covers November to March, so the next seasonal post is spring 2027 (item 1.4).
