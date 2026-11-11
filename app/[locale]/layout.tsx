@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description:
       'A guide to links golf at Royal Birkdale, Hillside, Formby, West Lancashire and the rest of the Sefton Coast. Course guides, tee times, conditions and golf break itineraries.',
     keywords:
-      'Royal Birkdale golf, Sefton Coast golf, links golf England, The Open 2026, Hillside Golf Club, Formby Golf Club, West Lancashire Golf Club, golf breaks Southport',
+      'Royal Birkdale golf, Sefton Coast golf, links golf England, The Open at Royal Birkdale, Hillside Golf Club, Formby Golf Club, West Lancashire Golf Club, golf breaks Southport',
     authors: [{ name: 'SeftonLinks.com', url: BASE_URL }],
     creator: 'SeftonLinks.com',
     publisher: 'SeftonLinks.com',
@@ -60,7 +60,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       siteName: 'SeftonLinks.com',
       title: 'SeftonLinks: Links Golf Guide to the Sefton Coast',
       description:
-        'Royal Birkdale, Hillside, Formby and the Sefton Coast links golf corridor. The Open Championship 2026.',
+        'Royal Birkdale, Hillside, Formby, West Lancashire and the other Sefton Coast links courses: visitor guides, green fees and tee times.',
       images: [
         {
           url: `${BASE_URL}/og-default.jpg`,
@@ -73,7 +73,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     twitter: {
       card: 'summary_large_image',
       title: 'SeftonLinks: Links Golf Guide to the Sefton Coast',
-      description: 'Royal Birkdale, Hillside, Formby and The Open Championship 2026.',
+      description: 'Royal Birkdale, Hillside, Formby and the other Sefton Coast links courses: visitor guides, green fees and tee times.',
       images: [`${BASE_URL}/og-default.jpg`],
     },
     robots: {

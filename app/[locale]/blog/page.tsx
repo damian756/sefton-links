@@ -6,13 +6,13 @@ import { getSortedBlogPosts, BLOG_CATEGORIES, DAMIAN } from '@/lib/blog';
 import BlogSearch from './BlogSearch';
 
 export const metadata: Metadata = {
-  title: 'Links Golf Blog: Course Reviews, Tips & The Open 2026',
+  title: 'Links Golf Blog: Course Reviews, Tips and Golf Travel',
   description:
-    'First-hand course reviews, links golf tips, and everything you need to know about The Open Championship 2026 at Royal Birkdale: written by a local off 24.',
+    'Course reviews, links golf tips and golf travel on the Sefton Coast, plus the record of The 154th Open at Royal Birkdale in 2026: written by a local off 24.',
   alternates: { canonical: 'https://www.seftonlinks.com/blog' },
   openGraph: {
     title: 'Links Golf Blog | SeftonLinks.com',
-    description: 'Course reviews, links golf tips and Open 2026 guides: written by a local.',
+    description: 'Course reviews, links golf tips and golf travel on the Sefton Coast: written by a local.',
     url: 'https://www.seftonlinks.com/blog',
     type: 'website',
     siteName: 'SeftonLinks.com',
@@ -46,7 +46,7 @@ export default async function BlogPage({
             Links Golf: Written From the Inside
           </h1>
           <p className="text-white/65 text-lg leading-relaxed max-w-2xl">
-            Course reviews, practical tips, and Open 2026 guides: written by Damian Roche, founder
+            Course reviews, practical tips and golf travel: written by Damian Roche, founder
             of SeftonLinks and a 24-handicapper who lives three miles from Royal Birkdale.
           </p>
         </div>

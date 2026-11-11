@@ -45,10 +45,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const page of ALL_PAGES) {
     const isHome = page === '';
-    const isOpenHub = page === '/the-open-2026';
     const isConditions = page === '/conditions';
 
-    const priority = isHome ? 1.0 : isOpenHub ? 0.95 : isConditions ? 0.8 : page.startsWith('/courses/') ? 0.85 : 0.7;
+    // /the-open-2026 is now a record of the 2026 Open and Birkdale's Open history, not an event hub.
+    const priority = isHome ? 1.0 : isConditions ? 0.8 : page.startsWith('/courses/') ? 0.85 : 0.7;
     const changeFrequency: MetadataRoute.Sitemap[0]['changeFrequency'] = isConditions ? 'daily' : isHome ? 'weekly' : 'monthly';
     const languages = buildLanguages(page);
 

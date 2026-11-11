@@ -18,7 +18,7 @@ export async function GET() {
   <channel>
     <title>SeftonLinks.com: Blog</title>
     <link>${BASE_URL}/blog</link>
-    <description>Links golf on the Sefton Coast: Royal Birkdale, Hillside, Formby, The Open 2026. Course reviews, tips and golf travel.</description>
+    <description>Links golf on the Sefton Coast: Royal Birkdale, Hillside, Formby and the other courses. Course reviews, tips and golf travel.</description>
     <language>en-gb</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${BASE_URL}/feed" rel="self" type="application/rss+xml"/>

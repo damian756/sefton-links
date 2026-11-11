@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 import { Trophy, Wind, MapPin, Calendar, ChevronRight, Star, Flag, Clock, Users } from 'lucide-react';
-import OpenCountdown from '@/components/OpenCountdown';
 import AdSlot from '@/components/AdSlot';
 import { COURSES } from '@/lib/courses';
 import { getSortedBlogPosts } from '@/lib/blog';
@@ -98,43 +97,10 @@ export default async function HomePage({
                   'https://churchtownmedia.co.uk',
                 ],
               },
-              {
-                '@type': 'SportsEvent',
-                name: 'The 154th Open Championship',
-                startDate: '2026-07-16',
-                endDate: '2026-07-19',
-                location: {
-                  '@type': 'GolfCourse',
-                  name: 'Royal Birkdale Golf Club',
-                  address: {
-                    '@type': 'PostalAddress',
-                    streetAddress: 'Waterloo Road',
-                    addressLocality: 'Southport',
-                    postalCode: 'PR8 2LX',
-                    addressCountry: 'GB',
-                  },
-                },
-                organizer: {
-                  '@type': 'Organization',
-                  name: 'The R&A',
-                  url: 'https://www.theopen.com',
-                },
-              },
             ],
           }),
         }}
       />
-
-      {/* ═══════════════════════════════════════════
-          OPEN CHAMPIONSHIP ANNOUNCEMENT BANNER
-      ═══════════════════════════════════════════ */}
-      <div className="bg-[#B8912A] text-white text-center py-2.5 px-4 text-sm font-medium">
-        <Link href={`${prefix}/the-open-2026`} className="flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
-          <Trophy size={14} className="shrink-0" />
-          <span>{th('bannerText')}</span>
-          <span className="hidden sm:inline">{th('bannerLink')}</span>
-        </Link>
-      </div>
 
       {/* ═══════════════════════════════════════════
           HERO: NAVY LINKS LANDSCAPE
@@ -173,14 +139,6 @@ export default async function HomePage({
             <p className="text-white/70 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
               {t('heroSubtitle')}
             </p>
-
-            {/* Countdown */}
-            <div className="mb-10">
-              <p className="text-[#D4AE7A] text-sm uppercase tracking-widest mb-5 font-medium">
-                {t('openCountdownLabel')}
-              </p>
-              <OpenCountdown variant="hero" />
-            </div>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

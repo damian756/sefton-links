@@ -69,7 +69,8 @@ export default function NavMenu({ locale }: { locale: string }) {
     { label: t('accommodation'), href: `${prefix}/accommodation` },
     ...(locale === 'en' ? [{ label: 'Blog', href: '/blog' }] : []),
     ...(locale === 'en' ? [{ label: 'Stay in Southport', href: 'https://www.southportguide.co.uk/collections/hotels-near-royal-birkdale', external: true }] : []),
-    { label: t('theOpen'), href: `${prefix}/the-open-2026`, highlight: true },
+    // The Open at Royal Birkdale: a record and history page since the 2026 Open, so a plain link, not the gold button.
+    { label: t('theOpen'), href: `${prefix}/the-open-2026`, highlight: false },
   ];
 
   useEffect(() => {
