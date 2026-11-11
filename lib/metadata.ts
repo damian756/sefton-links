@@ -17,7 +17,10 @@ export function localeUrl(pagePath: string, locale = 'en') {
  * every locale (advertise, privacy, terms) leave out `locale`, so their
  * canonical stays the English page.
  */
-export function buildAlternates(pagePath: string, locale = 'en') {
+export function buildAlternates(pagePath: string, locale?: string) {
+  // English-only pages (advertise, privacy, terms): canonical to the English page and no
+  // language alternates, so the canonical and hreflang do not contradict each other.
+  if (locale === undefined) return { canonical: localeUrl(pagePath, 'en') };
   const path = pagePath === '/' ? '' : pagePath;
   const languages: Record<string, string> = {
     'en': `${BASE_URL}${path}`,

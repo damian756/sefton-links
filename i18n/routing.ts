@@ -22,4 +22,8 @@ export const routing = defineRouting({
   // (middleware/resolveLocale.js), so it does not set it either. The site then
   // sets no cookies at all.
   localeCookie: false,
+  // No hreflang Link header from the middleware: it would list language versions
+  // for English-only pages (blog, posts, disclosure) that redirect back to English.
+  // Pages that have translations declare their alternates in their metadata.
+  alternateLinks: false,
 });

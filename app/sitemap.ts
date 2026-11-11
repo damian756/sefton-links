@@ -15,7 +15,6 @@ const STATIC_PAGES = [
   '/tee-times',
   '/accommodation',
   '/contact',
-  '/advertise',
 ];
 
 const COURSE_PAGES = COURSES.map((c) => `/courses/${c.slug}`);
@@ -70,6 +69,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   // English-only pages (no translated copy, so no locale alternates).
+  entries.push({
+    url: `${BASE_URL}/advertise`,
+    lastModified: now,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  });
   entries.push({
     url: `${BASE_URL}/disclosure`,
     lastModified: now,
