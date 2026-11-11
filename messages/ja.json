@@ -323,8 +323,6 @@
     "privacyIntro": "SeftonLinks.comはChurchtown Media Ltdが運営しています。お客様のプライバシーを真剣に考えています。",
     "analyticsTitle": "アナリティクス",
     "analyticsDesc": "Ahrefs Web Analytics：クッキーを使わないページビュー統計です。ページ、参照元、ブラウザ、デバイス、言語、画面サイズ、おおよその位置情報（都市単位）を記録し、日ごとの仮名識別子で訪問者を数えます。この識別子は日をまたいで保持されません。",
-    "cookiesDesc": "クッキー：このサイトが設定するクッキーはNEXT_LOCALEの1つだけです。閲覧したページの言語を記憶し、ブラウザを閉じると削除されます。分析用や広告用のクッキーは設定しません。",
-    "pageCountsDesc": "ページ数の集計：当サイトのサーバーは、ページが表示されるたびに、ページのアドレス、参照元サイトのドメイン、デバイスの種類（デスクトップ、モバイル、タブレット）、日時を記録します。IPアドレスは保存しません。",
     "privacyContactTitle": "お問い合わせ",
     "privacyContactText": "プライバシーに関するお問い合わせ：",
     "termsIntro": "SeftonLinks.comをご利用いただくことで、これらの利用規約に同意したものとみなします。このサイトはChurchtown Media Ltdが運営しています。",

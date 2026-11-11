@@ -30,6 +30,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
           <p>{t('analyticsDesc')}</p>
           <p>{t('cookiesDesc')}</p>
           <p>{t('pageCountsDesc')}</p>
+          <p>{t('contactFormDesc')}</p>
           <h2 className="font-display text-xl font-bold text-[#0D1B2A]">{t('privacyContactTitle')}</h2>
           <p>
             {t('privacyContactText')}{' '}

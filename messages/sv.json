@@ -323,8 +323,6 @@
     "privacyIntro": "SeftonLinks.com drivs av Churchtown Media Ltd. Vi tar din integritet på allvar.",
     "analyticsTitle": "Analys",
     "analyticsDesc": "Ahrefs Web Analytics: statistik över sidvisningar utan cookies. Den registrerar sidan, hänvisande webbplats, webbläsare, enhet, språk, skärmstorlek och ungefärlig plats (på stadsnivå), och räknar besökare med en daglig pseudonym identifierare som inte sparas mellan dagarna.",
-    "cookiesDesc": "Cookies: webbplatsen sätter en cookie, NEXT_LOCALE, som kommer ihåg språket på sidan du besökte och raderas när du stänger webbläsaren. Den sätter inga analys- eller reklamcookies.",
-    "pageCountsDesc": "Sidräkning: vår egen server registrerar varje sidvisning med sidans adress, domänen för den hänvisande webbplatsen, enhetstyp (dator, mobil eller surfplatta) och tidpunkt. Din IP-adress sparas inte.",
     "privacyContactTitle": "Kontakt",
     "privacyContactText": "Integritetsfrågor:",
     "termsIntro": "Genom att använda SeftonLinks.com godkänner du dessa villkor. Sidan drivs av Churchtown Media Ltd.",
