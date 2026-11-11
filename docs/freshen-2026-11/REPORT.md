@@ -291,3 +291,84 @@ The 46 posts:
 - `/feed` 404 (the `proxy.ts` matcher).
 - Old Links' founding year (1926).
 - A dev-only hydration warning on the language flags, which is also there before this work.
+
+## 9. Review findings and fixes
+
+The independent review (`links-review.md`, 11 Nov 2026, at `c729d89`) listed 42 findings: 8 wrong facts, 7 broken rules, 9 misleading, 18 minor. Every fix that adds or changes a fact was checked against the club's or operator's own page, fetched again on 11 Nov 2026. Where a figure could not be confirmed it was removed, not guessed. All work is on `main` (not pushed) except the privacy wording, which is on `privacy-wording`.
+
+### 9.1 Applied
+
+| Group | Findings | What changed | Commit |
+|---|---|---|---|
+| Course data | C1, C2, C5, C8, C10, C11, D3 | Tee yardages, pars, course and slope ratings as each club publishes them, with the page used and the date read (11 Nov 2026) under every table; a `visitorStatus` per course from each visitor page (Fully booked through 2027, Closed until mid-March 2027, Book online) in place of the label worked out from difficulty; difficulty badges and column removed; JSON-LD locality (Formby, Blundellsands); S&A booking advice from its visitor page; West Lancs buggies; Hillside and S&A championships from their own pages; Formby's four Amateurs and the 2004 Curtis Cup; unsourced handicap limits removed (Formby's 28 and 36 stay); "no two consecutive holes" removed; West Lancs 2001 English Amateur removed (club page 404). | `702ac68` |
+| Copy in messages | C9, C11, C12, C13, D4, F1, G3 | Station tip (Hillside station is on Waterloo Road like the club), handicap tip (Formby only), "Links Courses" label, Spieth 2017 from the club's history page, accommodation labels ("Places to Stay", "Facilities and location") and no hotel rates, planner descriptions without dining, two double-colon asides. Changed keys removed from the 17 other locale files so the English shows. | `702ac68`, `60a4b86` |
+| Blog | D1, D2, D5, C1, C3, C4, C6, C7, C9, C10, C12, G2, G3 | "Course Guides" label (slug kept) in the index, metadata, feed and home cards; verdicts on named clubs removed or replaced with what each club says about itself; S&A par 3s (the 16th is a par 5), Hillside 16th (par 3, 218 yards), Formby 7,128 yards, S&A 7,007 yards; stations (Hillside, on Waterloo Road; Birkdale is the next stop from Liverpool; no walking or journey times); London trains from Euston (Avanti); no Blackpool driving route; wind speeds, crowd sizes, hotel room count, ticket prices, the July price rise and corporate group sizes removed; S&A lead times replaced with the club's words; double-colon asides and "genuinely" (16) removed; Formby and corporate post titles; three never-shown duplicate posts deleted; corporate post's club callout moved above "What to Book First". | `b0747df` |
+| Advertising | A1, A2, A3, A4 | Post sponsor shows "Ask us" with no price (the slots stay, as decided); page and post sponsors "never a golf club"; option point and comments say "do not rank or judge any business"; disclosure uses the approved wording. | `463cd54` |
+| Contact form | A5, A6, E2 | Route returns an error code; the form shows the page's own `errorText` for a send failure and English field messages until translated; `sendEnquiry` helper tested with a fake client (returned error, thrown error, success); affiliate test covers `public/`; Open link to theopen.com. | `d319fe8` |
+| Code health | H1, H2, H3, H4, H5 | `/feed` out of the proxy matcher (feed now 200); home blog links straight to `/blog`; host redirects keep the path; stale condition notes not in the page data; Open page notes without quotation marks and no FAQPage node. | `cea80e4`, `b0747df`, `64bf0ef`, `38baf5c`, `f4c6dd5` |
+| Cookie | P2 (code) | `localeCookie: false` (next-intl 4.8.3 reads the cookie only when `localeDetection` is true; it is false). Headless Edge on the server, bot user agent, Ahrefs blocked: no Set-Cookie, no cookies, no storage on `/`, `/de`, `/de/courses/hillside`, `/ja/scorecard`, `/blog`, `/contact`, `/courses/formby`. | `b7c1cd9` |
+| Report | A7 | The old address is described, not written out. | `d7365e4` |
+| Privacy | P2, P4, P5, P6 | See 9.3. | `0aedd86` (branch) |
+
+### 9.2 Not applied, and why
+- **P3 (Ahrefs sentence):** left as agreed across the five sites; Damian is raising the reviewer's point (link clicks and form submissions) himself.
+- **E1 (sponsor slots on two pre-Open posts):** the decision was to keep the post-end slots; both posts carry the dated pre-Open note. For Damian.
+- **P1 and section 0 (push order):** for Damian. `main` already holds origin (`916a23e`); merge `privacy-wording` with `main` in the same push (a trial merge with `git merge-tree` is clean).
+- **Partly applied:** C1, West Lancashire's ratings are published as a picture of a table, not copied; S&A lists two black-tee ratings without saying which matches the black yardage, so none is shown for black; Royal Birkdale publishes no rating. A5, the four field messages are English in the other 17 languages until translated (browser validation catches these first; a send failure now shows the translated message).
+
+### 9.3 Privacy wording (branch `privacy-wording`, `0aedd86`)
+- Cookies. Before: "Cookies: the site sets one cookie, NEXT_LOCALE, which remembers the language of the page you viewed and is deleted when you close your browser. It sets no analytics or advertising cookies." After: "Cookies: the site sets no cookies."
+- Page counts. Before: "...the device type (desktop, mobile or tablet) and the time. It does not store your IP address." After: "...the device type (desktop, mobile or tablet) and the time. These records do not include your IP address."
+- Contact form (new). After: "Contact form: if you send us a message, the form sends your name, email address, subject and message, and the advert space if you asked about one, to our inbox by email through our email provider, Resend."
+- Ahrefs sentence unchanged. Changed keys removed from the 17 other locale files; Welsh also drops `analyticsDesc`, which carried the same English. The cookie sentence is true only with `b7c1cd9` from `main`.
+
+### 9.4 Standing rule on six organisations
+- LC1 applied ("Copy: no council attribution (standing rule)", `8bec78e`): the road-closure line in `/blog/getting-to-royal-birkdale-for-the-open-2026` no longer names the council. The fact came from the post's own pre-Open text; no council page was used.
+- Links: no link to any of the 18 blocked domains was found in the source (0 removed for every organisation); one domain written in a code comment was taken out. `lib/blocked-domains.ts` holds the list; `tests/no-blocked-links.test.mjs` fails on any of them. Rendered check: 106 pages (English sitemap plus `/de` and `/ja`), 0 hits (`e804a5c`).
+- Waiting for Damian, untouched: LM1 to LM3 (The Bold Hotel, whose own site calls it a Mikhail venue) and LK1 to LK3 (Southport Market).
+
+### 9.5 Sources (fetched 11 Nov 2026)
+- royalbirkdale.com/the-course/ (hole yardages and pars; back tees 7,176, par 70); /visitors/ (four tees 4,877 to 6,736; dress code); members.royalbirkdale.com/visitorbooking/ (fully booked 2026 and 2027); /history/ (Spieth led by two going into the final round).
+- hillside-golfclub.co.uk/the-course/course-overview/ (scorecard and ratings; Hawtree, Ebert); /visitors/visitors-golf/ (closed to mid-March 2027; trolleys £20; buggies £35); /heritage/tournaments/.
+- formbygolfclub.co.uk/the-course/course-overview/ (scorecard and ratings); /play/play-formby/; /play/visitor-faqs/ (handicaps 28 and 36); /club/history/ (Amateurs 1957, 1967, 1984, 2009; Curtis Cup 2004; Palmer Cup 2016; PGA Seniors 2021, 2022; first pines 1887); /contact-us/ (Golf Road, Freshfield).
+- westlancashiregolf.co.uk/the-course/course-overview/ (scorecards; ratings image); /visitors/visitors-green-fees/ (visitors welcome; 6 buggies at £45); /contact/how-to-find-us/ (Hall Road station 50 yards).
+- sandagolfclub.co.uk/golf/course-overview/ (scorecards and ratings); /visitors/green-fees-offers/; /visitors/visitors/ (welcome throughout the year; prime season late April to late September); /heritage/club-history/ (1936 British Ladies Amateur; Amateur 1984, 2005, 2023); /heritage/ryder-cup/.
+- southportoldlinksgolfclub.co.uk/course-guide (White 6,460 par 72, 72.4/125; Gold; Black women) and home page (Southport Golf Academy).
+- nationalrail.co.uk/stations/hillside/ (Waterloo Road, PR8 4QR) and /stations/birkdale/ (Liverpool Road, PR8 4AF); postcodes.io for the order of the stations; avantiwestcoast.co.uk (London Euston to Liverpool Lime Street).
+- boldhotel.com (Mikhail loyalty app page) for the standing rule only.
+
+## 10. Improvements and modernising
+
+### 10.1 What was measured
+Production build served on port 3103 with an empty `DATABASE_URL` and a bot user agent (Ahrefs blocked); dev server for the sweep. 352 URLs (sitemap with alternates, plus feed, robots, manifest, advertise and 404 pages): all 200 except the two intended 404s; 0 raw message keys; 0 em dashes. Every HTML page: one h1, `lang` right, valid JSON-LD, no image without alt. 14 page types at 1440 and 390: layout shift 0, no sideways scroll, keyboard focus visible. About 500 KB of script per route (uncompressed), fonts 168 KB. 25 external links resolve (Royal Birkdale refuses scripted requests). Every route is rendered on demand (build route table).
+
+### 10.2 Em dash sweep
+Source: 0 in customer-facing strings across `app/`, `lib/`, `components/`, `i18n/`, `messages/` (18 files) and `public/`; 6 in code comments, left. Rendered: 0 in 352 URLs (titles, meta, OpenGraph, JSON-LD, visible text, feed, sitemap). Nothing to fix. Test: `tests/no-em-dash.test.mjs` (`ca55b4c`), checked to fail on a planted em dash.
+
+### 10.3 Ranked list
+1. **Done** `e5fcfc3`: blog index pictures through next/image. The page fetched 80 MB of originals; now about 1.3 MB. (15 min)
+2. **Done** `3fd6bc1`, `e5fcfc3`, `7846794`: canonical and og:url point at each locale's own page; 242 translated pages named the English page as canonical, against their own hreflang. Advertise, privacy and terms keep the English canonical. Worth a look before pushing: Google may start indexing the translated pages. (25 min)
+3. **Done** `eb93be5`: tee time cards stack on phones; the status and the Website button no longer squeeze or clip at 390. (10 min)
+4. **Done** `7846794`: train line for Royal Birkdale (Hillside station) and West Lancashire (Hall Road, 50 yards); all five other courses in each course sidebar (Southport Old Links was in none). (20 min)
+5. **Done** `635c092`: the blog index sends the search box only card fields; HTML 451 KB to 275 KB. (10 min)
+6. **Proposed:** static rendering for the localised pages (see 10.4). (1 to 2 h)
+7. **Proposed:** contrast and tap targets (see 10.4). (2 to 3 h)
+8. **Proposed:** translate the new English keys (see 10.4). (half a day)
+9. **Done** `ab60548`: Article JSON-LD carries the post picture; `/disclosure` in the sitemap. (10 min)
+10. **Done** `f5740a5`, `e5fcfc3`: conditions headings h1 to h2; blog search box labelled; card pictures use their own description or are decorative. (10 min)
+11. **Done** `7846794`: no numbers beside the club names on `/courses`. (5 min)
+12. **Done** `ca55b4c`, `e804a5c`: em dash and blocked-links tests.
+13. **Proposed:** per-course getting-there lines for Hillside, Formby, S&A and Old Links from each club's page. (1 to 2 h)
+14. **Proposed:** re-encode the 2 to 3.6 MB originals in `public/images` (78 MB in all; posts use them as OpenGraph images). (1 h)
+15. **Proposed:** an "Updated" date on the 40 posts changed on 11 Nov, shown on the page and used for `dateModified` and the sitemap `lastmod` (now always "today"). (1 h)
+16. **Left:** 249 titles over 65 characters and 240 descriptions over 160; Google shortens them, and rewriting them is a copy job.
+17. **Left:** the home page's planner and itineraries cards both go to `/itineraries`; needs a content choice.
+
+### 10.4 Proposals
+- **Static rendering.** Every route is "rendered on demand" because next-intl reads the request locale; calling `setRequestLocale(locale)` in the layout and pages would let Next.js pre-render and revalidate them. Faster first byte and fewer function calls; touches every page. Evidence: route table in the build log.
+- **Contrast and tap targets.** Gold #B8912A text and buttons on light backgrounds measure 2.7 to 2.95:1 and greys at 40 to 60% opacity 2.1 to 3.5:1 (AA needs 4.5:1); footer links are 15 to 20 px tall. A darker gold (#86671A, 4.9:1 on cream, 5.3:1 behind white text) on light backgrounds and greys at 75% would pass. Screenshots: `docs/freshen-2026-11/screens/idea-contrast-now-courses-royal-birkdale-1440.jpg` and `idea-contrast-mock-courses-royal-birkdale-1440.jpg` (also `-blog-` and `-390`).
+- **Translations.** About 30 new or changed English keys (visitor status, scorecard source lines, contact errors, the Open sweep keys) show in English on the 17 other languages; the home blog strip and "Est." are hard-coded English. Screenshot: the German scorecard page (see final message for path).
+- **Getting there**, **image originals** and **updated dates**: as in 10.3, items 13 to 15.
+
+### 10.5 Checks
+`npx tsc --noEmit` 0 errors (baseline 0). `npx eslint .` 0 errors, 13 warnings (baseline 14; the blog `<img>` warning went). `node --test tests/*.test.mjs` 32 of 32 (baseline 23; new: blog data, em dash, blocked links, sendEnquiry, route codes). `next build` passes. Screenshots at 1440, 1024, 768 and 390 of 23 changed pages; 9.4 MB committed (`5b4b4e7`: home, courses/royal-birkdale, scorecard, tee-times, accommodation, advertise, contact, and the contrast mock-up); the rest are in the session scratchpad.
