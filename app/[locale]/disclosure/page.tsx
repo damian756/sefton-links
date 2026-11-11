@@ -46,7 +46,7 @@ export default function DisclosurePage() {
             Adverts and sponsors are labelled on the card itself, as Advertisement or Sponsor. A sponsored
             article is labelled Sponsored at the top and bylined to the business that paid for it. Paid
             links are marked as sponsored for search engines. Adverts never appear inside a review, and
-            paying for a space does not change what we write about a course.
+            paying for a space does not change what we write.
           </p>
 
           <h2 className={h2}>Current interests</h2>

@@ -22,7 +22,7 @@ const RULES = [
   'Every advert is labelled Advertisement, Sponsor or Sponsored.',
   'Paid links are marked as sponsored for search engines.',
   'Adverts never appear inside a review, and paying for a space does not change what we write.',
-  'Course page partners are hotels, B&Bs, restaurants or golf travel firms, never a golf club.',
+  'Course page partners and page or post sponsors are hotels, B&Bs, restaurants or golf travel firms, never a golf club.',
 ];
 
 const STEPS = [
@@ -90,10 +90,14 @@ export default async function AdvertisePage({
           {AD_OPTIONS.map((o) => (
             <div key={o.id} id={o.id} className="bg-white rounded-2xl border border-[#E8E3D8] p-6 flex flex-col scroll-mt-24">
               <h3 className="font-display text-xl font-bold text-[#0D1B2A] mb-3">{o.name}</h3>
-              <p className="mb-1">
-                <span className="text-3xl font-bold text-[#0D1B2A]">{o.price}</span>{' '}
-                <span className="text-sm text-[#2C3E50]/60">{o.per} plus VAT</span>
-              </p>
+              {o.price ? (
+                <p className="mb-1">
+                  <span className="text-3xl font-bold text-[#0D1B2A]">{o.price}</span>{' '}
+                  <span className="text-sm text-[#2C3E50]/60">{o.per} plus VAT</span>
+                </p>
+              ) : (
+                <p className="mb-1 text-lg font-bold text-[#0D1B2A]">Ask us</p>
+              )}
               <p className="text-xs text-[#2C3E50]/50 mb-4">{o.note}</p>
               <ul className="space-y-2 text-sm text-[#2C3E50]/75 mb-5 flex-1">
                 {o.points.map((p) => (

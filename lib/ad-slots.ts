@@ -15,10 +15,11 @@
 // passed shows as the empty "advertise here" card on its own.
 //
 // Rules: one advert per page at most; adverts are labelled on the card; paid
-// links carry rel="sponsored noopener". Course page partners are hotels, B&Bs,
-// restaurants or golf travel firms, never a golf club. No adverts on about,
-// privacy, terms, disclosure, contact, the advertise page, the 404 page, course
-// reviews or posts that name or judge a business. Cards show on the English
+// links carry rel="sponsored noopener". Course page partners and page or post
+// sponsors are hotels, B&Bs, restaurants or golf travel firms, never a golf
+// club. No adverts on about, privacy, terms, disclosure, contact, the advertise
+// page, the 404 page, the course guide posts or posts that rank or judge a
+// business. Cards show on the English
 // pages only (the other locales have no translation of the card's labels).
 
 export type Sponsor = {
@@ -44,8 +45,8 @@ export type AdOptionId =
 export type AdOption = {
   id: AdOptionId;
   name: string;
-  /** Headline price, e.g. '£35'. All prices are plus VAT. */
-  price: string;
+  /** Headline price, e.g. '£35'. All prices are plus VAT. null: no price agreed yet, ask us. */
+  price: string | null;
   /** 'a month', 'one-off', 'a season'. */
   per: string;
   /** Short line under the price. */
@@ -81,22 +82,24 @@ export const AD_OPTIONS: AdOption[] = [
     term: 'One sponsor per page',
     points: [
       'One card on the Tee Times guide or the Course Conditions page',
+      'For hotels, B&Bs, restaurants and golf travel firms. Never a golf club',
       'Labelled Sponsor, shown once after the main content',
     ],
   },
   {
-    // Not priced in the stage A proposal: set at the course partner price.
-    // Damian to confirm.
+    // Not priced in the stage A proposal, so no price is shown until Damian sets
+    // one in writing: the card and the advertise page say "ask us".
     id: 'post-sponsor',
     name: 'Post sponsor',
-    price: '£35',
-    per: 'a month',
-    note: '3 months minimum',
-    from: 'from £35 a month plus VAT',
+    price: null,
+    per: '',
+    note: 'Ask us for a price',
+    from: 'ask us for a price',
     term: 'One sponsor per post',
     points: [
       'A card at the end of one of our golf travel or itinerary posts',
-      'Only on posts that do not name or judge a business other than the golf clubs',
+      'Only on posts that do not rank or judge any business',
+      'For hotels, B&Bs, restaurants and golf travel firms. Never a golf club',
       'Labelled Sponsor, shown once after the post',
     ],
   },
@@ -197,8 +200,8 @@ const SLOT_LIST: AdSlotDef[] = [
   { id: 'tee-times', kind: 'page', option: 'page-sponsor', title: 'Sponsor of the Tee Times guide', sponsor: null },
   { id: 'conditions', kind: 'page', option: 'page-sponsor', title: 'Sponsor of the Course Conditions page', sponsor: null },
 
-  // End of post: golf travel and itinerary posts that do not name or judge a
-  // business other than the golf clubs themselves.
+  // End of post: golf travel and itinerary posts that do not rank or judge any
+  // business. They name the clubs only for facts from the clubs' own pages.
   post('winter-golf-sefton-coast', 'Winter Golf on the Sefton Coast'),
   post('sefton-coast-five-course-itinerary', 'Five-Course Itinerary'),
   post('sefton-coast-links-june-2026', 'Sefton Coast in June'),
