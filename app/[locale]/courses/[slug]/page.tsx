@@ -9,7 +9,8 @@ import {
 import { COURSES, SCORECARDS_READ, getCourseBySlug } from '@/lib/courses';
 import AdSlot from '@/components/AdSlot';
 import type { Metadata } from 'next';
-import { BASE_URL, buildAlternates, buildOg } from '@/lib/metadata';
+import { BASE_URL, buildAlternates, buildOg, localeUrl } from '@/lib/metadata';
+import { getCoursePosts } from '@/lib/blog';
 
 // This page shows an advert space: re-render at least daily so a sponsor whose
 // `until` date has passed drops off without a deploy.
@@ -53,6 +54,7 @@ export default async function CoursePage({
   const prefix = locale === 'en' ? '' : `/${locale}`;
 
   const otherCourses = COURSES.filter((c) => c.slug !== slug);
+  const coursePosts = getCoursePosts(slug);
 
   const t = await getTranslations({ locale, namespace: 'courseDetail' });
   const tcd = await getTranslations({ locale, namespace: 'courseData' });
@@ -105,9 +107,10 @@ export default async function CoursePage({
               {
                 '@type': 'BreadcrumbList',
                 itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: t('breadcrumbHome'), item: BASE_URL },
-                  { '@type': 'ListItem', position: 2, name: t('breadcrumbCourses'), item: `${BASE_URL}/courses` },
-                  { '@type': 'ListItem', position: 3, name: course.name, item: `${BASE_URL}/courses/${slug}` },
+                  // Same locale as the breadcrumb links shown on the page.
+                  { '@type': 'ListItem', position: 1, name: t('breadcrumbHome'), item: localeUrl('/', locale) },
+                  { '@type': 'ListItem', position: 2, name: t('breadcrumbCourses'), item: localeUrl('/courses', locale) },
+                  { '@type': 'ListItem', position: 3, name: course.name, item: localeUrl(`/courses/${slug}`, locale) },
                 ],
               },
             ],
@@ -448,6 +451,25 @@ export default async function CoursePage({
                 {t('compareAllLink')} <ChevronRight size={13} />
               </Link>
             </div>
+
+            {/* Posts about this club and about every club. The blog is English only. */}
+            {locale === 'en' && coursePosts.length > 0 && (
+              <div>
+                <h3 className="font-semibold text-[#0D1B2A] mb-3 uppercase tracking-wider text-xs">From the blog</h3>
+                <ul className="space-y-2">
+                  {coursePosts.map((p) => (
+                    <li key={p.slug}>
+                      <Link
+                        href={`/blog/${p.slug}`}
+                        className="block bg-white border border-[#E8E3D8] rounded-lg px-4 py-3 text-sm font-medium text-[#0D1B2A] hover:border-[#B8912A]/40 hover:text-[#1A4A30] transition-colors"
+                      >
+                        {p.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {/* Partner space: last in the sidebar, away from the "After Your Round" list. */}
             <AdSlot id={`course-${slug}`} locale={locale} compact />

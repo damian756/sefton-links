@@ -3,7 +3,8 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { ChevronRight, Clock, ArrowLeft } from 'lucide-react';
-import { BLOG_POSTS, DAMIAN, getPostBySlug, getCategoryBySlug, getIsoDate, showsPreOpenNote, type ContentBlock } from '@/lib/blog';
+import { BLOG_POSTS, DAMIAN, getPostBySlug, getCategoryBySlug, getIsoDate, getIsoModified, getPostCourseSlugs, getRelatedPosts, showsPreOpenNote, type ContentBlock } from '@/lib/blog';
+import { getCourseBySlug } from '@/lib/courses';
 import AdSlot from '@/components/AdSlot';
 import { AD_SLOTS } from '@/lib/ad-slots';
 
@@ -38,6 +39,7 @@ export async function generateMetadata({
       type: 'article',
       siteName: 'SeftonLinks.com',
       publishedTime: getIsoDate(post),
+      modifiedTime: getIsoModified(post),
       authors: [post.sponsor ? post.sponsor.name : DAMIAN.name],
       section: cat?.label,
       images: [{ url: post.image ?? `${BASE_URL}/og-default.jpg`, width: 1200, height: 630, alt: post.imageAlt ?? post.title }],
@@ -128,6 +130,7 @@ export default async function BlogPostPage({
 
   const cat = getCategoryBySlug(post.categorySlug);
   const isoDate = getIsoDate(post);
+  const isoModified = getIsoModified(post);
   const canonicalUrl = `${BASE_URL}/blog/${slug}`;
 
   const sponsor = post.sponsor;
@@ -143,7 +146,7 @@ export default async function BlogPostPage({
     url: canonicalUrl,
     image: post.image ? [`${BASE_URL}${post.image}`] : undefined,
     datePublished: isoDate,
-    dateModified: isoDate,
+    dateModified: isoModified,
     inLanguage: 'en-GB',
     author: sponsor ? { '@type': 'Organization', name: sponsor.name, url: sponsor.url } : {
       '@type': 'Person',
@@ -168,11 +171,35 @@ export default async function BlogPostPage({
     },
   };
 
+  // Matches the breadcrumb shown under the header.
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: `${BASE_URL}/blog` },
+      ...(cat
+        ? [{ '@type': 'ListItem', position: 3, name: cat.label, item: `${BASE_URL}/blog/category/${cat.slug}` }]
+        : []),
+      { '@type': 'ListItem', position: cat ? 4 : 3, name: post.title, item: canonicalUrl },
+    ],
+  };
+
+  // Internal links: the course guide(s) this post is about, and more posts in its category.
+  const guides = getPostCourseSlugs(post.slug)
+    .map((c) => getCourseBySlug(c))
+    .filter((c) => c !== undefined);
+  const related = getRelatedPosts(post);
+
   return (
     <div className="min-h-screen bg-[#F8F5EE]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
 
       {/* Breadcrumb */}
@@ -223,6 +250,7 @@ export default async function BlogPostPage({
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-white/50 text-sm">
             <span>{post.date}</span>
+            {post.updated && post.updated !== post.date && <span>Updated {post.updated}</span>}
             <span className="flex items-center gap-1"><Clock size={13} /> {post.readingTime}</span>
             {sponsor ? (
               <span>
@@ -265,6 +293,39 @@ export default async function BlogPostPage({
         <div className="prose-lg max-w-none">
           {post.content.map((block, i) => renderBlock(block, i))}
         </div>
+
+        {(guides.length > 0 || related.length > 0) && (
+          <nav aria-label="Related pages" className="mt-12 pt-8 border-t border-[#E8E3D8] grid gap-8 sm:grid-cols-2">
+            {guides.length > 0 && (
+              <div>
+                <h2 className="text-xs font-bold uppercase tracking-widest text-[#2C3E50]/50 mb-3">Course guide</h2>
+                <ul className="space-y-2">
+                  {guides.map((c) => (
+                    <li key={c.slug}>
+                      <Link href={`/courses/${c.slug}`} className="text-[#1A4A30] font-medium underline underline-offset-2 hover:text-[#B8912A]">
+                        {c.name}: visitor guide and green fees
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {related.length > 0 && cat && (
+              <div>
+                <h2 className="text-xs font-bold uppercase tracking-widest text-[#2C3E50]/50 mb-3">More in {cat.label}</h2>
+                <ul className="space-y-2">
+                  {related.map((p) => (
+                    <li key={p.slug}>
+                      <Link href={`/blog/${p.slug}`} className="text-[#1A4A30] font-medium underline underline-offset-2 hover:text-[#B8912A]">
+                        {p.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </nav>
+        )}
 
         {endSlot && <AdSlot id={endSlot} locale="en" className="mt-12" />}
 

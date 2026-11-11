@@ -18,6 +18,12 @@ export interface BlogPost {
   excerpt: string;
   categorySlug: string;
   date: string;
+  /**
+   * The day the post's text was last changed, in the same form as `date`. Shown
+   * as "Updated", and used for the Article `dateModified` and the sitemap
+   * `lastmod`. Leave it out when the post has not changed since `date`.
+   */
+  updated?: string;
   readingTime: string;
   /** Path relative to /public, e.g. '/images/courses/hillside.jpg' */
   image?: string;
@@ -175,6 +181,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'West Lancashire Golf Club, founded in 1873, sits on the coast at Blundellsands, 50 yards from Hall Road station. The course, visitor access and how to get there.',
     categorySlug: 'course-reviews',
     date: '1 Jun 2026',
+    updated: '11 Nov 2026',
     readingTime: '7 min read',
     image: '/images/blog-west-lancs-golf-review.jpg',
     content: [
@@ -209,6 +216,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Most people coming to Southport for The Open week will not have a championship round ticket. Here is the honest golfer\'s guide to making the most of the week without one.',
     categorySlug: 'the-open-2026',
     date: '1 Jun 2026',
+    updated: '11 Nov 2026',
     readingTime: '6 min read',
     image: '/images/blog-open-no-ticket-links.jpg',
     content: [
@@ -242,6 +250,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'June is the best month to play the Sefton Coast links. Long daylight, firm fairways, no frost and before the summer rush. Here is why you should be booking now.',
     categorySlug: 'golf-travel',
     date: '28 May 2026',
+    updated: '11 Nov 2026',
     readingTime: '6 min read',
     image: '/images/blog-sefton-links-june.jpg',
     content: [
@@ -279,6 +288,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Royal Birkdale, 12 to 19 July. Six weeks out and the urgent stuff needs doing this week. Accommodation, transport, tickets. Here is the honest checklist.',
     categorySlug: 'the-open-2026',
     date: '28 May 2026',
+    updated: '11 Nov 2026',
     readingTime: '7 min read',
     image: '/images/blog-royal-birkdale-may-conditions.jpg',
     content: [
@@ -317,6 +327,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
       'I live three miles from Royal Birkdale. I built a website about it. And until last October, I\'d never actually played it. Here\'s what happened when a 24-handicapper took on the course that has hosted The Open 11 times.',
     categorySlug: 'course-reviews',
     date: '3 Feb 2026',
+    updated: '11 Nov 2026',
     readingTime: '8 min read',
     content: [
       { type: 'p', text: "I\'ll be upfront about something: I built SeftonLinks.com (a site about links golf on the Sefton Coast) before I\'d actually played Royal Birkdale. I know. I know. In my defence, I\'d walked the course as a spectator during the 2017 Open, I\'d researched it obsessively, and I believed I understood what the course was like. I did not understand what the course was like." },
@@ -344,6 +355,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
       'Playing links golf for the first time? The wind, the bouncing ball, the gorse, the blind shots: none of it works like inland golf. Here\'s what to expect and how to actually enjoy it.',
     categorySlug: 'links-golf-tips',
     date: '10 Feb 2026',
+    updated: '11 Nov 2026',
     readingTime: '6 min read',
     content: [
       { type: 'p', text: 'If you\'ve only ever played parkland golf, your first links round will feel like playing a different sport. The same clubs, the same ball, the same basic rules: but almost everything else is different. Here\'s the honest guide to what you\'re walking into.' },
@@ -381,6 +393,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
       'What the six Sefton Coast clubs publish for visitor green fees, from winter weekday rates to clubs that show prices only when you book. Updated in November 2026 from the clubs\' own websites.',
     categorySlug: 'golf-travel',
     date: '17 Feb 2026',
+    updated: '11 Nov 2026',
     readingTime: '5 min read',
     content: [
       { type: 'p', text: 'This guide was updated in November 2026 with what each club\'s own website said then. Green fees change with the season and are often set for the year ahead, so confirm with the club before you book.' },
@@ -407,6 +420,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
       'The Open Championship returns to Royal Birkdale in July 2026. If you\'ve never been to a major championship before, here\'s everything you need to know: tickets, transport, what to bring, and what to expect on the day.',
     categorySlug: 'the-open-2026',
     date: '20 Jan 2026',
+    updated: '11 Nov 2026',
     readingTime: '9 min read',
     content: [
       { type: 'p', text: 'The 154th Open Championship takes place at Royal Birkdale, Southport, from 12 to 19 July 2026. If you\'ve never attended a major golf championship, the scale of it will surprise you. The world\'s best players. An atmosphere unlike any other sporting event in this country.' },
@@ -456,6 +470,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'The six Sefton Coast clubs differ in handicap limits, visitor access and how exposed they are to the wind. What each club asks of visitors, and how to choose a course for your game.',
     categorySlug: 'links-golf-tips',
     date: '18 Feb 2026',
+    updated: '11 Nov 2026',
     readingTime: '7 min read',
     content: [
       { type: 'p', text: 'I played Royal Birkdale off 24. I\'ve documented what happened. I\'m not going to pretend it was a great advertisement for matching golfer to course. The Sefton Coast has six links courses, and they differ in handicap limits, visitor access and exposure to the wind. Here\'s how to make the right choice, and avoid ending up like me on the 9th at Birkdale, three balls down and already wondering why I thought this was a good idea.' },
@@ -489,6 +504,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Southport & Ainsdale hosted the Ryder Cup in 1933 and 1937. The course, how visitors book, and what the club publishes about green fees.',
     categorySlug: 'course-reviews',
     date: '20 Feb 2026',
+    updated: '11 Nov 2026',
     readingTime: '7 min read',
     content: [
       { type: 'p', text: 'In 1933 and 1937, Great Britain played the United States in the Ryder Cup at Southport & Ainsdale Golf Club. The club was established in 1906, and it says The R&A has continued to use it for the Amateur Championship.' },
@@ -518,6 +534,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Championship round tickets for The Open 2026 are gone or eye-wateringly expensive on secondary markets. But you don\'t need a championship ticket to experience Open week at Royal Birkdale. Here\'s what\'s actually possible: and what isn\'t.',
     categorySlug: 'the-open-2026',
     date: '21 Feb 2026',
+    updated: '11 Nov 2026',
     readingTime: '5 min read',
     content: [
       { type: 'p', text: 'Let me be direct: if you don\'t have a championship round ticket for The Open 2026 and you\'re hoping to find one at face value, that window has probably closed. Championship day tickets are sold out through official channels and secondary market prices are significant. But Open week at Royal Birkdale is not entirely gated. There are legitimate ways to be part of it.' },
@@ -542,6 +559,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Southport accommodation is effectively gone for Open week. The Birkdale area is gone. Ormskirk is filling up. The place most people haven\'t thought of yet is Formby: 20 minutes from the course, significantly quieter, and with its own good restaurants and beach. Here\'s the honest case for Formby as your base.',
     categorySlug: 'the-open-2026',
     date: '22 Feb 2026',
+    updated: '11 Nov 2026',
     readingTime: '5 min read',
     content: [
       { type: 'p', text: 'I\'ll tell you where I\'d stay for The Open 2026 if I wasn\'t already local. Not Southport: that\'s been booked solid since the tournament was confirmed. Not Birkdale itself: the rooms within walking distance of the course went early. Not Ormskirk: fine place, but you\'re adding a train connection. Formby.' },
@@ -565,6 +583,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Hillside sits on the same dune system as Royal Birkdale, next door to it. The course, its part in The 154th Open, what the club publishes about green fees, and when visitors can play.',
     categorySlug: 'course-reviews',
     date: '24 Feb 2026',
+    updated: '11 Nov 2026',
     readingTime: '8 min read',
     content: [
       { type: 'p', text: 'Let me tell you where Hillside Golf Club is: it is next to Royal Birkdale. Not nearby. Not in the same general area. Immediately next to it: the boundary fence between the two courses is visible from several holes on each side. They share the same dune system, the same prevailing wind, the same type of links terrain.' },
@@ -593,6 +612,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'The roads around Birkdale during Open week are essentially unusable for normal traffic. I live three miles from the course and I won\'t be driving. Here is every transport option for The Open 2026, honestly explained.',
     categorySlug: 'the-open-2026',
     date: '25 Feb 2026',
+    updated: '11 Nov 2026',
     readingTime: '6 min read',
     content: [
       { type: 'p', text: 'I\'m going to start with the only piece of transport advice that actually matters: do not drive to Royal Birkdale during Open week. I live three miles from the course. I will not be driving. The road network around Birkdale simply cannot cope with the crowds at a major championship, and road closures make it impractical anyway. Start planning around Merseyrail and work backwards from there.' },
@@ -625,6 +645,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Formby Golf Club mixes mature sand dunes with pine trees and heath. The course, its championships and how visitors book.',
     categorySlug: 'course-reviews',
     date: '14 Mar 2026',
+    updated: '11 Nov 2026',
     readingTime: '7 min read',
     content: [
       { type: 'p', text: 'The Sefton Coast is known for its open, exposed, wind-battered links golf. Royal Birkdale, Hillside, West Lancashire: courses built on coastal duneland where the sea is visible and the wind arrives uninterrupted from the Irish Sea. Formby Golf Club describes itself as a true championship links, with mature sand dunes and pine trees. Its history page says the first pine trees were planted in 1887.' },
@@ -658,6 +679,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Southport Old Links in Churchtown is a nine-hole course with 18 different tees. It takes visitors on weekdays and Saturdays, for 18 or nine holes. What to expect and how to book.',
     categorySlug: 'course-reviews',
     date: '14 Mar 2026',
+    updated: '11 Nov 2026',
     readingTime: '5 min read',
     content: [
       { type: 'p', text: 'Southport Old Links is on Moss Lane in Churchtown, on the northern edge of Southport. It is not a championship venue and has not hosted the Ryder Cup. It is a members\' club that takes visitors on weekdays and Saturdays, and it celebrated its centenary in 2026.' },
@@ -688,6 +710,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'The Open Championship at Royal Birkdale runs from 12 to 19 July 2026. Each day of the week is different: different access, different atmosphere, different crowds. Here\'s what happens on each day and how to make the most of your time there.',
     categorySlug: 'the-open-2026',
     date: '15 Mar 2026',
+    updated: '11 Nov 2026',
     readingTime: '6 min read',
     content: [
       { type: 'p', text: 'The Open Championship at Royal Birkdale runs from 12 to 19 July 2026. Eight days. Very different days. The mistake most first-timers make is treating all of them as equivalent: they\'re not. A Monday practice round and a Sunday championship round are completely different events at the same venue. Here\'s what actually happens each day and how to choose when to go.' },
@@ -716,6 +739,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Six courses, six booking processes. How each Sefton Coast club takes visitor bookings, from online tee sheets to the Secretary\'s Office, updated in November 2026 from the clubs\' own websites.',
     categorySlug: 'links-golf-tips',
     date: '15 Mar 2026',
+    updated: '11 Nov 2026',
     readingTime: '5 min read',
     content: [
       { type: 'p', text: 'I get asked about this more than almost anything else on SeftonLinks: how do you actually book a tee time on the Sefton Coast? The generic answer, "contact the club directly", is accurate but not helpful. Each club has its own visitor policy and its own booking route. This guide was updated in November 2026 from each club\'s own website.' },
@@ -749,6 +773,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Manchester to the Sefton Coast is about an hour. That\'s close enough for a day trip and very manageable for a two or three-day break. Here\'s how to plan it so you\'re not wasting time driving the wrong roads or paying the wrong green fees.',
     categorySlug: 'golf-travel',
     date: '16 Mar 2026',
+    updated: '11 Nov 2026',
     readingTime: '6 min read',
     content: [
       { type: 'p', text: 'The Sefton Coast gets a lot of visitors from Manchester and the surrounding area. With good reason: you have six links courses within about an hour of the city centre. Here\'s how to plan the trip without making the mistakes most people make on their first run.' },
@@ -773,6 +798,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Royal Birkdale closes to visitors well before The Open Championship starts. But the rest of the Sefton Coast golf corridor doesn\'t. If you\'re planning a golf trip around the 2026 Open, here\'s what you can actually play: and when.',
     categorySlug: 'the-open-2026',
     date: '26 Feb 2026',
+    updated: '11 Nov 2026',
     readingTime: '5 min read',
     content: [
       { type: 'p', text: 'The most common question I get asked about The Open 2026, once someone finds out Royal Birkdale is hosting it, is: "Can I book a tee time while I\'m there?" The answer is no, and the sooner you know that, the better your trip planning will be.' },
@@ -804,6 +830,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Links greens are fast, firm, sloped in ways that aren\'t always visible from the fairway, and affected by wind in ways that inland greens aren\'t. Most golfers arriving from parkland courses take at least a full round to adjust. Here\'s how to shorten that learning curve.',
     categorySlug: 'links-golf-tips',
     date: '18 Mar 2026',
+    updated: '11 Nov 2026',
     readingTime: '6 min read',
     content: [
       { type: 'p', text: 'The first time I played Royal Birkdale, I three-putted six greens. I had been playing golf for twenty years. I understood putting. What I did not understand, until I started spending real time on links courses, was that links greens are a different problem. Here is what I\'ve learned.' },
@@ -838,6 +865,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'If you have practice round tickets for The Open 2026 and you\'re treating them as the consolation prize for missing out on championship days, reconsider. Practice days at Birkdale are a different experience: and in some ways a better one. Here\'s the inside guide.',
     categorySlug: 'the-open-2026',
     date: '19 Mar 2026',
+    updated: '11 Nov 2026',
     readingTime: '7 min read',
     content: [
       { type: 'p', text: 'I attended the 2017 Open at Royal Birkdale as both a practice day visitor (Tuesday) and a championship day spectator (Friday). I have walked this course in both contexts. The honest assessment: if I had to choose one, I would choose the practice day. I am aware this is not a popular opinion. I will defend it.' },
@@ -874,6 +902,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Championship week accommodation around Royal Birkdale is almost entirely gone. Here\'s the honest picture of what\'s left, where to look, and why Formby might be the best answer nobody\'s considering.',
     categorySlug: 'the-open-2026',
     date: '3 Apr 2026',
+    updated: '11 Nov 2026',
     readingTime: '7 min read',
     content: [
       { type: 'p', text: 'The Open Championship is at Royal Birkdale from 12 to 19 July 2026. I\'m writing this in early April. If you haven\'t booked accommodation yet, here\'s the honest situation: central Southport is essentially sold out for championship week at every normal price point. Birkdale village, the best location for walking to the course, has been gone since January. What\'s left requires looking harder and thinking differently.' },
@@ -911,6 +940,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'April on the Sefton Coast is one of the best times to play. The courses are quieter, green fees are lower, and the conditions are as good as they get: firm turf, clear air, manageable wind. Here\'s what to expect.',
     categorySlug: 'links-golf-tips',
     date: '13 Apr 2026',
+    updated: '11 Nov 2026',
     readingTime: '6 min read',
     content: [
       { type: 'p', text: 'There is a version of the Sefton Coast golf calendar that everyone knows about: peak summer, Open Championship week, the busiest tee sheets and the highest green fees of the year. And then there\'s April. Quieter, cheaper, and in many ways the better golf. Here\'s the honest guide to playing the coast in spring.' },
@@ -948,6 +978,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Most golfers lose strokes on links courses because they play the wrong shots, not because they hit them badly. Strategic course management on links is a different skill to parkland golf. Here\'s what actually works.',
     categorySlug: 'links-golf-tips',
     date: '12 Apr 2026',
+    updated: '11 Nov 2026',
     readingTime: '7 min read',
     content: [
       { type: 'p', text: 'I\'ve now played the Sefton Coast courses enough times to have a sense of where my score actually goes. Most of it isn\'t technical. Most of it is decisions: taking on a flag that was never on, playing out of gorse instead of dropping, not accounting for the wind properly and ending up in a bunker I shouldn\'t have been anywhere near. Links course management is a specific skill and it\'s separate from being able to hit a golf ball.' },
@@ -984,6 +1015,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
       'The Sefton Coast links from a Blackpool base: what each club says about visitor bookings, and how to plan the day.',
     categorySlug: 'golf-travel',
     date: '2 Apr 2026',
+    updated: '11 Nov 2026',
     readingTime: '6 min read',
     content: [
       { type: 'p', text: 'If you\'re based in or around Blackpool and you play golf, the Sefton Coast is closer than most people realise. Royal Birkdale to the centre of Blackpool is around 35 miles by road. In summer, with traffic, that\'s 45–55 minutes. For that journey you reach six links courses within a few miles of each other.' },
@@ -1019,6 +1051,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
       'May is the best month on the Sefton Coast for golf. Firm fairways, long evenings, the courses in their best spring condition. Here\'s what to expect and what to book before the Open crowds arrive.',
     categorySlug: 'links-golf-tips',
     date: '7 May 2026',
+    updated: '11 Nov 2026',
     readingTime: '6 min read',
     content: [
       { type: 'p', text: 'May is when the Sefton Coast courses come into their own. The winter mud has gone. Fairways are firming up. The rough is growing out which means the courses are playing as intended rather than as a function of drainage. Daylight is close to maximum, which means early morning tee times and late evening rounds are both viable. And the July chaos around The Open hasn\'t arrived yet.' },
@@ -1054,6 +1087,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
       'The Open starts at Royal Birkdale on 12 July. Eight weeks out, here\'s what understanding the course actually tells you about how the best players in the world will approach it.',
     categorySlug: 'the-open-2026',
     date: '7 May 2026',
+    updated: '11 Nov 2026',
     readingTime: '8 min read',
     content: [
       { type: 'p', text: 'Before 2026, Royal Birkdale had hosted ten Open Championships. The club was established in 1889 and the course was extensively redesigned in 1922, according to theopen.com. It has been the stage for the famous concession at the 1969 Ryder Cup, Tom Watson\'s fifth Open in 1983, Padraig Harrington\'s second Open in a row in 2008 and Jordan Spieth\'s win in 2017.' },
@@ -1084,6 +1118,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Hillside sits next door to Royal Birkdale, in the same dune system. I\'ve played it several times. The course, its part in The 154th Open, and when visitors can book.',
     categorySlug: 'course-reviews',
     date: '17 May 2026',
+    updated: '11 Nov 2026',
     readingTime: '6 min read',
     content: [
       { type: 'p', text: 'Hillside Golf Club sits directly next to Royal Birkdale and uses the same Lancashire duneland. The club says it was formed between 1911 and 1913 on the land of Hill Side farm, and moved to the seaward side of the railway in the 1920s.' },
@@ -1108,6 +1143,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Summer is one of the best times to play the Sefton Coast courses. Fast fairways and long evenings. What to expect and how to plan it.',
     categorySlug: 'golf-travel',
     date: '18 May 2026',
+    updated: '11 Nov 2026',
     readingTime: '5 min read',
     content: [
       { type: 'p', text: 'Most people associate links golf with autumn or spring. The image is bare trees, winter light, empty fairways. On the Sefton Coast in July and August, you get something different: firm, fast fairways, long evenings, and conditions that make the courses play completely differently to how they play in March. Summer links golf here is brilliant. Here\'s what to expect.' },
@@ -1137,6 +1173,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'The Open is ten weeks away and Royal Birkdale is already in preparation mode. What the course looks like right now, what that means for visitors trying to get on, and what condition it will be in come July.',
     categorySlug: 'the-open-2026',
     date: '10 May 2026',
+    updated: '11 Nov 2026',
     readingTime: '5 min read',
     content: [
       { type: 'p', text: 'I drove past the Royal Birkdale gates this morning on the way back from Marshside. The grounds staff were already out. Ten weeks to The Open and the place is clearly in preparation mode. If you\'re planning to play the course before July, or you\'re just curious what it\'ll look like when the world turns up, here\'s what I\'m seeing.' },
@@ -1161,6 +1198,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'You\'re coming for The Open at Royal Birkdale in July. You might as well play the other courses while you\'re here. Here\'s the practical itinerary: which courses, in what order, and how to structure a trip that works around championship week.',
     categorySlug: 'golf-travel',
     date: '11 May 2026',
+    updated: '11 Nov 2026',
     readingTime: '6 min read',
     content: [
       { type: 'p', text: 'A lot of people coming for The Open in July will have a day or two either side of their championship tickets. That\'s an opportunity most of them won\'t fully use. The Sefton Coast has six links courses within ten miles of Royal Birkdale. You came all this way. Play some of them.' },
@@ -1189,6 +1227,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Royal Birkdale has a specific personality. It rewards certain types of player and punishes others. I live three miles from the course and have watched it closely for years. Here\'s who I think wins, and why.',
     categorySlug: 'the-open-2026',
     date: '12 May 2026',
+    updated: '11 Nov 2026',
     readingTime: '7 min read',
     content: [
       { type: 'p', text: 'I\'m not going to pretend I have special predictive insight into who wins a major golf tournament. Nobody does. But Royal Birkdale does have a character, and that character affects who contends and who doesn\'t. I\'ve watched this course closely for years, played it once (results not repeated here), and have a reasonably informed view of what it demands.' },
@@ -1222,6 +1261,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
       'Accommodation near Royal Birkdale is effectively gone. Blackpool is a viable base: 40 minutes from the first tee. Here\'s how to build a week\'s golf around it properly.',
     categorySlug: 'the-open-2026',
     date: '2 Apr 2026',
+    updated: '11 Nov 2026',
     readingTime: '7 min read',
     content: [
       { type: 'p', text: 'If you have left it too late to book accommodation in Southport or Formby for Open week, Blackpool is a realistic alternative. It is 35 miles from Royal Birkdale, around 45 minutes by road. The price difference for accommodation is significant and availability is considerably better than anywhere on the Sefton Coast.' },
@@ -1260,6 +1300,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'A ticket gets you through the gates. Knowing where to go and when is what makes the difference between a memorable day and a frustrating one. Here is the practical guide from someone who knows the course.',
     categorySlug: 'the-open-2026',
     date: '10 Jun 2026',
+    updated: '11 Nov 2026',
     readingTime: '7 min read',
     image: '/images/blog-open-watching-links.webp',
     content: [
@@ -1296,6 +1337,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Six links courses within 30 minutes of each other. How to book a group golf trip to the Sefton Coast, where to stay, and how to sequence the courses.',
     categorySlug: 'golf-travel',
     date: '10 Jun 2026',
+    updated: '11 Nov 2026',
     readingTime: '8 min read',
     image: '/images/blog-golf-group-sefton.webp',
     content: [
@@ -1328,6 +1370,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'July is the busiest month on the Sefton Coast. Every golfer wants to be here. Here is what is available, what it costs, and what to book now rather than leave to chance.',
     categorySlug: 'the-open-2026',
     date: '5 Jun 2026',
+    updated: '11 Nov 2026',
     readingTime: '7 min read',
     image: '/images/blog-golf-july-southport.jpg',
     content: [
@@ -1367,6 +1410,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Royal Birkdale is closed to visitors this week. Hillside Golf Club is directly adjacent and open. Here is what playing Hillside during Open week is actually like and what you need to know.',
     categorySlug: 'the-open-2026',
     date: '14 Jul 2026',
+    updated: '11 Nov 2026',
     readingTime: '5 min read',
     image: '/images/blog-hillside-open-week.webp',
     content: [
@@ -1389,6 +1433,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'The Sefton Coast has six links courses within 30 minutes of each other. How to plan a corporate golf day there: courses, numbers, catering and what to book first.',
     categorySlug: 'golf-travel',
     date: '14 Jul 2026',
+    updated: '11 Nov 2026',
     readingTime: '6 min read',
     image: '/images/blog-corporate-golf-sefton.webp',
     content: [
@@ -1444,6 +1489,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Three weeks to Royal Birkdale. Hotels are gone. Some self-catering is still available. Practice round tickets are still available. Here is an honest account of where things stand and what to do now.',
     categorySlug: 'the-open-2026',
     date: '22 Jun 2026',
+    updated: '11 Nov 2026',
     readingTime: '6 min read',
     image: '/images/blog-sefton-open-final.webp',
     content: [
@@ -1473,6 +1519,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Late June into July, the Sefton Coast courses are as good as they get. Firm fairways, fast greens, long evenings. Here is the current state of conditions and what to expect when you play.',
     categorySlug: 'links-golf-tips',
     date: '22 Jun 2026',
+    updated: '11 Nov 2026',
     readingTime: '5 min read',
     image: '/images/blog-sefton-july-conditions.webp',
     content: [
@@ -1507,6 +1554,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Eleven days out. If you have a ticket and want to get the most out of your day at Royal Birkdale, positioning matters. Here is where to be, when to move, and what each area of the course offers a spectator.',
     categorySlug: 'the-open-2026',
     date: '1 Jul 2026',
+    updated: '11 Nov 2026',
     readingTime: '7 min read',
     image: '/images/blog-open-holes-to-watch.webp',
     content: [
@@ -1538,6 +1586,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'The Open ends on 19 July. By late July the crowds are gone, green fees drop, and the courses are in their best summer condition with the pressure off. August on the Sefton Coast is underrated.',
     categorySlug: 'golf-travel',
     date: '1 Jul 2026',
+    updated: '11 Nov 2026',
     readingTime: '6 min read',
     image: '/images/blog-sefton-august-golf.webp',
     content: [
@@ -1566,6 +1615,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Ryan Fox was tied 52nd after 36 holes, shot a record-equalling 62 on Saturday and birdied the 72nd hole to win The 154th Open at Royal Birkdale by one shot.',
     categorySlug: 'the-open-2026',
     date: '19 Jul 2026',
+    updated: '11 Nov 2026',
     readingTime: '6 min read',
     image: '/images/blog-open-2026-aftermath.webp',
     content: [
@@ -1596,6 +1646,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'West Lancashire sits right on the coast at Blundellsands, exposed to the wind off the Irish Sea. What the course is like in September, as the wind shifts from summer south-westerlies to autumn north-westerlies.',
     categorySlug: 'course-reviews',
     date: '9 Sep 2026',
+    updated: '11 Nov 2026',
     readingTime: '6 min read',
     image: '/images/blog-west-lancashire-golf-sept.webp',
     content: [
@@ -1625,6 +1676,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Each Sefton Coast course handles autumn wind differently. The routing, the terrain and the bunker placement all change what a 20mph westerly means for your round. Here is a course-by-course breakdown.',
     categorySlug: 'links-golf-tips',
     date: '9 Sep 2026',
+    updated: '11 Nov 2026',
     readingTime: '7 min read',
     image: '/images/blog-autumn-wind-links-golf.webp',
     content: [
@@ -1655,6 +1707,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'July had The Open and August the summer crowds. September has the same courses with fewer golfers waiting on the first tee. Here is the case for September.',
     categorySlug: 'golf-travel',
     date: '21 Aug 2026',
+    updated: '11 Nov 2026',
     readingTime: '6 min read',
     image: '/images/blog-september-golf-sefton.webp',
     content: [
@@ -1716,6 +1769,7 @@ const ALL_BLOG_POSTS: BlogPost[] = [
     excerpt: 'Five courses. Five distinct challenges. All within 30 minutes of Southport town centre. Here is how I would sequence them and what to expect from each day.',
     categorySlug: 'golf-travel',
     date: '5 Jun 2026',
+    updated: '11 Nov 2026',
     readingTime: '8 min read',
     image: '/images/blog-sefton-coast-itinerary.jpg',
     content: [
@@ -1795,4 +1849,62 @@ function toIso(dateStr: string): string {
 
 export function getIsoDate(post: BlogPost): string {
   return toIso(post.date);
+}
+
+/** The day the post last changed: `updated` when set, otherwise `date`. */
+export function getIsoModified(post: BlogPost): string {
+  return toIso(post.updated ?? post.date);
+}
+
+// ── Course guides and the posts about them (internal links both ways) ───────
+// Keys are course slugs from lib/courses.ts. Posts about one club first, then the
+// posts that cover every club (booking, green fees, winter).
+
+const ALL_CLUBS_POSTS = [
+  'how-to-book-tee-times-sefton-coast',
+  'best-value-golf-sefton-coast',
+  'winter-golf-sefton-coast',
+];
+
+export const COURSE_POSTS: Record<string, string[]> = {
+  'royal-birkdale': [
+    'i-played-royal-birkdale-off-24',
+    'ryan-fox-wins-open-2026-royal-birkdale',
+    'royal-birkdale-open-2026-what-it-teaches-you',
+    ...ALL_CLUBS_POSTS,
+  ],
+  hillside: [
+    'hillside-golf-club-review',
+    'hillside-golf-club-most-underrated-links',
+    'playing-hillside-during-open-week',
+    ...ALL_CLUBS_POSTS,
+  ],
+  formby: ['formby-golf-club-review', ...ALL_CLUBS_POSTS],
+  'west-lancashire': [
+    'west-lancashire-golf-club-review',
+    'west-lancashire-september-2026',
+    ...ALL_CLUBS_POSTS,
+  ],
+  'southport-ainsdale': ['southport-ainsdale-golf-club-review', ...ALL_CLUBS_POSTS],
+  'southport-old-links': ['southport-old-links-review', ...ALL_CLUBS_POSTS],
+};
+
+/** Posts to list on a course guide, in the order above. */
+export function getCoursePosts(courseSlug: string): BlogPost[] {
+  return (COURSE_POSTS[courseSlug] ?? [])
+    .map((slug) => getPostBySlug(slug))
+    .filter((p): p is BlogPost => Boolean(p));
+}
+
+/** Course slugs whose guide a post is about (not the posts that cover every club). */
+export function getPostCourseSlugs(postSlug: string): string[] {
+  if (ALL_CLUBS_POSTS.includes(postSlug)) return [];
+  return Object.keys(COURSE_POSTS).filter((c) => COURSE_POSTS[c].includes(postSlug));
+}
+
+/** Up to `n` other posts in the same category, newest first. */
+export function getRelatedPosts(post: BlogPost, n = 3): BlogPost[] {
+  return getPostsByCategory(post.categorySlug)
+    .filter((p) => p.slug !== post.slug)
+    .slice(0, n);
 }

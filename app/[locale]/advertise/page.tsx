@@ -5,7 +5,11 @@ import { buildAlternates, buildOg } from '@/lib/metadata';
 import { DISPLAY_EMAIL } from '@/lib/contact';
 import { AD_OPTIONS, AD_SLOTS, FOUNDING_OFFER, NETWORK_BUNDLE, describeSpace, enquiryHref } from '@/lib/ad-slots';
 
-const title = 'Advertise on SeftonLinks';
+// Title restored to the one the page ranked with (Damian, 11 Nov 2026). With the
+// layout template it renders as "Advertise on SeftonLinks | Sefton Coast Network |
+// SeftonLinks.com"; og:title is this string without the template, as before. Keep
+// both; see docs/freshen-2026-11/REPORT.md, "SEO".
+const title = 'Advertise on SeftonLinks | Sefton Coast Network';
 const description =
   'Simple advertising options on SeftonLinks, the guide to golf on the Sefton Coast: course page partners, page sponsors, a home page card and sponsored articles, at fixed prices plus VAT.';
 
@@ -61,7 +65,7 @@ export default async function AdvertisePage({
               Advertise to golfers planning a round on the Sefton Coast
             </h1>
             <p className="text-lg text-white/65 leading-relaxed mb-8">
-              Simple options at a fixed price. Every advert is clearly labelled, there are no ad networks or tracking cookies, and you deal with us directly.
+              Advertising on SeftonLinks puts your business beside our course guides, visitor information and golf travel articles for the Sefton Coast, and the bundle adds the other Sefton Coast Network sites. Simple options at a fixed price. Every advert is clearly labelled, there are no ad networks or tracking cookies, and you deal with us directly.
             </p>
             <Link
               href={`${prefix}${enquiryHref(spaceTitle ? space : undefined)}`}

@@ -1,12 +1,13 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
-import { buildAlternates } from '@/lib/metadata';
+import { buildAlternates, buildOg } from '@/lib/metadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   return {
-    title: 'Terms of Use | SeftonLinks',
+    title: 'Terms of Use',
     robots: { index: false, follow: false },
     alternates: buildAlternates('/terms'),
+    openGraph: buildOg('/terms', { title: 'Terms of Use' }),
   };
 }
 

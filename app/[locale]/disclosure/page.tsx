@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { BASE_URL } from '@/lib/metadata';
+import { BASE_URL, buildOg } from '@/lib/metadata';
 import { DISPLAY_EMAIL } from '@/lib/contact';
 
 const description =
@@ -11,6 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: 'Disclosure',
     description,
     alternates: { canonical: `${BASE_URL}/disclosure` },
+    openGraph: buildOg('/disclosure', { title: 'Disclosure', description }),
   };
 }
 

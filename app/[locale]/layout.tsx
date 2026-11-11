@@ -69,11 +69,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         },
       ],
     },
+    // Card type only: Next.js fills twitter:title, description and image from each
+    // page's own Open Graph tags, so every page shares its own title, not the home one.
     twitter: {
       card: 'summary_large_image',
-      title: 'SeftonLinks: Links Golf Guide to the Sefton Coast',
-      description: 'Royal Birkdale, Hillside, Formby and the other Sefton Coast links courses: visitor guides, green fees and tee times.',
-      images: [`${BASE_URL}/og-default.jpg`],
     },
     robots: {
       index: true,
@@ -121,37 +120,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={isRTL ? 'rtl' : 'ltr'}>
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'WebSite',
-              '@id': `${BASE_URL}/#website`,
-              name: 'SeftonLinks.com',
-              url: BASE_URL,
-              description:
-                'A guide to links golf on the Sefton Coast: Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale and Southport Old Links.',
-              publisher: {
-                '@type': 'Organization',
-                '@id': 'https://www.churchtownmedia.co.uk/#organization',
-                name: 'Churchtown Media',
-                url: 'https://www.churchtownmedia.co.uk',
-              },
-              author: {
-                '@type': 'Person',
-                '@id': 'https://www.churchtownmedia.co.uk/about#founder',
-                name: 'Damian Roche',
-                jobTitle: 'Founder, Churchtown Media',
-                url: 'https://www.churchtownmedia.co.uk/about',
-                sameAs: [
-                  'https://www.linkedin.com/in/damian-roche/',
-                  'https://find-and-update.company-information.service.gov.uk/company/16960442',
-                ],
-              },
-            }),
-          }}
-        />
+        {/* WebSite and Organization JSON-LD are on the home page only (app/[locale]/page.tsx). */}
         {/* eslint-disable-next-line @next/next/no-before-interactive-script-outside-document */}
         <script src="https://analytics.ahrefs.com/analytics.js" data-key="YxUnUF02+8U+AvJf5UXHRw" async></script>
       </head>
@@ -327,7 +296,7 @@ async function Footer({ locale }: { locale: string }) {
         <div className="border-t border-white/10 pt-5 pb-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm">
           <p className="text-white/50">
             Hotel, B&amp;B, restaurant or golf travel business?{" "}
-            <span className="text-[#B8912A] font-semibold">Advertise on SeftonLinks</span>
+            <span className="text-[#B8912A] font-semibold">Advertise with the Sefton Coast Network</span>
           </p>
           <Link href={`${prefix}/advertise`} className="text-[#B8912A] hover:text-white transition font-medium text-sm">
             View advertising options →

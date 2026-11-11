@@ -6,7 +6,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { BLOG_CATEGORIES, BLOG_POSTS } from '../lib/blog.ts';
+import { BLOG_CATEGORIES, BLOG_POSTS, COURSE_POSTS } from '../lib/blog.ts';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const read = (p) => readFileSync(join(ROOT, p), 'utf8');
@@ -33,5 +33,23 @@ test('course articles are labelled guides, not reviews (the slug course-reviews 
   }
   for (const f of ['app/[locale]/blog/page.tsx', 'app/feed/route.ts']) {
     assert.doesNotMatch(read(f), /course reviews/i, f);
+  }
+});
+
+// Course guide <-> post links (lib/blog.ts COURSE_POSTS) name posts that exist.
+test('every post linked from a course guide exists', () => {
+  const slugs = new Set(BLOG_POSTS.map((p) => p.slug));
+  const missing = Object.values(COURSE_POSTS).flat().filter((s) => !slugs.has(s));
+  assert.deepEqual(missing, []);
+});
+
+// `updated` feeds dateModified and the sitemap lastmod: same form as `date`, never earlier.
+test('updated dates are real dates on or after the post date', () => {
+  const re = /^\d{1,2} (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{4}$/;
+  for (const p of BLOG_POSTS) {
+    assert.match(p.date, re, p.slug);
+    if (p.updated === undefined) continue;
+    assert.match(p.updated, re, p.slug);
+    assert.ok(new Date(p.updated) >= new Date(p.date), `${p.slug}: updated before date`);
   }
 });

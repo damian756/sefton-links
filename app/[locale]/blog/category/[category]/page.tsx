@@ -43,9 +43,25 @@ export default async function CategoryPage({
   if (!cat) notFound();
 
   const posts = getPostsByCategory(category);
+  const pageUrl = `https://www.seftonlinks.com/blog/category/${cat.slug}`;
 
   return (
     <div className="min-h-screen bg-[#F8F5EE]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.seftonlinks.com' },
+              { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.seftonlinks.com/blog' },
+              { '@type': 'ListItem', position: 3, name: cat.label, item: pageUrl },
+            ],
+          }),
+        }}
+      />
+
       {/* Breadcrumb */}
       <div className="bg-white border-b border-[#E8E3D8]">
         <div className="container mx-auto px-4 max-w-5xl py-3">

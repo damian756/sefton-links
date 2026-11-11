@@ -7,6 +7,7 @@ import { COURSES } from '@/lib/courses';
 import { getCategoryBySlug, getSortedBlogPosts } from '@/lib/blog';
 import type { Metadata } from 'next';
 import { BASE_URL, buildAlternates, buildOg } from '@/lib/metadata';
+import { locales } from '@/i18n/routing';
 
 // This page shows an advert space: re-render at least daily so a sponsor whose
 // `until` date has passed drops off without a deploy.
@@ -64,18 +65,19 @@ export default async function HomePage({
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@graph': [
+              // The site's one WebSite and one Organization (the layout no longer repeats
+              // a WebSite on every page). Posts name Churchtown Media as publisher, so it is
+              // the parent organisation here.
               {
                 '@type': 'WebSite',
                 '@id': `${BASE_URL}/#website`,
                 url: BASE_URL,
                 name: 'SeftonLinks.com',
-                description: 'A guide to links golf at Royal Birkdale and the other Sefton Coast courses.',
+                alternateName: 'SeftonLinks',
+                description:
+                  'A guide to links golf on the Sefton Coast: Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale and Southport Old Links.',
                 publisher: { '@id': `${BASE_URL}/#organization` },
-                inLanguage: 'en-GB',
-                potentialAction: {
-                  '@type': 'ReadAction',
-                  target: `${BASE_URL}/courses`,
-                },
+                inLanguage: [...locales],
               },
               {
                 '@type': 'Organization',
@@ -84,9 +86,15 @@ export default async function HomePage({
                 url: BASE_URL,
                 logo: {
                   '@type': 'ImageObject',
-                  url: `${BASE_URL}/og-default.jpg`,
-                  width: 1200,
-                  height: 630,
+                  url: `${BASE_URL}/icon-512.png`,
+                  width: 512,
+                  height: 512,
+                },
+                parentOrganization: {
+                  '@type': 'Organization',
+                  '@id': 'https://www.churchtownmedia.co.uk/#organization',
+                  name: 'Churchtown Media',
+                  url: 'https://www.churchtownmedia.co.uk',
                 },
                 sameAs: [
                   'https://www.southportguide.co.uk',
