@@ -4,7 +4,7 @@ import { getTranslations } from 'next-intl/server';
 import { Trophy, Wind, MapPin, Calendar, ChevronRight, Star, Flag, Clock, Users } from 'lucide-react';
 import AdSlot from '@/components/AdSlot';
 import { COURSES } from '@/lib/courses';
-import { getSortedBlogPosts } from '@/lib/blog';
+import { getCategoryBySlug, getSortedBlogPosts } from '@/lib/blog';
 import type { Metadata } from 'next';
 import { BASE_URL, buildAlternates, buildOg } from '@/lib/metadata';
 
@@ -522,7 +522,8 @@ export default async function HomePage({
                   <p className="text-[#B8912A] text-xs font-bold uppercase tracking-widest mb-2">From the Blog</p>
                   <h2 className="font-display text-2xl md:text-3xl font-bold text-[#0D1B2A]">Latest from SeftonLinks</h2>
                 </div>
-                <Link href={`/${locale}/blog`} className="text-sm font-semibold text-[#1A4A30] hover:text-[#B8912A] transition-colors hidden sm:block">
+                {/* The blog is English only at /blog: /en/blog and /<locale>/blog redirect there. */}
+                <Link href="/blog" className="text-sm font-semibold text-[#1A4A30] hover:text-[#B8912A] transition-colors hidden sm:block">
                   All posts →
                 </Link>
               </div>
@@ -530,7 +531,7 @@ export default async function HomePage({
                 {recentPosts.map((post) => (
                   <Link
                     key={post.slug}
-                    href={`/${locale}/blog/${post.slug}`}
+                    href={`/blog/${post.slug}`}
                     className="group bg-[#F8F5EE] rounded-xl overflow-hidden border border-[#E8E3D8] hover:border-[#1A4A30]/30 hover:shadow-md transition-all"
                   >
                     {post.image && (
@@ -545,7 +546,7 @@ export default async function HomePage({
                       </div>
                     )}
                     <div className="p-5">
-                      <p className="text-[#B8912A] text-[10px] font-bold uppercase tracking-widest mb-2">{post.sponsor ? 'Sponsored · ' : ''}{post.categorySlug.replace(/-/g, ' ')}</p>
+                      <p className="text-[#B8912A] text-[10px] font-bold uppercase tracking-widest mb-2">{post.sponsor ? 'Sponsored · ' : ''}{getCategoryBySlug(post.categorySlug)?.label ?? post.categorySlug.replace(/-/g, ' ')}</p>
                       <h3 className="font-display font-bold text-[#0D1B2A] text-sm leading-snug group-hover:text-[#1A4A30] transition-colors mb-2">
                         {post.title}
                       </h3>
@@ -556,7 +557,7 @@ export default async function HomePage({
                 ))}
               </div>
               <div className="mt-5 sm:hidden text-center">
-                <Link href={`/${locale}/blog`} className="text-sm text-[#1A4A30] font-semibold">All posts →</Link>
+                <Link href="/blog" className="text-sm text-[#1A4A30] font-semibold">All posts →</Link>
               </div>
             </div>
           </section>
