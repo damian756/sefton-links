@@ -24,8 +24,8 @@ export async function generateMetadata({
   return {
     title,
     description,
-    alternates: buildAlternates('/the-open-2026'),
-    openGraph: buildOg('/the-open-2026', { title, description }),
+    alternates: buildAlternates('/the-open-2026', locale),
+    openGraph: buildOg('/the-open-2026', { title, description }, locale),
   };
 }
 

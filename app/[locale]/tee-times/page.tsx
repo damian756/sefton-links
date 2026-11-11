@@ -18,8 +18,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title,
     description,
-    alternates: buildAlternates('/tee-times'),
-    openGraph: buildOg('/tee-times', { title, description }),
+    alternates: buildAlternates('/tee-times', locale),
+    openGraph: buildOg('/tee-times', { title, description }, locale),
   };
 }
 

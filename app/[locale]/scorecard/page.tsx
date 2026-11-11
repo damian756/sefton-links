@@ -13,8 +13,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title,
     description,
-    alternates: buildAlternates('/scorecard'),
-    openGraph: buildOg('/scorecard', { title, description }),
+    alternates: buildAlternates('/scorecard', locale),
+    openGraph: buildOg('/scorecard', { title, description }, locale),
   };
 }
 

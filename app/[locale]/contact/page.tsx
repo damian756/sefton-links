@@ -19,8 +19,8 @@ export async function generateMetadata({
   return {
     title,
     description,
-    alternates: buildAlternates('/contact'),
-    openGraph: buildOg('/contact', { title, description }),
+    alternates: buildAlternates('/contact', locale),
+    openGraph: buildOg('/contact', { title, description }, locale),
   };
 }
 

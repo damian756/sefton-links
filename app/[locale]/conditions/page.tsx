@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title,
     description,
-    alternates: buildAlternates('/conditions'),
-    openGraph: buildOg('/conditions', { title, description }),
+    alternates: buildAlternates('/conditions', locale),
+    openGraph: buildOg('/conditions', { title, description }, locale),
   };
 }
 
