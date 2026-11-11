@@ -15,7 +15,11 @@ export const routing = defineRouting({
   locales,
   defaultLocale: 'en',
   localePrefix: 'as-needed',
-  // URL is the sole authority on locale — no cookie persistence, no Accept-Language redirects.
+  // URL is the sole authority on locale: no Accept-Language redirects.
   // Users navigate to /de/, /ja/ etc. explicitly via the language switcher.
   localeDetection: false,
+  // With localeDetection off, next-intl never reads its NEXT_LOCALE cookie
+  // (middleware/resolveLocale.js), so it does not set it either. The site then
+  // sets no cookies at all.
+  localeCookie: false,
 });
