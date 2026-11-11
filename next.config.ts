@@ -43,20 +43,21 @@ const nextConfig: NextConfig = {
         destination: '/blog/:path*',
         permanent: true,
       },
+      // Host redirects keep the path: /:path* (not /(.*)) so :path* has a value.
       {
-        source: '/(.*)',
+        source: '/:path*',
         has: [{ type: 'host', value: 'sefton-links.vercel.app' }],
         destination: 'https://www.seftonlinks.com/:path*',
         permanent: true,
       },
       {
-        source: '/(.*)',
+        source: '/:path*',
         has: [{ type: 'host', value: 'www.seftonlinks.co.uk' }],
         destination: 'https://www.seftonlinks.com/:path*',
         permanent: true,
       },
       {
-        source: '/(.*)',
+        source: '/:path*',
         has: [{ type: 'host', value: 'seftonlinks.co.uk' }],
         destination: 'https://www.seftonlinks.com/:path*',
         permanent: true,
