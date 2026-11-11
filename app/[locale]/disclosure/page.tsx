@@ -77,8 +77,8 @@ export default function DisclosurePage() {
           <p>
             We update this page when any of these interests change. The date at the top shows the last
             update. Questions to{' '}
-            <a href="mailto:hello@churchtownmedia.co.uk" className={a}>
-              hello@churchtownmedia.co.uk
+            <a href="mailto:hello@seftoncoast.network" className={a}>
+              hello@seftoncoast.network
             </a>
             .
           </p>
