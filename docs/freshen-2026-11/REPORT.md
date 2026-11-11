@@ -140,3 +140,154 @@ Built 11 Nov 2026 in commit `ca27350`, not pushed.
 - Existing advertisers: none. No visit counting on this site.
 - Tests 23 of 23 (addresses, recipient, reply-to, escaping, logging, honeypot, caps, no provider test sender, no affiliates). tsc 0; eslint 0 errors and 15 warnings (baseline 1 and 15).
 - For Damian: the £35 post-sponsor price; ad cards English-only; about 50 to 60 lines in each other language file still contain em dashes (untouched translated strings); verdict copy left as it was (course data "consistently excellent conditioning", "Ranked in world's top 5", "Excellent value", and restaurant and hotel lines); Birkdale's 24/36 handicap limits unverified; the privacy page names Plausible and Clarity but the site loads Clarity and Ahrefs, and does not mention the `PageView` log in `proxy.ts`. Draft privacy line: "If you use our contact form, we receive your name, email address and message by email, sent through our email provider Resend, and use them only to reply to you."
+
+## 8. The Open and freshness sweep
+
+Work done 11 Nov 2026 on `main`, not pushed. Commits: `11b09a4`, `3c272c9`, `de3aab3`, `8eac18e`, `62321d7`, `f500635`, `376b2f3`, `902252b`. Privacy wording is on branch `privacy-wording` (`a6e44b9`), not merged. Full change log, one row per change with file, before and after: `docs/freshen-2026-11/open-sweep-changes.tsv`. Screenshots: `docs/freshen-2026-11/screens/open-before-*` and `open-after-*`, covering home and `/the-open-2026` in en, de, ja and fr at 1440 and 390, plus accommodation, the Royal Birkdale page and a pre-Open post at 1440.
+
+### 8.1 The Open (the 154th Open at Royal Birkdale ran 12 to 19 July 2026, so nothing on the site may read as if it is still to come)
+- `/the-open-2026` keeps its URL and is now "The Open at Royal Birkdale". It records the 2026 result: Ryan Fox, 72-68-62-68, 270, 10 under par, one ahead of Cameron Young, with Sam Burns third. It also covers Birkdale's 11 Opens since 1954, the other championships the club lists, past champions, and "Visiting Royal Birkdale Now": fully booked through 2027 including the Birkdale Open Experience Package, the other five courses, and tee times.
+- Removed from that page: tickets, "Where to Stay for The Open", spectator tips, the countdown, the SouthportGuide Open hub link and the SportsEvent JSON-LD. The JSON-LD is now a WebPage with a past-tense FAQ.
+- Home: Open banner, countdown ("Ryan Fox. Champion Golfer 2026.") and SportsEvent JSON-LD removed; hero, Open block and editorial reworded as a record.
+- Nav: the gold "The Open 2026" button is now a plain "The Open" link. Footer column: "The Open at Birkdale".
+- Also changed: site keywords, OpenGraph and Twitter text, blog index metadata, feed description, sitemap priority. `components/OpenCountdown.tsx` deleted; `OPEN_DATE` removed.
+- Accommodation: the Open callout and "Popular with Open Championship groups in 2017" removed.
+- Contact: the ticket line now just points to TheOpen.com. The 404 page no longer mentions an "Open hub".
+- Blog: posts in "The Open 2026" category dated before 19 July, and five build-up travel posts, stay as dated records with a "Written before The 154th Open" note. Elsewhere, Open and "book Birkdale" advice was rewritten, e.g. `september-golf-sefton-coast` and the `golf-near-blackpool-sefton-links` heading.
+- Factual slips in the dated Open posts were also fixed: week dates, Birkdale postcode, winners list, number of Opens, the 17th is a par 5.
+
+### 8.2 Named businesses (no ranking or criticism of any named club, hotel or restaurant)
+- Course data (`lib/courses.ts` and `courseData`), removed and replaced with what each club's own site says:
+  - Royal Birkdale: "Ranked in world's top 5".
+  - Hillside: "Consistently excellent conditioning", "a match for any course in England", "Excellent clubhouse".
+  - Formby: "The course itself is exceptional".
+  - West Lancashire: "links golf at its purest", "This is a shame", "lacks the manicured polish of Royal Birkdale", "Good value", "more relaxed than Southport clubs".
+  - S&A: "Excellent value", "the best of the Sefton Coast", "among the most accessible".
+  - Old Links: "Hidden value", "Most accessible ... on the coast", "punches above its green fee".
+- Dining lines: "Bistrot Pierre ... reliable and good value" removed (Southport branch not confirmed on bistrotpierre.co.uk). "The Grill Room ... fine dining" is now "The Vincent Hotel, 98 Lord Street: a hotel with the V Café & Restaurant and a cocktail bar". "Closest quality option", "popular village pub", "local favourite" and "excellent pub" removed.
+- Accommodation: "classic choice", "The Grill Room is excellent", "upscale", "stylish", "good spa", "quality B&Bs" and "Good value" removed. The Bold Hotel, The Vincent Hotel and Formby Hall Golf Resort & Spa are described from their own sites. Hotel rates removed.
+- Home and conditions: "Six of England's finest", the Scotland "same quality tier" comparison, "Better access than ... Scotland", and the drainage comparison between named clubs removed.
+- Facts fixed from the clubs' sites:
+  - Birkdale: Ryder Cups 1965 and 1969, Walker Cup 1951, Curtis Cup 1948 (was Walker Cup 2019, Curtis Cup 2000).
+  - Formby: the Walker and Curtis Cup claims replaced by the Amateur and PGA Seniors Championships.
+  - Old Links: founded 1926 (centenary 2026), not 1901.
+- Blog: 115 verdict edits in 44 posts. Titles changed, slugs kept.
+
+### 8.3 Freshness
+- "this winter" (tee-times meta, itineraries): now "winter 2026 to 2027".
+- "updated recently" (home tools card, conditions): now "in the last seven days", matching the code.
+- Privacy and terms "Last updated: February 2026": now November 2026 in all 18 languages, since the affiliate text came off both pages on 11 Nov.
+- Blog: 11 old fees and addresses replaced with current club figures; dated posts keep words relative to their own date.
+- Left as accurate: "© 2026", the disclosure date, the home "Latest" strip.
+
+### 8.4 Languages
+- In the 17 other locale files, every key whose English changed or was deleted is removed, so it falls back to the corrected English (about 103 keys per file).
+- The 575 em dashes left in translated strings are replaced: colon, French " : ", full-width colon in ja and zh, brackets for asides.
+- Not done: no new translation of the reworded English. `/de`, `/ja` and the rest show English on the Open page and course descriptions until it is translated.
+
+### 8.5 Analytics and privacy
+- Microsoft Clarity removed on `main` (`f500635`). A headless check found only analytics.ahrefs.com requests and one session cookie, NEXT_LOCALE.
+- Branch `privacy-wording` rewrites the analytics sentence to name Ahrefs Web Analytics. It adds a cookie sentence and a page-counts sentence for the `proxy.ts` PageView log; the page-counts sentence was not asked for. Translated in 16 languages; Welsh carries the English. For Damian to approve before merging.
+
+### 8.6 URLs to resubmit
+Every page below also changed under each of the 17 locale prefixes, e.g. https://www.seftonlinks.com/de/the-open-2026.
+
+Pages:
+- https://www.seftonlinks.com/
+- https://www.seftonlinks.com/the-open-2026
+- https://www.seftonlinks.com/accommodation
+- https://www.seftonlinks.com/courses
+- https://www.seftonlinks.com/courses/royal-birkdale
+- https://www.seftonlinks.com/courses/hillside
+- https://www.seftonlinks.com/courses/formby
+- https://www.seftonlinks.com/courses/west-lancashire
+- https://www.seftonlinks.com/courses/southport-ainsdale
+- https://www.seftonlinks.com/courses/southport-old-links
+- https://www.seftonlinks.com/tee-times
+- https://www.seftonlinks.com/itineraries
+- https://www.seftonlinks.com/conditions
+- https://www.seftonlinks.com/contact
+- https://www.seftonlinks.com/terms
+- https://www.seftonlinks.com/blog
+- https://www.seftonlinks.com/blog/category/the-open-2026
+- https://www.seftonlinks.com/blog/category/golf-travel
+- https://www.seftonlinks.com/blog/category/course-reviews
+- https://www.seftonlinks.com/blog/category/links-golf-tips
+
+The 46 posts:
+- https://www.seftonlinks.com/blog/autumn-wind-sefton-coast-courses
+- https://www.seftonlinks.com/blog/best-value-golf-sefton-coast
+- https://www.seftonlinks.com/blog/blackpool-open-2026-golf-itinerary
+- https://www.seftonlinks.com/blog/can-i-play-royal-birkdale-during-open-week
+- https://www.seftonlinks.com/blog/corporate-golf-days-sefton-coast
+- https://www.seftonlinks.com/blog/formby-golf-club-review
+- https://www.seftonlinks.com/blog/getting-to-royal-birkdale-for-the-open-2026
+- https://www.seftonlinks.com/blog/golf-near-blackpool-sefton-links
+- https://www.seftonlinks.com/blog/golf-southport-july-2026
+- https://www.seftonlinks.com/blog/hillside-golf-club-most-underrated-links
+- https://www.seftonlinks.com/blog/hillside-golf-club-review
+- https://www.seftonlinks.com/blog/how-to-book-tee-times-sefton-coast
+- https://www.seftonlinks.com/blog/i-played-royal-birkdale-off-24
+- https://www.seftonlinks.com/blog/links-golf-for-beginners
+- https://www.seftonlinks.com/blog/open-2026-accommodation-guide
+- https://www.seftonlinks.com/blog/open-2026-contenders-royal-birkdale
+- https://www.seftonlinks.com/blog/open-2026-no-ticket-golfers-guide
+- https://www.seftonlinks.com/blog/open-2026-practice-rounds-guide
+- https://www.seftonlinks.com/blog/open-2026-round-1-conditions-royal-birkdale
+- https://www.seftonlinks.com/blog/open-2026-six-weeks-out
+- https://www.seftonlinks.com/blog/open-2026-three-weeks-out
+- https://www.seftonlinks.com/blog/open-2026-which-holes-to-watch
+- https://www.seftonlinks.com/blog/playing-hillside-during-open-week
+- https://www.seftonlinks.com/blog/royal-birkdale-may-conditions-2026
+- https://www.seftonlinks.com/blog/royal-birkdale-open-2026-what-it-teaches-you
+- https://www.seftonlinks.com/blog/royal-birkdale-watching-guide-2026
+- https://www.seftonlinks.com/blog/sefton-coast-course-for-your-handicap
+- https://www.seftonlinks.com/blog/sefton-coast-five-course-itinerary
+- https://www.seftonlinks.com/blog/sefton-coast-golf-august-2026
+- https://www.seftonlinks.com/blog/sefton-coast-golf-in-spring
+- https://www.seftonlinks.com/blog/sefton-coast-golf-july-august
+- https://www.seftonlinks.com/blog/sefton-coast-golf-trip-from-manchester
+- https://www.seftonlinks.com/blog/sefton-coast-golf-trip-open-week-2026
+- https://www.seftonlinks.com/blog/sefton-coast-golf-trip-organiser
+- https://www.seftonlinks.com/blog/sefton-coast-july-conditions-2026
+- https://www.seftonlinks.com/blog/sefton-coast-links-june-2026
+- https://www.seftonlinks.com/blog/sefton-links-may-conditions-2026
+- https://www.seftonlinks.com/blog/september-golf-sefton-coast
+- https://www.seftonlinks.com/blog/southport-ainsdale-golf-club-review
+- https://www.seftonlinks.com/blog/southport-old-links-review
+- https://www.seftonlinks.com/blog/staying-in-formby-for-the-open-2026
+- https://www.seftonlinks.com/blog/the-open-2026-day-by-day-guide
+- https://www.seftonlinks.com/blog/the-open-2026-first-timers-guide
+- https://www.seftonlinks.com/blog/watching-the-open-2026-without-a-ticket
+- https://www.seftonlinks.com/blog/west-lancashire-golf-club-review
+- https://www.seftonlinks.com/blog/west-lancashire-september-2026
+
+### 8.7 Sources (fetched 11 Nov 2026)
+- theopen.com:
+  - /venues/royal-birkdale: founded 1889, redesigned 1922, the most regular venue after St Andrews.
+  - /previous-opens/royal-birkdale-154th-open: leaderboard, and the week as 12 to 19 July 2026.
+  - /latest/ryan-fox-royal-birkdale-2026-story: practice days Sunday to Wednesday, level par at halfway, record-equalling 62, birdie at the 72nd, more than 300,000 spectators.
+  - /players/ryan-fox: his first major.
+- royalbirkdale.com:
+  - /history: 11 Opens, 6 Women's Opens, Ryder Cups 1965 and 1969, Senior Open 2013, Walker Cup 1951, Curtis Cup 1948, second New Zealand champion.
+  - /visitors: Members for the Day, open competitions, buggies need a medical certificate, clubhouse dress, tees 4,877 to 6,736 yards.
+- members.royalbirkdale.com/visitorbooking: fully booked through 2026 and 2027, check back for 2028; 01704 552020.
+- Hillside, Formby, West Lancashire, S&A and Old Links sites: home, history, visitors and fee pages.
+- boldhotel.com, thevincenthotel.com, formbyhallgolfresort.co.uk.
+
+### 8.8 Checks
+- `npm run test:enquiry` 23/23 pass. tsc 0 errors. eslint 0 errors and 14 warnings (baseline 0 and 15).
+- The console check, run with the bot user agent, was clean on the en, de, ja and fr home and Open pages, accommodation and a blog post; the only line is the "Ignoring Event: localhost" analytics warning.
+- No em dash left in `messages/*.json` or in any customer-facing string in a changed file.
+- The dev server ran on 3103 with an empty `DATABASE_URL` and a bot user agent, so no page views were written to the database.
+
+### 8.9 For Damian
+- Approve `privacy-wording`, including the page-counts sentence.
+- Confirm Clarity removal on `main` is wanted now; the coordinator's second note could be read as holding it for the branch.
+- Translation pass for the reworded English in the 17 locales.
+- Unverified figures left as they were: Birkdale handicap 24/36, yardages and ratings, the "1873 Oldest Club" stat.
+- First-person claims in your name in the blog.
+- The four unreachable duplicate posts, which still contain verdicts.
+- `/feed` 404 (the `proxy.ts` matcher).
+- Old Links' founding year (1926).
+- A dev-only hydration warning on the language flags, which is also there before this work.
