@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { BLOG_POSTS } from "@/lib/blog";
+import { BLOG_POSTS, showsPreOpenNote } from "@/lib/blog";
 
 const BASE_URL = "https://www.seftonlinks.com";
 
@@ -29,7 +29,7 @@ export async function GET() {
       <title>${escapeXml(p.title)}</title>
       <link>${BASE_URL}/blog/${p.slug}</link>
       <guid isPermaLink="true">${BASE_URL}/blog/${p.slug}</guid>
-      <description>${escapeXml(p.excerpt)}</description>
+      <description>${escapeXml((showsPreOpenNote(p) ? "Written before The 154th Open (July 2026). " : "") + p.excerpt)}</description>
       <pubDate>${toRfc2822(p.date)}</pubDate>
     </item>`
       )

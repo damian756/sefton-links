@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { ChevronRight, Clock, ArrowRight } from 'lucide-react';
-import { BLOG_POSTS, BLOG_CATEGORIES, getPostsByCategory, getCategoryBySlug } from '@/lib/blog';
+import { BLOG_POSTS, BLOG_CATEGORIES, getPostsByCategory, getCategoryBySlug, showsPreOpenNote } from '@/lib/blog';
 
 export function generateStaticParams() {
   return BLOG_CATEGORIES.map((c) => ({ locale: 'en', category: c.slug }));
@@ -117,6 +117,9 @@ export default async function CategoryPage({
                 <h2 className="font-display text-xl font-bold text-[#0D1B2A] mb-3 leading-snug group-hover:text-[#1A4A30] transition-colors">
                   {post.title}
                 </h2>
+                {showsPreOpenNote(post) && (
+                  <p className="text-xs font-semibold text-[#0D1B2A] mb-2">Written before The 154th Open (July 2026).</p>
+                )}
                 <p className="text-[#2C3E50]/65 text-sm leading-relaxed mb-5 flex-1">
                   {post.excerpt}
                 </p>

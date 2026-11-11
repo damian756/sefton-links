@@ -7,7 +7,10 @@ import { Search, Clock, ArrowRight, X } from 'lucide-react';
 import type { BlogPost, BlogCategory } from '@/lib/blog';
 
 /** What a post card needs: the client gets these fields, not whole post bodies. */
-export type BlogCard = Pick<BlogPost, 'slug' | 'title' | 'excerpt' | 'categorySlug' | 'date' | 'readingTime' | 'image' | 'imageAlt' | 'sponsor'>;
+export type BlogCard = Pick<BlogPost, 'slug' | 'title' | 'excerpt' | 'categorySlug' | 'date' | 'readingTime' | 'image' | 'imageAlt' | 'sponsor'> & {
+  /** Written before The 154th Open and still about Open week: shown with a dated label. */
+  preOpen?: boolean;
+};
 
 interface Props {
   posts: BlogCard[];
@@ -122,6 +125,9 @@ export default function BlogSearch({ posts, categories, postCountByCategory }: P
                   <h2 className="font-display text-xl font-bold text-[#0D1B2A] mb-3 leading-snug group-hover:text-[#1A4A30] transition-colors">
                     {post.title}
                   </h2>
+                  {post.preOpen && (
+                    <p className="text-xs font-semibold text-[#0D1B2A] mb-2">Written before The 154th Open (July 2026).</p>
+                  )}
                   <p className="text-[#2C3E50]/70 text-sm leading-relaxed mb-5 flex-1">
                     {post.excerpt}
                   </p>

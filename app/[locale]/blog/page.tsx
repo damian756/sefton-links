@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { ChevronRight } from 'lucide-react';
-import { getSortedBlogPosts, BLOG_CATEGORIES, DAMIAN } from '@/lib/blog';
+import { getSortedBlogPosts, BLOG_CATEGORIES, DAMIAN, showsPreOpenNote } from '@/lib/blog';
 import BlogSearch, { type BlogCard } from './BlogSearch';
 
 export const metadata: Metadata = {
@@ -55,9 +55,10 @@ export default async function BlogPage({
       <div className="container mx-auto px-4 max-w-5xl py-12">
 
         <BlogSearch
-          posts={sortedPosts.map(({ slug, title, excerpt, categorySlug, date, readingTime, image, imageAlt, sponsor }): BlogCard => (
-            { slug, title, excerpt, categorySlug, date, readingTime, image, imageAlt, sponsor }
-          ))}
+          posts={sortedPosts.map((post): BlogCard => {
+            const { slug, title, excerpt, categorySlug, date, readingTime, image, imageAlt, sponsor } = post;
+            return { slug, title, excerpt, categorySlug, date, readingTime, image, imageAlt, sponsor, preOpen: showsPreOpenNote(post) };
+          })}
           categories={BLOG_CATEGORIES}
           postCountByCategory={Object.fromEntries(
             BLOG_CATEGORIES.map((c) => [c.slug, sortedPosts.filter((p) => p.categorySlug === c.slug).length])
