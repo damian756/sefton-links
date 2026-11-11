@@ -449,7 +449,7 @@
     "lastUpdated": "Last updated: November 2026",
     "privacyIntro": "SeftonLinks.com is operated by Churchtown Media Ltd. We take your privacy seriously.",
     "analyticsTitle": "Analytics",
-    "analyticsDesc": "Ahrefs Web Analytics: page view statistics without cookies. It records the page, referrer, browser, device, language, screen size and approximate location (city level), and counts visitors with a daily pseudonymous identifier that is not kept across days.",
+    "analyticsDesc": "Ahrefs Web Analytics: page view statistics without cookies. It records the page address (including any query string), the referring page, your browser, operating system and device, screen size and language, and when a link is clicked or a form is sent. It uses your IP address to work out your approximate location (city level) and a daily visitor ID that cannot be linked across days; the IP address itself is discarded, not stored.",
     "cookiesDesc": "Cookies: the site sets no cookies.",
     "pageCountsDesc": "Page counts: our own server records each page view with the page address, the referring website's domain, the device type (desktop, mobile or tablet) and the time. These records do not include your IP address.",
     "contactFormDesc": "Contact form: if you send us a message, the form sends your name, email address, subject and message, and the advert space if you asked about one, to our inbox by email through our email provider, Resend.",
