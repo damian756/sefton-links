@@ -99,10 +99,10 @@ export default async function HomePage({
                 sameAs: [
                   'https://www.southportguide.co.uk',
                   'https://www.formbyguide.co.uk',
-                  'https://seftoncoastwildlife.co.uk',
-                  'https://seftoncoast.network',
+                  'https://www.seftoncoastwildlife.co.uk',
+                  'https://www.seftoncoast.network',
                   'https://www.linkedin.com/company/churchtownmedia',
-                  'https://churchtownmedia.co.uk',
+                  'https://www.churchtownmedia.co.uk',
                 ],
               },
             ],

@@ -199,7 +199,7 @@ async function Footer({ locale }: { locale: string }) {
               {tf('tagline')}
             </p>
             <a
-              href="https://churchtownmedia.co.uk"
+              href="https://www.churchtownmedia.co.uk"
               className="text-xs text-[#B8912A] hover:text-[#D4AE7A] transition"
             >
               {tf('builtByLink')}
@@ -224,7 +224,7 @@ async function Footer({ locale }: { locale: string }) {
                   FormbyGuide.co.uk ↗
                 </a>
                 <a
-                  href="https://seftoncoastwildlife.co.uk"
+                  href="https://www.seftoncoastwildlife.co.uk"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-white/60 hover:text-[#B8912A] transition"
@@ -284,12 +284,12 @@ async function Footer({ locale }: { locale: string }) {
         </div>
 
         <div className="border-t border-white/10 pt-6 pb-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/35">
-          <span>Part of the <a href="https://seftoncoast.network" target="_blank" rel="noopener" className="hover:text-white/60 transition">Sefton Coast Network</a></span>
+          <span>Part of the <a href="https://www.seftoncoast.network" target="_blank" rel="noopener" className="hover:text-white/60 transition">Sefton Coast Network</a></span>
           <div className="flex flex-wrap gap-5">
             <a href="https://www.southportguide.co.uk" target="_blank" rel="noopener" className="hover:text-white/60 transition">SouthportGuide</a>
             <a href="https://www.formbyguide.co.uk" target="_blank" rel="noopener" className="hover:text-white/60 transition">FormbyGuide</a>
-            <a href="https://seftoncoastwildlife.co.uk" target="_blank" rel="noopener" className="hover:text-white/60 transition">Sefton Coast Wildlife</a>
-            <a href="https://seftoncoast.network" target="_blank" rel="noopener" className="hover:text-white/60 transition">SeftonCoast.network</a>
+            <a href="https://www.seftoncoastwildlife.co.uk" target="_blank" rel="noopener" className="hover:text-white/60 transition">Sefton Coast Wildlife</a>
+            <a href="https://www.seftoncoast.network" target="_blank" rel="noopener" className="hover:text-white/60 transition">SeftonCoast.network</a>
           </div>
         </div>
 

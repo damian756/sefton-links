@@ -103,7 +103,7 @@ export default async function ContactPage({
               <p>
                 <strong className="text-[#0D1B2A]">{t('pressMediaLabel')}</strong>{' '}
                 <a
-                  href="https://churchtownmedia.co.uk"
+                  href="https://www.churchtownmedia.co.uk"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#1A4A30] hover:text-[#B8912A] transition-colors"
