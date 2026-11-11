@@ -9,32 +9,32 @@
     "contact": "Kontakt"
   },
   "meta": {
-    "coursesTitle": "Golf an der Sefton Coast — Royal Birkdale, Hillside & Formby",
-    "coursesDesc": "Der vollständige Führer zu allen sechs Links-Golfplätzen der Sefton Coast — Besucherrichtlinien, Green Fees, Platzwertungen, Startzeiten und Platzführer.",
-    "scorecardTitle": "Sefton Coast Golf-Scorekarten — Par, Yards & Platzwertung",
-    "scorecardDesc": "Vollständige Scorekartenaten für alle sechs Sefton Coast Golfplätze — Par, Entfernung von allen Abschlägen, Platz- und Slope-Rating. Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale und Southport Old Links.",
+    "coursesTitle": "Golf an der Sefton Coast: Royal Birkdale, Hillside & Formby",
+    "coursesDesc": "Der vollständige Führer zu allen sechs Links-Golfplätzen der Sefton Coast: Besucherrichtlinien, Green Fees, Platzwertungen, Startzeiten und Platzführer.",
+    "scorecardTitle": "Sefton Coast Golf-Scorekarten: Par, Yards & Platzwertung",
+    "scorecardDesc": "Vollständige Scorekartenaten für alle sechs Sefton Coast Golfplätze: Par, Entfernung von allen Abschlägen, Platz- und Slope-Rating. Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale und Southport Old Links.",
     "teeTimesTitle": "Startzeiten bei Royal Birkdale & den Sefton Coast Golfclubs",
-    "itinerariesTitle": "Golfreisen an der Sefton Coast — 2, 3 & 5-Tage-Reiserouten",
+    "itinerariesTitle": "Golfreisen an der Sefton Coast: 2, 3 & 5-Tage-Reiserouten",
     "accommodationTitle": "Golfunterkunft in der Nähe von Royal Birkdale, Southport",
     "contactTitle": "SeftonLinks kontaktieren",
     "course": {
       "royal-birkdale": {
-        "title": "Royal Birkdale Golf Club — Besucherführer, Green Fees & Startzeiten"
+        "title": "Royal Birkdale Golf Club: Besucherführer, Green Fees & Startzeiten"
       },
       "hillside": {
-        "title": "Hillside Golf Club Southport — Besucherführer & Green Fees"
+        "title": "Hillside Golf Club Southport: Besucherführer & Green Fees"
       },
       "formby": {
-        "title": "Formby Golf Club — Besucherführer, Green Fees & Startzeiten"
+        "title": "Formby Golf Club: Besucherführer, Green Fees & Startzeiten"
       },
       "west-lancashire": {
-        "title": "West Lancashire Golf Club — Gastgolfer Green Fees & Startzeiten"
+        "title": "West Lancashire Golf Club: Gastgolfer Green Fees & Startzeiten"
       },
       "southport-ainsdale": {
-        "title": "Southport & Ainsdale Golf Club — Besucherführer & Green Fees"
+        "title": "Southport & Ainsdale Golf Club: Besucherführer & Green Fees"
       },
       "southport-old-links": {
-        "title": "Southport Old Links Golf Club — Besucherführer & Green Fees"
+        "title": "Southport Old Links Golf Club: Besucherführer & Green Fees"
       }
     }
   },
@@ -45,7 +45,7 @@
     "conditionsTitle": "Platzbedingungen",
     "conditionsDesc": "Aktuelle Spielbedingungen aller Plätze an der Sefton Coast",
     "plannerTitle": "Golfreisenplaner",
-    "plannerDesc": "Geben Sie Ihre Tage, Ihr Budget und Ihr Handicap an — wir erstellen Ihre Reiseroute"
+    "plannerDesc": "Geben Sie Ihre Tage, Ihr Budget und Ihr Handicap an: wir erstellen Ihre Reiseroute"
   },
   "homePage": {
     "heroBadge": "Sefton Coast · Lancashire · England",
@@ -62,7 +62,7 @@
     "courseCardFullGuideLink": "Vollständiger Führer",
     "compareAllCoursesBtn": "Alle Plätze vergleichen",
     "toolsSectionTitle": "Ihren Sefton-Coast-Besuch planen",
-    "toolsSectionSubtitle": "Werkzeuge für reisende Golfer — nicht für Einheimische, die die Plätze bereits kennen.",
+    "toolsSectionSubtitle": "Werkzeuge für reisende Golfer: nicht für Einheimische, die die Plätze bereits kennen.",
     "tool1Title": "Platzbedingungen",
     "tool1Cta": "Bedingungen prüfen",
     "tool2Title": "Golfreisenplaner",
@@ -71,7 +71,7 @@
     "tool3Title": "Startzeiten-Führer",
     "tool3Cta": "Startzeiten-Führer ansehen",
     "tool4Title": "Scorecard-Datenbank",
-    "tool4Desc": "Vollständige Scorecard-Daten für alle sechs Plätze — Par, Yards von allen Abschlägen, Platz- und Slope-Rating. Alles, was Sie zur Vorbereitung benötigen.",
+    "tool4Desc": "Vollständige Scorecard-Daten für alle sechs Plätze: Par, Yards von allen Abschlägen, Platz- und Slope-Rating. Alles, was Sie zur Vorbereitung benötigen.",
     "tool4Cta": "Scorekarten ansehen",
     "tool5Title": "Unterkunft für Golfer",
     "tool5Cta": "Unterkunft finden",
@@ -79,11 +79,11 @@
     "tool6Desc": "Fertig geplante 2-Tage-, 3-Tage- und 5-Tage-Reiserouten mit Spielreihenfolge, Unterkunftsvorschlägen und Restaurantempfehlungen nach der Runde. Von günstig bis Meisterschaft.",
     "tool6Cta": "Reiserouten ansehen",
     "editorialTitle": "Warum die Sefton Coast?",
-    "editorialPara1": "Es gibt Links-Golf-Regionen in Schottland — St Andrews, Carnoustie, Muirfield — die die gesamte Aufmerksamkeit auf sich ziehen. Die Sefton Coast bleibt im Schatten. Für jeden reisenden Golfer ist das eine Gelegenheit.",
+    "editorialPara1": "Es gibt Links-Golf-Regionen in Schottland (St Andrews, Carnoustie, Muirfield), die die gesamte Aufmerksamkeit auf sich ziehen. Die Sefton Coast bleibt im Schatten. Für jeden reisenden Golfer ist das eine Gelegenheit.",
     "featureCard1Title": "Gut erreichbar",
     "featureCard1Text": "45 Minuten vom Flughafen Liverpool, 60 Minuten von Manchester. Direktzug von Liverpool ins Stadtzentrum nach Southport.",
-    "southportGuideDesc": "Hotels, Restaurants und Freizeitangebote in Southport — Ihre Basis für eine Sefton-Coast-Golfreise.",
-    "formbyGuideDesc": "Der vollständige Führer zu Formby — National-Trust-Kiefernwälder, Eichhörnchen und das Dorf zwischen den Runden."
+    "southportGuideDesc": "Hotels, Restaurants und Freizeitangebote in Southport: Ihre Basis für eine Sefton-Coast-Golfreise.",
+    "formbyGuideDesc": "Der vollständige Führer zu Formby: National-Trust-Kiefernwälder, Eichhörnchen und das Dorf zwischen den Runden."
   },
   "courses": {
     "pageTitle": "Golf an der Sefton Coast",
@@ -111,7 +111,7 @@
     "tableHeaderSlope": "Slope",
     "tableHeaderGreenFee": "Green Fee",
     "tableHeaderDifficulty": "Schwierigkeitsgrad",
-    "tableFootnote": "★ Open-Championship-Austragungsort. Green Fees sind Richtwerte — bitte immer beim Club vor der Buchung bestätigen.",
+    "tableFootnote": "★ Open-Championship-Austragungsort. Green Fees sind Richtwerte: bitte immer beim Club vor der Buchung bestätigen.",
     "cardStatParLabel": "Par",
     "cardStatYardsLabel": "Yards",
     "cardStatCourseRatingLabel": "Platzrating",
@@ -146,12 +146,12 @@
     "bestDaysLabel": "Beste Besuchstage",
     "advanceBookingLabel": "Wie weit im Voraus buchen",
     "handicapRequirementLabel": "Handicap-Anforderung",
-    "handicapRequirementText": "Handicap-Limit Herren: {limit}. Handicap-Nachweis erforderlich — bringen Sie Ihre Club-Karte oder EGA-Karte mit.",
+    "handicapRequirementText": "Handicap-Limit Herren: {limit}. Handicap-Nachweis erforderlich: bringen Sie Ihre Club-Karte oder EGA-Karte mit.",
     "whyPlayTitle": "Warum {courseName} spielen?",
     "practicalNotesTitle": "Praktische Hinweise",
     "majorHistoryTitle": "Major-Championship-Geschichte",
     "afterRoundTitle": "Nach der Runde",
-    "restaurantGuideLink": "Vollständiger Restaurantführer — SouthportGuide.co.uk",
+    "restaurantGuideLink": "Vollständiger Restaurantführer: SouthportGuide.co.uk",
     "conditionsWidgetTitle": "Heutige Bedingungen",
     "conditionsWidgetDesc": "Aktuelle Spielbedingungen vor Ihrer Anreise prüfen.",
     "conditionsWidgetLink": "Platzbedingungen ansehen",
@@ -197,7 +197,7 @@
   "teeTimesPage": {
     "headerBadge": "Besucherführer",
     "pageTitle": "So erhalten Sie eine Startzeit",
-    "allCoursesTitle": "Gastgolfer-Richtlinien — Alle Plätze",
+    "allCoursesTitle": "Gastgolfer-Richtlinien: Alle Plätze",
     "difficultyRestricted": "Eingeschränkt",
     "difficultyByArrangement": "Nach Absprache",
     "difficultyWelcome": "Gastgolfer willkommen",
@@ -228,14 +228,14 @@
     "approxLabel": "ca.",
     "golferFeaturesLabel": "Golferfreundliche Ausstattung",
     "tipsTitle": "Unterkunftstipps für Golfer",
-    "tip1": "Buchen Sie Startzeiten von Dienstag bis Donnerstag, wenn Sie unter der Woche bleiben — bessere Verfügbarkeit an allen Plätzen und in der Regel ruhiger auf dem Platz.",
+    "tip1": "Buchen Sie Startzeiten von Dienstag bis Donnerstag, wenn Sie unter der Woche bleiben: bessere Verfügbarkeit an allen Plätzen und in der Regel ruhiger auf dem Platz.",
     "tip2": "Fragen Sie bei der Buchung nach Schläger-/Bag-Aufbewahrung. Gute Golf-Hotels haben einen dedizierten Trockenraum, anstatt die Taschen über Nacht im Zimmer zu lassen.",
     "tip3": "Bahnhof Birkdale (Merseyrail) ist 8 Minuten zu Fuß vom Haupteingang von Royal Birkdale entfernt. Nützlich, wenn Ihr Hotel im Zentrum von Southport liegt.",
-    "tip4": "Flexible Stornierung ist wichtig — Links-Golf-Wetter ist unberechenbar. Buchen Sie kostenlos stornierbare Tarife, es sei denn, die Ersparnisse bei nicht erstattungsfähigen Tarifen sind erheblich.",
+    "tip4": "Flexible Stornierung ist wichtig: Links-Golf-Wetter ist unberechenbar. Buchen Sie kostenlos stornierbare Tarife, es sei denn, die Ersparnisse bei nicht erstattungsfähigen Tarifen sind erheblich.",
     "southportHotelsLinkTitle": "Vollständiger Southport Hotel-Führer",
-    "southportHotelsLinkDesc": "SouthportGuide.co.uk — Hotels, B&Bs, Selbstverpflegung",
+    "southportHotelsLinkDesc": "SouthportGuide.co.uk: Hotels, B&Bs, Selbstverpflegung",
     "formbyAccomLinkTitle": "Formby Unterkunftsführer",
-    "formbyAccomLinkDesc": "FormbyGuide.co.uk — ruhigere Basis, 8 km von Birkdale"
+    "formbyAccomLinkDesc": "FormbyGuide.co.uk: ruhigere Basis, 8 km von Birkdale"
   },
   "scorecardPage": {
     "headerBadge": "Platzdaten",
@@ -260,9 +260,9 @@
     "courseRatingTitle": "Platzrating (Course Rating)",
     "courseRatingDesc": "Das erwartete Ergebnis eines Scratch-Golfers (Handicap null) vom jeweiligen Abschlag. Ein Rating von 76,5 bedeutet, dass ein Scratch-Spieler unter normalen Bedingungen 76,5 Schläge erzielen würde.",
     "slopeRatingTitle": "Slope-Rating",
-    "slopeRatingDesc": "Misst den Schwierigkeitsgrad im Verhältnis zu einem Bogey-Golfer. Die USGA-Skala reicht von 55 bis 155 — ein Slope von 113 ist Durchschnitt, 148 (Royal Birkdale Meisterschaft) ist extrem schwierig.",
+    "slopeRatingDesc": "Misst den Schwierigkeitsgrad im Verhältnis zu einem Bogey-Golfer. Die USGA-Skala reicht von 55 bis 155: ein Slope von 113 ist Durchschnitt, 148 (Royal Birkdale Meisterschaft) ist extrem schwierig.",
     "yardageMetresTitle": "Yards & Meter",
-    "yardageMetresDesc": "Englische Clubs verwenden Yards. Meter sind für europäische Besucher vom Kontinent angegeben. GPS-Geräte und Entfernungsmesser sind weitgehend erlaubt — bitte bei jedem Club vor Wettbewerbseinsatz nachfragen.",
+    "yardageMetresDesc": "Englische Clubs verwenden Yards. Meter sind für europäische Besucher vom Kontinent angegeben. GPS-Geräte und Entfernungsmesser sind weitgehend erlaubt: bitte bei jedem Club vor Wettbewerbseinsatz nachfragen.",
     "dataAccuracyTitle": "Datengenauigkeit",
     "dataAccuracyDesc": "Daten nach bestem verfügbarem Stand überprüft. Platz- und Slope-Ratings können vom Club regelmäßig aktualisiert werden. Vor Wettbewerbseinsatz immer beim Club bestätigen."
   },
@@ -270,7 +270,7 @@
     "headerBadge": "Sefton Coast",
     "pageTitle": "Golfreise-Routen",
     "plannerTitle": "Golfreisenplaner",
-    "plannerDesc": "Geben Sie Ihre Tage, Ihr Budget und Ihr Handicap an — wir ordnen Ihnen die passende Route zu.",
+    "plannerDesc": "Geben Sie Ihre Tage, Ihr Budget und Ihr Handicap an: wir ordnen Ihnen die passende Route zu.",
     "allItinerariesTitle": "Alle Reiserouten",
     "dayLabel": "Tag",
     "daysLabel": "Tage",
@@ -282,8 +282,8 @@
     "diningLabel": "Restaurants",
     "estimatedGreenFeesLabel": "Geschätzte Green Fees",
     "howToPlanTitle": "So planen Sie eine Sefton-Coast-Golfreise",
-    "howToPlanPara1": "Die Sefton Coast Plätze liegen nah genug beieinander, dass ein Zweitages-Trip problemlos zwei oder drei Runden ermöglicht. Royal Birkdale und Hillside liegen buchstäblich nebeneinander — man könnte zu Fuß zwischen ihnen wechseln. Southport & Ainsdale ist fünf Kilometer weiter südlich. Formby liegt acht Kilometer von Birkdale über die A565 entfernt.",
-    "howToPlanPara2": "Für mehrtägige Trips empfiehlt sich Southport als Basis. Die Stadt bietet die größte Hotelauswahl, und alles von der Lord Street bis nach Birkdale ist per Taxi erreichbar. Wer ruhigere und günstigere Unterkunft bevorzugt, findet im Dorf Formby — 20 Minuten südlich — solide B&B-Optionen."
+    "howToPlanPara1": "Die Sefton Coast Plätze liegen nah genug beieinander, dass ein Zweitages-Trip problemlos zwei oder drei Runden ermöglicht. Royal Birkdale und Hillside liegen buchstäblich nebeneinander: man könnte zu Fuß zwischen ihnen wechseln. Southport & Ainsdale ist fünf Kilometer weiter südlich. Formby liegt acht Kilometer von Birkdale über die A565 entfernt.",
+    "howToPlanPara2": "Für mehrtägige Trips empfiehlt sich Southport als Basis. Die Stadt bietet die größte Hotelauswahl, und alles von der Lord Street bis nach Birkdale ist per Taxi erreichbar. Wer ruhigere und günstigere Unterkunft bevorzugt, findet im Dorf Formby (20 Minuten südlich) solide B&B-Optionen."
   },
   "conditions": {
     "pageTitle": "Sefton Coast Platzbedingungen",
@@ -300,7 +300,7 @@
   "conditionsPage": {
     "pageTitle": "Platzbedingungen",
     "aboutLinksTitle": "Über Links-Bedingungen",
-    "aboutLinksPara1": "Links-Golfbedingungen unterscheiden sich grundlegend vom Parkland-Golf. Die wichtigsten Variablen sind Windrichtung und -stärke, jüngste Niederschlagsmenge und Drainage sowie die Festigkeit des Rasens. Ein harter, trockener Platz spielt sich völlig anders als ein nasser, weicher — Annäherungsschläge bleiben nicht liegen, der Ball rollt weiter vom Abschlag, und das Chippen erfordert mehr Kreativität.",
+    "aboutLinksPara1": "Links-Golfbedingungen unterscheiden sich grundlegend vom Parkland-Golf. Die wichtigsten Variablen sind Windrichtung und -stärke, jüngste Niederschlagsmenge und Drainage sowie die Festigkeit des Rasens. Ein harter, trockener Platz spielt sich völlig anders als ein nasser, weicher: Annäherungsschläge bleiben nicht liegen, der Ball rollt weiter vom Abschlag, und das Chippen erfordert mehr Kreativität.",
     "aboutLinksPara3": "Windstärke und -richtung spielen hier eine größere Rolle als fast überall sonst in England. Der vorherrschende Südwestwind in Royal Birkdale erzeugt das 'natürliche' Platzerlebnis, für das die Streckenführung konzipiert wurde. Ein Ostwind vom Land erzeugt einen völlig anderen Platz. Dieser Führer enthält einen Windrichtungsschlüssel speziell für Royal Birkdale.",
     "conditionsDisclaimer": "Bedingungsdaten sind näherungsweise und werden manuell gepflegt. Bitte immer beim jeweiligen Club vor der Anreise bestätigen. SeftonLinks übernimmt keine Haftung für Platzschließungen oder Bedingungen, die von dieser Seite abweichen."
   },
@@ -309,11 +309,11 @@
     "getInTouchTitle": "Kontakt aufnehmen",
     "generalEnquiriesLabel": "Allgemeine Anfragen:",
     "dataCorrectionsLabel": "Datenkorrekturen:",
-    "dataCorrectionsText": "Falls Platzdaten — Green Fees, Gastgolfer-Richtlinien, Öffnungszeiten — nicht korrekt sind, teilen Sie uns das bitte mit. Wir aktualisieren umgehend.",
+    "dataCorrectionsText": "Falls Platzdaten (Green Fees, Gastgolfer-Richtlinien, Öffnungszeiten) nicht korrekt sind, teilen Sie uns das bitte mit. Wir aktualisieren umgehend.",
     "pressMediaLabel": "Presse & Medien:",
     "pressMediaLinkText": "Churchtown Media Ltd",
     "beforeContactTitle": "Vor der Kontaktaufnahme",
-    "beforeContactItem1": "→ Für Startzeiten-Buchungen wenden Sie sich direkt an die Clubs — wir sind ein Führer, keine Buchungsplattform."
+    "beforeContactItem1": "→ Für Startzeiten-Buchungen wenden Sie sich direkt an die Clubs: wir sind ein Führer, keine Buchungsplattform."
   },
   "legalPage": {
     "privacyTitle": "Datenschutzrichtlinie",
@@ -342,7 +342,7 @@
     "exploreTitle": "Entdecken",
     "networkTitle": "Sefton Coast Netzwerk",
     "legalTitle": "Informationen",
-    "copyright": "© 2026 SeftonLinks.com — Alle Rechte vorbehalten.",
+    "copyright": "© 2026 SeftonLinks.com: Alle Rechte vorbehalten.",
     "southportGuide": "SouthportGuide.co.uk",
     "formbyGuide": "FormbyGuide.co.uk",
     "coursesHeading": "Plätze",

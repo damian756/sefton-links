@@ -9,32 +9,32 @@
     "contact": "Yhteystiedot"
   },
   "meta": {
-    "coursesTitle": "Sefton Coastin golfkentät — Royal Birkdale, Hillside & Formby",
-    "coursesDesc": "Kattava opas kaikkiin kuuteen Sefton Coastin linksgolfkenttään — vierailupolitiikka, green feet, kenttäarviointeja, lähtöajan varaus ja yksityiskohtaiset kenttäoppaat.",
-    "scorecardTitle": "Sefton Coastin scorekortit — Par, Etäisyys & Kenttäarviointi",
-    "scorecardDesc": "Täydelliset scorekortit kaikille kuudelle Sefton Coastin kentälle — par, etäisyydet kaikilta teiltä, course rating ja slope rating. Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale ja Southport Old Links.",
+    "coursesTitle": "Sefton Coastin golfkentät: Royal Birkdale, Hillside & Formby",
+    "coursesDesc": "Kattava opas kaikkiin kuuteen Sefton Coastin linksgolfkenttään: vierailupolitiikka, green feet, kenttäarviointeja, lähtöajan varaus ja yksityiskohtaiset kenttäoppaat.",
+    "scorecardTitle": "Sefton Coastin scorekortit: Par, Etäisyys & Kenttäarviointi",
+    "scorecardDesc": "Täydelliset scorekortit kaikille kuudelle Sefton Coastin kentälle: par, etäisyydet kaikilta teiltä, course rating ja slope rating. Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale ja Southport Old Links.",
     "teeTimesTitle": "Lähtöajat Royal Birkdalessa & Sefton Coastin golfklubeissa",
-    "itinerariesTitle": "Sefton Coastin golfmatkat — 2, 3 ja 5 päivän ohjelmat",
+    "itinerariesTitle": "Sefton Coastin golfmatkat: 2, 3 ja 5 päivän ohjelmat",
     "accommodationTitle": "Golfmajoitus Royal Birkdalen lähellä, Southport",
     "contactTitle": "Ota yhteyttä SeftonLinksiin",
     "course": {
       "royal-birkdale": {
-        "title": "Royal Birkdale Golf Club — Vierailuopas, Green Feet & Lähtöajat"
+        "title": "Royal Birkdale Golf Club: Vierailuopas, Green Feet & Lähtöajat"
       },
       "hillside": {
-        "title": "Hillside Golf Club Southport — Vierailuopas & Green Feet"
+        "title": "Hillside Golf Club Southport: Vierailuopas & Green Feet"
       },
       "formby": {
-        "title": "Formby Golf Club — Vierailuopas, Green Feet & Lähtöajat"
+        "title": "Formby Golf Club: Vierailuopas, Green Feet & Lähtöajat"
       },
       "west-lancashire": {
-        "title": "West Lancashire Golf Club — Vierailijan Green Feet & Lähtöajat"
+        "title": "West Lancashire Golf Club: Vierailijan Green Feet & Lähtöajat"
       },
       "southport-ainsdale": {
-        "title": "Southport & Ainsdale Golf Club — Vierailuopas & Green Feet"
+        "title": "Southport & Ainsdale Golf Club: Vierailuopas & Green Feet"
       },
       "southport-old-links": {
-        "title": "Southport Old Links Golf Club — Vierailuopas & Green Feet"
+        "title": "Southport Old Links Golf Club: Vierailuopas & Green Feet"
       }
     }
   },
@@ -45,7 +45,7 @@
     "conditionsTitle": "Kenttäolosuhteet",
     "conditionsDesc": "Reaaliaikaiset päivitykset Sefton Coastin peliolosuhteista",
     "plannerTitle": "Golfmatkasuunnittelija",
-    "plannerDesc": "Kerro päivien määrä, budjetti ja handicap — rakennamme ohjelmasi"
+    "plannerDesc": "Kerro päivien määrä, budjetti ja handicap: rakennamme ohjelmasi"
   },
   "homePage": {
     "heroBadge": "Sefton Coast · Lancashire · Englanti",
@@ -62,7 +62,7 @@
     "courseCardFullGuideLink": "Kattava opas",
     "compareAllCoursesBtn": "Vertaile Kaikkia Kenttiä",
     "toolsSectionTitle": "Suunnittele Vierailusi Sefton Coastille",
-    "toolsSectionSubtitle": "Vieraileville golfarille luodut työkalut — ei paikallisille, jotka jo tuntevat kentät.",
+    "toolsSectionSubtitle": "Vieraileville golfarille luodut työkalut: ei paikallisille, jotka jo tuntevat kentät.",
     "tool1Title": "Kenttäolosuhteet",
     "tool1Cta": "Tarkista Olosuhteet",
     "tool2Title": "Golfmatkasuunnittelija",
@@ -71,7 +71,7 @@
     "tool3Title": "Lähtöaikaopas",
     "tool3Cta": "Katso Lähtöaikaopas",
     "tool4Title": "Scorekorttikirjasto",
-    "tool4Desc": "Täydelliset scorekortit kaikille kuudelle kentälle — par, etäisyydet kaikilta teiltä, course rating ja slope rating. Kaikki mitä tarvitset odotusten asettamiseen.",
+    "tool4Desc": "Täydelliset scorekortit kaikille kuudelle kentälle: par, etäisyydet kaikilta teiltä, course rating ja slope rating. Kaikki mitä tarvitset odotusten asettamiseen.",
     "tool4Cta": "Katso Scorekortit",
     "tool5Title": "Majoitus Golfareille",
     "tool5Cta": "Löydä Majoitus",
@@ -79,11 +79,11 @@
     "tool6Desc": "Valmiit 2, 3 ja 5 päivän ohjelmat kenttäjärjestyksineen, majoitusehdotuksineen ja illallissuosituksineen. Budjettimatkasta mestaruustasolle.",
     "tool6Cta": "Selaa Ohjelmia",
     "editorialTitle": "Miksi Sefton Coast?",
-    "editorialPara1": "Skotlannissa on linksgolfkäytäviä — St Andrews, Carnoustie, Muirfield — jotka saavat kaiken huomion. Sefton Coast jää varjoon. Juuri se on mahdollisuus jokaiselle vierailevalle golfarille.",
+    "editorialPara1": "Skotlannissa on linksgolfkäytäviä (St Andrews, Carnoustie, Muirfield), jotka saavat kaiken huomion. Sefton Coast jää varjoon. Juuri se on mahdollisuus jokaiselle vierailevalle golfarille.",
     "featureCard1Title": "Helposti Saavutettavissa",
     "featureCard1Text": "45 min Liverpoolin lentokentältä, 60 min Manchesterista. Suora junayhteys Southportiin Liverpoolin keskustasta.",
-    "southportGuideDesc": "Hotellit, ravintolat ja tekemistä Southportissa — tukikohtasi Sefton Coast -golfmatkalle.",
-    "formbyGuideDesc": "Kattava opas Formbyyn — National Trustin mäntymetsät, oravat ja kylä kierrosten välissä."
+    "southportGuideDesc": "Hotellit, ravintolat ja tekemistä Southportissa: tukikohtasi Sefton Coast -golfmatkalle.",
+    "formbyGuideDesc": "Kattava opas Formbyyn: National Trustin mäntymetsät, oravat ja kylä kierrosten välissä."
   },
   "courses": {
     "pageTitle": "Sefton Coastin Golfkentät",
@@ -111,7 +111,7 @@
     "tableHeaderSlope": "Slope",
     "tableHeaderGreenFee": "Green Fee",
     "tableHeaderDifficulty": "Vaikeustaso",
-    "tableFootnote": "★ Open Championship -kenttä. Green feet ovat suuntaa-antavia — tarkista aina klubilta ennen varausta.",
+    "tableFootnote": "★ Open Championship -kenttä. Green feet ovat suuntaa-antavia: tarkista aina klubilta ennen varausta.",
     "cardStatParLabel": "Par",
     "cardStatYardsLabel": "Yardsia",
     "cardStatCourseRatingLabel": "Course Rating",
@@ -133,7 +133,7 @@
     "yardsLabel": "Yardsia",
     "handicapLabel": "Handicap",
     "bookViaClubBtn": "Varaa Klubin Verkkosivuston Kautta",
-    "aboutTitle": "{courseName} — esittely",
+    "aboutTitle": "{courseName}: esittely",
     "courseDataTitle": "Kenttädata",
     "tableHeaderTee": "Tee",
     "tableHeaderPar": "Par",
@@ -146,12 +146,12 @@
     "bestDaysLabel": "Parhaat Vierailupäivät",
     "advanceBookingLabel": "Kuinka Kauas Ennakkoon",
     "handicapRequirementLabel": "Handicap-vaatimus",
-    "handicapRequirementText": "Miesten handicap-raja: {limit}. Handicap-todistus vaaditaan — ota mukaan klubikorttisi tai EGA handicap -kortti.",
+    "handicapRequirementText": "Miesten handicap-raja: {limit}. Handicap-todistus vaaditaan: ota mukaan klubikorttisi tai EGA handicap -kortti.",
     "whyPlayTitle": "Miksi Pelata {courseName}?",
     "practicalNotesTitle": "Käytännön Tietoa",
     "majorHistoryTitle": "Major Championship -historia",
     "afterRoundTitle": "Kierroksen Jälkeen",
-    "restaurantGuideLink": "Kattava ravintolaopas — SouthportGuide.co.uk",
+    "restaurantGuideLink": "Kattava ravintolaopas: SouthportGuide.co.uk",
     "conditionsWidgetTitle": "Tämänpäiväiset Olosuhteet",
     "conditionsWidgetDesc": "Tarkista kentän nykyiset peliolosuhteet ennen lähtöä.",
     "conditionsWidgetLink": "Katso kenttäolosuhteet",
@@ -198,7 +198,7 @@
   "teeTimesPage": {
     "headerBadge": "Vierailuopas",
     "pageTitle": "Näin Varaat Lähtöajan",
-    "allCoursesTitle": "Vierailupolitiikka — Kaikki Kentät",
+    "allCoursesTitle": "Vierailupolitiikka: Kaikki Kentät",
     "difficultyRestricted": "Rajoitettu",
     "difficultyByArrangement": "Sopimuksen mukaan",
     "difficultyWelcome": "Vierailijat tervetulleita",
@@ -229,14 +229,14 @@
     "approxLabel": "n.",
     "golferFeaturesLabel": "Golfareille Soveltuvat Palvelut",
     "tipsTitle": "Majoitusvinkkejä Golfareille",
-    "tip1": "Varaa tiistai–torstai lähtöajat jos majoitut arkisin — parempi saatavuus kaikilla kentillä ja yleensä rauhallisempaa kentällä.",
+    "tip1": "Varaa tiistai–torstai lähtöajat jos majoitut arkisin: parempi saatavuus kaikilla kentillä ja yleensä rauhallisempaa kentällä.",
     "tip2": "Kysy golf- ja laukun säilytysmahdollisuudesta varauksen yhteydessä. Hyvissä golfhotelleissa on erillinen kuiva säilytystila eikä laukkuja jätetä yöksi huoneeseen.",
     "tip3": "Birkdalen asema (Merseyrail) on 8 minuutin kävelymatkan päässä Royal Birkdalen pääsisäänkäynnistä. Kätevä jos hotelli on Southportin keskustassa.",
-    "tip4": "Joustava peruutusehto on tärkeä — linksgolfin sää on arvaamaton. Varaa palautettavia hintoja ellei palautuskelvottomissa hinnoissa ole merkittäviä säästöjä.",
+    "tip4": "Joustava peruutusehto on tärkeä: linksgolfin sää on arvaamaton. Varaa palautettavia hintoja ellei palautuskelvottomissa hinnoissa ole merkittäviä säästöjä.",
     "southportHotelsLinkTitle": "Kattava Southportin Hotelliohje",
-    "southportHotelsLinkDesc": "SouthportGuide.co.uk — hotellit, B&B:t, itsemajoittuminen",
+    "southportHotelsLinkDesc": "SouthportGuide.co.uk: hotellit, B&B:t, itsemajoittuminen",
     "formbyAccomLinkTitle": "Formby Majoitusopas",
-    "formbyAccomLinkDesc": "FormbyGuide.co.uk — rauhallisempi tukikohta, 8 km Birkdalesta"
+    "formbyAccomLinkDesc": "FormbyGuide.co.uk: rauhallisempi tukikohta, 8 km Birkdalesta"
   },
   "scorecardPage": {
     "headerBadge": "Kenttädata",
@@ -261,9 +261,9 @@
     "courseRatingTitle": "Course Rating",
     "courseRatingDesc": "Nolla-handicap-golfarin odotettu tulos kyseiseltä teeltä. Rating 76,5 tarkoittaa, että scratch-pelaajan odotetaan tekevän 76,5 lyöntiä normaaleissa olosuhteissa.",
     "slopeRatingTitle": "Slope Rating",
-    "slopeRatingDesc": "Mittaa kenttävaikeutta suhteessa bogey-golfariin. USGA-asteikko menee 55:stä 155:een — slope 113 on keskimääräinen, 148 (Royal Birkdale mestaruus) on erittäin vaikea.",
+    "slopeRatingDesc": "Mittaa kenttävaikeutta suhteessa bogey-golfariin. USGA-asteikko menee 55:stä 155:een: slope 113 on keskimääräinen, 148 (Royal Birkdale mestaruus) on erittäin vaikea.",
     "yardageMetresTitle": "Yardsia & Metrejä",
-    "yardageMetresDesc": "Englantilaiset klubit käyttävät yardsia. Metrit on ilmoitettu manner-eurooppalaisille vierailijoille. GPS-laitteet ja etäisyysmittarit ovat yleisesti sallittuja — tarkista jokaisen klubin kanssa ennen kilpailukäyttöä.",
+    "yardageMetresDesc": "Englantilaiset klubit käyttävät yardsia. Metrit on ilmoitettu manner-eurooppalaisille vierailijoille. GPS-laitteet ja etäisyysmittarit ovat yleisesti sallittuja: tarkista jokaisen klubin kanssa ennen kilpailukäyttöä.",
     "dataAccuracyTitle": "Tietojen Tarkkuus",
     "dataAccuracyDesc": "Tiedot tarkistettu parhaista saatavilla olevista lähteistä. Course rating ja slope voivat päivittyä ajoittain klubin toimesta. Tarkista kilpailukäyttöä varten aina klubilta."
   },
@@ -271,7 +271,7 @@
     "headerBadge": "Sefton Coast",
     "pageTitle": "Golfmatkaohjelmat",
     "plannerTitle": "Golfmatkasuunnittelija",
-    "plannerDesc": "Syötä päivien määrä, budjetti ja handicap — yhdistämme sinut oikeaan ohjelmaan.",
+    "plannerDesc": "Syötä päivien määrä, budjetti ja handicap: yhdistämme sinut oikeaan ohjelmaan.",
     "allItinerariesTitle": "Kaikki Ohjelmat",
     "dayLabel": "päivä",
     "daysLabel": "päivää",
@@ -283,7 +283,7 @@
     "diningLabel": "Ravintolat",
     "estimatedGreenFeesLabel": "Arvioidut Green Feet",
     "howToPlanTitle": "Sefton Coast -golfmatkan Suunnittelu",
-    "howToPlanPara1": "Sefton Coastin kentät ovat niin lähellä toisiaan, että kaksi tai kolme kierrosta on mahdollista kahden päivän reissulla ilman hankalaa logistiikkaa. Royal Birkdale ja Hillside ovat kirjaimellisesti vierekkäin — voisit melkein kävellä niiden välillä. Southport & Ainsdale on viisi mailia etelään. Formby on kahdeksan mailia Birkdalesta A565:ttä pitkin.",
+    "howToPlanPara1": "Sefton Coastin kentät ovat niin lähellä toisiaan, että kaksi tai kolme kierrosta on mahdollista kahden päivän reissulla ilman hankalaa logistiikkaa. Royal Birkdale ja Hillside ovat kirjaimellisesti vierekkäin: voisit melkein kävellä niiden välillä. Southport & Ainsdale on viisi mailia etelään. Formby on kahdeksan mailia Birkdalesta A565:ttä pitkin.",
     "howToPlanPara2": "Pidemmille matkoille Southport on paras tukikohta. Kaupungissa on laajin hotellivalikoima, ja kaikki Lord Streetistä Birkdaleen on taksimatkan päässä. Jos haluat rauhallisempaa ja edullisempaa majoitusta, Formby village 20 minuuttia etelään tarjoaa hyviä B&B-vaihtoehtoja."
   },
   "conditions": {
@@ -301,7 +301,7 @@
   "conditionsPage": {
     "pageTitle": "Kenttäolosuhteet",
     "aboutLinksTitle": "Linksgolfin Olosuhteista",
-    "aboutLinksPara1": "Linksgolfin olosuhteet eroavat olennaisesti puistogolfista. Tärkeimmät muuttujat ovat tuulen suunta ja voimakkuus, viimeisin sadanta ja kuivatus sekä nurmikon kovuus. Kova, kuiva kenttä pelaa täysin eri tavalla kuin märkä, pehmeä — lähestymislyönnit eivät pysähdy, pallo rullaa pidemmälle teiltä, ja chippi vaatii enemmän luovuutta.",
+    "aboutLinksPara1": "Linksgolfin olosuhteet eroavat olennaisesti puistogolfista. Tärkeimmät muuttujat ovat tuulen suunta ja voimakkuus, viimeisin sadanta ja kuivatus sekä nurmikon kovuus. Kova, kuiva kenttä pelaa täysin eri tavalla kuin märkä, pehmeä: lähestymislyönnit eivät pysähdy, pallo rullaa pidemmälle teiltä, ja chippi vaatii enemmän luovuutta.",
     "aboutLinksPara3": "Tuulennopeus ja -suunta ovat täällä tärkeämpiä kuin melkein missään muualla Englannissa. Royal Birkdalen vallitseva lounaistuuli luo sen 'luonnollisen' reittikokemuksen, johon rata on suunniteltu. Itäinen tuuli maan puolelta tekee kokonaan eri kentän. Tässä oppaassa on tuulensuuntaopas erityisesti Royal Birkdalelle.",
     "conditionsDisclaimer": "Olosuhdetiedot ovat suuntaa-antavia ja manuaalisesti ylläpidettyjä. Tarkista aina yksittäiseltä klubilta ennen matkaa. SeftonLinks ei vastaa kentän sulkemisista tai tästä sivusta poikkeavista olosuhteista."
   },
@@ -310,11 +310,11 @@
     "getInTouchTitle": "Ota Yhteyttä",
     "generalEnquiriesLabel": "Yleiset tiedustelut:",
     "dataCorrectionsLabel": "Tietojen korjaukset:",
-    "dataCorrectionsText": "Jos kenttädata — green feet, vierailupolitiikka, aukioloajat — on virheellistä, kerro meille. Päivitämme nopeasti.",
+    "dataCorrectionsText": "Jos kenttädata (green feet, vierailupolitiikka, aukioloajat) on virheellistä, kerro meille. Päivitämme nopeasti.",
     "pressMediaLabel": "Lehdistö & media:",
     "pressMediaLinkText": "Churchtown Media Ltd",
     "beforeContactTitle": "Ennen kuin otat yhteyttä",
-    "beforeContactItem1": "→ Lähtöaikojen varauksiin ota yhteyttä suoraan klubeihin — olemme opas, emme varauspalvelu."
+    "beforeContactItem1": "→ Lähtöaikojen varauksiin ota yhteyttä suoraan klubeihin: olemme opas, emme varauspalvelu."
   },
   "legalPage": {
     "privacyTitle": "Tietosuojakäytäntö",
@@ -322,7 +322,7 @@
     "lastUpdated": "Viimeksi päivitetty: marraskuu 2026",
     "privacyIntro": "SeftonLinks.com:ia operoi Churchtown Media Ltd. Suhtaudumme tietosuojaasi vakavasti.",
     "analyticsTitle": "Analytiikka",
-    "analyticsDesc": "Käytämme Plausible Analytics -palvelua (tietosuojaan keskittyvä, GDPR-yhteensopiva, ei evästeitä, ei henkilötietoja kerätä) ja Microsoft Clarityä (istuntojen tallennukset — anonymisoitu). Kumpikaan ei vaadi evästelupaa GDPR:n nojalla oikein konfiguroituna.",
+    "analyticsDesc": "Käytämme Plausible Analytics -palvelua (tietosuojaan keskittyvä, GDPR-yhteensopiva, ei evästeitä, ei henkilötietoja kerätä) ja Microsoft Clarityä (istuntojen tallennukset: anonymisoitu). Kumpikaan ei vaadi evästelupaa GDPR:n nojalla oikein konfiguroituna.",
     "privacyContactTitle": "Yhteystiedot",
     "privacyContactText": "Tietosuojatiedustelut:",
     "termsIntro": "Käyttämällä SeftonLinks.com-sivustoa hyväksyt nämä ehdot. Sivustoa operoi Churchtown Media Ltd.",
@@ -343,7 +343,7 @@
     "exploreTitle": "Tutustu",
     "networkTitle": "Sefton Coast -verkosto",
     "legalTitle": "Tietoa",
-    "copyright": "© 2026 SeftonLinks.com — Kaikki oikeudet pidätetään.",
+    "copyright": "© 2026 SeftonLinks.com: Kaikki oikeudet pidätetään.",
     "southportGuide": "SouthportGuide.co.uk",
     "formbyGuide": "FormbyGuide.co.uk",
     "coursesHeading": "Kentät",

@@ -9,32 +9,32 @@
     "contact": "联系我们"
   },
   "meta": {
-    "coursesTitle": "赛夫顿海岸高尔夫球场 — Royal Birkdale、Hillside & Formby",
-    "coursesDesc": "赛夫顿海岸六座链球式高尔夫球场完整指南 — 访客政策、果岭费、球场评级、发球时间预订方式。",
-    "scorecardTitle": "赛夫顿海岸高尔夫记分卡 — 标准杆、码数与球场评级",
-    "scorecardDesc": "赛夫顿海岸六座球场完整记分卡数据 — 所有发球台的标准杆、码数、球场评级及坡度评级。Royal Birkdale、Hillside、Formby、West Lancashire、Southport & Ainsdale、Southport Old Links。",
+    "coursesTitle": "赛夫顿海岸高尔夫球场：Royal Birkdale、Hillside & Formby",
+    "coursesDesc": "赛夫顿海岸六座链球式高尔夫球场完整指南：访客政策、果岭费、球场评级、发球时间预订方式。",
+    "scorecardTitle": "赛夫顿海岸高尔夫记分卡：标准杆、码数与球场评级",
+    "scorecardDesc": "赛夫顿海岸六座球场完整记分卡数据：所有发球台的标准杆、码数、球场评级及坡度评级。Royal Birkdale、Hillside、Formby、West Lancashire、Southport & Ainsdale、Southport Old Links。",
     "teeTimesTitle": "Royal Birkdale 及赛夫顿海岸各球会发球时间预订",
-    "itinerariesTitle": "赛夫顿海岸高尔夫之旅 — 两天、三天及五天行程",
-    "accommodationTitle": "Royal Birkdale 附近高尔夫住宿 — 索斯波特",
+    "itinerariesTitle": "赛夫顿海岸高尔夫之旅：两天、三天及五天行程",
+    "accommodationTitle": "Royal Birkdale 附近高尔夫住宿：索斯波特",
     "contactTitle": "联系 SeftonLinks",
     "course": {
       "royal-birkdale": {
-        "title": "Royal Birkdale Golf Club — 访客指南、果岭费与发球时间"
+        "title": "Royal Birkdale Golf Club：访客指南、果岭费与发球时间"
       },
       "hillside": {
-        "title": "Hillside Golf Club 索斯波特 — 访客指南与果岭费"
+        "title": "Hillside Golf Club 索斯波特：访客指南与果岭费"
       },
       "formby": {
-        "title": "Formby Golf Club — 访客指南、果岭费与发球时间"
+        "title": "Formby Golf Club：访客指南、果岭费与发球时间"
       },
       "west-lancashire": {
-        "title": "West Lancashire Golf Club — 访客果岭费与发球时间"
+        "title": "West Lancashire Golf Club：访客果岭费与发球时间"
       },
       "southport-ainsdale": {
-        "title": "Southport & Ainsdale Golf Club — 访客指南与果岭费"
+        "title": "Southport & Ainsdale Golf Club：访客指南与果岭费"
       },
       "southport-old-links": {
-        "title": "Southport Old Links Golf Club — 访客指南与果岭费"
+        "title": "Southport Old Links Golf Club：访客指南与果岭费"
       }
     }
   },
@@ -45,7 +45,7 @@
     "conditionsTitle": "球场状况",
     "conditionsDesc": "赛夫顿海岸所有球场实时状况更新",
     "plannerTitle": "高尔夫行程规划工具",
-    "plannerDesc": "告诉我们您的天数、预算和差点 — 我们将为您制定行程"
+    "plannerDesc": "告诉我们您的天数、预算和差点：我们将为您制定行程"
   },
   "homePage": {
     "heroBadge": "赛夫顿海岸 · 兰开夏 · 英格兰",
@@ -62,7 +62,7 @@
     "courseCardFullGuideLink": "完整指南",
     "compareAllCoursesBtn": "比较所有球场",
     "toolsSectionTitle": "规划您的赛夫顿海岸之行",
-    "toolsSectionSubtitle": "专为访客高尔夫球手打造的工具 — 针对首次来访者，而非已经熟悉球场的本地人。",
+    "toolsSectionSubtitle": "专为访客高尔夫球手打造的工具：针对首次来访者，而非已经熟悉球场的本地人。",
     "tool1Title": "球场状况",
     "tool1Cta": "查看状况",
     "tool2Title": "高尔夫行程规划工具",
@@ -71,7 +71,7 @@
     "tool3Title": "发球时间指南",
     "tool3Cta": "查看发球时间指南",
     "tool4Title": "记分卡数据库",
-    "tool4Desc": "六座球场完整记分卡数据 — 所有发球台的标准杆、码数、球场评级及坡度评级。出发前掌握所有必要信息。",
+    "tool4Desc": "六座球场完整记分卡数据：所有发球台的标准杆、码数、球场评级及坡度评级。出发前掌握所有必要信息。",
     "tool4Cta": "查看记分卡",
     "tool5Title": "高尔夫球手住宿",
     "tool5Cta": "寻找住宿",
@@ -79,11 +79,11 @@
     "tool6Desc": "含球场顺序、住宿建议及赛后餐饮的两天、三天及五天预设行程。从经济型到锦标赛级别。",
     "tool6Cta": "浏览行程",
     "editorialTitle": "为什么选择赛夫顿海岸？",
-    "editorialPara1": "提到链球式高尔夫圣地，人们首先想到苏格兰 — 圣安德鲁斯、卡诺斯蒂、穆菲尔德。赛夫顿海岸常常被忽视。这恰恰是每位访客球手的机会。",
+    "editorialPara1": "提到链球式高尔夫圣地，人们首先想到苏格兰：圣安德鲁斯、卡诺斯蒂、穆菲尔德。赛夫顿海岸常常被忽视。这恰恰是每位访客球手的机会。",
     "featureCard1Title": "交通便利",
     "featureCard1Text": "距利物浦机场45分钟，距曼彻斯特60分钟。利物浦市中心直达索斯波特的铁路。",
-    "southportGuideDesc": "索斯波特的酒店、餐厅及旅游资讯 — 赛夫顿海岸高尔夫之旅的理想基地。",
-    "formbyGuideDesc": "Formby 完整指南 — 国家信托松林、红松鼠，以及两轮之间值得探访的村庄。"
+    "southportGuideDesc": "索斯波特的酒店、餐厅及旅游资讯：赛夫顿海岸高尔夫之旅的理想基地。",
+    "formbyGuideDesc": "Formby 完整指南：国家信托松林、红松鼠，以及两轮之间值得探访的村庄。"
   },
   "courses": {
     "pageTitle": "赛夫顿海岸高尔夫球场",
@@ -111,7 +111,7 @@
     "tableHeaderSlope": "坡度",
     "tableHeaderGreenFee": "果岭费",
     "tableHeaderDifficulty": "难度",
-    "tableFootnote": "★ 英国公开赛举办地。果岭费为参考价格 — 预订前请务必向球会核实。",
+    "tableFootnote": "★ 英国公开赛举办地。果岭费为参考价格：预订前请务必向球会核实。",
     "cardStatParLabel": "标准杆",
     "cardStatYardsLabel": "码",
     "cardStatCourseRatingLabel": "球场评级",
@@ -146,12 +146,12 @@
     "bestDaysLabel": "最佳到访日期",
     "advanceBookingLabel": "需提前多长时间预订",
     "handicapRequirementLabel": "差点要求",
-    "handicapRequirementText": "男士差点上限：{limit}。须持差点证明 — 请携带球会卡或 EGA 差点卡。",
+    "handicapRequirementText": "男士差点上限：{limit}。须持差点证明：请携带球会卡或 EGA 差点卡。",
     "whyPlayTitle": "为什么选择 {courseName}？",
     "practicalNotesTitle": "实用须知",
     "majorHistoryTitle": "大满贯赛事历史",
     "afterRoundTitle": "一轮过后",
-    "restaurantGuideLink": "餐厅完整指南 — SouthportGuide.co.uk",
+    "restaurantGuideLink": "餐厅完整指南：SouthportGuide.co.uk",
     "conditionsWidgetTitle": "今日球场状况",
     "conditionsWidgetDesc": "出发前查看当前球场状况。",
     "conditionsWidgetLink": "查看球场状况",
@@ -198,7 +198,7 @@
   "teeTimesPage": {
     "headerBadge": "访客指南",
     "pageTitle": "如何预订发球时间",
-    "allCoursesTitle": "访客政策 — 全部球场",
+    "allCoursesTitle": "访客政策：全部球场",
     "difficultyRestricted": "受限",
     "difficultyByArrangement": "预先安排",
     "difficultyWelcome": "欢迎访客",
@@ -232,11 +232,11 @@
     "tip1": "预订周二至周四的发球时间，各球场的预约更容易，球场上也通常更为安静。",
     "tip2": "预订时询问球具/球包存放事宜。好的高尔夫酒店会有专用干燥存放区，无需将球包带进房间过夜。",
     "tip3": "Birkdale 站（Merseyrail）距 Royal Birkdale 主入口步行8分钟。如果您入住索斯波特市中心的酒店，非常便利。",
-    "tip4": "灵活取消条款很重要 — 链球高尔夫天气难以预测。除非不可退款的价格优惠极为显著，否则请选择可退款的价格。",
+    "tip4": "灵活取消条款很重要：链球高尔夫天气难以预测。除非不可退款的价格优惠极为显著，否则请选择可退款的价格。",
     "southportHotelsLinkTitle": "索斯波特酒店完整指南",
-    "southportHotelsLinkDesc": "SouthportGuide.co.uk — 酒店、民宿、自助式住宿",
+    "southportHotelsLinkDesc": "SouthportGuide.co.uk：酒店、民宿、自助式住宿",
     "formbyAccomLinkTitle": "Formby 住宿指南",
-    "formbyAccomLinkDesc": "FormbyGuide.co.uk — 安静的据点，距 Birkdale 5英里"
+    "formbyAccomLinkDesc": "FormbyGuide.co.uk：安静的据点，距 Birkdale 5英里"
   },
   "scorecardPage": {
     "headerBadge": "球场数据",
@@ -261,9 +261,9 @@
     "courseRatingTitle": "球场评级",
     "courseRatingDesc": "零差点球手从该发球台出发的预期得分。评级76.5意味着零差点球手在正常状况下预计打出76.5杆。",
     "slopeRatingTitle": "坡度评级",
-    "slopeRatingDesc": "衡量相对于柏忌球手的难度。USGA标准范围55至155 — 113为平均，148（Royal Birkdale 锦标赛）为极难。",
+    "slopeRatingDesc": "衡量相对于柏忌球手的难度。USGA标准范围55至155：113为平均，148（Royal Birkdale 锦标赛）为极难。",
     "yardageMetresTitle": "码数与米数",
-    "yardageMetresDesc": "英格兰球会使用码作为单位。同时提供米数供欧洲大陆访客参考。GPS设备和测距仪被广泛允许使用 — 赛事使用前请与各球会确认。",
+    "yardageMetresDesc": "英格兰球会使用码作为单位。同时提供米数供欧洲大陆访客参考。GPS设备和测距仪被广泛允许使用：赛事使用前请与各球会确认。",
     "dataAccuracyTitle": "数据准确性",
     "dataAccuracyDesc": "数据已根据最佳可用来源核实。球场评级和坡度可能由球会定期更新。赛事使用前请务必向球会确认。"
   },
@@ -271,7 +271,7 @@
     "headerBadge": "赛夫顿海岸",
     "pageTitle": "高尔夫行程",
     "plannerTitle": "高尔夫行程规划工具",
-    "plannerDesc": "输入您的天数、预算及差点 — 我们将为您匹配合适的行程。",
+    "plannerDesc": "输入您的天数、预算及差点：我们将为您匹配合适的行程。",
     "allItinerariesTitle": "全部行程",
     "dayLabel": "天",
     "daysLabel": "天",
@@ -283,7 +283,7 @@
     "diningLabel": "餐饮",
     "estimatedGreenFeesLabel": "预计果岭费",
     "howToPlanTitle": "如何规划赛夫顿海岸高尔夫之旅",
-    "howToPlanPara1": "赛夫顿海岸的球场分布紧凑，两天行程无需复杂交通便可安排两至三轮。Royal Birkdale 与 Hillside 字面上紧挨相邻 — 步行可达。Southport & Ainsdale 在其南方三英里处。Formby 经 A565 距 Birkdale 五英里。",
+    "howToPlanPara1": "赛夫顿海岸的球场分布紧凑，两天行程无需复杂交通便可安排两至三轮。Royal Birkdale 与 Hillside 字面上紧挨相邻：步行可达。Southport & Ainsdale 在其南方三英里处。Formby 经 A565 距 Birkdale 五英里。",
     "howToPlanPara2": "多日行程建议以索斯波特为基地。该镇酒店选择最多，从 Lord Street 到 Birkdale 全部在出租车距离内。如果您希望住宿更安静、更实惠，Formby 村在南面20分钟车程处，有不错的民宿选择。"
   },
   "conditions": {
@@ -301,7 +301,7 @@
   "conditionsPage": {
     "pageTitle": "球场状况",
     "aboutLinksTitle": "关于链球场状况",
-    "aboutLinksPara1": "链球场状况与园林式球场根本不同。关键变量是风向与风力、近期降水量及排水状况，以及草皮坚实程度。坚实干燥的球场与湿润柔软的球场打法截然不同 — 近攻球停球距离、发球台出球距离及短切球的创意性都大相径庭。",
+    "aboutLinksPara1": "链球场状况与园林式球场根本不同。关键变量是风向与风力、近期降水量及排水状况，以及草皮坚实程度。坚实干燥的球场与湿润柔软的球场打法截然不同：近攻球停球距离、发球台出球距离及短切球的创意性都大相径庭。",
     "aboutLinksPara3": "风速与风向在这里比英格兰几乎任何地方都更为关键。Royal Birkdale 盛行的西南风造就了球场设计所针对的「自然」打球体验。来自陆地的东风则带来截然不同的球场感受。本指南特别附有 Royal Birkdale 专用风向说明。",
     "conditionsDisclaimer": "状况数据为大致信息，以手动方式维护。出发前请务必向各球会确认。SeftonLinks 对与本页面不符的球场关闭或状况不承担任何责任。"
   },
@@ -310,11 +310,11 @@
     "getInTouchTitle": "与我们联系",
     "generalEnquiriesLabel": "一般咨询：",
     "dataCorrectionsLabel": "数据更正：",
-    "dataCorrectionsText": "如发现球场数据有误 — 果岭费、访客政策、开放时间 — 请告知我们。我们将及时更新。",
+    "dataCorrectionsText": "如发现球场数据有误（果岭费、访客政策、开放时间）请告知我们。我们将及时更新。",
     "pressMediaLabel": "媒体联系：",
     "pressMediaLinkText": "Churchtown Media Ltd",
     "beforeContactTitle": "联系前请注意",
-    "beforeContactItem1": "→ 发球时间预订请直接联系各球会 — 我们是指南，不是预订平台。"
+    "beforeContactItem1": "→ 发球时间预订请直接联系各球会：我们是指南，不是预订平台。"
   },
   "legalPage": {
     "privacyTitle": "隐私政策",
@@ -322,7 +322,7 @@
     "lastUpdated": "最后更新：2026年11月",
     "privacyIntro": "SeftonLinks.com 由 Churchtown Media Ltd 运营。我们认真对待您的隐私。",
     "analyticsTitle": "数据分析",
-    "analyticsDesc": "我们使用 Plausible Analytics（隐私优先、符合 GDPR、无 Cookie、不收集个人数据）及 Microsoft Clarity（会话录制 — 已匿名化）。正确配置后，依 GDPR 两者均无需 Cookie 同意。",
+    "analyticsDesc": "我们使用 Plausible Analytics（隐私优先、符合 GDPR、无 Cookie、不收集个人数据）及 Microsoft Clarity（会话录制：已匿名化）。正确配置后，依 GDPR 两者均无需 Cookie 同意。",
     "privacyContactTitle": "联系方式",
     "privacyContactText": "隐私相关咨询：",
     "termsIntro": "使用 SeftonLinks.com 即表示您同意以下条款。本网站由 Churchtown Media Ltd 运营。",
@@ -343,7 +343,7 @@
     "exploreTitle": "探索",
     "networkTitle": "赛夫顿海岸网络",
     "legalTitle": "信息",
-    "copyright": "© 2026 SeftonLinks.com — 保留所有权利。",
+    "copyright": "© 2026 SeftonLinks.com：保留所有权利。",
     "southportGuide": "SouthportGuide.co.uk",
     "formbyGuide": "FormbyGuide.co.uk",
     "coursesHeading": "球场",

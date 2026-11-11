@@ -9,32 +9,32 @@
     "contact": "Contact"
   },
   "meta": {
-    "coursesTitle": "Golfbanen Sefton Coast — Royal Birkdale, Hillside & Formby",
-    "coursesDesc": "De complete gids voor alle zes links golfbanen aan de Sefton Coast — bezoekersbeleid, green fees, baanratings, tee time reserveren en uitgebreide baangidsen.",
-    "scorecardTitle": "Scorekaarten Sefton Coast — Par, Afstand & Baanrating",
-    "scorecardDesc": "Volledige scorekaartdata voor alle zes Sefton Coast banen — par, afstanden van alle tees, baanrating en slope rating. Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale en Southport Old Links.",
+    "coursesTitle": "Golfbanen Sefton Coast: Royal Birkdale, Hillside & Formby",
+    "coursesDesc": "De complete gids voor alle zes links golfbanen aan de Sefton Coast: bezoekersbeleid, green fees, baanratings, tee time reserveren en uitgebreide baangidsen.",
+    "scorecardTitle": "Scorekaarten Sefton Coast: Par, Afstand & Baanrating",
+    "scorecardDesc": "Volledige scorekaartdata voor alle zes Sefton Coast banen: par, afstanden van alle tees, baanrating en slope rating. Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale en Southport Old Links.",
     "teeTimesTitle": "Tee Times op Royal Birkdale & Sefton Coast Golfclubs",
-    "itinerariesTitle": "Sefton Coast Golfreizen — Programma's van 2, 3 & 5 Dagen",
+    "itinerariesTitle": "Sefton Coast Golfreizen: Programma's van 2, 3 & 5 Dagen",
     "accommodationTitle": "Golfaccommodatie bij Royal Birkdale, Southport",
     "contactTitle": "Contact SeftonLinks",
     "course": {
       "royal-birkdale": {
-        "title": "Royal Birkdale Golf Club — Bezoekersinfo, Green Fees & Tee Times"
+        "title": "Royal Birkdale Golf Club: Bezoekersinfo, Green Fees & Tee Times"
       },
       "hillside": {
-        "title": "Hillside Golf Club Southport — Bezoekersinfo & Green Fees"
+        "title": "Hillside Golf Club Southport: Bezoekersinfo & Green Fees"
       },
       "formby": {
-        "title": "Formby Golf Club — Bezoekersinfo, Green Fees & Tee Times"
+        "title": "Formby Golf Club: Bezoekersinfo, Green Fees & Tee Times"
       },
       "west-lancashire": {
-        "title": "West Lancashire Golf Club — Green Fees & Tee Times voor Bezoekers"
+        "title": "West Lancashire Golf Club: Green Fees & Tee Times voor Bezoekers"
       },
       "southport-ainsdale": {
-        "title": "Southport & Ainsdale Golf Club — Bezoekersinfo & Green Fees"
+        "title": "Southport & Ainsdale Golf Club: Bezoekersinfo & Green Fees"
       },
       "southport-old-links": {
-        "title": "Southport Old Links Golf Club — Bezoekersinfo & Green Fees"
+        "title": "Southport Old Links Golf Club: Bezoekersinfo & Green Fees"
       }
     }
   },
@@ -45,7 +45,7 @@
     "conditionsTitle": "Baanomstandigheden",
     "conditionsDesc": "Live updates over de speelomstandigheden aan de Sefton Coast",
     "plannerTitle": "Golfvakantie Planner",
-    "plannerDesc": "Geef uw beschikbare dagen, budget en handicap door — wij stellen uw programma samen"
+    "plannerDesc": "Geef uw beschikbare dagen, budget en handicap door: wij stellen uw programma samen"
   },
   "homePage": {
     "heroBadge": "Sefton Coast · Lancashire · Engeland",
@@ -62,7 +62,7 @@
     "courseCardFullGuideLink": "Volledige gids",
     "compareAllCoursesBtn": "Alle Banen Vergelijken",
     "toolsSectionTitle": "Plan Uw Bezoek aan de Sefton Coast",
-    "toolsSectionSubtitle": "Tools speciaal voor bezoekers — niet voor locals die de banen al kennen.",
+    "toolsSectionSubtitle": "Tools speciaal voor bezoekers: niet voor locals die de banen al kennen.",
     "tool1Title": "Baanomstandigheden",
     "tool1Cta": "Bekijk Omstandigheden",
     "tool2Title": "Golfvakantie Planner",
@@ -71,7 +71,7 @@
     "tool3Title": "Tee Time Gids",
     "tool3Cta": "Bekijk Tee Time Gids",
     "tool4Title": "Scorekaart Database",
-    "tool4Desc": "Volledige scorekaartdata voor alle zes banen — par, afstanden van alle tees, baanrating en slope rating. Alles wat u nodig hebt om uw verwachtingen te bepalen.",
+    "tool4Desc": "Volledige scorekaartdata voor alle zes banen: par, afstanden van alle tees, baanrating en slope rating. Alles wat u nodig hebt om uw verwachtingen te bepalen.",
     "tool4Cta": "Bekijk Scorekaarten",
     "tool5Title": "Accommodatie voor Golfers",
     "tool5Cta": "Vind Accommodatie",
@@ -79,11 +79,11 @@
     "tool6Desc": "Kant-en-klare programma's van 2, 3 en 5 dagen met baanvolgorde, verblijfstips en restaurantaanbevelingen. Van budget tot kampioenschapsniveau.",
     "tool6Cta": "Bekijk Programma's",
     "editorialTitle": "Waarom de Sefton Coast?",
-    "editorialPara1": "Er zijn links golfgebieden in Schotland — St Andrews, Carnoustie, Muirfield — die alle aandacht krijgen. De Sefton Coast wordt over het hoofd gezien. En juist dat is de kans voor elke bezoekende golfer.",
+    "editorialPara1": "Er zijn links golfgebieden in Schotland (St Andrews, Carnoustie, Muirfield) die alle aandacht krijgen. De Sefton Coast wordt over het hoofd gezien. En juist dat is de kans voor elke bezoekende golfer.",
     "featureCard1Title": "Goed Bereikbaar",
     "featureCard1Text": "45 min van Liverpool Airport, 60 min van Manchester. Directe treinverbinding naar Southport vanuit Liverpool centrum.",
-    "southportGuideDesc": "Hotels, restaurants en uitjes in Southport — uw uitvalsbasis voor een Sefton Coast golfreis.",
-    "formbyGuideDesc": "De complete gids voor Formby — National Trust sparrenbos, rode eekhoorns en het dorp tussen de rondes door."
+    "southportGuideDesc": "Hotels, restaurants en uitjes in Southport: uw uitvalsbasis voor een Sefton Coast golfreis.",
+    "formbyGuideDesc": "De complete gids voor Formby: National Trust sparrenbos, rode eekhoorns en het dorp tussen de rondes door."
   },
   "courses": {
     "pageTitle": "Golfbanen aan de Sefton Coast",
@@ -111,7 +111,7 @@
     "tableHeaderSlope": "Slope",
     "tableHeaderGreenFee": "Green Fee",
     "tableHeaderDifficulty": "Moeilijkheidsgraad",
-    "tableFootnote": "★ Open Championship venue. Green fees zijn indicatief — bevestig altijd bij de club voor het boeken.",
+    "tableFootnote": "★ Open Championship venue. Green fees zijn indicatief: bevestig altijd bij de club voor het boeken.",
     "cardStatParLabel": "Par",
     "cardStatYardsLabel": "Yards",
     "cardStatCourseRatingLabel": "Baanrating",
@@ -146,12 +146,12 @@
     "bestDaysLabel": "Beste Dagen om te Bezoeken",
     "advanceBookingLabel": "Hoe Ver van Tevoren",
     "handicapRequirementLabel": "Handicap Vereiste",
-    "handicapRequirementText": "Maximale handicap heren: {limit}. Handicapcertificaat vereist — neem uw clubpas of EGA-handicapkaart mee.",
+    "handicapRequirementText": "Maximale handicap heren: {limit}. Handicapcertificaat vereist: neem uw clubpas of EGA-handicapkaart mee.",
     "whyPlayTitle": "Waarom {courseName} Spelen?",
     "practicalNotesTitle": "Praktische Informatie",
     "majorHistoryTitle": "Major Championship Geschiedenis",
     "afterRoundTitle": "Na Uw Ronde",
-    "restaurantGuideLink": "Volledige restaurantgids — SouthportGuide.co.uk",
+    "restaurantGuideLink": "Volledige restaurantgids: SouthportGuide.co.uk",
     "conditionsWidgetTitle": "Omstandigheden Vandaag",
     "conditionsWidgetDesc": "Controleer de actuele speelomstandigheden voor vertrek.",
     "conditionsWidgetLink": "Bekijk baanomstandigheden",
@@ -198,7 +198,7 @@
   "teeTimesPage": {
     "headerBadge": "Bezoekersinfo",
     "pageTitle": "Hoe Boekt u een Tee Time",
-    "allCoursesTitle": "Bezoekersbeleid — Alle Banen",
+    "allCoursesTitle": "Bezoekersbeleid: Alle Banen",
     "difficultyRestricted": "Beperkt",
     "difficultyByArrangement": "Op afspraak",
     "difficultyWelcome": "Bezoekers welkom",
@@ -229,14 +229,14 @@
     "approxLabel": "ca.",
     "golferFeaturesLabel": "Golfersvriendelijke Faciliteiten",
     "tipsTitle": "Accommodatietips voor Golfers",
-    "tip1": "Boek tee times op dinsdag tot donderdag als u doordeweeks verblijft — betere beschikbaarheid bij alle banen en doorgaans rustiger op de baan.",
+    "tip1": "Boek tee times op dinsdag tot donderdag als u doordeweeks verblijft: betere beschikbaarheid bij alle banen en doorgaans rustiger op de baan.",
     "tip2": "Vraag naar club- en bagopslag bij het reserveren. Goede golfhotels hebben een aparte droge opslag in plaats van de tassen op uw kamer te laten.",
     "tip3": "Station Birkdale (Merseyrail) ligt op 8 minuten lopen van de hoofdingang van Royal Birkdale. Handig als uw hotel in het centrum van Southport ligt.",
-    "tip4": "Flexibele annulering is belangrijk — links golfweer is onvoorspelbaar. Boek restitueerbare tarieven, tenzij de besparingen op niet-restitueerbare aanzienlijk zijn.",
+    "tip4": "Flexibele annulering is belangrijk: links golfweer is onvoorspelbaar. Boek restitueerbare tarieven, tenzij de besparingen op niet-restitueerbare aanzienlijk zijn.",
     "southportHotelsLinkTitle": "Volledige Southport Hotelgids",
-    "southportHotelsLinkDesc": "SouthportGuide.co.uk — hotels, B&B's en zelfcatering",
+    "southportHotelsLinkDesc": "SouthportGuide.co.uk: hotels, B&B's en zelfcatering",
     "formbyAccomLinkTitle": "Formby Accommodatiegids",
-    "formbyAccomLinkDesc": "FormbyGuide.co.uk — rustiger uitvalsbasis, 8 km van Birkdale"
+    "formbyAccomLinkDesc": "FormbyGuide.co.uk: rustiger uitvalsbasis, 8 km van Birkdale"
   },
   "scorecardPage": {
     "headerBadge": "Baandata",
@@ -261,9 +261,9 @@
     "courseRatingTitle": "Baanrating",
     "courseRatingDesc": "De verwachte score voor een scratch golfer (nul handicap) van die tee. Een rating van 76,5 betekent dat een scratch golfer naar verwachting 76,5 slagen nodig heeft onder normale omstandigheden.",
     "slopeRatingTitle": "Slope Rating",
-    "slopeRatingDesc": "Meet de moeilijkheid ten opzichte van een bogey golfer. De USGA-schaal loopt van 55 tot 155 — een slope van 113 is gemiddeld, 148 (Royal Birkdale kampioenschap) is buitengewoon moeilijk.",
+    "slopeRatingDesc": "Meet de moeilijkheid ten opzichte van een bogey golfer. De USGA-schaal loopt van 55 tot 155: een slope van 113 is gemiddeld, 148 (Royal Birkdale kampioenschap) is buitengewoon moeilijk.",
     "yardageMetresTitle": "Yards & Meters",
-    "yardageMetresDesc": "Engelse clubs hanteren yards. Meters zijn opgegeven voor bezoekers uit continentaal Europa. GPS-apparaten en afstandsmeters zijn veelal toegestaan — controleer bij elke club voor gebruik in competities.",
+    "yardageMetresDesc": "Engelse clubs hanteren yards. Meters zijn opgegeven voor bezoekers uit continentaal Europa. GPS-apparaten en afstandsmeters zijn veelal toegestaan: controleer bij elke club voor gebruik in competities.",
     "dataAccuracyTitle": "Nauwkeurigheid van Gegevens",
     "dataAccuracyDesc": "Gegevens geverifieerd op basis van best beschikbare bronnen. Baanratings en slope kunnen periodiek worden bijgewerkt door de club. Bevestig altijd bij de club voor competitiegebruik."
   },
@@ -271,7 +271,7 @@
     "headerBadge": "Sefton Coast",
     "pageTitle": "Golfvakantie Programma's",
     "plannerTitle": "Golfvakantie Planner",
-    "plannerDesc": "Vul uw beschikbare dagen, budget en handicap in — wij koppelen u aan het juiste programma.",
+    "plannerDesc": "Vul uw beschikbare dagen, budget en handicap in: wij koppelen u aan het juiste programma.",
     "allItinerariesTitle": "Alle Programma's",
     "dayLabel": "dag",
     "daysLabel": "dagen",
@@ -283,7 +283,7 @@
     "diningLabel": "Eten & Drinken",
     "estimatedGreenFeesLabel": "Geschatte Green Fees",
     "howToPlanTitle": "Hoe Plant u een Sefton Coast Golfreis",
-    "howToPlanPara1": "De Sefton Coast banen liggen dicht genoeg bij elkaar dat u bij een tweedaagse trip twee of drie rondes kunt afwerken zonder logistieke hoofdpijn. Royal Birkdale en Hillside liggen letterlijk naast elkaar — u zou er bijna tussen kunnen lopen. Southport & Ainsdale ligt vijf kilometer verder naar het zuiden. Formby ligt acht kilometer van Birkdale via de A565.",
+    "howToPlanPara1": "De Sefton Coast banen liggen dicht genoeg bij elkaar dat u bij een tweedaagse trip twee of drie rondes kunt afwerken zonder logistieke hoofdpijn. Royal Birkdale en Hillside liggen letterlijk naast elkaar: u zou er bijna tussen kunnen lopen. Southport & Ainsdale ligt vijf kilometer verder naar het zuiden. Formby ligt acht kilometer van Birkdale via de A565.",
     "howToPlanPara2": "Voor meerdaagse reizen baseert u zich het beste in Southport. De stad heeft het ruimste hotelaanbod, en alles van Lord Street tot Birkdale is bereikbaar per taxi. Als u rustiger en goedkoper wilt verblijven, is Formby village 20 minuten naar het zuiden een prima optie met goede B&B-mogelijkheden."
   },
   "conditions": {
@@ -301,7 +301,7 @@
   "conditionsPage": {
     "pageTitle": "Baanomstandigheden",
     "aboutLinksTitle": "Over Links Omstandigheden",
-    "aboutLinksPara1": "Links golf omstandigheden verschillen fundamenteel van parkland golf. De belangrijkste variabelen zijn windrichting en -kracht, recente regenval en drainage, en de hardheid van het gras. Een droge, harde baan speelt compleet anders dan een natte, zachte — benadering-shots blijven niet liggen, de bal loopt verder van de tee en chippen wordt een creatief spelletje.",
+    "aboutLinksPara1": "Links golf omstandigheden verschillen fundamenteel van parkland golf. De belangrijkste variabelen zijn windrichting en -kracht, recente regenval en drainage, en de hardheid van het gras. Een droge, harde baan speelt compleet anders dan een natte, zachte: benadering-shots blijven niet liggen, de bal loopt verder van de tee en chippen wordt een creatief spelletje.",
     "aboutLinksPara3": "Windsnelheid en -richting zijn hier belangrijker dan bijna overal in Engeland. De heersende zuidwestenwind op Royal Birkdale creëert de 'natuurlijke' baanervaring waarvoor de routering is ontworpen. Een oostenwind vanuit het land levert een volledig andere baan op. Deze gids bevat een windrichtingssleutel specifiek voor Royal Birkdale.",
     "conditionsDisclaimer": "Omstandighedendata is bij benadering en handmatig bijgehouden. Verifieer altijd bij de individuele club voor vertrek. SeftonLinks aanvaardt geen aansprakelijkheid voor baansluitingen of omstandigheden die afwijken van deze pagina."
   },
@@ -310,11 +310,11 @@
     "getInTouchTitle": "Neem Contact Op",
     "generalEnquiriesLabel": "Algemene vragen:",
     "dataCorrectionsLabel": "Gegevenscorrecties:",
-    "dataCorrectionsText": "Als er baandata onjuist is — green fees, bezoekersbeleid, openingstijden — laat het ons weten. Wij verwerken correcties snel.",
+    "dataCorrectionsText": "Als er baandata onjuist is (green fees, bezoekersbeleid, openingstijden) laat het ons weten. Wij verwerken correcties snel.",
     "pressMediaLabel": "Pers & media:",
     "pressMediaLinkText": "Churchtown Media Ltd",
     "beforeContactTitle": "Voordat u contact opneemt",
-    "beforeContactItem1": "→ Voor tee time reserveringen kunt u rechtstreeks contact opnemen met de clubs — wij zijn een gids, geen boekingsplatform."
+    "beforeContactItem1": "→ Voor tee time reserveringen kunt u rechtstreeks contact opnemen met de clubs: wij zijn een gids, geen boekingsplatform."
   },
   "legalPage": {
     "privacyTitle": "Privacybeleid",
@@ -322,7 +322,7 @@
     "lastUpdated": "Laatst bijgewerkt: november 2026",
     "privacyIntro": "SeftonLinks.com wordt geëxploiteerd door Churchtown Media Ltd. Wij nemen uw privacy serieus.",
     "analyticsTitle": "Analyse",
-    "analyticsDesc": "Wij gebruiken Plausible Analytics (privacy-first, AVG-compliant, geen cookies, geen persoonlijke gegevens verzameld) en Microsoft Clarity (sessieopnamen — geanonimiseerd). Geen van beide vereist cookietoestemming onder de AVG indien correct geconfigureerd.",
+    "analyticsDesc": "Wij gebruiken Plausible Analytics (privacy-first, AVG-compliant, geen cookies, geen persoonlijke gegevens verzameld) en Microsoft Clarity (sessieopnamen: geanonimiseerd). Geen van beide vereist cookietoestemming onder de AVG indien correct geconfigureerd.",
     "privacyContactTitle": "Contact",
     "privacyContactText": "Privacyvragen:",
     "termsIntro": "Door gebruik te maken van SeftonLinks.com gaat u akkoord met deze voorwaarden. De site wordt geëxploiteerd door Churchtown Media Ltd.",
@@ -343,7 +343,7 @@
     "exploreTitle": "Ontdekken",
     "networkTitle": "Sefton Coast Netwerk",
     "legalTitle": "Informatie",
-    "copyright": "© 2026 SeftonLinks.com — Alle rechten voorbehouden.",
+    "copyright": "© 2026 SeftonLinks.com: Alle rechten voorbehouden.",
     "southportGuide": "SouthportGuide.co.uk",
     "formbyGuide": "FormbyGuide.co.uk",
     "coursesHeading": "Banen",

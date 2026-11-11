@@ -9,32 +9,32 @@
     "contact": "문의"
   },
   "meta": {
-    "coursesTitle": "세프턴 코스트 골프 코스 — Royal Birkdale, Hillside & Formby",
-    "coursesDesc": "세프턴 코스트 6개 링크스 코스 완벽 가이드 — 방문자 정책, 그린피, 코스 레이팅, 티타임 예약 방법까지.",
-    "scorecardTitle": "세프턴 코스트 골프 스코어카드 — 파, 야디지 & 코스 레이팅",
-    "scorecardDesc": "세프턴 코스트 6개 코스 전체 스코어카드 데이터 — 모든 티에서의 파, 야디지, 코스 레이팅, 슬로프 레이팅. Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale, Southport Old Links.",
+    "coursesTitle": "세프턴 코스트 골프 코스: Royal Birkdale, Hillside & Formby",
+    "coursesDesc": "세프턴 코스트 6개 링크스 코스 완벽 가이드: 방문자 정책, 그린피, 코스 레이팅, 티타임 예약 방법까지.",
+    "scorecardTitle": "세프턴 코스트 골프 스코어카드: 파, 야디지 & 코스 레이팅",
+    "scorecardDesc": "세프턴 코스트 6개 코스 전체 스코어카드 데이터: 모든 티에서의 파, 야디지, 코스 레이팅, 슬로프 레이팅. Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale, Southport Old Links.",
     "teeTimesTitle": "Royal Birkdale & 세프턴 코스트 골프 클럽 티타임 예약",
-    "itinerariesTitle": "세프턴 코스트 골프 여행 — 2박, 3박, 5박 일정",
-    "accommodationTitle": "Royal Birkdale 근처 골프 숙박 — 사우스포트",
+    "itinerariesTitle": "세프턴 코스트 골프 여행: 2박, 3박, 5박 일정",
+    "accommodationTitle": "Royal Birkdale 근처 골프 숙박: 사우스포트",
     "contactTitle": "SeftonLinks 문의",
     "course": {
       "royal-birkdale": {
-        "title": "Royal Birkdale Golf Club — 방문자 가이드, 그린피 & 티타임"
+        "title": "Royal Birkdale Golf Club: 방문자 가이드, 그린피 & 티타임"
       },
       "hillside": {
-        "title": "Hillside Golf Club 사우스포트 — 방문자 가이드 & 그린피"
+        "title": "Hillside Golf Club 사우스포트: 방문자 가이드 & 그린피"
       },
       "formby": {
-        "title": "Formby Golf Club — 방문자 가이드, 그린피 & 티타임"
+        "title": "Formby Golf Club: 방문자 가이드, 그린피 & 티타임"
       },
       "west-lancashire": {
-        "title": "West Lancashire Golf Club — 방문자 그린피 & 티타임"
+        "title": "West Lancashire Golf Club: 방문자 그린피 & 티타임"
       },
       "southport-ainsdale": {
-        "title": "Southport & Ainsdale Golf Club — 방문자 가이드 & 그린피"
+        "title": "Southport & Ainsdale Golf Club: 방문자 가이드 & 그린피"
       },
       "southport-old-links": {
-        "title": "Southport Old Links Golf Club — 방문자 가이드 & 그린피"
+        "title": "Southport Old Links Golf Club: 방문자 가이드 & 그린피"
       }
     }
   },
@@ -62,7 +62,7 @@
     "courseCardFullGuideLink": "전체 가이드",
     "compareAllCoursesBtn": "전체 코스 비교",
     "toolsSectionTitle": "세프턴 코스트 방문 계획",
-    "toolsSectionSubtitle": "방문 골퍼를 위한 도구 — 코스를 이미 아는 현지인이 아닌, 처음 방문하는 분들을 위해.",
+    "toolsSectionSubtitle": "방문 골퍼를 위한 도구: 코스를 이미 아는 현지인이 아닌, 처음 방문하는 분들을 위해.",
     "tool1Title": "코스 컨디션",
     "tool1Cta": "컨디션 확인",
     "tool2Title": "골프 여행 플래너",
@@ -71,7 +71,7 @@
     "tool3Title": "티타임 가이드",
     "tool3Cta": "티타임 가이드 보기",
     "tool4Title": "스코어카드 데이터베이스",
-    "tool4Desc": "전 6개 코스 완전한 스코어카드 데이터 — 모든 티에서의 파, 야디지, 코스 레이팅, 슬로프 레이팅.",
+    "tool4Desc": "전 6개 코스 완전한 스코어카드 데이터: 모든 티에서의 파, 야디지, 코스 레이팅, 슬로프 레이팅.",
     "tool4Cta": "스코어카드 보기",
     "tool5Title": "골퍼를 위한 숙박",
     "tool5Cta": "숙박 찾기",
@@ -79,11 +79,11 @@
     "tool6Desc": "코스 순서, 숙박 제안, 라운드 후 식사가 포함된 2박, 3박, 5박 완성 플랜. 알뜰부터 챔피언십 수준까지.",
     "tool6Cta": "일정 보기",
     "editorialTitle": "왜 세프턴 코스트인가?",
-    "editorialPara1": "링크스 골프의 성지라 하면 스코틀랜드가 주목을 받습니다 — 세인트앤드루스, 카누스티, 뮤어필드. 세프턴 코스트는 그 그늘에 가려져 있습니다. 그것이 바로 방문 골퍼에게는 기회입니다.",
+    "editorialPara1": "링크스 골프의 성지라 하면 스코틀랜드가 주목을 받습니다: 세인트앤드루스, 카누스티, 뮤어필드. 세프턴 코스트는 그 그늘에 가려져 있습니다. 그것이 바로 방문 골퍼에게는 기회입니다.",
     "featureCard1Title": "편리한 접근성",
     "featureCard1Text": "리버풀 공항에서 45분, 맨체스터에서 60분. 리버풀 시내에서 사우스포트까지 직행 기차 운행.",
-    "southportGuideDesc": "사우스포트 호텔, 레스토랑, 관광 정보 — 세프턴 코스트 골프 여행의 거점 도시 가이드.",
-    "formbyGuideDesc": "Formby 완벽 가이드 — 내셔널 트러스트 소나무숲, 붉은 다람쥐, 라운드 사이 방문할 마을."
+    "southportGuideDesc": "사우스포트 호텔, 레스토랑, 관광 정보: 세프턴 코스트 골프 여행의 거점 도시 가이드.",
+    "formbyGuideDesc": "Formby 완벽 가이드: 내셔널 트러스트 소나무숲, 붉은 다람쥐, 라운드 사이 방문할 마을."
   },
   "courses": {
     "pageTitle": "세프턴 코스트 골프 코스",
@@ -111,7 +111,7 @@
     "tableHeaderSlope": "슬로프",
     "tableHeaderGreenFee": "그린피",
     "tableHeaderDifficulty": "난이도",
-    "tableFootnote": "★ 디 오픈 개최 코스. 그린피는 대략적인 금액 — 예약 전 반드시 클럽에 확인하세요.",
+    "tableFootnote": "★ 디 오픈 개최 코스. 그린피는 대략적인 금액: 예약 전 반드시 클럽에 확인하세요.",
     "cardStatParLabel": "파",
     "cardStatYardsLabel": "야드",
     "cardStatCourseRatingLabel": "코스 레이팅",
@@ -146,12 +146,12 @@
     "bestDaysLabel": "방문 추천 요일",
     "advanceBookingLabel": "사전 예약 기간",
     "handicapRequirementLabel": "핸디캡 요건",
-    "handicapRequirementText": "남성 핸디캡 상한: {limit}. 핸디캡 증명서 필수 — 클럽 카드 또는 EGA 핸디캡 카드를 지참하세요.",
+    "handicapRequirementText": "남성 핸디캡 상한: {limit}. 핸디캡 증명서 필수: 클럽 카드 또는 EGA 핸디캡 카드를 지참하세요.",
     "whyPlayTitle": "왜 {courseName}에서 플레이해야 하는가?",
     "practicalNotesTitle": "실용 정보",
     "majorHistoryTitle": "메이저 챔피언십 역사",
     "afterRoundTitle": "라운드 후 즐길 거리",
-    "restaurantGuideLink": "레스토랑 전체 가이드 — SouthportGuide.co.uk",
+    "restaurantGuideLink": "레스토랑 전체 가이드: SouthportGuide.co.uk",
     "conditionsWidgetTitle": "오늘의 코스 컨디션",
     "conditionsWidgetDesc": "출발 전 현재 코스 컨디션을 확인하세요.",
     "conditionsWidgetLink": "코스 컨디션 보기",
@@ -198,7 +198,7 @@
   "teeTimesPage": {
     "headerBadge": "방문자 가이드",
     "pageTitle": "티타임 예약 방법",
-    "allCoursesTitle": "방문자 정책 — 전체 코스",
+    "allCoursesTitle": "방문자 정책: 전체 코스",
     "difficultyRestricted": "제한적",
     "difficultyByArrangement": "사전 협의 필요",
     "difficultyWelcome": "방문자 환영",
@@ -232,11 +232,11 @@
     "tip1": "화~목요일 티타임을 예약하면 모든 코스에서 예약이 더 쉽고 코스도 조용한 편입니다.",
     "tip2": "예약 시 클럽/백 보관에 대해 확인하세요. 좋은 골프 호텔은 별도 건식 보관 공간이 있어 방에 가져갈 필요가 없습니다.",
     "tip3": "Birkdale역(Merseyrail)은 Royal Birkdale 메인 입구에서 도보 8분. 사우스포트 중심부 호텔 이용 시 편리.",
-    "tip4": "유연한 취소 정책으로 예약하는 것이 중요합니다 — 링크스 골프 날씨는 예측 불가. 환불 불가 요금은 할인이 클 때만 고려하세요.",
+    "tip4": "유연한 취소 정책으로 예약하는 것이 중요합니다: 링크스 골프 날씨는 예측 불가. 환불 불가 요금은 할인이 클 때만 고려하세요.",
     "southportHotelsLinkTitle": "사우스포트 호텔 전체 가이드",
-    "southportHotelsLinkDesc": "SouthportGuide.co.uk — 호텔, B&B, 자취형 숙박",
+    "southportHotelsLinkDesc": "SouthportGuide.co.uk: 호텔, B&B, 자취형 숙박",
     "formbyAccomLinkTitle": "Formby 숙박 가이드",
-    "formbyAccomLinkDesc": "FormbyGuide.co.uk — 조용한 거점, Birkdale에서 5마일"
+    "formbyAccomLinkDesc": "FormbyGuide.co.uk: 조용한 거점, Birkdale에서 5마일"
   },
   "scorecardPage": {
     "headerBadge": "코스 데이터",
@@ -261,7 +261,7 @@
     "courseRatingTitle": "코스 레이팅",
     "courseRatingDesc": "해당 티에서 스크래치 골퍼(핸디캡 0)의 예상 스코어. 레이팅 76.5는 스크래치 플레이어가 일반적인 컨디션에서 76.5타를 낼 것으로 예상된다는 의미입니다.",
     "slopeRatingTitle": "슬로프 레이팅",
-    "slopeRatingDesc": "보기 골퍼에 대한 난이도를 측정합니다. USGA 척도는 55~155 — 113이 평균, 148(Royal Birkdale 챔피언십)은 극도로 어렵습니다.",
+    "slopeRatingDesc": "보기 골퍼에 대한 난이도를 측정합니다. USGA 척도는 55~155: 113이 평균, 148(Royal Birkdale 챔피언십)은 극도로 어렵습니다.",
     "yardageMetresTitle": "야디지 & 미터",
     "yardageMetresDesc": "잉글랜드 클럽은 야드를 사용합니다. 유럽 대륙 방문자를 위해 미터도 제공합니다. GPS 장치와 레인지파인더는 대부분 허용되지만 경기 사용 전 각 클럽에 확인하세요.",
     "dataAccuracyTitle": "데이터 정확성",
@@ -271,7 +271,7 @@
     "headerBadge": "세프턴 코스트",
     "pageTitle": "골프 여행 일정",
     "plannerTitle": "골프 여행 플래너",
-    "plannerDesc": "일정, 예산, 핸디캡을 입력하세요 — 최적의 일정을 추천해 드립니다.",
+    "plannerDesc": "일정, 예산, 핸디캡을 입력하세요: 최적의 일정을 추천해 드립니다.",
     "allItinerariesTitle": "전체 일정",
     "dayLabel": "일",
     "daysLabel": "일간",
@@ -314,7 +314,7 @@
     "pressMediaLabel": "언론 & 미디어:",
     "pressMediaLinkText": "Churchtown Media Ltd",
     "beforeContactTitle": "문의 전 확인 사항",
-    "beforeContactItem1": "→ 티타임 예약은 각 클럽에 직접 문의하세요 — 저희는 가이드이지 예약 플랫폼이 아닙니다."
+    "beforeContactItem1": "→ 티타임 예약은 각 클럽에 직접 문의하세요: 저희는 가이드이지 예약 플랫폼이 아닙니다."
   },
   "legalPage": {
     "privacyTitle": "개인정보 처리방침",
@@ -322,7 +322,7 @@
     "lastUpdated": "최종 업데이트: 2026년 11월",
     "privacyIntro": "SeftonLinks.com은 Churchtown Media Ltd가 운영합니다. 귀하의 개인정보를 진지하게 취급합니다.",
     "analyticsTitle": "애널리틱스",
-    "analyticsDesc": "프라이버시 우선, GDPR 준수, 쿠키 없음, 개인정보 미수집의 Plausible Analytics와 Microsoft Clarity(세션 녹화 — 익명화)를 사용합니다. 올바르게 설정된 경우 GDPR에서 둘 다 쿠키 동의가 필요하지 않습니다.",
+    "analyticsDesc": "프라이버시 우선, GDPR 준수, 쿠키 없음, 개인정보 미수집의 Plausible Analytics와 Microsoft Clarity(세션 녹화: 익명화)를 사용합니다. 올바르게 설정된 경우 GDPR에서 둘 다 쿠키 동의가 필요하지 않습니다.",
     "privacyContactTitle": "문의",
     "privacyContactText": "개인정보 문의:",
     "termsIntro": "SeftonLinks.com을 사용함으로써 이 약관에 동의하는 것으로 간주됩니다. 이 사이트는 Churchtown Media Ltd가 운영합니다.",
@@ -343,7 +343,7 @@
     "exploreTitle": "살펴보기",
     "networkTitle": "세프턴 코스트 네트워크",
     "legalTitle": "정보",
-    "copyright": "© 2026 SeftonLinks.com — 모든 권리 보유.",
+    "copyright": "© 2026 SeftonLinks.com: 모든 권리 보유.",
     "southportGuide": "SouthportGuide.co.uk",
     "formbyGuide": "FormbyGuide.co.uk",
     "coursesHeading": "코스",

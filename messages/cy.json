@@ -9,32 +9,32 @@
     "contact": "Cysylltu"
   },
   "meta": {
-    "coursesTitle": "Cyrsiau Golff Arfordir Sefton — Royal Birkdale, Hillside a Formby",
-    "coursesDesc": "Y canllaw cyflawn i gyd-chwe chwrs dolenni Arfordir Sefton — polisïau ymwelwyr, ffioedd green, graddfeydd cwrs, archebu amseroedd tee.",
-    "scorecardTitle": "Sgordiau Cyrsiau Golff Arfordir Sefton — Par, Llathenni a Graddfa Cwrs",
-    "scorecardDesc": "Data sgordiau cyflawn ar gyfer pob un o chwe chwrs Arfordir Sefton — par, llathenni o bob tee, graddfa cwrs a graddfa llethr. Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale a Southport Old Links.",
+    "coursesTitle": "Cyrsiau Golff Arfordir Sefton: Royal Birkdale, Hillside a Formby",
+    "coursesDesc": "Y canllaw cyflawn i gyd-chwe chwrs dolenni Arfordir Sefton: polisïau ymwelwyr, ffioedd green, graddfeydd cwrs, archebu amseroedd tee.",
+    "scorecardTitle": "Sgordiau Cyrsiau Golff Arfordir Sefton: Par, Llathenni a Graddfa Cwrs",
+    "scorecardDesc": "Data sgordiau cyflawn ar gyfer pob un o chwe chwrs Arfordir Sefton: par, llathenni o bob tee, graddfa cwrs a graddfa llethr. Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale a Southport Old Links.",
     "teeTimesTitle": "Amseroedd Tee yn Royal Birkdale a Chlybiau Golff Arfordir Sefton",
-    "itinerariesTitle": "Gwyliau Golff Arfordir Sefton — Rhaglenni 2, 3 a 5 Diwrnod",
+    "itinerariesTitle": "Gwyliau Golff Arfordir Sefton: Rhaglenni 2, 3 a 5 Diwrnod",
     "accommodationTitle": "Llety Golff ger Royal Birkdale, Southport",
     "contactTitle": "Cysylltu â SeftonLinks",
     "course": {
       "royal-birkdale": {
-        "title": "Royal Birkdale Golf Club — Canllaw Ymwelwyr, Ffioedd Green ac Amseroedd Tee"
+        "title": "Royal Birkdale Golf Club: Canllaw Ymwelwyr, Ffioedd Green ac Amseroedd Tee"
       },
       "hillside": {
-        "title": "Hillside Golf Club Southport — Canllaw Ymwelwyr a Ffioedd Green"
+        "title": "Hillside Golf Club Southport: Canllaw Ymwelwyr a Ffioedd Green"
       },
       "formby": {
-        "title": "Formby Golf Club — Canllaw Ymwelwyr, Ffioedd Green ac Amseroedd Tee"
+        "title": "Formby Golf Club: Canllaw Ymwelwyr, Ffioedd Green ac Amseroedd Tee"
       },
       "west-lancashire": {
-        "title": "West Lancashire Golf Club — Ffioedd Green Ymwelwyr ac Amseroedd Tee"
+        "title": "West Lancashire Golf Club: Ffioedd Green Ymwelwyr ac Amseroedd Tee"
       },
       "southport-ainsdale": {
-        "title": "Southport & Ainsdale Golf Club — Canllaw Ymwelwyr a Ffioedd Green"
+        "title": "Southport & Ainsdale Golf Club: Canllaw Ymwelwyr a Ffioedd Green"
       },
       "southport-old-links": {
-        "title": "Southport Old Links Golf Club — Canllaw Ymwelwyr a Ffioedd Green"
+        "title": "Southport Old Links Golf Club: Canllaw Ymwelwyr a Ffioedd Green"
       }
     }
   },
@@ -45,7 +45,7 @@
     "conditionsTitle": "Cyflwr y Cwrs",
     "conditionsDesc": "Diweddariadau byw ar gyflwr cyrsiau ar draws Arfordir Sefton",
     "plannerTitle": "Cynlluniwr Gwyliau Golff",
-    "plannerDesc": "Dywedwch wrthym am eich dyddiau, cyllideb a handicap — byddwn yn adeiladu eich amserlen"
+    "plannerDesc": "Dywedwch wrthym am eich dyddiau, cyllideb a handicap: byddwn yn adeiladu eich amserlen"
   },
   "homePage": {
     "heroBadge": "Arfordir Sefton · Swydd Gaerhirfryn · Lloegr",
@@ -62,7 +62,7 @@
     "courseCardFullGuideLink": "Canllaw llawn",
     "compareAllCoursesBtn": "Cymharu Pob Cwrs",
     "toolsSectionTitle": "Cynllunio Eich Ymweliad ag Arfordir Sefton",
-    "toolsSectionSubtitle": "Offer wedi'u hadeiladu ar gyfer golfwyr ymwelwyr — nid trigolion lleol sy'n adnabod y cyrsiau'n barod.",
+    "toolsSectionSubtitle": "Offer wedi'u hadeiladu ar gyfer golfwyr ymwelwyr: nid trigolion lleol sy'n adnabod y cyrsiau'n barod.",
     "tool1Title": "Cyflwr y Cwrs",
     "tool1Cta": "Gwirio Cyflwr",
     "tool2Title": "Cynlluniwr Gwyliau Golff",
@@ -71,7 +71,7 @@
     "tool3Title": "Canllaw Amseroedd Tee",
     "tool3Cta": "Gweld Canllaw Amseroedd Tee",
     "tool4Title": "Cronfa Ddata Sgordiau",
-    "tool4Desc": "Data sgordiau llawn ar gyfer pob un o'r chwe chwrs — par, llathenni o bob tee, graddfa cwrs a graddfa llethr. Popeth sydd ei angen i osod disgwyliadau.",
+    "tool4Desc": "Data sgordiau llawn ar gyfer pob un o'r chwe chwrs: par, llathenni o bob tee, graddfa cwrs a graddfa llethr. Popeth sydd ei angen i osod disgwyliadau.",
     "tool4Cta": "Gweld Sgordiau",
     "tool5Title": "Llety ar gyfer Golfwyr",
     "tool5Cta": "Dod o Hyd i Lety",
@@ -79,11 +79,11 @@
     "tool6Desc": "Amserlenni parod 2, 3 a 5 diwrnod gyda threfn cwrs, awgrymiadau llety a bwyta ôl-rownd. O gyllideb i bencampwriaeth.",
     "tool6Cta": "Pori Amserlenni",
     "editorialTitle": "Pam Arfordir Sefton?",
-    "editorialPara1": "Mae corridorau golff dolenni yn yr Alban — St Andrews, Carnoustie, Muirfield — yn cael y sylw. Mae Arfordir Sefton yn cael ei anwybyddu. Dyna'r cyfle i bob golfwr ymwelwyr.",
+    "editorialPara1": "Mae corridorau golff dolenni yn yr Alban (St Andrews, Carnoustie, Muirfield) yn cael y sylw. Mae Arfordir Sefton yn cael ei anwybyddu. Dyna'r cyfle i bob golfwr ymwelwyr.",
     "featureCard1Title": "Hawdd Cyrraedd",
     "featureCard1Text": "45 mun o Faes Awyr Lerpwl, 60 mun o Fanceinion. Trên uniongyrchol i Southport o ganol dinas Lerpwl.",
-    "southportGuideDesc": "Gwestai, bwytai a phrif atyniadau Southport — eich canolfan ar gyfer taith golff Arfordir Sefton.",
-    "formbyGuideDesc": "Y canllaw cyflawn i Formby — coedwigoedd pinwydd yr Ymddiriedolaeth Genedlaethol, gwiwerod coch a'r pentref rhwng rowndiau."
+    "southportGuideDesc": "Gwestai, bwytai a phrif atyniadau Southport: eich canolfan ar gyfer taith golff Arfordir Sefton.",
+    "formbyGuideDesc": "Y canllaw cyflawn i Formby: coedwigoedd pinwydd yr Ymddiriedolaeth Genedlaethol, gwiwerod coch a'r pentref rhwng rowndiau."
   },
   "courses": {
     "pageTitle": "Cyrsiau Golff Arfordir Sefton",
@@ -111,7 +111,7 @@
     "tableHeaderSlope": "Llethr",
     "tableHeaderGreenFee": "Ffi Green",
     "tableHeaderDifficulty": "Anhawster",
-    "tableFootnote": "★ Lleoliad The Open Championship. Ffioedd green yn fras — gwirio gyda'r clwb bob amser cyn archebu.",
+    "tableFootnote": "★ Lleoliad The Open Championship. Ffioedd green yn fras: gwirio gyda'r clwb bob amser cyn archebu.",
     "cardStatParLabel": "Par",
     "cardStatYardsLabel": "Llathenni",
     "cardStatCourseRatingLabel": "Graddfa Cwrs",
@@ -146,12 +146,12 @@
     "bestDaysLabel": "Dyddiau Gorau i Ymweld",
     "advanceBookingLabel": "Pa Mor Bell Ymlaen Llaw",
     "handicapRequirementLabel": "Gofyniad Handicap",
-    "handicapRequirementText": "Terfyn handicap dynion: {limit}. Tystysgrif handicap yn ofynnol — dewch â'ch cerdyn clwb neu gerdyn handicap EGA.",
+    "handicapRequirementText": "Terfyn handicap dynion: {limit}. Tystysgrif handicap yn ofynnol: dewch â'ch cerdyn clwb neu gerdyn handicap EGA.",
     "whyPlayTitle": "Pam Chwarae yn {courseName}?",
     "practicalNotesTitle": "Nodiadau Ymarferol",
     "majorHistoryTitle": "Hanes Pencampwriaeth Fawr",
     "afterRoundTitle": "Ar Ôl Eich Rownd",
-    "restaurantGuideLink": "Canllaw bwytai llawn — SouthportGuide.co.uk",
+    "restaurantGuideLink": "Canllaw bwytai llawn: SouthportGuide.co.uk",
     "conditionsWidgetTitle": "Cyflwr Heddiw",
     "conditionsWidgetDesc": "Gwiriwch amodau chwarae cyfredol cyn mynd.",
     "conditionsWidgetLink": "Gweld cyflwr y cwrs",
@@ -198,7 +198,7 @@
   "teeTimesPage": {
     "headerBadge": "Canllaw Ymwelwyr",
     "pageTitle": "Sut i Gael Amser Tee",
-    "allCoursesTitle": "Polisi Ymwelwyr — Pob Cwrs",
+    "allCoursesTitle": "Polisi Ymwelwyr: Pob Cwrs",
     "difficultyRestricted": "Cyfyngedig",
     "difficultyByArrangement": "Drwy drefniant",
     "difficultyWelcome": "Croeso i ymwelwyr",
@@ -229,14 +229,14 @@
     "approxLabel": "tua",
     "golferFeaturesLabel": "Nodweddion Cyfeilgar i Olfwyr",
     "tipsTitle": "Awgrymiadau Llety i Ymwelwyr Golff",
-    "tip1": "Archebwch amseroedd tee o ddydd Mawrth i ddydd Iau os ydych chi'n aros yn ystod yr wythnos — argaeledd gwell yn yr holl gyrsiau ac yn aml yn dawelach ar y cwrs.",
+    "tip1": "Archebwch amseroedd tee o ddydd Mawrth i ddydd Iau os ydych chi'n aros yn ystod yr wythnos: argaeledd gwell yn yr holl gyrsiau ac yn aml yn dawelach ar y cwrs.",
     "tip2": "Gofynnwch am storio clybiau/bagiau wrth archebu. Bydd gwestai golff da yn cael ystafell storio sych bwrpasol yn hytrach na gadael bagiau yn eich ystafell dros nos.",
     "tip3": "Mae gorsaf Birkdale (Merseyrail) yn 8 munud o gerdded o brif fynedfa Royal Birkdale. Defnyddiol os yw eich gwesty yng nghanol Southport.",
-    "tip4": "Mae canslo hyblyg yn bwysig — mae tywydd golff dolenni yn anrhagweladwy. Archebwch gyfraddau y gellir eu had-dalu oni bai fod yr arbedion ar rai anfydroadwy yn sylweddol.",
+    "tip4": "Mae canslo hyblyg yn bwysig: mae tywydd golff dolenni yn anrhagweladwy. Archebwch gyfraddau y gellir eu had-dalu oni bai fod yr arbedion ar rai anfydroadwy yn sylweddol.",
     "southportHotelsLinkTitle": "Canllaw Gwestai Southport Llawn",
-    "southportHotelsLinkDesc": "SouthportGuide.co.uk — gwestai, B&Bs, hunanarlwyo",
+    "southportHotelsLinkDesc": "SouthportGuide.co.uk: gwestai, B&Bs, hunanarlwyo",
     "formbyAccomLinkTitle": "Canllaw Llety Formby",
-    "formbyAccomLinkDesc": "FormbyGuide.co.uk — canolfan dawelach, 5 milltir o Birkdale"
+    "formbyAccomLinkDesc": "FormbyGuide.co.uk: canolfan dawelach, 5 milltir o Birkdale"
   },
   "scorecardPage": {
     "headerBadge": "Data'r Cwrs",
@@ -261,9 +261,9 @@
     "courseRatingTitle": "Graddfa Cwrs",
     "courseRatingDesc": "Y sgôr disgwyliedig ar gyfer golfwr scratch (handicap sero) o'r tee hwnnw. Mae graddfa o 76.5 yn golygu y disgwylir i chwaraewr scratch sgorio 76.5 mewn amodau arferol.",
     "slopeRatingTitle": "Graddfa Llethr",
-    "slopeRatingDesc": "Yn mesur anhawster mewn perthynas â golfwr bogey. Mae graddfa'r USGA yn rhedeg o 55 i 155 — mae llethr o 113 yn gyfartalog, mae 148 (Royal Birkdale pencampwriaeth) yn eithriadol o anodd.",
+    "slopeRatingDesc": "Yn mesur anhawster mewn perthynas â golfwr bogey. Mae graddfa'r USGA yn rhedeg o 55 i 155: mae llethr o 113 yn gyfartalog, mae 148 (Royal Birkdale pencampwriaeth) yn eithriadol o anodd.",
     "yardageMetresTitle": "Llathenni a Metrau",
-    "yardageMetresDesc": "Mae clybiau Saesneg yn defnyddio llathenni. Darperir metrau ar gyfer ymwelwyr o Ewrop gyfandirol. Mae dyfeisiau GPS a mesurwyr pellter yn cael eu caniatáu yn eang — gwiriwch gyda phob clwb cyn eu defnyddio mewn cystadlaethau.",
+    "yardageMetresDesc": "Mae clybiau Saesneg yn defnyddio llathenni. Darperir metrau ar gyfer ymwelwyr o Ewrop gyfandirol. Mae dyfeisiau GPS a mesurwyr pellter yn cael eu caniatáu yn eang: gwiriwch gyda phob clwb cyn eu defnyddio mewn cystadlaethau.",
     "dataAccuracyTitle": "Cywirdeb Data",
     "dataAccuracyDesc": "Data wedi'i wirio yn ôl y ffynonellau gorau sydd ar gael. Gall graddfeydd cwrs a llethr gael eu diweddaru'n achlysurol gan y clwb. Gwiriwch bob amser gyda'r clwb cyn eu defnyddio mewn cystadlaethau."
   },
@@ -271,7 +271,7 @@
     "headerBadge": "Arfordir Sefton",
     "pageTitle": "Amserlenni Gwyliau Golff",
     "plannerTitle": "Cynlluniwr Gwyliau Golff",
-    "plannerDesc": "Rhowch eich dyddiau, cyllideb a handicap — byddwn yn eich paru â'r amserlen iawn.",
+    "plannerDesc": "Rhowch eich dyddiau, cyllideb a handicap: byddwn yn eich paru â'r amserlen iawn.",
     "allItinerariesTitle": "Pob Amserlen",
     "dayLabel": "diwrnod",
     "daysLabel": "diwrnod",
@@ -283,7 +283,7 @@
     "diningLabel": "Bwyta",
     "estimatedGreenFeesLabel": "Ffioedd Green Amcangyfrifedig",
     "howToPlanTitle": "Sut i Gynllunio Taith Golff Arfordir Sefton",
-    "howToPlanPara1": "Mae cyrsiau Arfordir Sefton wedi'u clystyru'n ddigon agos fel y gall taith dau ddiwrnod gwmpasu dwy neu dair rownd heb logisteg anodd. Mae Royal Birkdale a Hillside yn llythrennol cyfagos — gallech gerdded rhyngddynt. Mae Southport & Ainsdale dair milltir ymhellach i'r de. Mae Formby bum milltir o Birkdale drwy'r A565.",
+    "howToPlanPara1": "Mae cyrsiau Arfordir Sefton wedi'u clystyru'n ddigon agos fel y gall taith dau ddiwrnod gwmpasu dwy neu dair rownd heb logisteg anodd. Mae Royal Birkdale a Hillside yn llythrennol cyfagos: gallech gerdded rhyngddynt. Mae Southport & Ainsdale dair milltir ymhellach i'r de. Mae Formby bum milltir o Birkdale drwy'r A565.",
     "howToPlanPara2": "Ar gyfer teithiau aml-ddiwrnod, sefydlwch eich hun yn Southport. Gan y dref y dewis lletaf o westai, ac mae popeth o Lord Street i Birkdale o fewn pellter tacsi. Os ydych chi am lety tawelach a rhatach, mae pentref Formby 20 munud i'r de ac mae dewisiadau B&B dda yno."
   },
   "conditions": {
@@ -301,7 +301,7 @@
   "conditionsPage": {
     "pageTitle": "Cyflwr y Cwrs",
     "aboutLinksTitle": "Am Amodau Dolenni",
-    "aboutLinksPara1": "Mae amodau golff dolenni yn wahanol yn sylfaenol i olff parcdir. Y prif newidynnau yw cyfeiriad a chryfder y gwynt, glaw diweddar a draenio, a chadernid y tywarch. Mae cwrs caled, sych yn chwarae'n wahanol iawn i un gwlyb, meddal — nid yw ergydion agosáu yn stopio, mae'r bêl yn rhedeg ymhellach o'r tee, ac mae chipping yn dod yn fwy creadigol.",
+    "aboutLinksPara1": "Mae amodau golff dolenni yn wahanol yn sylfaenol i olff parcdir. Y prif newidynnau yw cyfeiriad a chryfder y gwynt, glaw diweddar a draenio, a chadernid y tywarch. Mae cwrs caled, sych yn chwarae'n wahanol iawn i un gwlyb, meddal: nid yw ergydion agosáu yn stopio, mae'r bêl yn rhedeg ymhellach o'r tee, ac mae chipping yn dod yn fwy creadigol.",
     "aboutLinksPara3": "Mae cyflymdra a chyfeiriad y gwynt yn bwysicach yma nag yn bron unrhyw le arall yng Nghymru a Lloegr. Mae'r gwynt de-orllewinol teyrnasol yn Royal Birkdale yn creu profiad cwrs 'naturiol' y cynlluniwyd y llwybr ar ei gyfer. Mae dwyrain oddi ar y tir yn cynhyrchu cwrs hollol wahanol. Mae'r canllaw hwn yn cynnwys allwedd cyfeiriad gwynt ar gyfer Royal Birkdale yn benodol.",
     "conditionsDisclaimer": "Mae data amodau yn fras ac yn cael ei gynnal â llaw. Gwiriwch gyda'r clwb unigol bob amser cyn teithio. Nid yw SeftonLinks yn derbyn unrhyw atebolrwydd am gau cyrsiau neu amodau sy'n wahanol i'r dudalen hon."
   },
@@ -310,11 +310,11 @@
     "getInTouchTitle": "Cysylltu â Ni",
     "generalEnquiriesLabel": "Ymholiadau cyffredinol:",
     "dataCorrectionsLabel": "Cywiriadau data:",
-    "dataCorrectionsText": "Os yw unrhyw ddata cwrs — ffioedd green, polisi ymwelwyr, oriau agor — yn anghywir, rhowch wybod i ni. Rydym yn diweddaru'n brydlon.",
+    "dataCorrectionsText": "Os yw unrhyw ddata cwrs (ffioedd green, polisi ymwelwyr, oriau agor) yn anghywir, rhowch wybod i ni. Rydym yn diweddaru'n brydlon.",
     "pressMediaLabel": "Y Wasg a'r Cyfryngau:",
     "pressMediaLinkText": "Churchtown Media Ltd",
     "beforeContactTitle": "Cyn cysylltu â ni",
-    "beforeContactItem1": "→ Ar gyfer archebion amseroedd tee, cysylltwch â'r clybiau yn uniongyrchol — canllaw ydym ni, nid platfform archebu."
+    "beforeContactItem1": "→ Ar gyfer archebion amseroedd tee, cysylltwch â'r clybiau yn uniongyrchol: canllaw ydym ni, nid platfform archebu."
   },
   "legalPage": {
     "privacyTitle": "Polisi Preifatrwydd",
@@ -322,7 +322,7 @@
     "lastUpdated": "Diweddarwyd ddiwethaf: Tachwedd 2026",
     "privacyIntro": "Caiff SeftonLinks.com ei weithredu gan Churchtown Media Ltd. Rydym yn cymryd eich preifatrwydd o ddifri.",
     "analyticsTitle": "Dadansoddeg",
-    "analyticsDesc": "Rydym yn defnyddio Plausible Analytics (preifatrwydd yn gyntaf, cydymffurfio â GDPR, dim cwcis, dim data personol yn cael ei gasglu) a Microsoft Clarity (recordiadau sesiwn — dienw). Nid oes angen cydsyniad cwcis ar y naill na'r llall o dan GDPR pan fo'n cael ei ffurfweddu'n gywir.",
+    "analyticsDesc": "Rydym yn defnyddio Plausible Analytics (preifatrwydd yn gyntaf, cydymffurfio â GDPR, dim cwcis, dim data personol yn cael ei gasglu) a Microsoft Clarity (recordiadau sesiwn: dienw). Nid oes angen cydsyniad cwcis ar y naill na'r llall o dan GDPR pan fo'n cael ei ffurfweddu'n gywir.",
     "privacyContactTitle": "Cysylltu",
     "privacyContactText": "Ymholiadau preifatrwydd:",
     "termsIntro": "Drwy ddefnyddio SeftonLinks.com rydych chi'n cytuno i'r telerau hyn. Caiff y wefan ei gweithredu gan Churchtown Media Ltd.",
@@ -343,7 +343,7 @@
     "exploreTitle": "Archwilio",
     "networkTitle": "Rhwydwaith Arfordir Sefton",
     "legalTitle": "Gwybodaeth",
-    "copyright": "© 2026 SeftonLinks.com — Cedwir pob hawl.",
+    "copyright": "© 2026 SeftonLinks.com: Cedwir pob hawl.",
     "southportGuide": "SouthportGuide.co.uk",
     "formbyGuide": "FormbyGuide.co.uk",
     "coursesHeading": "Cyrsiau",

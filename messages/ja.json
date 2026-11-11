@@ -9,32 +9,32 @@
     "contact": "お問い合わせ"
   },
   "meta": {
-    "coursesTitle": "セフトン・コースト ゴルフコース — Royal Birkdale、Hillside & Formby",
-    "coursesDesc": "セフトン・コースト6つのリンクスコースの完全ガイド — ビジターポリシー、グリーンフィー、コースレーティング、ティータイム予約方法。",
-    "scorecardTitle": "セフトン・コースト ゴルフ スコアカード — パー、ヤーデージ & コースレーティング",
-    "scorecardDesc": "セフトン・コースト6コースの完全スコアカードデータ — 全ティーのパー、ヤーデージ、コースレーティング、スロープレーティング。Royal Birkdale、Hillside、Formby、West Lancashire、Southport & Ainsdale、Southport Old Links。",
+    "coursesTitle": "セフトン・コースト ゴルフコース：Royal Birkdale、Hillside & Formby",
+    "coursesDesc": "セフトン・コースト6つのリンクスコースの完全ガイド：ビジターポリシー、グリーンフィー、コースレーティング、ティータイム予約方法。",
+    "scorecardTitle": "セフトン・コースト ゴルフ スコアカード：パー、ヤーデージ & コースレーティング",
+    "scorecardDesc": "セフトン・コースト6コースの完全スコアカードデータ：全ティーのパー、ヤーデージ、コースレーティング、スロープレーティング。Royal Birkdale、Hillside、Formby、West Lancashire、Southport & Ainsdale、Southport Old Links。",
     "teeTimesTitle": "Royal Birkdale & セフトン・コースト各クラブのティータイム予約",
-    "itinerariesTitle": "セフトン・コースト ゴルフ旅行 — 2日間・3日間・5日間プラン",
-    "accommodationTitle": "Royal Birkdale近郊のゴルフ宿泊施設 — サウスポート",
+    "itinerariesTitle": "セフトン・コースト ゴルフ旅行：2日間・3日間・5日間プラン",
+    "accommodationTitle": "Royal Birkdale近郊のゴルフ宿泊施設：サウスポート",
     "contactTitle": "SeftonLinksへのお問い合わせ",
     "course": {
       "royal-birkdale": {
-        "title": "Royal Birkdale Golf Club — ビジターガイド、グリーンフィー & ティータイム"
+        "title": "Royal Birkdale Golf Club：ビジターガイド、グリーンフィー & ティータイム"
       },
       "hillside": {
-        "title": "Hillside Golf Club サウスポート — ビジターガイド & グリーンフィー"
+        "title": "Hillside Golf Club サウスポート：ビジターガイド & グリーンフィー"
       },
       "formby": {
-        "title": "Formby Golf Club — ビジターガイド、グリーンフィー & ティータイム"
+        "title": "Formby Golf Club：ビジターガイド、グリーンフィー & ティータイム"
       },
       "west-lancashire": {
-        "title": "West Lancashire Golf Club — ビジターグリーンフィー & ティータイム"
+        "title": "West Lancashire Golf Club：ビジターグリーンフィー & ティータイム"
       },
       "southport-ainsdale": {
-        "title": "Southport & Ainsdale Golf Club — ビジターガイド & グリーンフィー"
+        "title": "Southport & Ainsdale Golf Club：ビジターガイド & グリーンフィー"
       },
       "southport-old-links": {
-        "title": "Southport Old Links Golf Club — ビジターガイド & グリーンフィー"
+        "title": "Southport Old Links Golf Club：ビジターガイド & グリーンフィー"
       }
     }
   },
@@ -45,7 +45,7 @@
     "conditionsTitle": "コース状態",
     "conditionsDesc": "セフトン・コースト全コースのリアルタイムコース状態情報",
     "plannerTitle": "ゴルフ旅行プランナー",
-    "plannerDesc": "日数、予算、ハンディキャップをお知らせください — 最適な旅行プランをご提案します"
+    "plannerDesc": "日数、予算、ハンディキャップをお知らせください：最適な旅行プランをご提案します"
   },
   "homePage": {
     "heroBadge": "セフトン・コースト · ランカシャー · イングランド",
@@ -62,7 +62,7 @@
     "courseCardFullGuideLink": "詳細ガイド",
     "compareAllCoursesBtn": "全コースを比較する",
     "toolsSectionTitle": "セフトン・コースト訪問を計画する",
-    "toolsSectionSubtitle": "ビジターゴルファーのために設計されたツール — コースを知り尽くしたローカルではなく、初めて訪れる方のために。",
+    "toolsSectionSubtitle": "ビジターゴルファーのために設計されたツール：コースを知り尽くしたローカルではなく、初めて訪れる方のために。",
     "tool1Title": "コース状態",
     "tool1Cta": "状態を確認する",
     "tool2Title": "ゴルフ旅行プランナー",
@@ -71,7 +71,7 @@
     "tool3Title": "ティータイムガイド",
     "tool3Cta": "ティータイムガイドを見る",
     "tool4Title": "スコアカードデータベース",
-    "tool4Desc": "全6コースの完全スコアカードデータ — 全ティーのパー、ヤーデージ、コースレーティング、スロープレーティング。事前に期待値を設定するために。",
+    "tool4Desc": "全6コースの完全スコアカードデータ：全ティーのパー、ヤーデージ、コースレーティング、スロープレーティング。事前に期待値を設定するために。",
     "tool4Cta": "スコアカードを見る",
     "tool5Title": "ゴルファー向け宿泊施設",
     "tool5Cta": "宿泊施設を探す",
@@ -79,11 +79,11 @@
     "tool6Desc": "コース順、宿泊提案、ラウンド後の食事付き2日間・3日間・5日間のプリビルドプラン。予算重視からチャンピオンシップクラスまで。",
     "tool6Cta": "プランを見る",
     "editorialTitle": "なぜセフトン・コーストなのか？",
-    "editorialPara1": "リンクスゴルフの聖地といえばスコットランドが注目されます — セント・アンドリュース、カーヌスティー、ミュアフィールド。セフトン・コーストはその陰に隠れがちです。しかし、それこそが訪問ゴルファーにとってのチャンスです。",
+    "editorialPara1": "リンクスゴルフの聖地といえばスコットランドが注目されます：セント・アンドリュース、カーヌスティー、ミュアフィールド。セフトン・コーストはその陰に隠れがちです。しかし、それこそが訪問ゴルファーにとってのチャンスです。",
     "featureCard1Title": "アクセス良好",
     "featureCard1Text": "リバプール空港から45分、マンチェスターから60分。リバプール市内からサウスポートへの直通鉄道あり。",
-    "southportGuideDesc": "サウスポートのホテル、レストラン、観光情報 — セフトン・コーストゴルフ旅行の拠点となる町のガイド。",
-    "formbyGuideDesc": "Formbyの完全ガイド — ナショナルトラストの松林、アカリス、ラウンドの合間に訪れる村。"
+    "southportGuideDesc": "サウスポートのホテル、レストラン、観光情報：セフトン・コーストゴルフ旅行の拠点となる町のガイド。",
+    "formbyGuideDesc": "Formbyの完全ガイド：ナショナルトラストの松林、アカリス、ラウンドの合間に訪れる村。"
   },
   "courses": {
     "pageTitle": "セフトン・コースト ゴルフコース",
@@ -111,7 +111,7 @@
     "tableHeaderSlope": "スロープ",
     "tableHeaderGreenFee": "グリーンフィー",
     "tableHeaderDifficulty": "難易度",
-    "tableFootnote": "★ 全英オープン開催コース。グリーンフィーは概算 — 予約前に必ずクラブに確認してください。",
+    "tableFootnote": "★ 全英オープン開催コース。グリーンフィーは概算：予約前に必ずクラブに確認してください。",
     "cardStatParLabel": "パー",
     "cardStatYardsLabel": "ヤード",
     "cardStatCourseRatingLabel": "コースレーティング",
@@ -146,12 +146,12 @@
     "bestDaysLabel": "おすすめの訪問曜日",
     "advanceBookingLabel": "何日前から予約可能か",
     "handicapRequirementLabel": "ハンディキャップ要件",
-    "handicapRequirementText": "男性のハンディキャップ上限：{limit}。ハンディキャップ証明書必須 — クラブカードまたはEGAハンディキャップカードをお持ちください。",
+    "handicapRequirementText": "男性のハンディキャップ上限：{limit}。ハンディキャップ証明書必須：クラブカードまたはEGAハンディキャップカードをお持ちください。",
     "whyPlayTitle": "なぜ{courseName}でプレーするのか？",
     "practicalNotesTitle": "実用的なメモ",
     "majorHistoryTitle": "メジャー選手権の歴史",
     "afterRoundTitle": "ラウンド後の過ごし方",
-    "restaurantGuideLink": "レストラン完全ガイド — SouthportGuide.co.uk",
+    "restaurantGuideLink": "レストラン完全ガイド：SouthportGuide.co.uk",
     "conditionsWidgetTitle": "本日のコース状態",
     "conditionsWidgetDesc": "プレー前に現在のコース状態を確認してください。",
     "conditionsWidgetLink": "コース状態を見る",
@@ -198,7 +198,7 @@
   "teeTimesPage": {
     "headerBadge": "ビジターガイド",
     "pageTitle": "ティータイムの取り方",
-    "allCoursesTitle": "ビジターポリシー — 全コース",
+    "allCoursesTitle": "ビジターポリシー：全コース",
     "difficultyRestricted": "限定的",
     "difficultyByArrangement": "要相談",
     "difficultyWelcome": "ビジター歓迎",
@@ -232,11 +232,11 @@
     "tip1": "平日（火〜木）のティータイムを予約すると、全コースで空き状況が良好で、コース上も通常は静か。",
     "tip2": "予約時にクラブ・バッグ保管について確認する。良いゴルフホテルは専用の乾燥保管室があり、部屋に持ち込む必要がない。",
     "tip3": "Birkdale駅（マージーレール）はRoyal Birkdaleのメインエントランスから徒歩8分。サウスポート中心部のホテルに泊まる場合に便利。",
-    "tip4": "キャンセル可能な料金で予約することが重要 — リンクスゴルフの天候は予測不能。返金不可の料金は割引が大きい場合のみ検討を。",
+    "tip4": "キャンセル可能な料金で予約することが重要：リンクスゴルフの天候は予測不能。返金不可の料金は割引が大きい場合のみ検討を。",
     "southportHotelsLinkTitle": "サウスポート ホテル完全ガイド",
-    "southportHotelsLinkDesc": "SouthportGuide.co.uk — ホテル、B&B、セルフケータリング",
+    "southportHotelsLinkDesc": "SouthportGuide.co.uk：ホテル、B&B、セルフケータリング",
     "formbyAccomLinkTitle": "Formby 宿泊施設ガイド",
-    "formbyAccomLinkDesc": "FormbyGuide.co.uk — 静かな拠点、Birkdaleから5マイル"
+    "formbyAccomLinkDesc": "FormbyGuide.co.uk：静かな拠点、Birkdaleから5マイル"
   },
   "scorecardPage": {
     "headerBadge": "コースデータ",
@@ -261,7 +261,7 @@
     "courseRatingTitle": "コースレーティング",
     "courseRatingDesc": "そのティーからのスクラッチゴルファー（ハンディ0）の期待スコア。レーティング76.5は、スクラッチプレーヤーが通常のコンディションで76.5を出すことが期待されることを意味します。",
     "slopeRatingTitle": "スロープレーティング",
-    "slopeRatingDesc": "ボギーゴルファーに対する難易度を測る指標。USGAスケールは55〜155 — 113が平均、148（Royal Birkdaleチャンピオンシップ）は極めて難しい。",
+    "slopeRatingDesc": "ボギーゴルファーに対する難易度を測る指標。USGAスケールは55〜155：113が平均、148（Royal Birkdaleチャンピオンシップ）は極めて難しい。",
     "yardageMetresTitle": "ヤーデージ & メートル",
     "yardageMetresDesc": "イングランドのゴルフクラブはヤードを使用します。欧州大陸からの訪問者のためにメートルも表示しています。GPSデバイスとレンジファインダーは広く許可されていますが、競技での使用前に各クラブに確認してください。",
     "dataAccuracyTitle": "データの正確性",
@@ -271,7 +271,7 @@
     "headerBadge": "セフトン・コースト",
     "pageTitle": "ゴルフ旅行プラン",
     "plannerTitle": "ゴルフ旅行プランナー",
-    "plannerDesc": "日数、予算、ハンディキャップを入力 — 最適なプランをご提案します。",
+    "plannerDesc": "日数、予算、ハンディキャップを入力：最適なプランをご提案します。",
     "allItinerariesTitle": "すべてのプラン",
     "dayLabel": "日",
     "daysLabel": "日間",
@@ -283,7 +283,7 @@
     "diningLabel": "食事",
     "estimatedGreenFeesLabel": "グリーンフィー概算",
     "howToPlanTitle": "セフトン・コーストゴルフ旅行の計画方法",
-    "howToPlanPara1": "セフトン・コーストのコースは十分に近く、2日間の旅程で難しいロジスティクスなしに2〜3ラウンドをこなせます。Royal BirkdaleとHillsideは文字通り隣り合っています — 歩いて移動できます。Southport & Ainsdaleはそこから3マイル南。FormbyはA565経由でBirkdaleから5マイルです。",
+    "howToPlanPara1": "セフトン・コーストのコースは十分に近く、2日間の旅程で難しいロジスティクスなしに2〜3ラウンドをこなせます。Royal BirkdaleとHillsideは文字通り隣り合っています：歩いて移動できます。Southport & Ainsdaleはそこから3マイル南。FormbyはA565経由でBirkdaleから5マイルです。",
     "howToPlanPara2": "複数日の旅行はサウスポートを拠点にしてください。最も多くのホテルが揃っており、ロードストリートからバークデイルまですべてタクシーの距離です。静かで安い宿泊をご希望なら、Formby村は南に20分で、良いB&Bのオプションがあります。"
   },
   "conditions": {
@@ -314,7 +314,7 @@
     "pressMediaLabel": "プレス & メディア：",
     "pressMediaLinkText": "Churchtown Media Ltd",
     "beforeContactTitle": "お問い合わせ前のご確認",
-    "beforeContactItem1": "→ ティータイムの予約については、各クラブに直接ご連絡ください — 当サイトはガイドであり、予約プラットフォームではありません。"
+    "beforeContactItem1": "→ ティータイムの予約については、各クラブに直接ご連絡ください：当サイトはガイドであり、予約プラットフォームではありません。"
   },
   "legalPage": {
     "privacyTitle": "プライバシーポリシー",
@@ -322,7 +322,7 @@
     "lastUpdated": "最終更新：2026年11月",
     "privacyIntro": "SeftonLinks.comはChurchtown Media Ltdが運営しています。お客様のプライバシーを真剣に考えています。",
     "analyticsTitle": "アナリティクス",
-    "analyticsDesc": "プライバシー重視・GDPRコンプライアント・クッキーなし・個人情報収集なしのPlausible Analyticsと、Microsoft Clarity（セッション録画 — 匿名化済み）を使用しています。正しく設定された場合、GDPRではどちらもクッキー同意が不要です。",
+    "analyticsDesc": "プライバシー重視・GDPRコンプライアント・クッキーなし・個人情報収集なしのPlausible Analyticsと、Microsoft Clarity（セッション録画：匿名化済み）を使用しています。正しく設定された場合、GDPRではどちらもクッキー同意が不要です。",
     "privacyContactTitle": "お問い合わせ",
     "privacyContactText": "プライバシーに関するお問い合わせ：",
     "termsIntro": "SeftonLinks.comをご利用いただくことで、これらの利用規約に同意したものとみなします。このサイトはChurchtown Media Ltdが運営しています。",
@@ -343,7 +343,7 @@
     "exploreTitle": "探索する",
     "networkTitle": "セフトン・コーストネットワーク",
     "legalTitle": "情報",
-    "copyright": "© 2026 SeftonLinks.com — 全著作権所有。",
+    "copyright": "© 2026 SeftonLinks.com：全著作権所有。",
     "southportGuide": "SouthportGuide.co.uk",
     "formbyGuide": "FormbyGuide.co.uk",
     "coursesHeading": "コース",

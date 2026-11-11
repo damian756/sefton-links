@@ -9,32 +9,32 @@
     "contact": "Contacte"
   },
   "meta": {
-    "coursesTitle": "Camps de Golf de la Costa de Sefton — Royal Birkdale, Hillside i Formby",
-    "coursesDesc": "La guia completa dels sis camps de links de la Costa de Sefton — polítiques de visitants, green fees, qualificacions del camp, reserva d'hores de sortida.",
-    "scorecardTitle": "Targetes de Puntuació dels Camps de Golf de la Costa de Sefton — Par, Iardes i Qualificació",
-    "scorecardDesc": "Dades completes de targetes de puntuació per als sis camps de la Costa de Sefton — par, iardes des de tots els tees, qualificació del camp i pendent. Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale i Southport Old Links.",
+    "coursesTitle": "Camps de Golf de la Costa de Sefton: Royal Birkdale, Hillside i Formby",
+    "coursesDesc": "La guia completa dels sis camps de links de la Costa de Sefton: polítiques de visitants, green fees, qualificacions del camp, reserva d'hores de sortida.",
+    "scorecardTitle": "Targetes de Puntuació dels Camps de Golf de la Costa de Sefton: Par, Iardes i Qualificació",
+    "scorecardDesc": "Dades completes de targetes de puntuació per als sis camps de la Costa de Sefton: par, iardes des de tots els tees, qualificació del camp i pendent. Royal Birkdale, Hillside, Formby, West Lancashire, Southport & Ainsdale i Southport Old Links.",
     "teeTimesTitle": "Hores de Sortida a Royal Birkdale i Clubs de Golf de la Costa de Sefton",
-    "itinerariesTitle": "Viatges de Golf a la Costa de Sefton — Itineraris de 2, 3 i 5 Dies",
+    "itinerariesTitle": "Viatges de Golf a la Costa de Sefton: Itineraris de 2, 3 i 5 Dies",
     "accommodationTitle": "Allotjament de Golf prop de Royal Birkdale, Southport",
     "contactTitle": "Contacteu amb SeftonLinks",
     "course": {
       "royal-birkdale": {
-        "title": "Royal Birkdale Golf Club — Guia per a Visitants, Green Fee i Hores de Sortida"
+        "title": "Royal Birkdale Golf Club: Guia per a Visitants, Green Fee i Hores de Sortida"
       },
       "hillside": {
-        "title": "Hillside Golf Club Southport — Guia per a Visitants i Green Fee"
+        "title": "Hillside Golf Club Southport: Guia per a Visitants i Green Fee"
       },
       "formby": {
-        "title": "Formby Golf Club — Guia per a Visitants, Green Fee i Hores de Sortida"
+        "title": "Formby Golf Club: Guia per a Visitants, Green Fee i Hores de Sortida"
       },
       "west-lancashire": {
-        "title": "West Lancashire Golf Club — Green Fee per a Visitants i Hores de Sortida"
+        "title": "West Lancashire Golf Club: Green Fee per a Visitants i Hores de Sortida"
       },
       "southport-ainsdale": {
-        "title": "Southport & Ainsdale Golf Club — Guia per a Visitants i Green Fee"
+        "title": "Southport & Ainsdale Golf Club: Guia per a Visitants i Green Fee"
       },
       "southport-old-links": {
-        "title": "Southport Old Links Golf Club — Guia per a Visitants i Green Fee"
+        "title": "Southport Old Links Golf Club: Guia per a Visitants i Green Fee"
       }
     }
   },
@@ -45,7 +45,7 @@
     "conditionsTitle": "Estat del Camp",
     "conditionsDesc": "Actualitzacions en directe sobre les condicions dels camps a tota la Costa de Sefton",
     "plannerTitle": "Planificador de Viatges de Golf",
-    "plannerDesc": "Digueu-nos els vostres dies, pressupost i handicap — construirem el vostre itinerari"
+    "plannerDesc": "Digueu-nos els vostres dies, pressupost i handicap: construirem el vostre itinerari"
   },
   "homePage": {
     "heroBadge": "Costa de Sefton · Lancashire · Anglaterra",
@@ -62,7 +62,7 @@
     "courseCardFullGuideLink": "Guia completa",
     "compareAllCoursesBtn": "Comparar Tots els Camps",
     "toolsSectionTitle": "Planifica la Teva Visita a la Costa de Sefton",
-    "toolsSectionSubtitle": "Eines creades per a golfistes visitants — no per als locals que ja coneixen els camps.",
+    "toolsSectionSubtitle": "Eines creades per a golfistes visitants: no per als locals que ja coneixen els camps.",
     "tool1Title": "Estat del Camp",
     "tool1Cta": "Comprovar Estat",
     "tool2Title": "Planificador de Viatges de Golf",
@@ -71,7 +71,7 @@
     "tool3Title": "Guia d'Hores de Sortida",
     "tool3Cta": "Veure Guia d'Hores de Sortida",
     "tool4Title": "Base de Dades de Targetes de Puntuació",
-    "tool4Desc": "Dades completes de targetes de puntuació per als sis camps — par, iardes des de tots els tees, qualificació del camp i pendent. Tot el que necessiteu per establir expectatives.",
+    "tool4Desc": "Dades completes de targetes de puntuació per als sis camps: par, iardes des de tots els tees, qualificació del camp i pendent. Tot el que necessiteu per establir expectatives.",
     "tool4Cta": "Veure Targetes de Puntuació",
     "tool5Title": "Allotjament per a Golfistes",
     "tool5Cta": "Trobar Allotjament",
@@ -79,11 +79,11 @@
     "tool6Desc": "Itineraris preparats de 2, 3 i 5 dies amb ordre de camps, suggeriments d'allotjament i restaurants post-volta. De pressupost a campionat.",
     "tool6Cta": "Explorar Itineraris",
     "editorialTitle": "Per Què la Costa de Sefton?",
-    "editorialPara1": "Hi ha corredors de golf de links a Escòcia — St Andrews, Carnoustie, Muirfield — que s'emporten l'atenció. La Costa de Sefton queda ignorada. Aquesta bretxa és l'oportunitat per a cada golfista visitant.",
+    "editorialPara1": "Hi ha corredors de golf de links a Escòcia (St Andrews, Carnoustie, Muirfield) que s'emporten l'atenció. La Costa de Sefton queda ignorada. Aquesta bretxa és l'oportunitat per a cada golfista visitant.",
     "featureCard1Title": "Fàcil d'Arribar",
     "featureCard1Text": "45 min des de l'Aeroport de Liverpool, 60 min des de Manchester. Tren directe a Southport des del centre de Liverpool.",
-    "southportGuideDesc": "Hotels, restaurants i llocs d'interès a Southport — la vostra base per a un viatge de golf a la Costa de Sefton.",
-    "formbyGuideDesc": "La guia completa de Formby — boscos de pins del National Trust, esquirols vermells i el poble entre voltes."
+    "southportGuideDesc": "Hotels, restaurants i llocs d'interès a Southport: la vostra base per a un viatge de golf a la Costa de Sefton.",
+    "formbyGuideDesc": "La guia completa de Formby: boscos de pins del National Trust, esquirols vermells i el poble entre voltes."
   },
   "courses": {
     "pageTitle": "Camps de Golf de la Costa de Sefton",
@@ -111,7 +111,7 @@
     "tableHeaderSlope": "Pendent",
     "tableHeaderGreenFee": "Green Fee",
     "tableHeaderDifficulty": "Dificultat",
-    "tableFootnote": "★ Seu del The Open Championship. Els green fees són aproximats — verifiqueu sempre amb el club abans de reservar.",
+    "tableFootnote": "★ Seu del The Open Championship. Els green fees són aproximats: verifiqueu sempre amb el club abans de reservar.",
     "cardStatParLabel": "Par",
     "cardStatYardsLabel": "Iardes",
     "cardStatCourseRatingLabel": "Qualificació del Camp",
@@ -146,12 +146,12 @@
     "bestDaysLabel": "Millors Dies per Visitar",
     "advanceBookingLabel": "Amb Quanta Antelació",
     "handicapRequirementLabel": "Requisit de Handicap",
-    "handicapRequirementText": "Límit de handicap masculí: {limit}. Cal certificat de handicap — porteu la vostra targeta de club o targeta de handicap EGA.",
+    "handicapRequirementText": "Límit de handicap masculí: {limit}. Cal certificat de handicap: porteu la vostra targeta de club o targeta de handicap EGA.",
     "whyPlayTitle": "Per Què Jugar a {courseName}?",
     "practicalNotesTitle": "Notes Pràctiques",
     "majorHistoryTitle": "Historial del Major Championship",
     "afterRoundTitle": "Després de la Volta",
-    "restaurantGuideLink": "Guia completa de restaurants — SouthportGuide.co.uk",
+    "restaurantGuideLink": "Guia completa de restaurants: SouthportGuide.co.uk",
     "conditionsWidgetTitle": "Condicions d'Avui",
     "conditionsWidgetDesc": "Comproveu les condicions de joc actuals abans de sortir.",
     "conditionsWidgetLink": "Veure condicions del camp",
@@ -198,7 +198,7 @@
   "teeTimesPage": {
     "headerBadge": "Guia per a Visitants",
     "pageTitle": "Com Aconseguir una Hora de Sortida",
-    "allCoursesTitle": "Política de Visitants — Tots els Camps",
+    "allCoursesTitle": "Política de Visitants: Tots els Camps",
     "difficultyRestricted": "Restringit",
     "difficultyByArrangement": "Per acord",
     "difficultyWelcome": "Visitants benvinguts",
@@ -229,14 +229,14 @@
     "approxLabel": "aprox.",
     "golferFeaturesLabel": "Característiques per a Golfistes",
     "tipsTitle": "Consells d'Allotjament per als Visitants de Golf",
-    "tip1": "Reserveu hores de sortida de dimarts a dijous si us allotgeu entre setmana — millor disponibilitat a tots els camps i normalment més tranquil al camp.",
+    "tip1": "Reserveu hores de sortida de dimarts a dijous si us allotgeu entre setmana: millor disponibilitat a tots els camps i normalment més tranquil al camp.",
     "tip2": "Pregunteu sobre l'emmagatzematge de pals/bosses en fer la reserva. Els bons hotels de golf tindran un magatzem sec dedicat en comptes de deixar les bosses a la vostra habitació durant la nit.",
     "tip3": "L'estació de Birkdale (Merseyrail) és a 8 minuts a peu de l'entrada principal de Royal Birkdale. Útil si el vostre hotel és al centre de Southport.",
-    "tip4": "La cancel·lació flexible és important — el temps del golf de links és impredictible. Reserveu tarifes reemborsables llevat que els estalvis en les no reemborsables siguin significatius.",
+    "tip4": "La cancel·lació flexible és important: el temps del golf de links és impredictible. Reserveu tarifes reemborsables llevat que els estalvis en les no reemborsables siguin significatius.",
     "southportHotelsLinkTitle": "Guia Completa d'Hotels de Southport",
-    "southportHotelsLinkDesc": "SouthportGuide.co.uk — hotels, B&Bs, autoservei",
+    "southportHotelsLinkDesc": "SouthportGuide.co.uk: hotels, B&Bs, autoservei",
     "formbyAccomLinkTitle": "Guia d'Allotjament de Formby",
-    "formbyAccomLinkDesc": "FormbyGuide.co.uk — base més tranquil·la, 5 milles de Birkdale"
+    "formbyAccomLinkDesc": "FormbyGuide.co.uk: base més tranquil·la, 5 milles de Birkdale"
   },
   "scorecardPage": {
     "headerBadge": "Dades del Camp",
@@ -261,9 +261,9 @@
     "courseRatingTitle": "Qualificació del Camp",
     "courseRatingDesc": "La puntuació esperada per a un golfista scratch (handicap zero) des d'aquell tee. Una qualificació de 76,5 significa que s'espera que un jugador scratch puntuï 76,5 en condicions normals.",
     "slopeRatingTitle": "Qualificació de Pendent",
-    "slopeRatingDesc": "Mesura la dificultat en relació amb un golfista de bogey. L'escala de la USGA va de 55 a 155 — un pendent de 113 és la mitjana, 148 (Royal Birkdale campionat) és extremadament difícil.",
+    "slopeRatingDesc": "Mesura la dificultat en relació amb un golfista de bogey. L'escala de la USGA va de 55 a 155: un pendent de 113 és la mitjana, 148 (Royal Birkdale campionat) és extremadament difícil.",
     "yardageMetresTitle": "Iardes i Metres",
-    "yardageMetresDesc": "Els clubs anglesos utilitzen iardes. Es proporcionen metres per als visitants d'Europa continental. Els dispositius GPS i els telèmetres estan àmpliament permesos — consulteu amb cada club abans d'usar-los en competicions.",
+    "yardageMetresDesc": "Els clubs anglesos utilitzen iardes. Es proporcionen metres per als visitants d'Europa continental. Els dispositius GPS i els telèmetres estan àmpliament permesos: consulteu amb cada club abans d'usar-los en competicions.",
     "dataAccuracyTitle": "Precisió de les Dades",
     "dataAccuracyDesc": "Dades verificades amb les millors fonts disponibles. Les qualificacions del camp i el pendent poden ser actualitzades periòdicament pel club. Verifiqueu sempre amb el club abans d'usar-les en competicions."
   },
@@ -271,7 +271,7 @@
     "headerBadge": "Costa de Sefton",
     "pageTitle": "Itineraris de Viatges de Golf",
     "plannerTitle": "Planificador de Viatges de Golf",
-    "plannerDesc": "Introduïu els vostres dies, pressupost i handicap — us emparellarem amb l'itinerari adequat.",
+    "plannerDesc": "Introduïu els vostres dies, pressupost i handicap: us emparellarem amb l'itinerari adequat.",
     "allItinerariesTitle": "Tots els Itineraris",
     "dayLabel": "dia",
     "daysLabel": "dies",
@@ -283,7 +283,7 @@
     "diningLabel": "Restaurants",
     "estimatedGreenFeesLabel": "Green Fees Estimats",
     "howToPlanTitle": "Com Planificar un Viatge de Golf a la Costa de Sefton",
-    "howToPlanPara1": "Els camps de la Costa de Sefton estan prou agrupats perquè un viatge de dos dies pugui cobrir dues o tres voltes sense logística difícil. Royal Birkdale i Hillside són literalment adjacents — podríeu anar-hi a peu. Southport & Ainsdale és tres milles més al sud. Formby és a cinc milles de Birkdale per l'A565.",
+    "howToPlanPara1": "Els camps de la Costa de Sefton estan prou agrupats perquè un viatge de dos dies pugui cobrir dues o tres voltes sense logística difícil. Royal Birkdale i Hillside són literalment adjacents: podríeu anar-hi a peu. Southport & Ainsdale és tres milles més al sud. Formby és a cinc milles de Birkdale per l'A565.",
     "howToPlanPara2": "Per als viatges de varis dies, instal·leu-vos a Southport. La ciutat té la selecció d'hotels més àmplia, i tot, des de Lord Street fins a Birkdale, és a distància de taxi. Si preferiu un allotjament més tranquil i barat, el poble de Formby és a 20 minuts cap al sud i té bones opcions de B&B."
   },
   "conditions": {
@@ -301,7 +301,7 @@
   "conditionsPage": {
     "pageTitle": "Estat del Camp",
     "aboutLinksTitle": "Sobre les Condicions dels Links",
-    "aboutLinksPara1": "Les condicions del golf de links són fonamentalment diferents de les del golf de parc. Les variables clau són la direcció i força del vent, les precipitacions recents i el drenatge, i la fermesa del terreny. Un camp ferm i sec juga de manera completament diferent a un de mullat i tou — els golps d'aproximació no s'aturen, la pilota rodola més des del tee, i el xipping es torna més creatiu.",
+    "aboutLinksPara1": "Les condicions del golf de links són fonamentalment diferents de les del golf de parc. Les variables clau són la direcció i força del vent, les precipitacions recents i el drenatge, i la fermesa del terreny. Un camp ferm i sec juga de manera completament diferent a un de mullat i tou: els golps d'aproximació no s'aturen, la pilota rodola més des del tee, i el xipping es torna més creatiu.",
     "aboutLinksPara3": "La velocitat i la direcció del vent importa aquí més que a gairebé qualsevol lloc d'Anglaterra. El vent del sud-oest dominant a Royal Birkdale crea l'experiència de camp 'natural' per a la qual es va dissenyar el recorregut. Un vent de l'est des de terra genera un camp completament diferent. Aquesta guia inclou una clau de direcció del vent específica per a Royal Birkdale.",
     "conditionsDisclaimer": "Les dades de condicions són aproximades i es mantenen manualment. Verifiqueu sempre amb el club individual abans de viatjar. SeftonLinks no accepta cap responsabilitat per tancaments de camps o condicions que difereixin d'aquesta pàgina."
   },
@@ -310,11 +310,11 @@
     "getInTouchTitle": "Poseu-vos en Contacte",
     "generalEnquiriesLabel": "Consultes generals:",
     "dataCorrectionsLabel": "Correccions de dades:",
-    "dataCorrectionsText": "Si alguna dada del camp — green fees, política de visitants, horaris — és incorrecta, feu-nos-ho saber. Actualitzem ràpidament.",
+    "dataCorrectionsText": "Si alguna dada del camp (green fees, política de visitants, horaris) és incorrecta, feu-nos-ho saber. Actualitzem ràpidament.",
     "pressMediaLabel": "Premsa i Mitjans:",
     "pressMediaLinkText": "Churchtown Media Ltd",
     "beforeContactTitle": "Abans de Contactar-nos",
-    "beforeContactItem1": "→ Per a reserves d'hores de sortida, contacteu directament amb els clubs — som una guia, no una plataforma de reserva."
+    "beforeContactItem1": "→ Per a reserves d'hores de sortida, contacteu directament amb els clubs: som una guia, no una plataforma de reserva."
   },
   "legalPage": {
     "privacyTitle": "Política de Privacitat",
@@ -322,7 +322,7 @@
     "lastUpdated": "Última actualització: novembre de 2026",
     "privacyIntro": "SeftonLinks.com és operat per Churchtown Media Ltd. Prenem la vostra privacitat seriosament.",
     "analyticsTitle": "Analítica",
-    "analyticsDesc": "Utilitzem Plausible Analytics (privacitat primer, compatible amb el RGPD, sense galetes, sense recollida de dades personals) i Microsoft Clarity (gravacions de sessions — anonimitzades). Cap dels dos requereix consentiment de galetes sota el RGPD quan es configuren correctament.",
+    "analyticsDesc": "Utilitzem Plausible Analytics (privacitat primer, compatible amb el RGPD, sense galetes, sense recollida de dades personals) i Microsoft Clarity (gravacions de sessions: anonimitzades). Cap dels dos requereix consentiment de galetes sota el RGPD quan es configuren correctament.",
     "privacyContactTitle": "Contacte",
     "privacyContactText": "Consultes de privacitat:",
     "termsIntro": "En usar SeftonLinks.com accepteu aquestes condicions. El lloc és operat per Churchtown Media Ltd.",
@@ -343,7 +343,7 @@
     "exploreTitle": "Explorar",
     "networkTitle": "Xarxa de la Costa de Sefton",
     "legalTitle": "Informació",
-    "copyright": "© 2026 SeftonLinks.com — Tots els drets reservats.",
+    "copyright": "© 2026 SeftonLinks.com: Tots els drets reservats.",
     "southportGuide": "SouthportGuide.co.uk",
     "formbyGuide": "FormbyGuide.co.uk",
     "coursesHeading": "Camps",
