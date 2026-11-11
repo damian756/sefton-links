@@ -1,7 +1,7 @@
 {
   "name": "SeftonLinks.com",
   "short_name": "SeftonLinks",
-  "description": "The definitive links golf guide to Royal Birkdale and the Sefton Coast",
+  "description": "A guide to links golf at Royal Birkdale and the other Sefton Coast courses",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0D1B2A",
