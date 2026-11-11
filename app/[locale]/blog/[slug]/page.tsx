@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { ChevronRight, Clock, ArrowLeft } from 'lucide-react';
-import { BLOG_POSTS, DAMIAN, getPostBySlug, getCategoryBySlug, getIsoDate, type ContentBlock } from '@/lib/blog';
+import { BLOG_POSTS, DAMIAN, getPostBySlug, getCategoryBySlug, getIsoDate, showsPreOpenNote, type ContentBlock } from '@/lib/blog';
 import AdSlot from '@/components/AdSlot';
 import { AD_SLOTS } from '@/lib/ad-slots';
 
@@ -244,6 +244,21 @@ export default async function BlogPostPage({
         <p className="text-lg text-[#2C3E50]/70 leading-relaxed mb-8 pb-8 border-b border-[#E8E3D8] font-medium">
           {post.excerpt}
         </p>
+
+        {/* Dated note on posts written for the build-up to The 154th Open */}
+        {showsPreOpenNote(post) && (
+          <div className="mb-8 rounded-xl border border-[#B8912A]/30 bg-[#B8912A]/8 px-5 py-4 text-sm leading-relaxed text-[#2C3E50]/80">
+            <p>
+              <strong className="text-[#0D1B2A]">Written before The 154th Open.</strong>{' '}
+              The Open was played at Royal Birkdale from 12 to 19 July 2026, and Ryan Fox won it with 270, 10 under par.
+              Advice below about Open week, tickets or booking Royal Birkdale no longer applies: in November 2026 the club
+              said its visitor tee times were fully booked through 2027.{' '}
+              <Link href="/the-open-2026" className="font-semibold text-[#1A4A30] underline underline-offset-2 hover:text-[#B8912A]">
+                Results and Birkdale&apos;s Open history
+              </Link>
+            </p>
+          </div>
+        )}
 
         {/* Content */}
         <div className="prose-lg max-w-none">
