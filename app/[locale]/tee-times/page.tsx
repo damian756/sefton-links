@@ -106,10 +106,10 @@ export default async function TeeTimesPage({ params }: { params: Promise<{ local
             <div key={course.slug} className="bg-white border border-[#E8E3D8] rounded-xl overflow-hidden">
               <div className={`h-1 ${course.openChampionship ? 'bg-[#B8912A]' : 'bg-[#1A4A30]'}`} />
               <div className="p-5 md:p-6">
-                <div className="flex items-start justify-between gap-4 mb-4">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-4 mb-4">
                   <div>
                     <h3 className="font-display text-xl font-bold text-[#0D1B2A]">{course.name}</h3>
-                    <div className="flex items-center gap-2 text-xs text-[#2C3E50]/50 mt-1">
+                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-[#2C3E50]/50 mt-1">
                       <span>{course.postcode}</span>
                       <span>·</span>
                       <span>{course.greenFeeRange}</span>
