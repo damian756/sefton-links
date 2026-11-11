@@ -23,6 +23,13 @@ export interface BlogPost {
   image?: string;
   /** Describes what the hero picture shows. Falls back to the post title. */
   imageAlt?: string;
+  /**
+   * Set only on a paid, sponsored article. The post is then labelled Sponsored,
+   * bylined "Sponsored by <name>" with no author bio, its JSON-LD author is the
+   * sponsor, and links to the sponsor carry rel="sponsored noopener".
+   * No sponsored article exists yet.
+   */
+  sponsor?: { name: string; url: string };
   content: ContentBlock[];
 }
 

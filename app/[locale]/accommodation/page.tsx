@@ -4,7 +4,6 @@ import { Bed, MapPin, ExternalLink, CheckCircle2, Clock, Trophy, ChevronRight } 
 import type { Metadata } from 'next';
 import { buildAlternates, buildOg } from '@/lib/metadata';
 import { getTranslations } from 'next-intl/server';
-import { LATEROOMS, CHAMPIONS_TRAVEL, COTTAGES, SYKES } from '@/lib/affiliate-links';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -31,7 +30,6 @@ const ACCOMMODATION = [
         desc: 'The classic choice for golf visitors to Southport. On Lord Street, 10 minutes from Birkdale by taxi, good restaurant on site. Popular with Open Championship groups in 2017. Book well ahead in summer.',
         approxRate: '£120–£250/night',
         golferFriendly: ['Secure club storage', 'Early breakfast available', 'Good bar/restaurant', 'Central location'],
-        bookingUrl: LATEROOMS.southport,
       },
       {
         name: 'The Vincent Hotel',
@@ -40,7 +38,6 @@ const ACCOMMODATION = [
         desc: 'More upscale option on Lord Street. The Grill Room is excellent. Stylish rooms, good spa. Works well for a premium trip alongside Royal Birkdale.',
         approxRate: '£150–£350/night',
         golferFriendly: ['Golf storage on request', 'Spa for post-round recovery', 'Fine dining', 'Central location'],
-        bookingUrl: LATEROOMS.southport,
       },
     ],
   },
@@ -55,7 +52,6 @@ const ACCOMMODATION = [
         desc: 'Golf-specific resort between Formby village and the coast courses. Has its own parkland course. Proximity to Formby Golf Club and Birkdale corridor. Purpose-built for golf groups.',
         approxRate: '£100–£200/night',
         golferFriendly: ['Dedicated golf storage', 'Early breakfast standard', 'Golf packages available', 'On-site course'],
-        bookingUrl: LATEROOMS.formby,
       },
       {
         name: 'Formby B&Bs (various)',
@@ -64,7 +60,6 @@ const ACCOMMODATION = [
         desc: 'Several quality B&Bs in Formby village: quieter, more affordable base. The village has good restaurants within walking distance. 20 min drive to Birkdale. Check SouthportGuide.co.uk for full listings.',
         approxRate: '£70–£120/night',
         golferFriendly: ['Flexible breakfast times', 'Good value', 'Quiet setting', 'Village amenities'],
-        bookingUrl: LATEROOMS.formby,
       },
     ],
   },
@@ -79,7 +74,6 @@ const ACCOMMODATION = [
         desc: 'Wide range of options from budget chains to boutique hotels. 45–60 min to Birkdale by car, 50 min by train to Southport then taxi. Good for multi-day trips combining golf with Liverpool itself.',
         approxRate: '£70–£200/night',
         golferFriendly: ['Wide choice', 'Good transport links', 'City dining', 'Parking widely available'],
-        bookingUrl: LATEROOMS.southport,
       },
     ],
   },
@@ -164,7 +158,7 @@ export default async function AccommodationPage({ params }: { params: Promise<{ 
 
                     <p className="text-[#2C3E50]/70 text-sm leading-relaxed mb-4">{opt.desc}</p>
 
-                    <div className="mb-4">
+                    <div>
                       <div className="text-xs text-[#2C3E50]/50 uppercase tracking-wider mb-2">{t('golferFeaturesLabel')}</div>
                       <ul className="space-y-1">
                         {opt.golferFriendly.map((f) => (
@@ -176,15 +170,6 @@ export default async function AccommodationPage({ params }: { params: Promise<{ 
                       </ul>
                     </div>
 
-                    <a
-                      href={opt.bookingUrl}
-                      target="_blank"
-                      rel="noopener noreferrer sponsored"
-                      className="flex items-center justify-center gap-2 bg-[#1A4A30] text-white font-semibold px-4 py-2.5 rounded-lg hover:bg-[#2A6A45] transition-colors text-sm w-full"
-                    >
-                      <Bed size={14} />
-                      {t('checkAvailabilityBtn')}
-                    </a>
                   </div>
                 </div>
               ))}
@@ -204,48 +189,6 @@ export default async function AccommodationPage({ params }: { params: Promise<{ 
                 <p className="text-white/70 text-sm leading-relaxed">{tip}</p>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* Partners */}
-        <div className="grid sm:grid-cols-2 gap-6">
-          <div className="bg-white border border-[#E8E3D8] rounded-xl p-6">
-            <p className="text-[#B8912A] text-xs font-bold uppercase tracking-widest mb-1">Golf Travel Partner</p>
-            <h3 className="font-display text-lg font-bold text-[#0D1B2A] mb-2">Full Golf Package</h3>
-            <p className="text-[#2C3E50]/65 text-sm leading-relaxed mb-4">
-              Champions Travel arrange complete golf travel packages: hotel, transfers, and tee times together. Worth checking if you'd rather have it sorted in one place than pieced together.
-            </p>
-            <a
-              href={CHAMPIONS_TRAVEL.homepage}
-              target="_blank"
-              rel="noopener noreferrer sponsored"
-              className="flex items-center justify-center gap-2 bg-[#1A4A30] hover:bg-[#B8912A] text-white font-semibold px-4 py-2.5 rounded-lg transition-colors text-sm w-full"
-            >
-              View packages →
-            </a>
-          </div>
-          <div className="bg-white border border-[#E8E3D8] rounded-xl p-6">
-            <p className="text-[#B8912A] text-xs font-bold uppercase tracking-widest mb-1">Self-Catering Partner</p>
-            <h3 className="font-display text-lg font-bold text-[#0D1B2A] mb-2">Coming as a Group?</h3>
-            <p className="text-[#2C3E50]/65 text-sm leading-relaxed mb-4">
-              Golf groups in a self-catering cottage cost less per head than hotel rooms and you have a proper base each evening. Sykes have properties across Southport and the Sefton Coast with Open week availability.
-            </p>
-            <a
-              href={SYKES.southportOpen2026}
-              target="_blank"
-              rel="noopener noreferrer sponsored"
-              className="flex items-center justify-center gap-2 bg-[#1A4A30] hover:bg-[#B8912A] text-white font-semibold px-4 py-2.5 rounded-lg transition-colors text-sm w-full"
-            >
-              Search Sykes for Open Week →
-            </a>
-            <a
-              href={COTTAGES.summerSale}
-              target="_blank"
-              rel="noopener noreferrer sponsored"
-              className="flex items-center justify-center gap-2 border border-[#E8E3D8] text-[#2C3E50]/70 hover:bg-[#F5F0E8] font-semibold px-4 py-2 rounded-lg transition-colors text-sm w-full mt-2"
-            >
-              Also: Cottages.com →
-            </a>
           </div>
         </div>
 

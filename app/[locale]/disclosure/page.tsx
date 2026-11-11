@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { BASE_URL } from '@/lib/metadata';
+import { DISPLAY_EMAIL } from '@/lib/contact';
 
 const description =
   'Who publishes SeftonLinks.com, how it is paid for, and the other interests of its publisher.';
@@ -22,7 +23,7 @@ export default function DisclosurePage() {
       <div className="bg-[#0D1B2A] py-14">
         <div className="container mx-auto px-4 max-w-3xl">
           <h1 className="font-display text-4xl font-bold text-white mb-3">Disclosure</h1>
-          <p className="text-white/55 text-sm">Last updated: 5 October 2026</p>
+          <p className="text-white/55 text-sm">Last updated: 11 November 2026</p>
         </div>
       </div>
       <div className="container mx-auto px-4 max-w-3xl py-14">
@@ -35,10 +36,17 @@ export default function DisclosurePage() {
 
           <h2 className={h2}>How it is paid for</h2>
           <p>
-            The site is paid for by Churchtown Media Ltd, by{' '}
-            <Link href="/advertise" className={a}>advertising</Link>, and by affiliate links to accommodation
-            and golf travel, which are marked where they appear. None of these change what we write about
-            a course.
+            Churchtown Media Ltd pays for the site. Businesses can pay for a labelled advert or a sponsored
+            article; see{' '}
+            <Link href="/advertise" className={a}>advertising</Link>. We do not use affiliate links.
+          </p>
+
+          <h2 className={h2}>Advertising</h2>
+          <p>
+            Adverts and sponsors are labelled on the card itself, as Advertisement or Sponsor. A sponsored
+            article is labelled Sponsored at the top and bylined to the business that paid for it. Paid
+            links are marked as sponsored for search engines. Adverts never appear inside a review, and
+            paying for a space does not change what we write about a course.
           </p>
 
           <h2 className={h2}>Current interests</h2>
@@ -77,8 +85,8 @@ export default function DisclosurePage() {
           <p>
             We update this page when any of these interests change. The date at the top shows the last
             update. Questions to{' '}
-            <a href="mailto:hello@seftoncoast.network" className={a}>
-              hello@seftoncoast.network
+            <a href={`mailto:${DISPLAY_EMAIL}`} className={a}>
+              {DISPLAY_EMAIL}
             </a>
             .
           </p>

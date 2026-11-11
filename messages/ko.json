@@ -22,7 +22,6 @@
     "accommodationTitle": "Royal Birkdale 근처 골프 숙박 — 사우스포트",
     "accommodationDesc": "Royal Birkdale과 세프턴 코스트 골프 코스 인근 숙박 시설. 거리순 정렬, 2026년 디 오픈 기간 예약 현황 안내 포함.",
     "contactTitle": "SeftonLinks 문의",
-    "contactDesc": "SeftonLinks 질문, 코스 정보 수정, 등록 문의, 비즈니스 제안.",
     "course": {
       "royal-birkdale": {
         "title": "Royal Birkdale Golf Club — 방문자 가이드, 그린피 & 티타임"
@@ -54,9 +53,7 @@
     "conditionsTitle": "코스 컨디션",
     "conditionsDesc": "세프턴 코스트 전 코스 실시간 컨디션 현황",
     "plannerTitle": "골프 여행 플래너",
-    "plannerDesc": "일정, 예산, 핸디캡을 알려주시면 최적의 여행 플랜을 추천해 드립니다",
-    "affiliateCta": "골프 여행 예약",
-    "affiliateDesc": "Golf Breaks에서 티타임, 호텔, 패키지 예약"
+    "plannerDesc": "일정, 예산, 핸디캡을 알려주시면 최적의 여행 플랜을 추천해 드립니다"
   },
   "homePage": {
     "bannerLink": "→ 전체 가이드",
@@ -92,10 +89,6 @@
     "tool6Title": "골프 여행 일정",
     "tool6Desc": "코스 순서, 숙박 제안, 라운드 후 식사가 포함된 2박, 3박, 5박 완성 플랜. 알뜰부터 챔피언십 수준까지.",
     "tool6Cta": "일정 보기",
-    "affiliateCtaTitle": "세프턴 코스트 여행 준비되셨나요?",
-    "affiliateCtaBtn1": "Golf Breaks 패키지 보기 ↗",
-    "affiliateCtaBtn2": "나만의 일정 만들기",
-    "affiliateCtaDisclaimer": "Golf Breaks 제휴 링크 — 추가 비용 없이 커미션이 발생합니다.",
     "editorialTitle": "왜 세프턴 코스트인가?",
     "editorialPara1": "링크스 골프의 성지라 하면 스코틀랜드가 주목을 받습니다 — 세인트앤드루스, 카누스티, 뮤어필드. 세프턴 코스트는 그 그늘에 가려져 있습니다. 그것이 바로 방문 골퍼에게는 기회입니다.",
     "featureCard1Title": "편리한 접근성",
@@ -172,10 +165,6 @@
     "majorHistoryTitle": "메이저 챔피언십 역사",
     "afterRoundTitle": "라운드 후 즐길 거리",
     "restaurantGuideLink": "레스토랑 전체 가이드 — SouthportGuide.co.uk",
-    "bookRoundTitle": "라운드 예약",
-    "bookRoundDesc": "Golf Breaks(영국 최대 골프 휴가 전문 업체)를 통해 {courseName}의 티타임과 골프 패키지를 예약하세요.",
-    "golfBreaksBtn": "Golf Breaks 패키지 보기",
-    "bookDirectLink": "{courseName} 직접 예약",
     "conditionsWidgetTitle": "오늘의 코스 컨디션",
     "conditionsWidgetDesc": "출발 전 현재 코스 컨디션을 확인하세요.",
     "conditionsWidgetLink": "코스 컨디션 보기",
@@ -290,10 +279,6 @@
     "officialLink2Label": "Royal Birkdale Golf Club",
     "officialLink3Label": "R&A — 티켓 추첨",
     "officialLink4Label": "사우스포트 관광 정보",
-    "bookAccomTitle": "숙박 예약",
-    "bookAccomDesc": "미루지 마세요. 디 오픈 기간 숙박은 빠르게 마감됩니다. Booking.com에서 가장 많은 선택지와 유연한 취소 정책을 확인하세요.",
-    "bookAccomBtn": "사우스포트 호텔 검색 ↗",
-    "bookAccomAffiliate": "Booking.com 제휴 링크",
     "playBirkdaleLink": "Royal Birkdale 코스 가이드"
   },
   "teeTimesPage": {
@@ -332,7 +317,6 @@
     "distanceFromBirkdale": "Royal Birkdale에서",
     "approxLabel": "약",
     "golferFeaturesLabel": "골퍼 친화 시설",
-    "checkAvailabilityBtn": "예약 가능 여부 확인 ↗",
     "tipsTitle": "골프 방문자를 위한 숙박 팁",
     "tip1": "화~목요일 티타임을 예약하면 모든 코스에서 예약이 더 쉽고 코스도 조용한 편입니다.",
     "tip2": "예약 시 클럽/백 보관에 대해 확인하세요. 좋은 골프 호텔은 별도 건식 보관 공간이 있어 방에 가져갈 필요가 없습니다.",
@@ -387,7 +371,6 @@
     "whereToStayLabel": "숙박지",
     "diningLabel": "식사",
     "estimatedGreenFeesLabel": "예상 그린피",
-    "bookViaGolfBreaksBtn": "Golf Breaks에서 예약 ↗",
     "howToPlanTitle": "세프턴 코스트 골프 여행 계획하는 법",
     "howToPlanPara1": "세프턴 코스트 코스들은 충분히 가까워, 2일 일정에서도 복잡한 이동 없이 2~3라운드가 가능합니다. Royal Birkdale과 Hillside는 말 그대로 인접해 있어 걸어서 이동할 수 있습니다. Southport & Ainsdale은 3마일 더 남쪽. Formby는 A565를 통해 Birkdale에서 5마일입니다.",
     "howToPlanPara2": "여러 날 여행의 경우 사우스포트를 거점으로 하세요. 호텔 선택지가 가장 많고, 로드 스트리트부터 Birkdale까지 모두 택시 거리입니다. 조용하고 저렴한 숙박을 원하신다면 Formby 마을이 남쪽으로 20분 거리에 있으며 좋은 B&B 옵션이 있습니다."
@@ -414,11 +397,8 @@
   },
   "contactPage": {
     "pageTitle": "문의",
-    "pageDesc": "질문, 코스 정보 수정, 등록 문의, 비즈니스 제안.",
     "getInTouchTitle": "문의하기",
     "generalEnquiriesLabel": "일반 문의:",
-    "featuredListingsLabel": "피처드 등록:",
-    "featuredListingsText": "골프 클럽, 골프 숙박, 캐디 서비스, 라운드 후 식당은 피처드 등록에 대해 문의하실 수 있습니다. 비즈니스 세부 정보를 이메일로 보내주세요.",
     "dataCorrectionsLabel": "데이터 수정:",
     "dataCorrectionsText": "그린피, 방문자 정책, 운영 시간 등 코스 정보에 오류가 있으면 알려주세요. 신속하게 업데이트하겠습니다.",
     "pressMediaLabel": "언론 & 미디어:",
@@ -434,14 +414,11 @@
     "privacyIntro": "SeftonLinks.com은 Churchtown Media Ltd가 운영합니다. 귀하의 개인정보를 진지하게 취급합니다.",
     "analyticsTitle": "애널리틱스",
     "analyticsDesc": "프라이버시 우선, GDPR 준수, 쿠키 없음, 개인정보 미수집의 Plausible Analytics와 Microsoft Clarity(세션 녹화 — 익명화)를 사용합니다. 올바르게 설정된 경우 GDPR에서 둘 다 쿠키 동의가 필요하지 않습니다.",
-    "affiliateLinksTitle": "제휴 링크",
-    "privacyAffiliateDesc": "이 사이트의 일부 링크는 제휴 링크입니다(Golf Breaks, Booking.com, Sykes Cottages). 명확하게 표시되어 있습니다. 클릭 시 귀하에게 추가 비용 없이 SeftonLinks.com에 커미션이 발생할 수 있습니다.",
     "privacyContactTitle": "문의",
     "privacyContactText": "개인정보 문의:",
     "termsIntro": "SeftonLinks.com을 사용함으로써 이 약관에 동의하는 것으로 간주됩니다. 이 사이트는 Churchtown Media Ltd가 운영합니다.",
     "infoAccuracyTitle": "정보 정확성",
     "infoAccuracyDesc": "그린피, 방문자 정책, 운영 시간, 코스 데이터는 성실하게 제공되며 정기적으로 업데이트됩니다. 방문 전 반드시 각 클럽에 직접 확인하세요. SeftonLinks는 오래된 정보나 코스 폐쇄로 인한 손해에 대해 어떠한 책임도 지지 않습니다.",
-    "termsAffiliateDesc": "이 사이트는 Golf Breaks, Booking.com, Sykes Cottages를 포함한 제휴 프로그램에 참여합니다. 얻은 커미션은 사용자에게 비용을 부과하지 않고 편집 운영을 지원하는 데 사용됩니다.",
     "copyrightTitle": "저작권",
     "copyrightDesc": "모든 편집 콘텐츠 © 2026 SeftonLinks.com. 코스 데이터(파, 레이팅, 슬로프)는 사실 정보로 저작권 보호 대상이 아닙니다. 서면 허가 없이 편집 콘텐츠를 복제하지 마세요."
   },

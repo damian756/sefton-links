@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
-import { Calendar, Trophy, MapPin, Bed, Utensils, ChevronRight } from 'lucide-react';
+import { Calendar, MapPin, Bed, Utensils, ChevronRight } from 'lucide-react';
 import GolfBreakPlanner from '@/components/GolfBreakPlanner';
 import { SEFTON_ITINERARIES } from '@/lib/courses';
 import type { Metadata } from 'next';
@@ -127,21 +127,12 @@ export default async function ItinerariesPage({ params }: { params: Promise<{ lo
                     </div>
                   </div>
 
-                  <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-[#F8F5EE] rounded-xl p-4">
+                  <div className="bg-[#F8F5EE] rounded-xl p-4">
                     <div>
                       <div className="text-xs text-[#2C3E50]/50 uppercase tracking-wider mb-0.5">{t('estimatedGreenFeesLabel')}</div>
                       <div className="font-bold text-[#0D1B2A]">{it.estimatedCost}</div>
                       <div className="text-[#2C3E50]/60 text-xs mt-0.5 leading-relaxed">{it.costNote}</div>
                     </div>
-                    <a
-                      href="https://www.golfbreaks.com/en-gb/united-kingdom/england/lancashire/"
-                      target="_blank"
-                      rel="noopener noreferrer sponsored"
-                      className="flex items-center gap-2 bg-[#1A4A30] text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-[#2A6A45] transition-colors text-sm shrink-0"
-                    >
-                      <Trophy size={14} />
-                      {t('bookViaGolfBreaksBtn')}
-                    </a>
                   </div>
                 </div>
               </div>

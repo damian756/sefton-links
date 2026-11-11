@@ -335,8 +335,8 @@ async function Footer({ locale }: { locale: string }) {
 
         <div className="border-t border-white/10 pt-5 pb-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm">
           <p className="text-white/50">
-            Golf club, travel brand or local business?{" "}
-            <span className="text-[#B8912A] font-semibold">Advertise with the Sefton Coast Network</span>
+            Hotel, B&amp;B, restaurant or golf travel business?{" "}
+            <span className="text-[#B8912A] font-semibold">Advertise on SeftonLinks</span>
           </p>
           <Link href={`${prefix}/advertise`} className="text-[#B8912A] hover:text-white transition font-medium text-sm">
             View advertising options →

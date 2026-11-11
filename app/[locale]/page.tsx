@@ -3,10 +3,15 @@ import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 import { Trophy, Wind, MapPin, Calendar, ChevronRight, Star, Flag, Clock, Users } from 'lucide-react';
 import OpenCountdown from '@/components/OpenCountdown';
+import AdSlot from '@/components/AdSlot';
 import { COURSES } from '@/lib/courses';
 import { getSortedBlogPosts } from '@/lib/blog';
 import type { Metadata } from 'next';
 import { BASE_URL, buildAlternates, buildOg } from '@/lib/metadata';
+
+// This page shows an advert space: re-render at least daily so a sponsor whose
+// `until` date has passed drops off without a deploy.
+export const revalidate = 86400;
 
 export async function generateMetadata({
   params,
@@ -365,6 +370,8 @@ export default async function HomePage({
               {th('compareAllCoursesBtn')} <ChevronRight size={16} />
             </Link>
           </div>
+
+          <AdSlot id="home-card" locale={locale} className="mt-14 max-w-5xl mx-auto" />
         </div>
       </section>
 
@@ -507,41 +514,6 @@ export default async function HomePage({
       </section>
 
       {/* ═══════════════════════════════════════════
-          GOLF BREAK AFFILIATE CTA
-      ═══════════════════════════════════════════ */}
-      <section className="py-16 bg-[#F8F5EE] border-t border-[#E8E3D8]">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-[#0D1B2A] mb-4">
-            {th('affiliateCtaTitle')}
-          </h2>
-          <p className="text-[#2C3E50]/70 text-lg mb-8 max-w-2xl mx-auto">
-            {th('affiliateCtaDesc')}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://www.golfbreaks.com/en-gb/united-kingdom/england/lancashire/"
-              target="_blank"
-              rel="noopener noreferrer sponsored"
-              className="inline-flex items-center justify-center gap-2 bg-[#1A4A30] text-white font-semibold px-8 py-4 rounded-lg hover:bg-[#2A6A45] transition-colors text-base"
-            >
-              <Trophy size={18} />
-              {th('affiliateCtaBtn1')}
-            </a>
-            <Link
-              href={`${prefix}/itineraries`}
-              className="inline-flex items-center justify-center gap-2 border-2 border-[#0D1B2A] text-[#0D1B2A] font-semibold px-8 py-4 rounded-lg hover:bg-[#0D1B2A] hover:text-white transition-colors text-base"
-            >
-              <Calendar size={18} />
-              {th('affiliateCtaBtn2')}
-            </Link>
-          </div>
-          <p className="text-[#2C3E50]/40 text-xs mt-5">
-            {th('affiliateCtaDisclaimer')}
-          </p>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════
           EDITORIAL: WHY SEFTON COAST?
       ═══════════════════════════════════════════ */}
       <section className="py-20 bg-white">
@@ -618,7 +590,7 @@ export default async function HomePage({
                       </div>
                     )}
                     <div className="p-5">
-                      <p className="text-[#B8912A] text-[10px] font-bold uppercase tracking-widest mb-2">{post.categorySlug.replace(/-/g, ' ')}</p>
+                      <p className="text-[#B8912A] text-[10px] font-bold uppercase tracking-widest mb-2">{post.sponsor ? 'Sponsored · ' : ''}{post.categorySlug.replace(/-/g, ' ')}</p>
                       <h3 className="font-display font-bold text-[#0D1B2A] text-sm leading-snug group-hover:text-[#1A4A30] transition-colors mb-2">
                         {post.title}
                       </h3>

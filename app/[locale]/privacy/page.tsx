@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { buildAlternates } from '@/lib/metadata';
+import { DISPLAY_EMAIL } from '@/lib/contact';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   return {
@@ -27,13 +28,11 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
           <p>{t('privacyIntro')}</p>
           <h2 className="font-display text-xl font-bold text-[#0D1B2A]">{t('analyticsTitle')}</h2>
           <p>{t('analyticsDesc')}</p>
-          <h2 className="font-display text-xl font-bold text-[#0D1B2A]">{t('affiliateLinksTitle')}</h2>
-          <p>{t('privacyAffiliateDesc')}</p>
           <h2 className="font-display text-xl font-bold text-[#0D1B2A]">{t('privacyContactTitle')}</h2>
           <p>
             {t('privacyContactText')}{' '}
-            <a href="mailto:hello@seftoncoast.network" className="text-[#1A4A30]">
-              hello@seftoncoast.network
+            <a href={`mailto:${DISPLAY_EMAIL}`} className="text-[#1A4A30]">
+              {DISPLAY_EMAIL}
             </a>
           </p>
         </div>

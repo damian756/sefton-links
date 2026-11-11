@@ -27,8 +27,6 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
           <p>{t('termsIntro')}</p>
           <h2 className="font-display text-xl font-bold text-[#0D1B2A]">{t('infoAccuracyTitle')}</h2>
           <p>{t('infoAccuracyDesc')}</p>
-          <h2 className="font-display text-xl font-bold text-[#0D1B2A]">{t('affiliateLinksTitle')}</h2>
-          <p>{t('termsAffiliateDesc')}</p>
           <h2 className="font-display text-xl font-bold text-[#0D1B2A]">{t('copyrightTitle')}</h2>
           <p>{t('copyrightDesc')}</p>
         </div>

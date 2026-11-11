@@ -22,7 +22,6 @@
     "accommodationTitle": "Allotjament de Golf prop de Royal Birkdale, Southport",
     "accommodationDesc": "On allotjar-se prop de Royal Birkdale i els camps de golf de la Costa de Sefton. Hotels, B&B i cases de vacances a Southport i Birkdale — ordenats per distància, amb notes sobre disponibilitat per al The Open Championship 2026.",
     "contactTitle": "Contacteu amb SeftonLinks",
-    "contactDesc": "Preguntes, correccions de dades, llistes destacades i consultes comercials.",
     "course": {
       "royal-birkdale": {
         "title": "Royal Birkdale Golf Club — Guia per a Visitants, Green Fee i Hores de Sortida"
@@ -54,9 +53,7 @@
     "conditionsTitle": "Estat del Camp",
     "conditionsDesc": "Actualitzacions en directe sobre les condicions dels camps a tota la Costa de Sefton",
     "plannerTitle": "Planificador de Viatges de Golf",
-    "plannerDesc": "Digueu-nos els vostres dies, pressupost i handicap — construirem el vostre itinerari",
-    "affiliateCta": "Reserva el Teu Viatge de Golf",
-    "affiliateDesc": "Hores de sortida, hotels i paquets a través de Golf Breaks"
+    "plannerDesc": "Digueu-nos els vostres dies, pressupost i handicap — construirem el vostre itinerari"
   },
   "homePage": {
     "bannerLink": "→ Guia Completa",
@@ -92,10 +89,6 @@
     "tool6Title": "Itineraris de Viatges de Golf",
     "tool6Desc": "Itineraris preparats de 2, 3 i 5 dies amb ordre de camps, suggeriments d'allotjament i restaurants post-volta. De pressupost a campionat.",
     "tool6Cta": "Explorar Itineraris",
-    "affiliateCtaTitle": "Preparats per Reservar el Viatge a la Costa de Sefton?",
-    "affiliateCtaBtn1": "Explorar Paquets de Golf Breaks ↗",
-    "affiliateCtaBtn2": "Crea el Teu Propi Itinerari",
-    "affiliateCtaDisclaimer": "Enllaç d'afiliació de Golf Breaks — guanyem una comissió sense cap cost addicional per a vosaltres.",
     "editorialTitle": "Per Què la Costa de Sefton?",
     "editorialPara1": "Hi ha corredors de golf de links a Escòcia — St Andrews, Carnoustie, Muirfield — que s'emporten l'atenció. La Costa de Sefton queda ignorada. Aquesta bretxa és l'oportunitat per a cada golfista visitant.",
     "featureCard1Title": "Fàcil d'Arribar",
@@ -172,10 +165,6 @@
     "majorHistoryTitle": "Historial del Major Championship",
     "afterRoundTitle": "Després de la Volta",
     "restaurantGuideLink": "Guia completa de restaurants — SouthportGuide.co.uk",
-    "bookRoundTitle": "Reserva la Teva Volta",
-    "bookRoundDesc": "Reserveu hores de sortida i paquets de golf a {courseName} a través de Golf Breaks — el principal especialista en vacances de golf del Regne Unit.",
-    "golfBreaksBtn": "Veure Paquets de Golf Breaks",
-    "bookDirectLink": "O reserveu directament a {courseName}",
     "conditionsWidgetTitle": "Condicions d'Avui",
     "conditionsWidgetDesc": "Comproveu les condicions de joc actuals abans de sortir.",
     "conditionsWidgetLink": "Veure condicions del camp",
@@ -290,10 +279,6 @@
     "officialLink2Label": "Royal Birkdale Golf Club",
     "officialLink3Label": "R&A — Sorteig d'Entrades",
     "officialLink4Label": "Informació per a Visitants de Southport",
-    "bookAccomTitle": "Reservar Allotjament",
-    "bookAccomDesc": "No ho deixeu per a més tard. L'allotjament de la setmana del The Open s'esgota ràpidament. Reserveu a Booking.com per a la selecció més àmplia i cancel·lació flexible.",
-    "bookAccomBtn": "Buscar Hotels a Southport ↗",
-    "bookAccomAffiliate": "Enllaç d'afiliació de Booking.com",
     "playBirkdaleLink": "Guia del camp Royal Birkdale"
   },
   "teeTimesPage": {
@@ -332,7 +317,6 @@
     "distanceFromBirkdale": "de Royal Birkdale",
     "approxLabel": "aprox.",
     "golferFeaturesLabel": "Característiques per a Golfistes",
-    "checkAvailabilityBtn": "Comprovar Disponibilitat ↗",
     "tipsTitle": "Consells d'Allotjament per als Visitants de Golf",
     "tip1": "Reserveu hores de sortida de dimarts a dijous si us allotgeu entre setmana — millor disponibilitat a tots els camps i normalment més tranquil al camp.",
     "tip2": "Pregunteu sobre l'emmagatzematge de pals/bosses en fer la reserva. Els bons hotels de golf tindran un magatzem sec dedicat en comptes de deixar les bosses a la vostra habitació durant la nit.",
@@ -387,7 +371,6 @@
     "whereToStayLabel": "On Allotjar-se",
     "diningLabel": "Restaurants",
     "estimatedGreenFeesLabel": "Green Fees Estimats",
-    "bookViaGolfBreaksBtn": "Reservar via Golf Breaks ↗",
     "howToPlanTitle": "Com Planificar un Viatge de Golf a la Costa de Sefton",
     "howToPlanPara1": "Els camps de la Costa de Sefton estan prou agrupats perquè un viatge de dos dies pugui cobrir dues o tres voltes sense logística difícil. Royal Birkdale i Hillside són literalment adjacents — podríeu anar-hi a peu. Southport & Ainsdale és tres milles més al sud. Formby és a cinc milles de Birkdale per l'A565.",
     "howToPlanPara2": "Per als viatges de varis dies, instal·leu-vos a Southport. La ciutat té la selecció d'hotels més àmplia, i tot, des de Lord Street fins a Birkdale, és a distància de taxi. Si preferiu un allotjament més tranquil i barat, el poble de Formby és a 20 minuts cap al sud i té bones opcions de B&B."
@@ -414,11 +397,8 @@
   },
   "contactPage": {
     "pageTitle": "Contacte",
-    "pageDesc": "Preguntes, correccions, llistes destacades i consultes comercials.",
     "getInTouchTitle": "Poseu-vos en Contacte",
     "generalEnquiriesLabel": "Consultes generals:",
-    "featuredListingsLabel": "Llistes destacades:",
-    "featuredListingsText": "Els clubs de golf, l'allotjament de golf, els serveis de caddie i els restaurants post-volta poden consultar sobre col·locació destacada. Envieu un correu amb els detalls del vostre negoci.",
     "dataCorrectionsLabel": "Correccions de dades:",
     "dataCorrectionsText": "Si alguna dada del camp — green fees, política de visitants, horaris — és incorrecta, feu-nos-ho saber. Actualitzem ràpidament.",
     "pressMediaLabel": "Premsa i Mitjans:",
@@ -434,14 +414,11 @@
     "privacyIntro": "SeftonLinks.com és operat per Churchtown Media Ltd. Prenem la vostra privacitat seriosament.",
     "analyticsTitle": "Analítica",
     "analyticsDesc": "Utilitzem Plausible Analytics (privacitat primer, compatible amb el RGPD, sense galetes, sense recollida de dades personals) i Microsoft Clarity (gravacions de sessions — anonimitzades). Cap dels dos requereix consentiment de galetes sota el RGPD quan es configuren correctament.",
-    "affiliateLinksTitle": "Enllaços d'Afiliació",
-    "privacyAffiliateDesc": "Alguns enllaços d'aquest lloc son enllaços d'afiliació (Golf Breaks, Booking.com, Sykes Cottages). Estan clarament etiquetats. Clicar-los pot resultar en una comissió per a SeftonLinks.com sense cap cost addicional per a vosaltres.",
     "privacyContactTitle": "Contacte",
     "privacyContactText": "Consultes de privacitat:",
     "termsIntro": "En usar SeftonLinks.com accepteu aquestes condicions. El lloc és operat per Churchtown Media Ltd.",
     "infoAccuracyTitle": "Precisió de la Informació",
     "infoAccuracyDesc": "Els green fees, polítiques de visitants, horaris i dades dels camps es proporcionen de bona fe i s'actualitzen regularment. Verifiqueu sempre directament amb el club abans de viatjar. SeftonLinks no accepta cap responsabilitat per informació desactualitzada o tancaments de camps.",
-    "termsAffiliateDesc": "Aquest lloc participa en programes d'afiliació incloent Golf Breaks, Booking.com i Sykes Cottages. Les comissions guanyades ajuden a finançar l'operació editorial sense cap cost per als usuaris.",
     "copyrightTitle": "Drets d'Autor",
     "copyrightDesc": "Tot el contingut editorial © 2026 SeftonLinks.com. Les dades del camp (par, qualificacions, pendent) són factuals i no estan subjectes a drets d'autor. No reproduïu el contingut editorial sense permís escrit."
   },

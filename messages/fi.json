@@ -22,7 +22,6 @@
     "accommodationTitle": "Golfmajoitus Royal Birkdalen lähellä, Southport",
     "accommodationDesc": "Missä majoittua Royal Birkdalen ja Sefton Coastin kenttien lähellä. Hotellit, B&B:t ja loma-asunnot Southportissa ja Birkdalessa — lajiteltu etäisyyden mukaan, The Open Championship 2026 saatavuustiedoin.",
     "contactTitle": "Ota yhteyttä SeftonLinksiin",
-    "contactDesc": "Ota yhteyttä SeftonLinksiin — kysymykset, tietojen korjaukset, korostetut listaukset ja yrityksiin liittyvät tiedustelut.",
     "course": {
       "royal-birkdale": {
         "title": "Royal Birkdale Golf Club — Vierailuopas, Green Feet & Lähtöajat"
@@ -54,9 +53,7 @@
     "conditionsTitle": "Kenttäolosuhteet",
     "conditionsDesc": "Reaaliaikaiset päivitykset Sefton Coastin peliolosuhteista",
     "plannerTitle": "Golfmatkasuunnittelija",
-    "plannerDesc": "Kerro päivien määrä, budjetti ja handicap — rakennamme ohjelmasi",
-    "affiliateCta": "Varaa Golfmatkasi",
-    "affiliateDesc": "Lähtöajat, hotellit ja paketit Golf Breaksin kautta"
+    "plannerDesc": "Kerro päivien määrä, budjetti ja handicap — rakennamme ohjelmasi"
   },
   "homePage": {
     "bannerLink": "→ Kattava opas",
@@ -92,10 +89,6 @@
     "tool6Title": "Golfmatkaohjelmat",
     "tool6Desc": "Valmiit 2, 3 ja 5 päivän ohjelmat kenttäjärjestyksineen, majoitusehdotuksineen ja illallissuosituksineen. Budjettimatkasta mestaruustasolle.",
     "tool6Cta": "Selaa Ohjelmia",
-    "affiliateCtaTitle": "Valmis Varaamaan Sefton Coast -matkasi?",
-    "affiliateCtaBtn1": "Katso Golf Breaks -paketit ↗",
-    "affiliateCtaBtn2": "Rakenna Oma Ohjelmasi",
-    "affiliateCtaDisclaimer": "Golf Breaks affiliate-linkki — saamme provision ilman lisäkustannuksia sinulle.",
     "editorialTitle": "Miksi Sefton Coast?",
     "editorialPara1": "Skotlannissa on linksgolfkäytäviä — St Andrews, Carnoustie, Muirfield — jotka saavat kaiken huomion. Sefton Coast jää varjoon. Juuri se on mahdollisuus jokaiselle vierailevalle golfarille.",
     "featureCard1Title": "Helposti Saavutettavissa",
@@ -172,10 +165,6 @@
     "majorHistoryTitle": "Major Championship -historia",
     "afterRoundTitle": "Kierroksen Jälkeen",
     "restaurantGuideLink": "Kattava ravintolaopas — SouthportGuide.co.uk",
-    "bookRoundTitle": "Varaa Kierroksesi",
-    "bookRoundDesc": "Varaa lähtöajat ja golfpaketit {courseName} -kentälle Golf Breaksin kautta — Britannian johtava golfmatkojen erikoispalvelu.",
-    "golfBreaksBtn": "Katso Golf Breaks -paketit",
-    "bookDirectLink": "Tai varaa suoraan {courseName} -kentältä",
     "conditionsWidgetTitle": "Tämänpäiväiset Olosuhteet",
     "conditionsWidgetDesc": "Tarkista kentän nykyiset peliolosuhteet ennen lähtöä.",
     "conditionsWidgetLink": "Katso kenttäolosuhteet",
@@ -290,10 +279,6 @@
     "officialLink2Label": "Royal Birkdale Golf Club",
     "officialLink3Label": "R&A — Lippu-arpajaiset",
     "officialLink4Label": "Southportin Matkailutoimisto",
-    "bookAccomTitle": "Varaa Majoitus",
-    "bookAccomDesc": "Älä odota. Open-viikon majoitus täyttyy nopeasti. Varaa Booking.com-sivuston kautta laajimmalla valikoimalla ja joustavalla peruutusehdolla.",
-    "bookAccomBtn": "Etsi Hotelleja Southportissa ↗",
-    "bookAccomAffiliate": "Booking.com affiliate-linkki",
     "playBirkdaleLink": "Royal Birkdale kenttäopas"
   },
   "teeTimesPage": {
@@ -332,7 +317,6 @@
     "distanceFromBirkdale": "Royal Birkdalesta",
     "approxLabel": "n.",
     "golferFeaturesLabel": "Golfareille Soveltuvat Palvelut",
-    "checkAvailabilityBtn": "Tarkista Saatavuus ↗",
     "tipsTitle": "Majoitusvinkkejä Golfareille",
     "tip1": "Varaa tiistai–torstai lähtöajat jos majoitut arkisin — parempi saatavuus kaikilla kentillä ja yleensä rauhallisempaa kentällä.",
     "tip2": "Kysy golf- ja laukun säilytysmahdollisuudesta varauksen yhteydessä. Hyvissä golfhotelleissa on erillinen kuiva säilytystila eikä laukkuja jätetä yöksi huoneeseen.",
@@ -387,7 +371,6 @@
     "whereToStayLabel": "Majoitus",
     "diningLabel": "Ravintolat",
     "estimatedGreenFeesLabel": "Arvioidut Green Feet",
-    "bookViaGolfBreaksBtn": "Varaa Golf Breaksin kautta ↗",
     "howToPlanTitle": "Sefton Coast -golfmatkan Suunnittelu",
     "howToPlanPara1": "Sefton Coastin kentät ovat niin lähellä toisiaan, että kaksi tai kolme kierrosta on mahdollista kahden päivän reissulla ilman hankalaa logistiikkaa. Royal Birkdale ja Hillside ovat kirjaimellisesti vierekkäin — voisit melkein kävellä niiden välillä. Southport & Ainsdale on viisi mailia etelään. Formby on kahdeksan mailia Birkdalesta A565:ttä pitkin.",
     "howToPlanPara2": "Pidemmille matkoille Southport on paras tukikohta. Kaupungissa on laajin hotellivalikoima, ja kaikki Lord Streetistä Birkdaleen on taksimatkan päässä. Jos haluat rauhallisempaa ja edullisempaa majoitusta, Formby village 20 minuuttia etelään tarjoaa hyviä B&B-vaihtoehtoja."
@@ -414,11 +397,8 @@
   },
   "contactPage": {
     "pageTitle": "Yhteystiedot",
-    "pageDesc": "Kysymykset, korjaukset, korostetut listaukset ja yrityksiin liittyvät tiedustelut.",
     "getInTouchTitle": "Ota Yhteyttä",
     "generalEnquiriesLabel": "Yleiset tiedustelut:",
-    "featuredListingsLabel": "Korostetut listaukset:",
-    "featuredListingsText": "Golfklubit, golfmajoitus, caddie-palvelut ja ravintolat voivat tiedustella korostetuista listauksista. Lähetä sähköpostia yritystietoineen.",
     "dataCorrectionsLabel": "Tietojen korjaukset:",
     "dataCorrectionsText": "Jos kenttädata — green feet, vierailupolitiikka, aukioloajat — on virheellistä, kerro meille. Päivitämme nopeasti.",
     "pressMediaLabel": "Lehdistö & media:",
@@ -434,14 +414,11 @@
     "privacyIntro": "SeftonLinks.com:ia operoi Churchtown Media Ltd. Suhtaudumme tietosuojaasi vakavasti.",
     "analyticsTitle": "Analytiikka",
     "analyticsDesc": "Käytämme Plausible Analytics -palvelua (tietosuojaan keskittyvä, GDPR-yhteensopiva, ei evästeitä, ei henkilötietoja kerätä) ja Microsoft Clarityä (istuntojen tallennukset — anonymisoitu). Kumpikaan ei vaadi evästelupaa GDPR:n nojalla oikein konfiguroituna.",
-    "affiliateLinksTitle": "Affiliate-linkit",
-    "privacyAffiliateDesc": "Osa sivuston linkeistä on affiliate-linkkejä (Golf Breaks, Booking.com, Sykes Cottages). Nämä on selkeästi merkitty. Niitä napsauttamalla SeftonLinks.com voi saada provision ilman lisäkustannuksia sinulle.",
     "privacyContactTitle": "Yhteystiedot",
     "privacyContactText": "Tietosuojatiedustelut:",
     "termsIntro": "Käyttämällä SeftonLinks.com-sivustoa hyväksyt nämä ehdot. Sivustoa operoi Churchtown Media Ltd.",
     "infoAccuracyTitle": "Tietojen Tarkkuus",
     "infoAccuracyDesc": "Green feet, vierailupolitiikat, aukioloajat ja kenttädata tarjotaan vilpittömässä mielessä ja päivitetään säännöllisesti. Tarkista aina suoraan klubilta ennen matkaa. SeftonLinks ei vastaa vanhentuneista tiedoista tai kenttien sulkemisista.",
-    "termsAffiliateDesc": "Tämä sivusto osallistuu affiliate-ohjelmiin, mukaan lukien Golf Breaks, Booking.com ja Sykes Cottages. Ansaitut provisiot auttavat rahoittamaan toimituksellista toimintaa ilman kuluja käyttäjille.",
     "copyrightTitle": "Tekijänoikeus",
     "copyrightDesc": "Kaikki toimituksellinen sisältö © 2026 SeftonLinks.com. Kenttädata (par, arvioinnit, slope) on faktaa eikä tekijänoikeussuojaa. Älä kopioi toimituksellista sisältöä ilman kirjallista lupaa."
   },

@@ -7,8 +7,13 @@ import {
   AlertCircle, CheckCircle2, Star, Utensils, Wind
 } from 'lucide-react';
 import { COURSES, getCourseBySlug } from '@/lib/courses';
+import AdSlot from '@/components/AdSlot';
 import type { Metadata } from 'next';
 import { BASE_URL, buildAlternates, buildOg } from '@/lib/metadata';
+
+// This page shows an advert space: re-render at least daily so a sponsor whose
+// `until` date has passed drops off without a deploy.
+export const revalidate = 86400;
 
 export async function generateStaticParams() {
   return COURSES.map((course) => ({ slug: course.slug }));
@@ -374,33 +379,6 @@ export default async function CoursePage({
 
           {/* Right sidebar */}
           <div className="space-y-6">
-            {/* Book now */}
-            <div className="bg-[#1A4A30] rounded-xl p-6 text-white">
-              <h3 className="font-display text-lg font-bold mb-2">{t('bookRoundTitle')}</h3>
-              <p className="text-white/70 text-sm mb-4">
-                {t('bookRoundDesc', { courseName: course.shortName })}
-              </p>
-              <a
-                href="https://www.golfbreaks.com"
-                target="_blank"
-                rel="noopener noreferrer sponsored"
-                className="flex items-center justify-center gap-2 bg-[#B8912A] text-white font-semibold px-4 py-3 rounded-lg hover:bg-[#D4AE7A] transition-colors text-sm w-full"
-              >
-                <Trophy size={15} />
-                {t('golfBreaksBtn')}
-              </a>
-              <div className="mt-3 text-center">
-                <a
-                  href={course.website}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white/55 text-xs hover:text-white transition-colors flex items-center justify-center gap-1"
-                >
-                  {t('bookDirectLink', { courseName: course.shortName })} <ExternalLink size={10} />
-                </a>
-              </div>
-            </div>
-
             {/* Course conditions link */}
             <div className="bg-white border border-[#E8E3D8] rounded-xl p-5">
               <div className="flex items-center gap-2 mb-2">
@@ -457,6 +435,9 @@ export default async function CoursePage({
                 {t('compareAllLink')} <ChevronRight size={13} />
               </Link>
             </div>
+
+            {/* Partner space: last in the sidebar, away from the "After Your Round" list. */}
+            <AdSlot id={`course-${slug}`} locale={locale} compact />
           </div>
         </div>
       </div>

@@ -22,7 +22,6 @@
     "accommodationTitle": "Golfaccommodatie bij Royal Birkdale, Southport",
     "accommodationDesc": "Waar te verblijven bij Royal Birkdale en de Sefton Coast golfbanen. Hotels, B&B's en vakantiehuizen in Southport en Birkdale — gesorteerd op afstand, met beschikbaarheidsinfo voor The Open Championship 2026.",
     "contactTitle": "Contact SeftonLinks",
-    "contactDesc": "Neem contact op met SeftonLinks — vragen, gegevenscorrecties, uitgelichte vermeldingen en zakelijke vragen.",
     "course": {
       "royal-birkdale": {
         "title": "Royal Birkdale Golf Club — Bezoekersinfo, Green Fees & Tee Times"
@@ -54,9 +53,7 @@
     "conditionsTitle": "Baanomstandigheden",
     "conditionsDesc": "Live updates over de speelomstandigheden aan de Sefton Coast",
     "plannerTitle": "Golfvakantie Planner",
-    "plannerDesc": "Geef uw beschikbare dagen, budget en handicap door — wij stellen uw programma samen",
-    "affiliateCta": "Boek Uw Golfreis",
-    "affiliateDesc": "Tee times, hotels en arrangementen via Golf Breaks"
+    "plannerDesc": "Geef uw beschikbare dagen, budget en handicap door — wij stellen uw programma samen"
   },
   "homePage": {
     "bannerLink": "→ Volledige Gids",
@@ -92,10 +89,6 @@
     "tool6Title": "Golfvakantie Programma's",
     "tool6Desc": "Kant-en-klare programma's van 2, 3 en 5 dagen met baanvolgorde, verblijfstips en restaurantaanbevelingen. Van budget tot kampioenschapsniveau.",
     "tool6Cta": "Bekijk Programma's",
-    "affiliateCtaTitle": "Klaar om Uw Sefton Coast Reis te Boeken?",
-    "affiliateCtaBtn1": "Bekijk Golf Breaks Arrangementen ↗",
-    "affiliateCtaBtn2": "Stel Uw Eigen Programma Samen",
-    "affiliateCtaDisclaimer": "Golf Breaks affiliate link — wij ontvangen een commissie zonder extra kosten voor u.",
     "editorialTitle": "Waarom de Sefton Coast?",
     "editorialPara1": "Er zijn links golfgebieden in Schotland — St Andrews, Carnoustie, Muirfield — die alle aandacht krijgen. De Sefton Coast wordt over het hoofd gezien. En juist dat is de kans voor elke bezoekende golfer.",
     "featureCard1Title": "Goed Bereikbaar",
@@ -172,10 +165,6 @@
     "majorHistoryTitle": "Major Championship Geschiedenis",
     "afterRoundTitle": "Na Uw Ronde",
     "restaurantGuideLink": "Volledige restaurantgids — SouthportGuide.co.uk",
-    "bookRoundTitle": "Boek Uw Ronde",
-    "bookRoundDesc": "Boek tee times en golfarrangementen op {courseName} via Golf Breaks — het toonaangevende Britse platform voor golfreizen.",
-    "golfBreaksBtn": "Bekijk Golf Breaks Arrangementen",
-    "bookDirectLink": "Of boek direct bij {courseName}",
     "conditionsWidgetTitle": "Omstandigheden Vandaag",
     "conditionsWidgetDesc": "Controleer de actuele speelomstandigheden voor vertrek.",
     "conditionsWidgetLink": "Bekijk baanomstandigheden",
@@ -290,10 +279,6 @@
     "officialLink2Label": "Royal Birkdale Golf Club",
     "officialLink3Label": "R&A — Ticket Loting",
     "officialLink4Label": "Southport Bezoekersinfo",
-    "bookAccomTitle": "Boek Uw Verblijf",
-    "bookAccomDesc": "Wacht niet te lang. Open week accommodatie raakt snel vol. Boek via Booking.com voor de ruimste keuze en flexibele annulering.",
-    "bookAccomBtn": "Zoek Hotels in Southport ↗",
-    "bookAccomAffiliate": "Booking.com affiliate link",
     "playBirkdaleLink": "Royal Birkdale baangids"
   },
   "teeTimesPage": {
@@ -332,7 +317,6 @@
     "distanceFromBirkdale": "van Royal Birkdale",
     "approxLabel": "ca.",
     "golferFeaturesLabel": "Golfersvriendelijke Faciliteiten",
-    "checkAvailabilityBtn": "Controleer Beschikbaarheid ↗",
     "tipsTitle": "Accommodatietips voor Golfers",
     "tip1": "Boek tee times op dinsdag tot donderdag als u doordeweeks verblijft — betere beschikbaarheid bij alle banen en doorgaans rustiger op de baan.",
     "tip2": "Vraag naar club- en bagopslag bij het reserveren. Goede golfhotels hebben een aparte droge opslag in plaats van de tassen op uw kamer te laten.",
@@ -387,7 +371,6 @@
     "whereToStayLabel": "Waar te Verblijven",
     "diningLabel": "Eten & Drinken",
     "estimatedGreenFeesLabel": "Geschatte Green Fees",
-    "bookViaGolfBreaksBtn": "Boek via Golf Breaks ↗",
     "howToPlanTitle": "Hoe Plant u een Sefton Coast Golfreis",
     "howToPlanPara1": "De Sefton Coast banen liggen dicht genoeg bij elkaar dat u bij een tweedaagse trip twee of drie rondes kunt afwerken zonder logistieke hoofdpijn. Royal Birkdale en Hillside liggen letterlijk naast elkaar — u zou er bijna tussen kunnen lopen. Southport & Ainsdale ligt vijf kilometer verder naar het zuiden. Formby ligt acht kilometer van Birkdale via de A565.",
     "howToPlanPara2": "Voor meerdaagse reizen baseert u zich het beste in Southport. De stad heeft het ruimste hotelaanbod, en alles van Lord Street tot Birkdale is bereikbaar per taxi. Als u rustiger en goedkoper wilt verblijven, is Formby village 20 minuten naar het zuiden een prima optie met goede B&B-mogelijkheden."
@@ -414,11 +397,8 @@
   },
   "contactPage": {
     "pageTitle": "Contact",
-    "pageDesc": "Vragen, correcties, uitgelichte vermeldingen en zakelijke vragen.",
     "getInTouchTitle": "Neem Contact Op",
     "generalEnquiriesLabel": "Algemene vragen:",
-    "featuredListingsLabel": "Uitgelichte vermeldingen:",
-    "featuredListingsText": "Golfclubs, golfaccommodatie, caddie-diensten en post-ronde restaurants kunnen informeren over uitgelichte plaatsing. Mail met uw bedrijfsgegevens.",
     "dataCorrectionsLabel": "Gegevenscorrecties:",
     "dataCorrectionsText": "Als er baandata onjuist is — green fees, bezoekersbeleid, openingstijden — laat het ons weten. Wij verwerken correcties snel.",
     "pressMediaLabel": "Pers & media:",
@@ -434,14 +414,11 @@
     "privacyIntro": "SeftonLinks.com wordt geëxploiteerd door Churchtown Media Ltd. Wij nemen uw privacy serieus.",
     "analyticsTitle": "Analyse",
     "analyticsDesc": "Wij gebruiken Plausible Analytics (privacy-first, AVG-compliant, geen cookies, geen persoonlijke gegevens verzameld) en Microsoft Clarity (sessieopnamen — geanonimiseerd). Geen van beide vereist cookietoestemming onder de AVG indien correct geconfigureerd.",
-    "affiliateLinksTitle": "Affiliate Links",
-    "privacyAffiliateDesc": "Sommige links op deze site zijn affiliate links (Golf Breaks, Booking.com, Sykes Cottages). Deze zijn duidelijk gelabeld. Klikken erop kan resulteren in een commissie voor SeftonLinks.com zonder extra kosten voor u.",
     "privacyContactTitle": "Contact",
     "privacyContactText": "Privacyvragen:",
     "termsIntro": "Door gebruik te maken van SeftonLinks.com gaat u akkoord met deze voorwaarden. De site wordt geëxploiteerd door Churchtown Media Ltd.",
     "infoAccuracyTitle": "Nauwkeurigheid van Informatie",
     "infoAccuracyDesc": "Green fees, bezoekersbeleid, openingstijden en baandata worden te goeder trouw verstrekt en regelmatig bijgewerkt. Verifieer altijd rechtstreeks bij de club voor vertrek. SeftonLinks aanvaardt geen aansprakelijkheid voor verouderde informatie of baansluitingen.",
-    "termsAffiliateDesc": "Deze site neemt deel aan affiliate programma's waaronder Golf Breaks, Booking.com en Sykes Cottages. Verdiende commissies helpen de redactionele werking te financieren zonder kosten voor gebruikers.",
     "copyrightTitle": "Auteursrecht",
     "copyrightDesc": "Alle redactionele inhoud © 2026 SeftonLinks.com. Baandata (par, ratings, slope) zijn feitelijk en vallen niet onder auteursrecht. Reproduceer redactionele inhoud niet zonder schriftelijke toestemming."
   },

@@ -22,7 +22,6 @@
     "accommodationTitle": "Royal Birkdale 附近高尔夫住宿 — 索斯波特",
     "accommodationDesc": "Royal Birkdale 及赛夫顿海岸球场附近的住宿选择。索斯波特与巴克德尔的酒店、民宿及度假村，按距离排序，附 2026年英国公开赛期间入住情况说明。",
     "contactTitle": "联系 SeftonLinks",
-    "contactDesc": "SeftonLinks 咨询、球场资料更正、特色刊登及商业合作事宜。",
     "course": {
       "royal-birkdale": {
         "title": "Royal Birkdale Golf Club — 访客指南、果岭费与发球时间"
@@ -54,9 +53,7 @@
     "conditionsTitle": "球场状况",
     "conditionsDesc": "赛夫顿海岸所有球场实时状况更新",
     "plannerTitle": "高尔夫行程规划工具",
-    "plannerDesc": "告诉我们您的天数、预算和差点 — 我们将为您制定行程",
-    "affiliateCta": "预订高尔夫之旅",
-    "affiliateDesc": "通过 Golf Breaks 预订发球时间、酒店及套餐"
+    "plannerDesc": "告诉我们您的天数、预算和差点 — 我们将为您制定行程"
   },
   "homePage": {
     "bannerLink": "→ 完整指南",
@@ -92,10 +89,6 @@
     "tool6Title": "高尔夫行程",
     "tool6Desc": "含球场顺序、住宿建议及赛后餐饮的两天、三天及五天预设行程。从经济型到锦标赛级别。",
     "tool6Cta": "浏览行程",
-    "affiliateCtaTitle": "准备好预订赛夫顿海岸之旅了吗？",
-    "affiliateCtaBtn1": "浏览 Golf Breaks 套餐 ↗",
-    "affiliateCtaBtn2": "制定专属行程",
-    "affiliateCtaDisclaimer": "Golf Breaks 联盟链接 — 您无需支付额外费用，我们将获得佣金。",
     "editorialTitle": "为什么选择赛夫顿海岸？",
     "editorialPara1": "提到链球式高尔夫圣地，人们首先想到苏格兰 — 圣安德鲁斯、卡诺斯蒂、穆菲尔德。赛夫顿海岸常常被忽视。这恰恰是每位访客球手的机会。",
     "featureCard1Title": "交通便利",
@@ -172,10 +165,6 @@
     "majorHistoryTitle": "大满贯赛事历史",
     "afterRoundTitle": "一轮过后",
     "restaurantGuideLink": "餐厅完整指南 — SouthportGuide.co.uk",
-    "bookRoundTitle": "预订一轮",
-    "bookRoundDesc": "通过 Golf Breaks（英国领先高尔夫度假专业平台）预订 {courseName} 的发球时间及高尔夫套餐。",
-    "golfBreaksBtn": "查看 Golf Breaks 套餐",
-    "bookDirectLink": "或直接在 {courseName} 预订",
     "conditionsWidgetTitle": "今日球场状况",
     "conditionsWidgetDesc": "出发前查看当前球场状况。",
     "conditionsWidgetLink": "查看球场状况",
@@ -290,10 +279,6 @@
     "officialLink2Label": "Royal Birkdale Golf Club",
     "officialLink3Label": "R&A — 门票抽签",
     "officialLink4Label": "索斯波特旅游资讯",
-    "bookAccomTitle": "预订住宿",
-    "bookAccomDesc": "切勿拖延。英国公开赛举办周的住宿转瞬即满。通过 Booking.com 获取最多选择及灵活取消政策。",
-    "bookAccomBtn": "搜索索斯波特酒店 ↗",
-    "bookAccomAffiliate": "Booking.com 联盟链接",
     "playBirkdaleLink": "Royal Birkdale 球场指南"
   },
   "teeTimesPage": {
@@ -332,7 +317,6 @@
     "distanceFromBirkdale": "距 Royal Birkdale",
     "approxLabel": "约",
     "golferFeaturesLabel": "高尔夫球手友好设施",
-    "checkAvailabilityBtn": "查看是否有房 ↗",
     "tipsTitle": "高尔夫访客住宿建议",
     "tip1": "预订周二至周四的发球时间，各球场的预约更容易，球场上也通常更为安静。",
     "tip2": "预订时询问球具/球包存放事宜。好的高尔夫酒店会有专用干燥存放区，无需将球包带进房间过夜。",
@@ -387,7 +371,6 @@
     "whereToStayLabel": "住宿地点",
     "diningLabel": "餐饮",
     "estimatedGreenFeesLabel": "预计果岭费",
-    "bookViaGolfBreaksBtn": "通过 Golf Breaks 预订 ↗",
     "howToPlanTitle": "如何规划赛夫顿海岸高尔夫之旅",
     "howToPlanPara1": "赛夫顿海岸的球场分布紧凑，两天行程无需复杂交通便可安排两至三轮。Royal Birkdale 与 Hillside 字面上紧挨相邻 — 步行可达。Southport & Ainsdale 在其南方三英里处。Formby 经 A565 距 Birkdale 五英里。",
     "howToPlanPara2": "多日行程建议以索斯波特为基地。该镇酒店选择最多，从 Lord Street 到 Birkdale 全部在出租车距离内。如果您希望住宿更安静、更实惠，Formby 村在南面20分钟车程处，有不错的民宿选择。"
@@ -414,11 +397,8 @@
   },
   "contactPage": {
     "pageTitle": "联系我们",
-    "pageDesc": "咨询、球场数据更正、特色刊登及商业合作事宜。",
     "getInTouchTitle": "与我们联系",
     "generalEnquiriesLabel": "一般咨询：",
-    "featuredListingsLabel": "特色刊登：",
-    "featuredListingsText": "高尔夫球会、高尔夫住宿、球童服务及赛后餐饮均可咨询特色刊登事宜。请发送邮件并附上您的业务详情。",
     "dataCorrectionsLabel": "数据更正：",
     "dataCorrectionsText": "如发现球场数据有误 — 果岭费、访客政策、开放时间 — 请告知我们。我们将及时更新。",
     "pressMediaLabel": "媒体联系：",
@@ -434,14 +414,11 @@
     "privacyIntro": "SeftonLinks.com 由 Churchtown Media Ltd 运营。我们认真对待您的隐私。",
     "analyticsTitle": "数据分析",
     "analyticsDesc": "我们使用 Plausible Analytics（隐私优先、符合 GDPR、无 Cookie、不收集个人数据）及 Microsoft Clarity（会话录制 — 已匿名化）。正确配置后，依 GDPR 两者均无需 Cookie 同意。",
-    "affiliateLinksTitle": "联盟链接",
-    "privacyAffiliateDesc": "本网站部分链接为联盟链接（Golf Breaks、Booking.com、Sykes Cottages）。这些链接均有清晰标注。点击链接可能为 SeftonLinks.com 带来佣金，您无需支付额外费用。",
     "privacyContactTitle": "联系方式",
     "privacyContactText": "隐私相关咨询：",
     "termsIntro": "使用 SeftonLinks.com 即表示您同意以下条款。本网站由 Churchtown Media Ltd 运营。",
     "infoAccuracyTitle": "信息准确性",
     "infoAccuracyDesc": "果岭费、访客政策、开放时间及球场数据均以诚信提供并定期更新。出发前请务必直接向球会确认。SeftonLinks 对过时信息或球场关闭造成的损失不承担任何责任。",
-    "termsAffiliateDesc": "本网站参与包括 Golf Breaks、Booking.com 和 Sykes Cottages 在内的联盟计划。所获佣金帮助支持编辑运营，对用户不产生任何费用。",
     "copyrightTitle": "版权",
     "copyrightDesc": "所有编辑内容 © 2026 SeftonLinks.com。球场数据（标准杆、评级、坡度）为事实信息，不受版权保护。未经书面许可，禁止转载编辑内容。"
   },

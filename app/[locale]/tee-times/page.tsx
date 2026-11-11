@@ -4,6 +4,11 @@ import { COURSES } from '@/lib/courses';
 import type { Metadata } from 'next';
 import { buildAlternates, buildOg } from '@/lib/metadata';
 import { getTranslations } from 'next-intl/server';
+import AdSlot from '@/components/AdSlot';
+
+// This page shows an advert space: re-render at least daily so a sponsor whose
+// `until` date has passed drops off without a deploy.
+export const revalidate = 86400;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -181,6 +186,8 @@ export default async function TeeTimesPage({ params }: { params: Promise<{ local
             ))}
           </div>
         </div>
+
+        <AdSlot id="tee-times" locale={locale} />
       </div>
     </div>
   );

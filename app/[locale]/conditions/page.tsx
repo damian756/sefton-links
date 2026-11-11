@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import ConditionTracker from '@/components/ConditionTracker';
+import AdSlot from '@/components/AdSlot';
 import type { Metadata } from 'next';
 import { buildAlternates, buildOg } from '@/lib/metadata';
 import { getSouthportWeather } from '@/lib/weather';
@@ -72,6 +73,8 @@ export default async function ConditionsPage({ params }: { params: Promise<{ loc
             </p>
           </div>
         </div>
+
+        <AdSlot id="conditions" locale={locale} className="mt-12" />
       </div>
     </div>
   );

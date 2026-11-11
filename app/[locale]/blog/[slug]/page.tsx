@@ -4,6 +4,12 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { ChevronRight, Clock, ArrowLeft } from 'lucide-react';
 import { BLOG_POSTS, DAMIAN, getPostBySlug, getCategoryBySlug, getIsoDate, type ContentBlock } from '@/lib/blog';
+import AdSlot from '@/components/AdSlot';
+import { AD_SLOTS } from '@/lib/ad-slots';
+
+// This page shows an advert space: re-render at least daily so a sponsor whose
+// `until` date has passed drops off without a deploy.
+export const revalidate = 86400;
 
 const BASE_URL = 'https://www.seftonlinks.com';
 
@@ -32,7 +38,7 @@ export async function generateMetadata({
       type: 'article',
       siteName: 'SeftonLinks.com',
       publishedTime: getIsoDate(post),
-      authors: [DAMIAN.name],
+      authors: [post.sponsor ? post.sponsor.name : DAMIAN.name],
       section: cat?.label,
       images: [{ url: post.image ?? `${BASE_URL}/og-default.jpg`, width: 1200, height: 630, alt: post.imageAlt ?? post.title }],
     },
@@ -124,6 +130,11 @@ export default async function BlogPostPage({
   const isoDate = getIsoDate(post);
   const canonicalUrl = `${BASE_URL}/blog/${slug}`;
 
+  const sponsor = post.sponsor;
+  // One advert per page: a sponsored article is itself the advert, so it gets
+  // no end-of-post card.
+  const endSlot = !sponsor && AD_SLOTS[`post-${slug}`] ? `post-${slug}` : null;
+
   const articleLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -133,7 +144,7 @@ export default async function BlogPostPage({
     datePublished: isoDate,
     dateModified: isoDate,
     inLanguage: 'en-GB',
-    author: {
+    author: sponsor ? { '@type': 'Organization', name: sponsor.name, url: sponsor.url } : {
       '@type': 'Person',
       '@id': DAMIAN.schemaId,
       name: DAMIAN.name,
@@ -196,8 +207,13 @@ export default async function BlogPostPage({
           />
         )}
         <div className="relative z-10 container mx-auto px-4 max-w-3xl">
+          {sponsor && (
+            <p className="inline-block bg-[#B8912A] text-white text-[11px] font-bold uppercase tracking-widest px-2.5 py-1 rounded mb-3 mr-3">
+              Sponsored
+            </p>
+          )}
           {cat && (
-            <p className="text-[#B8912A] text-xs font-bold uppercase tracking-widest mb-3">
+            <p className={`text-[#B8912A] text-xs font-bold uppercase tracking-widest mb-3 ${sponsor ? 'inline-block' : ''}`}>
               {cat.label}
             </p>
           )}
@@ -207,7 +223,16 @@ export default async function BlogPostPage({
           <div className="flex flex-wrap items-center gap-4 text-white/50 text-sm">
             <span>{post.date}</span>
             <span className="flex items-center gap-1"><Clock size={13} /> {post.readingTime}</span>
-            <span>By {DAMIAN.name}</span>
+            {sponsor ? (
+              <span>
+                Sponsored by{' '}
+                <a href={sponsor.url} target="_blank" rel="sponsored noopener" className="text-white/80 underline underline-offset-2 hover:text-white">
+                  {sponsor.name}
+                </a>
+              </span>
+            ) : (
+              <span>By {DAMIAN.name}</span>
+            )}
           </div>
         </div>
       </div>
@@ -225,7 +250,10 @@ export default async function BlogPostPage({
           {post.content.map((block, i) => renderBlock(block, i))}
         </div>
 
-        {/* Author box */}
+        {endSlot && <AdSlot id={endSlot} locale="en" className="mt-12" />}
+
+        {/* Author box (not on sponsored articles) */}
+        {!sponsor && (
         <div className="mt-14 pt-10 border-t border-[#E8E3D8]">
           <div className="bg-white rounded-2xl border border-[#E8E3D8] p-7 flex flex-col sm:flex-row gap-5 items-start">
             <div className="w-14 h-14 rounded-full bg-[#0D1B2A] flex items-center justify-center flex-shrink-0">
@@ -246,6 +274,7 @@ export default async function BlogPostPage({
             </div>
           </div>
         </div>
+        )}
 
         {/* Back */}
         <div className="mt-8">

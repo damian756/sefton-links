@@ -22,7 +22,6 @@
     "accommodationTitle": "Royal Birkdale近郊のゴルフ宿泊施設 — サウスポート",
     "accommodationDesc": "Royal Birkdaleとセフトン・コーストのゴルフコース近くの宿泊施設。サウスポートとバークデイルのホテル、B&B、コテージを距離別に掲載。2026年全英オープン期間中の空き状況についても案内。",
     "contactTitle": "SeftonLinksへのお問い合わせ",
-    "contactDesc": "SeftonLinksへのご質問、コース情報の修正、掲載依頼、ビジネスに関するお問い合わせ。",
     "course": {
       "royal-birkdale": {
         "title": "Royal Birkdale Golf Club — ビジターガイド、グリーンフィー & ティータイム"
@@ -54,9 +53,7 @@
     "conditionsTitle": "コース状態",
     "conditionsDesc": "セフトン・コースト全コースのリアルタイムコース状態情報",
     "plannerTitle": "ゴルフ旅行プランナー",
-    "plannerDesc": "日数、予算、ハンディキャップをお知らせください — 最適な旅行プランをご提案します",
-    "affiliateCta": "ゴルフ旅行を予約する",
-    "affiliateDesc": "Golf Breaksでティータイム、ホテル、パッケージをご予約"
+    "plannerDesc": "日数、予算、ハンディキャップをお知らせください — 最適な旅行プランをご提案します"
   },
   "homePage": {
     "bannerLink": "→ 詳細ガイド",
@@ -92,10 +89,6 @@
     "tool6Title": "ゴルフ旅行プラン",
     "tool6Desc": "コース順、宿泊提案、ラウンド後の食事付き2日間・3日間・5日間のプリビルドプラン。予算重視からチャンピオンシップクラスまで。",
     "tool6Cta": "プランを見る",
-    "affiliateCtaTitle": "セフトン・コースト旅行の準備はできていますか？",
-    "affiliateCtaBtn1": "Golf Breaksパッケージを見る ↗",
-    "affiliateCtaBtn2": "自分だけのプランを作る",
-    "affiliateCtaDisclaimer": "Golf Breaksアフィリエイトリンク — 追加料金なしでコミッションが発生します。",
     "editorialTitle": "なぜセフトン・コーストなのか？",
     "editorialPara1": "リンクスゴルフの聖地といえばスコットランドが注目されます — セント・アンドリュース、カーヌスティー、ミュアフィールド。セフトン・コーストはその陰に隠れがちです。しかし、それこそが訪問ゴルファーにとってのチャンスです。",
     "featureCard1Title": "アクセス良好",
@@ -172,10 +165,6 @@
     "majorHistoryTitle": "メジャー選手権の歴史",
     "afterRoundTitle": "ラウンド後の過ごし方",
     "restaurantGuideLink": "レストラン完全ガイド — SouthportGuide.co.uk",
-    "bookRoundTitle": "ラウンドを予約する",
-    "bookRoundDesc": "Golf Breaks（英国最大手のゴルフ休日専門会社）を通じて{courseName}のティータイムとゴルフパッケージを予約。",
-    "golfBreaksBtn": "Golf Breaksパッケージを見る",
-    "bookDirectLink": "{courseName}で直接予約する",
     "conditionsWidgetTitle": "本日のコース状態",
     "conditionsWidgetDesc": "プレー前に現在のコース状態を確認してください。",
     "conditionsWidgetLink": "コース状態を見る",
@@ -290,10 +279,6 @@
     "officialLink2Label": "Royal Birkdale Golf Club",
     "officialLink3Label": "R&A — チケット抽選",
     "officialLink4Label": "サウスポート観光情報",
-    "bookAccomTitle": "宿泊を予約する",
-    "bookAccomDesc": "後回しにしないでください。全英オープン週の宿泊はすぐに満室になります。Booking.comで最多の選択肢とフレキシブルなキャンセルポリシーをご確認ください。",
-    "bookAccomBtn": "サウスポートのホテルを検索 ↗",
-    "bookAccomAffiliate": "Booking.comアフィリエイトリンク",
     "playBirkdaleLink": "Royal Birkdale コースガイド"
   },
   "teeTimesPage": {
@@ -332,7 +317,6 @@
     "distanceFromBirkdale": "Royal Birkdaleから",
     "approxLabel": "おおよそ",
     "golferFeaturesLabel": "ゴルファー向け設備",
-    "checkAvailabilityBtn": "空き状況を確認 ↗",
     "tipsTitle": "ゴルフ訪問者向け宿泊のヒント",
     "tip1": "平日（火〜木）のティータイムを予約すると、全コースで空き状況が良好で、コース上も通常は静か。",
     "tip2": "予約時にクラブ・バッグ保管について確認する。良いゴルフホテルは専用の乾燥保管室があり、部屋に持ち込む必要がない。",
@@ -387,7 +371,6 @@
     "whereToStayLabel": "宿泊先",
     "diningLabel": "食事",
     "estimatedGreenFeesLabel": "グリーンフィー概算",
-    "bookViaGolfBreaksBtn": "Golf Breaksで予約 ↗",
     "howToPlanTitle": "セフトン・コーストゴルフ旅行の計画方法",
     "howToPlanPara1": "セフトン・コーストのコースは十分に近く、2日間の旅程で難しいロジスティクスなしに2〜3ラウンドをこなせます。Royal BirkdaleとHillsideは文字通り隣り合っています — 歩いて移動できます。Southport & Ainsdaleはそこから3マイル南。FormbyはA565経由でBirkdaleから5マイルです。",
     "howToPlanPara2": "複数日の旅行はサウスポートを拠点にしてください。最も多くのホテルが揃っており、ロードストリートからバークデイルまですべてタクシーの距離です。静かで安い宿泊をご希望なら、Formby村は南に20分で、良いB&Bのオプションがあります。"
@@ -414,11 +397,8 @@
   },
   "contactPage": {
     "pageTitle": "お問い合わせ",
-    "pageDesc": "ご質問、コース情報の修正、掲載依頼、ビジネスに関するお問い合わせ。",
     "getInTouchTitle": "お気軽にご連絡ください",
     "generalEnquiriesLabel": "一般的なお問い合わせ：",
-    "featuredListingsLabel": "掲載依頼：",
-    "featuredListingsText": "ゴルフクラブ、ゴルフ宿泊施設、キャディサービス、ラウンド後の飲食店のフィーチャー掲載についてお問い合わせいただけます。ビジネスの詳細をメールでお送りください。",
     "dataCorrectionsLabel": "データ修正：",
     "dataCorrectionsText": "コースデータ（グリーンフィー、ビジターポリシー、営業時間）に誤りがある場合はお知らせください。速やかに更新いたします。",
     "pressMediaLabel": "プレス & メディア：",
@@ -434,14 +414,11 @@
     "privacyIntro": "SeftonLinks.comはChurchtown Media Ltdが運営しています。お客様のプライバシーを真剣に考えています。",
     "analyticsTitle": "アナリティクス",
     "analyticsDesc": "プライバシー重視・GDPRコンプライアント・クッキーなし・個人情報収集なしのPlausible Analyticsと、Microsoft Clarity（セッション録画 — 匿名化済み）を使用しています。正しく設定された場合、GDPRではどちらもクッキー同意が不要です。",
-    "affiliateLinksTitle": "アフィリエイトリンク",
-    "privacyAffiliateDesc": "このサイトの一部のリンクはアフィリエイトリンクです（Golf Breaks、Booking.com、Sykes Cottages）。これらは明確に表示されています。クリックすることで、お客様への追加費用なしにSeftonLinks.comにコミッションが発生する場合があります。",
     "privacyContactTitle": "お問い合わせ",
     "privacyContactText": "プライバシーに関するお問い合わせ：",
     "termsIntro": "SeftonLinks.comをご利用いただくことで、これらの利用規約に同意したものとみなします。このサイトはChurchtown Media Ltdが運営しています。",
     "infoAccuracyTitle": "情報の正確性",
     "infoAccuracyDesc": "グリーンフィー、ビジターポリシー、営業時間、コースデータは誠意を持って提供され、定期的に更新されています。お越しの前に必ず各クラブに直接確認してください。SeftonLinksは古い情報やコースクローズによる損害について一切の責任を負いません。",
-    "termsAffiliateDesc": "このサイトはGolf Breaks、Booking.com、Sykes Cottagesを含むアフィリエイトプログラムに参加しています。獲得したコミッションは、ユーザーに費用をかけることなく編集部の運営資金に充てられます。",
     "copyrightTitle": "著作権",
     "copyrightDesc": "すべての編集コンテンツ © 2026 SeftonLinks.com。コースデータ（パー、レーティング、スロープ）は事実情報であり著作権保護の対象外です。書面による許可なしに編集コンテンツを複製することを禁じます。"
   },

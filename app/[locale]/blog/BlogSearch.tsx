@@ -95,6 +95,11 @@ export default function BlogSearch({ posts, categories, postCountByCategory }: P
                 )}
                 <div className="p-7 flex flex-col flex-1">
                   <div className="flex items-center gap-2 mb-3">
+                    {post.sponsor && (
+                      <span className="bg-[#B8912A] text-white text-[11px] font-bold uppercase tracking-widest px-2 py-0.5 rounded">
+                        Sponsored
+                      </span>
+                    )}
                     {cat && (
                       <span className="text-xs font-semibold text-[#B8912A] uppercase tracking-wider">
                         {cat.label}

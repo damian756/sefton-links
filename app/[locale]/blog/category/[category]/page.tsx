@@ -105,6 +105,11 @@ export default async function CategoryPage({
                 className="group bg-white rounded-2xl border border-[#E8E3D8] p-7 hover:border-[#B8912A]/40 hover:shadow-md transition-all flex flex-col"
               >
                 <div className="flex items-center gap-2 mb-3">
+                  {post.sponsor && (
+                    <span className="bg-[#B8912A] text-white text-[11px] font-bold uppercase tracking-widest px-2 py-0.5 rounded">
+                      Sponsored
+                    </span>
+                  )}
                   <span className="text-xs text-[#2C3E50]/50 flex items-center gap-1">
                     <Clock size={11} /> {post.readingTime}
                   </span>

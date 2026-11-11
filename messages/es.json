@@ -22,7 +22,6 @@
     "accommodationTitle": "Alojamiento para Golfistas cerca de Royal Birkdale, Southport",
     "accommodationDesc": "Dónde alojarse cerca de Royal Birkdale y los campos de la Costa Sefton. Hoteles, B&Bs y casas rurales en Southport y Birkdale — ordenados por distancia, con notas sobre disponibilidad para The Open Championship 2026.",
     "contactTitle": "Contactar con SeftonLinks",
-    "contactDesc": "Ponte en contacto con SeftonLinks — preguntas, correcciones de datos, listados destacados y consultas comerciales.",
     "course": {
       "royal-birkdale": {
         "title": "Royal Birkdale Golf Club — Guía para Visitantes, Green Fees y Horas de Salida"
@@ -54,9 +53,7 @@
     "conditionsTitle": "Estado de los Campos",
     "conditionsDesc": "Actualizaciones en tiempo real sobre las condiciones de los campos en la Costa Sefton",
     "plannerTitle": "Planificador de Escapadas de Golf",
-    "plannerDesc": "Indícanos tus días, presupuesto y handicap — nosotros construimos tu itinerario",
-    "affiliateCta": "Reserva tu Escapada de Golf",
-    "affiliateDesc": "Horas de salida, hoteles y paquetes a través de Golf Breaks"
+    "plannerDesc": "Indícanos tus días, presupuesto y handicap — nosotros construimos tu itinerario"
   },
   "homePage": {
     "bannerLink": "→ Guía completa",
@@ -92,10 +89,6 @@
     "tool6Title": "Itinerarios de Golf",
     "tool6Desc": "Itinerarios preconfigurados de 2, 3 y 5 días con orden de campos, sugerencias de alojamiento y restaurantes. Desde económico hasta de campeonato.",
     "tool6Cta": "Ver Itinerarios",
-    "affiliateCtaTitle": "¿Listo para Reservar tu Viaje a la Costa Sefton?",
-    "affiliateCtaBtn1": "Ver Paquetes en Golf Breaks ↗",
-    "affiliateCtaBtn2": "Construir tu Propio Itinerario",
-    "affiliateCtaDisclaimer": "Enlace de afiliado de Golf Breaks — recibimos una comisión sin coste adicional para ti.",
     "editorialTitle": "¿Por qué la Costa Sefton?",
     "editorialPara1": "Hay corredores de golf links en Escocia — St Andrews, Carnoustie, Muirfield — que acaparan toda la atención. La Costa Sefton pasa desapercibida. Esa es precisamente la oportunidad para el golfista visitante.",
     "featureCard1Title": "Fácil de Llegar",
@@ -172,10 +165,6 @@
     "majorHistoryTitle": "Historia en Grandes Campeonatos",
     "afterRoundTitle": "Después de la Ronda",
     "restaurantGuideLink": "Guía completa de restaurantes — SouthportGuide.co.uk",
-    "bookRoundTitle": "Reserva tu Ronda",
-    "bookRoundDesc": "Reserva horas de salida y paquetes de golf en {courseName} a través de Golf Breaks — el especialista líder en vacaciones de golf del Reino Unido.",
-    "golfBreaksBtn": "Ver Paquetes en Golf Breaks",
-    "bookDirectLink": "O reserva directamente en {courseName}",
     "conditionsWidgetTitle": "Condiciones de Hoy",
     "conditionsWidgetDesc": "Consulta las condiciones actuales de juego antes de salir.",
     "conditionsWidgetLink": "Ver condiciones del campo",
@@ -290,10 +279,6 @@
     "officialLink2Label": "Royal Birkdale Golf Club",
     "officialLink3Label": "R&A — Sorteo de Entradas",
     "officialLink4Label": "Información Turística de Southport",
-    "bookAccomTitle": "Reservar Alojamiento",
-    "bookAccomDesc": "No lo dejes para el último momento. El alojamiento durante la semana del Open se agota rápido. Reserva en Booking.com para la mayor selección y cancelación flexible.",
-    "bookAccomBtn": "Buscar Hoteles en Southport ↗",
-    "bookAccomAffiliate": "Enlace de afiliado de Booking.com",
     "playBirkdaleLink": "Guía del campo Royal Birkdale"
   },
   "teeTimesPage": {
@@ -332,7 +317,6 @@
     "distanceFromBirkdale": "de Royal Birkdale",
     "approxLabel": "aprox.",
     "golferFeaturesLabel": "Servicios para Golfistas",
-    "checkAvailabilityBtn": "Consultar Disponibilidad ↗",
     "tipsTitle": "Consejos de Alojamiento para Visitantes de Golf",
     "tip1": "Reserva horas de salida de martes a jueves si te quedas entre semana — mejor disponibilidad en todos los campos y generalmente menos concurrido.",
     "tip2": "Pregunta por el almacén de palos al reservar. Los buenos hoteles de golf cuentan con un almacén seco dedicado en lugar de dejarte los palos en la habitación por la noche.",
@@ -387,7 +371,6 @@
     "whereToStayLabel": "Dónde Alojarse",
     "diningLabel": "Gastronomía",
     "estimatedGreenFeesLabel": "Green Fees Estimados",
-    "bookViaGolfBreaksBtn": "Reservar en Golf Breaks ↗",
     "howToPlanTitle": "Cómo Planificar un Viaje de Golf a la Costa Sefton",
     "howToPlanPara1": "Los campos de la Costa Sefton están lo suficientemente cerca como para que una escapada de dos días permita cubrir dos o tres rondas sin complicaciones logísticas. Royal Birkdale e Hillside son literalmente adyacentes — se puede caminar entre ellos. Southport & Ainsdale está a apenas 5 km más al sur. Formby está a 8 km de Birkdale por la A565.",
     "howToPlanPara2": "Para escapadas de varios días, alójate en Southport. La ciudad tiene la mayor oferta hotelera, y todo lo que va desde Lord Street hasta Birkdale está a distancia de taxi. Si prefieres algo más tranquilo y económico, Formby está a 20 minutos al sur y tiene buenas opciones de B&B."
@@ -414,11 +397,8 @@
   },
   "contactPage": {
     "pageTitle": "Contacto",
-    "pageDesc": "Preguntas, correcciones, listados destacados y consultas comerciales.",
     "getInTouchTitle": "Ponte en Contacto",
     "generalEnquiriesLabel": "Consultas generales:",
-    "featuredListingsLabel": "Listados destacados:",
-    "featuredListingsText": "Los clubs de golf, alojamientos para golfistas, servicios de caddie y restaurantes post-ronda pueden solicitar información sobre la colocación destacada. Escribe con los detalles de tu negocio.",
     "dataCorrectionsLabel": "Correcciones de datos:",
     "dataCorrectionsText": "Si algún dato del campo — green fees, política de visitantes, horarios — es incorrecto, háznoslo saber. Actualizamos con rapidez.",
     "pressMediaLabel": "Prensa y medios:",
@@ -434,14 +414,11 @@
     "privacyIntro": "SeftonLinks.com está operado por Churchtown Media Ltd. Tu privacidad es importante para nosotros.",
     "analyticsTitle": "Analítica",
     "analyticsDesc": "Utilizamos Plausible Analytics (respetuoso con la privacidad, conforme al RGPD, sin cookies, sin recopilación de datos personales) y Microsoft Clarity (grabaciones de sesión — anonimizadas). Ninguno requiere consentimiento de cookies bajo el RGPD cuando se configura correctamente.",
-    "affiliateLinksTitle": "Enlaces de Afiliado",
-    "privacyAffiliateDesc": "Algunos enlaces de este sitio son de afiliado (Golf Breaks, Booking.com, Sykes Cottages). Están claramente identificados. Al hacer clic, SeftonLinks.com puede recibir una comisión sin coste adicional para ti.",
     "privacyContactTitle": "Contacto",
     "privacyContactText": "Consultas de privacidad:",
     "termsIntro": "Al usar SeftonLinks.com aceptas estas condiciones. El sitio está operado por Churchtown Media Ltd.",
     "infoAccuracyTitle": "Exactitud de la Información",
     "infoAccuracyDesc": "Los green fees, políticas de visitantes, horarios y datos de los campos se proporcionan de buena fe y se actualizan regularmente. Verifica siempre directamente con el club antes de desplazarte. SeftonLinks no asume ninguna responsabilidad por información desactualizada o cierres de campo.",
-    "termsAffiliateDesc": "Este sitio participa en programas de afiliado que incluyen Golf Breaks, Booking.com y Sykes Cottages. Las comisiones obtenidas contribuyen a financiar la actividad editorial sin coste para los usuarios.",
     "copyrightTitle": "Derechos de Autor",
     "copyrightDesc": "Todo el contenido editorial © 2026 SeftonLinks.com. Los datos del campo (par, ratings, slope) son datos objetivos y no están sujetos a derechos de autor. No reproduzcas el contenido editorial sin autorización escrita."
   },

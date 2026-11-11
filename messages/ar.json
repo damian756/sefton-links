@@ -22,7 +22,6 @@
     "accommodationTitle": "إقامة لمحبي الغولف بالقرب من Royal Birkdale، ساوثبورت",
     "accommodationDesc": "أماكن الإقامة بالقرب من Royal Birkdale وملاعب ساحل سيفتون. فنادق وبيوت ضيافة وأكواخ عطلات في ساوثبورت وبيركديل — مرتبة حسب المسافة، مع ملاحظات حول توافرها خلال The Open Championship 2026.",
     "contactTitle": "تواصل مع SeftonLinks",
-    "contactDesc": "أسئلة وتصحيحات بيانات الملاعب وطلبات العرض والاستفسارات التجارية.",
     "course": {
       "royal-birkdale": {
         "title": "Royal Birkdale Golf Club — دليل الزوار ورسوم الغرين وأوقات الانطلاق"
@@ -54,9 +53,7 @@
     "conditionsTitle": "حالة الملعب",
     "conditionsDesc": "تحديثات فورية لحالة الملاعب عبر ساحل سيفتون",
     "plannerTitle": "مخطط رحلات الغولف",
-    "plannerDesc": "أخبرنا عن أيامك وميزانيتك وهانديكاب — سنبني جدولك الزمني",
-    "affiliateCta": "احجز رحلة الغولف",
-    "affiliateDesc": "أوقات الانطلاق والفنادق والباقات عبر Golf Breaks"
+    "plannerDesc": "أخبرنا عن أيامك وميزانيتك وهانديكاب — سنبني جدولك الزمني"
   },
   "homePage": {
     "bannerLink": "← الدليل الكامل",
@@ -92,10 +89,6 @@
     "tool6Title": "برامج رحلات الغولف",
     "tool6Desc": "برامج جاهزة لمدة 2 و3 و5 أيام مع ترتيب الملاعب ومقترحات الإقامة والمطاعم بعد الجولة. من الميزانية المحدودة إلى المستوى البطولي.",
     "tool6Cta": "تصفح البرامج",
-    "affiliateCtaTitle": "هل أنت مستعد لحجز رحلتك إلى ساحل سيفتون؟",
-    "affiliateCtaBtn1": "تصفح باقات Golf Breaks ↗",
-    "affiliateCtaBtn2": "ابنِ جدولك الخاص",
-    "affiliateCtaDisclaimer": "رابط تابع لـ Golf Breaks — نحصل على عمولة دون تكلفة إضافية عليك.",
     "editorialTitle": "لماذا ساحل سيفتون؟",
     "editorialPara1": "تُستقطب الأنظار إلى ممرات غولف الروابط في اسكتلندا — سانت أندروز وكارنوستي وميرفيلد. يُهمل ساحل سيفتون. هذه الفجوة هي الفرصة لكل لاعب غولف زائر.",
     "featureCard1Title": "سهولة الوصول",
@@ -172,10 +165,6 @@
     "majorHistoryTitle": "تاريخ البطولات الكبرى",
     "afterRoundTitle": "بعد الجولة",
     "restaurantGuideLink": "الدليل الكامل للمطاعم — SouthportGuide.co.uk",
-    "bookRoundTitle": "احجز جولتك",
-    "bookRoundDesc": "احجز أوقات الانطلاق وباقات الغولف في {courseName} عبر Golf Breaks — المتخصص الرائد في إجازات الغولف في المملكة المتحدة.",
-    "golfBreaksBtn": "عرض باقات Golf Breaks",
-    "bookDirectLink": "أو احجز مباشرة في {courseName}",
     "conditionsWidgetTitle": "حالة الملعب اليوم",
     "conditionsWidgetDesc": "تحقق من ظروف اللعب الحالية قبل الذهاب.",
     "conditionsWidgetLink": "عرض حالة الملعب",
@@ -290,10 +279,6 @@
     "officialLink2Label": "Royal Birkdale Golf Club",
     "officialLink3Label": "R&A — سحب التذاكر",
     "officialLink4Label": "معلومات الزوار في ساوثبورت",
-    "bookAccomTitle": "احجز إقامتك",
-    "bookAccomDesc": "لا تؤجل. إقامة أسبوع The Open تُحجز بسرعة. احجز عبر Booking.com للحصول على أوسع خيار وأكثر شروط الإلغاء مرونة.",
-    "bookAccomBtn": "ابحث عن فنادق ساوثبورت ↗",
-    "bookAccomAffiliate": "رابط تابع لـ Booking.com",
     "playBirkdaleLink": "دليل ملعب Royal Birkdale"
   },
   "teeTimesPage": {
@@ -332,7 +317,6 @@
     "distanceFromBirkdale": "من Royal Birkdale",
     "approxLabel": "تقريباً",
     "golferFeaturesLabel": "مميزات صديقة للغولف",
-    "checkAvailabilityBtn": "تحقق من التوافر ↗",
     "tipsTitle": "نصائح الإقامة لزوار الغولف",
     "tip1": "احجز أوقات انطلاق من الثلاثاء إلى الخميس إذا كنت تقيم خلال أيام العمل — توافر أفضل في جميع الملاعب وعادة أكثر هدوءاً في الملعب.",
     "tip2": "اسأل عن تخزين العصي/الحقيبة عند الحجز. فنادق الغولف الجيدة لديها غرفة تخزين جافة مخصصة بدلاً من ترك الحقائب في غرفتك طوال الليل.",
@@ -387,7 +371,6 @@
     "whereToStayLabel": "مكان الإقامة",
     "diningLabel": "المطاعم",
     "estimatedGreenFeesLabel": "رسوم الغرين التقديرية",
-    "bookViaGolfBreaksBtn": "احجز عبر Golf Breaks ↗",
     "howToPlanTitle": "كيف تخطط لرحلة غولف إلى ساحل سيفتون",
     "howToPlanPara1": "ملاعب ساحل سيفتون متجمعة بما يكفي لتغطية جولتين أو ثلاث في رحلة يومين دون لوجستيات معقدة. Royal Birkdale وHillside متجاوران حرفياً — يمكنك المشي بينهما. Southport & Ainsdale تبعد ثلاثة أميال إلى الجنوب. Formby تبعد خمسة أميال من بيركديل عبر A565.",
     "howToPlanPara2": "للرحلات متعددة الأيام، تمركز في ساوثبورت. المدينة لديها أوسع خيار من الفنادق، وكل شيء من Lord Street إلى بيركديل في مسافة تاكسي. إذا أردت إقامة أهدأ وأرخص، قرية Formby تبعد 20 دقيقة جنوباً ولديها خيارات B&B لائقة."
@@ -414,11 +397,8 @@
   },
   "contactPage": {
     "pageTitle": "تواصل معنا",
-    "pageDesc": "أسئلة وتصحيحات وقوائم مميزة واستفسارات تجارية.",
     "getInTouchTitle": "تواصل معنا",
     "generalEnquiriesLabel": "الاستفسارات العامة:",
-    "featuredListingsLabel": "القوائم المميزة:",
-    "featuredListingsText": "يمكن لنوادي الغولف وإقامة الغولف وخدمات المدربين والمطاعم بعد الجولة الاستفسار عن التواجد المميز. أرسل بريداً إلكترونياً مع تفاصيل عملك.",
     "dataCorrectionsLabel": "تصحيحات البيانات:",
     "dataCorrectionsText": "إذا كانت أي بيانات ملعب — رسوم الغرين وسياسة الزوار وساعات العمل — غير صحيحة، يرجى إعلامنا. نحدّث فوراً.",
     "pressMediaLabel": "الصحافة والإعلام:",
@@ -434,14 +414,11 @@
     "privacyIntro": "SeftonLinks.com تديرها Churchtown Media Ltd. نأخذ خصوصيتك على محمل الجد.",
     "analyticsTitle": "التحليلات",
     "analyticsDesc": "نستخدم Plausible Analytics (يُعطي الأولوية للخصوصية، متوافق مع GDPR، بدون ملفات تعريف الارتباط، لا يجمع البيانات الشخصية) وMicrosoft Clarity (تسجيلات الجلسات — مجهولة الهوية). لا يتطلب أي منهما موافقة على ملفات تعريف الارتباط وفق GDPR عند التكوين الصحيح.",
-    "affiliateLinksTitle": "الروابط التابعة",
-    "privacyAffiliateDesc": "بعض الروابط على هذا الموقع هي روابط تابعة (Golf Breaks وBooking.com وSykes Cottages). هذه موضحة بوضوح. النقر عليها قد يؤدي إلى عمولة لـ SeftonLinks.com دون تكلفة إضافية عليك.",
     "privacyContactTitle": "التواصل",
     "privacyContactText": "استفسارات الخصوصية:",
     "termsIntro": "باستخدام SeftonLinks.com فإنك توافق على هذه الشروط. يُدار الموقع من قبل Churchtown Media Ltd.",
     "infoAccuracyTitle": "دقة المعلومات",
     "infoAccuracyDesc": "يتم توفير رسوم الغرين وسياسات الزوار وساعات العمل وبيانات الملاعب بحسن نية ويتم تحديثها بانتظام. تحقق دائماً مباشرة مع النادي قبل السفر. لا تتحمل SeftonLinks أي مسؤولية عن المعلومات القديمة أو إغلاق الملاعب.",
-    "termsAffiliateDesc": "يشارك هذا الموقع في برامج تابعة بما فيها Golf Breaks وBooking.com وSykes Cottages. العمولات المكتسبة تساعد في تمويل العملية التحريرية دون أي تكلفة على المستخدمين.",
     "copyrightTitle": "حقوق النشر",
     "copyrightDesc": "جميع المحتوى التحريري © 2026 SeftonLinks.com. بيانات الملاعب (الباري والتقييمات والمنحدر) هي بيانات واقعية وغير خاضعة لحقوق النشر. لا تعيد نشر المحتوى التحريري دون إذن كتابي."
   },

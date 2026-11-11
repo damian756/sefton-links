@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Calendar, Trophy, MapPin, Bed, Utensils, ChevronRight, Star } from 'lucide-react';
+import { Calendar, MapPin, Bed, Utensils, ChevronRight, Star } from 'lucide-react';
 import { SEFTON_ITINERARIES } from '@/lib/courses';
 
 type Days = 2 | 3 | 5;
@@ -204,21 +204,12 @@ export default function GolfBreakPlanner({ locale }: { locale: string }) {
             </div>
 
             {/* Cost & CTA */}
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-white/6 rounded-xl p-4">
+            <div className="bg-white/6 rounded-xl p-4">
               <div>
                 <div className="text-[#D4AE7A] text-xs uppercase tracking-wider mb-1">Estimated Cost</div>
                 <div className="text-white font-bold text-lg">{result.estimatedCost}</div>
                 <div className="text-white/60 text-xs mt-1 leading-relaxed">{result.costNote}</div>
               </div>
-              <a
-                href="https://www.golfbreaks.com/en-gb/united-kingdom/england/lancashire/"
-                target="_blank"
-                rel="noopener noreferrer sponsored"
-                className="flex items-center gap-2 bg-[#B8912A] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#D4AE7A] transition-colors text-sm shrink-0"
-              >
-                <Trophy size={15} />
-                Book via Golf Breaks ↗
-              </a>
             </div>
           </div>
         </div>

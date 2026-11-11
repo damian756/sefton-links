@@ -22,7 +22,6 @@
     "accommodationTitle": "Golfboende nära Royal Birkdale, Southport",
     "accommodationDesc": "Var du bor nära Royal Birkdale och Sefton Coast-banorna. Hotell, B&B och semesterhus i Southport och Birkdale — sorterade efter avstånd, med information om tillgänglighet under The Open Championship 2026.",
     "contactTitle": "Kontakta SeftonLinks",
-    "contactDesc": "Kontakta SeftonLinks — frågor, korrigeringar, utvalda listningar och affärsfrågor.",
     "course": {
       "royal-birkdale": {
         "title": "Royal Birkdale Golf Club — Besöksguide, Green Fees & Starttider"
@@ -54,9 +53,7 @@
     "conditionsTitle": "Baneförhållanden",
     "conditionsDesc": "Liveuppdateringar om spelförhållanden längs hela Sefton Coast",
     "plannerTitle": "Golfreseplaneringare",
-    "plannerDesc": "Ange dagar, budget och handicap — vi bygger ditt program",
-    "affiliateCta": "Boka Din Golfresa",
-    "affiliateDesc": "Starttider, hotell och paket via Golf Breaks"
+    "plannerDesc": "Ange dagar, budget och handicap — vi bygger ditt program"
   },
   "homePage": {
     "bannerLink": "→ Fullständig Guide",
@@ -92,10 +89,6 @@
     "tool6Title": "Golfreseitinerärer",
     "tool6Desc": "Färdiga 2-, 3- och 5-dagarsprogram med baneordning, boendeförslag och middagsrekommendationer. Från budgetresa till mästerskap.",
     "tool6Cta": "Bläddra bland Program",
-    "affiliateCtaTitle": "Redo att Boka Din Sefton Coast-resa?",
-    "affiliateCtaBtn1": "Se Golf Breaks-paket ↗",
-    "affiliateCtaBtn2": "Bygg Ditt Eget Program",
-    "affiliateCtaDisclaimer": "Golf Breaks affiliate-länk — vi får en provision utan extra kostnad för dig.",
     "editorialTitle": "Varför Sefton Coast?",
     "editorialPara1": "Det finns linksgolfkorridorer i Skottland — St Andrews, Carnoustie, Muirfield — som får all uppmärksamhet. Sefton Coast förbises. Det är precis den möjligheten varje besökande golfare bör gripa.",
     "featureCard1Title": "Lätt att Nå",
@@ -172,10 +165,6 @@
     "majorHistoryTitle": "Major Championship-historia",
     "afterRoundTitle": "Efter Din Runda",
     "restaurantGuideLink": "Fullständig restaurangguide — SouthportGuide.co.uk",
-    "bookRoundTitle": "Boka Din Runda",
-    "bookRoundDesc": "Boka starttider och golfpaket på {courseName} via Golf Breaks — Storbritanniens ledande golfresespesialist.",
-    "golfBreaksBtn": "Se Golf Breaks-paket",
-    "bookDirectLink": "Eller boka direkt på {courseName}",
     "conditionsWidgetTitle": "Dagens Förhållanden",
     "conditionsWidgetDesc": "Kolla aktuella spelförhållanden innan du åker.",
     "conditionsWidgetLink": "Se baneförhållanden",
@@ -290,10 +279,6 @@
     "officialLink2Label": "Royal Birkdale Golf Club",
     "officialLink3Label": "R&A — Biljettlotteri",
     "officialLink4Label": "Southport Turistinformation",
-    "bookAccomTitle": "Boka Boende",
-    "bookAccomDesc": "Vänta inte. Open-veckan boende tar slut snabbt. Boka via Booking.com för bredast urval och flexibel avbokning.",
-    "bookAccomBtn": "Sök Hotell i Southport ↗",
-    "bookAccomAffiliate": "Booking.com affiliate-länk",
     "playBirkdaleLink": "Royal Birkdale baneguide"
   },
   "teeTimesPage": {
@@ -332,7 +317,6 @@
     "distanceFromBirkdale": "från Royal Birkdale",
     "approxLabel": "ca.",
     "golferFeaturesLabel": "Golfarevänliga Faciliteter",
-    "checkAvailabilityBtn": "Kolla Tillgänglighet ↗",
     "tipsTitle": "Boende-tips för Golfare",
     "tip1": "Boka tisdag–torsdags-starttider om du bor där under veckan — bättre tillgänglighet på alla banor och ofta lugnare på banan.",
     "tip2": "Fråga om bagageförvaring när du bokar. Bra golfhotell har ett dedikerat torrt förvaringsutrymme snarare än att lämna bagar i rummet över natten.",
@@ -387,7 +371,6 @@
     "whereToStayLabel": "Boende",
     "diningLabel": "Restauranger",
     "estimatedGreenFeesLabel": "Uppskattade Green Fees",
-    "bookViaGolfBreaksBtn": "Boka via Golf Breaks ↗",
     "howToPlanTitle": "Hur du Planerar en Sefton Coast-golfresa",
     "howToPlanPara1": "Sefton Coast-banorna ligger tillräckligt tätt för att en tvådagarstur ska kunna täcka två eller tre rundor utan besvärlig logistik. Royal Birkdale och Hillside ligger bokstavligen sida vid sida — du skulle nästan kunna gå mellan dem. Southport & Ainsdale är tre mile längre söderut. Formby är fem mile från Birkdale via A565.",
     "howToPlanPara2": "För flerdagarsresor, välj Southport som bas. Staden har det bredaste hotellutbudet, och allt från Lord Street till Birkdale är inom taxi-avstånd. Vill du ha lugnare och billigare boende är Formby village 20 minuter söderut ett bra alternativ med vettiga B&B-möjligheter."
@@ -414,11 +397,8 @@
   },
   "contactPage": {
     "pageTitle": "Kontakt",
-    "pageDesc": "Frågor, korrigeringar, utvalda listningar och affärsfrågor.",
     "getInTouchTitle": "Ta Kontakt",
     "generalEnquiriesLabel": "Allmänna frågor:",
-    "featuredListingsLabel": "Utvalda listningar:",
-    "featuredListingsText": "Golfklubbar, golfboende, caddie-tjänster och restauranger kan fråga om utvald placering. Mejla med dina verksamhetsuppgifter.",
     "dataCorrectionsLabel": "Datakorrigeringar:",
     "dataCorrectionsText": "Om banedata — green fees, besökspolicy, öppettider — är felaktig, meddela oss. Vi uppdaterar omgående.",
     "pressMediaLabel": "Press & media:",
@@ -434,14 +414,11 @@
     "privacyIntro": "SeftonLinks.com drivs av Churchtown Media Ltd. Vi tar din integritet på allvar.",
     "analyticsTitle": "Analys",
     "analyticsDesc": "Vi använder Plausible Analytics (integritetsfokuserad, GDPR-kompatibel, inga cookies, ingen persondata insamlad) och Microsoft Clarity (sessionslinspelningar — anonymiserade). Ingetdera kräver cookie-samtycke under GDPR när det är korrekt konfigurerat.",
-    "affiliateLinksTitle": "Affiliate-länkar",
-    "privacyAffiliateDesc": "Vissa länkar på den här sidan är affiliate-länkar (Golf Breaks, Booking.com, Sykes Cottages). Dessa är tydligt märkta. Att klicka på dem kan ge SeftonLinks.com en provision utan extra kostnad för dig.",
     "privacyContactTitle": "Kontakt",
     "privacyContactText": "Integritetsfrågor:",
     "termsIntro": "Genom att använda SeftonLinks.com godkänner du dessa villkor. Sidan drivs av Churchtown Media Ltd.",
     "infoAccuracyTitle": "Informationsnoggrannhet",
     "infoAccuracyDesc": "Green fees, besökspolicyer, öppettider och banedata tillhandahålls i god tro och uppdateras regelbundet. Verifiera alltid direkt med klubben innan resan. SeftonLinks tar inget ansvar för inaktuell information eller banstängningar.",
-    "termsAffiliateDesc": "Den här sidan deltar i affiliate-program inklusive Golf Breaks, Booking.com och Sykes Cottages. Intjänade provisioner hjälper till att finansiera det redaktionella arbetet utan kostnad för användarna.",
     "copyrightTitle": "Upphovsrätt",
     "copyrightDesc": "Allt redaktionellt innehåll © 2026 SeftonLinks.com. Banedata (par, ratings, slope) är faktauppgifter och kan inte upphovsrättsskyddas. Reproducera inte redaktionellt innehåll utan skriftligt tillstånd."
   },

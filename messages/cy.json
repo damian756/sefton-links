@@ -22,7 +22,6 @@
     "accommodationTitle": "Llety Golff ger Royal Birkdale, Southport",
     "accommodationDesc": "Ble i aros ger Royal Birkdale a chyrsiau golff Arfordir Sefton. Gwestai, B&B a bythynnod gwyliau yn Southport a Birkdale — wedi'u trefnu yn ôl pellter, gyda nodiadau ar argaeledd The Open Championship 2026.",
     "contactTitle": "Cysylltu â SeftonLinks",
-    "contactDesc": "Cwestiynau, cywiriadau cwrs, rhestrau dan sylw a ymholiadau busnes.",
     "course": {
       "royal-birkdale": {
         "title": "Royal Birkdale Golf Club — Canllaw Ymwelwyr, Ffioedd Green ac Amseroedd Tee"
@@ -54,9 +53,7 @@
     "conditionsTitle": "Cyflwr y Cwrs",
     "conditionsDesc": "Diweddariadau byw ar gyflwr cyrsiau ar draws Arfordir Sefton",
     "plannerTitle": "Cynlluniwr Gwyliau Golff",
-    "plannerDesc": "Dywedwch wrthym am eich dyddiau, cyllideb a handicap — byddwn yn adeiladu eich amserlen",
-    "affiliateCta": "Archebu Eich Gwyliau Golff",
-    "affiliateDesc": "Amseroedd tee, gwestai a phecynnau drwy Golf Breaks"
+    "plannerDesc": "Dywedwch wrthym am eich dyddiau, cyllideb a handicap — byddwn yn adeiladu eich amserlen"
   },
   "homePage": {
     "bannerLink": "→ Canllaw Llawn",
@@ -92,10 +89,6 @@
     "tool6Title": "Amserlenni Gwyliau Golff",
     "tool6Desc": "Amserlenni parod 2, 3 a 5 diwrnod gyda threfn cwrs, awgrymiadau llety a bwyta ôl-rownd. O gyllideb i bencampwriaeth.",
     "tool6Cta": "Pori Amserlenni",
-    "affiliateCtaTitle": "Yn Barod i Archebu Eich Taith Arfordir Sefton?",
-    "affiliateCtaBtn1": "Pori Pecynnau Golf Breaks ↗",
-    "affiliateCtaBtn2": "Adeiladu Eich Amserlen Eich Hun",
-    "affiliateCtaDisclaimer": "Dolen gyswllt Golf Breaks — rydym yn ennill comisiwn heb unrhyw gost ychwanegol i chi.",
     "editorialTitle": "Pam Arfordir Sefton?",
     "editorialPara1": "Mae corridorau golff dolenni yn yr Alban — St Andrews, Carnoustie, Muirfield — yn cael y sylw. Mae Arfordir Sefton yn cael ei anwybyddu. Dyna'r cyfle i bob golfwr ymwelwyr.",
     "featureCard1Title": "Hawdd Cyrraedd",
@@ -172,10 +165,6 @@
     "majorHistoryTitle": "Hanes Pencampwriaeth Fawr",
     "afterRoundTitle": "Ar Ôl Eich Rownd",
     "restaurantGuideLink": "Canllaw bwytai llawn — SouthportGuide.co.uk",
-    "bookRoundTitle": "Archebu Eich Rownd",
-    "bookRoundDesc": "Archebwch amseroedd tee a phecynnau golff yn {courseName} drwy Golf Breaks — prif arbenigwr gwyliau golff y DU.",
-    "golfBreaksBtn": "Gweld Pecynnau Golf Breaks",
-    "bookDirectLink": "Neu archebwch yn uniongyrchol yn {courseName}",
     "conditionsWidgetTitle": "Cyflwr Heddiw",
     "conditionsWidgetDesc": "Gwiriwch amodau chwarae cyfredol cyn mynd.",
     "conditionsWidgetLink": "Gweld cyflwr y cwrs",
@@ -290,10 +279,6 @@
     "officialLink2Label": "Royal Birkdale Golf Club",
     "officialLink3Label": "R&A — Balot Tocynnau",
     "officialLink4Label": "Gwybodaeth Ymwelwyr Southport",
-    "bookAccomTitle": "Archebu Llety",
-    "bookAccomDesc": "Peidiwch â gadael hyn. Mae llety wythnos The Open yn archebu'n gyflym. Archebwch drwy Booking.com am y dewis ehangaf a chanslo hyblyg.",
-    "bookAccomBtn": "Chwilio Gwestai Southport ↗",
-    "bookAccomAffiliate": "Dolen gyswllt Booking.com",
     "playBirkdaleLink": "Canllaw cwrs Royal Birkdale"
   },
   "teeTimesPage": {
@@ -332,7 +317,6 @@
     "distanceFromBirkdale": "o Royal Birkdale",
     "approxLabel": "tua",
     "golferFeaturesLabel": "Nodweddion Cyfeilgar i Olfwyr",
-    "checkAvailabilityBtn": "Gwirio Argaeledd ↗",
     "tipsTitle": "Awgrymiadau Llety i Ymwelwyr Golff",
     "tip1": "Archebwch amseroedd tee o ddydd Mawrth i ddydd Iau os ydych chi'n aros yn ystod yr wythnos — argaeledd gwell yn yr holl gyrsiau ac yn aml yn dawelach ar y cwrs.",
     "tip2": "Gofynnwch am storio clybiau/bagiau wrth archebu. Bydd gwestai golff da yn cael ystafell storio sych bwrpasol yn hytrach na gadael bagiau yn eich ystafell dros nos.",
@@ -387,7 +371,6 @@
     "whereToStayLabel": "Ble i Aros",
     "diningLabel": "Bwyta",
     "estimatedGreenFeesLabel": "Ffioedd Green Amcangyfrifedig",
-    "bookViaGolfBreaksBtn": "Archebu drwy Golf Breaks ↗",
     "howToPlanTitle": "Sut i Gynllunio Taith Golff Arfordir Sefton",
     "howToPlanPara1": "Mae cyrsiau Arfordir Sefton wedi'u clystyru'n ddigon agos fel y gall taith dau ddiwrnod gwmpasu dwy neu dair rownd heb logisteg anodd. Mae Royal Birkdale a Hillside yn llythrennol cyfagos — gallech gerdded rhyngddynt. Mae Southport & Ainsdale dair milltir ymhellach i'r de. Mae Formby bum milltir o Birkdale drwy'r A565.",
     "howToPlanPara2": "Ar gyfer teithiau aml-ddiwrnod, sefydlwch eich hun yn Southport. Gan y dref y dewis lletaf o westai, ac mae popeth o Lord Street i Birkdale o fewn pellter tacsi. Os ydych chi am lety tawelach a rhatach, mae pentref Formby 20 munud i'r de ac mae dewisiadau B&B dda yno."
@@ -414,11 +397,8 @@
   },
   "contactPage": {
     "pageTitle": "Cysylltu",
-    "pageDesc": "Cwestiynau, cywiriadau, rhestrau dan sylw ac ymholiadau busnes.",
     "getInTouchTitle": "Cysylltu â Ni",
     "generalEnquiriesLabel": "Ymholiadau cyffredinol:",
-    "featuredListingsLabel": "Rhestrau dan sylw:",
-    "featuredListingsText": "Gall clybiau golff, llety golff, gwasanaethau caddie a bwyta ôl-rownd ymholi am leoliad dan sylw. E-bostiwch gyda manylion eich busnes.",
     "dataCorrectionsLabel": "Cywiriadau data:",
     "dataCorrectionsText": "Os yw unrhyw ddata cwrs — ffioedd green, polisi ymwelwyr, oriau agor — yn anghywir, rhowch wybod i ni. Rydym yn diweddaru'n brydlon.",
     "pressMediaLabel": "Y Wasg a'r Cyfryngau:",
@@ -434,14 +414,11 @@
     "privacyIntro": "Caiff SeftonLinks.com ei weithredu gan Churchtown Media Ltd. Rydym yn cymryd eich preifatrwydd o ddifri.",
     "analyticsTitle": "Dadansoddeg",
     "analyticsDesc": "Rydym yn defnyddio Plausible Analytics (preifatrwydd yn gyntaf, cydymffurfio â GDPR, dim cwcis, dim data personol yn cael ei gasglu) a Microsoft Clarity (recordiadau sesiwn — dienw). Nid oes angen cydsyniad cwcis ar y naill na'r llall o dan GDPR pan fo'n cael ei ffurfweddu'n gywir.",
-    "affiliateLinksTitle": "Dolenni Cyswllt",
-    "privacyAffiliateDesc": "Mae rhai dolenni ar y wefan hon yn ddolenni cyswllt (Golf Breaks, Booking.com, Sykes Cottages). Maent wedi'u labelu'n glir. Gall clicio arnynt arwain at gomisiwn i SeftonLinks.com heb unrhyw gost ychwanegol i chi.",
     "privacyContactTitle": "Cysylltu",
     "privacyContactText": "Ymholiadau preifatrwydd:",
     "termsIntro": "Drwy ddefnyddio SeftonLinks.com rydych chi'n cytuno i'r telerau hyn. Caiff y wefan ei gweithredu gan Churchtown Media Ltd.",
     "infoAccuracyTitle": "Cywirdeb Gwybodaeth",
     "infoAccuracyDesc": "Mae ffioedd green, polisïau ymwelwyr, oriau agor a data cwrs yn cael eu darparu'n ddidwyll ac yn cael eu diweddaru'n rheolaidd. Gwiriwch yn uniongyrchol gyda'r clwb bob amser cyn teithio. Nid yw SeftonLinks yn derbyn unrhyw atebolrwydd am wybodaeth hen ffasiwn neu gau cyrsiau.",
-    "termsAffiliateDesc": "Mae'r wefan hon yn cymryd rhan mewn rhaglenni cyswllt gan gynnwys Golf Breaks, Booking.com a Sykes Cottages. Mae comisiynau a enillir yn helpu i ariannu'r weithrediad golygyddol heb unrhyw gost i ddefnyddwyr.",
     "copyrightTitle": "Hawlfraint",
     "copyrightDesc": "Pob cynnwys golygyddol © 2026 SeftonLinks.com. Mae data cwrs (par, graddfeydd, llethr) yn ffeithiol ac nid yw'n destun hawlfraint. Peidiwch ag atgynhyrchu cynnwys golygyddol heb ganiatâd ysgrifenedig."
   },
