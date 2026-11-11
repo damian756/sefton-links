@@ -41,7 +41,6 @@
   "home": {
     "heroCtaCourses": "코스 살펴보기",
     "coursesTitle": "세프턴 코스트 코스",
-    "coursesSubtitle": "수 마일 반경 내에 모여 있는 잉글랜드 최고의 링크스 코스 6개",
     "featuresTitle": "링크스 골프 여행 계획하기",
     "conditionsTitle": "코스 컨디션",
     "conditionsDesc": "세프턴 코스트 전 코스 실시간 컨디션 현황",
@@ -83,8 +82,6 @@
     "editorialPara1": "링크스 골프의 성지라 하면 스코틀랜드가 주목을 받습니다 — 세인트앤드루스, 카누스티, 뮤어필드. 세프턴 코스트는 그 그늘에 가려져 있습니다. 그것이 바로 방문 골퍼에게는 기회입니다.",
     "featureCard1Title": "편리한 접근성",
     "featureCard1Text": "리버풀 공항에서 45분, 맨체스터에서 60분. 리버풀 시내에서 사우스포트까지 직행 기차 운행.",
-    "featureCard2Title": "방문자 친화적",
-    "featureCard2Text": "6개 코스 중 4개가 적극적으로 방문자를 환영합니다. 동급 품질 스코틀랜드 코스보다 우수한 접근성.",
     "southportGuideDesc": "사우스포트 호텔, 레스토랑, 관광 정보 — 세프턴 코스트 골프 여행의 거점 도시 가이드.",
     "formbyGuideDesc": "Formby 완벽 가이드 — 내셔널 트러스트 소나무숲, 붉은 다람쥐, 라운드 사이 방문할 마을."
   },
@@ -228,9 +225,6 @@
   "accommodationPage": {
     "headerBadge": "골퍼 전용 숙박",
     "pageTitle": "골퍼를 위한 숙박 시설",
-    "openCalloutTitle": "디 오픈 챔피언십 2026 숙박 예약하시나요?",
-    "openCalloutDesc": "디 오픈 기간(2026년 7월 14~20일) Royal Birkdale 근처 숙박 시설은 12~18개월 전에 마감됩니다. 2026년 3월 이후 이 글을 읽고 계신다면 5마일 이내 선택지가 매우 제한적입니다. 리버풀 시내, Ormskirk, Wigan도 대안으로 확인하세요.",
-    "openCalloutLink": "디 오픈 2026 숙박 가이드",
     "distanceFromBirkdale": "Royal Birkdale에서",
     "approxLabel": "약",
     "golferFeaturesLabel": "골퍼 친화 시설",
@@ -308,7 +302,6 @@
     "pageTitle": "코스 컨디션",
     "aboutLinksTitle": "링크스 컨디션에 대하여",
     "aboutLinksPara1": "링크스 골프 컨디션은 파크랜드 골프와 근본적으로 다릅니다. 주요 변수는 풍향과 풍속, 최근 강수량과 배수 상태, 잔디 단단함입니다. 단단하고 건조한 코스와 젖고 부드러운 코스는 어프로치 샷의 멈춤 거리, 티샷 런, 치핑의 창의성에서 완전히 다릅니다.",
-    "aboutLinksPara2": "세프턴 코스트 코스들은 모래 위에 지어져 배수 설계가 탁월합니다. 폭우 후에도 Royal Birkdale과 Hillside는 내륙 코스보다 빠르게 회복됩니다. Southport & Ainsdale과 West Lancashire는 지형 특성상 물이 빠지는 데 약간 더 오래 걸릴 수 있습니다. Formby의 숲 구간이 가장 빨리 건조해집니다.",
     "aboutLinksPara3": "풍속과 풍향은 잉글랜드 어느 곳보다 이곳에서 더 중요합니다. Royal Birkdale에 부는 주된 남서풍이 루팅 설계의 '자연스러운' 코스 경험을 만들어냅니다. 내륙에서 부는 동풍은 완전히 다른 코스를 만듭니다. 이 가이드에는 Royal Birkdale 전용 풍향 키가 포함되어 있습니다.",
     "conditionsDisclaimer": "컨디션 데이터는 대략적이며 수동으로 관리됩니다. 방문 전 반드시 각 클럽에 확인하세요. SeftonLinks는 이 페이지와 다른 코스 폐쇄 또는 컨디션에 대해 어떠한 책임도 지지 않습니다."
   },
@@ -370,21 +363,5 @@
     "courseWestLancs": "West Lancashire",
     "courseSouthportAinsdale": "Southport & Ainsdale",
     "courseOldLinks": "Southport Old Links"
-  },
-  "courseData": {
-    "west-lancashire": {
-      "tagline": "잉글랜드에서 가장 오래된 클럽 중 하나 — 순수한 링크스 골프",
-      "visitorPolicy": "대부분의 평일 방문자 환영. 주말은 제한적 — 사전에 전화로 확인하세요."
-    },
-    "southport-ainsdale": {
-      "tagline": "라이더컵 역사와 합리적인 가격의 진정한 링크스 매력",
-      "description": "Southport & Ainsdale(현지에서는 S&A로 알려진)은 1933년과 1937년에 라이더컵을 개최했으며, 이 영예를 가진 비왕실 코스 중에서도 희귀한 존재입니다. 그 역사만으로도 방문할 가치가 있지만, 코스 자체도 자체적인 실력으로 그 명성에 부응합니다.\n\nS&A는 Hillside와 Formby 사이에 위치하며 세프턴 코스트 최고를 특징짓는 해안 사구 지형을 공유합니다. 처음 몇 홀은 비교적 온화해 방문자에게 잘못된 안도감을 줍니다 — 코스는 중반부에서 상당히 어려워지며, 몇몇 홀은 서풍에 완전히 노출됩니다.\n\n그린피는 진정으로 역사적이고 도전적인 링크스치고 해안에서 가장 합리적인 편입니다. 여러 날 여행을 짜는 방문자에게 S&A는 Hillside나 West Lancashire와 조합해 합리적인 비용으로 알찬 2일 일정을 만들기에 좋습니다.",
-      "visitorPolicy": "대부분의 평일 방문자 환영. 주말은 사전 협의. 소사이어티 환영."
-    },
-    "southport-old-links": {
-      "tagline": "숨겨진 가치 — 해안에서 가장 합리적인 가격의 정통 링크스",
-      "description": "Southport Old Links는 조용한 존재입니다. 사우스포트 북단 Churchtown에 자리하며, 버킷리스트 일정에서 종종 간과되는 클럽입니다 — 그것이 바로 플레이할 가치가 있는 이유입니다.\n\n1901년 설립되어 진정한 링크스 지형에 자리한 Old Links는 그린피 이상의 경험을 제공합니다. 코스는 세프턴 코스트 이웃들보다 짧지만 해안 바람 속에서는 카드보다 길게 느껴지며, 벙커 배치는 올바른 링크스 샷을 보상하도록 사려 깊게 설계되어 있습니다.\n\n4~5라운드의 고볼륨 여행을 짜는 방문자에게 Old Links는 진정한 링크스 골프를 제공하면서 지갑 부담을 완화해 줍니다. 또한 핸디캡 증명서 없는 방문자에게 가장 개방적인 코스로, 핸디캡이 높은 골퍼나 캐주얼한 플레이어의 자연스러운 선택입니다.",
-      "visitorPolicy": "주중 대부분의 날 방문자 대환영. 해안에서 가장 접근하기 쉬운 클럽."
-    }
   }
 }

@@ -41,7 +41,6 @@
   "home": {
     "heroCtaCourses": "Scopri i Campi",
     "coursesTitle": "I Campi della Sefton Coast",
-    "coursesSubtitle": "Sei tra i migliori campi links d'Inghilterra, tutti a pochi chilometri l'uno dall'altro",
     "featuresTitle": "Pianifica il tuo Viaggio di Golf Links",
     "conditionsTitle": "Condizioni del Campo",
     "conditionsDesc": "Aggiornamenti in tempo reale sulle condizioni dei campi della Sefton Coast",
@@ -83,8 +82,6 @@
     "editorialPara1": "Esistono corridoi di golf links in Scozia — St Andrews, Carnoustie, Muirfield — che catturano tutta l'attenzione. La Sefton Coast resta in ombra. Ed è esattamente questa la grande opportunità per il golfista visitatore.",
     "featureCard1Title": "Facile da Raggiungere",
     "featureCard1Text": "45 min dall'aeroporto di Liverpool, 60 min da Manchester. Treno diretto per Southport dal centro di Liverpool.",
-    "featureCard2Title": "Aperto ai Visitatori",
-    "featureCard2Text": "Quattro dei sei campi accolgono attivamente i visitatori. Accesso migliore rispetto ai campi di qualità equivalente in Scozia.",
     "southportGuideDesc": "Hotel, ristoranti e cosa fare a Southport — la tua base per un viaggio di golf sulla Sefton Coast.",
     "formbyGuideDesc": "La guida completa a Formby — le pinete del National Trust, gli scoiattoli rossi e il villaggio tra un giro e l'altro."
   },
@@ -228,9 +225,6 @@
   "accommodationPage": {
     "headerBadge": "Soggiorni Golfer-Friendly",
     "pageTitle": "Alloggio per Golfisti",
-    "openCalloutTitle": "Stai Prenotando per The Open Championship 2026?",
-    "openCalloutDesc": "L'alloggio vicino a Royal Birkdale durante la settimana di The Open (14–20 luglio 2026) si esaurisce con 12–18 mesi di anticipo. Se stai leggendo questo dopo marzo 2026, le opzioni entro 8 km saranno molto limitate. Considera il centro di Liverpool, Ormskirk e Wigan come alternative.",
-    "openCalloutLink": "Guida alloggio per The Open 2026",
     "distanceFromBirkdale": "da Royal Birkdale",
     "approxLabel": "circa",
     "golferFeaturesLabel": "Servizi per Golfisti",
@@ -308,7 +302,6 @@
     "pageTitle": "Condizioni del Campo",
     "aboutLinksTitle": "Le Condizioni del Golf Links",
     "aboutLinksPara1": "Le condizioni di un campo links sono fondamentalmente diverse da quelle di un campo parkland. Le variabili chiave sono la direzione e la forza del vento, le precipitazioni recenti e il drenaggio, e la compattezza del terreno. Un campo compatto e asciutto si gioca in modo completamente diverso da uno bagnato e morbido — i colpi di avvicinamento non si fermano, la pallina corre di più dal tee e il gioco corto diventa più creativo.",
-    "aboutLinksPara2": "I campi della Sefton Coast drenano bene per progettazione — sono costruiti sulla sabbia. Anche dopo forti piogge, Royal Birkdale e Hillside si riprendono più velocemente dei campi interni. Southport & Ainsdale e West Lancashire possono trattenere l'acqua leggermente più a lungo per via della loro conformazione. Le zone boschive di Formby sono quelle che si asciugano più in fretta.",
     "aboutLinksPara3": "La velocità e la direzione del vento contano qui più che in quasi qualsiasi altro posto in Inghilterra. Il vento predominante da sud-ovest a Royal Birkdale crea l'esperienza naturale per cui il percorso è stato progettato. Un vento da est proveniente dall'entroterra produce un campo completamente diverso. Questa guida include una chiave di direzione del vento specifica per Royal Birkdale.",
     "conditionsDisclaimer": "I dati sulle condizioni sono approssimativi e gestiti manualmente. Verifica sempre con il singolo club prima di partire. SeftonLinks non accetta alcuna responsabilità per chiusure del campo o condizioni diverse da quelle indicate in questa pagina."
   },
@@ -370,21 +363,5 @@
     "courseWestLancs": "West Lancashire",
     "courseSouthportAinsdale": "Southport & Ainsdale",
     "courseOldLinks": "Southport Old Links"
-  },
-  "courseData": {
-    "west-lancashire": {
-      "tagline": "Uno dei club più antichi d'Inghilterra — golf links nella sua forma più pura",
-      "visitorPolicy": "Visitatori benvenuti la maggior parte dei giorni feriali. Weekend limitati — telefona prima di presentarti."
-    },
-    "southport-ainsdale": {
-      "tagline": "L'eredità della Ryder Cup e il carattere links autentico a un prezzo accessibile",
-      "description": "Southport & Ainsdale — conosciuto localmente come S&A — ha ospitato la Ryder Cup nel 1933 e nel 1937, rendendolo uno dei pochissimi campi non Reali con questo onore nel proprio palmarès. La storia da sola vale un giro, ma il campo merita la sua reputazione anche per propri meriti.\n\nS&A si trova tra Hillside e Formby e condivide il terreno di dune costiere che caratterizza il meglio della Sefton Coast. Le prime buche sono relativamente benevole, il che dà ai visitatori un falso senso di sicurezza — il campo diventa notevolmente più impegnativo nel tratto centrale, con diverse buche genuinamente esposte al vento occidentale prevalente.\n\nI green fee sono tra i più accessibili della costa per quello che è, in modo autentico, un links storico e impegnativo. Per i visitatori che costruiscono un viaggio di più giorni, S&A si abbina perfettamente a Hillside o a West Lancashire per un solido itinerario di due giorni a costo ragionevole.",
-      "visitorPolicy": "Visitatori benvenuti la maggior parte dei giorni feriali. Weekend su accordo. Aperto alle società."
-    },
-    "southport-old-links": {
-      "tagline": "Il miglior rapporto qualità-prezzo — un links autentico al prezzo più accessibile della costa",
-      "description": "Southport Old Links è il tranquillo di famiglia. Nascosto a Churchtown, nell'estremità nord di Southport, è il tipo di club che viene ignorato negli itinerari di riferimento — e questa è esattamente la ragione per cui vale la pena giocarlo.\n\nFondato nel 1901 su un terreno genuinamente links, Old Links offre un giro che rende molto al di sopra di quanto il suo green fee lascerebbe supporre. Il campo è più corto dei suoi vicini sulla Sefton Coast, ma gioca più lungo di quanto indica il cartellino con la brezza costiera, e il bunkerismo è pensato per premiare il corretto gioco links.\n\nPer i visitatori che organizzano un viaggio ad alto volume — quattro o cinque giri — Old Links fornisce un gradito sollievo per il portafoglio continuando a offrire golf links autentico. È anche il club più accogliente per i visitatori senza certificato di handicap, rendendolo la scelta naturale per i giocatori con alto handicap o per chi gioca in modo più occasionale.",
-      "visitorPolicy": "Molto accogliente verso i visitatori la maggior parte dei giorni della settimana. Il club più accessibile della costa."
-    }
   }
 }

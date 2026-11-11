@@ -41,7 +41,6 @@
   "home": {
     "heroCtaCourses": "探索球场",
     "coursesTitle": "赛夫顿海岸球场",
-    "coursesSubtitle": "六座英格兰顶级链球场，彼此相距不过数英里",
     "featuresTitle": "规划您的链球高尔夫之旅",
     "conditionsTitle": "球场状况",
     "conditionsDesc": "赛夫顿海岸所有球场实时状况更新",
@@ -83,8 +82,6 @@
     "editorialPara1": "提到链球式高尔夫圣地，人们首先想到苏格兰 — 圣安德鲁斯、卡诺斯蒂、穆菲尔德。赛夫顿海岸常常被忽视。这恰恰是每位访客球手的机会。",
     "featureCard1Title": "交通便利",
     "featureCard1Text": "距利物浦机场45分钟，距曼彻斯特60分钟。利物浦市中心直达索斯波特的铁路。",
-    "featureCard2Title": "访客友好",
-    "featureCard2Text": "六座球场中有四座积极欢迎访客。比苏格兰同等品质球场更好的开放程度。",
     "southportGuideDesc": "索斯波特的酒店、餐厅及旅游资讯 — 赛夫顿海岸高尔夫之旅的理想基地。",
     "formbyGuideDesc": "Formby 完整指南 — 国家信托松林、红松鼠，以及两轮之间值得探访的村庄。"
   },
@@ -228,9 +225,6 @@
   "accommodationPage": {
     "headerBadge": "高尔夫友好住宿",
     "pageTitle": "高尔夫球手住宿",
-    "openCalloutTitle": "为英国公开赛 2026 预订住宿？",
-    "openCalloutDesc": "英国公开赛举办周（2026年7月14至20日）Royal Birkdale 附近的住宿在12至18个月前便会订满。如果您在2026年3月后阅读此文，5英里内的选择将极为有限。请参考利物浦市中心、Ormskirk 和 Wigan 作为备选。",
-    "openCalloutLink": "英国公开赛 2026 住宿指南",
     "distanceFromBirkdale": "距 Royal Birkdale",
     "approxLabel": "约",
     "golferFeaturesLabel": "高尔夫球手友好设施",
@@ -308,7 +302,6 @@
     "pageTitle": "球场状况",
     "aboutLinksTitle": "关于链球场状况",
     "aboutLinksPara1": "链球场状况与园林式球场根本不同。关键变量是风向与风力、近期降水量及排水状况，以及草皮坚实程度。坚实干燥的球场与湿润柔软的球场打法截然不同 — 近攻球停球距离、发球台出球距离及短切球的创意性都大相径庭。",
-    "aboutLinksPara2": "赛夫顿海岸球场建在沙地上，排水设计出色。即便大雨过后，Royal Birkdale 和 Hillside 通常比内陆球场恢复更快。Southport & Ainsdale 和 West Lancashire 因地形关系积水消退略慢。Formby 林地部分干燥最快。",
     "aboutLinksPara3": "风速与风向在这里比英格兰几乎任何地方都更为关键。Royal Birkdale 盛行的西南风造就了球场设计所针对的「自然」打球体验。来自陆地的东风则带来截然不同的球场感受。本指南特别附有 Royal Birkdale 专用风向说明。",
     "conditionsDisclaimer": "状况数据为大致信息，以手动方式维护。出发前请务必向各球会确认。SeftonLinks 对与本页面不符的球场关闭或状况不承担任何责任。"
   },
@@ -370,21 +363,5 @@
     "courseWestLancs": "West Lancashire",
     "courseSouthportAinsdale": "Southport & Ainsdale",
     "courseOldLinks": "Southport Old Links"
-  },
-  "courseData": {
-    "west-lancashire": {
-      "tagline": "英格兰最古老的球会之一 — 最纯粹的链球式高尔夫",
-      "visitorPolicy": "大多数工作日欢迎访客。周末有限制 — 请提前致电确认。"
-    },
-    "southport-ainsdale": {
-      "tagline": "莱德杯历史底蕴与亲民价格兼具的正统链球场",
-      "description": "Southport & Ainsdale（当地人称 S&A）曾于1933年及1937年举办莱德杯，是极少数拥有此殊荣的非皇家冠名球场之一。仅凭这段历史便值得专程一游，而球场本身的实力同样足以支撑其声誉。\n\nS&A 位于 Hillside 和 Formby 之间，共享赛夫顿海岸精华的海岸沙丘地形。前几个球洞相对温和，给访客一种错误的安全感 — 球场在中段显著提升难度，数个球洞完全暴露于主导西风之下。\n\n以真正历史悠久、充满挑战的链球场而言，此处果岭费是海岸线上最亲民的之一。对于安排多日行程的访客，S&A 与 Hillside 或 West Lancashire 搭配，可以合理预算实现精彩的两天行程。",
-      "visitorPolicy": "大多数工作日欢迎访客。周末须预先安排。欢迎球队。"
-    },
-    "southport-old-links": {
-      "tagline": "超值之选 — 海岸线上最经济实惠的正统链球场",
-      "description": "Southport Old Links 是一座低调的球场。它藏身于索斯波特北端的 Churchtown，常常在热门行程清单中被忽略 — 而这恰恰是它值得一打的理由。\n\n创立于1901年，建于正统链球地形之上，Old Links 的体验远超其果岭费所对应的水准。球场比赛夫顿海岸其他球场短，但在海风中打起来往往比记分卡显示的更长，沙坑布局经过精心设计，奖励正确的链球式击球。\n\n对于安排四五轮高强度行程的访客，Old Links 在提供正宗链球高尔夫体验的同时，也为荷包提供了喘息之机。它也是对无差点证明访客最为开放的球场，是高差点球手或休闲球手的自然选择。",
-      "visitorPolicy": "一周大多数日子热烈欢迎访客。海岸线上最易进场的球会。"
-    }
   }
 }

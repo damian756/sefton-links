@@ -53,12 +53,12 @@ export const COURSES: Course[] = [
     slug: 'royal-birkdale',
     name: 'Royal Birkdale Golf Club',
     shortName: 'Royal Birkdale',
-    tagline: 'Host of The 154th Open in 2026, won by Ryan Fox',
+    tagline: 'Eleven Opens since 1954; Ryan Fox won the 154th here in 2026',
     description: `Royal Birkdale sits among towering sand dunes in Southport. It hosted The Open for the 11th time in July 2026, when Ryan Fox won with a birdie on the 72nd hole.
 
-The course demands creativity and intelligence. Fairways run between steep dunes that channel the wind in unpredictable ways. The rough is brutal. Greens are fast, subtle and positioned to make you think about every approach. It's not a course you muscle your way around: links experience helps enormously.
+The club was founded in 1889, and the course was extensively redesigned in 1922 to create the current layout, which winds between sand dunes that tower over the fairways. The club offers four tee options, from 4,877 to 6,736 yards, and asks golfers who want to play the longest tees to get approval from its office.
 
-The club says its visitor tee times are fully booked throughout 2026 and 2027, and asks golfers to check its website for 2028 availability.`,
+The club says its visitor tee times are fully booked throughout 2026 and 2027, including its Birkdale Open Experience Package, and asks golfers to check its website for 2028 availability.`,
     founded: 1889,
     address: 'Waterloo Road, Birkdale, Southport',
     postcode: 'PR8 2LX',
@@ -77,7 +77,7 @@ The club says its visitor tee times are fully booked throughout 2026 and 2027, a
     greenFeeFrom: null,
     greenFeeTo: null,
     greenFeeNote: 'Fully booked for visitors through 2027',
-    visitorPolicy: 'The club says visitor tee times are fully booked throughout 2026 and 2027. Check its website for 2028 availability.',
+    visitorPolicy: 'The club says visitor tee times are fully booked throughout 2026 and 2027, including its Birkdale Open Experience Package. Check its website for 2028 availability.',
     visitorDays: 'Fully booked for visitors through 2027.',
     advanceBooking: 'Fully booked through 2027. The club asks golfers to check back for 2028 availability.',
     bookingUrl: 'https://www.royalbirkdale.com',
@@ -87,14 +87,16 @@ The club says its visitor tee times are fully booked throughout 2026 and 2027, a
     handicapLimit: 24,
     majorHistory: [
       'The Open Championship: 1954, 1961, 1965, 1971, 1976, 1983, 1991, 1998, 2008, 2017, 2026',
-      'Ryder Cup: 1969 (historic halved match, Jack Nicklaus conceded final putt to Tony Jacklin)',
-      'Curtis Cup: 2000',
-      'Walker Cup: 2019',
+      'Ryder Cup: 1965 and 1969, the year of the famous concession',
+      'Women\'s Open: six times, from 1982 to 2014',
+      'Senior Open: 2013',
+      'Walker Cup: 1951',
+      'Curtis Cup: 1948',
     ],
     highlights: [
       'Since first hosting The Open in 1954, the most regular Open venue apart from St Andrews',
-      'Ranked in world\'s top 5 links courses',
-      'Iconic willow scrub rough: a Royal Birkdale signature',
+      'Visitors play as Members for the Day, with use of the clubhouse and practice facilities',
+      'Willow scrub in the rough: a Royal Birkdale feature',
       'No two consecutive holes play in the same direction',
       'Arnold Palmer won here in 1961, with a famous 6-iron from the base of a bush at the 15th (now the 16th)',
     ],
@@ -102,13 +104,12 @@ The club says its visitor tee times are fully booked throughout 2026 and 2027, a
       'Handicap certificate required: men 24, ladies 36',
       'Dress code: collared shirt tucked in and golf shoes; no jeans, tracksuits, round-neck T-shirts or training shoes',
       'Caddies available, advance booking recommended',
-      'Trolleys permitted, buggies restricted',
-      'Clubhouse lunch recommended: the bar has Open Championship memorabilia throughout',
+      'Buggies only with a medical certificate',
+      'In the clubhouse, golf attire is fine on the ground floor; headwear comes off indoors',
     ],
     nearbyDining: [
-      'The Bold Hotel, Lord Street: post-round dinner',
-      'Bistrot Pierre, Southport: reliable and good value',
-      'The Grill Room, Vincent Hotel: fine dining option',
+      'The Bold Hotel, 583 Lord Street: a hotel with a restaurant and bar',
+      'The Vincent Hotel, 98 Lord Street: a hotel with the V Café & Restaurant and a cocktail bar',
     ],
     distanceFromBirkdale: '0',
     openChampionship: true,
@@ -120,9 +121,9 @@ The club says its visitor tee times are fully booked throughout 2026 and 2027, a
     name: 'Hillside Golf Club',
     shortName: 'Hillside',
     tagline: 'Links golf next door to Royal Birkdale',
-    description: `Hillside sits immediately adjacent to Royal Birkdale and shares the same dramatic duneland. The club's green fee table lists its winter rate as closed for maintenance from 19 October 2026 to mid-March 2027. Its spring rate starts in March 2027.
+    description: `Hillside sits immediately next to Royal Birkdale and shares the same duneland. The club's green fee table lists its winter rate as closed for maintenance from 19 October 2026 to mid-March 2027. Its spring rate starts in March 2027.
 
-The course underwent significant redevelopment on its final nine holes, which now run through spectacular ridge-and-valley terrain through the dunes. The routing is logical and the course condition is consistently excellent.`,
+From 1960 the club rebuilt several holes, including the 11th, 16th and 17th, through valleys in the taller dunes. Its practice ground served as the official practice ground for The 154th Open at Royal Birkdale in 2026, and the club has staged DP World Tour events and R&A championships.`,
     founded: 1911,
     address: 'Hastings Road, Hillside, Southport',
     postcode: 'PR8 2LU',
@@ -155,21 +156,19 @@ The course underwent significant redevelopment on its final nine holes, which no
       'Final Open qualifying venue',
     ],
     highlights: [
-      'Back nine through dramatic duneland, a match for any course in England',
+      'Holes including the 11th, 16th and 17th run through valleys in the taller dunes',
       'Immediately adjacent to Royal Birkdale',
-      'Consistently excellent conditioning',
-      'Used as Open Championship qualifying venue',
+      'Its practice ground was the official practice ground for The 154th Open in 2026',
+      'Has staged DP World Tour events and R&A championships',
     ],
     practicalNotes: [
       'Handicap certificate required',
       'Smart casual dress, spikeless or soft spikes only',
       'Caddies available on request',
       'Club hire available',
-      'Excellent clubhouse with panoramic views',
     ],
     nearbyDining: [
-      'Same recommendations as Royal Birkdale: both clubs are minutes apart',
-      'The Waterfront, Southport: casual post-round option',
+      'Royal Birkdale is next door: see its page for two hotels on Lord Street',
     ],
     distanceFromBirkdale: '0.3',
     openChampionship: false,
@@ -183,7 +182,7 @@ The course underwent significant redevelopment on its final nine holes, which no
     tagline: 'Founded in 1884: a championship links among dunes and pine trees',
     description: `Formby Golf Club was founded in 1884 and describes itself as a true championship links, with mature sand dunes, undulating fairways, well-protected greens and views of the Irish Sea. Visitors can book online. Saturday and Sunday are members' competition days.
 
-The course itself is exceptional. Set through coastal pinewoods with stretches of pure heathland links, it's a fundamentally different experience to Royal Birkdale or Hillside. The pines offer shelter and a distinctive visual character, while the dune sections are as challenging as anything on the coast.`,
+The club has hosted the Amateur Championship and the PGA Seniors Championship. Its clubhouse has bars and dining, snooker tables and en-suite Dormy accommodation.`,
     founded: 1884,
     address: 'Golf Road, Formby',
     postcode: 'L37 1LQ',
@@ -210,14 +209,13 @@ The course itself is exceptional. Set through coastal pinewoods with stretches o
     difficulty: 'challenging',
     handicapLimit: 28,
     majorHistory: [
-      'English Amateur Championship: multiple times',
-      'Curtis Cup: 1974, 1984',
-      'Walker Cup: 1995',
+      'Amateur Championship',
+      'PGA Seniors Championship',
     ],
     highlights: [
-      'Unique combination of pinewood and heathland links',
-      'One of the oldest clubs in the north of England (1884)',
-      'Walker Cup venue',
+      'Mature sand dunes, undulating fairways and views of the Irish Sea',
+      'Founded in 1884',
+      'Has hosted the Amateur Championship and the PGA Seniors Championship',
       'Adjacent to red squirrel reserve and National Trust pinewoods',
       'Formby Ladies Golf Club (adjacent) has separate visitor access',
     ],
@@ -229,9 +227,7 @@ The course itself is exceptional. Set through coastal pinewoods with stretches o
       'Formal dress code throughout',
     ],
     nearbyDining: [
-      'The Left Bank Brasserie, Formby: closest quality option post-round',
-      'The Sparrowhawk, Formby: popular village pub with food',
-      'Emily\'s, Formby village: local favourite',
+      'The clubhouse has bars and dining, according to the club',
     ],
     distanceFromBirkdale: '5',
     openChampionship: false,
@@ -242,12 +238,10 @@ The course itself is exceptional. Set through coastal pinewoods with stretches o
     slug: 'west-lancashire',
     name: 'West Lancashire Golf Club',
     shortName: 'West Lancashire',
-    tagline: 'One of England\'s oldest clubs: links golf at its purest',
-    description: `West Lancashire Golf Club, founded in 1873, is among the oldest golf clubs in England and one of the least visited on the Sefton Coast, partly because it sits further south at Blundellsands, outside the Southport cluster.
+    tagline: 'Founded in 1873 at Blundellsands, at the southern end of the coast',
+    description: `West Lancashire Golf Club was founded in 1873 at Blundellsands, at the southern end of the Sefton Coast. The entrance is 50 yards from Hall Road station, on the line between Liverpool Central and Southport.
 
-This is a shame, because West Lancashire is a serious links test. The course has a raw, unmanicured quality that purists love: the rough is genuine rough, the greens are fast and true, and the wind off the Irish Sea is ever-present. It lacks the manicured polish of Royal Birkdale but delivers a more authentic, elemental links experience at a considerably more accessible green fee.
-
-The club has a long history with Open Championship qualifying. If you want to play a genuinely historic and challenging links without the premium price tag, West Lancashire is a strong choice.`,
+The club hosted Final Qualifying for The Open from 2023 to 2026 on behalf of The R&A, and hosts R&A and England Golf competitions. Visitors book online. From November 2026 to February 2027 the weekday green fee is £120 per person, with tea or coffee and a bacon roll on arrival.`,
     founded: 1873,
     address: 'Hall Road West, Blundellsands, Liverpool',
     postcode: 'L23 8SZ',
@@ -266,35 +260,33 @@ The club has a long history with Open Championship qualifying. If you want to pl
     greenFeeFrom: 120,
     greenFeeTo: 250,
     greenFeeNote: 'November 2026 to April 2027',
-    visitorPolicy: 'Visitors welcome most weekdays. Weekends limited: phone ahead.',
+    visitorPolicy: 'Visitors book online. The club publishes weekday and weekend rates for each season.',
     visitorDays: 'Monday–Friday preferred. Check availability for Saturdays.',
-    advanceBooking: 'Book 2–4 weeks in advance. More flexible visitor access than courses further north.',
+    advanceBooking: 'Book online through the club\'s visitor booking page.',
     bookingUrl: 'https://visitors.brsgolf.com/westlancashire',
     phone: '0151 924 1076',
     website: 'https://www.westlancashiregolf.co.uk',
     difficulty: 'challenging',
     handicapLimit: 28,
     majorHistory: [
-      'Open Championship qualifying: regular qualifying venue',
+      'Final Qualifying for The Open: 2023 to 2026',
       'English Amateur: 2001',
     ],
     highlights: [
-      'Founded 1873: one of England\'s oldest clubs',
-      'Raw, authentic links experience',
-      'Significantly lower green fee than the Southport courses',
+      'Founded in 1873',
+      'Final Qualifying venue for The Open from 2023 to 2026',
+      'Hosts R&A and England Golf competitions',
       'Irish Sea views throughout',
-      'Regular Open Championship qualifying venue',
+      '50 yards from Hall Road station',
     ],
     practicalNotes: [
-      'Visitors generally welcome: more relaxed than Southport clubs',
+      'Visitors book online',
       'Handicap certificate required',
       'Further from Southport: factor into multi-day itinerary',
-      'Good value',
       'Limited buggies: this is a walking course',
     ],
     nearbyDining: [
-      'Crosby area has several good pubs and restaurants',
-      'The Blundell Arms, Crosby: traditional pub food',
+      'The winter green fee (November 2026 to February 2027) includes tea or coffee and a bacon roll on arrival',
       'Hall Road station is 50 yards from the club entrance, on the line between Liverpool Central and Southport',
     ],
     distanceFromBirkdale: '8',
@@ -306,12 +298,10 @@ The club has a long history with Open Championship qualifying. If you want to pl
     slug: 'southport-ainsdale',
     name: 'Southport & Ainsdale Golf Club',
     shortName: 'Southport & Ainsdale',
-    tagline: 'Ryder Cup heritage and genuine links character at an accessible price',
-    description: `Southport & Ainsdale, known locally as S&A, hosted the Ryder Cup in 1933 and 1937, making it one of a tiny number of non-Royal venues with that distinction. The history alone makes it worth a round, but the course earns its reputation on its own merits too.
+    tagline: 'Founded in 1906; Ryder Cup venue in 1933 and 1937',
+    description: `Southport & Ainsdale, known locally as S&A, was founded in 1906 and hosted the Ryder Cup in 1933 and 1937. The club says The R&A continues to choose it for the Amateur Championship.
 
-S&A sits between Hillside and Formby and shares the coastal dune terrain that characterises the best of the Sefton Coast. The first few holes are relatively benign, which gives visitors a false sense of security: the course stiffens considerably through the middle section, with several holes genuinely exposed to the prevailing westerly.
-
-Green fees are among the most accessible on the coast for what is genuinely a historic and challenging links. For visitors putting together a multi-day trip, S&A pairs well with either Hillside or West Lancashire for a strong two-day itinerary at reasonable cost.`,
+The course sits between Hillside and Formby, among coastal dunes and heathland with gorse and heather. Visitors are welcome all year. The club shows its green fees on its online booking portal, where rates vary with demand, time of day and season.`,
     founded: 1906,
     address: 'Bradshaw\'s Lane, Ainsdale, Southport',
     postcode: 'PR8 3LG',
@@ -331,7 +321,7 @@ Green fees are among the most accessible on the coast for what is genuinely a hi
     greenFeeFrom: null,
     greenFeeTo: null,
     greenFeeNote: 'Rates vary with demand, time of day and season',
-    visitorPolicy: 'Visitors welcome most weekdays. Weekends by arrangement. Open to societies.',
+    visitorPolicy: 'Visitors welcome all year. Groups of more than 12 contact the club\'s golf coordinator.',
     visitorDays: 'Tuesdays–Fridays recommended. Phone to check Sunday availability.',
     advanceBooking: 'Book 2–4 weeks in advance. Societies book 3–6 months ahead.',
     bookingUrl: 'https://www.sandagolfclub.co.uk',
@@ -345,21 +335,18 @@ Green fees are among the most accessible on the coast for what is genuinely a hi
     ],
     highlights: [
       'Ryder Cup venue 1933 and 1937',
-      'Excellent value for a historic links',
+      'Used by The R&A for the Amateur Championship',
       'Society packages available',
-      'Good variety: accessible but with teeth',
-      'Welcoming to visiting golfers',
+      'Visitors welcome all year',
     ],
     practicalNotes: [
       'Handicap certificate required (28 men, 36 ladies)',
-      'Society groups well catered for',
+      'Groups of more than 12 contact the golf coordinator',
       'Catering available in clubhouse',
       'Electric trolleys permitted',
-      'Good locker room facilities',
     ],
     nearbyDining: [
-      'The Fisherman\'s Rest, Ainsdale: casual post-round pub',
-      'Southport town centre 10 minutes away: wide choice',
+      'Southport town centre, to the north',
     ],
     distanceFromBirkdale: '3',
     openChampionship: false,
@@ -370,13 +357,11 @@ Green fees are among the most accessible on the coast for what is genuinely a hi
     slug: 'southport-old-links',
     name: 'Southport Old Links Golf Club',
     shortName: 'Southport Old Links',
-    tagline: 'Hidden value: a genuine links at the most accessible price on the coast',
-    description: `Southport Old Links is the quiet one. Tucked away in Churchtown on the northern edge of Southport, it's the kind of club that gets overlooked on bucket-list itineraries, which is exactly why it's worth playing.
+    tagline: 'Nine holes with 18 different tees, in Churchtown, Southport',
+    description: `Southport Old Links is in Churchtown, on the northern edge of Southport. It is a nine-hole course with 18 different tees. Golfers can book 18 holes or nine.
 
-Founded in 1901 and set on genuine links terrain, Old Links offers a round that punches above its green fee significantly. The course is shorter than its Sefton Coast neighbours but plays longer than the card in a coastal breeze, and the bunkering is thoughtfully placed to reward proper links shot-making.
-
-For visitors building a high-volume trip of four or five rounds, Old Links provides welcome relief on the wallet while still delivering authentic links golf. It's also the most welcoming to visitors without handicap certificates, making it the natural choice for higher-handicappers or casual players.`,
-    founded: 1901,
+The club celebrates its centenary in 2026. Visitors can book tee times on weekdays and Saturdays, online up to seven days ahead. For bookings further ahead, the club asks golfers to contact its office on 01704 228207 (option 5).`,
+    founded: 1926,
     address: 'Moss Lane, Churchtown, Southport',
     postcode: 'PR9 7QS',
     latitude: 53.6702,
@@ -394,30 +379,26 @@ For visitors building a high-volume trip of four or five rounds, Old Links provi
     greenFeeFrom: null,
     greenFeeTo: null,
     greenFeeNote: 'Call 01704 228207 (option 5) for this season\'s rates',
-    visitorPolicy: 'Very welcoming to visitors most days of the week. Most accessible club on the coast.',
+    visitorPolicy: 'Visitors book tee times on weekdays and Saturdays, online up to seven days ahead.',
     visitorDays: 'Weekdays and Saturdays. Phone ahead to check.',
-    advanceBooking: 'A week in advance is typically sufficient. Walk-ins possible on quieter weekdays.',
+    advanceBooking: 'Online booking opens seven days ahead. For bookings further ahead, call the office on 01704 228207 (option 5).',
     bookingUrl: 'https://solgc.hub.clubv1.com/visitors/booking',
     phone: '01704 228207',
     website: 'https://www.southportoldlinksgolfclub.co.uk',
     difficulty: 'accessible',
     majorHistory: [],
     highlights: [
-      'Most accessible green fee on the Sefton Coast',
-      'Genuinely welcoming to all levels',
-      'Authentic links terrain without the premium price',
-      'Good for high-handicappers or first-time links players',
+      'Nine holes with 18 different tees; 18-hole and nine-hole rounds',
+      'The club describes the course as a test for golfers of all abilities',
       'Located in Churchtown, on the northern edge of Southport',
     ],
     practicalNotes: [
-      'No strict handicap requirement: most accessible on the coast',
-      'Good starter links for those new to coastal golf',
-      'Churchtown village has good pubs nearby',
-      'Can often walk on: less advance planning needed',
+      'Online booking opens seven days ahead',
+      'Tee times on weekdays and Saturdays',
+      'For golfers new to the game, the club works with Southport Golf Academy in Mere Brow',
     ],
     nearbyDining: [
-      'The Hesketh Arms, Churchtown: excellent pub right on the doorstep',
-      'The Bold Hotel, Lord Street Southport: 10 minutes away',
+      'Churchtown village, around the club',
     ],
     distanceFromBirkdale: '4',
     openChampionship: false,
@@ -433,8 +414,6 @@ export function getCourseBySlug(slug: string): Course | undefined {
 export function getFeaturedCourses(): Course[] {
   return COURSES.filter(c => c.featured);
 }
-
-export const OPEN_DATE = new Date('2026-07-16T00:00:00Z');
 
 export interface Itinerary {
   id: string;
@@ -461,7 +440,7 @@ export const SEFTON_ITINERARIES: Itinerary[] = [
   {
     id: '2-day-winter',
     title: '2-Day Winter Links',
-    subtitle: 'Two courses that take visitor bookings online this winter',
+    subtitle: 'Two courses that take visitor bookings online, winter 2026 to 2027',
     days: 2,
     budget: 'standard',
     handicapRange: 'any',
@@ -482,7 +461,7 @@ export const SEFTON_ITINERARIES: Itinerary[] = [
     courses: ['west-lancashire', 'formby', 'southport-ainsdale'],
     estimatedCost: '£275 pp plus S&A',
     costNote: 'West Lancashire and Formby on weekdays, November 2026 to February 2027. S&A shows its rates on its booking portal.',
-    description: 'All three take visitors this winter and book online. Southport & Ainsdale does not print a fee table: its rates are on its booking portal and vary with demand, time of day and time of year.',
+    description: 'All three take visitors in winter 2026 to 2027 and book online. Southport & Ainsdale does not print a fee table: its rates are on its booking portal and vary with demand, time of day and time of year.',
     accommodation: 'Southport for the widest choice, or Formby, which sits between the three courses.',
     dining: 'Ask at each clubhouse what food is served on the day you play.',
   },

@@ -41,7 +41,6 @@
   "home": {
     "heroCtaCourses": "Tutustu Kenttiin",
     "coursesTitle": "Sefton Coastin kentät",
-    "coursesSubtitle": "Kuusi Englannin hienoimmista linksgolfkentistä, kaikki muutaman kilometrin säteellä toisistaan",
     "featuresTitle": "Suunnittele Linksgolfmatkasi",
     "conditionsTitle": "Kenttäolosuhteet",
     "conditionsDesc": "Reaaliaikaiset päivitykset Sefton Coastin peliolosuhteista",
@@ -83,8 +82,6 @@
     "editorialPara1": "Skotlannissa on linksgolfkäytäviä — St Andrews, Carnoustie, Muirfield — jotka saavat kaiken huomion. Sefton Coast jää varjoon. Juuri se on mahdollisuus jokaiselle vierailevalle golfarille.",
     "featureCard1Title": "Helposti Saavutettavissa",
     "featureCard1Text": "45 min Liverpoolin lentokentältä, 60 min Manchesterista. Suora junayhteys Southportiin Liverpoolin keskustasta.",
-    "featureCard2Title": "Vierailijaystävällinen",
-    "featureCard2Text": "Neljä kuudesta kentästä toivottaa vierailijat aktiivisesti tervetulleiksi. Parempi pääsy kuin vastaavanlaatuisille skottilaisille kentille.",
     "southportGuideDesc": "Hotellit, ravintolat ja tekemistä Southportissa — tukikohtasi Sefton Coast -golfmatkalle.",
     "formbyGuideDesc": "Kattava opas Formbyyn — National Trustin mäntymetsät, oravat ja kylä kierrosten välissä."
   },
@@ -228,9 +225,6 @@
   "accommodationPage": {
     "headerBadge": "Golfareille Sopiva Majoitus",
     "pageTitle": "Majoitus Golfareille",
-    "openCalloutTitle": "Varaatko The Open Championship 2026 -tapahtumaan?",
-    "openCalloutDesc": "Majoitus Royal Birkdalen lähellä Open-viikolla (14.–20.7.2026) on täynnä 12–18 kuukautta etukäteen. Jos luet tätä maaliskuun 2026 jälkeen, alle 8 km:n päässä olevat vaihtoehdot ovat erittäin rajallisia. Tarkista Liverpoolin keskusta, Ormskirk ja Wigan varavaihtoehtona.",
-    "openCalloutLink": "Open 2026 majoitusopas",
     "distanceFromBirkdale": "Royal Birkdalesta",
     "approxLabel": "n.",
     "golferFeaturesLabel": "Golfareille Soveltuvat Palvelut",
@@ -308,7 +302,6 @@
     "pageTitle": "Kenttäolosuhteet",
     "aboutLinksTitle": "Linksgolfin Olosuhteista",
     "aboutLinksPara1": "Linksgolfin olosuhteet eroavat olennaisesti puistogolfista. Tärkeimmät muuttujat ovat tuulen suunta ja voimakkuus, viimeisin sadanta ja kuivatus sekä nurmikon kovuus. Kova, kuiva kenttä pelaa täysin eri tavalla kuin märkä, pehmeä — lähestymislyönnit eivät pysähdy, pallo rullaa pidemmälle teiltä, ja chippi vaatii enemmän luovuutta.",
-    "aboutLinksPara2": "Sefton Coastin kentät kuivuvat hyvin luonnostaan — ne on rakennettu hiekkaan. Jopa rankkasateiden jälkeen Royal Birkdale ja Hillside toipuvat yleensä nopeammin kuin sisämaakentät. Southport & Ainsdale ja West Lancashire voivat pitää vettä hieman pidempään maaston vuoksi. Formbyn metsäosuudet kuivuvat nopeimmin.",
     "aboutLinksPara3": "Tuulennopeus ja -suunta ovat täällä tärkeämpiä kuin melkein missään muualla Englannissa. Royal Birkdalen vallitseva lounaistuuli luo sen 'luonnollisen' reittikokemuksen, johon rata on suunniteltu. Itäinen tuuli maan puolelta tekee kokonaan eri kentän. Tässä oppaassa on tuulensuuntaopas erityisesti Royal Birkdalelle.",
     "conditionsDisclaimer": "Olosuhdetiedot ovat suuntaa-antavia ja manuaalisesti ylläpidettyjä. Tarkista aina yksittäiseltä klubilta ennen matkaa. SeftonLinks ei vastaa kentän sulkemisista tai tästä sivusta poikkeavista olosuhteista."
   },
@@ -370,21 +363,5 @@
     "courseWestLancs": "West Lancashire",
     "courseSouthportAinsdale": "Southport & Ainsdale",
     "courseOldLinks": "Southport Old Links"
-  },
-  "courseData": {
-    "west-lancashire": {
-      "tagline": "Yksi Englannin vanhimmista klubeista — linksgolf puhtaimmillaan",
-      "visitorPolicy": "Vierailijat tervetulleita useimpina arkipäivinä. Viikonloput rajoitettu — soita etukäteen."
-    },
-    "southport-ainsdale": {
-      "tagline": "Ryder Cup -perintö ja aito linksluonne edullisella hinnalla",
-      "description": "Southport & Ainsdale — paikallisesti tunnettu nimellä S&A — isännöi Ryder Cupia 1933 ja 1937, mikä tekee siitä yhden harvoista ei-Kuninkaallisista kentistä tällä kunniamerkillä. Pelkästään historia perustelee kierroksen, mutta kenttä ansaitsee maineensa omilla ansiollaan.\n\nS&A sijaitsee Hillsiden ja Formbyn välissä ja jakaa rannikon dyynimaaston, joka luonnehtii Sefton Coastin parasta. Ensimmäiset väylät ovat suhteellisen ystävällisiä, mikä antaa vierailijoille väärän turvallisuudentunteen — kenttä kiristyy merkittävästi keskiosassa, ja useilla väylillä on täysi altistus vallitsevalle länsituulelle.\n\nGreen feet ovat rannikolla edullisimpien joukossa siitä, mikä on aidosti historiallinen ja haastava linkskenttä. Monipäiväistä ohjelmaa kokoaville vierailijoille S&A yhdistyy hyvin joko Hillsideen tai West Lancashireen vahvaksi kaksipäiväiseksi ohjelmaksi kohtuulliseen hintaan.",
-      "visitorPolicy": "Vierailijat tervetulleita useimpina arkipäivinä. Viikonloput sopimuksen mukaan. Avoin ryhmille."
-    },
-    "southport-old-links": {
-      "tagline": "Piilotettua arvoa — aito linksgolf rannikon edullisimmalla hinnalla",
-      "description": "Southport Old Links on hiljainen kenttä. Piilossa Churchtownissa Southportin pohjoislaidalla, se on tyypiltään klubi, joka jää pois bucket list -ohjelmista — ja juuri siksi se kannattaa pelata.\n\nVuonna 1901 perustettu ja aidolle linksmaaston päällä sijaitseva Old Links tarjoaa kierroksen, joka ylittää selvästi green feensä. Kenttä on lyhyempi kuin Sefton Coastin naapurit, mutta pelaa pidemmältä kuin kortti rannikkotuulessa, ja bunkkerointi on harkitusti sijoitettu palkitsemaan kunnollinen linkslyönti.\n\nVieraille, jotka rakentavat tiivistä matkaa — neljä tai viisi kierrosta — Old Links tarjoaa tervetullutta lompakkohelpotusta toimittaen silti aitoa linksgolfia. Se on myös vierailijamyönteisin kenttä ilman handicap-todistusta, mikä tekee siitä luontevan valinnan korkeille handicapeille tai harrastelijapelaajille.",
-      "visitorPolicy": "Erittäin vierailijamyönteinen useimpina arkipäivinä. Rannikon helposti lähestyttävin klubi."
-    }
   }
 }

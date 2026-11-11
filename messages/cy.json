@@ -41,7 +41,6 @@
   "home": {
     "heroCtaCourses": "Archwilio'r Cyrsiau",
     "coursesTitle": "Cyrsiau Arfordir Sefton",
-    "coursesSubtitle": "Chwe chwrs dolenni gorau Lloegr, i gyd o fewn ychydig filltiroedd i'w gilydd",
     "featuresTitle": "Cynllunio Eich Taith Golff Dolenni",
     "conditionsTitle": "Cyflwr y Cwrs",
     "conditionsDesc": "Diweddariadau byw ar gyflwr cyrsiau ar draws Arfordir Sefton",
@@ -83,8 +82,6 @@
     "editorialPara1": "Mae corridorau golff dolenni yn yr Alban — St Andrews, Carnoustie, Muirfield — yn cael y sylw. Mae Arfordir Sefton yn cael ei anwybyddu. Dyna'r cyfle i bob golfwr ymwelwyr.",
     "featureCard1Title": "Hawdd Cyrraedd",
     "featureCard1Text": "45 mun o Faes Awyr Lerpwl, 60 mun o Fanceinion. Trên uniongyrchol i Southport o ganol dinas Lerpwl.",
-    "featureCard2Title": "Croesawgar i Ymwelwyr",
-    "featureCard2Text": "Mae pedwar o'r chwe chwrs yn croesawu ymwelwyr yn weithredol. Mynediad gwell na chyrsiau cyfatebol yn yr Alban.",
     "southportGuideDesc": "Gwestai, bwytai a phrif atyniadau Southport — eich canolfan ar gyfer taith golff Arfordir Sefton.",
     "formbyGuideDesc": "Y canllaw cyflawn i Formby — coedwigoedd pinwydd yr Ymddiriedolaeth Genedlaethol, gwiwerod coch a'r pentref rhwng rowndiau."
   },
@@ -228,9 +225,6 @@
   "accommodationPage": {
     "headerBadge": "Lletyau Cyfeilgar i Olfwyr",
     "pageTitle": "Llety ar gyfer Golfwyr",
-    "openCalloutTitle": "Archebu ar gyfer The Open Championship 2026?",
-    "openCalloutDesc": "Mae llety ger Royal Birkdale yn ystod wythnos The Open (14–20 Gorffennaf 2026) yn archebu 12–18 mis ymlaen llaw. Os ydych chi'n darllen hwn ar ôl Mawrth 2026, bydd dewisiadau o fewn 5 milltir yn gyfyngedig iawn. Gwiriwch ganol dinas Lerpwl, Ormskirk a Wigan fel dewisiadau gorlif.",
-    "openCalloutLink": "Canllaw llety The Open 2026",
     "distanceFromBirkdale": "o Royal Birkdale",
     "approxLabel": "tua",
     "golferFeaturesLabel": "Nodweddion Cyfeilgar i Olfwyr",
@@ -308,7 +302,6 @@
     "pageTitle": "Cyflwr y Cwrs",
     "aboutLinksTitle": "Am Amodau Dolenni",
     "aboutLinksPara1": "Mae amodau golff dolenni yn wahanol yn sylfaenol i olff parcdir. Y prif newidynnau yw cyfeiriad a chryfder y gwynt, glaw diweddar a draenio, a chadernid y tywarch. Mae cwrs caled, sych yn chwarae'n wahanol iawn i un gwlyb, meddal — nid yw ergydion agosáu yn stopio, mae'r bêl yn rhedeg ymhellach o'r tee, ac mae chipping yn dod yn fwy creadigol.",
-    "aboutLinksPara2": "Mae cyrsiau Arfordir Sefton yn draenio'n dda trwy ddyluniad — maent wedi'u hadeiladu ar dywod. Hyd yn oed ar ôl glaw trwm, mae Royal Birkdale a Hillside fel arfer yn adfer yn gyflymach na chyrsiau mewndirol. Gall Southport & Ainsdale a West Lancashire ddal dŵr ychydig yn hirach oherwydd eu tirwedd. Mae adrannau coedwig Formby yn sychu gyflymaf.",
     "aboutLinksPara3": "Mae cyflymdra a chyfeiriad y gwynt yn bwysicach yma nag yn bron unrhyw le arall yng Nghymru a Lloegr. Mae'r gwynt de-orllewinol teyrnasol yn Royal Birkdale yn creu profiad cwrs 'naturiol' y cynlluniwyd y llwybr ar ei gyfer. Mae dwyrain oddi ar y tir yn cynhyrchu cwrs hollol wahanol. Mae'r canllaw hwn yn cynnwys allwedd cyfeiriad gwynt ar gyfer Royal Birkdale yn benodol.",
     "conditionsDisclaimer": "Mae data amodau yn fras ac yn cael ei gynnal â llaw. Gwiriwch gyda'r clwb unigol bob amser cyn teithio. Nid yw SeftonLinks yn derbyn unrhyw atebolrwydd am gau cyrsiau neu amodau sy'n wahanol i'r dudalen hon."
   },
@@ -370,21 +363,5 @@
     "courseWestLancs": "West Lancashire",
     "courseSouthportAinsdale": "Southport & Ainsdale",
     "courseOldLinks": "Southport Old Links"
-  },
-  "courseData": {
-    "west-lancashire": {
-      "tagline": "Un o glybiau hynaf Lloegr — golff dolenni yn ei burdeb",
-      "visitorPolicy": "Croeso i ymwelwyr y rhan fwyaf o ddyddiau'r wythnos. Penwythnosau yn gyfyngedig — ffoniwch ymlaen llaw."
-    },
-    "southport-ainsdale": {
-      "tagline": "Treftadaeth Cwpan Ryder a chymeriad dolenni dilys am bris hygyrch",
-      "description": "Cynhaliodd Southport & Ainsdale — sy'n hysbys yn lleol fel S&A — y Cwpan Ryder yn 1933 ac 1937, gan ei wneud yn un o'r lleoliadau di-frenhinol anaml gyda'r anrhydedd hwnnw. Mae'r hanes ar ei ben ei hun yn ei wneud yn werth rownd, ond mae'r cwrs yn ennill ei enw da ar ei rinweddau ei hun hefyd.\n\nMae S&A yn eistedd rhwng Hillside a Formby ac yn rhannu'r tirwedd twyni arfordirol sy'n nodweddu gorau Arfordir Sefton. Mae'r ychydig dyllau cyntaf yn gymharol addwyn, sy'n rhoi ymdeimlad ffug o ddiogelwch i ymwelwyr — mae'r cwrs yn cymryd cryn dipyn drwy'r adran ganol, gyda sawl twll yn wirioneddol amlwg i'r gorllewinol teyrnasol.\n\nMae ffioedd green ymhlith y rhai mwyaf hygyrch ar yr arfordir am yr hyn sydd yn wirioneddol yn ddolenni hanesyddol a heriol. Ar gyfer ymwelwyr sy'n rhoi amserlen aml-ddiwrnod at ei gilydd, mae S&A yn paru'n dda gyda Hillside neu West Lancashire am amserlen ddau-ddiwrnod gref am gost resymol.",
-      "visitorPolicy": "Croeso i ymwelwyr y rhan fwyaf o ddyddiau'r wythnos. Penwythnosau drwy drefniant. Agored i gymdeithasau."
-    },
-    "southport-old-links": {
-      "tagline": "Gwerth cudd — dolenni dilys am y pris mwyaf hygyrch ar yr arfordir",
-      "description": "Southport Old Links yw'r un tawel. Wedi'i leoli yng Nghymuned Churchtown ar ymyl ogleddol Southport, dyma'r math o glwb sy'n cael ei anwybyddu ar amserlenni rhestr freuddwydion — a dyna'n union pam mae'n werth ei chwarae.\n\nWedi'i sefydlu yn 1901 ac wedi'i leoli ar dir dolenni dilys, mae Old Links yn cynnig rownd sy'n taro uwchlaw ei ffi green yn sylweddol. Mae'r cwrs yn fyrrach na'i gymdogion ar Arfordir Sefton ond yn chwarae'n hirach na'r cerdyn mewn awel arfordirol, ac mae'r bynceri wedi'u gosod yn feddylgar i wobrwyo gwneud ergyd dolenni priodol.\n\nAr gyfer ymwelwyr sy'n adeiladu taith uchel ei fwlwm — pedair neu bum rownd — mae Old Links yn darparu rhyddhad croesawgar i'r waled tra'n dal i gyflawni golff dolenni dilys. Mae hefyd yn fwyaf croesawgar i ymwelwyr heb dystysgrifau handicap, gan ei wneud yn ddewis naturiol ar gyfer chwaraewyr handicap uwch neu chwaraewyr achlysurol.",
-      "visitorPolicy": "Yn groesawgar iawn i ymwelwyr y rhan fwyaf o ddyddiau'r wythnos. Y clwb mwyaf hygyrch ar yr arfordir."
-    }
   }
 }

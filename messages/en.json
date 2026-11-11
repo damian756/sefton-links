@@ -61,7 +61,7 @@
     "heroCtaCourses": "Explore the Courses",
     "heroCtaOpen": "The Open at Birkdale",
     "coursesTitle": "The Sefton Coast Courses",
-    "coursesSubtitle": "Six of England's finest links courses, all within a few miles of each other",
+    "coursesSubtitle": "Six links courses between Southport and Blundellsands",
     "featuresTitle": "Plan Your Links Golf Trip",
     "conditionsTitle": "Course Conditions",
     "conditionsDesc": "Live updates on course conditions across the Sefton Coast",
@@ -104,7 +104,7 @@
     "tool4Desc": "Full scorecard data for all six courses: par, yardage from all tees, course rating and slope rating. Everything you need to set expectations.",
     "tool4Cta": "View Scorecards",
     "tool5Title": "Accommodation for Golfers",
-    "tool5Desc": "Accommodation within easy reach of the courses: early tee-time friendly, club storage, post-round facilities. Sorted by distance from Royal Birkdale.",
+    "tool5Desc": "Hotels and places to stay near the courses, grouped by distance from Royal Birkdale.",
     "tool5Cta": "Find Accommodation",
     "tool6Title": "Golf Break Itineraries",
     "tool6Desc": "2-day, 3-day and 5-day pre-built itineraries with course order, accommodation suggestions and post-round dining. From budget to championship.",
@@ -112,12 +112,12 @@
     "editorialTitle": "Why the Sefton Coast?",
     "editorialPara1": "There are links golf corridors in Scotland: St Andrews, Carnoustie, Muirfield: that get the attention. The Sefton Coast gets overlooked. That gap is the opportunity for every visiting golfer.",
     "editorialPara2": "On one stretch of coastline there are six links courses, from Royal Birkdale to Southport Old Links. You can play a different course every day for a week and the ground changes each time. Birkdale through dramatic willow scrub dunes. Hillside through ridge-and-valley terrain. Formby through coastal pinewoods. West Lancashire with raw Irish Sea exposure.",
-    "editorialPara3": "The practical case for the Sefton Coast over Scotland is simple: it's easier to get to from mainland Europe and North America via Liverpool and Manchester airports, the accommodation is better value, and the courses are more accessible to visitors than their Scottish counterparts at the same quality tier.",
+    "editorialPara3": "The practical case is simple: the coast is within reach of Liverpool and Manchester airports, and the six courses sit close together, so you can play a different one each day without long transfers.",
     "editorialPara4": "Royal Birkdale has hosted The Open 11 times, most recently in July 2026, when Ryan Fox won with a birdie on the final hole. Tom Watson won his fifth Claret Jug there in 1983 and Jordan Spieth won in 2017. If you have ever thought about a links golf trip to England, this coast is a good place to start.",
     "featureCard1Title": "Easy to Reach",
     "featureCard1Text": "45 min from Liverpool Airport, 60 min from Manchester. Direct rail to Southport from Liverpool city centre.",
-    "featureCard2Title": "Visitor-Friendly",
-    "featureCard2Text": "Four of six courses actively welcome visitors. Better access than equivalent-quality courses in Scotland.",
+    "featureCard2Title": "Who Takes Visitors",
+    "featureCard2Text": "West Lancashire, Formby, Southport & Ainsdale and Southport Old Links take visitor bookings. Royal Birkdale is fully booked for visitors through 2027, and Hillside is closed to visitors until mid-March 2027.",
     "featureCard3Title": "Winter Green Fees",
     "featureCard3Text": "From November 2026 to February 2027, West Lancashire charges £120 per person on weekdays and Formby £155 on weekdays.",
     "southportGuideDesc": "Hotels, restaurants and things to do in Southport: your base for a Sefton Coast golf trip.",
@@ -320,10 +320,7 @@
   "accommodationPage": {
     "headerBadge": "Golfer-Friendly Stays",
     "pageTitle": "Accommodation for Golfers",
-    "pageDesc": "Accommodation near Royal Birkdale and the Sefton Coast courses: selected for club storage, early breakfast, and proximity to the first tee.",
-    "openCalloutTitle": "Booking for The Open Championship 2026?",
-    "openCalloutDesc": "Accommodation near Royal Birkdale during Open week (14–20 July 2026) books out 12–18 months ahead. If you're reading this after March 2026, options within 5 miles will be very limited. Check Liverpool city centre, Ormskirk and Wigan as overflow options.",
-    "openCalloutLink": "Open 2026 accommodation guide",
+    "pageDesc": "Hotels and areas to stay near Royal Birkdale and the other Sefton Coast courses, with what each hotel's own website lists.",
     "distanceFromBirkdale": "from Royal Birkdale",
     "approxLabel": "approx",
     "golferFeaturesLabel": "Golfer-Friendly Features",
@@ -407,7 +404,7 @@
     "pageDesc": "Live wind for the coast, and notes on all six Sefton Coast courses when they have been updated recently. Check with the club before you travel.",
     "aboutLinksTitle": "About Links Conditions",
     "aboutLinksPara1": "Links golf conditions are fundamentally different from parkland golf. The key variables are wind direction and strength, recent rainfall and drainage, and the firmness of the turf. A firm, dry course plays completely differently to a wet, soft one: approach shots don't stop, the ball runs further off the tee, and chipping becomes more creative.",
-    "aboutLinksPara2": "The Sefton Coast courses drain well by design: they're built on sand. Even after heavy rain, Royal Birkdale and Hillside typically recover faster than inland courses. Southport & Ainsdale and West Lancashire can hold water slightly longer due to their terrain. Formby's woodland sections dry quickest.",
+    "aboutLinksPara2": "The Sefton Coast courses are built on sand, so they usually drain faster than inland courses after heavy rain. Each club posts its own course status: check it before you travel.",
     "aboutLinksPara3": "Wind speed and direction matter more here than almost anywhere in England. The prevailing south-westerly at Royal Birkdale creates the 'natural' course experience the routing was designed for. An easterly off the land produces a completely different course. This guide includes a wind direction key for Royal Birkdale specifically.",
     "conditionsDisclaimer": "Conditions data is approximate and manually maintained. Always verify with the individual club before travel. SeftonLinks accepts no liability for course closures or conditions that differ from this page."
   },
@@ -503,33 +500,33 @@
   "courseData": {
     "royal-birkdale": {
       "tagline": "Eleven Opens since 1954; Ryan Fox won the 154th here in 2026",
-      "description": "Royal Birkdale sits among towering sand dunes in Southport. It hosted The Open for the 11th time in July 2026, when Ryan Fox won with a birdie on the 72nd hole.\n\nThe course demands creativity and intelligence. Fairways run between steep dunes that channel the wind in unpredictable ways. The rough is brutal. Greens are fast, subtle and positioned to make you think about every approach. It's not a course you muscle your way around: links experience helps enormously.\n\nThe club says its visitor tee times are fully booked throughout 2026 and 2027, and asks golfers to check its website for 2028 availability.",
+      "description": "Royal Birkdale sits among towering sand dunes in Southport. It hosted The Open for the 11th time in July 2026, when Ryan Fox won with a birdie on the 72nd hole.\n\nThe club was founded in 1889, and the course was extensively redesigned in 1922 to create the current layout, which winds between sand dunes that tower over the fairways. The club offers four tee options, from 4,877 to 6,736 yards, and asks golfers who want to play the longest tees to get approval from its office.\n\nThe club says its visitor tee times are fully booked throughout 2026 and 2027, including its Birkdale Open Experience Package, and asks golfers to check its website for 2028 availability.",
       "visitorPolicy": "The club says visitor tee times are fully booked throughout 2026 and 2027, including its Birkdale Open Experience Package. Check its website for 2028 availability."
     },
     "hillside": {
       "tagline": "Links golf next door to Royal Birkdale",
-      "description": "Hillside sits immediately adjacent to Royal Birkdale and shares the same dramatic duneland. The club's green fee table lists its winter rate as closed for maintenance from 19 October 2026 to mid-March 2027. Its spring rate starts in March 2027.\n\nThe course underwent significant redevelopment on its final nine holes, which now run through spectacular ridge-and-valley terrain through the dunes. The routing is logical and the course condition is consistently excellent.",
+      "description": "Hillside sits immediately next to Royal Birkdale and shares the same duneland. The club's green fee table lists its winter rate as closed for maintenance from 19 October 2026 to mid-March 2027. Its spring rate starts in March 2027.\n\nFrom 1960 the club rebuilt several holes, including the 11th, 16th and 17th, through valleys in the taller dunes. Its practice ground served as the official practice ground for The 154th Open at Royal Birkdale in 2026, and the club has staged DP World Tour events and R&A championships.",
       "visitorPolicy": "Closed to visitors for winter maintenance from 19 October 2026 to mid-March 2027. Visitor enquiries go to the Secretary's Office."
     },
     "formby": {
       "tagline": "Founded in 1884: a championship links among dunes and pine trees",
-      "description": "Formby Golf Club was founded in 1884 and describes itself as a true championship links, with mature sand dunes, undulating fairways, well-protected greens and views of the Irish Sea. Visitors can book online. Saturday and Sunday are members' competition days.\n\nThe course itself is exceptional. Set through coastal pinewoods with stretches of pure heathland links, it's a fundamentally different experience to Royal Birkdale or Hillside. The pines offer shelter and a distinctive visual character, while the dune sections are as challenging as anything on the coast.",
+      "description": "Formby Golf Club was founded in 1884 and describes itself as a true championship links, with mature sand dunes, undulating fairways, well-protected greens and views of the Irish Sea. Visitors can book online. Saturday and Sunday are members' competition days.\n\nThe club has hosted the Amateur Championship and the PGA Seniors Championship. Its clubhouse has bars and dining, snooker tables and en-suite Dormy accommodation.",
       "visitorPolicy": "Visitors welcome. A current recognised handicap certificate is requested: maximum 28 for men and 36 for women."
     },
     "west-lancashire": {
-      "tagline": "One of England's oldest clubs: links golf at its purest",
-      "description": "West Lancashire Golf Club, founded in 1873, is among the oldest golf clubs in England and one of the least visited on the Sefton Coast: partly because it sits further south at Blundellsands, outside the Southport cluster.\n\nThis is a shame, because West Lancashire is a serious links test. The course has a raw, unmanicured quality that purists love: the rough is genuine rough, the greens are fast and true, and the wind off the Irish Sea is ever-present. It lacks the manicured polish of Royal Birkdale but delivers a more authentic, elemental links experience at a considerably more accessible green fee.\n\nThe club has a long history with Open Championship qualifying. If you want to play a genuinely historic and challenging links without the premium price tag, West Lancashire is a strong choice.",
-      "visitorPolicy": "Visitors welcome most weekdays. Weekends limited: phone ahead."
+      "tagline": "Founded in 1873 at Blundellsands, at the southern end of the coast",
+      "description": "West Lancashire Golf Club was founded in 1873 at Blundellsands, at the southern end of the Sefton Coast. The entrance is 50 yards from Hall Road station, on the line between Liverpool Central and Southport.\n\nThe club hosted Final Qualifying for The Open from 2023 to 2026 on behalf of The R&A, and hosts R&A and England Golf competitions. Visitors book online. From November 2026 to February 2027 the weekday green fee is £120 per person, with tea or coffee and a bacon roll on arrival.",
+      "visitorPolicy": "Visitors book online. The club publishes weekday and weekend rates for each season."
     },
     "southport-ainsdale": {
-      "tagline": "Ryder Cup heritage and genuine links character at an accessible price",
-      "description": "Southport & Ainsdale: known locally as S&A: hosted the Ryder Cup in 1933 and 1937, making it one of a tiny number of non-Royal venues with that distinction. The history alone makes it worth a round, but the course earns its reputation on its own merits too.\n\nS&A sits between Hillside and Formby and shares the coastal dune terrain that characterises the best of the Sefton Coast. The first few holes are relatively benign, which gives visitors a false sense of security: the course stiffens considerably through the middle section, with several holes genuinely exposed to the prevailing westerly.\n\nGreen fees are among the most accessible on the coast for what is genuinely a historic and challenging links. For visitors putting together a multi-day trip, S&A pairs well with either Hillside or West Lancashire for a strong two-day itinerary at reasonable cost.",
-      "visitorPolicy": "Visitors welcome most weekdays. Weekends by arrangement. Open to societies."
+      "tagline": "Founded in 1906; Ryder Cup venue in 1933 and 1937",
+      "description": "Southport & Ainsdale, known locally as S&A, was founded in 1906 and hosted the Ryder Cup in 1933 and 1937. The club says The R&A continues to choose it for the Amateur Championship.\n\nThe course sits between Hillside and Formby, among coastal dunes and heathland with gorse and heather. Visitors are welcome all year. The club shows its green fees on its online booking portal, where rates vary with demand, time of day and season.",
+      "visitorPolicy": "Visitors welcome all year. Groups of more than 12 contact the club's golf coordinator."
     },
     "southport-old-links": {
-      "tagline": "Hidden value: a genuine links at the most accessible price on the coast",
-      "description": "Southport Old Links is the quiet one. Tucked away in Churchtown on the northern edge of Southport, it's the kind of club that gets overlooked on bucket-list itineraries: which is exactly why it's worth playing.\n\nFounded in 1901 and set on genuine links terrain, Old Links offers a round that punches above its green fee significantly. The course is shorter than its Sefton Coast neighbours but plays longer than the card in a coastal breeze, and the bunkering is thoughtfully placed to reward proper links shot-making.\n\nFor visitors building a high-volume trip: four or five rounds: Old Links provides welcome relief on the wallet while still delivering authentic links golf. It's also the most welcoming to visitors without handicap certificates, making it the natural choice for higher-handicappers or casual players.",
-      "visitorPolicy": "Very welcoming to visitors most days of the week. Most accessible club on the coast."
+      "tagline": "Nine holes with 18 different tees, in Churchtown, Southport",
+      "description": "Southport Old Links is in Churchtown, on the northern edge of Southport. It is a nine-hole course with 18 different tees. Golfers can book 18 holes or nine.\n\nThe club celebrates its centenary in 2026. Visitors can book tee times on weekdays and Saturdays, online up to seven days ahead. For bookings further ahead, the club asks golfers to contact its office on 01704 228207 (option 5).",
+      "visitorPolicy": "Visitors book tee times on weekdays and Saturdays, online up to seven days ahead."
     }
   }
 }

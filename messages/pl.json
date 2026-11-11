@@ -41,7 +41,6 @@
   "home": {
     "heroCtaCourses": "Odkryj pola",
     "coursesTitle": "Pola Wybrzeża Sefton",
-    "coursesSubtitle": "Sześć najlepszych pól linkowych Anglii, wszystkie w odległości kilku mil od siebie",
     "featuresTitle": "Zaplanuj swój wyjazd golfowy na linki",
     "conditionsTitle": "Stan pola",
     "conditionsDesc": "Aktualne informacje o stanie pól na całym Wybrzeżu Sefton",
@@ -83,8 +82,6 @@
     "editorialPara1": "W Szkocji są korytarze linków — St Andrews, Carnoustie, Muirfield — które przyciągają uwagę. Wybrzeże Sefton bywa pomijane. Ta luka to szansa dla każdego golfisty z zewnątrz.",
     "featureCard1Title": "Łatwy dojazd",
     "featureCard1Text": "45 min z lotniska Liverpool, 60 min z Manchesteru. Bezpośrednie połączenie kolejowe z centrum Liverpoolu do Southport.",
-    "featureCard2Title": "Przyjazne gościom",
-    "featureCard2Text": "Cztery z sześciu pól aktywnie przyjmują gości. Lepszy dostęp niż na polach szkockich tej samej klasy.",
     "southportGuideDesc": "Hotele, restauracje i atrakcje w Southport — baza dla wyjazdu golfowego na Wybrzeże Sefton.",
     "formbyGuideDesc": "Kompleksowy przewodnik po Formby — lasy sosnowe National Trust, wiewiórki rudek i wioska między rundami."
   },
@@ -228,9 +225,6 @@
   "accommodationPage": {
     "headerBadge": "Noclegi przyjazne golfistom",
     "pageTitle": "Noclegi dla golfistów",
-    "openCalloutTitle": "Rezerwujesz na The Open Championship 2026?",
-    "openCalloutDesc": "Noclegi w pobliżu Royal Birkdale w tygodniu The Open (14–20 lipca 2026) są rezerwowane z 12–18-miesięcznym wyprzedzeniem. Jeśli czytasz to po marcu 2026, opcje w promieniu 5 mil będą bardzo ograniczone. Sprawdź centrum Liverpoolu, Ormskirk i Wigan jako opcje rezerwowe.",
-    "openCalloutLink": "Przewodnik noclegowy The Open 2026",
     "distanceFromBirkdale": "od Royal Birkdale",
     "approxLabel": "ok.",
     "golferFeaturesLabel": "Udogodnienia dla golfistów",
@@ -308,7 +302,6 @@
     "pageTitle": "Stan pola",
     "aboutLinksTitle": "O warunkach na linkach",
     "aboutLinksPara1": "Warunki na polu linkowym różnią się zasadniczo od golfa parkowego. Kluczowe zmienne to kierunek i siła wiatru, ostatnie opady i drenaż oraz twardość darni. Twarde, suche pole gra zupełnie inaczej niż mokre, miękkie — piłki po uderzeniu podejściowym nie zatrzymują się, mocniej toczą się od tee, a chip staje się bardziej kreatywny.",
-    "aboutLinksPara2": "Pola Wybrzeża Sefton mają doskonały drenaż z założenia — zbudowane są na piasku. Nawet po intensywnych opadach, Royal Birkdale i Hillside zwykle odbudowują się szybciej niż pola śródlądowe. Southport & Ainsdale i West Lancashire mogą trzymać wodę nieco dłużej ze względu na teren. Leśne fragmenty Formby schną najszybciej.",
     "aboutLinksPara3": "Prędkość i kierunek wiatru mają tu większe znaczenie niż niemal gdziekolwiek w Anglii. Dominujący wiatr południowo-zachodni w Royal Birkdale tworzy 'naturalny' przebieg gry, do którego projektowany był układ trasy. Wschodni wiatr od lądu tworzy zupełnie inne pole. Przewodnik zawiera klucz kierunków wiatru specjalnie dla Royal Birkdale.",
     "conditionsDisclaimer": "Dane o stanie pola są przybliżone i prowadzone ręcznie. Zawsze weryfikuj z poszczególnymi klubami przed podróżą. SeftonLinks nie ponosi odpowiedzialności za zamknięcia pól lub warunki odbiegające od tej strony."
   },
@@ -370,21 +363,5 @@
     "courseWestLancs": "West Lancashire",
     "courseSouthportAinsdale": "Southport & Ainsdale",
     "courseOldLinks": "Southport Old Links"
-  },
-  "courseData": {
-    "west-lancashire": {
-      "tagline": "Jeden z najstarszych klubów Anglii — golf linkowy w najczystszej postaci",
-      "visitorPolicy": "Goście mile widziani w większość dni tygodnia. Weekendy ograniczone — zadzwoń wcześniej."
-    },
-    "southport-ainsdale": {
-      "tagline": "Dziedzictwo Ryder Cup i autentyczny charakter linkowy w dostępnej cenie",
-      "description": "Southport & Ainsdale — znane lokalnie jako S&A — gościło Ryder Cup w 1933 i 1937 roku, co czyni je jednym z bardzo nielicznych nie-królewskich obiektów z tym wyróżnieniem. Sama historia czyni je wartym rundy, ale pole broni swojej reputacji na własnych zasługach.\n\nS&A leży między Hillside a Formby i podziela nadmorski krajobraz wydmowy charakterystyczny dla najlepszych na Wybrzeżu Sefton. Pierwsze kilka dołków jest stosunkowo łagodne, co daje gościom fałszywe poczucie bezpieczeństwa — pole znacząco się stwarza przez środkowy odcinek, z kilkoma dołkami naprawdę wystawionymi na dominujący zachodni wiatr.\n\nGreen fee należy do najbardziej dostępnych na wybrzeżu jak na naprawdę historyczne i wymagające linki. Dla gości budujących wielodniowy wyjazd, S&A dobrze paruje z Hillside lub West Lancashire jako mocny 2-dniowy program w rozsądnej cenie.",
-      "visitorPolicy": "Goście mile widziani w większość dni tygodnia. Weekendy na podstawie ustaleń. Otwarte na grupy."
-    },
-    "southport-old-links": {
-      "tagline": "Ukryta wartość — autentyczne linki w najbardziej przystępnej cenie na wybrzeżu",
-      "description": "Southport Old Links to ten spokojny. Ukryty w Churchtown na północnym skraju Southport, to klub, który jest pomijany na trasach z listy marzeń — i właśnie dlatego warto tu zagrać.\n\nZałożony w 1901 roku i usytuowany na autentycznym terenie linkowym, Old Links oferuje rundę, która zdecydowanie przerasta swoje green fee. Pole jest krótsze niż sąsiedzi z Wybrzeża Sefton, ale gra się dłużej niż wskazuje karta na nadmorskim wietrze, a rozmieszczenie bunkrów jest przemyślane, by nagradzać prawdziwy linkowy styl gry.\n\nDla gości budujących intensywny wyjazd — cztery lub pięć rund — Old Links przynosi ulgę dla portfela, nadal dostarczając autentycznego golfa linkowego. Jest też najbardziej otwartym dla gości bez certyfikatów handicapowych, co czyni go naturalnym wyborem dla wysokich handicapowców lub zwykłych graczy.",
-      "visitorPolicy": "Bardzo gościnne dla odwiedzających przez większość dni tygodnia. Najbardziej dostępny klub na wybrzeżu."
-    }
   }
 }

@@ -41,7 +41,6 @@
   "home": {
     "heroCtaCourses": "Die Plätze entdecken",
     "coursesTitle": "Die Sefton Coast Plätze",
-    "coursesSubtitle": "Sechs der besten Links-Plätze Englands — alle innerhalb weniger Meilen voneinander",
     "featuresTitle": "Ihre Links-Golfreise planen",
     "conditionsTitle": "Platzbedingungen",
     "conditionsDesc": "Aktuelle Spielbedingungen aller Plätze an der Sefton Coast",
@@ -83,8 +82,6 @@
     "editorialPara1": "Es gibt Links-Golf-Regionen in Schottland — St Andrews, Carnoustie, Muirfield — die die gesamte Aufmerksamkeit auf sich ziehen. Die Sefton Coast bleibt im Schatten. Für jeden reisenden Golfer ist das eine Gelegenheit.",
     "featureCard1Title": "Gut erreichbar",
     "featureCard1Text": "45 Minuten vom Flughafen Liverpool, 60 Minuten von Manchester. Direktzug von Liverpool ins Stadtzentrum nach Southport.",
-    "featureCard2Title": "Gastgolfer willkommen",
-    "featureCard2Text": "Vier von sechs Plätzen begrüßen aktiv Gastgolfer. Besserer Zugang als vergleichbare schottische Plätze in derselben Qualitätskategorie.",
     "southportGuideDesc": "Hotels, Restaurants und Freizeitangebote in Southport — Ihre Basis für eine Sefton-Coast-Golfreise.",
     "formbyGuideDesc": "Der vollständige Führer zu Formby — National-Trust-Kiefernwälder, Eichhörnchen und das Dorf zwischen den Runden."
   },
@@ -227,9 +224,6 @@
   "accommodationPage": {
     "headerBadge": "Golferfreundliche Unterkünfte",
     "pageTitle": "Unterkunft für Golfer",
-    "openCalloutTitle": "Buchung für die Open Championship 2026?",
-    "openCalloutDesc": "Unterkünfte in der Nähe von Royal Birkdale während der Open-Woche (14.–20. Juli 2026) sind 12–18 Monate im Voraus ausgebucht. Wenn Sie dies nach März 2026 lesen, werden Optionen in einem Umkreis von 8 Kilometern sehr begrenzt sein. Prüfen Sie Liverpool Stadtzentrum, Ormskirk und Wigan als Ausweichmöglichkeiten.",
-    "openCalloutLink": "Open 2026 Unterkunftsführer",
     "distanceFromBirkdale": "von Royal Birkdale",
     "approxLabel": "ca.",
     "golferFeaturesLabel": "Golferfreundliche Ausstattung",
@@ -307,7 +301,6 @@
     "pageTitle": "Platzbedingungen",
     "aboutLinksTitle": "Über Links-Bedingungen",
     "aboutLinksPara1": "Links-Golfbedingungen unterscheiden sich grundlegend vom Parkland-Golf. Die wichtigsten Variablen sind Windrichtung und -stärke, jüngste Niederschlagsmenge und Drainage sowie die Festigkeit des Rasens. Ein harter, trockener Platz spielt sich völlig anders als ein nasser, weicher — Annäherungsschläge bleiben nicht liegen, der Ball rollt weiter vom Abschlag, und das Chippen erfordert mehr Kreativität.",
-    "aboutLinksPara2": "Die Sefton Coast Plätze drainieren konstruktionsbedingt gut — sie liegen auf Sand. Selbst nach starkem Regen erholen sich Royal Birkdale und Hillside typischerweise schneller als Inlandsplätze. Southport & Ainsdale und West Lancashire können aufgrund ihres Geländes etwas länger Wasser halten. Formbys Waldabschnitte trocknen am schnellsten.",
     "aboutLinksPara3": "Windstärke und -richtung spielen hier eine größere Rolle als fast überall sonst in England. Der vorherrschende Südwestwind in Royal Birkdale erzeugt das 'natürliche' Platzerlebnis, für das die Streckenführung konzipiert wurde. Ein Ostwind vom Land erzeugt einen völlig anderen Platz. Dieser Führer enthält einen Windrichtungsschlüssel speziell für Royal Birkdale.",
     "conditionsDisclaimer": "Bedingungsdaten sind näherungsweise und werden manuell gepflegt. Bitte immer beim jeweiligen Club vor der Anreise bestätigen. SeftonLinks übernimmt keine Haftung für Platzschließungen oder Bedingungen, die von dieser Seite abweichen."
   },
@@ -369,21 +362,5 @@
     "courseWestLancs": "West Lancashire",
     "courseSouthportAinsdale": "Southport & Ainsdale",
     "courseOldLinks": "Southport Old Links"
-  },
-  "courseData": {
-    "west-lancashire": {
-      "tagline": "Einer der ältesten Golfclubs Englands — Links-Golf in seiner reinsten Form",
-      "visitorPolicy": "Gastgolfer an den meisten Wochentagen willkommen. Wochenenden eingeschränkt — bitte vorab anrufen."
-    },
-    "southport-ainsdale": {
-      "tagline": "Ryder-Cup-Geschichte und echtes Links-Feeling zu einem zugänglichen Preis",
-      "description": "Southport & Ainsdale — lokal als S&A bekannt — richtete den Ryder Cup 1933 und 1937 aus und gehört damit zu einer kleinen Anzahl von Nicht-Royal-Austragungsorten mit dieser Auszeichnung. Allein die Geschichte macht eine Runde lohnenswert, aber der Platz verdient seinen Ruf auch aus eigener Kraft.\n\nS&A liegt zwischen Hillside und Formby und teilt das Küstendünengelände, das das Beste der Sefton Coast ausmacht. Die ersten paar Löcher sind vergleichsweise harmlos und vermitteln Besuchern eine falsche Sicherheit — der Platz wird durch den Mittelteil erheblich schwerer, mit einigen Löchern, die dem vorherrschenden Westwind voll ausgesetzt sind.\n\nDie Green Fees gehören zu den günstigsten an der Küste für das, was wirklich ein historischer und anspruchsvoller Links ist. Für Besucher, die eine mehrtägige Reise zusammenstellen, passt S&A gut zu Hillside oder West Lancashire für eine starke zweitägige Route zu vernünftigen Kosten.",
-      "visitorPolicy": "Gastgolfer an den meisten Wochentagen willkommen. Wochenenden nach Absprache. Offen für Gesellschaften."
-    },
-    "southport-old-links": {
-      "tagline": "Verstecktes Preis-Leistungs-Highlight — echter Links-Golf zum günstigsten Preis an der Küste",
-      "description": "Southport Old Links ist der ruhige Außenseiter. Versteckt in Churchtown am nördlichen Rand von Southport gelegen, wird er auf Bucket-List-Reiserouten oft übersehen — was genau der Grund ist, warum er es wert ist, gespielt zu werden.\n\nGegründet 1901 auf echtem Links-Gelände bietet Old Links eine Runde, die seinen Green Fee erheblich übertrifft. Der Platz ist kürzer als seine Sefton-Coast-Nachbarn, spielt sich aber in einer Küstenbrise länger als auf der Karte, und die Bunkerplatzierung belohnt sauberes Links-Spiel auf durchdachte Weise.\n\nFür Besucher, die eine intensive Reise mit vier oder fünf Runden planen, bietet Old Links willkommene Entlastung für das Budget bei gleichzeitig authentischem Links-Golf. Es ist auch der zugänglichste für Gastgolfer ohne Handicap-Nachweis und damit die natürliche Wahl für höher Handicappende oder Freizeitspieler.",
-      "visitorPolicy": "Sehr gastfreundlich gegenüber Besuchern an den meisten Wochentagen. Zugänglichster Club an der Küste."
-    }
   }
 }

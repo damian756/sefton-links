@@ -1,6 +1,5 @@
-import Link from 'next/link';
 import Image from 'next/image';
-import { Bed, MapPin, ExternalLink, CheckCircle2, Clock, Trophy, ChevronRight } from 'lucide-react';
+import { Bed, MapPin, ExternalLink, CheckCircle2, Clock } from 'lucide-react';
 import type { Metadata } from 'next';
 import { buildAlternates, buildOg } from '@/lib/metadata';
 import { getTranslations } from 'next-intl/server';
@@ -23,21 +22,22 @@ const ACCOMMODATION = [
     area: 'Birkdale & Southport Centre',
     distanceFromBirkdale: '< 2 miles',
     options: [
+      // Named hotels: only what each hotel's own website says (boldhotel.com,
+      // thevincenthotel.com, formbyhallgolfresort.co.uk, read 11 Nov 2026). No rates:
+      // they change, so readers check the hotel's site.
       {
         name: 'The Bold Hotel',
         type: 'Hotel',
-        address: 'Lord Street, Southport',
-        desc: 'The classic choice for golf visitors to Southport. On Lord Street, 10 minutes from Birkdale by taxi, good restaurant on site. Popular with Open Championship groups in 2017. Book well ahead in summer.',
-        approxRate: '£120–£250/night',
-        golferFriendly: ['Secure club storage', 'Early breakfast available', 'Good bar/restaurant', 'Central location'],
+        address: '583 Lord Street, Southport, PR9 0BE',
+        desc: 'A Grade II listed hotel on Lord Street with a restaurant and bar. Its website lists golf breaks and gym access for guests.',
+        golferFriendly: ['Golf breaks listed on its website', 'Restaurant and bar', 'Gym access', 'On Lord Street'],
       },
       {
         name: 'The Vincent Hotel',
-        type: 'Boutique Hotel',
-        address: 'Lord Street, Southport',
-        desc: 'More upscale option on Lord Street. The Grill Room is excellent. Stylish rooms, good spa. Works well for a premium trip alongside Royal Birkdale.',
-        approxRate: '£150–£350/night',
-        golferFriendly: ['Golf storage on request', 'Spa for post-round recovery', 'Fine dining', 'Central location'],
+        type: 'Hotel',
+        address: '98 Lord Street, Southport, PR8 1JR',
+        desc: 'A hotel on Lord Street with 59 bedrooms, the V Café & Restaurant, a cocktail bar, a spa and fitness room, and valet parking.',
+        golferFriendly: ['V Café & Restaurant and cocktail bar', 'Spa and fitness room', 'Valet parking', 'On Lord Street'],
       },
     ],
   },
@@ -46,20 +46,19 @@ const ACCOMMODATION = [
     distanceFromBirkdale: '5–6 miles',
     options: [
       {
-        name: 'Formby Hall Golf Resort',
+        name: 'Formby Hall Golf Resort & Spa',
         type: 'Golf Resort',
-        address: 'Southport Old Road, Formby',
-        desc: 'Golf-specific resort between Formby village and the coast courses. Has its own parkland course. Proximity to Formby Golf Club and Birkdale corridor. Purpose-built for golf groups.',
-        approxRate: '£100–£200/night',
-        golferFriendly: ['Dedicated golf storage', 'Early breakfast standard', 'Golf packages available', 'On-site course'],
+        address: 'Southport Old Road, Formby, L37 0AB',
+        desc: 'A four-star hotel with its own golf course and a PGA golf academy. The spa has a heated indoor swimming pool, and there is a restaurant and a gym. Its website lists golf breaks and society days.',
+        golferFriendly: ['Its own golf course', 'Golf breaks and society days', 'Spa and indoor pool', 'Restaurant'],
       },
       {
         name: 'Formby B&Bs (various)',
         type: 'B&B',
         address: 'Formby Village, L37',
-        desc: 'Several quality B&Bs in Formby village: quieter, more affordable base. The village has good restaurants within walking distance. 20 min drive to Birkdale. Check SouthportGuide.co.uk for full listings.',
+        desc: 'B&Bs and holiday lets in and around Formby village. FormbyGuide.co.uk lists places to stay and eat in the village.',
         approxRate: '£70–£120/night',
-        golferFriendly: ['Flexible breakfast times', 'Good value', 'Quiet setting', 'Village amenities'],
+        golferFriendly: ['Village shops and places to eat', 'Close to Formby Golf Club'],
       },
     ],
   },
@@ -71,9 +70,9 @@ const ACCOMMODATION = [
         name: 'Liverpool City Centre Hotels',
         type: 'Hotel (various)',
         address: 'Liverpool City Centre',
-        desc: 'Wide range of options from budget chains to boutique hotels. 45–60 min to Birkdale by car, 50 min by train to Southport then taxi. Good for multi-day trips combining golf with Liverpool itself.',
+        desc: 'Hotels of every kind, from budget chains to boutique hotels. 45–60 min to Birkdale by car, 50 min by train to Southport then taxi. Useful for trips combining golf with Liverpool itself.',
         approxRate: '£70–£200/night',
-        golferFriendly: ['Wide choice', 'Good transport links', 'City dining', 'Parking widely available'],
+        golferFriendly: ['Wide choice', 'Rail links to Southport', 'City dining'],
       },
     ],
   },
@@ -81,7 +80,6 @@ const ACCOMMODATION = [
 
 export default async function AccommodationPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const prefix = locale === 'en' ? '' : `/${locale}`;
   const t = await getTranslations({ locale, namespace: 'accommodationPage' });
 
   const tips = [
@@ -114,20 +112,6 @@ export default async function AccommodationPage({ params }: { params: Promise<{ 
 
       <div className="container mx-auto px-4 max-w-7xl py-12 space-y-12">
 
-        {/* The Open callout */}
-        <div className="bg-[#B8912A]/10 border border-[#B8912A]/30 rounded-xl px-6 py-5 flex items-start gap-4">
-          <Trophy size={22} className="text-[#B8912A] shrink-0 mt-0.5" />
-          <div>
-            <p className="font-semibold text-[#0D1B2A]">{t('openCalloutTitle')}</p>
-            <p className="text-[#2C3E50]/70 text-sm mt-1 leading-relaxed">
-              {t('openCalloutDesc')}
-            </p>
-            <Link href={`${prefix}/the-open-2026`} className="text-[#B8912A] text-sm font-semibold hover:text-[#0D1B2A] transition-colors flex items-center gap-1 mt-2">
-              {t('openCalloutLink')} <ChevronRight size={12} />
-            </Link>
-          </div>
-        </div>
-
         {/* Accommodation areas */}
         {ACCOMMODATION.map((area) => (
           <div key={area.area}>
@@ -150,10 +134,12 @@ export default async function AccommodationPage({ params }: { params: Promise<{ 
                           <span>{opt.address}</span>
                         </div>
                       </div>
-                      <div className="text-right shrink-0">
-                        <div className="text-[#1A4A30] font-semibold text-sm">{opt.approxRate}</div>
-                        <div className="text-[#2C3E50]/40 text-xs">{t('approxLabel')}</div>
-                      </div>
+                      {'approxRate' in opt && opt.approxRate && (
+                        <div className="text-right shrink-0">
+                          <div className="text-[#1A4A30] font-semibold text-sm">{opt.approxRate}</div>
+                          <div className="text-[#2C3E50]/40 text-xs">{t('approxLabel')}</div>
+                        </div>
+                      )}
                     </div>
 
                     <p className="text-[#2C3E50]/70 text-sm leading-relaxed mb-4">{opt.desc}</p>

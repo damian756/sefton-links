@@ -41,7 +41,6 @@
   "home": {
     "heroCtaCourses": "Ontdek de Banen",
     "coursesTitle": "De Sefton Coast Banen",
-    "coursesSubtitle": "Zes van Engeland's mooiste links golfbanen, allemaal op een paar kilometer van elkaar",
     "featuresTitle": "Plan Uw Links Golfreis",
     "conditionsTitle": "Baanomstandigheden",
     "conditionsDesc": "Live updates over de speelomstandigheden aan de Sefton Coast",
@@ -83,8 +82,6 @@
     "editorialPara1": "Er zijn links golfgebieden in Schotland — St Andrews, Carnoustie, Muirfield — die alle aandacht krijgen. De Sefton Coast wordt over het hoofd gezien. En juist dat is de kans voor elke bezoekende golfer.",
     "featureCard1Title": "Goed Bereikbaar",
     "featureCard1Text": "45 min van Liverpool Airport, 60 min van Manchester. Directe treinverbinding naar Southport vanuit Liverpool centrum.",
-    "featureCard2Title": "Bezoekersvriendelijk",
-    "featureCard2Text": "Vier van de zes banen verwelkomen actief bezoekers. Betere toegang dan vergelijkbare Schotse banen van hetzelfde niveau.",
     "southportGuideDesc": "Hotels, restaurants en uitjes in Southport — uw uitvalsbasis voor een Sefton Coast golfreis.",
     "formbyGuideDesc": "De complete gids voor Formby — National Trust sparrenbos, rode eekhoorns en het dorp tussen de rondes door."
   },
@@ -228,9 +225,6 @@
   "accommodationPage": {
     "headerBadge": "Golfersvriendelijk Verblijf",
     "pageTitle": "Accommodatie voor Golfers",
-    "openCalloutTitle": "Boekt u voor The Open Championship 2026?",
-    "openCalloutDesc": "Accommodatie bij Royal Birkdale tijdens Open week (14–20 juli 2026) is 12–18 maanden van tevoren volgeboekt. Als u dit na maart 2026 leest, zijn opties binnen 8 km zeer beperkt. Check Liverpool stadscentrum, Ormskirk en Wigan als overloopopties.",
-    "openCalloutLink": "Open 2026 accommodatiegids",
     "distanceFromBirkdale": "van Royal Birkdale",
     "approxLabel": "ca.",
     "golferFeaturesLabel": "Golfersvriendelijke Faciliteiten",
@@ -308,7 +302,6 @@
     "pageTitle": "Baanomstandigheden",
     "aboutLinksTitle": "Over Links Omstandigheden",
     "aboutLinksPara1": "Links golf omstandigheden verschillen fundamenteel van parkland golf. De belangrijkste variabelen zijn windrichting en -kracht, recente regenval en drainage, en de hardheid van het gras. Een droge, harde baan speelt compleet anders dan een natte, zachte — benadering-shots blijven niet liggen, de bal loopt verder van de tee en chippen wordt een creatief spelletje.",
-    "aboutLinksPara2": "De Sefton Coast banen draineren goed van nature — ze zijn aangelegd op zand. Zelfs na hevige regen herstellen Royal Birkdale en Hillside doorgaans sneller dan banen op het platteland. Southport & Ainsdale en West Lancashire kunnen door hun terrein iets langer water vasthouden. De bosgedeelten van Formby drogen het snelst.",
     "aboutLinksPara3": "Windsnelheid en -richting zijn hier belangrijker dan bijna overal in Engeland. De heersende zuidwestenwind op Royal Birkdale creëert de 'natuurlijke' baanervaring waarvoor de routering is ontworpen. Een oostenwind vanuit het land levert een volledig andere baan op. Deze gids bevat een windrichtingssleutel specifiek voor Royal Birkdale.",
     "conditionsDisclaimer": "Omstandighedendata is bij benadering en handmatig bijgehouden. Verifieer altijd bij de individuele club voor vertrek. SeftonLinks aanvaardt geen aansprakelijkheid voor baansluitingen of omstandigheden die afwijken van deze pagina."
   },
@@ -370,21 +363,5 @@
     "courseWestLancs": "West Lancashire",
     "courseSouthportAinsdale": "Southport & Ainsdale",
     "courseOldLinks": "Southport Old Links"
-  },
-  "courseData": {
-    "west-lancashire": {
-      "tagline": "Een van Engeland's oudste clubs — links golf in zijn puurste vorm",
-      "visitorPolicy": "Bezoekers welkom op de meeste doordeweekse dagen. Weekenden beperkt — bel vooraf."
-    },
-    "southport-ainsdale": {
-      "tagline": "Ryder Cup-erfgoed en echt linkskarakter voor een toegankelijke prijs",
-      "description": "Southport & Ainsdale — lokaal bekend als S&A — organiseerde de Ryder Cup in 1933 en 1937, waardoor het tot een kleine groep niet-Royal venues met die distinctie behoort. De geschiedenis alleen al rechtvaardigt een ronde, maar de baan verdient zijn reputatie ook op eigen merites.\n\nS&A ligt tussen Hillside en Formby in en deelt het kustduinterrein dat het beste van de Sefton Coast kenmerkt. De eerste holes zijn relatief vriendelijk, wat bezoekers een vals gevoel van veiligheid geeft — de baan wordt aanzienlijk zwaarder in het middenstuk, met meerdere holes die voluit zijn blootgesteld aan de heersende westenwind.\n\nDe green fees behoren tot de meest toegankelijke aan de kust voor wat werkelijk een historische en uitdagende links is. Voor bezoekers die een meerdaags programma samenstellen, combineert S&A goed met zowel Hillside als West Lancashire voor een sterk tweedaags programma tegen redelijke kosten.",
-      "visitorPolicy": "Bezoekers welkom op de meeste doordeweekse dagen. Weekenden op afspraak. Openstelling voor gezelschappen."
-    },
-    "southport-old-links": {
-      "tagline": "Verborgen waarde — echte links golf voor de laagste prijs aan de kust",
-      "description": "Southport Old Links is de rustige baan. Verscholen in Churchtown aan de noordrand van Southport is het het type club dat wordt overgeslagen op bucketlist-programma's — en dat is precies waarom het de moeite waard is.\n\nOppgericht in 1901 en gelegen op echt links-terrein biedt Old Links een ronde die ruimschoots zijn green fee overstijgt. De baan is korter dan zijn Sefton Coast buren maar speelt langer dan de kaart in een kustenwind, en de bunkers zijn doordacht geplaatst om echte links shot-making te belonen.\n\nVoor bezoekers die een volume-trip opbouwen — vier of vijf rondes — biedt Old Links welkome verlichting voor de portemonnee terwijl het nog steeds authentiek links golf levert. Het is ook de meest bezoeksvriendelijke club voor golfers zonder handicapcertificaat, wat het de logische keuze maakt voor hogere handicappers of recreatieve spelers.",
-      "visitorPolicy": "Zeer gastvrij voor bezoekers op de meeste dagen van de week. Meest toegankelijke club aan de kust."
-    }
   }
 }

@@ -41,7 +41,6 @@
   "home": {
     "heroCtaCourses": "Utforsk Banene",
     "coursesTitle": "Sefton Coast-banene",
-    "coursesSubtitle": "Seks av Englands fineste linksgolfbaner, alle innen få kilometer fra hverandre",
     "featuresTitle": "Planlegg Din Linksgolftur",
     "conditionsTitle": "Baneforhold",
     "conditionsDesc": "Liveoppdateringer om spilleforhold langs hele Sefton Coast",
@@ -83,8 +82,6 @@
     "editorialPara1": "Det finnes linksgolfkorridorer i Skottland — St Andrews, Carnoustie, Muirfield — som får all oppmerksomheten. Sefton Coast overse. Det er nettopp den muligheten enhver besøkende golfer bør gripe.",
     "featureCard1Title": "Lett å Nå",
     "featureCard1Text": "45 min fra Liverpool lufthavn, 60 min fra Manchester. Direktetog til Southport fra Liverpool sentrum.",
-    "featureCard2Title": "Besøksvennlig",
-    "featureCard2Text": "Fire av seks baner ønsker aktivt besøkende velkommen. Bedre tilgang enn sammenlignbare skotske baner på samme kvalitetsnivå.",
     "southportGuideDesc": "Hoteller, restauranter og opplevelser i Southport — din base for en Sefton Coast-golftur.",
     "formbyGuideDesc": "Den komplette guiden til Formby — National Trust tallskoger, ekorner og landsbyen mellom rundene."
   },
@@ -228,9 +225,6 @@
   "accommodationPage": {
     "headerBadge": "Golfvennlig Overnatting",
     "pageTitle": "Overnatting for Golfere",
-    "openCalloutTitle": "Bestiller du til The Open Championship 2026?",
-    "openCalloutDesc": "Overnatting nær Royal Birkdale i Open-uken (14.–20. juli 2026) er utsolgt 12–18 måneder i forveien. Leser du dette etter mars 2026 er mulighetene innen 8 km meget begrenset. Sjekk Liverpool sentrum, Ormskirk og Wigan som alternativer.",
-    "openCalloutLink": "Open 2026 overnattingsguide",
     "distanceFromBirkdale": "fra Royal Birkdale",
     "approxLabel": "ca.",
     "golferFeaturesLabel": "Golfvennlige Fasiliteter",
@@ -308,7 +302,6 @@
     "pageTitle": "Baneforhold",
     "aboutLinksTitle": "Om Linksforhold",
     "aboutLinksPara1": "Linksgolfforhold er fundamentalt annerledes enn parklandsgolf. De viktigste variablene er vindretning og -styrke, nylig nedbør og drenering, samt fasthet av gresstorven. En fast, tørr bane spiller helt annerledes enn en bløt, myk — innkommende baller stopper ikke, ballen ruller lengre fra teen, og chipping krever mer kreativitet.",
-    "aboutLinksPara2": "Sefton Coast-banene drenerer godt av naturlige årsaker — de er bygget på sand. Selv etter kraftige regnbyger restituerer Royal Birkdale og Hillside normalt raskere enn innlandsbaner. Southport & Ainsdale og West Lancashire kan holde på vannet noe lenger på grunn av terrenget. Formby's skogspartier tørker raskest.",
     "aboutLinksPara3": "Vindhastighet og -retning spiller en avgjørende rolle her — mer enn på nesten noe annet sted i England. Den rådende sørvest-vinden på Royal Birkdale skaper den 'naturlige' baneopplevelsen som layouten er designet for. En østlig vind fra land skaper en helt annen bane. Denne guiden inkluderer en vindretningsnøkkel spesifikt for Royal Birkdale.",
     "conditionsDisclaimer": "Forholddata er omtrentlig og manuelt vedlikeholdt. Verifiser alltid med den individuelle klubben før reisen. SeftonLinks påtar seg intet ansvar for banestengninger eller forhold som avviker fra denne siden."
   },
@@ -370,21 +363,5 @@
     "courseWestLancs": "West Lancashire",
     "courseSouthportAinsdale": "Southport & Ainsdale",
     "courseOldLinks": "Southport Old Links"
-  },
-  "courseData": {
-    "west-lancashire": {
-      "tagline": "En av Englands eldste klubber — linksgolf i sin reneste form",
-      "visitorPolicy": "Besøkende velkomne de fleste hverdager. Helger begrenset — ring i forveien."
-    },
-    "southport-ainsdale": {
-      "tagline": "Ryder Cup-arv og ekte linkskarakter til en tilgjengelig pris",
-      "description": "Southport & Ainsdale — lokalt kjent som S&A — arrangerte Ryder Cup i 1933 og 1937, noe som gjør den til en av svært få ikke-Royal arenaer med den distinksjon. Historien alene berettiger en runde, men banen fortjener sitt rykte på egne meritter.\n\nS&A ligger mellom Hillside og Formby og deler det kystnære dynterrenget som kjennetegner det beste av Sefton Coast. De første hullene er relativt vennlige, noe som gir besøkende en falsk trygghetsfølelse — banen stivner betydelig gjennom midtpartiet, med flere hull fullt eksponert for den rådende vestlige vinden.\n\nGreen fees er blant de mest tilgjengelige langs kysten for det som genuint er en historisk og utfordrende links. For besøkende som setter sammen et flerdagersprogram kombinerer S&A godt med enten Hillside eller West Lancashire til et sterkt todagersprogram til rimelig pris.",
-      "visitorPolicy": "Besøkende velkomne de fleste hverdager. Helger etter avtale. Åpen for selskaper."
-    },
-    "southport-old-links": {
-      "tagline": "Skjult verdi — ekte linksgolf til kystens mest tilgjengelige pris",
-      "description": "Southport Old Links er den stille banen. Gjemt i Churchtown på den nordlige utkanten av Southport er det den type klubb som hoppes over på bucket list-programmer — og det er nettopp derfor det er verdt å spille.\n\nGrunnlagt i 1901 og beliggende på ekte linksmark tilbyr Old Links en runde som langt overstiger sitt green fee. Banen er kortere enn sine Sefton Coast-naboer, men spiller lengre enn kortet i en kystbris, og bunkerplasseringen er gjennomtenkt for å belønne skikkelig links shot-making.\n\nFor besøkende som bygger en volumtur — fire eller fem runder — gir Old Links velkommen lettelse for lommeboken, mens det likevel leverer autentisk linksgolf. Det er også den mest velkommende for besøkende uten handicapattest, noe som gjør det til det naturlige valget for høye handicapper eller rekreasjonssspillere.",
-      "visitorPolicy": "Svært velkommende overfor besøkende de fleste hverdager. Mest tilgjengelige klubb langs kysten."
-    }
   }
 }
